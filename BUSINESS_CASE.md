@@ -21,7 +21,7 @@ Real SOPs are also harder than they look:
 
 ## What the tool does
 
-1. An analyst uploads an SOP. In minutes the AI returns each process as a swimlane map, with every step tied to the
+1. An analyst uploads an SOP. Unattended, the AI returns each process as a swimlane map, with every step tied to the
    section and sentence it came from, and inferred steps flagged for review.
 2. It lists risks in plain language (what could go wrong, why, impact, counted from the SOP) and recommends changes,
    each with the current step, the proposed change, implementation steps in Microsoft 365, the risks it resolves, and
@@ -37,17 +37,46 @@ Real SOPs are also harder than they look:
 | Reference-map steps the model found (recall) | 96% |
 | AI steps not supported by the SOP text | 0 of 193 |
 | Decision points with the correct condition and branches | 65% |
-| AI analysis time per SOP | 4–16 minutes, unattended |
 | AI cost per SOP | $0.66–$2.69 at standard rates; about half through the Batches API used in production |
-| Manual mapping time per SOP | 23–77 minutes, before any analysis of risks or improvements |
 
 The AI does not remove the analyst. It changes the job from reading and drawing to reviewing and deciding: the
 analyst starts from a complete, cited map and a ranked list of changes instead of a blank page.
 
+## Does it save time?
+
+**Not yet measured.** The project measured one side of the comparison and not the other:
+
+| | Measured? | Result |
+|---|---|---|
+| Manual mapping time | Yes, 3 SOPs | 23 min (NIH, 17 steps), 48 min (FCC, 29 steps), 77 min (Navy, 44 steps). Mapping only; no risk analysis or recommendations |
+| Analyst time to review and correct the AI output | **No** | The app records corrections but does not time reviews |
+| AI processing time | Yes | 4–16 min per SOP with standard API calls; 1.5 to 8+ hours through the Batches API in production, mostly queue time. Unattended either way, so it is not analyst time |
+
+Time saved is manual time minus review time, so no savings figure is claimed. Two things could make the real
+saving smaller than it looks: a careful review of a 100-step map takes real time, and the 65% decision accuracy
+means decision points need a close check. Two things could make it larger: the AI output also covers risks and
+recommended changes, which the manual times do not include, and it covered more of each document than the manual
+maps did.
+
+### How a pilot would measure it
+
+1. **Instrument the app.** Log when an analyst opens an SOP for review and marks the review complete, with active
+   time only (idle periods excluded), plus the number of corrections, in the Review History list.
+2. **Compare like with like.** Time manual mapping and AI-assisted review of the same scope (current-state map
+   only), and time risk and recommendation work separately.
+3. **Avoid the learning effect.** An analyst who has mapped an SOP by hand will review the AI's version of it
+   faster. Each analyst works in both conditions on different SOPs, and each SOP is done in both conditions by
+   different analysts.
+4. **Gate on quality.** Score both outputs against a reference map built independently (step recall, decision
+   accuracy). A faster review that misses errors is not a saving.
+5. **Normalize and report ranges.** Report minutes per step (or per page) as a median and range across SOPs, since
+   documents vary widely in size. A sample of 10–20 SOPs and 4–6 analysts is enough for a first estimate.
+6. **Track the rest of the cycle separately.** Owner decision time and calendar turnaround (upload to approved
+   future state) show whether the review workflow speeds up the whole process, not just the mapping step.
+
 ## What a real rollout would need
 
-- **Review-time measurement.** The headline benefit is analyst time saved (manual mapping time minus review time).
-  The app records corrections but does not yet time reviews; a pilot should measure it.
+- **Review-time measurement.** The pilot described above, before any time-savings claim.
 - **Decision accuracy.** 65% is the weakest metric. Decision points need the most analyst attention until the prompt
   improves on a larger golden set.
 - **Data handling.** Client SOPs can be sensitive. A rollout needs an approved model endpoint for the client's cloud

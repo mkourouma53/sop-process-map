@@ -43,6 +43,13 @@ Precision against the reference maps is 45% in v3 because the model maps more of
 the grounding check found no unsupported steps among them. Full results: [evals/results/COMPARISON.md](evals/results/COMPARISON.md).
 Changes between versions are documented in the [failure log](docs/FAILURE_LOG.md).
 
+## Does it save time?
+
+Not yet measured. Manual mapping of three SOPs took 23, 48, and 77 minutes; analyst time to review and correct the
+AI's output has not been timed, so no savings figure is claimed. The [business case](BUSINESS_CASE.md#does-it-save-time)
+describes how a pilot would measure it: timed reviews in the app, matched scope, counterbalanced SOPs and analysts,
+and a quality check against independent reference maps.
+
 ## Architecture
 
 ```mermaid
