@@ -1,0 +1,644 @@
+{
+ "sop_title": "NETCINST 4200.4A: GCPC Program Internal Operating Procedures (Enclosure 1)",
+ "mapped_by": "Moustapha Kourouma",
+ "minutes_to_map": 77.4,
+ "minutes_breakdown": {
+  "4": 10.08,
+  "5": 14.47,
+  "6": 7.8,
+  "7": 7.22,
+  "10": 12.17,
+  "11": 14.5,
+  "17": 5.62,
+  "20": 4.08,
+  "21": 1.5
+ },
+ "granularity_rule": "A: one step per meaningful action; screen clicks collapsed",
+ "scope_note": "Mapped 4-7, 10, 11, 17, 20, 21. Section 9 judged rules, not a procedure.",
+ "steps": [
+  {
+   "id": "S1",
+   "actor": "Requesting department",
+   "action": "Nominate the cardholder",
+   "input": "",
+   "output": "Nomination",
+   "system": "Email or memo",
+   "source_section": "4.a"
+  },
+  {
+   "id": "S2",
+   "actor": "Cardholder nominee",
+   "action": "Complete initial training and receive appointment and delegation of authority",
+   "input": "Training",
+   "output": "Appointment",
+   "system": "GCPC training program",
+   "source_section": "4.a"
+  },
+  {
+   "id": "S3",
+   "actor": "Appointing authority",
+   "action": "Appoint the cardholder using SF 1402",
+   "input": "",
+   "output": "SF 1402 appointment",
+   "system": "SF 1402",
+   "source_section": "4.b"
+  },
+  {
+   "id": "S4",
+   "actor": "GCPC program",
+   "action": "Suspend the cardholder account until refresher training is completed",
+   "input": "Training records",
+   "output": "Suspended account",
+   "system": "Training record list",
+   "source_section": "5.b"
+  },
+  {
+   "id": "S5",
+   "actor": "N8",
+   "action": "Process the purchase request by assigning the appropriate LOA",
+   "input": "Purchase request",
+   "output": "LOA and document number",
+   "system": "Email",
+   "source_section": "6.c"
+  },
+  {
+   "id": "S6",
+   "actor": "Requestor",
+   "action": "Complete the required documentation, obtain approval signatures, and provide signed copies to N8 and the cardholder",
+   "input": "Required information",
+   "output": "Signed documentation",
+   "system": "Form (SF 182, NETC 4235/4)",
+   "source_section": "6.d"
+  },
+  {
+   "id": "S7",
+   "actor": "N8",
+   "action": "Provide funds status updates from the Corporate Master Execution File",
+   "input": "",
+   "output": "Funds status",
+   "system": "Corporate Master Execution File Funds Status System",
+   "source_section": "6.e"
+  },
+  {
+   "id": "S8",
+   "actor": "N8",
+   "action": "Forward requirements to the Comptroller for review",
+   "input": "Unfunded requirements",
+   "output": "",
+   "system": "",
+   "source_section": "6.e"
+  },
+  {
+   "id": "S9",
+   "actor": "N8",
+   "action": "Ask Division Directors/Special Assistants for remaining unfunded requirements at fiscal year end",
+   "input": "",
+   "output": "Unfunded requirements list",
+   "system": "",
+   "source_section": "6.f"
+  },
+  {
+   "id": "S10",
+   "actor": "Cardholder",
+   "action": "Confirm sufficient funds are committed by the R/FM before purchasing",
+   "input": "",
+   "output": "",
+   "system": "",
+   "source_section": "7.a.2"
+  },
+  {
+   "id": "S11",
+   "actor": "Cardholder",
+   "action": "Screen the purchase against mandatory sources (AbilityOne; DoD EMALL or SERVMART via NETC 4400/1; DLA Document Services for printing)",
+   "input": "Purchase request",
+   "output": "Screening result",
+   "system": "NETC 4400/1",
+   "source_section": "7.a.3"
+  },
+  {
+   "id": "S12",
+   "actor": "Cardholder",
+   "action": "Obtain AO approval before purchasing",
+   "input": "",
+   "output": "AO approval",
+   "system": "",
+   "source_section": "7.a.3"
+  },
+  {
+   "id": "S13",
+   "actor": "Cardholder",
+   "action": "Confirm the merchant agrees to the billing, no back-order, 30-day delivery, and packing list terms",
+   "input": "",
+   "output": "Merchant agreement",
+   "system": "",
+   "source_section": "7.c"
+  },
+  {
+   "id": "S14",
+   "actor": "Cardholder",
+   "action": "Remind the merchant not to charge sales tax",
+   "input": "",
+   "output": "",
+   "system": "",
+   "source_section": "7.d.1"
+  },
+  {
+   "id": "S15",
+   "actor": "Cardholder",
+   "action": "Certify that the quality and quantity of items furnished match the vendor agreement",
+   "input": "Vendor agreement",
+   "output": "Certification",
+   "system": "",
+   "source_section": "7.d.2"
+  },
+  {
+   "id": "S16",
+   "actor": "Cardholder",
+   "action": "Attempt to obtain FOB destination shipment terms",
+   "input": "",
+   "output": "FOB destination terms",
+   "system": "",
+   "source_section": "7.d.3"
+  },
+  {
+   "id": "S17",
+   "actor": "Cardholder",
+   "action": "Record the transaction in the purchase card log and keep supporting documentation for the statement",
+   "input": "Transaction details",
+   "output": "Log entry",
+   "system": "Purchase card log (NETC 4430/1)",
+   "source_section": "7.e"
+  },
+  {
+   "id": "S18",
+   "actor": "Cardholder",
+   "action": "Use pay-and-confirm procedures for items billed but not received or damaged items under warranty",
+   "input": "",
+   "output": "Tracked transactions",
+   "system": "Bank statement",
+   "source_section": "10.a.1-2"
+  },
+  {
+   "id": "S19",
+   "actor": "Cardholder",
+   "action": "Certify the bank statement and forward all documentation to the AO/CO",
+   "input": "Bank statement",
+   "output": "Certified statement and documentation",
+   "system": "Email",
+   "source_section": "10, 10.a"
+  },
+  {
+   "id": "S20",
+   "actor": "AO",
+   "action": "Review the cardholder's statement and documentation and certify the account for payment",
+   "input": "Bank statement",
+   "output": "Certified statement",
+   "system": "Bank statement",
+   "source_section": "10.a.3"
+  },
+  {
+   "id": "S21",
+   "actor": "Cardholder",
+   "action": "Attach an explanation for any transaction without supporting documentation",
+   "input": "Transaction details",
+   "output": "Explanation attached to statement",
+   "system": "Bank statement",
+   "source_section": "10.c"
+  },
+  {
+   "id": "S22",
+   "actor": "AO/CO",
+   "action": "Review and certify the cardholder's monthly statement within 10 business days of the status change from INTERIM to NEW",
+   "input": "Monthly statement",
+   "output": "Certified monthly statement",
+   "system": "CITIBANK",
+   "source_section": "10.b, 10.b.6"
+  },
+  {
+   "id": "S23",
+   "actor": "AO/CO",
+   "action": "Notify the A/OPC or NETC N4 of any suspected unauthorized purchase",
+   "input": "Review",
+   "output": "Notification",
+   "system": "",
+   "source_section": "10.b.4"
+  },
+  {
+   "id": "S24",
+   "actor": "AO/CO",
+   "action": "Complete the monthly PAT review within 15 calendar days of the billing cycle end and return documentation to the cardholder",
+   "input": "Supporting documentation",
+   "output": "Completed PAT review",
+   "system": "PAT",
+   "source_section": "10.b.7"
+  },
+  {
+   "id": "S25",
+   "actor": "Cardholder or AO",
+   "action": "Notify the A/OPC of an unrecognized transaction",
+   "input": "Statement",
+   "output": "Notification",
+   "system": "",
+   "source_section": "11.a"
+  },
+  {
+   "id": "S26",
+   "actor": "Cardholder",
+   "action": "Dispute the transaction through the invoice certification process in CitiDirect",
+   "input": "",
+   "output": "Disputed transaction",
+   "system": "CitiDirect",
+   "source_section": "11.a.1"
+  },
+  {
+   "id": "S27",
+   "actor": "Cardholder or AO",
+   "action": "Submit or fax the CITIBANK Government Cardholder Dispute Form to CITIBANK",
+   "input": "Required information",
+   "output": "Dispute form",
+   "system": "Form, fax",
+   "source_section": "11.a.2"
+  },
+  {
+   "id": "S28",
+   "actor": "Cardholder or AO",
+   "action": "Track the dispute to resolution",
+   "input": "",
+   "output": "",
+   "system": "Phone or CitiDirect dispute log",
+   "source_section": "11.a.3"
+  },
+  {
+   "id": "S29",
+   "actor": "CITIBANK",
+   "action": "Offset the charge with a vendor credit or bank-initiated credit",
+   "input": "",
+   "output": "Credit",
+   "system": "",
+   "source_section": "11.a.4"
+  },
+  {
+   "id": "S30",
+   "actor": "CITIBANK",
+   "action": "Send the cardholder a letter explaining the decision; the charge returns on the next invoice for certification",
+   "input": "",
+   "output": "Decision letter",
+   "system": "Letter",
+   "source_section": "11.a.4"
+  },
+  {
+   "id": "S31",
+   "actor": "Cardholder or AO",
+   "action": "Notify the A/OPC of suspected fraudulent activity",
+   "input": "",
+   "output": "Notification",
+   "system": "",
+   "source_section": "11.b.1"
+  },
+  {
+   "id": "S32",
+   "actor": "A/OPC",
+   "action": "Contact CITIBANK about the suspected fraud",
+   "input": "",
+   "output": "",
+   "system": "",
+   "source_section": "11.b.1"
+  },
+  {
+   "id": "S33",
+   "actor": "CITIBANK",
+   "action": "Close the account, issue a replacement card, confirm valid vs. fraudulent transactions, and move valid ones to the new account",
+   "input": "",
+   "output": "Replacement account",
+   "system": "",
+   "source_section": "11.b.2"
+  },
+  {
+   "id": "S34",
+   "actor": "Cardholder",
+   "action": "Short-pay the invoice by the fraudulent amount and certify it using the manual certification process",
+   "input": "",
+   "output": "Short-paid invoice",
+   "system": "Manual certification process",
+   "source_section": "11.b.3"
+  },
+  {
+   "id": "S35",
+   "actor": "Cardholder",
+   "action": "Notify CITIBANK of the short pay and submit a Declaration of Unauthorized Use form",
+   "input": "Required information",
+   "output": "Declaration form",
+   "system": "Email, form",
+   "source_section": "11.b.3"
+  },
+  {
+   "id": "S36",
+   "actor": "Cardholder",
+   "action": "Report the lost or stolen card to CITIBANK",
+   "input": "",
+   "output": "Report",
+   "system": "Phone",
+   "source_section": "17.a"
+  },
+  {
+   "id": "S37",
+   "actor": "Cardholder",
+   "action": "Notify the AO and A/OPC within one business day of discovering the card missing",
+   "input": "",
+   "output": "Notification",
+   "system": "",
+   "source_section": "17.b"
+  },
+  {
+   "id": "S38",
+   "actor": "AO",
+   "action": "Submit a written report to the A/OPC within one business day",
+   "input": "",
+   "output": "Written report",
+   "system": "Report",
+   "source_section": "17.b"
+  },
+  {
+   "id": "S39",
+   "actor": "CITIBANK",
+   "action": "Mail a replacement card within one business day of the report",
+   "input": "",
+   "output": "Replacement card",
+   "system": "Mail",
+   "source_section": "17.c"
+  },
+  {
+   "id": "S40",
+   "actor": "Cardholder",
+   "action": "Cut the found card in half and give it to the AO or A/OPC",
+   "input": "Found card",
+   "output": "",
+   "system": "",
+   "source_section": "17.c"
+  },
+  {
+   "id": "S41",
+   "actor": "A/OPC",
+   "action": "Ensure the departing cardholder's account is inactive at least 30 days before departure",
+   "input": "",
+   "output": "Inactive account",
+   "system": "Account",
+   "source_section": "20"
+  },
+  {
+   "id": "S42",
+   "actor": "A/OPC",
+   "action": "Reduce the cardholder's credit limits to $1 and cut up the card",
+   "input": "",
+   "output": "Reduced limits",
+   "system": "Account",
+   "source_section": "20"
+  },
+  {
+   "id": "S43",
+   "actor": "A/OPC",
+   "action": "Close the account once all transactions and payments have cleared",
+   "input": "",
+   "output": "Closed account",
+   "system": "Account",
+   "source_section": "20"
+  },
+  {
+   "id": "S44",
+   "actor": "Cardholder",
+   "action": "Turn in all GCPC transaction files to the AO/CO when leaving the command",
+   "input": "Transaction files",
+   "output": "",
+   "system": "",
+   "source_section": "21"
+  }
+ ],
+ "decisions": [
+  {
+   "id": "D1",
+   "after_step": "S2",
+   "condition": "Does the procurement authority exceed the micro-purchase threshold?",
+   "branches": [
+    {
+     "label": "Yes",
+     "next_step": "S3"
+    },
+    {
+     "label": "No",
+     "next_step": "UNDEFINED"
+    }
+   ],
+   "source_section": "4.b"
+  },
+  {
+   "id": "D2",
+   "after_step": "S3",
+   "condition": "Has the appointment been revoked in writing, or has the employee transferred, separated, or retired?",
+   "branches": [
+    {
+     "label": "Yes (appointment ends)",
+     "next_step": "END"
+    },
+    {
+     "label": "No (appointment remains)",
+     "next_step": "END"
+    }
+   ],
+   "source_section": "4.c"
+  },
+  {
+   "id": "D3",
+   "after_step": "S3",
+   "condition": "Has the participant met the training requirements (initial training before assuming responsibility; IOP and DON refresher every 2 years; annual DoD ethics; Certifying Officer Legislation)?",
+   "branches": [
+    {
+     "label": "Yes",
+     "next_step": "S5"
+    },
+    {
+     "label": "No",
+     "next_step": "S4"
+    }
+   ],
+   "source_section": "5.a-5.d",
+   "requirement_list": true
+  },
+  {
+   "id": "D4",
+   "after_step": "S5",
+   "condition": "Is additional documentation required (e.g., SF 182, NETC 4235/4)?",
+   "branches": [
+    {
+     "label": "Yes",
+     "next_step": "S6"
+    },
+    {
+     "label": "No",
+     "next_step": "S7"
+    }
+   ],
+   "source_section": "6.d"
+  },
+  {
+   "id": "D5",
+   "after_step": "S7",
+   "condition": "Is funding exhausted?",
+   "branches": [
+    {
+     "label": "Yes",
+     "next_step": "S8"
+    },
+    {
+     "label": "No",
+     "next_step": "S9"
+    }
+   ],
+   "source_section": "6.e-f"
+  },
+  {
+   "id": "D6",
+   "after_step": "S12",
+   "condition": "Is the merchant's price fair and reasonable?",
+   "branches": [
+    {
+     "label": "Yes",
+     "next_step": "S13"
+    },
+    {
+     "label": "No",
+     "next_step": "END"
+    }
+   ],
+   "source_section": "7.b"
+  },
+  {
+   "id": "D7",
+   "after_step": "S17",
+   "condition": "Was the cardholder billed for items not received, or did damaged items under warranty arrive?",
+   "branches": [
+    {
+     "label": "Yes",
+     "next_step": "S18"
+    },
+    {
+     "label": "No",
+     "next_step": "S19"
+    }
+   ],
+   "source_section": "10.a.1-2"
+  },
+  {
+   "id": "D8",
+   "after_step": "S18",
+   "condition": "Is the cardholder available to review the statement for certification?",
+   "branches": [
+    {
+     "label": "Yes",
+     "next_step": "S19"
+    },
+    {
+     "label": "No",
+     "next_step": "S20"
+    }
+   ],
+   "source_section": "10.a.3"
+  },
+  {
+   "id": "D9",
+   "after_step": "S19",
+   "condition": "Does the cardholder have documentation for every transaction?",
+   "branches": [
+    {
+     "label": "Yes",
+     "next_step": "S22"
+    },
+    {
+     "label": "No",
+     "next_step": "S21"
+    }
+   ],
+   "source_section": "10.c"
+  },
+  {
+   "id": "D10",
+   "after_step": "S28",
+   "condition": "Is the dispute resolved in the cardholder's favor?",
+   "branches": [
+    {
+     "label": "Yes",
+     "next_step": "S29"
+    },
+    {
+     "label": "No",
+     "next_step": "S30"
+    }
+   ],
+   "source_section": "11.a.4"
+  },
+  {
+   "id": "D11",
+   "after_step": "S32",
+   "condition": "Does the account have fraudulent activity?",
+   "branches": [
+    {
+     "label": "Yes",
+     "next_step": "S33"
+    },
+    {
+     "label": "No",
+     "next_step": "END"
+    }
+   ],
+   "source_section": "11.b.2"
+  },
+  {
+   "id": "D12",
+   "after_step": "S39",
+   "condition": "Is the lost card found after being reported?",
+   "branches": [
+    {
+     "label": "Yes",
+     "next_step": "S40"
+    },
+    {
+     "label": "No",
+     "next_step": "END"
+    }
+   ],
+   "source_section": "17.c"
+  },
+  {
+   "id": "D13",
+   "after_step": "S40",
+   "condition": "Is the cardholder leaving the command?",
+   "branches": [
+    {
+     "label": "Yes",
+     "next_step": "S41"
+    },
+    {
+     "label": "No",
+     "next_step": "END"
+    }
+   ],
+   "source_section": "20"
+  },
+  {
+   "id": "D14",
+   "after_step": "S41",
+   "condition": "Do outstanding transactions remain?",
+   "branches": [
+    {
+     "label": "Yes",
+     "next_step": "S42"
+    },
+    {
+     "label": "No",
+     "next_step": "S43"
+    }
+   ],
+   "source_section": "20"
+  }
+ ],
+ "requirement_list_rule": "A: requirement lists (items that can be reordered) are conditions that gate a step, not steps. Navy \u00a75 training collapsed into decision D3 on 2026-09-30; the suspension consequence (\u00a75.b) stays a step."
+}

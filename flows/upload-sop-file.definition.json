@@ -1,0 +1,73 @@
+{
+  "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "$connections": {
+      "defaultValue": {},
+      "type": "Object"
+    },
+    "$authentication": {
+      "defaultValue": {},
+      "type": "SecureObject"
+    }
+  },
+  "triggers": {
+    "manual": {
+      "type": "Request",
+      "kind": "Http",
+      "inputs": {
+        "schema": {
+          "type": "object",
+          "properties": {
+            "fileName": {
+              "type": "string"
+            },
+            "contentBase64": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "fileName",
+            "contentBase64"
+          ]
+        }
+      }
+    }
+  },
+  "actions": {
+    "Create_file": {
+      "type": "OpenApiConnection",
+      "inputs": {
+        "host": {
+          "connectionName": "shared_sharepointonline",
+          "operationId": "CreateFile",
+          "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+        },
+        "parameters": {
+          "dataset": "https://consultonyx.sharepoint.com/sites/sop-process-map",
+          "folderPath": "/SOPs",
+          "name": "@triggerBody()?['fileName']",
+          "body": "@base64ToBinary(triggerBody()?['contentBase64'])"
+        },
+        "authentication": "@parameters('$authentication')"
+      },
+      "runAfter": {}
+    },
+    "Respond": {
+      "type": "Response",
+      "kind": "Http",
+      "runAfter": {
+        "Create_file": [
+          "Succeeded"
+        ]
+      },
+      "inputs": {
+        "statusCode": 200,
+        "body": {
+          "itemId": "@body('Create_file')?['ItemId']",
+          "path": "@body('Create_file')?['Path']"
+        }
+      }
+    }
+  }
+}

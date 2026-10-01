@@ -1,0 +1,40 @@
+{
+  "sop_title": "",
+  "mapped_by": "",
+  "minutes_to_map": 0,
+  "steps": [
+    {
+      "id": "S1",
+      "actor": "",
+      "action": "",
+      "input": "",
+      "output": "",
+      "system": "",
+      "source_section": ""
+    }
+  ],
+  "decisions": [
+    {
+      "id": "D1",
+      "after_step": "S1",
+      "condition": "Is ...?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S2"
+        },
+        {
+          "label": "No",
+          "next_step": "END"
+        }
+      ],
+      "source_section": ""
+    }
+  ],
+  "rules": {
+    "granularity": "A: one step per meaningful action; collapse screen clicks",
+    "procedure_vs_rules": "Reorder test: if a section's items can be rearranged and still make sense, it is rules, not a procedure.",
+    "requirement_lists": "A: requirement lists are conditions that gate a step (a decision such as 'Has X met the training requirements?'), not steps. Map an item as a step only when its wording ties it to a point in the flow.",
+    "branch_actions": "If a decision branch requires an action, that action is its own step."
+  }
+}

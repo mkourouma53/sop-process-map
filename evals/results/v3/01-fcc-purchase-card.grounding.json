@@ -1,0 +1,224 @@
+{
+  "verdicts": [
+    {
+      "ai_id": "S4",
+      "verdict": "supported",
+      "reason": "7.F.1 requires Form A-498 \"signed by their Bureau/Office Chief (or Assistant Bureau Chief (ABC) for Management if applicable).\""
+    },
+    {
+      "ai_id": "S5",
+      "verdict": "supported",
+      "reason": "7.F.1 requires Form A-498 to be signed by the Bureau/Office Chief \"and their AO.\""
+    },
+    {
+      "ai_id": "S6",
+      "verdict": "supported",
+      "reason": "7.E.1 says each AO shall \"Submit a certificate of completion of cardholder training ... to the APC,\" consistent with 6.A.4."
+    },
+    {
+      "ai_id": "S7",
+      "verdict": "supported",
+      "reason": "7.F.1 says the nominee shall \"submit a completed bank card application form to FOC, RDG/TOG ..., a certificate of completion of cardholder training, and completed Form A-498.\""
+    },
+    {
+      "ai_id": "S8",
+      "verdict": "supported",
+      "reason": "7.F.1 says the application goes to FOC, RDG/TOG \"for submission to the contractor bank.\""
+    },
+    {
+      "ai_id": "S9",
+      "verdict": "supported",
+      "reason": "6.B.3 says such EAC contracting officers \"will be granted a monthly credit limit at an amount determined by their AO,\" and 6.B.1 caps their transaction limit at their warrant authority."
+    },
+    {
+      "ai_id": "S10",
+      "verdict": "supported",
+      "reason": "7.D says the APC \"issues and destroys cards; opens and closes accounts,\" and 6.B.1/6.B.3 set the $15,000 defaults."
+    },
+    {
+      "ai_id": "S11",
+      "verdict": "supported",
+      "reason": "6.B.1 refers to a \"written request and justification provided by the respective cardholder's AO\" explaining the cardholder's \"demonstrated need.\""
+    },
+    {
+      "ai_id": "S12",
+      "verdict": "supported",
+      "reason": "6.B.1 says such limits \"may be granted ... on a case-by-case basis\" by the APC."
+    },
+    {
+      "ai_id": "S13",
+      "verdict": "supported",
+      "reason": "6.B.1 says the APC \"may grant a permanent increase of the single transaction limit up to the MPT.\""
+    },
+    {
+      "ai_id": "S14",
+      "verdict": "supported",
+      "reason": "6.B.4 and 7.E.7 require the AO to submit a written request \"via FCC Form A-1204\" to the APC."
+    },
+    {
+      "ai_id": "S15",
+      "verdict": "supported",
+      "reason": "6.B.4 says the \"monthly credit limit may be increased by the APC,\" on a \"temporary or permanent basis.\""
+    },
+    {
+      "ai_id": "S16",
+      "verdict": "supported",
+      "reason": "6.B.4 says the circumstances and length of time of the increase \"shall be retained by the APC.\""
+    },
+    {
+      "ai_id": "S17",
+      "verdict": "supported",
+      "reason": "6.B.5 says permanent increases \"shall be reviewed by the APC on a periodic basis to determine if the higher limits are still required.\""
+    },
+    {
+      "ai_id": "S18",
+      "verdict": "supported",
+      "reason": "7.F.4 says the cardholder must \"Obtain written authorization from the AO for each purchase before making the purchase.\""
+    },
+    {
+      "ai_id": "S21",
+      "verdict": "supported",
+      "reason": "6.A.12 requires adhering to FAR Part 8 priority sources before other sources, and says questions \"should be directed to EAC.\""
+    },
+    {
+      "ai_id": "S23",
+      "verdict": "supported",
+      "reason": "6.A.9 requires cardholders to consider price, and 6.B.2 bars purchases \"in excess of the cardholder's single transaction limit.\""
+    },
+    {
+      "ai_id": "S24",
+      "verdict": "supported",
+      "reason": "6.A.8 says cardholders \"are responsible for reviewing terms and conditions applicable to any purchase before making the purchase.\""
+    },
+    {
+      "ai_id": "S25",
+      "verdict": "supported",
+      "reason": "6.A.8 says cardholders \"shall refer all agreements that include such provisions to the ... (EAC) prior to making any commitment,\" and the indemnification note requires consulting EAC."
+    },
+    {
+      "ai_id": "S26",
+      "verdict": "supported",
+      "reason": "6.A.8 says \"EAC can establish a contract that addresses the objectionable terms\" and \"shall consult with ... (OGC) ... as necessary.\""
+    },
+    {
+      "ai_id": "S28",
+      "verdict": "supported",
+      "reason": "6.A.7 says \"the cardholder shall not make the purchase and should instead seek a merchant who will honor the exemption.\""
+    },
+    {
+      "ai_id": "S30",
+      "verdict": "supported",
+      "reason": "6.A.7 makes cardholders responsible for \"contacting the merchant to seek a credit\" and for \"documenting their efforts.\""
+    },
+    {
+      "ai_id": "S31",
+      "verdict": "supported",
+      "reason": "6.C.1 refers to the \"monthly SOA received from the contractor bank.\""
+    },
+    {
+      "ai_id": "S34",
+      "verdict": "supported",
+      "reason": "6.C.4 says exceptions \"must be noted on the SOA by the cardholder or AO, with the remarks being initialed and dated.\""
+    },
+    {
+      "ai_id": "S37",
+      "verdict": "supported",
+      "reason": "6.C.4 says exceptions \"must be noted on the SOA by the cardholder or AO, with the remarks being initialed and dated.\""
+    },
+    {
+      "ai_id": "S39",
+      "verdict": "supported",
+      "reason": "7.B makes the CFO responsible for ensuring transaction data is entered into the core financial accounting system and \"for distributing charges to correct financial and budgetary accounts.\""
+    },
+    {
+      "ai_id": "S40",
+      "verdict": "supported",
+      "reason": "7.B makes the CFO responsible \"for paying the purchase card contractor bank.\""
+    },
+    {
+      "ai_id": "S41",
+      "verdict": "supported",
+      "reason": "7.F.9 and 6.D require retaining the reconciled SOA and supporting documentation \"for a period of six (6) years.\""
+    },
+    {
+      "ai_id": "S45",
+      "verdict": "supported",
+      "reason": "12.A states \"Cardholders shall track disputes to completion.\""
+    },
+    {
+      "ai_id": "S46",
+      "verdict": "supported",
+      "reason": "Section 13 says the cardholder \"shall immediately report lost or stolen purchase cards to the purchase card contractor bank.\""
+    },
+    {
+      "ai_id": "S47",
+      "verdict": "supported",
+      "reason": "Section 13 and 7.F.3 require the cardholder to \"notify both the AO and the APC.\""
+    },
+    {
+      "ai_id": "S48",
+      "verdict": "supported",
+      "reason": "6.A.4 requires all cardholders and AOs to take GSA's web-based training \"as refresher training every three (3) years or as directed by the APC.\""
+    },
+    {
+      "ai_id": "S49",
+      "verdict": "supported",
+      "reason": "6.A.4 requires cardholders and AOs \"to provide certification of training to the APC.\""
+    },
+    {
+      "ai_id": "S56",
+      "verdict": "supported",
+      "reason": "6.D says the cardholder's standing \"will be subject to review by the APC,\" which may result in \"temporary suspension ... or expulsion.\""
+    },
+    {
+      "ai_id": "S57",
+      "verdict": "supported",
+      "reason": "11.B says non-compliance \"may result in temporary suspension of card privileges or revocation of AO authority by the APC until compliance is observed.\""
+    },
+    {
+      "ai_id": "S58",
+      "verdict": "supported",
+      "reason": "11.B says \"The APC will report purchase card abuse, misuse, and non-compliance to the cardholder's AO or to the AO's immediate supervisor.\""
+    },
+    {
+      "ai_id": "S59",
+      "verdict": "supported",
+      "reason": "11.B says repeated instances \"will result in permanent closure ... or revocation of AO authority, as determined by the APC,\" and 11.C says the same for misuse or fraud."
+    },
+    {
+      "ai_id": "S60",
+      "verdict": "supported",
+      "reason": "11.E says the APC will report misuse or fraud to the immediate supervisor (or ABC), the Chief of HRM Labor Relations and Performance Management, and the OIG."
+    },
+    {
+      "ai_id": "S61",
+      "verdict": "supported",
+      "reason": "11.E refers the matter to \"the OIG for investigation and appropriate actions.\""
+    },
+    {
+      "ai_id": "S62",
+      "verdict": "supported",
+      "reason": "11.E says proposed actions \"will follow the normal progression through Human Resources\" under the Basic Negotiated Agreement or the FCC Personnel Manual."
+    },
+    {
+      "ai_id": "S63",
+      "verdict": "supported",
+      "reason": "11.B says \"The APC may also require the cardholder or AO to complete refresher training before restoring card privileges or AO authority.\""
+    },
+    {
+      "ai_id": "S64",
+      "verdict": "supported",
+      "reason": "11.B says suspension or revocation lasts \"until compliance is observed\" and refers to the APC \"restoring card privileges or AO authority.\""
+    },
+    {
+      "ai_id": "S65",
+      "verdict": "supported",
+      "reason": "7.F.10 says \"Prior to reassignment to another FCC organization or upon leaving the agency, notify the APC.\""
+    },
+    {
+      "ai_id": "S72",
+      "verdict": "supported",
+      "reason": "14.B says the Bureau/Office Chief (or ABC) designates the new AO and \"This change in official designation shall be sent in writing to the APC,\" though the sender is only implied by the passive voice."
+    }
+  ]
+}

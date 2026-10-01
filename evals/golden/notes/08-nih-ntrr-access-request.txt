@@ -1,0 +1,37 @@
+Hand-mapping notes, Moustapha Kourouma, 2026-09-28 (written before any pipeline output was reviewed).
+
+08 NTRR data access permission request intiation 11 min 22 sec
+
+1.  actor: data access requestor action: point to NTTR website input: output: sends to NTRR website system: browser source: 1
+2. actor: data access requestor action: login input: login info output: system: NTTR login source: 2
+3. actor: data access requestor action: request account link input: output: sends to link page system: Browser source: 2
+4. actor: data access requestor action: download the template input: output: provides request template system: browser source: 3
+5. actor: data access requestor action: complete and sign  input: required info output: system: pdf form source: 4
+6. actor: data access requestor action: upload the document input: output: system: browser source: 4
+7. actor: data access requestor action: fill in required fields in account management page input: required info output: system: browser source: 6
+8. actor: data access requestor action: check boxes on the account privileges page input: required info output: system: browser source: 8
+9. actor: data access requestor action: submit input: output: confirmation page system: browser  source: 9
+
+Mapping choices: confirmation page not treated as a step; login and "request account" link split into two
+steps; prerequisites not treated as a step; no decision points identified.
+
+--- Added after first pass (still before seeing AI output) ---
+Granularity rule chosen: A (one step per meaningful action; collapse screen clicks). Initiation steps 1-3 merged.
+
+review and authorization 7 min 16 sec
+
+1. S1 actor: operations staff action: review for accuracy and completeness input: output: system: pdf source: 1
+2. D1 actor: Operations team is there any errors in the form? if yes action: contact the applicant for more information if no: do not contact the applicant input: (if yes required information from data requestor/applicant) output: system:  source: 2
+3. S2 actor: Operations staff action: provide form to NTRR DAC input: output: system: pdf source: 3
+4. S3 actor: NTRR DAC action: reviews information and authorizes data access input: output:  account authorization system: pdf source: 4
+5. S4: NTRR Admin action: establishes user account with privileges and corresponding data access input: output:  account access system: NTRR internal access source: 5
+6. S5: NTRR Admin action: sends automated email notifying account activation input: output: email system: email source: 6
+
+source 2 states operations team i don't know if thats different or the same as operations staff
+
+Account Validation 4 min 34 sec
+
+1. S1 actor: data requestor action: check email inbox for automated message input: output: system: email source: 1
+2. D1 actor: data requestor did you receive an email in a timely manner if yes: process to S2 if no: check spam and or reach out to the NTRR team input: (if no email to the NTRR team) output: system: email source: 1
+3. S2 actor" data requestor action: return to the NTRR website to login input: login info output: login access system: browser source: 2
+4. S3 actor: data requestor action: access the data input: output: data access system: NTRR data system source: 3

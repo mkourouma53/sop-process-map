@@ -1,0 +1,4025 @@
+{
+  "sop_title": "Supervisor Resource Guide to Onboarding (APHIS)",
+  "summary": "This guide covers APHIS new-hire onboarding from candidate selection through pre-employment clearance (TSN, ISA test, fingerprints, HRO 1197, suitability), the final offer and EOD date, arrival preparation, first-week orientation, eAuthentication and Linc Pass activation, and check-ins at 14 to 30 and 30 to 90 days. The supervisor (also called the Hiring Official or Hiring Manager) runs most steps, working with the new hire, MRPBS HRD and its Personnel Security Section, ITD, Program Administrative Staff, AAMD, FATA, and other support offices.",
+  "sections": [
+    {
+      "section": "Introduction",
+      "title": "Introduction",
+      "classification": "background",
+      "reason": "Purpose and guiding principles for supervisors, with no sequenced actions.",
+      "mapped": false
+    },
+    {
+      "section": "Supervisor/Manager Checklist - When Legal Selection is Confirmed",
+      "title": "When Legal Selection is Confirmed",
+      "classification": "procedure",
+      "reason": "Order matters because the welcome call explains the TSN and fingerprint steps that must be done before the shipment to HRD and before the EOD can be set.",
+      "mapped": true
+    },
+    {
+      "section": "When the Final Offer has been Accepted",
+      "title": "When the Final Offer has been Accepted",
+      "classification": "procedure",
+      "reason": "Items are timed between offer acceptance and EOD, and some depend on earlier ones (the sponsor is assigned before the sponsor is briefed; equipment is ordered before the workspace is ready).",
+      "mapped": true
+    },
+    {
+      "section": "First Day - First Week",
+      "title": "First Day - First Week",
+      "classification": "procedure",
+      "reason": "Tied to the EOD, with day-one items (Oath, I-9) that must happen first and on a deadline.",
+      "mapped": true
+    },
+    {
+      "section": "14 to 30 Days after Entry on Duty (EOD)",
+      "title": "14 to 30 Days after Entry on Duty (EOD)",
+      "classification": "procedure",
+      "reason": "A time-boxed phase that follows the first week, with conditional contacts and escalation paths.",
+      "mapped": true
+    },
+    {
+      "section": "30 to 90 Days after Entry on Duty (EOD)",
+      "title": "30 to 90 Days after Entry on Duty (EOD)",
+      "classification": "procedure",
+      "reason": "A time-boxed phase that follows day 30, with dated check-ins (days 30 and 45); the two open-ended REMINDER items were left out because they have no position in the flow.",
+      "mapped": true
+    },
+    {
+      "section": "Appendix 1: The Role of the Hiring Official",
+      "title": "The Role of the Hiring Official",
+      "classification": "procedure",
+      "reason": "Numbered steps with explicit sequencing (fingerprints before the EOD is set; the SNOW request after the name appears in the GAL; registration after onboarding).",
+      "mapped": true
+    },
+    {
+      "section": "Appendix 2: The Role of the Human Resources & Information Technology Divisions",
+      "title": "The Role of the HR & IT Divisions",
+      "classification": "rules",
+      "reason": "Lists of division responsibilities that could be reordered; the gating rules (Linc Pass exemption, junk-folder check, PAR within 7 days, email requested before EOD) were applied as decisions, exceptions, and timing.",
+      "mapped": false
+    },
+    {
+      "section": "Appendix 2: Live Scan Locations & Operator List",
+      "title": "Live Scan Locations & Operator List",
+      "classification": "background",
+      "reason": "Reference contact list of Live Scan sites and operators.",
+      "mapped": false
+    },
+    {
+      "section": "Appendix 6: Welcome Email/Letter Example",
+      "title": "Welcome Email/Letter Example",
+      "classification": "background",
+      "reason": "Template letter text that supports the welcome-email step (S6).",
+      "mapped": false
+    },
+    {
+      "section": "Appendix 7: Selecting a Sponsor/Buddy",
+      "title": "Selecting a Sponsor/Buddy",
+      "classification": "rules",
+      "reason": "Selection methods and criteria that could be listed in any order; they inform the sponsor-assignment step S39.",
+      "mapped": false
+    },
+    {
+      "section": "Table 1: Pre-Employment Paperwork/Tasks - Collected by Onboarding System",
+      "title": "Pre-Employment Paperwork/Tasks",
+      "classification": "rules",
+      "reason": "A reference list of required forms whose order within each group does not matter; it defines the inputs to S10 and S12.",
+      "mapped": false
+    },
+    {
+      "section": "Table 2: Day One Paperwork",
+      "title": "Day One Paperwork",
+      "classification": "rules",
+      "reason": "A list of first-day forms plus an ownership note and the 3-day I-9 deadline, applied to S50 and S52.",
+      "mapped": false
+    },
+    {
+      "section": "Table 3: The Workspace",
+      "title": "The Workspace",
+      "classification": "rules",
+      "reason": "Checklist of workspace, office-supply, and field-equipment items that can be done in any order; it informs S43 to S45.",
+      "mapped": false
+    },
+    {
+      "section": "Box A: The Importance of Sponsors",
+      "title": "The Importance of Sponsors",
+      "classification": "rules",
+      "reason": "Sponsor definition and duties in no fixed order; only the action positioned 'Once you have identified your new employee's sponsor' was mapped, as S40.",
+      "mapped": false
+    },
+    {
+      "section": "Box B: Orientation Schedule",
+      "title": "Orientation Schedule",
+      "classification": "rules",
+      "reason": "Suggested meetings grouped by period that can be rearranged within each period; it supports S42.",
+      "mapped": false
+    },
+    {
+      "section": "Box C: Within the First 30 Days",
+      "title": "Within the First 30 Days",
+      "classification": "rules",
+      "reason": "Discussion topics for repeated meetings in any order; it supports S76 and S81.",
+      "mapped": false
+    },
+    {
+      "section": "Box D: Within the First 90 Days",
+      "title": "Within the First 90 Days",
+      "classification": "rules",
+      "reason": "Non-mandatory discussion topics in any order; only the action with a stated destination (provide onboarding feedback to HR) was mapped, as S96.",
+      "mapped": false
+    },
+    {
+      "section": "Flowchart - Before Hire",
+      "title": "Before Hire",
+      "classification": "procedure",
+      "reason": "Arrowed flow from PD approval through selection, fingerprints and ISA, to the HRD alert to ITD and the SNOW request.",
+      "mapped": true
+    },
+    {
+      "section": "Flowchart - After Hire",
+      "title": "After Hire",
+      "classification": "procedure",
+      "reason": "Arrowed flow from accession processing through eAuth registration and Linc Pass enrollment, activation, and access.",
+      "mapped": true
+    },
+    {
+      "section": "Typical Hiring Timeframe",
+      "title": "Typical Hiring Timeframe",
+      "classification": "procedure",
+      "reason": "A dated sequence from selection to Linc Pass enrollment whose order cannot change; it adds the HRD-to-OPM and EOD-consultation steps and timing.",
+      "mapped": true
+    }
+  ],
+  "processes": [
+    {
+      "name": "Recruit and select candidate",
+      "trigger": "A position needs to be filled (PD submitted to HR Classification)",
+      "outcome": "Selection approved by HR Staffing",
+      "sections": [
+        "Flowchart - Before Hire",
+        "Typical Hiring Timeframe"
+      ]
+    },
+    {
+      "name": "Complete pre-employment clearance",
+      "trigger": "Legal selection is confirmed and HRD issues the Tentative Selection Notice",
+      "outcome": "EOD date set and Final Offer Letter issued; pre-EOD forms completed",
+      "sections": [
+        "Supervisor/Manager Checklist - When Legal Selection is Confirmed",
+        "Appendix 1: The Role of the Hiring Official",
+        "Appendix 2: The Role of the Human Resources & Information Technology Divisions",
+        "Table 1: Pre-Employment Paperwork/Tasks - Collected by Onboarding System",
+        "Flowchart - Before Hire",
+        "Typical Hiring Timeframe"
+      ]
+    },
+    {
+      "name": "Set up email and network account",
+      "trigger": "The new hire completes the ISA training",
+      "outcome": "Government email in the GAL, AD account enabled, 30-day PIV exception processed, and equipment and network access configured (or a personal email designated for eAuth)",
+      "sections": [
+        "Appendix 1: The Role of the Hiring Official",
+        "Appendix 2: The Role of the Human Resources & Information Technology Divisions",
+        "Flowchart - Before Hire",
+        "First Day - First Week"
+      ]
+    },
+    {
+      "name": "Prepare for new hire arrival",
+      "trigger": "The new hire accepts the final offer",
+      "outcome": "EOD logistics confirmed, sponsor assigned, schedule and agenda ready, and equipment, workspace, and first-day physical access in place",
+      "sections": [
+        "When the Final Offer has been Accepted",
+        "Table 3: The Workspace",
+        "Box A: The Importance of Sponsors",
+        "Appendix 7: Selecting a Sponsor/Buddy",
+        "Box B: Orientation Schedule"
+      ]
+    },
+    {
+      "name": "Conduct first-day and first-week orientation",
+      "trigger": "The new hire reports on the EOD date",
+      "outcome": "Oath taken, I-9 returned to HRD, emergency contact form completed, and new hire introduced, toured, and briefed",
+      "sections": [
+        "First Day - First Week",
+        "Table 2: Day One Paperwork"
+      ]
+    },
+    {
+      "name": "Activate eAuthentication and Linc Pass",
+      "trigger": "HR processes the new hire's accession in EmpowHR after onboarding",
+      "outcome": "eAuth account registered, Linc Pass issued and associated with AD, equipment, and facility access, and EIN added for WebTA and Concur",
+      "sections": [
+        "Flowchart - After Hire",
+        "Appendix 1: The Role of the Hiring Official",
+        "Appendix 2: The Role of the Human Resources & Information Technology Divisions",
+        "14 to 30 Days after Entry on Duty (EOD)",
+        "Typical Hiring Timeframe"
+      ]
+    },
+    {
+      "name": "Conduct 14 to 30 day follow-up",
+      "trigger": "The new hire reaches 14 days after EOD",
+      "outcome": "Performance plan issued, systems coaching and training reviewed, timesheet completed, property accounted for, and any cards, passport, or international clearances requested",
+      "sections": [
+        "14 to 30 Days after Entry on Duty (EOD)",
+        "Box C: Within the First 30 Days"
+      ]
+    },
+    {
+      "name": "Conduct 30 to 90 day development check-ins",
+      "trigger": "The new hire reaches 30 days after EOD",
+      "outcome": "IDP approved, benefits decisions confirmed, e-QIP completed, mentoring discussed, and onboarding feedback sent to HR",
+      "sections": [
+        "30 to 90 Days after Entry on Duty (EOD)",
+        "Box D: Within the First 90 Days"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "process": "Recruit and select candidate",
+      "actor": "HR Classification",
+      "action": "Review and approve the position description (PD)",
+      "input": "Position description",
+      "output": "Approved PD",
+      "system": "",
+      "source_section": "Flowchart - Before Hire",
+      "source_quote": "Review & Approve PD",
+      "inferred": false
+    },
+    {
+      "id": "S2",
+      "process": "Recruit and select candidate",
+      "actor": "HR Staffing",
+      "action": "Create and post the vacancy, rank and rate candidates, and create the certificate",
+      "input": "Approved PD",
+      "output": "Certificate of eligible candidates",
+      "system": "",
+      "source_section": "Flowchart - Before Hire",
+      "source_quote": "Create & Post Vacancy",
+      "inferred": false
+    },
+    {
+      "id": "S3",
+      "process": "Recruit and select candidate",
+      "actor": "Hiring Manager",
+      "action": "Make the hiring selection from the certificate",
+      "input": "Certificate",
+      "output": "Selection",
+      "system": "",
+      "source_section": "Flowchart - Before Hire",
+      "source_quote": "makes Selection",
+      "inferred": false
+    },
+    {
+      "id": "S4",
+      "process": "Recruit and select candidate",
+      "actor": "HR Staffing",
+      "action": "Approve the selection",
+      "input": "Hiring Manager's selection",
+      "output": "Approved (legal) selection",
+      "system": "",
+      "source_section": "Flowchart - Before Hire",
+      "source_quote": "Approve Selection",
+      "inferred": false
+    },
+    {
+      "id": "S5",
+      "process": "Complete pre-employment clearance",
+      "actor": "HRD",
+      "action": "Provide the selected candidate the Tentative Selection Notice (TSN)",
+      "input": "Confirmed legal selection",
+      "output": "TSN sent to new hire",
+      "system": "",
+      "source_section": "Typical Hiring Timeframe",
+      "source_quote": "Provide Selected Candidate the TSN",
+      "inferred": false
+    },
+    {
+      "id": "S6",
+      "process": "Complete pre-employment clearance",
+      "actor": "Supervisor",
+      "action": "Send a welcome email or letter and/or call the new hire to explain the TSN, first-day logistics, I-9 proof of identity, the Before You Start link, and the fingerprint and HRO 1197 requirement",
+      "input": "Welcome letter template (Appendix 6)",
+      "output": "New hire informed of pre-employment requirements",
+      "system": "Email/letter or phone",
+      "source_section": "Supervisor/Manager Checklist - When Legal Selection is Confirmed",
+      "source_quote": "Send welcome email/letter (Appendix 1) and/or call new hire.",
+      "inferred": false
+    },
+    {
+      "id": "S7",
+      "process": "Complete pre-employment clearance",
+      "actor": "Supervisor",
+      "action": "Set calendar reminders to keep regular contact with the new hire",
+      "input": "New hire contact information",
+      "output": "Recurring contact reminders",
+      "system": "Calendar",
+      "source_section": "Supervisor/Manager Checklist - When Legal Selection is Confirmed",
+      "source_quote": "Maintain regular contact with your new hire by establishing calendar reminders.",
+      "inferred": false
+    },
+    {
+      "id": "S8",
+      "process": "Complete pre-employment clearance",
+      "actor": "New Hire",
+      "action": "Accept the tentative offer (TSN)",
+      "input": "TSN",
+      "output": "Accepted TSN",
+      "system": "",
+      "source_section": "Appendix 1: The Role of the Hiring Official",
+      "source_quote": "after the new hire accepts the tentative offer",
+      "inferred": false
+    },
+    {
+      "id": "S9",
+      "process": "Complete pre-employment clearance",
+      "actor": "Supervisor",
+      "action": "Coordinate with HRD and the new hire so the new hire completes the Onboarding System requirements",
+      "input": "Accepted TSN; Table 1 form list",
+      "output": "Onboarding requirements in progress",
+      "system": "Onboarding System",
+      "source_section": "Supervisor/Manager Checklist - When Legal Selection is Confirmed",
+      "source_quote": "Coordinate with MRPBS Human Resources Division (HRD) and your new hire to ensure that they complete the Onboarding System requirements.",
+      "inferred": false
+    },
+    {
+      "id": "S10",
+      "process": "Complete pre-employment clearance",
+      "actor": "New Hire",
+      "action": "Complete the pre-employment forms in the Onboarding Application (OF-306, tax, direct deposit, and the other Table 1 forms); transcripts and drug testing are collected outside the system",
+      "input": "Table 1 form list",
+      "output": "Completed pre-employment forms",
+      "system": "Onboarding Application",
+      "source_section": "Typical Hiring Timeframe",
+      "source_quote": "Selected Candidate completes the Pre-Employment Forms",
+      "inferred": false
+    },
+    {
+      "id": "S11",
+      "process": "Complete pre-employment clearance",
+      "actor": "Hiring Manager",
+      "action": "Send the new hire the link to complete the ISA test through the public portal",
+      "input": "New hire not onboarding through the Onboarding Application",
+      "output": "ISA test link sent",
+      "system": "Email; public portal (deliver.courseavenue.com)",
+      "source_section": "Appendix 1: The Role of the Hiring Official",
+      "source_quote": "the Hiring Manager must send them the link to complete the ISA Test via the public portal",
+      "inferred": false
+    },
+    {
+      "id": "S12",
+      "process": "Complete pre-employment clearance",
+      "actor": "New Hire",
+      "action": "Take the Information Security Awareness (ISA) test",
+      "input": "ISA test access",
+      "output": "ISA completion",
+      "system": "Onboarding Application or public portal",
+      "source_section": "Flowchart - Before Hire",
+      "source_quote": "take the ISA Test either via the Public Portal",
+      "inferred": false
+    },
+    {
+      "id": "S13",
+      "process": "Complete pre-employment clearance",
+      "actor": "Hiring Official",
+      "action": "Provide the ISA completion certificate on request; completion is recorded in the portal and the certificate is uploaded into USAS Onboarding",
+      "input": "ISA completion",
+      "output": "ISA certificate on file with HRD",
+      "system": "USAS Onboarding",
+      "source_section": "Appendix 1: The Role of the Hiring Official",
+      "source_quote": "Provide the completion certificate for the Information Security Awareness Test as requested",
+      "inferred": false
+    },
+    {
+      "id": "S14",
+      "process": "Complete pre-employment clearance",
+      "actor": "Hiring Official",
+      "action": "Guide the new hire on how to get fingerprinted",
+      "input": "New hire location",
+      "output": "Fingerprinting method identified",
+      "system": "",
+      "source_section": "Appendix 1: The Role of the Hiring Official",
+      "source_quote": "Guide the New hire in getting fingerprinted",
+      "inferred": false
+    },
+    {
+      "id": "S15",
+      "process": "Complete pre-employment clearance",
+      "actor": "New Hire",
+      "action": "Schedule a Live Scan appointment and get fingerprinted",
+      "input": "Live Scan location list (Appendix 2)",
+      "output": "Live Scan fingerprints",
+      "system": "Live Scan",
+      "source_section": "Supervisor/Manager Checklist - When Legal Selection is Confirmed",
+      "source_quote": "can schedule an appointment to use the Live Scan machines",
+      "inferred": false
+    },
+    {
+      "id": "S16",
+      "process": "Complete pre-employment clearance",
+      "actor": "Supervisor",
+      "action": "Give the new hire two sets of SF-87 fingerprint cards and direct them to a police or TSA station",
+      "input": "SF-87 fingerprint cards",
+      "output": "Cards provided to new hire",
+      "system": "Paper fingerprint cards",
+      "source_section": "Supervisor/Manager Checklist - When Legal Selection is Confirmed",
+      "source_quote": "Provide new hires located outside these areas two sets of fingerprint cards",
+      "inferred": false
+    },
+    {
+      "id": "S17",
+      "process": "Complete pre-employment clearance",
+      "actor": "New Hire",
+      "action": "Get fingerprinted at a police station or other facility",
+      "input": "SF-87 cards",
+      "output": "Completed fingerprint cards",
+      "system": "Paper fingerprint cards",
+      "source_section": "Supervisor/Manager Checklist - When Legal Selection is Confirmed",
+      "source_quote": "directed to a Police Station or other facility for fingerprinting",
+      "inferred": false
+    },
+    {
+      "id": "S18",
+      "process": "Complete pre-employment clearance",
+      "actor": "Supervisor",
+      "action": "Complete the HRO 1197 form for the new hire (recommended)",
+      "input": "New hire details",
+      "output": "Completed HRO 1197",
+      "system": "HRO 1197 form",
+      "source_section": "Supervisor/Manager Checklist - When Legal Selection is Confirmed",
+      "source_quote": "it is recommended that the supervisor complete this form for the New hire",
+      "inferred": false
+    },
+    {
+      "id": "S19",
+      "process": "Complete pre-employment clearance",
+      "actor": "Hiring Manager",
+      "action": "Check the 'NO - neither a Linc Pass nor Site Badge is needed' box on the HRO 1197",
+      "input": "HRO 1197; exemption criteria",
+      "output": "HRO 1197 marked exempt",
+      "system": "HRO 1197 form",
+      "source_section": "Appendix 2: The Role of the Human Resources & Information Technology Divisions",
+      "source_quote": "neither a USDA Linc Pass nor Site Badge is needed for this employee on the HRO 1197",
+      "inferred": false
+    },
+    {
+      "id": "S20",
+      "process": "Complete pre-employment clearance",
+      "actor": "Hiring Manager",
+      "action": "Ship the fingerprints and HRO 1197 to HRD Personnel Security in Minneapolis by UPS or FedEx with a tracking number",
+      "input": "Fingerprints; HRO 1197",
+      "output": "Tracked shipment to HRD Personnel Security",
+      "system": "UPS/FedEx",
+      "source_section": "Supervisor/Manager Checklist - When Legal Selection is Confirmed",
+      "source_quote": "Fingerprints & HRO 1197 need to be sent to HRD Personnel Security in Minneapolis using UPS or FedEx with a tracking number",
+      "inferred": false
+    },
+    {
+      "id": "S21",
+      "process": "Complete pre-employment clearance",
+      "actor": "HRD",
+      "action": "Receive the fingerprints and submit them to OPM",
+      "input": "Fingerprints; HRO 1197",
+      "output": "Fingerprints submitted to OPM",
+      "system": "",
+      "source_section": "Typical Hiring Timeframe",
+      "source_quote": "HR receives fingerprints & submits to OPM",
+      "inferred": false
+    },
+    {
+      "id": "S22",
+      "process": "Complete pre-employment clearance",
+      "actor": "HRD Personnel Security",
+      "action": "Complete the fingerprint Special Agency Check (SAC) and make the suitability determination",
+      "input": "OPM fingerprint results",
+      "output": "SAC result and suitability determination",
+      "system": "",
+      "source_section": "Appendix 1: The Role of the Hiring Official",
+      "source_quote": "a fingerprint Special Agency Check (SAC) is completed and a favorable suitability determination has been made",
+      "inferred": false
+    },
+    {
+      "id": "S23",
+      "process": "Complete pre-employment clearance",
+      "actor": "Servicing HR provider",
+      "action": "Alert the supervisor to any additional pre-hire tasks (medical clearance, drug testing, extra background or security clearances)",
+      "input": "Position requirements",
+      "output": "List of additional pre-hire tasks, if any",
+      "system": "",
+      "source_section": "Supervisor/Manager Checklist - When Legal Selection is Confirmed",
+      "source_quote": "Your servicing HR provider will alert you to any additional pre-hire tasks",
+      "inferred": false
+    },
+    {
+      "id": "S24",
+      "process": "Complete pre-employment clearance",
+      "actor": "Supervisor",
+      "action": "Start the additional pre-hire tasks as soon as possible and track them to completion",
+      "input": "Additional pre-hire task list",
+      "output": "Completed additional clearances",
+      "system": "",
+      "source_section": "Supervisor/Manager Checklist - When Legal Selection is Confirmed",
+      "source_quote": "It is best to get those started as soon as possible and verify that there is progress and ultimately completion.",
+      "inferred": false
+    },
+    {
+      "id": "S25",
+      "process": "Complete pre-employment clearance",
+      "actor": "HRD",
+      "action": "Verify all prerequisites are met: TSN accepted, ISA finished, onboarding documents received, SAC completed, and suitability favorable",
+      "input": "Onboarding file",
+      "output": "Prerequisite status",
+      "system": "",
+      "source_section": "Appendix 1: The Role of the Hiring Official",
+      "source_quote": "ONLY AFTER the Tentative Selection Notice (TSN) has been accepted",
+      "inferred": false
+    },
+    {
+      "id": "S26",
+      "process": "Complete pre-employment clearance",
+      "actor": "HRD",
+      "action": "Consult with the Hiring Manager on the EOD date",
+      "input": "Prerequisites met",
+      "output": "Proposed EOD date",
+      "system": "",
+      "source_section": "Typical Hiring Timeframe",
+      "source_quote": "HR consults with Hiring Manager on EOD Date",
+      "inferred": false
+    },
+    {
+      "id": "S27",
+      "process": "Complete pre-employment clearance",
+      "actor": "HRD",
+      "action": "Set the EOD date and issue the Final Offer Letter",
+      "input": "Agreed EOD date",
+      "output": "Final Offer Letter with EOD date",
+      "system": "",
+      "source_section": "Appendix 1: The Role of the Hiring Official",
+      "source_quote": "HRD will set the EOD date and issue the Final Offer Letter",
+      "inferred": false
+    },
+    {
+      "id": "S28",
+      "process": "Complete pre-employment clearance",
+      "actor": "New Hire",
+      "action": "Complete the pre-EOD forms",
+      "input": "Final Offer Letter",
+      "output": "Completed pre-EOD forms",
+      "system": "",
+      "source_section": "Typical Hiring Timeframe",
+      "source_quote": "Selected Candidate completes the Pre-EOD Forms",
+      "inferred": false
+    },
+    {
+      "id": "S29",
+      "process": "Set up email and network account",
+      "actor": "HRD",
+      "action": "Identify new hires with completed ISA training who need a Government email address",
+      "input": "ISA completion records",
+      "output": "List of new hires needing email",
+      "system": "",
+      "source_section": "Appendix 2: The Role of the Human Resources & Information Technology Divisions",
+      "source_quote": "Ensure that all new hires who need a Government email address have that requested prior to their entry on duty (EOD) date",
+      "inferred": false
+    },
+    {
+      "id": "S30",
+      "process": "Set up email and network account",
+      "actor": "HRD",
+      "action": "Alert ITD of new hires with completed ISA training and request creation of email addresses and AD accounts",
+      "input": "List of new hires needing email",
+      "output": "Email and AD account request to ITD",
+      "system": "",
+      "source_section": "Flowchart - Before Hire",
+      "source_quote": "Alerts ITD of all New Hires with completed ISA Training and requests creation of email address & AD accounts",
+      "inferred": false
+    },
+    {
+      "id": "S31",
+      "process": "Set up email and network account",
+      "actor": "ITD",
+      "action": "Create the Government email address in the Global Address Listing (GAL)",
+      "input": "HRD request",
+      "output": "New hire listed in the GAL",
+      "system": "Global Address Listing (GAL)",
+      "source_section": "Appendix 2: The Role of the Human Resources & Information Technology Divisions",
+      "source_quote": "Create the Government email address in the Global Address Listing (GAL)",
+      "inferred": false
+    },
+    {
+      "id": "S32",
+      "process": "Set up email and network account",
+      "actor": "ITD",
+      "action": "Enable the new hire's Active Directory account",
+      "input": "HRD request",
+      "output": "Enabled AD account",
+      "system": "Active Directory",
+      "source_section": "Appendix 2: The Role of the Human Resources & Information Technology Divisions",
+      "source_quote": "Enable the Active Directory Account for the new hire",
+      "inferred": false
+    },
+    {
+      "id": "S33",
+      "process": "Set up email and network account",
+      "actor": "Hiring Manager",
+      "action": "Submit the computer/network access and 30-day PIV exclusion request in Service Now once the new hire's name appears in the GAL",
+      "input": "New hire listed in GAL",
+      "output": "SNOW request",
+      "system": "Service Now (SNOW) / ATAC Portal",
+      "source_section": "Appendix 1: The Role of the Hiring Official",
+      "source_quote": "Submit a computer/network request via the Service Now application",
+      "inferred": false
+    },
+    {
+      "id": "S34",
+      "process": "Set up email and network account",
+      "actor": "ITD",
+      "action": "Process the 30-day PIV exception and configure equipment and network access (laptop, phone, printer)",
+      "input": "SNOW request",
+      "output": "Username/password network access for the first 30 days; configured equipment",
+      "system": "Service Now",
+      "source_section": "Appendix 2: The Role of the Human Resources & Information Technology Divisions",
+      "source_quote": "Process the 30 day PIV exception forms",
+      "inferred": false
+    },
+    {
+      "id": "S35",
+      "process": "Set up email and network account",
+      "actor": "Hiring Manager",
+      "action": "Provide the new hire's personal email address so eAuthentication access to WebTA, Concur, AgLearn, or other eAuth applications can be set up",
+      "input": "New hire without a Government email",
+      "output": "Personal email designated for eAuth",
+      "system": "",
+      "source_section": "Appendix 1: The Role of the Hiring Official",
+      "source_quote": "",
+      "inferred": true
+    },
+    {
+      "id": "S36",
+      "process": "Prepare for new hire arrival",
+      "actor": "Supervisor",
+      "action": "Coordinate with HR and the new hire to establish the EOD date, and confirm the date, time, location, and person who will meet them",
+      "input": "Accepted final offer",
+      "output": "Confirmed EOD logistics",
+      "system": "",
+      "source_section": "When the Final Offer has been Accepted",
+      "source_quote": "Coordinate with HR and the new hire to establish an EOD Date.",
+      "inferred": false
+    },
+    {
+      "id": "S37",
+      "process": "Prepare for new hire arrival",
+      "actor": "Supervisor",
+      "action": "Tell the team the start date and optionally ask the new hire for a short bio",
+      "input": "Confirmed EOD",
+      "output": "Team notified; optional bio",
+      "system": "",
+      "source_section": "When the Final Offer has been Accepted",
+      "source_quote": "Communicate the new hire start date with the rest of the team.",
+      "inferred": false
+    },
+    {
+      "id": "S38",
+      "process": "Prepare for new hire arrival",
+      "actor": "Supervisor",
+      "action": "Get a status update from the new hire on any required drug testing or medical clearances",
+      "input": "Position clearance requirements",
+      "output": "Clearance status",
+      "system": "",
+      "source_section": "When the Final Offer has been Accepted",
+      "source_quote": "Obtain a status from the new hire on any drug testing or medical clearances required for the position.",
+      "inferred": false
+    },
+    {
+      "id": "S39",
+      "process": "Prepare for new hire arrival",
+      "actor": "Supervisor",
+      "action": "Ask team members, Resource Management Staff, or the Administrative Officer for help, and assign a sponsor or buddy by nomination, requested nominations, or volunteers, using the Appendix 7 criteria",
+      "input": "Sponsor criteria",
+      "output": "Assigned sponsor",
+      "system": "",
+      "source_section": "When the Final Offer has been Accepted",
+      "source_quote": "help you welcome your new hire from the first day through the first week by assigning a sponsor",
+      "inferred": false
+    },
+    {
+      "id": "S40",
+      "process": "Prepare for new hire arrival",
+      "actor": "Supervisor",
+      "action": "Communicate expectations to the sponsor and give them the USDA Sponsor Guide",
+      "input": "Assigned sponsor",
+      "output": "Briefed sponsor",
+      "system": "",
+      "source_section": "Box A: The Importance of Sponsors",
+      "source_quote": "it is important that you communicate your expectations",
+      "inferred": false
+    },
+    {
+      "id": "S41",
+      "process": "Prepare for new hire arrival",
+      "actor": "Supervisor",
+      "action": "Decide how to deliver New Employee Orientation (NEO)",
+      "input": "",
+      "output": "NEO approach",
+      "system": "",
+      "source_section": "When the Final Offer has been Accepted",
+      "source_quote": "New Employee Orientation (NEO)",
+      "inferred": false
+    },
+    {
+      "id": "S42",
+      "process": "Prepare for new hire arrival",
+      "actor": "Supervisor",
+      "action": "Develop orientation and training schedules for the new hire's first two weeks (Box B suggestions)",
+      "input": "Box B suggestions",
+      "output": "Two-week orientation schedule",
+      "system": "",
+      "source_section": "When the Final Offer has been Accepted",
+      "source_quote": "Develop orientation/training schedules",
+      "inferred": false
+    },
+    {
+      "id": "S43",
+      "process": "Prepare for new hire arrival",
+      "actor": "Supervisor",
+      "action": "Make sure equipment (laptop, printer, mobile phone) is ordered and imaged",
+      "input": "Equipment needs",
+      "output": "Equipment ordered and imaged",
+      "system": "APHIS Remedy (per Table 3)",
+      "source_section": "When the Final Offer has been Accepted",
+      "source_quote": "Ensure equipment (laptop, printer, mobile phone, etc.) are ordered and imaged",
+      "inferred": false
+    },
+    {
+      "id": "S44",
+      "process": "Prepare for new hire arrival",
+      "actor": "Supervisor",
+      "action": "Prepare the office workspace: workstation and nameplate, filing cabinets, keys, telephone and docking station, office supply package, relevant documents, and welcome note",
+      "input": "Table 3 checklist",
+      "output": "Ready workspace",
+      "system": "",
+      "source_section": "When the Final Offer has been Accepted",
+      "source_quote": "Prepare workspace for office employees",
+      "inferred": false
+    },
+    {
+      "id": "S45",
+      "process": "Prepare for new hire arrival",
+      "actor": "Supervisor",
+      "action": "Prepare field equipment: GOV keys, mobile printer, PPE, charger, gloves, waders, field glasses",
+      "input": "Table 3 checklist",
+      "output": "Ready field equipment",
+      "system": "",
+      "source_section": "When the Final Offer has been Accepted",
+      "source_quote": "or work equipment for field employees",
+      "inferred": false
+    },
+    {
+      "id": "S46",
+      "process": "Prepare for new hire arrival",
+      "actor": "Supervisor",
+      "action": "Give the new hire information about the work location: commuting, parking, security gates, lunch options",
+      "input": "Location details",
+      "output": "Location information sent to new hire",
+      "system": "",
+      "source_section": "When the Final Offer has been Accepted",
+      "source_quote": "Provide as much useful information about the physical aspects of the work location",
+      "inferred": false
+    },
+    {
+      "id": "S47",
+      "process": "Prepare for new hire arrival",
+      "actor": "Supervisor",
+      "action": "Secure physical access for the first day, such as a visitor or site badge",
+      "input": "Location access procedures",
+      "output": "First-day access arranged",
+      "system": "",
+      "source_section": "When the Final Offer has been Accepted",
+      "source_quote": "Secure physical access for the new hire for the first day.",
+      "inferred": false
+    },
+    {
+      "id": "S48",
+      "process": "Prepare for new hire arrival",
+      "actor": "Supervisor",
+      "action": "Create an agenda for the first few days that assumes the new hire has no computer access",
+      "input": "Orientation schedule",
+      "output": "First-days agenda",
+      "system": "",
+      "source_section": "When the Final Offer has been Accepted",
+      "source_quote": "Plan on the new hire having NO computer access.",
+      "inferred": false
+    },
+    {
+      "id": "S49",
+      "process": "Prepare for new hire arrival",
+      "actor": "Supervisor",
+      "action": "Keep in contact with POCs on workspace setup and tools (GOV, phones, laptop, fleet, purchase and travel cards, passport, visa) until the new hire is fully functioning",
+      "input": "Outstanding setup items",
+      "output": "Setup status",
+      "system": "",
+      "source_section": "When the Final Offer has been Accepted",
+      "source_quote": "Keep in contact with POCs on the workspace setup and applicable tools",
+      "inferred": false
+    },
+    {
+      "id": "S50",
+      "process": "Conduct first-day and first-week orientation",
+      "actor": "Administrative Staff",
+      "action": "Administer the Oath of Office and Day One forms (SF-61 Appointment Affidavit, I-9) at orientation",
+      "input": "Day One forms; proof of identity",
+      "output": "Signed SF-61 and I-9",
+      "system": "Paper forms",
+      "source_section": "Table 2: Day One Paperwork",
+      "source_quote": "The Oath of Office and Day One paperwork is typically handled by the Administrative Staff within your Program.",
+      "inferred": false
+    },
+    {
+      "id": "S51",
+      "process": "Conduct first-day and first-week orientation",
+      "actor": "New Hire",
+      "action": "Attend the NEO webinar and send a photo and form to LPA for 'APHIS New Faces'",
+      "input": "NEO webinar invitation",
+      "output": "NEO attended; photo and form sent to LPA",
+      "system": "Webinar",
+      "source_section": "First Day - First Week",
+      "source_quote": "Ensure the new hire attends a NEO Webinar, takes the Oath of Office, supplies a photo & form to LPA",
+      "inferred": false
+    },
+    {
+      "id": "S52",
+      "process": "Conduct first-day and first-week orientation",
+      "actor": "Administrative Staff",
+      "action": "Return the I-9 documents to HRD in Minneapolis for e-Verify (Table 2 does not name who returns them; Administrative Staff is implied as the owner of Day One paperwork)",
+      "input": "Completed I-9",
+      "output": "I-9 received by HRD",
+      "system": "",
+      "source_section": "Table 2: Day One Paperwork",
+      "source_quote": "the I-9 documents must be returned to HRD in Minneapolis",
+      "inferred": false
+    },
+    {
+      "id": "S53",
+      "process": "Conduct first-day and first-week orientation",
+      "actor": "Supervisor",
+      "action": "Tell the new hire about the resources on the My APHIS site (requires eAuth and an @aphis.usda.gov email)",
+      "input": "",
+      "output": "New hire aware of My APHIS",
+      "system": "My APHIS Site",
+      "source_section": "First Day - First Week",
+      "source_quote": "Inform the new hire of resources found on the My APHIS Site",
+      "inferred": false
+    },
+    {
+      "id": "S54",
+      "process": "Conduct first-day and first-week orientation",
+      "actor": "Supervisor",
+      "action": "Personally welcome the new hire, introduce them to the team, and share their bio",
+      "input": "New hire bio",
+      "output": "Team introductions done",
+      "system": "",
+      "source_section": "First Day - First Week",
+      "source_quote": "Personally welcome and introduce your new hire to the rest of the team.",
+      "inferred": false
+    },
+    {
+      "id": "S55",
+      "process": "Conduct first-day and first-week orientation",
+      "actor": "New Hire",
+      "action": "Complete the New Employee Emergency Contact Form",
+      "input": "Emergency Contact Form",
+      "output": "Completed emergency contact form",
+      "system": "",
+      "source_section": "First Day - First Week",
+      "source_quote": "Have new hire complete the New Employee Emergency Contact Form",
+      "inferred": false
+    },
+    {
+      "id": "S56",
+      "process": "Conduct first-day and first-week orientation",
+      "actor": "Supervisor",
+      "action": "Give the new hire a facility tour",
+      "input": "",
+      "output": "Tour completed",
+      "system": "",
+      "source_section": "First Day - First Week",
+      "source_quote": "Provide a facility tour",
+      "inferred": false
+    },
+    {
+      "id": "S57",
+      "process": "Conduct first-day and first-week orientation",
+      "actor": "Supervisor",
+      "action": "Arrange a meeting with administrative support or Resource Management Staff to cover office procedures",
+      "input": "",
+      "output": "Office procedures meeting scheduled",
+      "system": "",
+      "source_section": "First Day - First Week",
+      "source_quote": "Arrange a meeting between new hire and their administrative support personnel or Resource Management Staff",
+      "inferred": false
+    },
+    {
+      "id": "S58",
+      "process": "Conduct first-day and first-week orientation",
+      "actor": "Supervisor",
+      "action": "Update and distribute team phone and email lists, and add the new hire to relevant meeting invitations",
+      "input": "New hire contact details",
+      "output": "Updated contact lists and invites",
+      "system": "Email/calendar",
+      "source_section": "First Day - First Week",
+      "source_quote": "Update & distribute team phone or email contact lists",
+      "inferred": false
+    },
+    {
+      "id": "S59",
+      "process": "Conduct first-day and first-week orientation",
+      "actor": "Supervisor",
+      "action": "Meet personally with the new hire to cover roles, organizational charts, mission, administrative items (PD, performance plan, tour of duty, telework, IDP), expectations, safety, and job policies",
+      "input": "Meeting topic checklist",
+      "output": "Initial supervisor meeting completed",
+      "system": "",
+      "source_section": "First Day - First Week",
+      "source_quote": "Meet personally with the new hire to:",
+      "inferred": false
+    },
+    {
+      "id": "S60",
+      "process": "Activate eAuthentication and Linc Pass",
+      "actor": "HR Processing",
+      "action": "Process the new hire's accession (Personnel Action Request) in EmpowHR",
+      "input": "Completed onboarding tasks",
+      "output": "Accession/PAR processed",
+      "system": "EmpowHR",
+      "source_section": "Flowchart - After Hire",
+      "source_quote": "Process Accession in EmpowHR",
+      "inferred": false
+    },
+    {
+      "id": "S61",
+      "process": "Activate eAuthentication and Linc Pass",
+      "actor": "HR Processing",
+      "action": "Enter the Government email address into two EmpowHR fields; this triggers the eAuth invitation from EEMS and feeds USAccess",
+      "input": "Government email from GAL",
+      "output": "Email recorded in EmpowHR; eAuth invitation sent to new hire",
+      "system": "EmpowHR; EEMS",
+      "source_section": "Flowchart - After Hire",
+      "source_quote": "Add Govt email into two (2) EmpowHR fields",
+      "inferred": false
+    },
+    {
+      "id": "S62",
+      "process": "Activate eAuthentication and Linc Pass",
+      "actor": "Personnel Security",
+      "action": "Sponsor the employee for a Linc Pass in EmpowHR; this generates the HSPD12 enrollment invitation",
+      "input": "EmpowHR record",
+      "output": "Linc Pass sponsorship; HSPD12 enrollment invitation sent",
+      "system": "EmpowHR; USAccess",
+      "source_section": "Flowchart - After Hire",
+      "source_quote": "Sponsor Employee in EmpowHR",
+      "inferred": false
+    },
+    {
+      "id": "S63",
+      "process": "Activate eAuthentication and Linc Pass",
+      "actor": "HR Personnel Security",
+      "action": "Adjudicate the employee for the Linc Pass in EmpowHR, using fingerprints, HRO 1197, resume, transcripts, and Government email",
+      "input": "Fingerprints; HRO 1197; resume; transcripts; Government email",
+      "output": "Adjudication; Linc Pass print authorized",
+      "system": "EmpowHR",
+      "source_section": "Flowchart - After Hire",
+      "source_quote": "Adjudicates Employee in EmpowHR",
+      "inferred": false
+    },
+    {
+      "id": "S64",
+      "process": "Activate eAuthentication and Linc Pass",
+      "actor": "Supervisor",
+      "action": "Confirm the new hire has received and responded to the eAuthentication and Linc Pass enrollment invitations at their home or work email",
+      "input": "Invitations sent",
+      "output": "Receipt status of both invitations",
+      "system": "Email",
+      "source_section": "14 to 30 Days after Entry on Duty (EOD)",
+      "source_quote": "Confirm that the New hire has received eAuthentication and Linc Pass enrollment invitation",
+      "inferred": false
+    },
+    {
+      "id": "S65",
+      "process": "Activate eAuthentication and Linc Pass",
+      "actor": "New Hire",
+      "action": "Check the Outlook deleted items and junk mail folders for the missing invitation(s)",
+      "input": "Missing invitation",
+      "output": "Invitation found or still missing",
+      "system": "Outlook",
+      "source_section": "Appendix 2: The Role of the Human Resources & Information Technology Divisions",
+      "source_quote": "they need to check their deleted items or junk mail folders within Outlook",
+      "inferred": false
+    },
+    {
+      "id": "S66",
+      "process": "Activate eAuthentication and Linc Pass",
+      "actor": "Supervisor",
+      "action": "Contact ATAC about the missing eAuth invitation",
+      "input": "eAuth invitation still missing",
+      "output": "ATAC ticket/inquiry",
+      "system": "Email (Help@usda.gov)",
+      "source_section": "14 to 30 Days after Entry on Duty (EOD)",
+      "source_quote": "If eAuth email is not received \u2013 contact ATAC at Help@usda.gov",
+      "inferred": false
+    },
+    {
+      "id": "S67",
+      "process": "Activate eAuthentication and Linc Pass",
+      "actor": "Supervisor",
+      "action": "Contact HRD PSS about the missing Linc Pass enrollment invitation",
+      "input": "Linc Pass invitation still missing",
+      "output": "HRD PSS inquiry",
+      "system": "Email (LincPass.Security@usda.gov)",
+      "source_section": "14 to 30 Days after Entry on Duty (EOD)",
+      "source_quote": "If Linc Pass enrollment email is not received \u2013 contact HRD PSS",
+      "inferred": false
+    },
+    {
+      "id": "S68",
+      "process": "Activate eAuthentication and Linc Pass",
+      "actor": "New Hire",
+      "action": "Register the eAuth account by following the eems.support@ocio.usda.gov message to create a User ID and Password; this enables EEMS so AgLearn, EPP, and other applications stay active",
+      "input": "eAuth invitation",
+      "output": "Active eAuth User ID and Password",
+      "system": "EEMS (eAuth Portal)",
+      "source_section": "Appendix 1: The Role of the Hiring Official",
+      "source_quote": "Employees need to follow the instructions in the message to Register their account",
+      "inferred": false
+    },
+    {
+      "id": "S69",
+      "process": "Activate eAuthentication and Linc Pass",
+      "actor": "New Hire",
+      "action": "Make and attend a Linc Pass enrollment appointment at the nearest Enrollment Station",
+      "input": "HSPD12 enrollment invitation",
+      "output": "Linc Pass enrollment completed",
+      "system": "USAccess",
+      "source_section": "Appendix 1: The Role of the Hiring Official",
+      "source_quote": "Employees need to make an appointment to Enroll at nearest Enrollment Station",
+      "inferred": false
+    },
+    {
+      "id": "S70",
+      "process": "Activate eAuthentication and Linc Pass",
+      "actor": "Supervisor",
+      "action": "Check the Linc Pass status in the Linc Pass Tracker",
+      "input": "Enrollment completed",
+      "output": "Linc Pass status",
+      "system": "Linc Pass Tracker",
+      "source_section": "14 to 30 Days after Entry on Duty (EOD)",
+      "source_quote": "Check Linc Pass status via the Linc Pass Tracker",
+      "inferred": false
+    },
+    {
+      "id": "S71",
+      "process": "Activate eAuthentication and Linc Pass",
+      "actor": "Credentialing Center",
+      "action": "Receive and check in the printed Linc Pass; the HSPD12 activation invitation is then sent to the employee",
+      "input": "Printed Linc Pass",
+      "output": "Card checked in; activation invitation sent",
+      "system": "USAccess",
+      "source_section": "Flowchart - After Hire",
+      "source_quote": "Linc Pass is printed and is sent to the Credentialing Center to be checked In",
+      "inferred": false
+    },
+    {
+      "id": "S72",
+      "process": "Activate eAuthentication and Linc Pass",
+      "actor": "New Hire",
+      "action": "Attend the activation appointment and receive the Linc Pass card",
+      "input": "HSPD12 activation invitation",
+      "output": "Activated Linc Pass in hand",
+      "system": "USAccess",
+      "source_section": "Flowchart - After Hire",
+      "source_quote": "At the Activation appointment the Employee is provided with their Linc Pass card",
+      "inferred": false
+    },
+    {
+      "id": "S73",
+      "process": "Activate eAuthentication and Linc Pass",
+      "actor": "IT",
+      "action": "Associate the Linc Pass with the AD account and equipment",
+      "input": "Activated Linc Pass",
+      "output": "Linc Pass and PIN login enabled",
+      "system": "Active Directory",
+      "source_section": "Flowchart - After Hire",
+      "source_quote": "Associate Linc Pass with AD and Equipment",
+      "inferred": false
+    },
+    {
+      "id": "S74",
+      "process": "Activate eAuthentication and Linc Pass",
+      "actor": "AAMD",
+      "action": "Grant facility access tied to the Linc Pass",
+      "input": "Activated Linc Pass",
+      "output": "Facility access",
+      "system": "",
+      "source_section": "Flowchart - After Hire",
+      "source_quote": "Access to Facilities",
+      "inferred": false
+    },
+    {
+      "id": "S75",
+      "process": "Activate eAuthentication and Linc Pass",
+      "actor": "Not stated",
+      "action": "Request that the EIN be added: contact HR Systems Access for WebTA and FATA for Concur",
+      "input": "Active eAuth account",
+      "output": "EIN added; WebTA and Concur access",
+      "system": "WebTA; Concur",
+      "source_section": "Flowchart - After Hire",
+      "source_quote": "Contact HR Systems Access to have EIN added",
+      "inferred": false
+    },
+    {
+      "id": "S76",
+      "process": "Conduct 14 to 30 day follow-up",
+      "actor": "Supervisor",
+      "action": "Review performance expectations and issue the Performance Plan",
+      "input": "Performance standards (HR Desk Guide)",
+      "output": "Issued Performance Plan",
+      "system": "",
+      "source_section": "14 to 30 Days after Entry on Duty (EOD)",
+      "source_quote": "Review performance expectations and issue Performance Plan",
+      "inferred": false
+    },
+    {
+      "id": "S77",
+      "process": "Conduct 14 to 30 day follow-up",
+      "actor": "Supervisor",
+      "action": "Coach the employee on MS Outlook, WebTA, Skype, Cisco VOIP, APHIS eVPN, and program-specific software",
+      "input": "",
+      "output": "Employee coached on core systems",
+      "system": "",
+      "source_section": "14 to 30 Days after Entry on Duty (EOD)",
+      "source_quote": "Guide and coach employee on MS Outlook, WebTA, Skype, Cisco VOIP, APHIS eVPN",
+      "inferred": false
+    },
+    {
+      "id": "S78",
+      "process": "Conduct 14 to 30 day follow-up",
+      "actor": "Supervisor",
+      "action": "Connect the new hire with a team member or ITD for program-specific software coaching",
+      "input": "Software coaching need",
+      "output": "Coaching contact arranged",
+      "system": "",
+      "source_section": "14 to 30 Days after Entry on Duty (EOD)",
+      "source_quote": "If you are not the expert on program specific software, connect with a team member or with ITD.",
+      "inferred": false
+    },
+    {
+      "id": "S79",
+      "process": "Conduct 14 to 30 day follow-up",
+      "actor": "Supervisor",
+      "action": "Follow up with the relevant teams on the status of access to Outlook, AgLearn, WebTA, and other systems",
+      "input": "Pending access requests",
+      "output": "Access status",
+      "system": "",
+      "source_section": "14 to 30 Days after Entry on Duty (EOD)",
+      "source_quote": "Follow-up with respective teams to determine the status and or completion for access",
+      "inferred": false
+    },
+    {
+      "id": "S80",
+      "process": "Conduct 14 to 30 day follow-up",
+      "actor": "Supervisor",
+      "action": "Review required training and how to request training in AgLearn",
+      "input": "Required training list",
+      "output": "Training plan understood",
+      "system": "AgLearn",
+      "source_section": "14 to 30 Days after Entry on Duty (EOD)",
+      "source_quote": "Review training requirements and AgLearn",
+      "inferred": false
+    },
+    {
+      "id": "S81",
+      "process": "Conduct 14 to 30 day follow-up",
+      "actor": "Supervisor",
+      "action": "Check in with the new hire about how the first week went (Box C topics)",
+      "input": "Suggested discussion topics",
+      "output": "First-week check-in completed",
+      "system": "",
+      "source_section": "14 to 30 Days after Entry on Duty (EOD)",
+      "source_quote": "Check in with your New Hire about how the first week went.",
+      "inferred": false
+    },
+    {
+      "id": "S82",
+      "process": "Conduct 14 to 30 day follow-up",
+      "actor": "Supervisor",
+      "action": "Confirm the new hire completes their WebTA timesheet by the end of the pay period",
+      "input": "Pay period",
+      "output": "Timesheet submitted",
+      "system": "WebTA",
+      "source_section": "14 to 30 Days after Entry on Duty (EOD)",
+      "source_quote": "Confirm that new hire completes their WebTA timesheet by the end of the pay period",
+      "inferred": false
+    },
+    {
+      "id": "S83",
+      "process": "Conduct 14 to 30 day follow-up",
+      "actor": "Supervisor",
+      "action": "Review the new hire's checklist with them and address outstanding items",
+      "input": "New hire checklist",
+      "output": "Outstanding items identified",
+      "system": "",
+      "source_section": "14 to 30 Days after Entry on Duty (EOD)",
+      "source_quote": "to address any outstanding items that need completion",
+      "inferred": false
+    },
+    {
+      "id": "S84",
+      "process": "Conduct 14 to 30 day follow-up",
+      "actor": "Supervisor",
+      "action": "Show the new hire how to track performance items for the 90-day, mid-year, and year-end reviews",
+      "input": "Performance Plan",
+      "output": "New hire tracking accomplishments",
+      "system": "",
+      "source_section": "14 to 30 Days after Entry on Duty (EOD)",
+      "source_quote": "Guide the new hire on tracking performance items and accomplishments.",
+      "inferred": false
+    },
+    {
+      "id": "S85",
+      "process": "Conduct 14 to 30 day follow-up",
+      "actor": "Supervisor",
+      "action": "Make sure all property assigned to the new hire is accounted for under Program and APHIS requirements",
+      "input": "Assigned property",
+      "output": "Property accounted for",
+      "system": "",
+      "source_section": "14 to 30 Days after Entry on Duty (EOD)",
+      "source_quote": "Ensure all property assigned to the new hire is accounted for",
+      "inferred": false
+    },
+    {
+      "id": "S86",
+      "process": "Conduct 14 to 30 day follow-up",
+      "actor": "Supervisor",
+      "action": "Contact AAMD to request a Government Purchase Card",
+      "input": "Purchase card need",
+      "output": "Purchase card request",
+      "system": "",
+      "source_section": "14 to 30 Days after Entry on Duty (EOD)",
+      "source_quote": "Contact the Acquisition & Asset Management Division (AAMD) if a Government Purchase Card is needed",
+      "inferred": false
+    },
+    {
+      "id": "S87",
+      "process": "Conduct 14 to 30 day follow-up",
+      "actor": "Supervisor",
+      "action": "Contact AAMD for a Government Fleet Card PIN or about GOV training and usage requirements",
+      "input": "Fleet card or GOV need",
+      "output": "Fleet card PIN request or GOV guidance",
+      "system": "",
+      "source_section": "14 to 30 Days after Entry on Duty (EOD)",
+      "source_quote": "if a Government Fleet Card PIN is needed",
+      "inferred": false
+    },
+    {
+      "id": "S88",
+      "process": "Conduct 14 to 30 day follow-up",
+      "actor": "Supervisor",
+      "action": "Contact the Program's FATA to request a Government Travel Card",
+      "input": "Travel card need",
+      "output": "Travel card request",
+      "system": "",
+      "source_section": "14 to 30 Days after Entry on Duty (EOD)",
+      "source_quote": "Federal Agency Travel Administrator (FATA) if a Government Travel Card is needed",
+      "inferred": false
+    },
+    {
+      "id": "S89",
+      "process": "Conduct 14 to 30 day follow-up",
+      "actor": "Supervisor",
+      "action": "Contact the FMD Travel Team to request a Government Passport",
+      "input": "Passport need",
+      "output": "Passport request",
+      "system": "",
+      "source_section": "14 to 30 Days after Entry on Duty (EOD)",
+      "source_quote": "Contact the Travel Team within the Financial Management Division (FMD)",
+      "inferred": false
+    },
+    {
+      "id": "S90",
+      "process": "Conduct 14 to 30 day follow-up",
+      "actor": "Supervisor",
+      "action": "Consult International Services on training, medical clearance, or State Department guidance for international travel",
+      "input": "International travel need",
+      "output": "International travel requirements identified",
+      "system": "",
+      "source_section": "14 to 30 Days after Entry on Duty (EOD)",
+      "source_quote": "Connect with International Services around training or medical clearance requirements",
+      "inferred": false
+    },
+    {
+      "id": "S91",
+      "process": "Conduct 30 to 90 day development check-ins",
+      "actor": "Supervisor",
+      "action": "Arrange for the new hire to meet internal and external stakeholders and Program Leaders",
+      "input": "",
+      "output": "Stakeholder meetings",
+      "system": "",
+      "source_section": "30 to 90 Days after Entry on Duty (EOD)",
+      "source_quote": "Arrange for New hire to meet other internal and external stakeholders",
+      "inferred": false
+    },
+    {
+      "id": "S92",
+      "process": "Conduct 30 to 90 day development check-ins",
+      "actor": "Supervisor",
+      "action": "Discuss, review, and approve the Individual Development Plan (IDP), and point the new hire to the APHIS Career Development Center",
+      "input": "Draft IDP",
+      "output": "Approved IDP",
+      "system": "SharePoint (APHIS Career Development Center)",
+      "source_section": "30 to 90 Days after Entry on Duty (EOD)",
+      "source_quote": "Discuss, review and approve Individual Development Plan (IDP)",
+      "inferred": false
+    },
+    {
+      "id": "S93",
+      "process": "Conduct 30 to 90 day development check-ins",
+      "actor": "Supervisor",
+      "action": "Check in around days 30 and 45 to confirm the new hire has made all benefits decisions",
+      "input": "Benefits election window",
+      "output": "Benefits decisions confirmed",
+      "system": "",
+      "source_section": "30 to 90 Days after Entry on Duty (EOD)",
+      "source_quote": "Check-in around days 30 and 45, with New hire to ensure they have made all Benefits decisions",
+      "inferred": false
+    },
+    {
+      "id": "S94",
+      "process": "Conduct 30 to 90 day development check-ins",
+      "actor": "Supervisor",
+      "action": "Start discussing a possible mentoring partnership and identify a mentor",
+      "input": "",
+      "output": "Mentoring discussion or identified mentor",
+      "system": "",
+      "source_section": "30 to 90 Days after Entry on Duty (EOD)",
+      "source_quote": "Begin discussions on the opportunity of entering into a mentoring partnership",
+      "inferred": false
+    },
+    {
+      "id": "S95",
+      "process": "Conduct 30 to 90 day development check-ins",
+      "actor": "Supervisor",
+      "action": "Make sure the new hire has completed the e-QIP",
+      "input": "e-QIP requirement",
+      "output": "Completed e-QIP",
+      "system": "e-QIP",
+      "source_section": "30 to 90 Days after Entry on Duty (EOD)",
+      "source_quote": "Ensure New hire has completed their Electronic Questionnaire for Investigations Processing (e-QIP).",
+      "inferred": false
+    },
+    {
+      "id": "S96",
+      "process": "Conduct 30 to 90 day development check-ins",
+      "actor": "Supervisor",
+      "action": "Ask the new hire for feedback on the onboarding process and pass it to Human Resources",
+      "input": "New hire feedback",
+      "output": "Onboarding feedback sent to HR",
+      "system": "",
+      "source_section": "Box D: Within the First 90 Days",
+      "source_quote": "Solicit feedback about the onboarding process and their suggested changes. (Provide this information to Human Resources.)",
+      "inferred": false
+    },
+    {
+      "id": "S97",
+      "process": "Conduct 30 to 90 day development check-ins",
+      "actor": "Supervisor",
+      "action": "Keep reviewing both the supervisor and employee checklists to stay aligned on task completion",
+      "input": "Supervisor and employee checklists",
+      "output": "Aligned task status",
+      "system": "Paper/electronic checklist",
+      "source_section": "30 to 90 Days after Entry on Duty (EOD)",
+      "source_quote": "Continue to review both your checklist",
+      "inferred": false
+    }
+  ],
+  "decisions": [
+    {
+      "id": "D1",
+      "process": "Complete pre-employment clearance",
+      "after_step": "S8",
+      "condition": "Has the new hire accepted the TSN?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S9"
+        },
+        {
+          "label": "No",
+          "next_step": "UNDEFINED"
+        }
+      ],
+      "source_section": "Appendix 1: The Role of the Hiring Official",
+      "inferred": false
+    },
+    {
+      "id": "D2",
+      "process": "Complete pre-employment clearance",
+      "after_step": "S9",
+      "condition": "Is the new hire onboarding through the Onboarding Application?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S10"
+        },
+        {
+          "label": "No",
+          "next_step": "S11"
+        }
+      ],
+      "source_section": "Appendix 1: The Role of the Hiring Official",
+      "inferred": false
+    },
+    {
+      "id": "D3",
+      "process": "Complete pre-employment clearance",
+      "after_step": "S14",
+      "condition": "Is the new hire located near a Live Scan site (DC/MD, Minneapolis, Ames, Fort Collins, or Raleigh)?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S15"
+        },
+        {
+          "label": "No",
+          "next_step": "S16"
+        }
+      ],
+      "source_section": "Supervisor/Manager Checklist - When Legal Selection is Confirmed",
+      "inferred": false
+    },
+    {
+      "id": "D4",
+      "process": "Complete pre-employment clearance",
+      "after_step": "S18",
+      "condition": "Is the new hire exempt from the Linc Pass (temporary appointment of six months or less, or no access to government information systems)?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S19"
+        },
+        {
+          "label": "No",
+          "next_step": "S20"
+        }
+      ],
+      "source_section": "Appendix 2: The Role of the Human Resources & Information Technology Divisions",
+      "inferred": false
+    },
+    {
+      "id": "D5",
+      "process": "Complete pre-employment clearance",
+      "after_step": "S22",
+      "condition": "Are the SAC results and suitability determination favorable?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S23"
+        },
+        {
+          "label": "No",
+          "next_step": "UNDEFINED"
+        }
+      ],
+      "source_section": "Appendix 1: The Role of the Hiring Official",
+      "inferred": false
+    },
+    {
+      "id": "D6",
+      "process": "Complete pre-employment clearance",
+      "after_step": "S23",
+      "condition": "Are additional pre-hire tasks (medical, drug testing, extra clearances) required?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S24"
+        },
+        {
+          "label": "No",
+          "next_step": "S25"
+        }
+      ],
+      "source_section": "Supervisor/Manager Checklist - When Legal Selection is Confirmed",
+      "inferred": false
+    },
+    {
+      "id": "D7",
+      "process": "Complete pre-employment clearance",
+      "after_step": "S25",
+      "condition": "Are all prerequisites met (TSN accepted, ISA finished, onboarding documents received, SAC completed, favorable suitability)?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S26"
+        },
+        {
+          "label": "No - EOD will not be set",
+          "next_step": "UNDEFINED"
+        }
+      ],
+      "source_section": "Appendix 1: The Role of the Hiring Official",
+      "inferred": false
+    },
+    {
+      "id": "D8",
+      "process": "Set up email and network account",
+      "after_step": "S29",
+      "condition": "Does the new hire need a Government email address?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S30"
+        },
+        {
+          "label": "No",
+          "next_step": "S35"
+        }
+      ],
+      "source_section": "Appendix 1: The Role of the Hiring Official",
+      "inferred": false
+    },
+    {
+      "id": "D9",
+      "process": "Prepare for new hire arrival",
+      "after_step": "S43",
+      "condition": "Will the new hire work in a traditional office space?",
+      "branches": [
+        {
+          "label": "Yes - office employee",
+          "next_step": "S44"
+        },
+        {
+          "label": "No - field employee",
+          "next_step": "S45"
+        }
+      ],
+      "source_section": "When the Final Offer has been Accepted",
+      "inferred": false
+    },
+    {
+      "id": "D10",
+      "process": "Activate eAuthentication and Linc Pass",
+      "after_step": "S64",
+      "condition": "Has the new hire received both the eAuth and Linc Pass enrollment invitations?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S68"
+        },
+        {
+          "label": "No",
+          "next_step": "S65"
+        }
+      ],
+      "source_section": "Appendix 2: The Role of the Human Resources & Information Technology Divisions",
+      "inferred": false
+    },
+    {
+      "id": "D11",
+      "process": "Activate eAuthentication and Linc Pass",
+      "after_step": "S65",
+      "condition": "Is the eAuth invitation still missing after checking deleted and junk folders?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S66"
+        },
+        {
+          "label": "No",
+          "next_step": "S68"
+        }
+      ],
+      "source_section": "14 to 30 Days after Entry on Duty (EOD)",
+      "inferred": false
+    },
+    {
+      "id": "D12",
+      "process": "Activate eAuthentication and Linc Pass",
+      "after_step": "S65",
+      "condition": "Is the Linc Pass enrollment invitation still missing after checking deleted and junk folders?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S67"
+        },
+        {
+          "label": "No",
+          "next_step": "S69"
+        }
+      ],
+      "source_section": "14 to 30 Days after Entry on Duty (EOD)",
+      "inferred": false
+    },
+    {
+      "id": "D13",
+      "process": "Conduct 14 to 30 day follow-up",
+      "after_step": "S77",
+      "condition": "Is the supervisor an expert on the program-specific software?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S79"
+        },
+        {
+          "label": "No",
+          "next_step": "S78"
+        }
+      ],
+      "source_section": "14 to 30 Days after Entry on Duty (EOD)",
+      "inferred": false
+    },
+    {
+      "id": "D14",
+      "process": "Conduct 14 to 30 day follow-up",
+      "after_step": "S85",
+      "condition": "Does the new hire need a Government Purchase Card?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S86"
+        },
+        {
+          "label": "No",
+          "next_step": "END"
+        }
+      ],
+      "source_section": "14 to 30 Days after Entry on Duty (EOD)",
+      "inferred": false
+    },
+    {
+      "id": "D15",
+      "process": "Conduct 14 to 30 day follow-up",
+      "after_step": "S85",
+      "condition": "Does the new hire need a Government Fleet Card PIN, or are there GOV training or usage questions?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S87"
+        },
+        {
+          "label": "No",
+          "next_step": "END"
+        }
+      ],
+      "source_section": "14 to 30 Days after Entry on Duty (EOD)",
+      "inferred": false
+    },
+    {
+      "id": "D16",
+      "process": "Conduct 14 to 30 day follow-up",
+      "after_step": "S85",
+      "condition": "Does the new hire need a Government Travel Card?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S88"
+        },
+        {
+          "label": "No",
+          "next_step": "END"
+        }
+      ],
+      "source_section": "14 to 30 Days after Entry on Duty (EOD)",
+      "inferred": false
+    },
+    {
+      "id": "D17",
+      "process": "Conduct 14 to 30 day follow-up",
+      "after_step": "S85",
+      "condition": "Does the new hire need a Government Passport?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S89"
+        },
+        {
+          "label": "No",
+          "next_step": "END"
+        }
+      ],
+      "source_section": "14 to 30 Days after Entry on Duty (EOD)",
+      "inferred": false
+    },
+    {
+      "id": "D18",
+      "process": "Conduct 14 to 30 day follow-up",
+      "after_step": "S85",
+      "condition": "Will the new hire travel internationally?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S90"
+        },
+        {
+          "label": "No",
+          "next_step": "END"
+        }
+      ],
+      "source_section": "14 to 30 Days after Entry on Duty (EOD)",
+      "inferred": false
+    }
+  ],
+  "handoffs": [
+    {
+      "after_step": "S1",
+      "from_actor": "HR Classification",
+      "to_actor": "HR Staffing"
+    },
+    {
+      "after_step": "S2",
+      "from_actor": "HR Staffing",
+      "to_actor": "Hiring Manager"
+    },
+    {
+      "after_step": "S3",
+      "from_actor": "Hiring Manager",
+      "to_actor": "HR Staffing"
+    },
+    {
+      "after_step": "S5",
+      "from_actor": "HRD",
+      "to_actor": "New Hire"
+    },
+    {
+      "after_step": "S6",
+      "from_actor": "Supervisor",
+      "to_actor": "New Hire"
+    },
+    {
+      "after_step": "S8",
+      "from_actor": "New Hire",
+      "to_actor": "Supervisor"
+    },
+    {
+      "after_step": "S9",
+      "from_actor": "Supervisor",
+      "to_actor": "New Hire"
+    },
+    {
+      "after_step": "S11",
+      "from_actor": "Hiring Manager",
+      "to_actor": "New Hire"
+    },
+    {
+      "after_step": "S12",
+      "from_actor": "New Hire",
+      "to_actor": "Hiring Official"
+    },
+    {
+      "after_step": "S13",
+      "from_actor": "Hiring Official",
+      "to_actor": "HRD"
+    },
+    {
+      "after_step": "S16",
+      "from_actor": "Supervisor",
+      "to_actor": "New Hire"
+    },
+    {
+      "after_step": "S17",
+      "from_actor": "New Hire",
+      "to_actor": "Supervisor"
+    },
+    {
+      "after_step": "S20",
+      "from_actor": "Hiring Manager",
+      "to_actor": "HRD Personnel Security"
+    },
+    {
+      "after_step": "S21",
+      "from_actor": "HRD",
+      "to_actor": "OPM"
+    },
+    {
+      "after_step": "S23",
+      "from_actor": "Servicing HR provider",
+      "to_actor": "Supervisor"
+    },
+    {
+      "after_step": "S26",
+      "from_actor": "HRD",
+      "to_actor": "Hiring Manager"
+    },
+    {
+      "after_step": "S27",
+      "from_actor": "HRD",
+      "to_actor": "New Hire"
+    },
+    {
+      "after_step": "S30",
+      "from_actor": "HRD",
+      "to_actor": "ITD"
+    },
+    {
+      "after_step": "S32",
+      "from_actor": "ITD",
+      "to_actor": "Hiring Manager"
+    },
+    {
+      "after_step": "S33",
+      "from_actor": "Hiring Manager",
+      "to_actor": "ITD"
+    },
+    {
+      "after_step": "S38",
+      "from_actor": "Supervisor",
+      "to_actor": "New Hire"
+    },
+    {
+      "after_step": "S40",
+      "from_actor": "Supervisor",
+      "to_actor": "Sponsor"
+    },
+    {
+      "after_step": "S50",
+      "from_actor": "Administrative Staff",
+      "to_actor": "New Hire"
+    },
+    {
+      "after_step": "S51",
+      "from_actor": "New Hire",
+      "to_actor": "LPA"
+    },
+    {
+      "after_step": "S52",
+      "from_actor": "Administrative Staff",
+      "to_actor": "HRD"
+    },
+    {
+      "after_step": "S61",
+      "from_actor": "HR Processing",
+      "to_actor": "Personnel Security"
+    },
+    {
+      "after_step": "S63",
+      "from_actor": "HR Personnel Security",
+      "to_actor": "Supervisor"
+    },
+    {
+      "after_step": "S64",
+      "from_actor": "Supervisor",
+      "to_actor": "New Hire"
+    },
+    {
+      "after_step": "S65",
+      "from_actor": "New Hire",
+      "to_actor": "Supervisor"
+    },
+    {
+      "after_step": "S66",
+      "from_actor": "Supervisor",
+      "to_actor": "ATAC"
+    },
+    {
+      "after_step": "S67",
+      "from_actor": "Supervisor",
+      "to_actor": "HRD PSS"
+    },
+    {
+      "after_step": "S69",
+      "from_actor": "New Hire",
+      "to_actor": "Credentialing Center"
+    },
+    {
+      "after_step": "S71",
+      "from_actor": "Credentialing Center",
+      "to_actor": "New Hire"
+    },
+    {
+      "after_step": "S72",
+      "from_actor": "New Hire",
+      "to_actor": "IT"
+    },
+    {
+      "after_step": "S73",
+      "from_actor": "IT",
+      "to_actor": "AAMD"
+    },
+    {
+      "after_step": "S78",
+      "from_actor": "Supervisor",
+      "to_actor": "ITD"
+    },
+    {
+      "after_step": "S86",
+      "from_actor": "Supervisor",
+      "to_actor": "AAMD"
+    },
+    {
+      "after_step": "S87",
+      "from_actor": "Supervisor",
+      "to_actor": "AAMD"
+    },
+    {
+      "after_step": "S88",
+      "from_actor": "Supervisor",
+      "to_actor": "FATA"
+    },
+    {
+      "after_step": "S89",
+      "from_actor": "Supervisor",
+      "to_actor": "FMD Travel Team"
+    },
+    {
+      "after_step": "S90",
+      "from_actor": "Supervisor",
+      "to_actor": "International Services"
+    },
+    {
+      "after_step": "S96",
+      "from_actor": "Supervisor",
+      "to_actor": "Human Resources"
+    }
+  ],
+  "exceptions": [
+    {
+      "step": "S8",
+      "trigger": "New hire declines or does not respond to the TSN",
+      "handling": "",
+      "source_section": "Appendix 1: The Role of the Hiring Official"
+    },
+    {
+      "step": "S10",
+      "trigger": "Transcripts and drug testing cannot be collected in the Onboarding system",
+      "handling": "Items marked with an asterisk are collected outside the Onboarding system; the SOP does not say by whom or how.",
+      "source_section": "Table 1: Pre-Employment Paperwork/Tasks - Collected by Onboarding System"
+    },
+    {
+      "step": "S11",
+      "trigger": "New hire is not onboarding through the Onboarding Application",
+      "handling": "Hiring Manager sends the ISA test link via the public portal; the SOP does not say how the other onboarding forms are collected.",
+      "source_section": "Appendix 1: The Role of the Hiring Official"
+    },
+    {
+      "step": "S17",
+      "trigger": "Police station or other facility charges a fingerprinting fee",
+      "handling": "The Program decides whether to reimburse the new hire.",
+      "source_section": "Supervisor/Manager Checklist - When Legal Selection is Confirmed"
+    },
+    {
+      "step": "S20",
+      "trigger": "Fingerprint and HRO 1197 shipment is delayed or lost",
+      "handling": "The SOP requires a UPS/FedEx tracking number but gives no follow-up action; the EOD date will not be set until the requirements are met.",
+      "source_section": "Supervisor/Manager Checklist - When Legal Selection is Confirmed"
+    },
+    {
+      "step": "S22",
+      "trigger": "SAC or suitability determination is unfavorable",
+      "handling": "",
+      "source_section": "Appendix 1: The Role of the Hiring Official"
+    },
+    {
+      "step": "S25",
+      "trigger": "One or more prerequisites (TSN, ISA, onboarding documents, SAC, suitability) are not met",
+      "handling": "HRD does not set the EOD date or issue the Final Offer Letter; there is no stated escalation or follow-up owner.",
+      "source_section": "Appendix 1: The Role of the Hiring Official"
+    },
+    {
+      "step": "S35",
+      "trigger": "New hire will not have a Government email but needs eAuth access",
+      "handling": "A personal email address can be used; the SOP does not say who arranges it.",
+      "source_section": "Appendix 1: The Role of the Hiring Official"
+    },
+    {
+      "step": "S34",
+      "trigger": "30-day username/password grace period ends before the Linc Pass is issued",
+      "handling": "After 30 days access requires the Linc Pass and PIN or eAuth ID and password; the SOP does not say what happens if the Linc Pass is not ready.",
+      "source_section": "Appendix 1: The Role of the Hiring Official"
+    },
+    {
+      "step": "S47",
+      "trigger": "Site-specific physical access procedures differ",
+      "handling": "Each location has its own procedures; the supervisor must follow the local process.",
+      "source_section": "When the Final Offer has been Accepted"
+    },
+    {
+      "step": "S50",
+      "trigger": "Supervisor does not know who handles Day One paperwork",
+      "handling": "Contact the Onboarding Point of Contact.",
+      "source_section": "Table 2: Day One Paperwork"
+    },
+    {
+      "step": "S52",
+      "trigger": "I-9 documents not returned to HRD within 3 days of the reporting date",
+      "handling": "",
+      "source_section": "Table 2: Day One Paperwork"
+    },
+    {
+      "step": "S65",
+      "trigger": "eAuth or HSPD12 invitation not received within the first two weeks",
+      "handling": "New hire checks deleted items and junk mail folders before contacting ATAC or Human Resources.",
+      "source_section": "Appendix 2: The Role of the Human Resources & Information Technology Divisions"
+    },
+    {
+      "step": "S66",
+      "trigger": "eAuth invitation still missing",
+      "handling": "Contact ATAC; the 14 to 30 Days section gives Help@usda.gov while Appendix 2 gives APHIS.Help@usda.gov. The SOP does not say what happens after contact.",
+      "source_section": "14 to 30 Days after Entry on Duty (EOD)"
+    },
+    {
+      "step": "S67",
+      "trigger": "Linc Pass enrollment invitation still missing",
+      "handling": "Contact HRD PSS at LincPass.Security@usda.gov; the SOP does not say what happens after contact. AAMD/EMSSD troubleshoot Linc Pass and facility access issues.",
+      "source_section": "14 to 30 Days after Entry on Duty (EOD)"
+    },
+    {
+      "step": "S78",
+      "trigger": "Supervisor is not an expert on program-specific software",
+      "handling": "Connect the new hire with a team member or ITD.",
+      "source_section": "14 to 30 Days after Entry on Duty (EOD)"
+    },
+    {
+      "step": "S95",
+      "trigger": "Questions about the e-QIP",
+      "handling": "Contact HRD PSS.",
+      "source_section": "30 to 90 Days after Entry on Duty (EOD)"
+    }
+  ],
+  "timing": [
+    {
+      "step": "S3",
+      "requirement": "The flowchart shows the Hiring Manager setting the EOD date with HR Staffing at selection, which conflicts with Appendix 1: EOD is set only after all pre-employment prerequisites are met.",
+      "source_section": "Flowchart - Before Hire"
+    },
+    {
+      "step": "S6",
+      "requirement": "Done when legal selection is confirmed.",
+      "source_section": "Supervisor/Manager Checklist - When Legal Selection is Confirmed"
+    },
+    {
+      "step": "S20",
+      "requirement": "As soon as possible after the new hire accepts the tentative offer; the EOD will not be set until this is done.",
+      "source_section": "Appendix 1: The Role of the Hiring Official"
+    },
+    {
+      "step": "S21",
+      "requirement": "The example timeline shows HR waiting about two weeks for fingerprints (Oct 5-18) before submitting to OPM, with SAC results about 3 business days later.",
+      "source_section": "Typical Hiring Timeframe"
+    },
+    {
+      "step": "S24",
+      "requirement": "Start as soon as possible.",
+      "source_section": "Supervisor/Manager Checklist - When Legal Selection is Confirmed"
+    },
+    {
+      "step": "S27",
+      "requirement": "Only after the TSN is accepted, ISA finished, onboarding documents received, SAC completed, and favorable suitability made.",
+      "source_section": "Appendix 1: The Role of the Hiring Official"
+    },
+    {
+      "step": "S30",
+      "requirement": "Government email must be requested before the EOD date.",
+      "source_section": "Appendix 2: The Role of the Human Resources & Information Technology Divisions"
+    },
+    {
+      "step": "S33",
+      "requirement": "Appendix 1 says submit as soon as the new hire's name appears in the GAL (before hire, per the flowchart); the First Day - First Week checklist places the SNOW request in the first week.",
+      "source_section": "Appendix 1: The Role of the Hiring Official; First Day - First Week"
+    },
+    {
+      "step": "S34",
+      "requirement": "The PIV exception gives username/password access for the first 30 days only.",
+      "source_section": "Appendix 1: The Role of the Hiring Official"
+    },
+    {
+      "step": "S42",
+      "requirement": "Schedule covers the new hire's first two weeks.",
+      "source_section": "When the Final Offer has been Accepted"
+    },
+    {
+      "step": "S49",
+      "requirement": "Ongoing until the new hire is fully functioning.",
+      "source_section": "When the Final Offer has been Accepted"
+    },
+    {
+      "step": "S52",
+      "requirement": "I-9 documents due to HRD Minneapolis no later than three days after the reporting date.",
+      "source_section": "Table 2: Day One Paperwork"
+    },
+    {
+      "step": "S60",
+      "requirement": "HRD processes the PAR within seven days of the EOD date; the example timeline shows the PAR built before the EOD.",
+      "source_section": "Appendix 2: The Role of the Human Resources & Information Technology Divisions"
+    },
+    {
+      "step": "S64",
+      "requirement": "Invitations arrive 1-5 days after the new hire comes on board (Appendix 1); the checklist schedules confirmation at 14 to 30 days after EOD; Appendix 2 triggers the junk-folder check if not received within two weeks.",
+      "source_section": "Appendix 1: The Role of the Hiring Official; 14 to 30 Days after Entry on Duty (EOD)"
+    },
+    {
+      "step": "S72",
+      "requirement": "Linc Pass can be in hand within 7 days of arrival, depending on enrollment station volume, and must be obtained within the 30-day ITD grace period.",
+      "source_section": "Typical Hiring Timeframe; Appendix 1: The Role of the Hiring Official"
+    },
+    {
+      "step": "S76",
+      "requirement": "Performance plan created and discussed within the first 30 days.",
+      "source_section": "Box C: Within the First 30 Days"
+    },
+    {
+      "step": "S82",
+      "requirement": "WebTA timesheet due by the end of the pay period.",
+      "source_section": "14 to 30 Days after Entry on Duty (EOD)"
+    },
+    {
+      "step": "S92",
+      "requirement": "IDP discussed and approved within the first 90 days.",
+      "source_section": "Box D: Within the First 90 Days"
+    },
+    {
+      "step": "S93",
+      "requirement": "Check-ins around days 30 and 45 after EOD.",
+      "source_section": "30 to 90 Days after Entry on Duty (EOD)"
+    }
+  ],
+  "risks": [
+    {
+      "id": "R1",
+      "process": "Complete pre-employment clearance",
+      "step": "S22 / D5",
+      "risk_type": "undefined_exception",
+      "what_could_go_wrong": "The fingerprint check or suitability determination comes back unfavorable. Nobody is told what to do next, so the supervisor keeps ordering equipment and messaging a candidate whose offer may not proceed.",
+      "cause": "Appendix 1 makes a favorable SAC and suitability determination a condition for the EOD, but no section states who tells the supervisor or the candidate, or what happens next (D5 'No' branch is UNDEFINED).",
+      "impact": "Wasted arrival preparation, confused communication with the candidate, and possible mishandling of a sensitive personnel outcome.",
+      "quantified_impact": [
+        {
+          "metric": "Decision branches with no next step",
+          "value": "1 (D5 'No')",
+          "basis": "Decision D5 in the current state map"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "An unfavorable result is uncommon, but when it happens it touches a sensitive personnel decision with no guidance.",
+      "addressed_by": [
+        "A22"
+      ]
+    },
+    {
+      "id": "R2",
+      "process": "Complete pre-employment clearance",
+      "step": "S25 / D7",
+      "risk_type": "undefined_exception",
+      "what_could_go_wrong": "One of the five prerequisites (TSN, ISA, onboarding documents, SAC, suitability) stays open. HRD does not set an EOD, and nobody is assigned to find and chase the missing item, so the start date quietly slips.",
+      "cause": "Appendix 1 says HRD sets the EOD 'ONLY AFTER' all prerequisites are met, but names no owner or escalation path for an unmet prerequisite (D7 'No' branch is UNDEFINED).",
+      "impact": "The start date is delayed, the candidate is left waiting, and the candidate may withdraw.",
+      "quantified_impact": [
+        {
+          "metric": "Prerequisites that each block the EOD",
+          "value": "5",
+          "basis": "Appendix 1: TSN accepted, ISA finished, onboarding documents received, SAC completed, favorable suitability"
+        }
+      ],
+      "severity": "high",
+      "severity_reason": "Any one of five items can stall the EOD, and none has a follow-up owner, so this is likely and it directly delays the start.",
+      "addressed_by": [
+        "A22",
+        "A1"
+      ]
+    },
+    {
+      "id": "R3",
+      "process": "Complete pre-employment clearance",
+      "step": "S20",
+      "risk_type": "manual_handoff",
+      "what_could_go_wrong": "The fingerprints and HRO 1197 are shipped by courier and sit untracked until HRD happens to receive them. A late or lost package goes unnoticed while the EOD cannot be set.",
+      "cause": "The 'When Legal Selection is Confirmed' checklist requires a UPS/FedEx tracking number but gives no receipt confirmation or follow-up step. Appendix 1 says the EOD will not be set until the fingerprints and HRO 1197 arrive.",
+      "impact": "The whole clearance timeline slides. The example timeline shows HR waiting about two weeks for fingerprints.",
+      "quantified_impact": [
+        {
+          "metric": "Example wait for fingerprints",
+          "value": "About 2 weeks (Oct 5 to Oct 18)",
+          "basis": "Typical Hiring Timeframe calendar"
+        },
+        {
+          "metric": "Untracked handoffs",
+          "value": "1 (Hiring Manager to HRD Personnel Security)",
+          "basis": "Handoff after S20"
+        }
+      ],
+      "severity": "high",
+      "severity_reason": "The SOP's own example shows this is the longest wait, and the EOD depends on it.",
+      "addressed_by": [
+        "A3",
+        "A4"
+      ]
+    },
+    {
+      "id": "R4",
+      "process": "Complete pre-employment clearance",
+      "step": "S3, S26, S27, S36",
+      "risk_type": "conflicting_rule",
+      "what_could_go_wrong": "The supervisor tells the candidate a start date at selection, but HRD sets a different date after clearance. Arrival preparation is then timed to the wrong day.",
+      "cause": "The SOP gives three versions of who sets the EOD and when. Flowchart - Before Hire has the Hiring Manager establish the EOD with HR Staffing at selection. Appendix 1 says HRD sets it only after the prerequisites are met. 'When the Final Offer has been Accepted' has the supervisor coordinate with HR to establish it after the final offer, which already contains the EOD.",
+      "impact": "The candidate gets conflicting information, and equipment, badge, and sponsor arrangements may be ready on the wrong date.",
+      "quantified_impact": [
+        {
+          "metric": "Sections giving a different EOD owner or timing",
+          "value": "3",
+          "basis": "Flowchart - Before Hire; Appendix 1; When the Final Offer has been Accepted"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "The conflict is likely to cause confusion on every hire, but the impact is rework rather than loss.",
+      "addressed_by": [
+        "A1"
+      ]
+    },
+    {
+      "id": "R5",
+      "process": "Set up email and network account",
+      "step": "S33",
+      "risk_type": "conflicting_rule",
+      "what_could_go_wrong": "The supervisor follows the first-week checklist and submits the network/PIV-exclusion request after the new hire arrives, rather than when the name appears in the GAL. The new hire then has no network access in the first days.",
+      "cause": "Appendix 1 and Flowchart - Before Hire say to submit the Service Now request as soon as the name appears in the GAL (before hire). The First Day - First Week checklist lists the same SNOW request as a first-week task.",
+      "impact": "The new hire loses productive time, and part of the 30-day username/password window may be spent waiting.",
+      "quantified_impact": [
+        {
+          "metric": "Sections giving different timing",
+          "value": "2",
+          "basis": "Appendix 1 item 4; First Day - First Week checklist"
+        },
+        {
+          "metric": "PIV exception access window",
+          "value": "30 days",
+          "basis": "Appendix 1 item 4"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "Supervisors are likely to follow the checklist they work from, which delays access for the new hire.",
+      "addressed_by": [
+        "A6"
+      ]
+    },
+    {
+      "id": "R6",
+      "process": "Activate eAuthentication and Linc Pass",
+      "step": "S64",
+      "risk_type": "conflicting_rule",
+      "what_could_go_wrong": "A missing eAuth or Linc Pass invitation is not noticed until the 14 to 30 day check. That leaves too little of the 30-day grace period to enroll and activate a Linc Pass.",
+      "cause": "Appendix 1 says the invitations arrive 1-5 days after onboarding. Appendix 2 triggers a junk-folder check only after two weeks. The 14 to 30 Days checklist schedules the confirmation at 14 to 30 days after EOD.",
+      "impact": "The new hire may be locked out of the network when the grace period ends, and escalations become urgent.",
+      "quantified_impact": [
+        {
+          "metric": "Expected invitation arrival",
+          "value": "1-5 days after onboarding",
+          "basis": "Appendix 1 item 5"
+        },
+        {
+          "metric": "Earliest scheduled confirmation",
+          "value": "Day 14 after EOD",
+          "basis": "14 to 30 Days after EOD checklist"
+        },
+        {
+          "metric": "Grace period",
+          "value": "30 days",
+          "basis": "Appendix 1"
+        }
+      ],
+      "severity": "high",
+      "severity_reason": "Detection is built in late against a hard 30-day access deadline.",
+      "addressed_by": [
+        "A7"
+      ]
+    },
+    {
+      "id": "R7",
+      "process": "Activate eAuthentication and Linc Pass",
+      "step": "S66",
+      "risk_type": "conflicting_rule",
+      "what_could_go_wrong": "The supervisor emails the wrong ATAC address about a missing eAuth invitation, and the request is delayed or never handled.",
+      "cause": "The 14 to 30 Days checklist gives Help@usda.gov, while Appendix 2 (Information Technology Division item 5) gives APHIS.Help@usda.gov.",
+      "impact": "The access problem takes longer to resolve.",
+      "quantified_impact": [
+        {
+          "metric": "Different ATAC addresses",
+          "value": "2",
+          "basis": "14 to 30 Days after EOD; Appendix 2"
+        }
+      ],
+      "severity": "low",
+      "severity_reason": "One address may forward to the other, but the conflict adds avoidable delay.",
+      "addressed_by": [
+        "A8"
+      ]
+    },
+    {
+      "id": "R8",
+      "process": "Set up email and network account",
+      "step": "S34",
+      "risk_type": "undefined_exception",
+      "what_could_go_wrong": "The 30-day username/password exception expires before the Linc Pass is activated, and the new hire cannot log in. Escalations to ATAC or HRD PSS also have no stated next step.",
+      "cause": "Appendix 1 says access after 30 days requires a Linc Pass and PIN or eAuth, but gives no handling if the Linc Pass is not ready. The 14 to 30 Days checklist ends at 'contact ATAC' or 'contact HRD PSS' with no follow-up.",
+      "impact": "The new hire loses network access, and work and training stop.",
+      "quantified_impact": [
+        {
+          "metric": "Grace period",
+          "value": "30 days",
+          "basis": "Appendix 1"
+        },
+        {
+          "metric": "Typical Linc Pass turnaround",
+          "value": "Within 7 days, depending on enrollment station volume",
+          "basis": "Typical Hiring Timeframe"
+        }
+      ],
+      "severity": "high",
+      "severity_reason": "The deadline is hard, the outcome is a lockout, and there is no fallback.",
+      "addressed_by": [
+        "A7",
+        "A8",
+        "A2"
+      ]
+    },
+    {
+      "id": "R9",
+      "process": "Conduct first-day and first-week orientation",
+      "step": "S52",
+      "risk_type": "vague_ownership_or_timing",
+      "what_could_go_wrong": "Nobody returns the I-9 documents to HRD Minneapolis within three days of the reporting date, because each person assumes someone else will.",
+      "cause": "Table 2 says Day One paperwork is 'typically handled by the Administrative Staff' and the I-9 'must be returned' within 3 days, but does not name who returns it or what happens if the deadline is missed.",
+      "impact": "An e-Verify compliance miss for the agency.",
+      "quantified_impact": [
+        {
+          "metric": "I-9 return deadline",
+          "value": "3 days after the reporting date",
+          "basis": "Table 2: Day One Paperwork"
+        }
+      ],
+      "severity": "high",
+      "severity_reason": "The deadline is short and legally required, and its owner is unclear.",
+      "addressed_by": [
+        "A9"
+      ]
+    },
+    {
+      "id": "R10",
+      "process": "Activate eAuthentication and Linc Pass",
+      "step": "S75",
+      "risk_type": "vague_ownership_or_timing",
+      "what_could_go_wrong": "Nobody contacts HR Systems Access or FATA to add the EIN, so the new hire cannot use WebTA or Concur when the first timesheet or trip comes due.",
+      "cause": "Flowchart - After Hire shows 'Contact HR Systems Access to have EIN added' and 'Contact FATA' with no actor.",
+      "impact": "The timesheet is late (WebTA is due by the end of the pay period) and travel booking is blocked.",
+      "quantified_impact": [
+        {
+          "metric": "Unowned contacts",
+          "value": "2 (HR Systems Access, FATA)",
+          "basis": "Flowchart - After Hire"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "It is likely to be missed because no one owns it, and it blocks pay-period tasks.",
+      "addressed_by": [
+        "A15"
+      ]
+    },
+    {
+      "id": "R11",
+      "process": "Activate eAuthentication and Linc Pass",
+      "step": "S61",
+      "risk_type": "rekeying",
+      "what_could_go_wrong": "The Government email address is retyped into EmpowHR with a typo. The eAuth invitation goes to a wrong address and the new hire never receives it.",
+      "cause": "Flowchart - After Hire: 'Add Govt email into two (2) EmpowHR fields', copied from the GAL that ITD created (Appendix 2).",
+      "impact": "Activation is delayed and the new hire must escalate to ATAC.",
+      "quantified_impact": [
+        {
+          "metric": "Manual entries of the same email",
+          "value": "2",
+          "basis": "Flowchart - After Hire"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "Rekeying happens for every hire, and an error blocks eAuth.",
+      "addressed_by": []
+    },
+    {
+      "id": "R12",
+      "process": "Complete pre-employment clearance",
+      "step": "S13",
+      "risk_type": "rekeying",
+      "what_could_go_wrong": "ISA completion is recorded in several places, and one copy is wrong or missing. As a result, ITD is not alerted to create the email account, or AgLearn shows the training as incomplete.",
+      "cause": "Flowchart - Before Hire records ISA completion in the portal and uploads the certificate into USAS Onboarding. Appendix 2 (HRD item 4) has HRD update AgLearn with the completion date. HRD's alert to ITD depends on ISA completion.",
+      "impact": "Email and AD account creation is delayed, and training records are wrong.",
+      "quantified_impact": [
+        {
+          "metric": "Places ISA completion is recorded",
+          "value": "3 (portal, USAS Onboarding, AgLearn)",
+          "basis": "Flowchart - Before Hire; Appendix 2"
+        }
+      ],
+      "severity": "low",
+      "severity_reason": "The data is simple, but the multiple entries add delay risk to account creation.",
+      "addressed_by": [
+        "A12"
+      ]
+    },
+    {
+      "id": "R13",
+      "process": "Set up email and network account",
+      "step": "S30-S33",
+      "risk_type": "manual_handoff",
+      "what_could_go_wrong": "ITD creates the email address, but nobody tells the Hiring Manager. The Service Now request waits until the manager happens to check the GAL.",
+      "cause": "Appendix 1 item 4 makes the SNOW request depend on the name appearing in the GAL, but no section says anyone notifies the Hiring Manager.",
+      "impact": "Network and equipment setup start late, and the new hire may arrive without access.",
+      "quantified_impact": [
+        {
+          "metric": "Handoffs with no notification",
+          "value": "2 (HRD to ITD, ITD to Hiring Manager)",
+          "basis": "Handoffs after S30 and S32"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "This happens on every hire and depends on someone manually checking the GAL.",
+      "addressed_by": [
+        "A6"
+      ]
+    },
+    {
+      "id": "R14",
+      "process": "Complete pre-employment clearance",
+      "step": "S24 / S38",
+      "risk_type": "missing_control",
+      "what_could_go_wrong": "Required drug testing or medical clearances are still open when the EOD is set. The new hire could start a position before a required clearance is complete.",
+      "cause": "The 'When Legal Selection is Confirmed' checklist says to start these tasks 'as soon as possible', with no deadline. The Appendix 1 EOD prerequisites do not include them, and 'When the Final Offer has been Accepted' still asks for their status after the offer.",
+      "impact": "Compliance and safety exposure for positions that need the clearance.",
+      "quantified_impact": [
+        {
+          "metric": "Times status is checked manually",
+          "value": "2 (S24, S38)",
+          "basis": "Two checklist sections"
+        },
+        {
+          "metric": "EOD prerequisites that exclude these clearances",
+          "value": "5 listed, none medical or drug test",
+          "basis": "Appendix 1"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "The impact for clearance-required positions is serious, but the step only applies to some hires.",
+      "addressed_by": [
+        "A1",
+        "A22",
+        "A18"
+      ]
+    },
+    {
+      "id": "R15",
+      "process": "Complete pre-employment clearance",
+      "step": "S10 / S11",
+      "risk_type": "vague_ownership_or_timing",
+      "what_could_go_wrong": "Transcripts and drug test results, or the forms of a new hire not using the Onboarding Application, are never collected, because no one is named to collect them.",
+      "cause": "Table 1 says asterisked items are 'collected outside the Onboarding system' without saying by whom. Appendix 1 covers only the ISA link for non-application hires.",
+      "impact": "The onboarding document prerequisite stays unmet, which blocks the EOD (D7).",
+      "quantified_impact": [
+        {
+          "metric": "Items collected outside the system with no owner",
+          "value": "2 (transcripts, drug testing)",
+          "basis": "Table 1"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "This applies to every hire with transcripts and blocks the EOD.",
+      "addressed_by": [
+        "A1"
+      ]
+    },
+    {
+      "id": "R16",
+      "process": "Conduct 14 to 30 day follow-up",
+      "step": "S86-S90",
+      "risk_type": "manual_handoff",
+      "what_could_go_wrong": "Requests for a purchase card, fleet PIN, travel card, passport, or international clearance go to separate offices by ad hoc contact, and one stalls with no record that it was made.",
+      "cause": "The 14 to 30 Days checklist sends each request to a different office (AAMD twice, FATA, FMD Travel Team, International Services) with no tracking. 'When the Final Offer has been Accepted' says contact with POCs is ongoing until the new hire is fully functioning.",
+      "impact": "The new hire cannot travel or buy items needed for the job, and it takes longer to become fully functioning.",
+      "quantified_impact": [
+        {
+          "metric": "Separate requests",
+          "value": "5",
+          "basis": "S86 to S90"
+        },
+        {
+          "metric": "Offices contacted",
+          "value": "4",
+          "basis": "AAMD, FATA, FMD Travel Team, International Services"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "There are several untracked handoffs per hire, but each one affects only some hires.",
+      "addressed_by": [
+        "A14"
+      ]
+    },
+    {
+      "id": "R17",
+      "process": "Complete pre-employment clearance",
+      "step": "S8 / D1",
+      "risk_type": "undefined_exception",
+      "what_could_go_wrong": "The candidate declines or does not respond to the TSN, and the supervisor's reminders and preparations continue with no defined close-out.",
+      "cause": "Appendix 1 depends on TSN acceptance, but the 'No' branch of D1 has no next step.",
+      "impact": "Supervisor effort is wasted and any refill of the vacancy is delayed.",
+      "quantified_impact": [
+        {
+          "metric": "Decision branches with no next step",
+          "value": "1 (D1 'No')",
+          "basis": "Decision D1"
+        }
+      ],
+      "severity": "low",
+      "severity_reason": "A decline is infrequent, and the impact is mostly wasted effort.",
+      "addressed_by": [
+        "A1"
+      ]
+    },
+    {
+      "id": "R18",
+      "process": "Conduct 30 to 90 day development check-ins",
+      "step": "S93",
+      "risk_type": "vague_ownership_or_timing",
+      "what_could_go_wrong": "The benefits check-ins 'around days 30 and 45' slip, and the new hire misses benefit decisions.",
+      "cause": "The 30 to 90 Days checklist marks this as a REMINDER with approximate days and no tracking mechanism.",
+      "impact": "The new hire may lose benefit elections, which is a direct harm to the employee.",
+      "quantified_impact": [
+        {
+          "metric": "Scheduled check-ins",
+          "value": "2 (around days 30 and 45)",
+          "basis": "30 to 90 Days after EOD"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "The check-ins rely on the supervisor's memory, and the harm to the employee could be significant.",
+      "addressed_by": [
+        "A2"
+      ]
+    }
+  ],
+  "recommendations": [
+    {
+      "id": "A1",
+      "process": "Complete pre-employment clearance",
+      "step": "S9, S24",
+      "label": "digitize",
+      "proposed_change": "The paper Supervisor/Manager Checklist becomes an Onboarding Tracker: a Power Apps form over a SharePoint list, with one record per new hire. It holds milestone fields (TSN accepted or declined, ISA, fingerprints shipped and received, SAC/suitability, additional clearances, EOD, items collected outside the system and their owners). HRD and the supervisor update one shared record.",
+      "reason": "Status currently lives in separate checklists and email, so prerequisites, additional clearances, and the EOD have no single owner or source.",
+      "implementation_steps": [
+        "Create a SharePoint list 'Onboarding Tracker' with columns for the new hire, supervisor, HRD POC, location, Linc Pass exempt (Y/N), each Appendix 1 prerequisite, additional clearances (S23), transcript and drug test collection owner, and EOD (editable only by HRD).",
+        "Build a Power Apps canvas app from the list, with views for supervisor, HRD, and Administrative Staff.",
+        "Set item-level permissions so HRD owns the EOD and prerequisite fields.",
+        "Add a status choice that includes 'TSN declined - closed'.",
+        "Pilot with one Program and adjust the fields."
+      ],
+      "suggested_tool": "Power Apps + SharePoint",
+      "value": 5,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 15,
+        "occurrence": "per new hire",
+        "basis": "Estimate of supervisor time saved chasing status by email; the map shows no step removed by this change alone."
+      },
+      "resolves_risks": [
+        "R2",
+        "R4",
+        "R14",
+        "R15",
+        "R17"
+      ]
+    },
+    {
+      "id": "A2",
+      "process": "Complete pre-employment clearance",
+      "step": "S7",
+      "label": "automate",
+      "proposed_change": "Manual calendar reminders are replaced by a flow that runs when HRD enters the EOD in the tracker. It creates dated Planner tasks and Outlook reminders for every checklist phase (first week, 14 to 30 days, 30 to 90 days), including the day 30 and day 45 benefits check-ins and the I-9 deadline.",
+      "reason": "Every checklist item is time-boxed relative to the EOD and is rule-based.",
+      "implementation_steps": [
+        "Create a SharePoint list 'Checklist Template' with each checklist item, its phase, its offset in days from the EOD, and its owner role.",
+        "Build a flow triggered when the EOD in the Onboarding Tracker is modified.",
+        "For each template item, calculate the due date (EOD plus offset) and create a Planner task assigned to the supervisor or Administrative Staff.",
+        "Create Outlook events for the day 30 and day 45 benefits check-ins.",
+        "Add a daily recurrence flow that emails a digest of overdue tasks to their owners."
+      ],
+      "suggested_tool": "Power Automate + Planner + Outlook",
+      "value": 5,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 20,
+        "occurrence": "per new hire",
+        "basis": "Estimate of time to set reminders for about 50 checklist items by hand; this is an estimate."
+      },
+      "resolves_risks": [
+        "R8",
+        "R18"
+      ]
+    },
+    {
+      "id": "A3",
+      "process": "Complete pre-employment clearance",
+      "step": "S20",
+      "label": "automate",
+      "proposed_change": "The Hiring Manager logs the courier tracking number in the tracker, which asks HRD Personnel Security to confirm receipt. If receipt is not confirmed within a configurable number of days, the flow reminds both parties.",
+      "reason": "The shipment is the longest wait in the example timeline and has no follow-up.",
+      "implementation_steps": [
+        "Add 'Tracking number', 'Shipped date', and 'Received by PSS' columns to the tracker.",
+        "Build a flow triggered when the tracking number is entered that emails HRD Personnel Security a receipt-confirmation link.",
+        "Add a scheduled check: if not received within the threshold the Program sets, email the Hiring Manager and HRD PSS.",
+        "Update the prerequisite status when receipt is confirmed."
+      ],
+      "suggested_tool": "Power Automate + SharePoint + Outlook",
+      "value": 4,
+      "effort": 3,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 10,
+        "occurrence": "per fingerprint shipment",
+        "basis": "Estimate; makes the S20 handoff visible but does not remove it. Wait reduction is not claimed."
+      },
+      "resolves_risks": [
+        "R3"
+      ]
+    },
+    {
+      "id": "A4",
+      "process": "Complete pre-employment clearance",
+      "step": "S14",
+      "label": "automate",
+      "proposed_change": "Based on the location in the tracker, a flow emails the new hire either the Live Scan locations list and operator contact or SF-87 card instructions, along with the HRO 1197 requirement.",
+      "reason": "The Typical Hiring Timeframe note says helping with fingerprinting 'can speed up the Onboarding process significantly', and the routing at D3 is rule-based.",
+      "implementation_steps": [
+        "Add a 'Near Live Scan site' choice column (DC/MD, Minneapolis, Ames, Fort Collins, Raleigh, None).",
+        "Build a flow triggered when TSN accepted is set.",
+        "Use a condition to send an email template with the Live Scan list link or SF-87 instructions.",
+        "Create a Planner task for the supervisor to mail the cards if the new hire is not near a Live Scan site."
+      ],
+      "suggested_tool": "Power Automate + Outlook",
+      "value": 3,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 10,
+        "occurrence": "per new hire",
+        "basis": "Estimate of time to look up the location and write instructions."
+      },
+      "resolves_risks": [
+        "R3"
+      ]
+    },
+    {
+      "id": "A5",
+      "process": "Complete pre-employment clearance",
+      "step": "S6",
+      "label": "automate",
+      "proposed_change": "A flow drafts the Appendix 6 welcome email with the required items (TSN, logistics, I-9 identity, Before You Start link, fingerprints). The supervisor personalizes the office paragraph and sends it; the phone call remains optional.",
+      "reason": "Standard content is retyped for every hire.",
+      "implementation_steps": [
+        "Store the Appendix 6 template and requirements text in a SharePoint list.",
+        "Build a flow triggered from the tracker that creates a draft email in the supervisor's mailbox.",
+        "The supervisor edits the office paragraph and sends it."
+      ],
+      "suggested_tool": "Power Automate + Outlook",
+      "value": 2,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 10,
+        "occurrence": "per new hire",
+        "basis": "Estimate."
+      },
+      "resolves_risks": []
+    },
+    {
+      "id": "A6",
+      "process": "Set up email and network account",
+      "step": "S33",
+      "label": "automate",
+      "proposed_change": "A daily flow checks whether the new hire's name appears in the directory and notifies the Hiring Manager right away, with a prefilled Service Now network/PIV-exclusion request. This sets the pre-hire timing as the standard.",
+      "reason": "The GAL trigger is currently watched by hand, and two sections give conflicting timing.",
+      "implementation_steps": [
+        "Add a 'Listed in GAL' column to the tracker.",
+        "Build a scheduled flow using Office 365 Users 'Search for users' on the new hire's name for open records.",
+        "When found, update the tracker and send the Hiring Manager a Teams or email notice with the SNOW link and field values.",
+        "Optionally use the ServiceNow connector (premium) to create the request directly after the Hiring Manager confirms.",
+        "Ask the SOP owner to remove the SNOW item from the First Day - First Week checklist."
+      ],
+      "suggested_tool": "Power Automate + Office 365 Users + ServiceNow connector",
+      "value": 4,
+      "effort": 3,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 15,
+        "occurrence": "per new hire",
+        "basis": "Estimate; removes repeated manual GAL checks. The handoff from ITD to Hiring Manager remains but is now notified."
+      },
+      "resolves_risks": [
+        "R5",
+        "R13"
+      ]
+    },
+    {
+      "id": "A7",
+      "process": "Activate eAuthentication and Linc Pass",
+      "step": "S64",
+      "label": "automate",
+      "proposed_change": "At EOD plus 5 days, a flow asks the new hire directly (Teams adaptive card, or email to a personal address) whether both the eAuth and Linc Pass invitations arrived. It records the answer in the tracker, sends junk-folder instructions if one is missing, and alerts the supervisor if it is still missing.",
+      "reason": "Invitations arrive 1-5 days after onboarding, but confirmation is scheduled at day 14 or later, against a 30-day grace period.",
+      "implementation_steps": [
+        "Add 'eAuth invite received' and 'Linc Pass invite received' columns to the tracker.",
+        "Build a daily flow that selects records where EOD plus 5 equals today and Linc Pass exempt is No.",
+        "Post an adaptive card to the new hire and wait for the response.",
+        "If an invite is missing, send the Appendix 2 junk and deleted folder instructions and re-ask after one business day.",
+        "If still missing, update the tracker and notify the supervisor, which starts the escalation flow (A8)."
+      ],
+      "suggested_tool": "Power Automate + Teams adaptive cards + SharePoint",
+      "value": 4,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 2,
+        "steps_removed": 0,
+        "wait_days_removed": 9,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 10,
+        "occurrence": "per new hire",
+        "basis": "Removes the Supervisor-to-New Hire and New Hire-to-Supervisor handoffs after S64 and S65. Moves the check from day 14 (earliest in the 14 to 30 Days checklist) to day 5 (latest invitation arrival in Appendix 1), which is 9 days. Minutes are an estimate."
+      },
+      "resolves_risks": [
+        "R6",
+        "R8"
+      ]
+    },
+    {
+      "id": "A8",
+      "process": "Activate eAuthentication and Linc Pass",
+      "step": "S66, S67",
+      "label": "automate",
+      "proposed_change": "When the tracker shows an invitation is still missing, a flow sends a standardized escalation email to the single confirmed ATAC address or to HRD PSS, logs the date, and reminds the supervisor if there is no resolution before a set point in the 30-day grace period.",
+      "reason": "There are two conflicting ATAC addresses and no follow-up after contact.",
+      "implementation_steps": [
+        "Confirm the correct ATAC address with ITD and store the contacts in a SharePoint config list.",
+        "Build a flow triggered when an 'invite missing' status is set.",
+        "Send a templated email with the new hire details and log the escalation date.",
+        "Schedule a follow-up reminder to the supervisor based on the days remaining in the 30-day grace period."
+      ],
+      "suggested_tool": "Power Automate + Outlook + SharePoint",
+      "value": 3,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 10,
+        "occurrence": "per missing-invitation escalation",
+        "basis": "Estimate."
+      },
+      "resolves_risks": [
+        "R7",
+        "R8"
+      ]
+    },
+    {
+      "id": "A9",
+      "process": "Conduct first-day and first-week orientation",
+      "step": "S52",
+      "label": "automate",
+      "proposed_change": "On the EOD, a flow assigns a named Administrative Staff member a task to return the I-9 to HRD Minneapolis, due EOD plus 3 days. If the task is not marked done by then, the flow alerts the supervisor and the Onboarding POC.",
+      "reason": "The 3-day e-Verify deadline has no named owner.",
+      "implementation_steps": [
+        "Add an 'Administrative Staff owner' column to the tracker, required before the EOD.",
+        "Build a flow that creates the Planner task on the EOD with a due date of EOD plus 3.",
+        "Add a scheduled check that escalates incomplete tasks on day 3.",
+        "Record the I-9 return date in the tracker."
+      ],
+      "suggested_tool": "Power Automate + Planner",
+      "value": 3,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 5,
+        "occurrence": "per new hire",
+        "basis": "Estimate."
+      },
+      "resolves_risks": [
+        "R9"
+      ]
+    },
+    {
+      "id": "A10",
+      "process": "Conduct first-day and first-week orientation",
+      "step": "S50",
+      "label": "keep_human",
+      "proposed_change": "Administering the Oath of Office and inspecting I-9 identity documents stay in person with Administrative Staff.",
+      "reason": "These are legal attestation and identity verification steps.",
+      "implementation_steps": [
+        "No automation; record completion in the tracker."
+      ],
+      "suggested_tool": "None",
+      "value": 1,
+      "effort": 1,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 0,
+        "occurrence": "per new hire",
+        "basis": "No change."
+      },
+      "resolves_risks": []
+    },
+    {
+      "id": "A11",
+      "process": "Complete pre-employment clearance",
+      "step": "S22",
+      "label": "keep_human",
+      "proposed_change": "The SAC review and suitability determination stay with HRD Personnel Security.",
+      "reason": "This is a sensitive personnel security judgment.",
+      "implementation_steps": [
+        "No automation; HRD records only the outcome status in the tracker."
+      ],
+      "suggested_tool": "None",
+      "value": 1,
+      "effort": 1,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 0,
+        "occurrence": "per new hire",
+        "basis": "No change."
+      },
+      "resolves_risks": []
+    },
+    {
+      "id": "A12",
+      "process": "Set up email and network account",
+      "step": "S29, S30",
+      "label": "automate",
+      "proposed_change": "When ISA completion is marked in the tracker for a new hire who needs a Government email, a flow sends ITD the email and AD account creation request, so HRD does not need to compile a list and alert ITD by hand.",
+      "reason": "ISA completion is recorded in several places, and the alert to ITD is rule-based.",
+      "implementation_steps": [
+        "Add 'ISA complete date' and 'Needs Gov email' columns to the tracker.",
+        "Build a flow triggered when ISA complete is set and Needs Gov email is Yes.",
+        "Email the ITD queue (or create a ServiceNow record) with the new hire details.",
+        "Log the request date in the tracker and notify HRD so it can update AgLearn."
+      ],
+      "suggested_tool": "Power Automate + SharePoint + Outlook",
+      "value": 3,
+      "effort": 3,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 10,
+        "occurrence": "per new hire",
+        "basis": "Estimate; the USAS and AgLearn entries remain in external systems."
+      },
+      "resolves_risks": [
+        "R12"
+      ]
+    },
+    {
+      "id": "A13",
+      "process": "Recruit and select candidate",
+      "step": "S3",
+      "label": "keep_human",
+      "proposed_change": "The hiring selection stays with the Hiring Manager.",
+      "reason": "This is a judgment about people.",
+      "implementation_steps": [
+        "No automation."
+      ],
+      "suggested_tool": "None",
+      "value": 1,
+      "effort": 1,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 0,
+        "occurrence": "per hire",
+        "basis": "No change."
+      },
+      "resolves_risks": []
+    },
+    {
+      "id": "A14",
+      "process": "Conduct 14 to 30 day follow-up",
+      "step": "S86-S90",
+      "label": "digitize",
+      "proposed_change": "One Power Apps 'Cards and Credentials Request' form lets the supervisor check the items needed (purchase card, fleet PIN or GOV, travel card, passport, international travel). A flow routes each item to AAMD, FATA, the FMD Travel Team, or International Services and tracks status.",
+      "reason": "Five untracked requests go to four offices.",
+      "implementation_steps": [
+        "Create a SharePoint list 'Credential Requests' linked to the tracker record.",
+        "Build a Power Apps form with one checkbox per request type.",
+        "Build a flow that emails each selected office from a routing config list and creates a status item.",
+        "Let receiving offices update status through an email link; send weekly open-item reminders to the supervisor."
+      ],
+      "suggested_tool": "Power Apps + SharePoint + Power Automate",
+      "value": 3,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 20,
+        "occurrence": "per new hire needing cards or credentials",
+        "basis": "Estimate; the five handoffs remain but are tracked."
+      },
+      "resolves_risks": [
+        "R16"
+      ]
+    },
+    {
+      "id": "A15",
+      "process": "Activate eAuthentication and Linc Pass",
+      "step": "S75",
+      "label": "automate",
+      "proposed_change": "When eAuth registration is confirmed in the tracker, a flow assigns the supervisor an EIN task and sends prefilled requests to HR Systems Access (WebTA) and FATA (Concur).",
+      "reason": "The flowchart shows the step with no owner.",
+      "implementation_steps": [
+        "Add 'eAuth registered' and 'EIN added' columns.",
+        "Build a flow triggered on eAuth registered that creates a Planner task for the supervisor.",
+        "Send templated emails to HR Systems Access and FATA from a config list.",
+        "Remind the supervisor before the end of the first pay period if EIN added is still No."
+      ],
+      "suggested_tool": "Power Automate + Planner + Outlook",
+      "value": 2,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 5,
+        "occurrence": "per new hire",
+        "basis": "Estimate."
+      },
+      "resolves_risks": [
+        "R10"
+      ]
+    },
+    {
+      "id": "A16",
+      "process": "Conduct 14 to 30 day follow-up",
+      "step": "S76",
+      "label": "keep_human",
+      "proposed_change": "Reviewing performance expectations and issuing the Performance Plan stay with the supervisor.",
+      "reason": "This is a judgment about an employee's performance.",
+      "implementation_steps": [
+        "No automation; the A2 task reminds the supervisor within 30 days."
+      ],
+      "suggested_tool": "None",
+      "value": 1,
+      "effort": 1,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 0,
+        "occurrence": "per new hire",
+        "basis": "No change."
+      },
+      "resolves_risks": []
+    },
+    {
+      "id": "A17",
+      "process": "Conduct 30 to 90 day development check-ins",
+      "step": "S92",
+      "label": "keep_human",
+      "proposed_change": "IDP discussion and approval stay with the supervisor.",
+      "reason": "This is a development decision about a person.",
+      "implementation_steps": [
+        "No automation."
+      ],
+      "suggested_tool": "None",
+      "value": 1,
+      "effort": 1,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 0,
+        "occurrence": "per new hire",
+        "basis": "No change."
+      },
+      "resolves_risks": []
+    },
+    {
+      "id": "A18",
+      "process": "Prepare for new hire arrival",
+      "step": "S38",
+      "label": "eliminate",
+      "proposed_change": "Remove the separate request to the new hire for drug testing and medical clearance status. That status is already tracked in the tracker from S24.",
+      "reason": "It duplicates S24's tracking of the same clearances.",
+      "implementation_steps": [
+        "Remove the item from the 'When the Final Offer has been Accepted' checklist.",
+        "Show the additional clearance status on the tracker's supervisor view."
+      ],
+      "suggested_tool": "SharePoint",
+      "value": 2,
+      "effort": 1,
+      "impact": {
+        "handoffs_removed": 1,
+        "steps_removed": 1,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 10,
+        "occurrence": "per new hire",
+        "basis": "Removes S38 and its Supervisor-to-New Hire handoff; minutes are an estimate."
+      },
+      "resolves_risks": [
+        "R14"
+      ]
+    },
+    {
+      "id": "A19",
+      "process": "Conduct 30 to 90 day development check-ins",
+      "step": "S97",
+      "label": "eliminate",
+      "proposed_change": "Remove the ongoing manual comparison of the supervisor and employee checklists. The shared tracker and the A2 task status show both in one place, and S83 keeps the in-person review.",
+      "reason": "It is redundant once there is a single shared record.",
+      "implementation_steps": [
+        "Remove the item from the 30 to 90 Days checklist.",
+        "Give the new hire read access to their tracker record and tasks."
+      ],
+      "suggested_tool": "SharePoint + Planner",
+      "value": 2,
+      "effort": 1,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 1,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 15,
+        "occurrence": "per checklist review",
+        "basis": "Removes S97; minutes are an estimate."
+      },
+      "resolves_risks": []
+    },
+    {
+      "id": "A20",
+      "process": "Conduct 30 to 90 day development check-ins",
+      "step": "S96",
+      "label": "digitize",
+      "proposed_change": "At day 90, a Microsoft Forms onboarding feedback survey is sent to the new hire automatically, and responses go straight to an HR-owned list.",
+      "reason": "Feedback currently passes through the supervisor to HR with no defined channel.",
+      "implementation_steps": [
+        "Create a Microsoft Forms survey owned by HR.",
+        "Build a flow that sends the link at EOD plus 90 days from the tracker.",
+        "Write responses to an HR SharePoint list."
+      ],
+      "suggested_tool": "Microsoft Forms + Power Automate",
+      "value": 2,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 1,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 10,
+        "occurrence": "per new hire",
+        "basis": "Removes the Supervisor-to-Human Resources handoff after S96; minutes are an estimate."
+      },
+      "resolves_risks": []
+    },
+    {
+      "id": "A21",
+      "process": "Conduct first-day and first-week orientation",
+      "step": "S58",
+      "label": "automate",
+      "proposed_change": "When the new hire's account is active, a flow adds them to the team's Microsoft 365 group or Teams team and to the team contact list, so the supervisor does not update and redistribute lists by hand.",
+      "reason": "This is a repeatable list maintenance task.",
+      "implementation_steps": [
+        "Store the team group ID in the tracker.",
+        "Build a flow using Office 365 Groups 'Add member to group' when 'Listed in GAL' is set.",
+        "Add the new hire to a SharePoint team contact list instead of distributing contact lists by hand."
+      ],
+      "suggested_tool": "Power Automate + Office 365 Groups",
+      "value": 2,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 10,
+        "occurrence": "per new hire",
+        "basis": "Estimate."
+      },
+      "resolves_risks": []
+    },
+    {
+      "id": "A22",
+      "process": "Complete pre-employment clearance",
+      "step": "S25",
+      "label": "automate",
+      "proposed_change": "A flow evaluates the five Appendix 1 prerequisites plus any additional clearances in the tracker. It tells HRD and the Hiring Manager which items are missing and who owns them, and alerts the supervisor to pause arrival preparation if suitability is unfavorable.",
+      "reason": "Unmet prerequisites currently have no owner or escalation.",
+      "implementation_steps": [
+        "Add an owner column for each prerequisite in the tracker.",
+        "Build a flow triggered when any prerequisite field is modified that checks all of them.",
+        "If items are missing, send a weekly digest to the owners and the Hiring Manager.",
+        "If all items are met, notify HRD that the EOD can be set.",
+        "If SAC or suitability is set to unfavorable, notify the supervisor to pause preparation and contact HRD, with no details beyond the status."
+      ],
+      "suggested_tool": "Power Automate + SharePoint",
+      "value": 4,
+      "effort": 3,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 15,
+        "occurrence": "per new hire",
+        "basis": "Estimate."
+      },
+      "resolves_risks": [
+        "R1",
+        "R2",
+        "R14"
+      ]
+    },
+    {
+      "id": "A23",
+      "process": "Conduct first-day and first-week orientation",
+      "step": "S59",
+      "label": "keep_human",
+      "proposed_change": "The supervisor's personal first-week meeting stays in person.",
+      "reason": "This step is about relationship building and judgment.",
+      "implementation_steps": [
+        "No automation."
+      ],
+      "suggested_tool": "None",
+      "value": 1,
+      "effort": 1,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 0,
+        "occurrence": "per new hire",
+        "basis": "No change."
+      },
+      "resolves_risks": []
+    }
+  ],
+  "starter_flows": [
+    {
+      "recommendation_id": "A1",
+      "trigger": "SharePoint 'When an item is created' on the Onboarding Tracker list (the supervisor submits the Power Apps new-hire form after legal selection is confirmed)",
+      "actions": [
+        "Initialize the milestone fields to 'Not started' and the status to 'Selection confirmed'.",
+        "Grant HRD onboarding POC edit access to the item (SharePoint 'Grant access to an item').",
+        "Send the supervisor and HRD POC an email with the tracker record link.",
+        "On the 'When an item is modified' trigger, compare the changed prerequisite fields and post a Teams message to the supervisor summarizing the change.",
+        "If status is set to 'TSN declined', set the record to Closed and notify the supervisor to cancel arrival tasks."
+      ],
+      "approval_step": ""
+    },
+    {
+      "recommendation_id": "A2",
+      "trigger": "SharePoint 'When an item is modified' on the Onboarding Tracker, with a condition that the EOD Date has changed and is not empty",
+      "actions": [
+        "Get the items from the 'Checklist Template' list (item, phase, offset days, owner role).",
+        "Apply to each: calculate the due date as addDays(EOD, offset).",
+        "Resolve the owner (supervisor or Administrative Staff) from the tracker record.",
+        "Create a Planner task in the new hire's plan with title, due date, and assignee.",
+        "Create Outlook calendar events for the supervisor at EOD plus 30 and EOD plus 45 for the benefits check-ins.",
+        "Write the created task IDs back to the tracker.",
+        "A separate daily recurrence flow lists incomplete Planner tasks past their due date and emails each owner a digest."
+      ],
+      "approval_step": ""
+    },
+    {
+      "recommendation_id": "A7",
+      "trigger": "Recurrence, daily",
+      "actions": [
+        "Get the items from the Onboarding Tracker where EOD plus 5 days equals today, Linc Pass exempt is No, and the invite fields are empty.",
+        "Post an adaptive card to the new hire in Teams (or email their personal address if they have no Government email) asking: eAuth invitation received? Linc Pass enrollment invitation received?",
+        "Wait for the response and update the 'eAuth invite received' and 'Linc Pass invite received' columns.",
+        "If either is No, send the Appendix 2 instructions to check the deleted items and junk folders, then delay 1 business day and re-post the card.",
+        "If still No, set the 'Invite missing' status (which triggers the A8 escalation flow) and notify the supervisor with the days remaining in the 30-day grace period.",
+        "If both are Yes, mark the step complete and close the supervisor's related Planner task."
+      ],
+      "approval_step": ""
+    }
+  ],
+  "future_state": [
+    {
+      "id": "F1",
+      "process": "Recruit and select candidate",
+      "from_step": "S1",
+      "actor": "HR Classification",
+      "action": "Review and approve the position description",
+      "change": "unchanged"
+    },
+    {
+      "id": "F2",
+      "process": "Recruit and select candidate",
+      "from_step": "S2",
+      "actor": "HR Staffing",
+      "action": "Create and post the vacancy, rank and rate candidates, and create the certificate",
+      "change": "unchanged"
+    },
+    {
+      "id": "F3",
+      "process": "Recruit and select candidate",
+      "from_step": "S3",
+      "actor": "Hiring Manager",
+      "action": "Make the hiring selection",
+      "change": "unchanged"
+    },
+    {
+      "id": "F4",
+      "process": "Recruit and select candidate",
+      "from_step": "S4",
+      "actor": "HR Staffing",
+      "action": "Approve the selection",
+      "change": "unchanged"
+    },
+    {
+      "id": "F5",
+      "process": "Complete pre-employment clearance",
+      "from_step": "S5",
+      "actor": "HRD",
+      "action": "Provide the TSN to the selected candidate",
+      "change": "unchanged"
+    },
+    {
+      "id": "F6",
+      "process": "Complete pre-employment clearance",
+      "from_step": "S6",
+      "actor": "Supervisor",
+      "action": "Personalize and send the flow-drafted Appendix 6 welcome email listing all pre-employment requirements; call if desired",
+      "change": "automated"
+    },
+    {
+      "id": "F7",
+      "process": "Complete pre-employment clearance",
+      "from_step": "S7",
+      "actor": "Supervisor",
+      "action": "Receive automatically generated contact reminders and phase tasks from the tracker",
+      "change": "automated"
+    },
+    {
+      "id": "F8",
+      "process": "Complete pre-employment clearance",
+      "from_step": "S8",
+      "actor": "New Hire",
+      "action": "Accept the TSN (a decline closes the tracker record)",
+      "change": "unchanged"
+    },
+    {
+      "id": "F9",
+      "process": "Complete pre-employment clearance",
+      "from_step": "S9",
+      "actor": "Supervisor",
+      "action": "Create the new hire record in the Onboarding Tracker app and coordinate with HRD through the shared record",
+      "change": "digitized"
+    },
+    {
+      "id": "F10",
+      "process": "Complete pre-employment clearance",
+      "from_step": "S10",
+      "actor": "New Hire",
+      "action": "Complete the pre-employment forms in the Onboarding Application; the owners of transcripts and drug testing are recorded in the tracker",
+      "change": "unchanged"
+    },
+    {
+      "id": "F11",
+      "process": "Complete pre-employment clearance",
+      "from_step": "S11",
+      "actor": "Hiring Manager",
+      "action": "Send the ISA public portal link to a new hire not using the Onboarding Application",
+      "change": "unchanged"
+    },
+    {
+      "id": "F12",
+      "process": "Complete pre-employment clearance",
+      "from_step": "S12",
+      "actor": "New Hire",
+      "action": "Take the ISA test",
+      "change": "unchanged"
+    },
+    {
+      "id": "F13",
+      "process": "Complete pre-employment clearance",
+      "from_step": "S13",
+      "actor": "Hiring Official",
+      "action": "Provide the ISA certificate on request and mark ISA complete in the tracker",
+      "change": "unchanged"
+    },
+    {
+      "id": "F14",
+      "process": "Complete pre-employment clearance",
+      "from_step": "S14",
+      "actor": "Hiring Official",
+      "action": "New hire receives location-specific fingerprint instructions (Live Scan list or SF-87) sent automatically from the tracker",
+      "change": "automated"
+    },
+    {
+      "id": "F15",
+      "process": "Complete pre-employment clearance",
+      "from_step": "S15",
+      "actor": "New Hire",
+      "action": "Schedule Live Scan and get fingerprinted",
+      "change": "unchanged"
+    },
+    {
+      "id": "F16",
+      "process": "Complete pre-employment clearance",
+      "from_step": "S16",
+      "actor": "Supervisor",
+      "action": "Provide two sets of SF-87 cards and direct the new hire to a police or TSA station",
+      "change": "unchanged"
+    },
+    {
+      "id": "F17",
+      "process": "Complete pre-employment clearance",
+      "from_step": "S17",
+      "actor": "New Hire",
+      "action": "Get fingerprinted at a police station or other facility",
+      "change": "unchanged"
+    },
+    {
+      "id": "F18",
+      "process": "Complete pre-employment clearance",
+      "from_step": "S18",
+      "actor": "Supervisor",
+      "action": "Complete the HRO 1197 for the new hire",
+      "change": "unchanged"
+    },
+    {
+      "id": "F19",
+      "process": "Complete pre-employment clearance",
+      "from_step": "S19",
+      "actor": "Hiring Manager",
+      "action": "Mark the HRO 1197 'NO - neither Linc Pass nor Site Badge' if the new hire is exempt",
+      "change": "unchanged"
+    },
+    {
+      "id": "F20",
+      "process": "Complete pre-employment clearance",
+      "from_step": "S20",
+      "actor": "Hiring Manager",
+      "action": "Ship the fingerprints and HRO 1197 by UPS/FedEx and log the tracking number in the tracker, which prompts PSS to confirm receipt and sends reminders if overdue",
+      "change": "automated"
+    },
+    {
+      "id": "F21",
+      "process": "Complete pre-employment clearance",
+      "from_step": "NEW",
+      "actor": "HRD Personnel Security",
+      "action": "Confirm receipt of the fingerprints and HRO 1197 through the tracker link",
+      "change": "new"
+    },
+    {
+      "id": "F22",
+      "process": "Complete pre-employment clearance",
+      "from_step": "S21",
+      "actor": "HRD",
+      "action": "Submit the fingerprints to OPM",
+      "change": "unchanged"
+    },
+    {
+      "id": "F23",
+      "process": "Complete pre-employment clearance",
+      "from_step": "S22",
+      "actor": "HRD Personnel Security",
+      "action": "Complete the SAC and suitability determination, and record the outcome status in the tracker",
+      "change": "unchanged"
+    },
+    {
+      "id": "F24",
+      "process": "Complete pre-employment clearance",
+      "from_step": "S23",
+      "actor": "Servicing HR provider",
+      "action": "Alert the supervisor to additional pre-hire tasks",
+      "change": "unchanged"
+    },
+    {
+      "id": "F25",
+      "process": "Complete pre-employment clearance",
+      "from_step": "S24",
+      "actor": "Supervisor",
+      "action": "Start the additional clearances and track them to completion in the tracker",
+      "change": "digitized"
+    },
+    {
+      "id": "F26",
+      "process": "Complete pre-employment clearance",
+      "from_step": "S25",
+      "actor": "HRD",
+      "action": "Receive the automated prerequisite status check listing missing items and owners, or notice that the EOD can be set",
+      "change": "automated"
+    },
+    {
+      "id": "F27",
+      "process": "Complete pre-employment clearance",
+      "from_step": "S26",
+      "actor": "HRD",
+      "action": "Consult with the Hiring Manager on the EOD date",
+      "change": "unchanged"
+    },
+    {
+      "id": "F28",
+      "process": "Complete pre-employment clearance",
+      "from_step": "S27",
+      "actor": "HRD",
+      "action": "Set the EOD and issue the Final Offer Letter",
+      "change": "unchanged"
+    },
+    {
+      "id": "F29",
+      "process": "Complete pre-employment clearance",
+      "from_step": "NEW",
+      "actor": "HRD",
+      "action": "Record the EOD in the tracker as the single source, which generates the dated onboarding tasks",
+      "change": "new"
+    },
+    {
+      "id": "F30",
+      "process": "Complete pre-employment clearance",
+      "from_step": "S28",
+      "actor": "New Hire",
+      "action": "Complete the pre-EOD forms",
+      "change": "unchanged"
+    },
+    {
+      "id": "F31",
+      "process": "Set up email and network account",
+      "from_step": "S29",
+      "actor": "HRD",
+      "action": "New hires with ISA complete who need a Government email are identified automatically from the tracker",
+      "change": "automated"
+    },
+    {
+      "id": "F32",
+      "process": "Set up email and network account",
+      "from_step": "S30",
+      "actor": "HRD",
+      "action": "The email and AD account creation request is sent to ITD automatically and logged",
+      "change": "automated"
+    },
+    {
+      "id": "F33",
+      "process": "Set up email and network account",
+      "from_step": "S31",
+      "actor": "ITD",
+      "action": "Create the Government email in the GAL",
+      "change": "unchanged"
+    },
+    {
+      "id": "F34",
+      "process": "Set up email and network account",
+      "from_step": "S32",
+      "actor": "ITD",
+      "action": "Enable the AD account",
+      "change": "unchanged"
+    },
+    {
+      "id": "F35",
+      "process": "Set up email and network account",
+      "from_step": "S33",
+      "actor": "Hiring Manager",
+      "action": "Receive automatic notice when the name appears in the GAL and submit the prefilled SNOW network/PIV-exclusion request before the EOD",
+      "change": "automated"
+    },
+    {
+      "id": "F36",
+      "process": "Set up email and network account",
+      "from_step": "S34",
+      "actor": "ITD",
+      "action": "Process the 30-day PIV exception and configure equipment and network access",
+      "change": "unchanged"
+    },
+    {
+      "id": "F37",
+      "process": "Set up email and network account",
+      "from_step": "S35",
+      "actor": "Hiring Manager",
+      "action": "Provide a personal email for eAuth if the new hire will have no Government email",
+      "change": "unchanged"
+    },
+    {
+      "id": "F38",
+      "process": "Prepare for new hire arrival",
+      "from_step": "S36",
+      "actor": "Supervisor",
+      "action": "Confirm the EOD logistics (date, time, location, greeter) with the new hire",
+      "change": "unchanged"
+    },
+    {
+      "id": "F39",
+      "process": "Prepare for new hire arrival",
+      "from_step": "S37",
+      "actor": "Supervisor",
+      "action": "Tell the team the start date; optionally request a bio",
+      "change": "unchanged"
+    },
+    {
+      "id": "F40",
+      "process": "Prepare for new hire arrival",
+      "from_step": "S39",
+      "actor": "Supervisor",
+      "action": "Assign a sponsor using the Appendix 7 criteria",
+      "change": "unchanged"
+    },
+    {
+      "id": "F41",
+      "process": "Prepare for new hire arrival",
+      "from_step": "S40",
+      "actor": "Supervisor",
+      "action": "Brief the sponsor and give them the USDA Sponsor Guide",
+      "change": "unchanged"
+    },
+    {
+      "id": "F42",
+      "process": "Prepare for new hire arrival",
+      "from_step": "S41",
+      "actor": "Supervisor",
+      "action": "Decide how to deliver NEO",
+      "change": "unchanged"
+    },
+    {
+      "id": "F43",
+      "process": "Prepare for new hire arrival",
+      "from_step": "S42",
+      "actor": "Supervisor",
+      "action": "Develop the two-week orientation schedule",
+      "change": "unchanged"
+    },
+    {
+      "id": "F44",
+      "process": "Prepare for new hire arrival",
+      "from_step": "S43",
+      "actor": "Supervisor",
+      "action": "Ensure equipment is ordered and imaged",
+      "change": "unchanged"
+    },
+    {
+      "id": "F45",
+      "process": "Prepare for new hire arrival",
+      "from_step": "S44",
+      "actor": "Supervisor",
+      "action": "Prepare the office workspace per Table 3",
+      "change": "unchanged"
+    },
+    {
+      "id": "F46",
+      "process": "Prepare for new hire arrival",
+      "from_step": "S45",
+      "actor": "Supervisor",
+      "action": "Prepare the field equipment per Table 3",
+      "change": "unchanged"
+    },
+    {
+      "id": "F47",
+      "process": "Prepare for new hire arrival",
+      "from_step": "S46",
+      "actor": "Supervisor",
+      "action": "Send the new hire work location information",
+      "change": "unchanged"
+    },
+    {
+      "id": "F48",
+      "process": "Prepare for new hire arrival",
+      "from_step": "S47",
+      "actor": "Supervisor",
+      "action": "Secure first-day physical access",
+      "change": "unchanged"
+    },
+    {
+      "id": "F49",
+      "process": "Prepare for new hire arrival",
+      "from_step": "S48",
+      "actor": "Supervisor",
+      "action": "Create a first-days agenda assuming no computer access",
+      "change": "unchanged"
+    },
+    {
+      "id": "F50",
+      "process": "Prepare for new hire arrival",
+      "from_step": "S49",
+      "actor": "Supervisor",
+      "action": "Keep in contact with POCs on setup until the new hire is fully functioning",
+      "change": "unchanged"
+    },
+    {
+      "id": "F51",
+      "process": "Conduct first-day and first-week orientation",
+      "from_step": "S50",
+      "actor": "Administrative Staff",
+      "action": "Administer the Oath of Office, SF-61, and I-9",
+      "change": "unchanged"
+    },
+    {
+      "id": "F52",
+      "process": "Conduct first-day and first-week orientation",
+      "from_step": "S51",
+      "actor": "New Hire",
+      "action": "Attend the NEO webinar and send the photo and form to LPA",
+      "change": "unchanged"
+    },
+    {
+      "id": "F53",
+      "process": "Conduct first-day and first-week orientation",
+      "from_step": "S52",
+      "actor": "Administrative Staff",
+      "action": "Return the I-9 to HRD Minneapolis under an assigned task due EOD plus 3 days, with automatic escalation if overdue",
+      "change": "automated"
+    },
+    {
+      "id": "F54",
+      "process": "Conduct first-day and first-week orientation",
+      "from_step": "S53",
+      "actor": "Supervisor",
+      "action": "Tell the new hire about the My APHIS resources",
+      "change": "unchanged"
+    },
+    {
+      "id": "F55",
+      "process": "Conduct first-day and first-week orientation",
+      "from_step": "S54",
+      "actor": "Supervisor",
+      "action": "Welcome and introduce the new hire to the team",
+      "change": "unchanged"
+    },
+    {
+      "id": "F56",
+      "process": "Conduct first-day and first-week orientation",
+      "from_step": "S55",
+      "actor": "New Hire",
+      "action": "Complete the Emergency Contact Form",
+      "change": "unchanged"
+    },
+    {
+      "id": "F57",
+      "process": "Conduct first-day and first-week orientation",
+      "from_step": "S56",
+      "actor": "Supervisor",
+      "action": "Provide a facility tour",
+      "change": "unchanged"
+    },
+    {
+      "id": "F58",
+      "process": "Conduct first-day and first-week orientation",
+      "from_step": "S57",
+      "actor": "Supervisor",
+      "action": "Arrange the office procedures meeting",
+      "change": "unchanged"
+    },
+    {
+      "id": "F59",
+      "process": "Conduct first-day and first-week orientation",
+      "from_step": "S58",
+      "actor": "Supervisor",
+      "action": "New hire is added automatically to the team group, contact list, and meeting membership",
+      "change": "automated"
+    },
+    {
+      "id": "F60",
+      "process": "Conduct first-day and first-week orientation",
+      "from_step": "S59",
+      "actor": "Supervisor",
+      "action": "Meet personally with the new hire",
+      "change": "unchanged"
+    },
+    {
+      "id": "F61",
+      "process": "Activate eAuthentication and Linc Pass",
+      "from_step": "S60",
+      "actor": "HR Processing",
+      "action": "Process the accession in EmpowHR",
+      "change": "unchanged"
+    },
+    {
+      "id": "F62",
+      "process": "Activate eAuthentication and Linc Pass",
+      "from_step": "S61",
+      "actor": "HR Processing",
+      "action": "Enter the Government email into the two EmpowHR fields",
+      "change": "unchanged"
+    },
+    {
+      "id": "F63",
+      "process": "Activate eAuthentication and Linc Pass",
+      "from_step": "S62",
+      "actor": "Personnel Security",
+      "action": "Sponsor the employee for a Linc Pass",
+      "change": "unchanged"
+    },
+    {
+      "id": "F64",
+      "process": "Activate eAuthentication and Linc Pass",
+      "from_step": "S63",
+      "actor": "HR Personnel Security",
+      "action": "Adjudicate the employee for the Linc Pass",
+      "change": "unchanged"
+    },
+    {
+      "id": "F65",
+      "process": "Activate eAuthentication and Linc Pass",
+      "from_step": "S64",
+      "actor": "New Hire",
+      "action": "Answer the automated EOD plus 5 day check on whether the eAuth and Linc Pass invitations arrived; the answer is logged in the tracker",
+      "change": "automated"
+    },
+    {
+      "id": "F66",
+      "process": "Activate eAuthentication and Linc Pass",
+      "from_step": "S65",
+      "actor": "New Hire",
+      "action": "Check the deleted and junk folders when prompted",
+      "change": "unchanged"
+    },
+    {
+      "id": "F67",
+      "process": "Activate eAuthentication and Linc Pass",
+      "from_step": "S66",
+      "actor": "Supervisor",
+      "action": "A standardized escalation goes automatically to the confirmed ATAC address, with follow-up reminders",
+      "change": "automated"
+    },
+    {
+      "id": "F68",
+      "process": "Activate eAuthentication and Linc Pass",
+      "from_step": "S67",
+      "actor": "Supervisor",
+      "action": "A standardized escalation goes automatically to HRD PSS, with follow-up reminders",
+      "change": "automated"
+    },
+    {
+      "id": "F69",
+      "process": "Activate eAuthentication and Linc Pass",
+      "from_step": "S68",
+      "actor": "New Hire",
+      "action": "Register the eAuth account",
+      "change": "unchanged"
+    },
+    {
+      "id": "F70",
+      "process": "Activate eAuthentication and Linc Pass",
+      "from_step": "S69",
+      "actor": "New Hire",
+      "action": "Attend Linc Pass enrollment",
+      "change": "unchanged"
+    },
+    {
+      "id": "F71",
+      "process": "Activate eAuthentication and Linc Pass",
+      "from_step": "S70",
+      "actor": "Supervisor",
+      "action": "Check the Linc Pass Tracker",
+      "change": "unchanged"
+    },
+    {
+      "id": "F72",
+      "process": "Activate eAuthentication and Linc Pass",
+      "from_step": "S71",
+      "actor": "Credentialing Center",
+      "action": "Check in the printed Linc Pass",
+      "change": "unchanged"
+    },
+    {
+      "id": "F73",
+      "process": "Activate eAuthentication and Linc Pass",
+      "from_step": "S72",
+      "actor": "New Hire",
+      "action": "Attend activation and receive the Linc Pass",
+      "change": "unchanged"
+    },
+    {
+      "id": "F74",
+      "process": "Activate eAuthentication and Linc Pass",
+      "from_step": "S73",
+      "actor": "IT",
+      "action": "Associate the Linc Pass with AD and equipment",
+      "change": "unchanged"
+    },
+    {
+      "id": "F75",
+      "process": "Activate eAuthentication and Linc Pass",
+      "from_step": "S74",
+      "actor": "AAMD",
+      "action": "Grant facility access",
+      "change": "unchanged"
+    },
+    {
+      "id": "F76",
+      "process": "Activate eAuthentication and Linc Pass",
+      "from_step": "S75",
+      "actor": "Supervisor",
+      "action": "Own the EIN task; prefilled requests go automatically to HR Systems Access (WebTA) and FATA (Concur)",
+      "change": "automated"
+    },
+    {
+      "id": "F77",
+      "process": "Conduct 14 to 30 day follow-up",
+      "from_step": "S76",
+      "actor": "Supervisor",
+      "action": "Review expectations and issue the Performance Plan",
+      "change": "unchanged"
+    },
+    {
+      "id": "F78",
+      "process": "Conduct 14 to 30 day follow-up",
+      "from_step": "S77",
+      "actor": "Supervisor",
+      "action": "Coach on core systems",
+      "change": "unchanged"
+    },
+    {
+      "id": "F79",
+      "process": "Conduct 14 to 30 day follow-up",
+      "from_step": "S78",
+      "actor": "Supervisor",
+      "action": "Connect the new hire with a team member or ITD for program-specific software",
+      "change": "unchanged"
+    },
+    {
+      "id": "F80",
+      "process": "Conduct 14 to 30 day follow-up",
+      "from_step": "S79",
+      "actor": "Supervisor",
+      "action": "Follow up on the status of system access",
+      "change": "unchanged"
+    },
+    {
+      "id": "F81",
+      "process": "Conduct 14 to 30 day follow-up",
+      "from_step": "S80",
+      "actor": "Supervisor",
+      "action": "Review training requirements and AgLearn",
+      "change": "unchanged"
+    },
+    {
+      "id": "F82",
+      "process": "Conduct 14 to 30 day follow-up",
+      "from_step": "S81",
+      "actor": "Supervisor",
+      "action": "Check in on the first week",
+      "change": "unchanged"
+    },
+    {
+      "id": "F83",
+      "process": "Conduct 14 to 30 day follow-up",
+      "from_step": "S82",
+      "actor": "Supervisor",
+      "action": "Confirm the WebTA timesheet is completed by the end of the pay period",
+      "change": "unchanged"
+    },
+    {
+      "id": "F84",
+      "process": "Conduct 14 to 30 day follow-up",
+      "from_step": "S83",
+      "actor": "Supervisor",
+      "action": "Review the new hire's checklist in the shared tracker with them",
+      "change": "unchanged"
+    },
+    {
+      "id": "F85",
+      "process": "Conduct 14 to 30 day follow-up",
+      "from_step": "S84",
+      "actor": "Supervisor",
+      "action": "Guide the new hire on tracking performance items",
+      "change": "unchanged"
+    },
+    {
+      "id": "F86",
+      "process": "Conduct 14 to 30 day follow-up",
+      "from_step": "S85",
+      "actor": "Supervisor",
+      "action": "Account for assigned property",
+      "change": "unchanged"
+    },
+    {
+      "id": "F87",
+      "process": "Conduct 14 to 30 day follow-up",
+      "from_step": "S86",
+      "actor": "Supervisor",
+      "action": "Submit one Cards and Credentials Request form; the purchase card request is routed to AAMD and tracked",
+      "change": "digitized"
+    },
+    {
+      "id": "F88",
+      "process": "Conduct 14 to 30 day follow-up",
+      "from_step": "S87",
+      "actor": "Supervisor",
+      "action": "The fleet PIN or GOV request from the same form is routed to AAMD and tracked",
+      "change": "digitized"
+    },
+    {
+      "id": "F89",
+      "process": "Conduct 14 to 30 day follow-up",
+      "from_step": "S88",
+      "actor": "Supervisor",
+      "action": "The travel card request from the same form is routed to FATA and tracked",
+      "change": "digitized"
+    },
+    {
+      "id": "F90",
+      "process": "Conduct 14 to 30 day follow-up",
+      "from_step": "S89",
+      "actor": "Supervisor",
+      "action": "The passport request from the same form is routed to the FMD Travel Team and tracked",
+      "change": "digitized"
+    },
+    {
+      "id": "F91",
+      "process": "Conduct 14 to 30 day follow-up",
+      "from_step": "S90",
+      "actor": "Supervisor",
+      "action": "The international travel request from the same form is routed to International Services and tracked",
+      "change": "digitized"
+    },
+    {
+      "id": "F92",
+      "process": "Conduct 30 to 90 day development check-ins",
+      "from_step": "S91",
+      "actor": "Supervisor",
+      "action": "Arrange stakeholder meetings",
+      "change": "unchanged"
+    },
+    {
+      "id": "F93",
+      "process": "Conduct 30 to 90 day development check-ins",
+      "from_step": "S92",
+      "actor": "Supervisor",
+      "action": "Discuss, review, and approve the IDP",
+      "change": "unchanged"
+    },
+    {
+      "id": "F94",
+      "process": "Conduct 30 to 90 day development check-ins",
+      "from_step": "S93",
+      "actor": "Supervisor",
+      "action": "Hold the benefits check-ins at days 30 and 45, prompted by calendar events",
+      "change": "unchanged"
+    },
+    {
+      "id": "F95",
+      "process": "Conduct 30 to 90 day development check-ins",
+      "from_step": "S94",
+      "actor": "Supervisor",
+      "action": "Discuss mentoring and identify a mentor",
+      "change": "unchanged"
+    },
+    {
+      "id": "F96",
+      "process": "Conduct 30 to 90 day development check-ins",
+      "from_step": "S95",
+      "actor": "Supervisor",
+      "action": "Ensure e-QIP is completed",
+      "change": "unchanged"
+    },
+    {
+      "id": "F97",
+      "process": "Conduct 30 to 90 day development check-ins",
+      "from_step": "S96",
+      "actor": "New Hire",
+      "action": "Complete the automated day-90 Microsoft Forms onboarding survey, which goes directly to HR",
+      "change": "digitized"
+    }
+  ],
+  "eliminated_steps": [
+    "S38",
+    "S97"
+  ]
+}

@@ -1,0 +1,48 @@
+Hand-mapping notes, Moustapha Kourouma, 2026-09-30 (written before any pipeline output was reviewed).
+Granularity rule A. Source file: 01-fcc-purchase-card.pdf (FCCINST 1097.6, pp. 2-9, 14-15).
+
+6.A. General not a listed step but i assume purchase card is initiated between s3 and s4 source 2, 6. 7, 8. 9. 10, 11 and 12 or more so terms and conditions of how to use the card rather than sop on to access the card  16 min 36 sec
+
+1. S1 actor: Bureau/Office Chief, Designee, or the Employee's Manager action: request Purchase Cards for FTEs  input: output: system: FCC source: 1
+2. S2 actor: FTEs action: complete and sign Form A 498 prior to issuance of the purchase card  input: required info output: system: FCC pdf source: 3
+3. S3 actor: FTEs action: complete the GSA purchase card web based training prior to issurance of the purchase card  input: output: training completion system: FCC web training source: 4
+4. S4 actor: APC action: review purchase card usuage to identify inactive accounts  input: output: training completion system: FCC web training source: 5
+5. D1 actor: APC condition: has there been activity on the purchase card within the preceding 3 year period? if yes action: card is inactive and each Bureau/office must confirm the continued need for each inactive account if no no action input: purchase card activity output: if yes, contact to bureau office system: FCC purchase card activity  source: 5
+6. D2 actor: Bureau/office condition: is there continued need for purchase card? if yes action: confirm continued need of purchase card to APC if no action: confirm there is no need or purchase card or do not reply input: reply to APC output: contact to APC system: contact medium source: 5
+
+6.B. it is describing terms and conditions not step by step SOPs each number can be replaced with a bullet point and it would still make sense order doesnt matter
+6.c. Reconciliation source 3 and 4 are descriptions and terms rather than steps 7 min 51 sec
+
+1. S1 actor: Cardholder action: reconcile their monthly SOA within 7 workdays after the end of the billing cycle and sign  input: dated signature output: reconciled monthly SOA system: SOA form source: 1
+2. S2 actor: cardholder action: forward reconciled and signed SOA to AO input: output: email system: email source: 1
+3. S3 actor: AO action: review and sign reconciled SAO within 10 workdays after the end of the billing cycle  input: dated signature output: system: SOA form source: 2
+4. S4 actor: AO action: forward the reconciled and signed SOA to FOC.RDG, and TOG  input: output: email system: email source: 2
+5. S5 actor: Bureau/Office Chief, Designee, or the Employee's Manager action: request Purchase Cards for FTEs  input: output: system: FCC source: 2
+
+6.d. Records Retention i dont recognize this as a SOP more like terms and conditions to hold supporting documemts for transactions
+6.e. cardholder review 4 min 22 sec
+
+1. S1 actor: independent auditors or federal entities  action: periodic and /or random reviews of cardholder purchase card transactions and purchase practices by the APC input: output: review system: cardholder statements source: 1
+2. S2 actor: cardholder action: comply with review by providing all supporting documentation and records of purchases input: supporting documents and records output: system: pdf source: 1
+
+7.e. just a list of things the AO can do not SOP not a process again you can rearrange the number into bullets and it will make sense
+7.f. again a list of things the cardholder can do
+12 disputing a charge
+
+1. S1 actor: Cardholder action: review the receipts  input: output: system: purchase card transactions source: 1
+2. D1 actor: Cardholder condition: is the transaction a dispute? if yes action: contact the merchant in attempt to resolve the disputed charge if no action: no action taken input: output: if yes contact merchant and document the action taken system: contact medium phone or email  source: 2
+3. D2 actor: Cardholder condition: are they able to dispute with the merchant? if yes action: no action if no action: dispute request with the purchase card contractor bank  input: output: if yes then transaction should be disputed if no dispute request to bank system: contact medium phone or email  source: 3
+
+13 not much of a sop just says to report if lost or stolen
+
+- 6.A S4 output/system were copied from S3; changed to the inactive account list / purchase card account data.
+- 6.A D1 condition inverted relative to SOP text ("no activity in 3 years = inactive"); rephrased so Yes = inactive.
+- 6.C S5 was a duplicate of 6.A S1 (copy-paste); removed.
+- 6.E S1 actor: SOP lists APC, independent auditors, OIG, and other federal entities as reviewers.
+- 12 D2 rephrased to the SOP's condition: "unable to resolve the dispute with the merchant".
+
+--- Follow-up 2026-09-30 ---
+Added a 'Make a purchase' section (7.E, 7.F, 6.C.3): 11 min 45 sec.
+Section 12 time: 7 min 22 sec.
+Added the rule that an inactive account with no confirmation of continued need is suspended (6.A.5).
+Added section 14 (separation or transfer) after the first scoring run.

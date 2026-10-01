@@ -1,0 +1,430 @@
+{
+  "type": "object",
+  "properties": {
+    "sop_title": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string",
+      "description": "Two sentences: what the process does and who runs it."
+    },
+    "sections": {
+      "type": "array",
+      "description": "Every top-level section or subsection of the document, in document order.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "section": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "classification": {
+            "type": "string",
+            "enum": [
+              "procedure",
+              "rules",
+              "background"
+            ]
+          },
+          "reason": {
+            "type": "string",
+            "description": "One sentence: why, using the reorder test for procedure vs rules."
+          },
+          "mapped": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "section",
+          "title",
+          "classification",
+          "reason",
+          "mapped"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "steps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "S1, S2, ... in execution order"
+          },
+          "actor": {
+            "type": "string"
+          },
+          "action": {
+            "type": "string"
+          },
+          "input": {
+            "type": "string"
+          },
+          "output": {
+            "type": "string"
+          },
+          "system": {
+            "type": "string",
+            "description": "Tool or medium used (paper form, email, named system). Empty string if not stated."
+          },
+          "source_section": {
+            "type": "string"
+          },
+          "source_quote": {
+            "type": "string",
+            "description": "Short verbatim quote from the SOP supporting this step. Empty string if inferred."
+          },
+          "inferred": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "id",
+          "actor",
+          "action",
+          "input",
+          "output",
+          "system",
+          "source_section",
+          "source_quote",
+          "inferred"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "decisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "D1, D2, ..."
+          },
+          "after_step": {
+            "type": "string"
+          },
+          "condition": {
+            "type": "string",
+            "description": "Phrased as a yes/no question"
+          },
+          "branches": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "type": "string"
+                },
+                "next_step": {
+                  "type": "string",
+                  "description": "Step id, or END, or UNDEFINED when the SOP gives no next step"
+                }
+              },
+              "required": [
+                "label",
+                "next_step"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "source_section": {
+            "type": "string"
+          },
+          "inferred": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "id",
+          "after_step",
+          "condition",
+          "branches",
+          "source_section",
+          "inferred"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "handoffs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "after_step": {
+            "type": "string"
+          },
+          "from_actor": {
+            "type": "string"
+          },
+          "to_actor": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "after_step",
+          "from_actor",
+          "to_actor"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "exceptions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "step": {
+            "type": "string"
+          },
+          "trigger": {
+            "type": "string"
+          },
+          "handling": {
+            "type": "string",
+            "description": "What the SOP says to do. Empty string if the SOP is silent."
+          },
+          "source_section": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "step",
+          "trigger",
+          "handling",
+          "source_section"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "timing": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "step": {
+            "type": "string"
+          },
+          "requirement": {
+            "type": "string"
+          },
+          "source_section": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "step",
+          "requirement",
+          "source_section"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "risks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "R1, R2, ..."
+          },
+          "step": {
+            "type": "string"
+          },
+          "risk_type": {
+            "type": "string",
+            "enum": [
+              "manual_handoff",
+              "rekeying",
+              "missing_control",
+              "undefined_exception",
+              "single_point_of_failure",
+              "vague_ownership_or_timing",
+              "conflicting_rule"
+            ]
+          },
+          "description": {
+            "type": "string"
+          },
+          "severity": {
+            "type": "string",
+            "enum": [
+              "low",
+              "medium",
+              "high"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "step",
+          "risk_type",
+          "description",
+          "severity"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "recommendations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "A1, A2, ..."
+          },
+          "step": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string",
+            "enum": [
+              "digitize",
+              "automate",
+              "ai_assist",
+              "eliminate",
+              "keep_human"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          },
+          "suggested_tool": {
+            "type": "string"
+          },
+          "value": {
+            "type": "integer",
+            "enum": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          "effort": {
+            "type": "integer",
+            "enum": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "step",
+          "label",
+          "reason",
+          "suggested_tool",
+          "value",
+          "effort"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "starter_flows": {
+      "type": "array",
+      "description": "Power Automate outlines for the three highest value/effort recommendations that are not keep_human or eliminate.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "recommendation_id": {
+            "type": "string"
+          },
+          "trigger": {
+            "type": "string"
+          },
+          "actions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "approval_step": {
+            "type": "string",
+            "description": "Empty string if no approval is needed"
+          }
+        },
+        "required": [
+          "recommendation_id",
+          "trigger",
+          "actions",
+          "approval_step"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "future_state": {
+      "type": "array",
+      "description": "The process redrawn with every recommendation applied except keep_human.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "F1, F2, ..."
+          },
+          "from_step": {
+            "type": "string",
+            "description": "Current state step id, or NEW"
+          },
+          "actor": {
+            "type": "string"
+          },
+          "action": {
+            "type": "string"
+          },
+          "change": {
+            "type": "string",
+            "enum": [
+              "unchanged",
+              "digitized",
+              "automated",
+              "ai_assisted",
+              "new"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "from_step",
+          "actor",
+          "action",
+          "change"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "eliminated_steps": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "sop_title",
+    "summary",
+    "sections",
+    "steps",
+    "decisions",
+    "handoffs",
+    "exceptions",
+    "timing",
+    "risks",
+    "recommendations",
+    "starter_flows",
+    "future_state",
+    "eliminated_steps"
+  ],
+  "additionalProperties": false
+}

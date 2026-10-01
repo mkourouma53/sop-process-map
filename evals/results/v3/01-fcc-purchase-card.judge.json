@@ -1,0 +1,193 @@
+{
+  "step_matches": [
+    {
+      "golden_id": "S1",
+      "ai_id": "S1",
+      "reason": "Both have the Bureau/Office Chief, designee or manager requesting a purchase card for the employee."
+    },
+    {
+      "golden_id": "S2",
+      "ai_id": "S3",
+      "reason": "Both have the nominee completing and signing Form A-498."
+    },
+    {
+      "golden_id": "S3",
+      "ai_id": "S2",
+      "reason": "Both have the nominee completing the GSA web-based purchase card training."
+    },
+    {
+      "golden_id": "S4",
+      "ai_id": "S19",
+      "reason": "Both have the AO giving the cardholder written authorization for the purchase."
+    },
+    {
+      "golden_id": "S5",
+      "ai_id": "S20",
+      "reason": "Both have the cardholder ensuring funds are available before the purchase."
+    },
+    {
+      "golden_id": "S6",
+      "ai_id": "S22",
+      "reason": "Both have the cardholder completing and attaching the Section 508 Determination and Findings form."
+    },
+    {
+      "golden_id": "S7",
+      "ai_id": "NONE",
+      "reason": "No AI step has the cardholder completing other purchase card forms the AO requires."
+    },
+    {
+      "golden_id": "S8",
+      "ai_id": "S27",
+      "reason": "Both have the cardholder making the purchase with the card."
+    },
+    {
+      "golden_id": "S9",
+      "ai_id": "S29",
+      "reason": "Both have the AO validating receipt of the items and signing the receipt or invoice."
+    },
+    {
+      "golden_id": "S10",
+      "ai_id": "S32",
+      "reason": "Both have the cardholder obtaining the accepting employee's signature and date on the invoice."
+    },
+    {
+      "golden_id": "S11",
+      "ai_id": "S33",
+      "reason": "Both have the cardholder reconciling the monthly SOA."
+    },
+    {
+      "golden_id": "S12",
+      "ai_id": "S35",
+      "reason": "AI S35 has the cardholder signing the reconciled SOA and forwarding it to the AO."
+    },
+    {
+      "golden_id": "S13",
+      "ai_id": "S36",
+      "reason": "Both have the AO reviewing the reconciled SOA."
+    },
+    {
+      "golden_id": "S14",
+      "ai_id": "S38",
+      "reason": "AI S38 has the AO signing the SOA and forwarding it to FOC RDG/TOG."
+    },
+    {
+      "golden_id": "S15",
+      "ai_id": "S50",
+      "reason": "Both have the APC reviewing card usage to find inactive accounts."
+    },
+    {
+      "golden_id": "S16",
+      "ai_id": "S51",
+      "reason": "Both have the APC giving the inactive account list to each Bureau/Office."
+    },
+    {
+      "golden_id": "S17",
+      "ai_id": "S52",
+      "reason": "Both have the Bureau/Office confirming the continued need for the inactive account."
+    },
+    {
+      "golden_id": "S18",
+      "ai_id": "S53",
+      "reason": "Both have the APC suspending the inactive account until confirmation is received."
+    },
+    {
+      "golden_id": "S19",
+      "ai_id": "S54",
+      "reason": "Both have the reviewers conducting periodic or random reviews of cardholder transactions."
+    },
+    {
+      "golden_id": "S20",
+      "ai_id": "S55",
+      "reason": "Both have the cardholder furnishing supporting documentation for the review."
+    },
+    {
+      "golden_id": "S21",
+      "ai_id": "S42",
+      "reason": "Both have the cardholder reviewing receipts for the questioned transaction."
+    },
+    {
+      "golden_id": "S22",
+      "ai_id": "S43",
+      "reason": "Both have the cardholder contacting the merchant to resolve the disputed charge and documenting the actions taken."
+    },
+    {
+      "golden_id": "S23",
+      "ai_id": "S44",
+      "reason": "Both have the cardholder submitting a dispute request to the contractor bank."
+    },
+    {
+      "golden_id": "S24",
+      "ai_id": "S66",
+      "reason": "Both have the AO or Bureau/Office Chief giving the APC prior notice of the transfer or separation."
+    },
+    {
+      "golden_id": "S25",
+      "ai_id": "S67",
+      "reason": "Both have the cardholder providing purchase card records to the AO."
+    },
+    {
+      "golden_id": "S26",
+      "ai_id": "S68",
+      "reason": "Both have the cardholder surrendering the card to the AO or APC."
+    },
+    {
+      "golden_id": "S27",
+      "ai_id": "S70",
+      "reason": "Both have the AO noting on the final SOA that the departed cardholder could not sign it."
+    },
+    {
+      "golden_id": "S28",
+      "ai_id": "S69",
+      "reason": "Both have the APC closing the cardholder's account."
+    },
+    {
+      "golden_id": "S29",
+      "ai_id": "S71",
+      "reason": "Both have the Bureau/Office Chief designating a new AO; the AI puts the written notice to the APC in a separate step, S72."
+    }
+  ],
+  "decision_matches": [
+    {
+      "golden_id": "D1",
+      "ai_id": "D9",
+      "correct": true,
+      "reason": "Both ask whether the item is covered by Section 508: Yes goes to the 508 form, and No continues the purchase preparation (the AI goes to its price check because it has no 'other forms' step)."
+    },
+    {
+      "golden_id": "D2",
+      "ai_id": "D14",
+      "correct": true,
+      "reason": "Both ask whether another employee accepted or first used the goods: Yes goes to obtaining that employee's signature, and No goes to reconciling the SOA."
+    },
+    {
+      "golden_id": "D3",
+      "ai_id": "NONE",
+      "correct": false,
+      "reason": "The AI has no explicit three-year inactivity decision; it folds the condition into step S50."
+    },
+    {
+      "golden_id": "D4",
+      "ai_id": "D19",
+      "correct": true,
+      "reason": "Both ask whether the Bureau/Office confirms the need: confirmation keeps the account, and no confirmation leads to suspension."
+    },
+    {
+      "golden_id": "D5",
+      "ai_id": "D17",
+      "correct": true,
+      "reason": "Both ask whether research confirms a dispute: Yes goes to contacting the merchant, and No ends."
+    },
+    {
+      "golden_id": "D6",
+      "ai_id": "D18",
+      "correct": true,
+      "reason": "Both ask whether the dispute was resolved with the merchant: Yes ends, and No goes to the bank dispute (the AI adds an extra shipping/tax branch)."
+    },
+    {
+      "golden_id": "D7",
+      "ai_id": "D24",
+      "correct": true,
+      "reason": "Both ask whether the final SOA was available before the cardholder left: the AI phrases the condition inversely and closes the account earlier, but leaving before the SOA still leads to the AO's note on the SOA."
+    }
+  ]
+}

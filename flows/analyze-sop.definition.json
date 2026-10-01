@@ -1,0 +1,1323 @@
+{
+  "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "$connections": {
+      "defaultValue": {},
+      "type": "Object"
+    },
+    "$authentication": {
+      "defaultValue": {},
+      "type": "SecureObject"
+    },
+    "Claude API key (onyx_ClaudeApiKey)": {
+      "defaultValue": "",
+      "type": "String",
+      "metadata": {
+        "schemaName": "onyx_ClaudeApiKey"
+      }
+    },
+    "Save flow URL (onyx_SaveFlowUrl)": {
+      "defaultValue": "",
+      "type": "String",
+      "metadata": {
+        "schemaName": "onyx_SaveFlowUrl"
+      }
+    }
+  },
+  "triggers": {
+    "When_an_SOP_is_uploaded": {
+      "type": "OpenApiConnection",
+      "recurrence": {
+        "interval": 1,
+        "frequency": "Minute"
+      },
+      "splitOn": "@triggerOutputs()?['body/value']",
+      "inputs": {
+        "host": {
+          "connectionName": "shared_sharepointonline",
+          "operationId": "GetOnNewFileItems",
+          "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+        },
+        "parameters": {
+          "dataset": "https://consultonyx.sharepoint.com/sites/sop-process-map",
+          "table": "f7d891df-436e-4a6e-b876-36554b5fb08d"
+        },
+        "authentication": "@parameters('$authentication')"
+      }
+    }
+  },
+  "actions": {
+    "Mark_analyzing": {
+      "type": "OpenApiConnection",
+      "inputs": {
+        "host": {
+          "connectionName": "shared_sharepointonline",
+          "operationId": "HttpRequest",
+          "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+        },
+        "parameters": {
+          "dataset": "https://consultonyx.sharepoint.com/sites/sop-process-map",
+          "parameters/method": "POST",
+          "parameters/uri": "@concat('_api/web/lists/getbytitle(''SOPs'')/items(', string(triggerBody()?['ID']), ')')",
+          "parameters/headers": {
+            "Accept": "application/json;odata=nometadata",
+            "Content-Type": "application/json;odata=nometadata",
+            "X-HTTP-Method": "MERGE",
+            "IF-MATCH": "*"
+          },
+          "parameters/body": "{\"SOPStatus\": \"Analyzing\", \"PromptVersion\": \"v3\"}"
+        },
+        "authentication": "@parameters('$authentication')"
+      },
+      "runAfter": {}
+    },
+    "Started": {
+      "type": "Compose",
+      "runAfter": {
+        "Mark_analyzing": [
+          "Succeeded"
+        ]
+      },
+      "inputs": "@utcNow()"
+    },
+    "PDF": {
+      "type": "InitializeVariable",
+      "runAfter": {
+        "Started": [
+          "Succeeded"
+        ]
+      },
+      "inputs": {
+        "variables": [
+          {
+            "name": "pdf",
+            "type": "string",
+            "value": ""
+          }
+        ]
+      }
+    },
+    "Analyze": {
+      "type": "Scope",
+      "runAfter": {
+        "PDF": [
+          "Succeeded"
+        ]
+      },
+      "actions": {
+        "Is_Word_file": {
+          "type": "If",
+          "expression": {
+            "endsWith": [
+              "@toLower(triggerBody()?['{FilenameWithExtension}'])",
+              ".docx"
+            ]
+          },
+          "actions": {
+            "Convert_to_PDF": {
+              "type": "OpenApiConnection",
+              "inputs": {
+                "host": {
+                  "connectionName": "shared_wordonlinebusiness",
+                  "operationId": "GetFilePDF",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_wordonlinebusiness"
+                },
+                "parameters": {
+                  "source": "https://consultonyx.sharepoint.com/sites/sop-process-map",
+                  "drive": "b!XWbL9fgvB0uny0ZeS-o6Ef0oBxkxiY5LjDA9ZXpmvibfkdj3bkNuSrh2NlVLX7CN",
+                  "file": "@concat('/', triggerBody()?['{FilenameWithExtension}'])"
+                },
+                "authentication": "@parameters('$authentication')"
+              }
+            },
+            "Use_converted": {
+              "type": "SetVariable",
+              "runAfter": {
+                "Convert_to_PDF": [
+                  "Succeeded"
+                ]
+              },
+              "inputs": {
+                "name": "pdf",
+                "value": "@{base64(body('Convert_to_PDF'))}"
+              }
+            }
+          },
+          "else": {
+            "actions": {
+              "Get_PDF": {
+                "type": "OpenApiConnection",
+                "inputs": {
+                  "host": {
+                    "connectionName": "shared_sharepointonline",
+                    "operationId": "HttpRequest",
+                    "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+                  },
+                  "parameters": {
+                    "dataset": "https://consultonyx.sharepoint.com/sites/sop-process-map",
+                    "parameters/method": "GET",
+                    "parameters/uri": "@concat('_api/web/lists/getbytitle(''SOPs'')/items(', string(triggerBody()?['ID']), ')/File/$value')",
+                    "parameters/headers": {
+                      "Accept": "application/octet-stream"
+                    }
+                  },
+                  "authentication": "@parameters('$authentication')"
+                },
+                "runAfter": {}
+              },
+              "Use_PDF": {
+                "type": "SetVariable",
+                "runAfter": {
+                  "Get_PDF": [
+                    "Succeeded"
+                  ]
+                },
+                "inputs": {
+                  "name": "pdf",
+                  "value": "@{body('Get_PDF')?['$content']}"
+                }
+              }
+            }
+          }
+        },
+        "Submit_map": {
+          "type": "Http",
+          "runAfter": {
+            "Is_Word_file": [
+              "Succeeded"
+            ]
+          },
+          "inputs": {
+            "method": "POST",
+            "uri": "https://api.anthropic.com/v1/messages/batches",
+            "headers": {
+              "x-api-key": "@parameters('Claude API key (onyx_ClaudeApiKey)')",
+              "anthropic-version": "2023-06-01",
+              "content-type": "application/json"
+            },
+            "body": {
+              "requests": [
+                {
+                  "custom_id": "map",
+                  "params": {
+                    "model": "claude-opus-5-5",
+                    "max_tokens": 64000,
+                    "system": "You are a process analyst. You receive one standard operating procedure (SOP) and turn it into a current state process map, a list of risks, a set of automation and digitization recommendations, and a future state map. A human analyst reviews everything you return before a process owner sees it, so accuracy and traceability matter more than completeness of prose.\n\n## Grounding\n\n- Every step, decision, exception, and timing requirement must cite the SOP section it came from (section number or heading, as written in the document).\n- For steps, include a short verbatim `source_quote`.\n- If you add something the SOP implies but does not state, set `inferred: true` and leave `source_quote` empty. Use this sparingly. Do not invent steps to make the process look complete.\n- Map what the SOP says people do, not the policy background, definitions, or screen-by-screen system instructions. Collapse click paths in a system into one step (\"Cardholder records the purchase in the card log\").\n\n## Section inventory (do this first)\n\nBefore mapping, list every section and subsection of the document in `sections`, in document order, and classify each one with the reorder test:\n\n- `procedure`: the order of its items matters. Rearranging them would break the meaning (you must get approval before you buy; you reconcile before the approver certifies).\n- `rules`: its items could be rearranged into any order and still make sense (lists of limits, prohibited purchases, responsibilities, penalties, requirements).\n- `background`: purpose, scope, authority, definitions, references, contacts.\n\nMap every `procedure` section; set `mapped: true` for each one you mapped, and give a reason for any `procedure` section you leave unmapped. Do not drop a procedure section silently, even a short one (lost cards, departures, record keeping).\n\nRules sections still matter in two ways:\n- A rule that gates a step elsewhere becomes a decision or an exception on that step (a dollar limit, \"before purchasing\", \"may not reconcile until\"). These hidden rules are often stated far from the step they control.\n- An action in a rules list (for example, a list of approver responsibilities) belongs in the map only when its own wording or another section ties it to a point in the flow (\"before the purchase is made\", \"within 10 days of the statement\", \"upon separation\"). Leave out actions with no position in the flow, such as \"serve as liaison\" or \"ensure compliance\".\n\n## Separate processes (do this before mapping steps)\n\nAn SOP usually describes several separate processes, not one: for example issuing a card, making a purchase, reconciling the monthly statement, disputing a charge, reporting a lost card, closing an account when someone leaves. List them in `processes`.\n\n- A process has its own trigger (what starts it) and its own outcome (what exists when it ends). If two groups of steps have different triggers, they are different processes, even when they sit in the same section.\n- A process can span several sections (a purchase built from approver duties, cardholder duties, and a reconciliation rule) and one section can hold several processes. Group by trigger and flow, not by section number.\n- Rules and background sections are not processes. Their requirements become decisions or conditions on the steps they gate.\n- Give every step, decision, and future-state step the `process` it belongs to, using the exact name from `processes`.\n- Steps flow only within their own process. Never chain the last step of one process to the first step of another. A decision branch may point into another process only when the SOP explicitly says so (\"proceed with the dispute procedures\").\n- Number steps S1, S2, ... across the whole document, keeping each process's steps together and in execution order.\n\n## Current state map\n\n- A step is one action by one actor. Name actors by role as the SOP names them.\n- Actors are people, roles, or outside organizations (a bank, a committee). A website or system is never an actor; what a system displays or sends automatically is the output of the step that triggered it.\n- A decision is any point where the SOP routes work differently based on a condition (dollar thresholds, approval outcomes, missing documents). Phrase the condition as a yes/no question. If a branch has no stated next step, set `next_step` to `UNDEFINED`.\n- If a branch requires an action (contact the merchant, check the spam folder, a credit is issued, a letter is sent), make that action its own step and point the branch to it. Never put the action only in the branch label.\n- Record every handoff where work passes from one actor to another.\n- Record exceptions (what happens when something goes wrong) and stated deadlines or waits.\n\n## Risks\n\nFlag only risks the SOP text supports:\n- `manual_handoff`: work sits between people with no tracking.\n- `rekeying`: the same data is entered in two places.\n- `missing_control`: money, access, or safety moves forward with no check.\n- `undefined_exception`: a branch or failure with no stated next step.\n- `single_point_of_failure`: one named person holds a step with no backup.\n- `vague_ownership_or_timing`: \"someone reviews it promptly\" style language.\n- `conflicting_rule`: two parts of the SOP give different deadlines, thresholds, or owners for the same step. Cite both sections in the description.\n\n## Risk write-up\n\nEach risk must be understandable by a process owner who has not read the SOP:\n- `what_could_go_wrong`: the failure scenario in plain language (\"the signed statement stalls between cardholder and approver and misses the 10-workday certification deadline\"), not a category name.\n- `cause`: what in the SOP creates it, citing sections.\n- `impact`: what happens to the process if it occurs (late payment, audit finding, safety exposure, delay for the requester).\n- `quantified_impact`: only numbers you can count from the SOP or your map (handoffs, wait days, deadlines, manual re-entries, approvals). Never invent transaction volumes, staff counts, or dollar amounts.\n- `severity_reason`: likelihood and impact in one sentence. Link each risk to the recommendations that reduce it in `addressed_by`.\n\n## Recommendations\n\nGive each step at most one recommendation, and only when it adds value:\n- `digitize`: a paper form, logbook, or email request becomes a Power Apps form writing to SharePoint.\n- `automate`: a repeatable, rule-based action becomes a Power Automate flow.\n- `ai_assist`: reading, summarizing, or classifying text becomes an AI step in a flow.\n- `eliminate`: a redundant step or duplicate approval is removed.\n- `keep_human`: judgment, legal sign-off, safety, or sensitive decisions about people stay with a person. Use this explicitly for such steps so reviewers see you considered them.\n\nFor each recommendation give the `proposed_change` (what the step becomes), concrete `implementation_steps` in Microsoft 365 / Power Platform terms, the risks it resolves, and its `impact`: handoffs, steps, wait days, and manual entries removed (counted from your map), plus an estimate of minutes saved per occurrence with what an occurrence is. Label estimates as estimates in `basis`; never invent volumes.\n\nScore value 1 to 5 (how often the step runs, handoffs removed, error risk) and effort 1 to 5 (systems touched, whether a standard connector exists). Be conservative: effort 1 means an out-of-the-box connector with no custom integration.\n\nFor the three recommendations with the highest value divided by effort (excluding `keep_human` and `eliminate`), write a starter Power Automate outline: the trigger, each action, and the approval step if one is needed.\n\n## Future state\n\nRedraw each process with every recommendation applied except `keep_human`, keeping each future step in its process. Link each future step to its current step id (or `NEW`). List eliminated current state step ids in `eliminated_steps`.\n",
+                    "thinking": {
+                      "type": "adaptive"
+                    },
+                    "output_config": {
+                      "effort": "high",
+                      "format": {
+                        "type": "json_schema",
+                        "schema": {
+                          "type": "object",
+                          "properties": {
+                            "sop_title": {
+                              "type": "string"
+                            },
+                            "summary": {
+                              "type": "string",
+                              "description": "Two sentences: what the process does and who runs it."
+                            },
+                            "sections": {
+                              "type": "array",
+                              "description": "Every top-level section or subsection of the document, in document order.",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "section": {
+                                    "type": "string"
+                                  },
+                                  "title": {
+                                    "type": "string"
+                                  },
+                                  "classification": {
+                                    "type": "string",
+                                    "enum": [
+                                      "procedure",
+                                      "rules",
+                                      "background"
+                                    ]
+                                  },
+                                  "reason": {
+                                    "type": "string",
+                                    "description": "One sentence: why, using the reorder test for procedure vs rules."
+                                  },
+                                  "mapped": {
+                                    "type": "boolean"
+                                  }
+                                },
+                                "required": [
+                                  "section",
+                                  "title",
+                                  "classification",
+                                  "reason",
+                                  "mapped"
+                                ],
+                                "additionalProperties": false
+                              }
+                            },
+                            "processes": {
+                              "type": "array",
+                              "description": "The separate processes in this SOP, in the order a reader would follow them.",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "name": {
+                                    "type": "string",
+                                    "description": "Short verb-noun name, e.g. 'Issue a purchase card', 'Dispute a charge'"
+                                  },
+                                  "trigger": {
+                                    "type": "string",
+                                    "description": "The event that starts this process"
+                                  },
+                                  "outcome": {
+                                    "type": "string",
+                                    "description": "What exists when it ends"
+                                  },
+                                  "sections": {
+                                    "type": "array",
+                                    "items": {
+                                      "type": "string"
+                                    }
+                                  }
+                                },
+                                "required": [
+                                  "name",
+                                  "trigger",
+                                  "outcome",
+                                  "sections"
+                                ],
+                                "additionalProperties": false
+                              }
+                            },
+                            "steps": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "string",
+                                    "description": "S1, S2, ... in execution order"
+                                  },
+                                  "process": {
+                                    "type": "string",
+                                    "description": "Name of the process this belongs to, exactly as in `processes`"
+                                  },
+                                  "actor": {
+                                    "type": "string"
+                                  },
+                                  "action": {
+                                    "type": "string"
+                                  },
+                                  "input": {
+                                    "type": "string"
+                                  },
+                                  "output": {
+                                    "type": "string"
+                                  },
+                                  "system": {
+                                    "type": "string",
+                                    "description": "Tool or medium used (paper form, email, named system). Empty string if not stated."
+                                  },
+                                  "source_section": {
+                                    "type": "string"
+                                  },
+                                  "source_quote": {
+                                    "type": "string",
+                                    "description": "Short verbatim quote from the SOP supporting this step. Empty string if inferred."
+                                  },
+                                  "inferred": {
+                                    "type": "boolean"
+                                  }
+                                },
+                                "required": [
+                                  "id",
+                                  "process",
+                                  "actor",
+                                  "action",
+                                  "input",
+                                  "output",
+                                  "system",
+                                  "source_section",
+                                  "source_quote",
+                                  "inferred"
+                                ],
+                                "additionalProperties": false
+                              }
+                            },
+                            "decisions": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "string",
+                                    "description": "D1, D2, ..."
+                                  },
+                                  "process": {
+                                    "type": "string",
+                                    "description": "Name of the process this belongs to, exactly as in `processes`"
+                                  },
+                                  "after_step": {
+                                    "type": "string"
+                                  },
+                                  "condition": {
+                                    "type": "string",
+                                    "description": "Phrased as a yes/no question"
+                                  },
+                                  "branches": {
+                                    "type": "array",
+                                    "items": {
+                                      "type": "object",
+                                      "properties": {
+                                        "label": {
+                                          "type": "string"
+                                        },
+                                        "next_step": {
+                                          "type": "string",
+                                          "description": "Step id, or END, or UNDEFINED when the SOP gives no next step"
+                                        }
+                                      },
+                                      "required": [
+                                        "label",
+                                        "next_step"
+                                      ],
+                                      "additionalProperties": false
+                                    }
+                                  },
+                                  "source_section": {
+                                    "type": "string"
+                                  },
+                                  "inferred": {
+                                    "type": "boolean"
+                                  }
+                                },
+                                "required": [
+                                  "id",
+                                  "process",
+                                  "after_step",
+                                  "condition",
+                                  "branches",
+                                  "source_section",
+                                  "inferred"
+                                ],
+                                "additionalProperties": false
+                              }
+                            },
+                            "handoffs": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "after_step": {
+                                    "type": "string"
+                                  },
+                                  "from_actor": {
+                                    "type": "string"
+                                  },
+                                  "to_actor": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "after_step",
+                                  "from_actor",
+                                  "to_actor"
+                                ],
+                                "additionalProperties": false
+                              }
+                            },
+                            "exceptions": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "step": {
+                                    "type": "string"
+                                  },
+                                  "trigger": {
+                                    "type": "string"
+                                  },
+                                  "handling": {
+                                    "type": "string",
+                                    "description": "What the SOP says to do. Empty string if the SOP is silent."
+                                  },
+                                  "source_section": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "step",
+                                  "trigger",
+                                  "handling",
+                                  "source_section"
+                                ],
+                                "additionalProperties": false
+                              }
+                            },
+                            "timing": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "step": {
+                                    "type": "string"
+                                  },
+                                  "requirement": {
+                                    "type": "string"
+                                  },
+                                  "source_section": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "step",
+                                  "requirement",
+                                  "source_section"
+                                ],
+                                "additionalProperties": false
+                              }
+                            }
+                          },
+                          "required": [
+                            "sop_title",
+                            "summary",
+                            "sections",
+                            "processes",
+                            "steps",
+                            "decisions",
+                            "handoffs",
+                            "exceptions",
+                            "timing"
+                          ],
+                          "additionalProperties": false
+                        }
+                      }
+                    },
+                    "messages": [
+                      {
+                        "role": "user",
+                        "content": [
+                          {
+                            "type": "document",
+                            "source": {
+                              "type": "base64",
+                              "media_type": "application/pdf",
+                              "data": "@{variables('pdf')}"
+                            }
+                          },
+                          {
+                            "type": "text",
+                            "text": "Stage 1 of 2: return only the current state map for this SOP (and the section inventory, if the schema asks for one)."
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          "runtimeConfiguration": {
+            "secureData": {
+              "properties": [
+                "inputs"
+              ]
+            }
+          }
+        },
+        "Wait_map": {
+          "type": "Until",
+          "runAfter": {
+            "Submit_map": [
+              "Succeeded"
+            ]
+          },
+          "expression": "@equals(body('Check_map')?['processing_status'], 'ended')",
+          "limit": {
+            "count": 300,
+            "timeout": "P1D"
+          },
+          "actions": {
+            "Pause_map": {
+              "type": "Wait",
+              "inputs": {
+                "interval": {
+                  "count": 5,
+                  "unit": "Minute"
+                }
+              }
+            },
+            "Check_map": {
+              "type": "Http",
+              "runAfter": {
+                "Pause_map": [
+                  "Succeeded"
+                ]
+              },
+              "inputs": {
+                "method": "GET",
+                "uri": "@concat('https://api.anthropic.com/v1/messages/batches/', body('Submit_map')?['id'])",
+                "headers": {
+                  "x-api-key": "@parameters('Claude API key (onyx_ClaudeApiKey)')",
+                  "anthropic-version": "2023-06-01",
+                  "content-type": "application/json"
+                }
+              },
+              "runtimeConfiguration": {
+                "secureData": {
+                  "properties": [
+                    "inputs"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "Results_map": {
+          "type": "Http",
+          "runAfter": {
+            "Wait_map": [
+              "Succeeded"
+            ]
+          },
+          "inputs": {
+            "method": "GET",
+            "uri": "@body('Check_map')?['results_url']",
+            "headers": {
+              "x-api-key": "@parameters('Claude API key (onyx_ClaudeApiKey)')",
+              "anthropic-version": "2023-06-01",
+              "content-type": "application/json"
+            }
+          },
+          "runtimeConfiguration": {
+            "secureData": {
+              "properties": [
+                "inputs"
+              ]
+            }
+          }
+        },
+        "Result_map": {
+          "type": "Compose",
+          "runAfter": {
+            "Results_map": [
+              "Succeeded"
+            ]
+          },
+          "inputs": "@json(trim(string(body('Results_map'))))"
+        },
+        "Check_success_map": {
+          "type": "If",
+          "runAfter": {
+            "Result_map": [
+              "Succeeded"
+            ]
+          },
+          "expression": {
+            "not": {
+              "equals": [
+                "@outputs('Result_map')?['result']?['type']",
+                "succeeded"
+              ]
+            }
+          },
+          "actions": {
+            "Fail_map": {
+              "type": "Terminate",
+              "inputs": {
+                "runStatus": "Failed",
+                "runError": {
+                  "code": "AnalysisFailed",
+                  "message": "@{concat('map call: ', string(outputs('Result_map')?['result']))}"
+                }
+              }
+            }
+          },
+          "else": {
+            "actions": {}
+          }
+        },
+        "Text_map": {
+          "type": "Query",
+          "runAfter": {
+            "Check_success_map": [
+              "Succeeded"
+            ]
+          },
+          "inputs": {
+            "from": "@outputs('Result_map')?['result']?['message']?['content']",
+            "where": "@equals(item()?['type'], 'text')"
+          }
+        },
+        "Output_map": {
+          "type": "Compose",
+          "runAfter": {
+            "Text_map": [
+              "Succeeded"
+            ]
+          },
+          "inputs": "@json(first(body('Text_map'))?['text'])"
+        },
+        "Submit_analysis": {
+          "type": "Http",
+          "runAfter": {
+            "Output_map": [
+              "Succeeded"
+            ]
+          },
+          "inputs": {
+            "method": "POST",
+            "uri": "https://api.anthropic.com/v1/messages/batches",
+            "headers": {
+              "x-api-key": "@parameters('Claude API key (onyx_ClaudeApiKey)')",
+              "anthropic-version": "2023-06-01",
+              "content-type": "application/json"
+            },
+            "body": {
+              "requests": [
+                {
+                  "custom_id": "analysis",
+                  "params": {
+                    "model": "claude-opus-5-5",
+                    "max_tokens": 64000,
+                    "system": "You are a process analyst. You receive one standard operating procedure (SOP) and turn it into a current state process map, a list of risks, a set of automation and digitization recommendations, and a future state map. A human analyst reviews everything you return before a process owner sees it, so accuracy and traceability matter more than completeness of prose.\n\n## Grounding\n\n- Every step, decision, exception, and timing requirement must cite the SOP section it came from (section number or heading, as written in the document).\n- For steps, include a short verbatim `source_quote`.\n- If you add something the SOP implies but does not state, set `inferred: true` and leave `source_quote` empty. Use this sparingly. Do not invent steps to make the process look complete.\n- Map what the SOP says people do, not the policy background, definitions, or screen-by-screen system instructions. Collapse click paths in a system into one step (\"Cardholder records the purchase in the card log\").\n\n## Section inventory (do this first)\n\nBefore mapping, list every section and subsection of the document in `sections`, in document order, and classify each one with the reorder test:\n\n- `procedure`: the order of its items matters. Rearranging them would break the meaning (you must get approval before you buy; you reconcile before the approver certifies).\n- `rules`: its items could be rearranged into any order and still make sense (lists of limits, prohibited purchases, responsibilities, penalties, requirements).\n- `background`: purpose, scope, authority, definitions, references, contacts.\n\nMap every `procedure` section; set `mapped: true` for each one you mapped, and give a reason for any `procedure` section you leave unmapped. Do not drop a procedure section silently, even a short one (lost cards, departures, record keeping).\n\nRules sections still matter in two ways:\n- A rule that gates a step elsewhere becomes a decision or an exception on that step (a dollar limit, \"before purchasing\", \"may not reconcile until\"). These hidden rules are often stated far from the step they control.\n- An action in a rules list (for example, a list of approver responsibilities) belongs in the map only when its own wording or another section ties it to a point in the flow (\"before the purchase is made\", \"within 10 days of the statement\", \"upon separation\"). Leave out actions with no position in the flow, such as \"serve as liaison\" or \"ensure compliance\".\n\n## Separate processes (do this before mapping steps)\n\nAn SOP usually describes several separate processes, not one: for example issuing a card, making a purchase, reconciling the monthly statement, disputing a charge, reporting a lost card, closing an account when someone leaves. List them in `processes`.\n\n- A process has its own trigger (what starts it) and its own outcome (what exists when it ends). If two groups of steps have different triggers, they are different processes, even when they sit in the same section.\n- A process can span several sections (a purchase built from approver duties, cardholder duties, and a reconciliation rule) and one section can hold several processes. Group by trigger and flow, not by section number.\n- Rules and background sections are not processes. Their requirements become decisions or conditions on the steps they gate.\n- Give every step, decision, and future-state step the `process` it belongs to, using the exact name from `processes`.\n- Steps flow only within their own process. Never chain the last step of one process to the first step of another. A decision branch may point into another process only when the SOP explicitly says so (\"proceed with the dispute procedures\").\n- Number steps S1, S2, ... across the whole document, keeping each process's steps together and in execution order.\n\n## Current state map\n\n- A step is one action by one actor. Name actors by role as the SOP names them.\n- Actors are people, roles, or outside organizations (a bank, a committee). A website or system is never an actor; what a system displays or sends automatically is the output of the step that triggered it.\n- A decision is any point where the SOP routes work differently based on a condition (dollar thresholds, approval outcomes, missing documents). Phrase the condition as a yes/no question. If a branch has no stated next step, set `next_step` to `UNDEFINED`.\n- If a branch requires an action (contact the merchant, check the spam folder, a credit is issued, a letter is sent), make that action its own step and point the branch to it. Never put the action only in the branch label.\n- Record every handoff where work passes from one actor to another.\n- Record exceptions (what happens when something goes wrong) and stated deadlines or waits.\n\n## Risks\n\nFlag only risks the SOP text supports:\n- `manual_handoff`: work sits between people with no tracking.\n- `rekeying`: the same data is entered in two places.\n- `missing_control`: money, access, or safety moves forward with no check.\n- `undefined_exception`: a branch or failure with no stated next step.\n- `single_point_of_failure`: one named person holds a step with no backup.\n- `vague_ownership_or_timing`: \"someone reviews it promptly\" style language.\n- `conflicting_rule`: two parts of the SOP give different deadlines, thresholds, or owners for the same step. Cite both sections in the description.\n\n## Risk write-up\n\nEach risk must be understandable by a process owner who has not read the SOP:\n- `what_could_go_wrong`: the failure scenario in plain language (\"the signed statement stalls between cardholder and approver and misses the 10-workday certification deadline\"), not a category name.\n- `cause`: what in the SOP creates it, citing sections.\n- `impact`: what happens to the process if it occurs (late payment, audit finding, safety exposure, delay for the requester).\n- `quantified_impact`: only numbers you can count from the SOP or your map (handoffs, wait days, deadlines, manual re-entries, approvals). Never invent transaction volumes, staff counts, or dollar amounts.\n- `severity_reason`: likelihood and impact in one sentence. Link each risk to the recommendations that reduce it in `addressed_by`.\n\n## Recommendations\n\nGive each step at most one recommendation, and only when it adds value:\n- `digitize`: a paper form, logbook, or email request becomes a Power Apps form writing to SharePoint.\n- `automate`: a repeatable, rule-based action becomes a Power Automate flow.\n- `ai_assist`: reading, summarizing, or classifying text becomes an AI step in a flow.\n- `eliminate`: a redundant step or duplicate approval is removed.\n- `keep_human`: judgment, legal sign-off, safety, or sensitive decisions about people stay with a person. Use this explicitly for such steps so reviewers see you considered them.\n\nFor each recommendation give the `proposed_change` (what the step becomes), concrete `implementation_steps` in Microsoft 365 / Power Platform terms, the risks it resolves, and its `impact`: handoffs, steps, wait days, and manual entries removed (counted from your map), plus an estimate of minutes saved per occurrence with what an occurrence is. Label estimates as estimates in `basis`; never invent volumes.\n\nScore value 1 to 5 (how often the step runs, handoffs removed, error risk) and effort 1 to 5 (systems touched, whether a standard connector exists). Be conservative: effort 1 means an out-of-the-box connector with no custom integration.\n\nFor the three recommendations with the highest value divided by effort (excluding `keep_human` and `eliminate`), write a starter Power Automate outline: the trigger, each action, and the approval step if one is needed.\n\n## Future state\n\nRedraw each process with every recommendation applied except `keep_human`, keeping each future step in its process. Link each future step to its current step id (or `NEW`). List eliminated current state step ids in `eliminated_steps`.\n",
+                    "thinking": {
+                      "type": "adaptive"
+                    },
+                    "output_config": {
+                      "effort": "high",
+                      "format": {
+                        "type": "json_schema",
+                        "schema": {
+                          "type": "object",
+                          "properties": {
+                            "risks": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "string",
+                                    "description": "R1, R2, ..."
+                                  },
+                                  "process": {
+                                    "type": "string",
+                                    "description": "Process name from `processes`"
+                                  },
+                                  "step": {
+                                    "type": "string"
+                                  },
+                                  "risk_type": {
+                                    "type": "string",
+                                    "enum": [
+                                      "manual_handoff",
+                                      "rekeying",
+                                      "missing_control",
+                                      "undefined_exception",
+                                      "single_point_of_failure",
+                                      "vague_ownership_or_timing",
+                                      "conflicting_rule"
+                                    ]
+                                  },
+                                  "what_could_go_wrong": {
+                                    "type": "string",
+                                    "description": "Plain-language failure scenario a process owner understands, one or two sentences"
+                                  },
+                                  "cause": {
+                                    "type": "string",
+                                    "description": "What in the SOP creates the risk, citing sections"
+                                  },
+                                  "impact": {
+                                    "type": "string",
+                                    "description": "Consequence for the process if it happens: delay, cost, compliance, safety, or customer impact"
+                                  },
+                                  "quantified_impact": {
+                                    "type": "array",
+                                    "description": "Only numbers the SOP supports (handoffs, wait days, deadlines, manual entries, approvals). Never invent volumes or dollar amounts.",
+                                    "items": {
+                                      "type": "object",
+                                      "properties": {
+                                        "metric": {
+                                          "type": "string"
+                                        },
+                                        "value": {
+                                          "type": "string"
+                                        },
+                                        "basis": {
+                                          "type": "string",
+                                          "description": "SOP section or how it was counted from the map"
+                                        }
+                                      },
+                                      "required": [
+                                        "metric",
+                                        "value",
+                                        "basis"
+                                      ],
+                                      "additionalProperties": false
+                                    }
+                                  },
+                                  "severity": {
+                                    "type": "string",
+                                    "enum": [
+                                      "low",
+                                      "medium",
+                                      "high"
+                                    ]
+                                  },
+                                  "severity_reason": {
+                                    "type": "string",
+                                    "description": "Why this severity: likelihood and impact"
+                                  },
+                                  "addressed_by": {
+                                    "type": "array",
+                                    "items": {
+                                      "type": "string"
+                                    },
+                                    "description": "Recommendation ids that reduce this risk"
+                                  }
+                                },
+                                "required": [
+                                  "id",
+                                  "process",
+                                  "step",
+                                  "risk_type",
+                                  "what_could_go_wrong",
+                                  "cause",
+                                  "impact",
+                                  "quantified_impact",
+                                  "severity",
+                                  "severity_reason",
+                                  "addressed_by"
+                                ],
+                                "additionalProperties": false
+                              }
+                            },
+                            "recommendations": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "string",
+                                    "description": "A1, A2, ..."
+                                  },
+                                  "process": {
+                                    "type": "string",
+                                    "description": "Process name from `processes`"
+                                  },
+                                  "step": {
+                                    "type": "string"
+                                  },
+                                  "label": {
+                                    "type": "string",
+                                    "enum": [
+                                      "digitize",
+                                      "automate",
+                                      "ai_assist",
+                                      "eliminate",
+                                      "keep_human"
+                                    ]
+                                  },
+                                  "proposed_change": {
+                                    "type": "string",
+                                    "description": "What the step becomes, in one or two sentences"
+                                  },
+                                  "reason": {
+                                    "type": "string"
+                                  },
+                                  "implementation_steps": {
+                                    "type": "array",
+                                    "items": {
+                                      "type": "string"
+                                    },
+                                    "description": "Ordered, concrete steps to implement the change in Microsoft 365 / Power Platform"
+                                  },
+                                  "suggested_tool": {
+                                    "type": "string"
+                                  },
+                                  "value": {
+                                    "type": "integer",
+                                    "enum": [
+                                      1,
+                                      2,
+                                      3,
+                                      4,
+                                      5
+                                    ]
+                                  },
+                                  "effort": {
+                                    "type": "integer",
+                                    "enum": [
+                                      1,
+                                      2,
+                                      3,
+                                      4,
+                                      5
+                                    ]
+                                  },
+                                  "impact": {
+                                    "type": "object",
+                                    "properties": {
+                                      "handoffs_removed": {
+                                        "type": "integer"
+                                      },
+                                      "steps_removed": {
+                                        "type": "integer"
+                                      },
+                                      "wait_days_removed": {
+                                        "type": "number"
+                                      },
+                                      "manual_entries_removed": {
+                                        "type": "integer"
+                                      },
+                                      "minutes_saved_per_occurrence": {
+                                        "type": "integer",
+                                        "description": "Estimate of reviewer or staff minutes saved each time the step runs; 0 if not meaningful"
+                                      },
+                                      "occurrence": {
+                                        "type": "string",
+                                        "description": "What one occurrence is, e.g. 'per purchase', 'per monthly statement per cardholder'"
+                                      },
+                                      "basis": {
+                                        "type": "string",
+                                        "description": "How the numbers were derived from the map; label estimates as estimates"
+                                      }
+                                    },
+                                    "required": [
+                                      "handoffs_removed",
+                                      "steps_removed",
+                                      "wait_days_removed",
+                                      "manual_entries_removed",
+                                      "minutes_saved_per_occurrence",
+                                      "occurrence",
+                                      "basis"
+                                    ],
+                                    "additionalProperties": false
+                                  },
+                                  "resolves_risks": {
+                                    "type": "array",
+                                    "items": {
+                                      "type": "string"
+                                    }
+                                  }
+                                },
+                                "required": [
+                                  "id",
+                                  "process",
+                                  "step",
+                                  "label",
+                                  "proposed_change",
+                                  "reason",
+                                  "implementation_steps",
+                                  "suggested_tool",
+                                  "value",
+                                  "effort",
+                                  "impact",
+                                  "resolves_risks"
+                                ],
+                                "additionalProperties": false
+                              }
+                            },
+                            "starter_flows": {
+                              "type": "array",
+                              "description": "Power Automate outlines for the three highest value/effort recommendations that are not keep_human or eliminate.",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "recommendation_id": {
+                                    "type": "string"
+                                  },
+                                  "trigger": {
+                                    "type": "string"
+                                  },
+                                  "actions": {
+                                    "type": "array",
+                                    "items": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "approval_step": {
+                                    "type": "string",
+                                    "description": "Empty string if no approval is needed"
+                                  }
+                                },
+                                "required": [
+                                  "recommendation_id",
+                                  "trigger",
+                                  "actions",
+                                  "approval_step"
+                                ],
+                                "additionalProperties": false
+                              }
+                            },
+                            "future_state": {
+                              "type": "array",
+                              "description": "The process redrawn with every recommendation applied except keep_human.",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "string",
+                                    "description": "F1, F2, ..."
+                                  },
+                                  "process": {
+                                    "type": "string",
+                                    "description": "Name of the process this belongs to, exactly as in `processes`"
+                                  },
+                                  "from_step": {
+                                    "type": "string",
+                                    "description": "Current state step id, or NEW"
+                                  },
+                                  "actor": {
+                                    "type": "string"
+                                  },
+                                  "action": {
+                                    "type": "string"
+                                  },
+                                  "change": {
+                                    "type": "string",
+                                    "enum": [
+                                      "unchanged",
+                                      "digitized",
+                                      "automated",
+                                      "ai_assisted",
+                                      "new"
+                                    ]
+                                  }
+                                },
+                                "required": [
+                                  "id",
+                                  "process",
+                                  "from_step",
+                                  "actor",
+                                  "action",
+                                  "change"
+                                ],
+                                "additionalProperties": false
+                              }
+                            },
+                            "eliminated_steps": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "required": [
+                            "risks",
+                            "recommendations",
+                            "starter_flows",
+                            "future_state",
+                            "eliminated_steps"
+                          ],
+                          "additionalProperties": false
+                        }
+                      }
+                    },
+                    "messages": [
+                      {
+                        "role": "user",
+                        "content": [
+                          {
+                            "type": "document",
+                            "source": {
+                              "type": "base64",
+                              "media_type": "application/pdf",
+                              "data": "@{variables('pdf')}"
+                            }
+                          },
+                          {
+                            "type": "text",
+                            "text": "@{concat('Stage 2 of 2: here is the current state map for this SOP. Using the SOP and this map, return the risks, recommendations, starter flows, and future state. Refer to steps by the ids in the map.', decodeUriComponent('%0A%0A'), string(outputs('Output_map')))}"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          "runtimeConfiguration": {
+            "secureData": {
+              "properties": [
+                "inputs"
+              ]
+            }
+          }
+        },
+        "Wait_analysis": {
+          "type": "Until",
+          "runAfter": {
+            "Submit_analysis": [
+              "Succeeded"
+            ]
+          },
+          "expression": "@equals(body('Check_analysis')?['processing_status'], 'ended')",
+          "limit": {
+            "count": 300,
+            "timeout": "P1D"
+          },
+          "actions": {
+            "Pause_analysis": {
+              "type": "Wait",
+              "inputs": {
+                "interval": {
+                  "count": 5,
+                  "unit": "Minute"
+                }
+              }
+            },
+            "Check_analysis": {
+              "type": "Http",
+              "runAfter": {
+                "Pause_analysis": [
+                  "Succeeded"
+                ]
+              },
+              "inputs": {
+                "method": "GET",
+                "uri": "@concat('https://api.anthropic.com/v1/messages/batches/', body('Submit_analysis')?['id'])",
+                "headers": {
+                  "x-api-key": "@parameters('Claude API key (onyx_ClaudeApiKey)')",
+                  "anthropic-version": "2023-06-01",
+                  "content-type": "application/json"
+                }
+              },
+              "runtimeConfiguration": {
+                "secureData": {
+                  "properties": [
+                    "inputs"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "Results_analysis": {
+          "type": "Http",
+          "runAfter": {
+            "Wait_analysis": [
+              "Succeeded"
+            ]
+          },
+          "inputs": {
+            "method": "GET",
+            "uri": "@body('Check_analysis')?['results_url']",
+            "headers": {
+              "x-api-key": "@parameters('Claude API key (onyx_ClaudeApiKey)')",
+              "anthropic-version": "2023-06-01",
+              "content-type": "application/json"
+            }
+          },
+          "runtimeConfiguration": {
+            "secureData": {
+              "properties": [
+                "inputs"
+              ]
+            }
+          }
+        },
+        "Result_analysis": {
+          "type": "Compose",
+          "runAfter": {
+            "Results_analysis": [
+              "Succeeded"
+            ]
+          },
+          "inputs": "@json(trim(string(body('Results_analysis'))))"
+        },
+        "Check_success_analysis": {
+          "type": "If",
+          "runAfter": {
+            "Result_analysis": [
+              "Succeeded"
+            ]
+          },
+          "expression": {
+            "not": {
+              "equals": [
+                "@outputs('Result_analysis')?['result']?['type']",
+                "succeeded"
+              ]
+            }
+          },
+          "actions": {
+            "Fail_analysis": {
+              "type": "Terminate",
+              "inputs": {
+                "runStatus": "Failed",
+                "runError": {
+                  "code": "AnalysisFailed",
+                  "message": "@{concat('analysis call: ', string(outputs('Result_analysis')?['result']))}"
+                }
+              }
+            }
+          },
+          "else": {
+            "actions": {}
+          }
+        },
+        "Text_analysis": {
+          "type": "Query",
+          "runAfter": {
+            "Check_success_analysis": [
+              "Succeeded"
+            ]
+          },
+          "inputs": {
+            "from": "@outputs('Result_analysis')?['result']?['message']?['content']",
+            "where": "@equals(item()?['type'], 'text')"
+          }
+        },
+        "Output_analysis": {
+          "type": "Compose",
+          "runAfter": {
+            "Text_analysis": [
+              "Succeeded"
+            ]
+          },
+          "inputs": "@json(first(body('Text_analysis'))?['text'])"
+        },
+        "Analysis": {
+          "type": "Compose",
+          "runAfter": {
+            "Output_analysis": [
+              "Succeeded"
+            ]
+          },
+          "inputs": "@json(concat(substring(string(outputs('Output_map')), 0, sub(length(string(outputs('Output_map'))), 1)), ',', substring(string(outputs('Output_analysis')), 1, sub(length(string(outputs('Output_analysis'))), 1))))"
+        },
+        "Save": {
+          "type": "Http",
+          "runAfter": {
+            "Analysis": [
+              "Succeeded"
+            ]
+          },
+          "inputs": {
+            "method": "POST",
+            "uri": "@parameters('Save flow URL (onyx_SaveFlowUrl)')",
+            "headers": {
+              "content-type": "application/json"
+            },
+            "body": {
+              "sopId": "@triggerBody()?['ID']",
+              "promptVersion": "v3",
+              "model": "claude-opus-5-5",
+              "inputTokens": "@add(outputs('Result_map')?['result']?['message']?['usage']?['input_tokens'], outputs('Result_analysis')?['result']?['message']?['usage']?['input_tokens'])",
+              "outputTokens": "@add(outputs('Result_map')?['result']?['message']?['usage']?['output_tokens'], outputs('Result_analysis')?['result']?['message']?['usage']?['output_tokens'])",
+              "durationSec": "@div(sub(ticks(utcNow()), ticks(outputs('Started'))), 10000000)",
+              "costUSD": "@add(div(mul(float(add(outputs('Result_map')?['result']?['message']?['usage']?['input_tokens'], outputs('Result_analysis')?['result']?['message']?['usage']?['input_tokens'])), 2.0), 1000000), div(mul(float(add(outputs('Result_map')?['result']?['message']?['usage']?['output_tokens'], outputs('Result_analysis')?['result']?['message']?['usage']?['output_tokens'])), 10.0), 1000000))",
+              "analysis": "@outputs('Analysis')"
+            }
+          }
+        }
+      }
+    },
+    "Failed_only": {
+      "type": "Query",
+      "runAfter": {
+        "Analyze": [
+          "Failed",
+          "TimedOut",
+          "Skipped"
+        ]
+      },
+      "inputs": {
+        "from": "@result('Analyze')",
+        "where": "@not(equals(item()?['status'], 'Succeeded'))"
+      }
+    },
+    "Failed_actions": {
+      "type": "Select",
+      "runAfter": {
+        "Failed_only": [
+          "Succeeded"
+        ]
+      },
+      "inputs": {
+        "from": "@body('Failed_only')",
+        "select": {
+          "name": "@item()?['name']",
+          "status": "@item()?['status']",
+          "error": "@item()?['error']"
+        }
+      }
+    },
+    "Failure_row": {
+      "type": "Compose",
+      "runAfter": {
+        "Failed_actions": [
+          "Succeeded"
+        ]
+      },
+      "inputs": {
+        "Title": "@concat('SOP ', string(triggerBody()?['ID']), ' / v3 (failed)')",
+        "SOPId": "@triggerBody()?['ID']",
+        "PromptVersion": "v3",
+        "Model": "claude-opus-5-5",
+        "RunStatus": "Failed",
+        "ErrorMessage": "@{string(body('Failed_actions'))}"
+      }
+    },
+    "Log_failure": {
+      "type": "OpenApiConnection",
+      "inputs": {
+        "host": {
+          "connectionName": "shared_sharepointonline",
+          "operationId": "HttpRequest",
+          "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+        },
+        "parameters": {
+          "dataset": "https://consultonyx.sharepoint.com/sites/sop-process-map",
+          "parameters/method": "POST",
+          "parameters/uri": "_api/web/lists/getbytitle('AI Runs')/items",
+          "parameters/headers": {
+            "Accept": "application/json;odata=nometadata",
+            "Content-Type": "application/json;odata=nometadata"
+          },
+          "parameters/body": "@string(outputs('Failure_row'))"
+        },
+        "authentication": "@parameters('$authentication')"
+      },
+      "runAfter": {
+        "Failure_row": [
+          "Succeeded"
+        ]
+      }
+    },
+    "Mark_failed": {
+      "type": "OpenApiConnection",
+      "inputs": {
+        "host": {
+          "connectionName": "shared_sharepointonline",
+          "operationId": "HttpRequest",
+          "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+        },
+        "parameters": {
+          "dataset": "https://consultonyx.sharepoint.com/sites/sop-process-map",
+          "parameters/method": "POST",
+          "parameters/uri": "@concat('_api/web/lists/getbytitle(''SOPs'')/items(', string(triggerBody()?['ID']), ')')",
+          "parameters/headers": {
+            "Accept": "application/json;odata=nometadata",
+            "Content-Type": "application/json;odata=nometadata",
+            "X-HTTP-Method": "MERGE",
+            "IF-MATCH": "*"
+          },
+          "parameters/body": "{\"SOPStatus\":\"Failed\"}"
+        },
+        "authentication": "@parameters('$authentication')"
+      },
+      "runAfter": {
+        "Log_failure": [
+          "Succeeded"
+        ]
+      }
+    }
+  }
+}

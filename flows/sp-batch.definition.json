@@ -1,0 +1,81 @@
+{
+  "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "$connections": {
+      "defaultValue": {},
+      "type": "Object"
+    },
+    "$authentication": {
+      "defaultValue": {},
+      "type": "SecureObject"
+    }
+  },
+  "triggers": {
+    "manual": {
+      "type": "Request",
+      "kind": "Http",
+      "inputs": {
+        "schema": {
+          "type": "object",
+          "properties": {
+            "requests": {
+              "type": "array"
+            }
+          },
+          "required": [
+            "requests"
+          ]
+        }
+      }
+    }
+  },
+  "actions": {
+    "Each_request": {
+      "type": "Foreach",
+      "foreach": "@triggerBody()?['requests']",
+      "runAfter": {},
+      "runtimeConfiguration": {
+        "concurrency": {
+          "repetitions": 5
+        }
+      },
+      "actions": {
+        "Call": {
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_sharepointonline",
+              "operationId": "HttpRequest",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+            },
+            "parameters": {
+              "dataset": "https://consultonyx.sharepoint.com/sites/sop-process-map",
+              "parameters/method": "@items('Each_request')?['method']",
+              "parameters/uri": "@items('Each_request')?['uri']",
+              "parameters/headers": "@coalesce(items('Each_request')?['headers'], json('{\"Accept\":\"application/json;odata=nometadata\",\"Content-Type\":\"application/json;odata=nometadata\"}'))",
+              "parameters/body": "@if(equals(items('Each_request')?['body'], null), '', string(items('Each_request')?['body']))"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        }
+      }
+    },
+    "Respond": {
+      "type": "Response",
+      "kind": "Http",
+      "runAfter": {
+        "Each_request": [
+          "Succeeded",
+          "Failed"
+        ]
+      },
+      "inputs": {
+        "statusCode": 200,
+        "body": {
+          "status": "@{actions('Each_request')?['status']}"
+        }
+      }
+    }
+  }
+}

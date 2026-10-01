@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+.env
+node_modules/
+dist/
+.DS_Store
+# linked-only (non-federal) source documents
+evals/sops/05-*.pdf
+evals/sops/10-*.pdf
+evals/sops/originals/
+.claude/
+dist-demo/
+*.tsbuildinfo
+app/memory-bank.md

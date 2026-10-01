@@ -1,0 +1,310 @@
+{
+  "step_matches": [
+    {
+      "golden_id": "S1",
+      "ai_id": "S1",
+      "reason": "Both have the requesting department nominate the cardholder."
+    },
+    {
+      "golden_id": "S2",
+      "ai_id": "S2",
+      "reason": "Both have the nominee complete the initial training."
+    },
+    {
+      "golden_id": "S3",
+      "ai_id": "S6",
+      "reason": "Both cover the appointing authority (HA/designee) appointing the cardholder with SF 1402."
+    },
+    {
+      "golden_id": "S4",
+      "ai_id": "S11",
+      "reason": "Both suspend the account until refresher training is completed."
+    },
+    {
+      "golden_id": "S5",
+      "ai_id": "S21",
+      "reason": "Both have N8 assign the appropriate LOA to the purchase request."
+    },
+    {
+      "golden_id": "S6",
+      "ai_id": "S23",
+      "reason": "Both have the requestor complete the required documentation and obtain approval signatures."
+    },
+    {
+      "golden_id": "S7",
+      "ai_id": "NONE",
+      "reason": "No AI step covers N8 providing funds status updates from the Corporate Master Execution File; S20 only checks availability."
+    },
+    {
+      "golden_id": "S8",
+      "ai_id": "S25",
+      "reason": "Both have N8 forward the requirement to the Comptroller for review."
+    },
+    {
+      "golden_id": "S9",
+      "ai_id": "S26",
+      "reason": "Both have N8 ask Division Directors/Special Assistants for remaining unfunded requirements."
+    },
+    {
+      "golden_id": "S10",
+      "ai_id": "S30",
+      "reason": "Both have the cardholder confirm the R/FM has committed sufficient funds."
+    },
+    {
+      "golden_id": "S11",
+      "ai_id": "S31",
+      "reason": "Both have the cardholder screen the purchase against mandatory sources."
+    },
+    {
+      "golden_id": "S12",
+      "ai_id": "S33",
+      "reason": "Both have the cardholder obtain AO approval before purchasing."
+    },
+    {
+      "golden_id": "S13",
+      "ai_id": "S36",
+      "reason": "Both have the cardholder confirm the merchant agrees to the billing, no back-order, 30-day delivery and packing list terms."
+    },
+    {
+      "golden_id": "S14",
+      "ai_id": "S37",
+      "reason": "Both have the cardholder remind the merchant not to charge sales tax."
+    },
+    {
+      "golden_id": "S15",
+      "ai_id": "S44",
+      "reason": "Both have the cardholder certify that quality and quantity match the vendor agreement."
+    },
+    {
+      "golden_id": "S16",
+      "ai_id": "NONE",
+      "reason": "The FOB destination action was merged into AI S37, which is already matched to S14."
+    },
+    {
+      "golden_id": "S17",
+      "ai_id": "S41",
+      "reason": "Both have the cardholder record the transaction in the purchase card log with documentation."
+    },
+    {
+      "golden_id": "S18",
+      "ai_id": "S49",
+      "reason": "Both have the cardholder use pay-and-confirm procedures."
+    },
+    {
+      "golden_id": "S19",
+      "ai_id": "S53",
+      "reason": "Both have the cardholder certify the bank statement and forward documentation to the AO/CO."
+    },
+    {
+      "golden_id": "S20",
+      "ai_id": "S60",
+      "reason": "Both have the AO review the statement and documentation and certify the account for payment."
+    },
+    {
+      "golden_id": "S21",
+      "ai_id": "S52",
+      "reason": "Both have the cardholder attach an explanation for undocumented transactions."
+    },
+    {
+      "golden_id": "S22",
+      "ai_id": "S57",
+      "reason": "Both have the AO/CO certify the cardholder's monthly statement or invoice."
+    },
+    {
+      "golden_id": "S23",
+      "ai_id": "S56",
+      "reason": "Both have the AO/CO notify the A/OPC or NETC N4 of a suspected unauthorized purchase."
+    },
+    {
+      "golden_id": "S24",
+      "ai_id": "S58",
+      "reason": "Both have the AO/CO complete the PAT review and return documentation to the cardholder."
+    },
+    {
+      "golden_id": "S25",
+      "ai_id": "S62",
+      "reason": "Both have the cardholder or AO contact the A/OPC about an unrecognized or suspect transaction."
+    },
+    {
+      "golden_id": "S26",
+      "ai_id": "S64",
+      "reason": "Both have the cardholder dispute the transaction through CitiDirect invoice certification."
+    },
+    {
+      "golden_id": "S27",
+      "ai_id": "S65",
+      "reason": "Both submit or fax the CITIBANK dispute form."
+    },
+    {
+      "golden_id": "S28",
+      "ai_id": "S66",
+      "reason": "Both track the dispute to resolution."
+    },
+    {
+      "golden_id": "S29",
+      "ai_id": "S67",
+      "reason": "Both offset the charge with a vendor or bank credit."
+    },
+    {
+      "golden_id": "S30",
+      "ai_id": "S68",
+      "reason": "Both send the cardholder a letter explaining the decision."
+    },
+    {
+      "golden_id": "S31",
+      "ai_id": "S70",
+      "reason": "Both notify the A/OPC of suspected fraud."
+    },
+    {
+      "golden_id": "S32",
+      "ai_id": "S71",
+      "reason": "Both have the A/OPC contact CITIBANK about the fraud."
+    },
+    {
+      "golden_id": "S33",
+      "ai_id": "S72",
+      "reason": "Both have CITIBANK close the account and issue a replacement card."
+    },
+    {
+      "golden_id": "S34",
+      "ai_id": "NONE",
+      "reason": "The AI assigns short-pay to the AO/CO rather than the cardholder, which is a different actor."
+    },
+    {
+      "golden_id": "S35",
+      "ai_id": "S75",
+      "reason": "Both have the cardholder submit the Declaration of Unauthorized Use form to the bank."
+    },
+    {
+      "golden_id": "S36",
+      "ai_id": "S77",
+      "reason": "Both have the cardholder report the lost or stolen card to CITIBANK."
+    },
+    {
+      "golden_id": "S37",
+      "ai_id": "S78",
+      "reason": "Both have the cardholder notify the AO and A/OPC."
+    },
+    {
+      "golden_id": "S38",
+      "ai_id": "S79",
+      "reason": "Both have the AO submit a written report to the A/OPC."
+    },
+    {
+      "golden_id": "S39",
+      "ai_id": "S80",
+      "reason": "Both have CITIBANK mail a replacement card."
+    },
+    {
+      "golden_id": "S40",
+      "ai_id": "S81",
+      "reason": "Both have the cardholder cut the found card in half and hand it in."
+    },
+    {
+      "golden_id": "S41",
+      "ai_id": "S82",
+      "reason": "Both have the A/OPC ensure the account is inactive 30 days before departure."
+    },
+    {
+      "golden_id": "S42",
+      "ai_id": "S84",
+      "reason": "Both have the A/OPC reduce limits to $1 and cut up the card."
+    },
+    {
+      "golden_id": "S43",
+      "ai_id": "S85",
+      "reason": "Both have the A/OPC close the account after everything clears."
+    },
+    {
+      "golden_id": "S44",
+      "ai_id": "S83",
+      "reason": "Both have the cardholder turn in GCPC transaction files to the AO/CO."
+    }
+  ],
+  "decision_matches": [
+    {
+      "golden_id": "D1",
+      "ai_id": "D1",
+      "correct": true,
+      "reason": "Both test the micro-purchase threshold, and Yes leads to the SF 1402 appointment in each."
+    },
+    {
+      "golden_id": "D2",
+      "ai_id": "NONE",
+      "correct": false,
+      "reason": "The AI has no decision on revocation, transfer, separation or retirement."
+    },
+    {
+      "golden_id": "D3",
+      "ai_id": "D2",
+      "correct": false,
+      "reason": "The AI tests only refresher training, and its Yes branch leads to providing a certificate rather than to purchase processing."
+    },
+    {
+      "golden_id": "D4",
+      "ai_id": "D6",
+      "correct": false,
+      "reason": "The conditions match, but the AI's No branch ends instead of leading to funds status updates."
+    },
+    {
+      "golden_id": "D5",
+      "ai_id": "D5",
+      "correct": false,
+      "reason": "The exhausted branch matches, but the AI's funds-available branch goes to LOA assignment rather than the fiscal-year-end unfunded requirements request."
+    },
+    {
+      "golden_id": "D6",
+      "ai_id": "D10",
+      "correct": true,
+      "reason": "Both test a fair and reasonable price, and Yes leads to the merchant terms step."
+    },
+    {
+      "golden_id": "D7",
+      "ai_id": "D15",
+      "correct": true,
+      "reason": "Both test billing for items not received, with Yes leading to pay-and-confirm and No to certifying the statement."
+    },
+    {
+      "golden_id": "D8",
+      "ai_id": "D13",
+      "correct": true,
+      "reason": "Both test cardholder availability, with Yes leading to cardholder review and No to the path where the AO certifies."
+    },
+    {
+      "golden_id": "D9",
+      "ai_id": "D19",
+      "correct": false,
+      "reason": "The condition is the same and the missing-documentation branch matches, but the documented branch leads to cardholder certification rather than AO/CO certification."
+    },
+    {
+      "golden_id": "D10",
+      "ai_id": "D23",
+      "correct": true,
+      "reason": "Both test whether the dispute was resolved for the cardholder, with Yes leading to a credit and No to a letter."
+    },
+    {
+      "golden_id": "D11",
+      "ai_id": "D21",
+      "correct": false,
+      "reason": "The AI decides fraud versus dispute before contacting CITIBANK, so its Yes branch leads to notification rather than account closure."
+    },
+    {
+      "golden_id": "D12",
+      "ai_id": "D24",
+      "correct": true,
+      "reason": "Both test whether the card is found, with Yes leading to cutting it in half."
+    },
+    {
+      "golden_id": "D13",
+      "ai_id": "NONE",
+      "correct": false,
+      "reason": "The AI has no decision on whether the cardholder is leaving the command."
+    },
+    {
+      "golden_id": "D14",
+      "ai_id": "D25",
+      "correct": true,
+      "reason": "Both test for outstanding transactions, with Yes leading to reducing limits and No to closing the account."
+    }
+  ]
+}

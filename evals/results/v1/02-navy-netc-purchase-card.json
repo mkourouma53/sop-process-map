@@ -1,0 +1,1870 @@
+{
+  "sop_title": "NETCINST 4200.4A - Government-Wide Commercial Purchase Card (GCPC) Program Internal Operating Procedures",
+  "summary": "The procedure covers the purchase card cycle at NETC: appointing and training cardholders, obtaining funding and approvals, making and receiving micro-purchases, monthly reconciliation and certification, and handling disputes and fraud. It is run by Cardholders (CHs), the Approving/Certifying Official (AO/CO), N8 (funding), N4 (GCPC Program Manager acting as A/OPC and AO), and the A/OPC with CITIBANK.",
+  "steps": [
+    {
+      "id": "S1",
+      "actor": "Requesting department",
+      "action": "Nominates the employee to become a cardholder; the A/OPC is notified of the new participant.",
+      "input": "Need for a new cardholder",
+      "output": "CH nomination",
+      "system": "Email or memo",
+      "source_section": "4.a",
+      "source_quote": "The CH will be nominated by the requesting department by email or memo.",
+      "inferred": false
+    },
+    {
+      "id": "S2",
+      "actor": "CH",
+      "action": "Completes required initial training and provides copies of all training certificates to the A/OPC.",
+      "input": "CH nomination",
+      "output": "Training certificates",
+      "system": "NAVSUP/DAU online training",
+      "source_section": "4.a; 5.a; 5.c(2)",
+      "source_quote": "Prior to making purchases, the CH will complete initial training",
+      "inferred": false
+    },
+    {
+      "id": "S3",
+      "actor": "Head of Activity (HA) or designee",
+      "action": "Appoints the CH by delegation of authority. The delegation specifies spending limits and authorized transaction types. SF 1402 is used if the CH's authority exceeds the micro-purchase threshold.",
+      "input": "Nomination, training certificates",
+      "output": "Delegation of authority / SF 1402",
+      "system": "SF 1402 (paper form)",
+      "source_section": "4.a; 4.b; 2.k",
+      "source_quote": "The CH will be appointed using SF 1402 (Certificate of Appointment) if their procurement authority exceeds the micro-purchase threshold.",
+      "inferred": false
+    },
+    {
+      "id": "S4",
+      "actor": "CH",
+      "action": "Acknowledges responsibility and understanding of reference (a) and this instruction.",
+      "input": "Delegation of authority",
+      "output": "Signed acknowledgment",
+      "system": "",
+      "source_section": "4.a",
+      "source_quote": "The CH will acknowledge the responsibility and understanding of reference (a)",
+      "inferred": false
+    },
+    {
+      "id": "S5",
+      "actor": "Requestor (department head or program manager)",
+      "action": "Emails the centrally managed purchase requirement to N8.",
+      "input": "Requirement for supplies, services, or training",
+      "output": "Purchase request",
+      "system": "Email",
+      "source_section": "6.c",
+      "source_quote": "Requests are emailed to N8.",
+      "inferred": false
+    },
+    {
+      "id": "S6",
+      "actor": "Deputy Comptroller / Comptroller / Legal (N00D)",
+      "action": "Reviews unusual or questionable requests before any action is taken.",
+      "input": "Unusual or questionable request forwarded by N8",
+      "output": "Review outcome (not specified)",
+      "system": "",
+      "source_section": "6.c",
+      "source_quote": "Unusual or questionable requests are forwarded to the Deputy Comptroller, Comptroller, and possibly Legal (N00D) for review prior to taking action.",
+      "inferred": false
+    },
+    {
+      "id": "S7",
+      "actor": "N8",
+      "action": "Assigns the appropriate LOA and document number to the routine request. Sends both to the requestor and to the CH with a request to make the purchase.",
+      "input": "Routine request with funding available",
+      "output": "LOA and document number; purchase request to CH",
+      "system": "Email",
+      "source_section": "6.c",
+      "source_quote": "If funding is available, routine requests are processed by assigning the appropriate LOA.",
+      "inferred": false
+    },
+    {
+      "id": "S8",
+      "actor": "Comptroller",
+      "action": "Reviews requirements for which funding is exhausted.",
+      "input": "Requirement with no available funding",
+      "output": "Review outcome (not specified)",
+      "system": "",
+      "source_section": "6.e",
+      "source_quote": "If funding is exhausted, requirements are forwarded to the Comptroller for review.",
+      "inferred": false
+    },
+    {
+      "id": "S9",
+      "actor": "Requestor",
+      "action": "Completes the required additional documentation (SF 182 or NETC 4235/4), obtains approval signatures, and provides signed copies to N8 and the CH.",
+      "input": "Request needing additional documentation",
+      "output": "Signed SF 182 or NETC 4235/4",
+      "system": "SF 182 / NETC 4235/4 (paper forms)",
+      "source_section": "6.b; 6.d",
+      "source_quote": "the requestor completes the required documentation, obtains the appropriate signatures for approval",
+      "inferred": false
+    },
+    {
+      "id": "S10",
+      "actor": "Division",
+      "action": "Prepares the SF 182 with an LOA, the GCPC payment statement, and the CH's name and phone number (obtained from N4). Provides a copy to N4 before forwarding to the Human Resources Office.",
+      "input": "Training request at or below $25,000",
+      "output": "SF 182 copy to N4; SF 182 to HRO",
+      "system": "SF 182 (paper form)",
+      "source_section": "16.c; 16.d",
+      "source_quote": "Provide a copy of SF 182 to N4 prior to forwarding to Human Resources Office.",
+      "inferred": false
+    },
+    {
+      "id": "S11",
+      "actor": "CH",
+      "action": "Screens the purchase request against mandatory supply sources such as Ability One. Procures office supplies from DoD EMALL or SERVMART using NETC 4400/1, and printing from DLA Document Services.",
+      "input": "Purchase request with LOA",
+      "output": "Screened requirement and source",
+      "system": "NETC 4400/1; DoD EMALL / SERVMART",
+      "source_section": "7.a(3)",
+      "source_quote": "Screen the purchase request from mandatory supply sources (i.e., Ability One)",
+      "inferred": false
+    },
+    {
+      "id": "S12",
+      "actor": "AO (N4)",
+      "action": "Approves the purchase before the CH buys.",
+      "input": "Screened requirement",
+      "output": "AO approval",
+      "system": "",
+      "source_section": "7.a(3); 6.a",
+      "source_quote": "Obtain AO approval prior to purchasing.",
+      "inferred": false
+    },
+    {
+      "id": "S13",
+      "actor": "N4",
+      "action": "Approves a purchase that exceeds the CH's single purchase limit.",
+      "input": "Purchase above single purchase limit",
+      "output": "N4 approval",
+      "system": "",
+      "source_section": "8",
+      "source_quote": "The single purchase limit cannot be exceeded unless approved by N4.",
+      "inferred": false
+    },
+    {
+      "id": "S14",
+      "actor": "CH",
+      "action": "Confirms the merchant agrees to the order terms: no charge until shipment, no back orders, delivery within 30 days, and required shipping document information.",
+      "input": "Approved purchase",
+      "output": "Merchant agreement",
+      "system": "",
+      "source_section": "7.c",
+      "source_quote": "The CH must confirm that the merchant agrees",
+      "inferred": false
+    },
+    {
+      "id": "S15",
+      "actor": "CH",
+      "action": "Places the order over the counter, by phone, or via the internet. Reminds the merchant not to charge sales tax and seeks FOB destination terms.",
+      "input": "Fair and reasonable price; merchant agreement",
+      "output": "Card transaction / order",
+      "system": "Purchase card (CITIBANK)",
+      "source_section": "7.b; 7.d",
+      "source_quote": "If the merchant's price is fair and reasonable, CH may proceed to purchase the supplies.",
+      "inferred": false
+    },
+    {
+      "id": "S16",
+      "actor": "CH",
+      "action": "Records the transaction and supporting documentation in the purchase card log.",
+      "input": "Card transaction",
+      "output": "Purchase card log entry",
+      "system": "NETC 4430/1 purchase card log",
+      "source_section": "7.e; 2.l",
+      "source_quote": "A purchase card log, NETC 4430/1, is required to record all purchase card transactions.",
+      "inferred": false
+    },
+    {
+      "id": "S17",
+      "actor": "Receiver/Inspector (separate from CH)",
+      "action": "Receives and inspects the supplies or services, with legible signature and date.",
+      "input": "Delivered supplies or services",
+      "output": "Signed receipt/inspection",
+      "system": "Paper signature",
+      "source_section": "9.a",
+      "source_quote": "one will perform receipt/inspection",
+      "inferred": false
+    },
+    {
+      "id": "S18",
+      "actor": "Acceptor (third person)",
+      "action": "Accepts the supplies or services, with legible signature and date.",
+      "input": "Inspected items",
+      "output": "Signed acceptance",
+      "system": "Paper signature",
+      "source_section": "9.a",
+      "source_quote": "one will accept. These actions must be accomplished by legible signature and date.",
+      "inferred": false
+    },
+    {
+      "id": "S19",
+      "actor": "AO and CH",
+      "action": "Determine whether the material must be recorded in a formal property management or accounting system.",
+      "input": "Accepted items",
+      "output": "Accountable property determination",
+      "system": "",
+      "source_section": "14.a",
+      "source_quote": "AOs and CHs identify whether materials need to be recorded in a formal property management or accounting system.",
+      "inferred": false
+    },
+    {
+      "id": "S20",
+      "actor": "N4",
+      "action": "Records accountable property in DPAS.",
+      "input": "Accountable property",
+      "output": "DPAS record",
+      "system": "Defense Property Accounting System (DPAS)",
+      "source_section": "14.b",
+      "source_quote": "All materials classified as accountable property will be recorded in the Defense Property Accounting System (DPAS).",
+      "inferred": false
+    },
+    {
+      "id": "S21",
+      "actor": "CH",
+      "action": "At the end of the billing cycle, verifies each transaction on the statement. Ensures every purchase is documented on the log and charged or reallocated to the proper LOA.",
+      "input": "Monthly statement, purchase log, receipts",
+      "output": "Verified transactions",
+      "system": "CITIBANK statement; NETC 4430/1 log",
+      "source_section": "10.a",
+      "source_quote": "The CH will verify the accuracy of each transaction at the end of the monthly billing cycle.",
+      "inferred": false
+    },
+    {
+      "id": "S22",
+      "actor": "CH",
+      "action": "Attaches supporting documentation for each transaction to the statement, plus a written explanation for any transaction lacking documentation.",
+      "input": "Receipts, log, approvals",
+      "output": "Statement documentation package",
+      "system": "Paper documentation",
+      "source_section": "7.e; 10.c",
+      "source_quote": "The documentation should be attached to the statement when it is submitted to the AO.",
+      "inferred": false
+    },
+    {
+      "id": "S23",
+      "actor": "CH",
+      "action": "Applies pay-and-confirm. Confirms with the vendor that items are in transit or will be replaced or repaired, pays the invoice in full, and tracks the open transactions in a suspense file.",
+      "input": "Billed but undelivered, or damaged under-warranty items",
+      "output": "Tracked open transactions / suspense file",
+      "system": "Suspense file",
+      "source_section": "10.a(1); 10.a(2)",
+      "source_quote": "The CH will confirm with the vendor that the items ordered are in transit",
+      "inferred": false
+    },
+    {
+      "id": "S24",
+      "actor": "CH",
+      "action": "Certifies the bank statement and forwards all documentation to the AO/CO.",
+      "input": "Verified statement and documentation",
+      "output": "CH-certified statement package",
+      "system": "CITIBANK",
+      "source_section": "10",
+      "source_quote": "The CH will certify the bank statement and forward all documentation to the AO/CO.",
+      "inferred": false
+    },
+    {
+      "id": "S25",
+      "actor": "AO/CO",
+      "action": "Reconciles the CH's statement in CITIBANK and ensures purchases were appropriate and charges accurate. Verifies supporting documentation and confirms receipt, inspection, and acceptance (e.g., initials on receipts).",
+      "input": "CH-certified statement package",
+      "output": "Reviewed statement",
+      "system": "CITIBANK",
+      "source_section": "10.b(1)-(3), (5)",
+      "source_quote": "Reconcile the CH's monthly statement in CITIBANK.",
+      "inferred": false
+    },
+    {
+      "id": "S26",
+      "actor": "AO/CO",
+      "action": "Notifies the A/OPC or NETC N4 of a suspected unauthorized purchase (noncompliance, fraud, misuse, or abuse).",
+      "input": "Suspected unauthorized purchase",
+      "output": "Notification to A/OPC or N4",
+      "system": "",
+      "source_section": "10.b(4)",
+      "source_quote": "Notify the A/OPC or NETC N4 in the event of any suspected unauthorized purchase",
+      "inferred": false
+    },
+    {
+      "id": "S27",
+      "actor": "AO/CO",
+      "action": "Certifies the monthly invoice and forwards it to the appropriate office for payment.",
+      "input": "Reviewed statement",
+      "output": "Certified invoice for payment",
+      "system": "CITIBANK",
+      "source_section": "10.b(6); 3.d",
+      "source_quote": "Certify the monthly invoice within 10 business days",
+      "inferred": false
+    },
+    {
+      "id": "S28",
+      "actor": "AO",
+      "action": "Completes the monthly PAT review and returns all supporting documentation to the CH.",
+      "input": "Certified statement",
+      "output": "Completed PAT review; documentation returned to CH",
+      "system": "DON Program Audit Tool (PAT)",
+      "source_section": "10.b(7); 3.c",
+      "source_quote": "Complete the monthly PAT Review within 15 calendar days of the end of the billing cycle",
+      "inferred": false
+    },
+    {
+      "id": "S29",
+      "actor": "A/OPC",
+      "action": "Conducts the monthly program review of transactions, targeting internal controls, training, span of control, and delinquencies. The review is automatically submitted to the next higher level A/OPC.",
+      "input": "Billing cycle transactions",
+      "output": "Monthly A/OPC review",
+      "system": "DON Data Mining System PAT",
+      "source_section": "22.a",
+      "source_quote": "The A/OPC shall conduct a review of transactions using the DON Data Mining System PAT",
+      "inferred": false
+    },
+    {
+      "id": "S30",
+      "actor": "A/OPC",
+      "action": "Conducts the semi-annual review aggregating the previous six monthly reviews.",
+      "input": "Six monthly reviews",
+      "output": "Semi-annual review report",
+      "system": "DON Data Mining System PAT; Semi-Annual Review Auxiliary Worksheet (Appendix D)",
+      "source_section": "22.b",
+      "source_quote": "The A/OPC shall conduct the semi-annual review",
+      "inferred": false
+    },
+    {
+      "id": "S31",
+      "actor": "HA (N4)",
+      "action": "Reviews and approves the semi-annual report. Once approved, the report is forwarded to the Hierarchy Level 3 A/OPC for submission to CCPMD.",
+      "input": "Semi-annual review report",
+      "output": "Approved report forwarded to Level 3 A/OPC",
+      "system": "",
+      "source_section": "22.b",
+      "source_quote": "The report shall be provided to the HA (N4) for review and approval.",
+      "inferred": false
+    },
+    {
+      "id": "S32",
+      "actor": "CH or AO",
+      "action": "Contacts the A/OPC to determine whether the dispute procedure or the fraud procedure applies. Only one procedure is initiated.",
+      "input": "Unrecognized or invalid transaction",
+      "output": "Procedure determination",
+      "system": "",
+      "source_section": "11; 11.a",
+      "source_quote": "The CH or AO must contact the A/OPC to determine which procedure is appropriate",
+      "inferred": false
+    },
+    {
+      "id": "S33",
+      "actor": "CH",
+      "action": "Disputes the transaction through the invoice certification process in CitiDirect, which automatically short-pays the invoice.",
+      "input": "Disputable transaction",
+      "output": "Disputed transaction; short-paid invoice",
+      "system": "CitiDirect",
+      "source_section": "11.a(1); 11.a(3)",
+      "source_quote": "Transactions must be disputed through the invoice certification process within CitiDirect.",
+      "inferred": false
+    },
+    {
+      "id": "S34",
+      "actor": "CH",
+      "action": "Signs the CITIBANK Government Cardholder Dispute Form (Appendix B) and sends it to CITIBANK by fax or mail.",
+      "input": "Disputed transaction",
+      "output": "Signed dispute form at CITIBANK",
+      "system": "Fax/mail; Appendix B form",
+      "source_section": "11.a(2)",
+      "source_quote": "submit/fax the CITIBANK Government Cardholder Dispute Form (Appendix B) to CITIBANK at 605-357-2019",
+      "inferred": false
+    },
+    {
+      "id": "S35",
+      "actor": "CH",
+      "action": "Tracks the dispute to resolution.",
+      "input": "Open dispute",
+      "output": "Dispute outcome",
+      "system": "CitiDirect dispute log / phone",
+      "source_section": "11.a(3); 11.a(4)",
+      "source_quote": "Track the dispute to resolution either by calling CITIBANK or reviewing the CITIBANK dispute log within CitiDirect.",
+      "inferred": false
+    },
+    {
+      "id": "S36",
+      "actor": "CH",
+      "action": "Notifies the A/OPC immediately of suspected fraudulent activity on the account.",
+      "input": "Suspected fraudulent transaction",
+      "output": "Fraud notification",
+      "system": "",
+      "source_section": "11.b(1)",
+      "source_quote": "The CH must notify the A/OPC immediately of any suspected fraudulent activity on the account.",
+      "inferred": false
+    },
+    {
+      "id": "S37",
+      "actor": "A/OPC",
+      "action": "Contacts CITIBANK. The account is closed and a replacement account and card are issued.",
+      "input": "Fraud notification",
+      "output": "Account closure and replacement card",
+      "system": "Phone (CITIBANK)",
+      "source_section": "11.b(1); 11.b(2)",
+      "source_quote": "The A/OPC will contact CITIBANK.",
+      "inferred": false
+    },
+    {
+      "id": "S38",
+      "actor": "CITIBANK",
+      "action": "Confirms with the CH which transactions are valid and which are fraudulent. Moves valid transactions to the new account.",
+      "input": "Closed account",
+      "output": "Valid transactions moved to new account",
+      "system": "",
+      "source_section": "11.b(2)",
+      "source_quote": "The bank will confirm with the CH which transactions are valid and which are fraudulent",
+      "inferred": false
+    },
+    {
+      "id": "S39",
+      "actor": "CH",
+      "action": "Completes the Declaration of Unauthorized Use form (Appendix C) for submission to the bank, then follows further A/OPC guidance.",
+      "input": "Confirmed fraudulent transactions",
+      "output": "Declaration of Unauthorized Use submitted",
+      "system": "Appendix C form",
+      "source_section": "11.b(3)",
+      "source_quote": "the CH will complete a Declaration of Unauthorized Use form (Appendix C) to be submitted to the bank.",
+      "inferred": false
+    },
+    {
+      "id": "S40",
+      "actor": "AO/CO",
+      "action": "Short-pays the invoice by the amount of the fraudulent transactions and certifies it using the manual certification process, not the dispute process.",
+      "input": "Invoice containing fraudulent transactions",
+      "output": "Short-paid, manually certified invoice",
+      "system": "",
+      "source_section": "11.b(3)",
+      "source_quote": "certified using the manual certification process, not the dispute process.",
+      "inferred": false
+    }
+  ],
+  "decisions": [
+    {
+      "id": "D1",
+      "after_step": "S5",
+      "condition": "Is the request unusual or questionable?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S6"
+        },
+        {
+          "label": "No (routine)",
+          "next_step": "S7"
+        }
+      ],
+      "source_section": "6.c",
+      "inferred": false
+    },
+    {
+      "id": "D2",
+      "after_step": "S5",
+      "condition": "Is funding available for the requirement?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S7"
+        },
+        {
+          "label": "No (funding exhausted)",
+          "next_step": "S8"
+        }
+      ],
+      "source_section": "6.c; 6.e",
+      "inferred": false
+    },
+    {
+      "id": "D3",
+      "after_step": "S7",
+      "condition": "Is additional documentation (SF 182 or NETC 4235/4) required?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S9"
+        },
+        {
+          "label": "No",
+          "next_step": "S11"
+        }
+      ],
+      "source_section": "6.d",
+      "inferred": false
+    },
+    {
+      "id": "D4",
+      "after_step": "S9",
+      "condition": "Is the SF 182 training request valued above $25,000?",
+      "branches": [
+        {
+          "label": "Yes (GCPC may not be used)",
+          "next_step": "UNDEFINED"
+        },
+        {
+          "label": "No",
+          "next_step": "S10"
+        }
+      ],
+      "source_section": "16.a; 16.b",
+      "inferred": false
+    },
+    {
+      "id": "D5",
+      "after_step": "S12",
+      "condition": "Does the AO approve the purchase?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S14"
+        },
+        {
+          "label": "No",
+          "next_step": "UNDEFINED"
+        }
+      ],
+      "source_section": "7.a(3)",
+      "inferred": false
+    },
+    {
+      "id": "D6",
+      "after_step": "S12",
+      "condition": "Does the purchase exceed the CH's single purchase limit?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S13"
+        },
+        {
+          "label": "No",
+          "next_step": "S14"
+        }
+      ],
+      "source_section": "8",
+      "inferred": false
+    },
+    {
+      "id": "D7",
+      "after_step": "S14",
+      "condition": "Is the merchant's price fair and reasonable?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S15"
+        },
+        {
+          "label": "No",
+          "next_step": "UNDEFINED"
+        }
+      ],
+      "source_section": "7.b",
+      "inferred": false
+    },
+    {
+      "id": "D8",
+      "after_step": "S19",
+      "condition": "Is the item accountable property ($5,000+ unit cost, or sensitive, pilferable, or classified)?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S20"
+        },
+        {
+          "label": "No",
+          "next_step": "S21"
+        }
+      ],
+      "source_section": "14.a; 14.b",
+      "inferred": false
+    },
+    {
+      "id": "D9",
+      "after_step": "S21",
+      "condition": "Does the statement show an unrecognized or invalid transaction?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S32"
+        },
+        {
+          "label": "No",
+          "next_step": "S22"
+        }
+      ],
+      "source_section": "11; 11.a",
+      "inferred": false
+    },
+    {
+      "id": "D10",
+      "after_step": "S22",
+      "condition": "Was the CH billed for items not yet received, or for damaged items the contractor will replace or repair under warranty?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S23"
+        },
+        {
+          "label": "No",
+          "next_step": "S24"
+        }
+      ],
+      "source_section": "10.a(1); 10.a(2)",
+      "inferred": false
+    },
+    {
+      "id": "D11",
+      "after_step": "S23",
+      "condition": "Was the material received, or the transaction/credit posted, within the next billing cycle?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "END"
+        },
+        {
+          "label": "No",
+          "next_step": "S32"
+        }
+      ],
+      "source_section": "10.a(1); 10.a(2)",
+      "inferred": false
+    },
+    {
+      "id": "D12",
+      "after_step": "S25",
+      "condition": "Is any purchase suspected to be unauthorized (noncompliance, fraud, misuse, or abuse)?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S26"
+        },
+        {
+          "label": "No",
+          "next_step": "S27"
+        }
+      ],
+      "source_section": "10.b(4)",
+      "inferred": false
+    },
+    {
+      "id": "D13",
+      "after_step": "S31",
+      "condition": "Does the HA (N4) approve the semi-annual report?",
+      "branches": [
+        {
+          "label": "Yes (forwarded to Hierarchy Level 3 A/OPC)",
+          "next_step": "END"
+        },
+        {
+          "label": "No",
+          "next_step": "UNDEFINED"
+        }
+      ],
+      "source_section": "22.b",
+      "inferred": false
+    },
+    {
+      "id": "D14",
+      "after_step": "S32",
+      "condition": "Is the suspect transaction fraudulent rather than a dispute?",
+      "branches": [
+        {
+          "label": "Yes (fraud)",
+          "next_step": "S36"
+        },
+        {
+          "label": "No (dispute)",
+          "next_step": "S33"
+        }
+      ],
+      "source_section": "11; 11.a; 11.b",
+      "inferred": false
+    },
+    {
+      "id": "D15",
+      "after_step": "S35",
+      "condition": "Was the dispute resolved in favor of the CH?",
+      "branches": [
+        {
+          "label": "Yes (offset by vendor or bank credit)",
+          "next_step": "END"
+        },
+        {
+          "label": "No (charge appears on next invoice and must be certified)",
+          "next_step": "S27"
+        }
+      ],
+      "source_section": "11.a(4); 11.a(5)",
+      "inferred": false
+    }
+  ],
+  "handoffs": [
+    {
+      "after_step": "S1",
+      "from_actor": "Requesting department",
+      "to_actor": "A/OPC"
+    },
+    {
+      "after_step": "S2",
+      "from_actor": "CH",
+      "to_actor": "A/OPC"
+    },
+    {
+      "after_step": "S3",
+      "from_actor": "Head of Activity (HA) or designee",
+      "to_actor": "CH"
+    },
+    {
+      "after_step": "S5",
+      "from_actor": "Requestor (department head or program manager)",
+      "to_actor": "N8"
+    },
+    {
+      "after_step": "S5",
+      "from_actor": "N8",
+      "to_actor": "Deputy Comptroller / Comptroller / Legal (N00D)"
+    },
+    {
+      "after_step": "S5",
+      "from_actor": "N8",
+      "to_actor": "Comptroller"
+    },
+    {
+      "after_step": "S7",
+      "from_actor": "N8",
+      "to_actor": "CH"
+    },
+    {
+      "after_step": "S7",
+      "from_actor": "N8",
+      "to_actor": "Requestor"
+    },
+    {
+      "after_step": "S9",
+      "from_actor": "Requestor",
+      "to_actor": "N8"
+    },
+    {
+      "after_step": "S9",
+      "from_actor": "Requestor",
+      "to_actor": "CH"
+    },
+    {
+      "after_step": "S10",
+      "from_actor": "Division",
+      "to_actor": "N4"
+    },
+    {
+      "after_step": "S10",
+      "from_actor": "Division",
+      "to_actor": "Human Resources Office"
+    },
+    {
+      "after_step": "S11",
+      "from_actor": "CH",
+      "to_actor": "AO (N4)"
+    },
+    {
+      "after_step": "S12",
+      "from_actor": "AO (N4)",
+      "to_actor": "CH"
+    },
+    {
+      "after_step": "S13",
+      "from_actor": "N4",
+      "to_actor": "CH"
+    },
+    {
+      "after_step": "S16",
+      "from_actor": "CH",
+      "to_actor": "Receiver/Inspector (separate from CH)"
+    },
+    {
+      "after_step": "S17",
+      "from_actor": "Receiver/Inspector (separate from CH)",
+      "to_actor": "Acceptor (third person)"
+    },
+    {
+      "after_step": "S19",
+      "from_actor": "AO and CH",
+      "to_actor": "N4"
+    },
+    {
+      "after_step": "S24",
+      "from_actor": "CH",
+      "to_actor": "AO/CO"
+    },
+    {
+      "after_step": "S26",
+      "from_actor": "AO/CO",
+      "to_actor": "A/OPC or NETC N4"
+    },
+    {
+      "after_step": "S27",
+      "from_actor": "AO/CO",
+      "to_actor": "Payment office"
+    },
+    {
+      "after_step": "S28",
+      "from_actor": "AO",
+      "to_actor": "CH"
+    },
+    {
+      "after_step": "S29",
+      "from_actor": "A/OPC",
+      "to_actor": "Next higher level A/OPC"
+    },
+    {
+      "after_step": "S30",
+      "from_actor": "A/OPC",
+      "to_actor": "HA (N4)"
+    },
+    {
+      "after_step": "S31",
+      "from_actor": "HA (N4)",
+      "to_actor": "Hierarchy Level 3 A/OPC"
+    },
+    {
+      "after_step": "S32",
+      "from_actor": "CH or AO",
+      "to_actor": "A/OPC"
+    },
+    {
+      "after_step": "S34",
+      "from_actor": "CH",
+      "to_actor": "CITIBANK"
+    },
+    {
+      "after_step": "S36",
+      "from_actor": "CH",
+      "to_actor": "A/OPC"
+    },
+    {
+      "after_step": "S37",
+      "from_actor": "A/OPC",
+      "to_actor": "CITIBANK"
+    },
+    {
+      "after_step": "S38",
+      "from_actor": "CITIBANK",
+      "to_actor": "CH"
+    },
+    {
+      "after_step": "S39",
+      "from_actor": "CH",
+      "to_actor": "CITIBANK"
+    }
+  ],
+  "exceptions": [
+    {
+      "step": "S2",
+      "trigger": "Participant does not complete refresher training within two years",
+      "handling": "Account is suspended until training is completed.",
+      "source_section": "5.b"
+    },
+    {
+      "step": "S3",
+      "trigger": "CH is transferred, separated, or retires",
+      "handling": "Appointment ends. The A/OPC ensures, to the maximum extent possible, that the account is inactive at least 30 days before departure, and closes it once all transactions and payments clear. If transactions remain outstanding, the A/OPC reduces the limits to $1.00 and cuts up the card. All GCPC files are turned in to the AO/CO for retention.",
+      "source_section": "4.c; 20; 21"
+    },
+    {
+      "step": "S6",
+      "trigger": "Request is unusual or questionable",
+      "handling": "Forwarded for review before any action is taken. The SOP does not state what happens after the review.",
+      "source_section": "6.c"
+    },
+    {
+      "step": "S8",
+      "trigger": "Funding is exhausted",
+      "handling": "Requirements are forwarded to the Comptroller for review. The outcome and next step are not stated.",
+      "source_section": "6.e"
+    },
+    {
+      "step": "S9",
+      "trigger": "SF 182 training request exceeds $25,000",
+      "handling": "The GCPC may not be used. No alternative path is stated.",
+      "source_section": "16.b"
+    },
+    {
+      "step": "S12",
+      "trigger": "AO does not approve the purchase",
+      "handling": "",
+      "source_section": "7.a(3)"
+    },
+    {
+      "step": "S14",
+      "trigger": "Merchant's price is not fair and reasonable",
+      "handling": "",
+      "source_section": "7.b"
+    },
+    {
+      "step": "S15",
+      "trigger": "Merchant will ship only FOB origin / prepay and add",
+      "handling": "CH should not accept FOB origin unless the merchant states it is the only way they will ship.",
+      "source_section": "7.d(3)"
+    },
+    {
+      "step": "S15",
+      "trigger": "Transaction is denied by the CITIBANK authorization system",
+      "handling": "CH must contact the A/OPC.",
+      "source_section": "19"
+    },
+    {
+      "step": "S15",
+      "trigger": "Card is lost or stolen",
+      "handling": "CH immediately calls CITIBANK (1-800-790-7206). The CH notifies the AO and A/OPC within one business day, and the AO submits a written report to the A/OPC within one business day. CITIBANK mails a replacement card. A card found later is cut in half and given to the AO or A/OPC.",
+      "source_section": "17.a; 17.b; 17.c"
+    },
+    {
+      "step": "S17",
+      "trigger": "Emergent situation prevents three-way separation of function",
+      "handling": "Minimum two-way separation applies: the person who awarded the order does not perform receipt, inspection, or acceptance.",
+      "source_section": "9.b"
+    },
+    {
+      "step": "S21",
+      "trigger": "CH is not available to review the statement for certification",
+      "handling": "CH notifies the AO. The AO reviews the statement and documentation and certifies the account for payment, then meets with the CH on their return to review the statement.",
+      "source_section": "10.a(3)"
+    },
+    {
+      "step": "S22",
+      "trigger": "CH has no documentation for a transaction",
+      "handling": "CH attaches an explanation with item description, cost, transaction date, merchant name, price, quantity, and the reason documentation is missing.",
+      "source_section": "10.c"
+    },
+    {
+      "step": "S23",
+      "trigger": "Billed material is not received within the next billing cycle",
+      "handling": "CH disputes the item using established dispute procedures.",
+      "source_section": "10.a(1)"
+    },
+    {
+      "step": "S23",
+      "trigger": "Warranty transactions or credits do not post on the next billing statement",
+      "handling": "CH or AO notifies the A/OPC to resolve and reconcile the statement.",
+      "source_section": "10.a(2)"
+    },
+    {
+      "step": "S26",
+      "trigger": "AO/CO suspects an unauthorized purchase",
+      "handling": "Notify the A/OPC or NETC N4. Supervisors who learn of misuse take appropriate action, including investigation. No further process steps are defined.",
+      "source_section": "10.b(4); 13.b"
+    },
+    {
+      "step": "S32",
+      "trigger": "Suspect transaction is reported as both a dispute and fraud",
+      "handling": "Prohibited; only one procedure may be initiated. Using both may cause incorrect short-payment and account delinquency.",
+      "source_section": "11"
+    },
+    {
+      "step": "S35",
+      "trigger": "Dispute is resolved in favor of the merchant",
+      "handling": "A letter is sent to the CH explaining the decision. The charge appears on the next invoice and must be certified for payment.",
+      "source_section": "11.a(4)"
+    },
+    {
+      "step": "S29",
+      "trigger": "Local program fails the external PMR review",
+      "handling": "All card accounts are suspended for three days except one CH and one AO account for mission-essential needs. Mandatory stand-down training is held and a Plan of Action and Milestones is prepared.",
+      "source_section": "23.b"
+    },
+    {
+      "step": "S31",
+      "trigger": "HA (N4) does not approve the semi-annual report",
+      "handling": "",
+      "source_section": "22.b"
+    }
+  ],
+  "timing": [
+    {
+      "step": "S2",
+      "requirement": "Initial training before assuming program responsibility. Refresher training within two years of initial or last refresher training. DoD ethics training annually. COs and D/AOs complete Certifying Officer Legislation training annually.",
+      "source_section": "5.a; 5.b; 5.c; 5.d"
+    },
+    {
+      "step": "S5",
+      "requirement": "Requirements are discussed with department heads and program managers, and LOAs issued, before the start of the new fiscal year.",
+      "source_section": "6.a; 6.b; 6.c"
+    },
+    {
+      "step": "S8",
+      "requirement": "N8 provides funds status updates only 'occasionally or upon request' (no fixed interval).",
+      "source_section": "6.e"
+    },
+    {
+      "step": "S14",
+      "requirement": "Merchant must deliver, or have available for pickup, all items no later than 30 days from the order date.",
+      "source_section": "7.c(3)"
+    },
+    {
+      "step": "S21",
+      "requirement": "Performed at the end of the monthly billing cycle. The cycle ends on the 19th of each month, or the preceding Friday if the 19th falls on a weekend.",
+      "source_section": "10.a; 2.a"
+    },
+    {
+      "step": "S23",
+      "requirement": "Material, replacement, or credit is expected within the next billing cycle.",
+      "source_section": "10.a(1); 10.a(2)"
+    },
+    {
+      "step": "S24",
+      "requirement": "CH and AO/CO complete reconciliation within five business days of the statement status changing from INTERIM to NEW.",
+      "source_section": "10"
+    },
+    {
+      "step": "S27",
+      "requirement": "Certify the monthly invoice within 10 business days of the statement status changing from INTERIM to NEW.",
+      "source_section": "10.b(6)"
+    },
+    {
+      "step": "S28",
+      "requirement": "Complete the monthly PAT review within 15 calendar days of the end of the billing cycle.",
+      "source_section": "10.b(7)"
+    },
+    {
+      "step": "S29",
+      "requirement": "A/OPC completes the monthly review within 30 calendar days of the end of the billing cycle.",
+      "source_section": "22.a"
+    },
+    {
+      "step": "S30",
+      "requirement": "Semi-annual review covers billing cycles 20 March-19 September and 20 September-19 March.",
+      "source_section": "22.b"
+    },
+    {
+      "step": "S33",
+      "requirement": "CH has 60 days from the billing statement date to formally dispute transactions.",
+      "source_section": "11.a(5)"
+    },
+    {
+      "step": "S36",
+      "requirement": "Notify the A/OPC immediately of suspected fraud. Fraudulent accounts are closed immediately.",
+      "source_section": "11.b(1); 11.b(2)"
+    },
+    {
+      "step": "S15",
+      "requirement": "Lost or stolen card: call CITIBANK immediately. Notify the AO and A/OPC within one business day, and the AO's written report is due within one business day. CITIBANK mails a replacement within one business day.",
+      "source_section": "17.a; 17.b; 17.c"
+    },
+    {
+      "step": "S3",
+      "requirement": "On CH departure, the account should be inactive at least 30 days (one billing cycle) before departure and must not remain active past the official departure date.",
+      "source_section": "20"
+    },
+    {
+      "step": "S29",
+      "requirement": "External PMR desk audit occurs every 18 months. A subsequent 180-day review follows a failed review.",
+      "source_section": "23.a; 23.b"
+    },
+    {
+      "step": "S28",
+      "requirement": "Financial transaction records are retained for 10 years.",
+      "source_section": "21"
+    }
+  ],
+  "risks": [
+    {
+      "id": "R1",
+      "step": "S5",
+      "risk_type": "manual_handoff",
+      "description": "Section 6.c says 'Requests are emailed to N8.' No request log, status, or queue is defined, so requests can sit in an inbox with no tracking or audit trail.",
+      "severity": "medium"
+    },
+    {
+      "id": "R2",
+      "step": "S6",
+      "risk_type": "undefined_exception",
+      "description": "Section 6.c sends unusual or questionable requests to the Deputy Comptroller, Comptroller, and 'possibly Legal (N00D)'. The SOP does not say who decides when Legal is involved, what the review outcomes are, or what happens next (D1 Yes branch has no return path).",
+      "severity": "medium"
+    },
+    {
+      "id": "R3",
+      "step": "S8",
+      "risk_type": "undefined_exception",
+      "description": "Section 6.e: if funding is exhausted, requirements are forwarded to the Comptroller for review. The outcome and next step are not stated, and the requestor and CH are not told what happens.",
+      "severity": "medium"
+    },
+    {
+      "id": "R4",
+      "step": "S8",
+      "risk_type": "vague_ownership_or_timing",
+      "description": "Section 6.e: funds status updates come 'occasionally or upon request'. Section 6.a: 'Specific dollar amounts are not assigned.' Yet CHs must ensure funds are committed before buying (7.a(2)). With no fixed reporting interval, purchases could proceed against funds that are already exhausted.",
+      "severity": "medium"
+    },
+    {
+      "id": "R5",
+      "step": "S9",
+      "risk_type": "undefined_exception",
+      "description": "Decision D4 (16.b): the GCPC may not be used for SF 182 training above $25,000. No alternative procurement path or owner is stated.",
+      "severity": "low"
+    },
+    {
+      "id": "R6",
+      "step": "S9",
+      "risk_type": "rekeying",
+      "description": "Two sections describe preparing the same SF 182 and distributing paper copies. Under 6.b/6.d the requestor sends signed copies to N8 and the CH. Under 16.c/16.d the division assigns an LOA, gets CH details by contacting N4, and sends copies to N4 and HRO. The LOA and CH data are re-entered and copies multiply across four parties.",
+      "severity": "medium"
+    },
+    {
+      "id": "R7",
+      "step": "S12",
+      "risk_type": "undefined_exception",
+      "description": "Decision D5: the SOP requires AO approval before purchasing (7.a(3)) but states no next step when the AO does not approve. The requestor may never be told, and the request has no closure.",
+      "severity": "medium"
+    },
+    {
+      "id": "R8",
+      "step": "S12",
+      "risk_type": "manual_handoff",
+      "description": "Section 7.a(3) says 'Obtain AO approval prior to purchasing' but names no form or record for the approval. Section 7.e still expects documentation of required special approvals, so approvals may be undocumented when the AO later reviews.",
+      "severity": "medium"
+    },
+    {
+      "id": "R9",
+      "step": "S13",
+      "risk_type": "single_point_of_failure",
+      "description": "N4 holds many roles. It serves as AO for supplies (6.a), approves exceptions to the single purchase limit (8), and performs the A/OPC function as GCPC Program Manager at a single phone number (3.b). It also holds the delegated HA responsibilities (3.a) and maintains DPAS (14.b). No backup or alternate is named for any of these roles.",
+      "severity": "high"
+    },
+    {
+      "id": "R10",
+      "step": "S14",
+      "risk_type": "undefined_exception",
+      "description": "Decision D7 (7.b): the CH may purchase only if the merchant's price is fair and reasonable. No next step is stated when it is not, such as selecting another merchant or returning to the AO.",
+      "severity": "low"
+    },
+    {
+      "id": "R11",
+      "step": "S16",
+      "risk_type": "rekeying",
+      "description": "The CH types each transaction into the NETC 4430/1 log (7.e). The same data then appears on the CITIBANK statement and is reconciled by the CH (S21) and again by the AO/CO in CITIBANK (S25). The same transaction data is handled in multiple places.",
+      "severity": "medium"
+    },
+    {
+      "id": "R12",
+      "step": "S17",
+      "risk_type": "manual_handoff",
+      "description": "Section 9.a: receipt/inspection and acceptance pass among three people by 'legible signature and date' on paper, with no tracking. Section 10.b(5) lets the AO confirm this 'by placing initials in a corner' of receipts, a weak and easily missed check.",
+      "severity": "medium"
+    },
+    {
+      "id": "R13",
+      "step": "S19",
+      "risk_type": "vague_ownership_or_timing",
+      "description": "Section 14.a: 'AOs and CHs identify whether materials need to be recorded' gives joint ownership and no timing. Accountable, sensitive, or pilferable items could go unrecorded in DPAS.",
+      "severity": "medium"
+    },
+    {
+      "id": "R14",
+      "step": "S23",
+      "risk_type": "missing_control",
+      "description": "Under pay-and-confirm (10.a(1)-(2)) the CH pays in full and tracks open items in a paper suspense file. Nothing checks that unreceived items are disputed within the 60-day window (11.a(5)), so payment for undelivered goods could become unrecoverable.",
+      "severity": "medium"
+    },
+    {
+      "id": "R15",
+      "step": "S24",
+      "risk_type": "vague_ownership_or_timing",
+      "description": "The deadlines overlap. Section 10 says CH and AO/CO complete reconciliation within 5 business days of INTERIM to NEW. Section 10.b(6) allows 10 business days for certification, and 10.b(7) allows 15 calendar days from cycle end for PAT. No deadline is set for the CH-to-AO/CO handoff.",
+      "severity": "medium"
+    },
+    {
+      "id": "R16",
+      "step": "S24",
+      "risk_type": "manual_handoff",
+      "description": "The CH forwards 'all documentation' to the AO/CO (10), and the AO later returns it to the CH (10.b(7)). This paper package moves twice with no tracking, while records must be retained for 10 years (21).",
+      "severity": "medium"
+    },
+    {
+      "id": "R17",
+      "step": "S26",
+      "risk_type": "undefined_exception",
+      "description": "Section 10.b(4): after the AO/CO notifies the A/OPC or N4 of a suspected unauthorized purchase, no further steps are defined. The SOP does not say whether certification is held or who investigates. Section 13.b says only that supervisors 'take appropriate action'.",
+      "severity": "high"
+    },
+    {
+      "id": "R18",
+      "step": "S27",
+      "risk_type": "missing_control",
+      "description": "Sections 3.c and 3.d: 'The same person performs the roles of AO and CO.' The official who approves purchases before buying (7.a(3)) also certifies the same charges for payment, with no independent check before money is released.",
+      "severity": "high"
+    },
+    {
+      "id": "R19",
+      "step": "S31",
+      "risk_type": "missing_control",
+      "description": "Section 22.b: the A/OPC's semi-annual review is approved by the HA (N4). Sections 3.a and 3.b: HA responsibilities are delegated to N4, and the GCPC Program Manager (N4) performs the A/OPC function. The program oversight report is effectively approved by the office that produced it.",
+      "severity": "high"
+    },
+    {
+      "id": "R20",
+      "step": "S31",
+      "risk_type": "undefined_exception",
+      "description": "Decision D13: no next step is stated if the HA (N4) does not approve the semi-annual report.",
+      "severity": "low"
+    },
+    {
+      "id": "R21",
+      "step": "S34",
+      "risk_type": "rekeying",
+      "description": "Section 11.a(2): the CH disputes the transaction in CitiDirect, then submits the same details again on the Appendix B paper form by fax or mail.",
+      "severity": "low"
+    },
+    {
+      "id": "R22",
+      "step": "S35",
+      "risk_type": "vague_ownership_or_timing",
+      "description": "Section 11.a(3): 'Track the dispute to resolution' names no actor and no check frequency (11.a names the 'CH or AO'). Open disputes could go unmonitored.",
+      "severity": "low"
+    },
+    {
+      "id": "R23",
+      "step": "S36",
+      "risk_type": "single_point_of_failure",
+      "description": "Section 11.b(1): suspected fraud must be reported to the A/OPC 'immediately', and the A/OPC contacts CITIBANK. The A/OPC function is held by the GCPC Program Manager (N4) (3.b). No backup is named for an urgent report when that person is unavailable.",
+      "severity": "medium"
+    },
+    {
+      "id": "R24",
+      "step": "S39",
+      "risk_type": "vague_ownership_or_timing",
+      "description": "Section 11.b(3): the CH 'will follow further guidance provided by the A/OPC', with no deadline for submitting the Declaration of Unauthorized Use.",
+      "severity": "low"
+    },
+    {
+      "id": "R25",
+      "step": "S3",
+      "risk_type": "vague_ownership_or_timing",
+      "description": "Section 20: on CH departure, the A/OPC makes the account inactive 'to the maximum extent possible' and reduces limits 'as soon as practical'. The SOP does not say how the A/OPC learns of a departure, so an active card could stay open past the CH's departure.",
+      "severity": "high"
+    },
+    {
+      "id": "R26",
+      "step": "S2",
+      "risk_type": "vague_ownership_or_timing",
+      "description": "Section 5.b: failure to complete refresher training suspends the account. Certificates go to the A/OPC (5.c(2)), but no one is named to track the two-year and annual due dates or to trigger the suspension.",
+      "severity": "medium"
+    }
+  ],
+  "recommendations": [
+    {
+      "id": "A1",
+      "step": "S1",
+      "label": "digitize",
+      "reason": "Replace the email/memo nomination with a structured form so the A/OPC is notified automatically and the nomination is recorded.",
+      "suggested_tool": "Power Apps form writing to a SharePoint 'GCPC Participants' list",
+      "value": 2,
+      "effort": 2
+    },
+    {
+      "id": "A2",
+      "step": "S2",
+      "label": "automate",
+      "reason": "Store certificate uploads and completion dates. A scheduled flow reminds participants before the refresher, ethics, and CO Legislation training due dates and flags overdue accounts to the A/OPC for suspension (addresses R26).",
+      "suggested_tool": "Power Automate scheduled flow + SharePoint list + Outlook",
+      "value": 3,
+      "effort": 2
+    },
+    {
+      "id": "A3",
+      "step": "S3",
+      "label": "keep_human",
+      "reason": "Delegation of procurement authority and SF 1402 appointment is a legal designation by the HA or designee.",
+      "suggested_tool": "None (HA signature)",
+      "value": 2,
+      "effort": 1
+    },
+    {
+      "id": "A4",
+      "step": "S4",
+      "label": "digitize",
+      "reason": "Capture the CH's acknowledgment as a dated attestation on the participant record instead of a separate document.",
+      "suggested_tool": "Power Apps attestation writing to SharePoint",
+      "value": 2,
+      "effort": 2
+    },
+    {
+      "id": "A5",
+      "step": "S5",
+      "label": "digitize",
+      "reason": "Every centrally managed purchase starts as an untracked email to N8 (R1). A request form gives a tracked record that later steps can prefill (LOA, approvals, log).",
+      "suggested_tool": "Power Apps form writing to a SharePoint 'GCPC Purchase Requests' list",
+      "value": 5,
+      "effort": 2
+    },
+    {
+      "id": "A6",
+      "step": "S6",
+      "label": "keep_human",
+      "reason": "Reviewing unusual or questionable requests needs Comptroller and possibly Legal judgment.",
+      "suggested_tool": "None",
+      "value": 2,
+      "effort": 1
+    },
+    {
+      "id": "A7",
+      "step": "S7",
+      "label": "automate",
+      "reason": "N8 still selects the LOA and document number. The flow writes them to the request and notifies the requestor and CH, removing a manual email step. Funds checks stay manual because the Corporate Master Execution File has no connector.",
+      "suggested_tool": "Power Automate + Approvals + SharePoint LOA list",
+      "value": 4,
+      "effort": 2
+    },
+    {
+      "id": "A8",
+      "step": "S8",
+      "label": "keep_human",
+      "reason": "Deciding what to do with unfunded requirements is a Comptroller budget judgment.",
+      "suggested_tool": "None",
+      "value": 2,
+      "effort": 1
+    },
+    {
+      "id": "A9",
+      "step": "S9",
+      "label": "digitize",
+      "reason": "Capture SF 182 / NETC 4235/4 data once, route the approval signatures, and distribute the signed copy from one record (addresses R6). This may require a generated PDF of the official form for HRO.",
+      "suggested_tool": "Power Apps + Power Automate Approvals + SharePoint document library",
+      "value": 4,
+      "effort": 3
+    },
+    {
+      "id": "A10",
+      "step": "S10",
+      "label": "eliminate",
+      "reason": "Section 16.c-d repeats the SF 182 preparation and copy distribution already done in S9 (6.b/6.d). The digitized S9 record would send the form to N8, CH, N4, and HRO and look up CH details, so this separate preparation and copy step is redundant.",
+      "suggested_tool": "Absorbed into A9",
+      "value": 3,
+      "effort": 2
+    },
+    {
+      "id": "A11",
+      "step": "S11",
+      "label": "digitize",
+      "reason": "Record the mandatory-source screening result and the NETC 4400/1 details on the request record, giving the audit trail 2.l and 7.e require.",
+      "suggested_tool": "Power Apps screen on the SharePoint request record",
+      "value": 3,
+      "effort": 2
+    },
+    {
+      "id": "A12",
+      "step": "S12",
+      "label": "automate",
+      "reason": "Route AO approval as a tracked approval with a recorded outcome before purchase (addresses R7 and R8). On rejection, notify the requestor and CH.",
+      "suggested_tool": "Power Automate Approvals + SharePoint",
+      "value": 5,
+      "effort": 2
+    },
+    {
+      "id": "A13",
+      "step": "S13",
+      "label": "automate",
+      "reason": "Compare the estimated cost with the CH's single purchase limit from the roster, and route to N4 only when exceeded (rule-based branch of the A12 flow).",
+      "suggested_tool": "Power Automate condition + Approvals",
+      "value": 3,
+      "effort": 2
+    },
+    {
+      "id": "A14",
+      "step": "S15",
+      "label": "keep_human",
+      "reason": "The fair-and-reasonable price determination, merchant negotiation, and card use are CH judgment and card security responsibilities.",
+      "suggested_tool": "None",
+      "value": 2,
+      "effort": 1
+    },
+    {
+      "id": "A15",
+      "step": "S16",
+      "label": "digitize",
+      "reason": "Replace the NETC 4430/1 log with a SharePoint list prefilled from the approved request (LOA, doc number, approvals), cutting rekeying (R11) and supporting reconciliation. Store no full account numbers.",
+      "suggested_tool": "Power Apps + SharePoint 'Purchase Card Log' list",
+      "value": 5,
+      "effort": 2
+    },
+    {
+      "id": "A16",
+      "step": "S17",
+      "label": "digitize",
+      "reason": "Capture receipt/inspection electronically with name and date, and block the CH or ordering official from signing (addresses R12 and enforces 9.a/9.b).",
+      "suggested_tool": "Power Apps receipt screen writing to the log item",
+      "value": 4,
+      "effort": 2
+    },
+    {
+      "id": "A17",
+      "step": "S18",
+      "label": "digitize",
+      "reason": "Capture acceptance by a third person electronically on the same record, so the AO can verify it without hand-initialed receipts.",
+      "suggested_tool": "Power Apps acceptance screen writing to the log item",
+      "value": 3,
+      "effort": 2
+    },
+    {
+      "id": "A18",
+      "step": "S19",
+      "label": "automate",
+      "reason": "Auto-flag line items with a unit cost of $5,000 or more. The AO and CH still confirm the sensitive, pilferable, or classified status (addresses R13).",
+      "suggested_tool": "Power Automate condition on the log item",
+      "value": 3,
+      "effort": 2
+    },
+    {
+      "id": "A19",
+      "step": "S20",
+      "label": "automate",
+      "reason": "Create a tracked task for N4 to record flagged items in DPAS. N4 still keys the entry because DPAS has no standard connector.",
+      "suggested_tool": "Power Automate + Planner or SharePoint task list",
+      "value": 2,
+      "effort": 2
+    },
+    {
+      "id": "A20",
+      "step": "S21",
+      "label": "automate",
+      "reason": "Match statement lines against log entries and flag unmatched or mismatched transactions for the CH. CitiDirect has no standard connector, so a statement export must be uploaded.",
+      "suggested_tool": "Power Automate (Excel Online / SharePoint) on an uploaded CitiDirect statement export",
+      "value": 5,
+      "effort": 4
+    },
+    {
+      "id": "A21",
+      "step": "S22",
+      "label": "ai_assist",
+      "reason": "Read receipt images to extract merchant, date, and total, compare them to the log, and flag missing documentation. When documentation is missing, prompt the CH for the required 10.c explanation.",
+      "suggested_tool": "AI Builder receipt processing in Power Automate",
+      "value": 4,
+      "effort": 3
+    },
+    {
+      "id": "A22",
+      "step": "S23",
+      "label": "automate",
+      "reason": "Replace the paper suspense file with tracked open items, with reminders before the next billing cycle and before the 60-day dispute deadline (addresses R14).",
+      "suggested_tool": "Power Automate scheduled flow + SharePoint list",
+      "value": 4,
+      "effort": 2
+    },
+    {
+      "id": "A23",
+      "step": "S24",
+      "label": "automate",
+      "reason": "When the CH marks the package complete, notify the AO/CO with a link and track the 5- and 10-business-day deadlines, removing the paper handoff (R15, R16).",
+      "suggested_tool": "Power Automate + SharePoint + Outlook",
+      "value": 4,
+      "effort": 2
+    },
+    {
+      "id": "A24",
+      "step": "S25",
+      "label": "keep_human",
+      "reason": "The AO/CO review of appropriateness supports a certification carrying pecuniary liability (3.d).",
+      "suggested_tool": "None",
+      "value": 3,
+      "effort": 1
+    },
+    {
+      "id": "A25",
+      "step": "S26",
+      "label": "digitize",
+      "reason": "A structured report of suspected unauthorized purchases gives the A/OPC or N4 a tracked record (R17). The investigation itself stays with people.",
+      "suggested_tool": "Power Apps form writing to a restricted SharePoint list",
+      "value": 3,
+      "effort": 2
+    },
+    {
+      "id": "A26",
+      "step": "S27",
+      "label": "keep_human",
+      "reason": "Certifying the invoice for payment is a legal sign-off with personal pecuniary liability.",
+      "suggested_tool": "None",
+      "value": 3,
+      "effort": 1
+    },
+    {
+      "id": "A27",
+      "step": "S28",
+      "label": "automate",
+      "reason": "Send reminders before the 15-day PAT deadline and log when documentation is returned to the CH. The PAT has no connector.",
+      "suggested_tool": "Power Automate scheduled flow + Outlook",
+      "value": 2,
+      "effort": 1
+    },
+    {
+      "id": "A28",
+      "step": "S31",
+      "label": "keep_human",
+      "reason": "HA approval of the semi-annual review is a management sign-off.",
+      "suggested_tool": "None",
+      "value": 2,
+      "effort": 1
+    },
+    {
+      "id": "A29",
+      "step": "S32",
+      "label": "keep_human",
+      "reason": "Choosing between the dispute and fraud procedures is an A/OPC judgment. Misclassifying causes short-pay and delinquency (11).",
+      "suggested_tool": "None",
+      "value": 3,
+      "effort": 1
+    },
+    {
+      "id": "A30",
+      "step": "S34",
+      "label": "automate",
+      "reason": "Prefill the Appendix B dispute form from the dispute record to cut rekeying (R21). The CH still signs, and the form is still faxed or mailed as CITIBANK requires.",
+      "suggested_tool": "Power Automate + Word Online (Business) template",
+      "value": 2,
+      "effort": 2
+    },
+    {
+      "id": "A31",
+      "step": "S35",
+      "label": "automate",
+      "reason": "Track each open dispute with an owner and periodic reminders to check the CitiDirect dispute log until resolution (R22).",
+      "suggested_tool": "Power Automate scheduled flow + SharePoint list",
+      "value": 3,
+      "effort": 2
+    },
+    {
+      "id": "A32",
+      "step": "S39",
+      "label": "keep_human",
+      "reason": "The Declaration of Unauthorized Use is a signed legal statement by the CH.",
+      "suggested_tool": "None",
+      "value": 2,
+      "effort": 1
+    },
+    {
+      "id": "A33",
+      "step": "S40",
+      "label": "keep_human",
+      "reason": "Short-pay and manual certification of fraudulent transactions is a certifying official's legal decision.",
+      "suggested_tool": "None",
+      "value": 3,
+      "effort": 1
+    }
+  ],
+  "starter_flows": [
+    {
+      "recommendation_id": "A5",
+      "trigger": "When an item is created in the SharePoint 'GCPC Purchase Requests' list (submitted from the Power Apps request form)",
+      "actions": [
+        "Get the requestor's department and the request details: description, category, estimated cost, need date",
+        "Check required fields; if missing, email the requestor and set status to 'Returned - incomplete'",
+        "If the category is training or material, set the 'Additional documentation required' flag and email the requestor a link to the SF 182 / NETC 4235/4 form",
+        "Set status to 'Submitted to N8' and stamp the submission date",
+        "Post a notification with the item link to the N8 Teams channel or shared mailbox",
+        "Create a 'Request history' entry for the audit trail"
+      ],
+      "approval_step": "N8 'Start and wait for an approval' (custom responses): 'Routine - assign LOA', 'Forward for Deputy Comptroller/Comptroller/Legal review', or 'Funding exhausted - forward to Comptroller'; record the response and comments on the request item"
+    },
+    {
+      "recommendation_id": "A12",
+      "trigger": "When a SharePoint 'GCPC Purchase Requests' item is modified and status equals 'Screened' (CH has recorded the mandatory-source screening)",
+      "actions": [
+        "Get the CH's single purchase limit and assigned AO from the SharePoint CH roster",
+        "Compare the estimated cost to the single purchase limit",
+        "Send the AO approval request (N4 for supplies/equipment/printing; N8 for training and centrally managed)",
+        "If the cost exceeds the single purchase limit, send a second approval request to N4",
+        "If approved, set status to 'Approved to purchase', record the approver and date, and notify the CH",
+        "If rejected, set status to 'Rejected', record the comments, and notify the CH and requestor (no next step is defined in the SOP; this notification closes the loop pending owner decision)"
+      ],
+      "approval_step": "AO approval via Power Automate Approvals ('Approve/Reject - First to respond'), followed by a conditional N4 approval when the estimated cost exceeds the CH's single purchase limit"
+    },
+    {
+      "recommendation_id": "A15",
+      "trigger": "When a SharePoint 'GCPC Purchase Requests' item is modified and status equals 'Approved to purchase'",
+      "actions": [
+        "Create an item in the SharePoint 'Purchase Card Log' list prefilled with the request ID, LOA, document number, screening result, and approval records",
+        "Email the CH a Power Apps link to complete the transaction details (merchant, order date, amount, transaction type, FOB terms) and upload the receipt",
+        "When the CH saves, check the amount against the single purchase limit and the approved estimate; flag a variance to the AO",
+        "Look up the Receiver/Inspector and Acceptor from the roster, excluding the CH, and assign them on the log item",
+        "Notify the Receiver/Inspector of the expected delivery and set a reminder at 30 days from the order date"
+      ],
+      "approval_step": ""
+    }
+  ],
+  "future_state": [
+    {
+      "id": "F1",
+      "from_step": "S1",
+      "actor": "Requesting department",
+      "action": "Submits the CH nomination in a Power Apps form; the A/OPC is notified automatically from the SharePoint record.",
+      "change": "digitized"
+    },
+    {
+      "id": "F2",
+      "from_step": "S2",
+      "actor": "CH / Power Automate flow",
+      "action": "CH completes training and uploads certificates to the participant record; the flow tracks refresher, ethics, and CO Legislation due dates, sends reminders, and flags overdue accounts to the A/OPC for suspension.",
+      "change": "automated"
+    },
+    {
+      "id": "F3",
+      "from_step": "S3",
+      "actor": "Head of Activity (HA) or designee",
+      "action": "Appoints the CH by delegation of authority (SF 1402 if above the micro-purchase threshold), specifying limits and transaction types.",
+      "change": "unchanged"
+    },
+    {
+      "id": "F4",
+      "from_step": "S4",
+      "actor": "CH",
+      "action": "Records the acknowledgment of reference (a) and this instruction as a dated attestation in Power Apps.",
+      "change": "digitized"
+    },
+    {
+      "id": "F5",
+      "from_step": "S5",
+      "actor": "Requestor (department head or program manager)",
+      "action": "Submits the purchase request in a Power Apps form to the SharePoint request list; N8 is notified.",
+      "change": "digitized"
+    },
+    {
+      "id": "F6",
+      "from_step": "S6",
+      "actor": "Deputy Comptroller / Comptroller / Legal (N00D)",
+      "action": "Reviews unusual or questionable requests before any action is taken.",
+      "change": "unchanged"
+    },
+    {
+      "id": "F7",
+      "from_step": "S7",
+      "actor": "N8 / Power Automate flow",
+      "action": "N8 selects the LOA and document number in the approval; the flow writes them to the request and notifies the requestor and CH to proceed.",
+      "change": "automated"
+    },
+    {
+      "id": "F8",
+      "from_step": "S8",
+      "actor": "Comptroller",
+      "action": "Reviews requirements for which funding is exhausted.",
+      "change": "unchanged"
+    },
+    {
+      "id": "F9",
+      "from_step": "S9",
+      "actor": "Requestor / division",
+      "action": "Completes SF 182 or NETC 4235/4 data once in Power Apps (including LOA and the GCPC payment statement, with CH details looked up automatically); the flow routes approval signatures and distributes the signed copy to N8, CH, N4, and HRO.",
+      "change": "digitized"
+    },
+    {
+      "id": "F10",
+      "from_step": "S11",
+      "actor": "CH",
+      "action": "Records the mandatory-source screening and NETC 4400/1 details on the request record.",
+      "change": "digitized"
+    },
+    {
+      "id": "F11",
+      "from_step": "S12",
+      "actor": "AO / Power Automate flow",
+      "action": "The flow routes the AO approval and records the outcome; on rejection it notifies the requestor and CH.",
+      "change": "automated"
+    },
+    {
+      "id": "F12",
+      "from_step": "S13",
+      "actor": "N4 / Power Automate flow",
+      "action": "The flow sends an N4 approval only when the estimated cost exceeds the CH's single purchase limit.",
+      "change": "automated"
+    },
+    {
+      "id": "F13",
+      "from_step": "S14",
+      "actor": "CH",
+      "action": "Confirms the merchant agrees to the order terms (no charge until shipment, no back orders, 30-day delivery, shipping document content).",
+      "change": "unchanged"
+    },
+    {
+      "id": "F14",
+      "from_step": "S15",
+      "actor": "CH",
+      "action": "Places the order over the counter, by phone, or via the internet; reminds the merchant of tax exemption and seeks FOB destination.",
+      "change": "unchanged"
+    },
+    {
+      "id": "F15",
+      "from_step": "S16",
+      "actor": "CH / Power Automate flow",
+      "action": "The flow creates the purchase card log entry prefilled from the approved request; the CH adds the transaction details and receipt.",
+      "change": "digitized"
+    },
+    {
+      "id": "F16",
+      "from_step": "S17",
+      "actor": "Receiver/Inspector (separate from CH)",
+      "action": "Records receipt and inspection with electronic name and date in Power Apps; the app blocks the CH or ordering official from signing.",
+      "change": "digitized"
+    },
+    {
+      "id": "F17",
+      "from_step": "S18",
+      "actor": "Acceptor (third person)",
+      "action": "Records acceptance with electronic name and date on the same log record.",
+      "change": "digitized"
+    },
+    {
+      "id": "F18",
+      "from_step": "S19",
+      "actor": "Power Automate flow / AO and CH",
+      "action": "The flow flags items with a unit cost of $5,000 or more; the AO and CH confirm accountable status, including sensitive, pilferable, or classified items.",
+      "change": "automated"
+    },
+    {
+      "id": "F19",
+      "from_step": "S20",
+      "actor": "N4",
+      "action": "Receives a tracked task generated by the flow and records the accountable property in DPAS.",
+      "change": "automated"
+    },
+    {
+      "id": "F20",
+      "from_step": "S21",
+      "actor": "CH / Power Automate flow",
+      "action": "CH uploads the CitiDirect statement export; the flow matches lines to log entries and flags exceptions for the CH to verify and correct the LOA.",
+      "change": "automated"
+    },
+    {
+      "id": "F21",
+      "from_step": "S22",
+      "actor": "CH / AI Builder",
+      "action": "AI extracts receipt data and compares it to the log; missing documentation prompts the CH to complete the 10.c explanation form.",
+      "change": "ai_assisted"
+    },
+    {
+      "id": "F22",
+      "from_step": "S23",
+      "actor": "CH / Power Automate flow",
+      "action": "Open pay-and-confirm items are tracked in a SharePoint list, with reminders before the next billing cycle and the 60-day dispute deadline.",
+      "change": "automated"
+    },
+    {
+      "id": "F23",
+      "from_step": "S24",
+      "actor": "CH / Power Automate flow",
+      "action": "CH certifies in CITIBANK and marks the package complete; the flow notifies the AO/CO with a link and tracks the 5- and 10-business-day deadlines.",
+      "change": "automated"
+    },
+    {
+      "id": "F24",
+      "from_step": "S25",
+      "actor": "AO/CO",
+      "action": "Reconciles the statement in CITIBANK, confirms purchases were appropriate, and verifies documentation and receipt/acceptance records.",
+      "change": "unchanged"
+    },
+    {
+      "id": "F25",
+      "from_step": "S26",
+      "actor": "AO/CO",
+      "action": "Reports a suspected unauthorized purchase to the A/OPC or NETC N4 through a restricted Power Apps form.",
+      "change": "digitized"
+    },
+    {
+      "id": "F26",
+      "from_step": "S27",
+      "actor": "AO/CO",
+      "action": "Certifies the monthly invoice and forwards it for payment.",
+      "change": "unchanged"
+    },
+    {
+      "id": "F27",
+      "from_step": "S28",
+      "actor": "AO / Power Automate flow",
+      "action": "AO completes the PAT review after flow reminders ahead of the 15-day deadline; documentation return is logged on the record.",
+      "change": "automated"
+    },
+    {
+      "id": "F28",
+      "from_step": "S29",
+      "actor": "A/OPC",
+      "action": "Conducts the monthly program review in the DON Data Mining System PAT.",
+      "change": "unchanged"
+    },
+    {
+      "id": "F29",
+      "from_step": "S30",
+      "actor": "A/OPC",
+      "action": "Conducts the semi-annual review using PAT and Appendix D.",
+      "change": "unchanged"
+    },
+    {
+      "id": "F30",
+      "from_step": "S31",
+      "actor": "HA (N4)",
+      "action": "Reviews and approves the semi-annual report and forwards it to the Hierarchy Level 3 A/OPC.",
+      "change": "unchanged"
+    },
+    {
+      "id": "F31",
+      "from_step": "S32",
+      "actor": "CH or AO / A/OPC",
+      "action": "Contacts the A/OPC to determine whether the dispute or fraud procedure applies.",
+      "change": "unchanged"
+    },
+    {
+      "id": "F32",
+      "from_step": "S33",
+      "actor": "CH",
+      "action": "Disputes the transaction in CitiDirect, which short-pays the invoice.",
+      "change": "unchanged"
+    },
+    {
+      "id": "F33",
+      "from_step": "S34",
+      "actor": "CH / Power Automate flow",
+      "action": "The flow prefills the Appendix B dispute form from the dispute record; the CH signs and faxes or mails it to CITIBANK.",
+      "change": "automated"
+    },
+    {
+      "id": "F34",
+      "from_step": "S35",
+      "actor": "CH / Power Automate flow",
+      "action": "Each open dispute is tracked with an owner and periodic reminders to check the CitiDirect dispute log until resolution.",
+      "change": "automated"
+    },
+    {
+      "id": "F35",
+      "from_step": "S36",
+      "actor": "CH",
+      "action": "Notifies the A/OPC immediately of suspected fraud.",
+      "change": "unchanged"
+    },
+    {
+      "id": "F36",
+      "from_step": "S37",
+      "actor": "A/OPC",
+      "action": "Contacts CITIBANK; the account is closed and a replacement card issued.",
+      "change": "unchanged"
+    },
+    {
+      "id": "F37",
+      "from_step": "S38",
+      "actor": "CITIBANK",
+      "action": "Confirms valid and fraudulent transactions with the CH and moves the valid ones to the new account.",
+      "change": "unchanged"
+    },
+    {
+      "id": "F38",
+      "from_step": "S39",
+      "actor": "CH",
+      "action": "Completes and submits the Declaration of Unauthorized Use (Appendix C) and follows A/OPC guidance.",
+      "change": "unchanged"
+    },
+    {
+      "id": "F39",
+      "from_step": "S40",
+      "actor": "AO/CO",
+      "action": "Short-pays the fraudulent amount and certifies using the manual certification process.",
+      "change": "unchanged"
+    }
+  ],
+  "eliminated_steps": [
+    "S10"
+  ]
+}

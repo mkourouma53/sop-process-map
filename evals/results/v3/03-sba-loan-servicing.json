@@ -1,0 +1,2194 @@
+{
+  "sop_title": "SOP 50 57 4, Chapter 6: Servicing Requests",
+  "summary": "This chapter describes how a 7(a) Lender receives, reviews, and analyzes a Borrower's request for a Loan Action, obtains SBA's prior written approval when required, and then implements the approved Loan Action. Lenders run the process, Borrowers and Obligors supply requests, documents, consideration, and consents, and the appropriate SBA Loan Center responds to requests that need SBA approval.",
+  "sections": [
+    {
+      "section": "A",
+      "title": "General Requirements",
+      "classification": "background",
+      "reason": "It states the purpose and the prudent servicing principles, with no ordered actions to rearrange.",
+      "mapped": false
+    },
+    {
+      "section": "B",
+      "title": "Review and Analysis",
+      "classification": "procedure",
+      "reason": "It introduces numbered steps that must be followed in order and contains the Loan Action Record requirement that sits at a fixed point (documenting the decision after analysis).",
+      "mapped": true
+    },
+    {
+      "section": "B.1",
+      "title": "Document Receipt of the Servicing Request",
+      "classification": "procedure",
+      "reason": "Logging receipt is the first step of the review sequence and cannot be moved after the analysis.",
+      "mapped": true
+    },
+    {
+      "section": "B.2",
+      "title": "Ensure that the Servicing Request is in the Proper Format",
+      "classification": "procedure",
+      "reason": "The written-request check must happen before research and analysis of the request.",
+      "mapped": true
+    },
+    {
+      "section": "B.3",
+      "title": "Research the Applicable Loan Program Requirements",
+      "classification": "procedure",
+      "reason": "Research of program requirements is a fixed early step before the request's support is assessed.",
+      "mapped": true
+    },
+    {
+      "section": "B.3.a",
+      "title": "Requests Concerning Assumptions, or Substitution of Collateral or Obligors",
+      "classification": "rules",
+      "reason": "It states a compliance requirement for one request type that becomes a branch of the research step rather than an ordered sequence.",
+      "mapped": true
+    },
+    {
+      "section": "B.3.b",
+      "title": "All Other Servicing Requests",
+      "classification": "rules",
+      "reason": "It is a single permissive reference rule that forms the other branch of the research step.",
+      "mapped": true
+    },
+    {
+      "section": "B.4",
+      "title": "Determine Whether the Servicing Request is Properly Supported",
+      "classification": "procedure",
+      "reason": "Checking supporting documents must precede obtaining additional documents and the financial analysis.",
+      "mapped": true
+    },
+    {
+      "section": "B.4.a",
+      "title": "Servicing Requests Involving Credit Issues",
+      "classification": "rules",
+      "reason": "Its list of required documents could be reordered without changing meaning; it gates the support check.",
+      "mapped": true
+    },
+    {
+      "section": "B.4.b",
+      "title": "Servicing Requests Involving Collateral",
+      "classification": "rules",
+      "reason": "Its list of appraisal, lien search, and senior lien evidence could be reordered; it gates the support check.",
+      "mapped": true
+    },
+    {
+      "section": "B.5",
+      "title": "Obtain Additional Supporting Documents When Necessary",
+      "classification": "procedure",
+      "reason": "Obtaining additional documents occurs at a fixed point after the support check and before the financial analysis.",
+      "mapped": true
+    },
+    {
+      "section": "B.5.a",
+      "title": "Credit Report",
+      "classification": "rules",
+      "reason": "It is one item in a reorderable list of additional documents, mapped as the credit report step.",
+      "mapped": true
+    },
+    {
+      "section": "B.5.b",
+      "title": "Obligor Financial Statements and Tax Returns",
+      "classification": "rules",
+      "reason": "It is one conditional item in a reorderable list, folded into the additional documents step.",
+      "mapped": true
+    },
+    {
+      "section": "B.5.c",
+      "title": "Refinance or Purchase and Sale Documents",
+      "classification": "rules",
+      "reason": "It is one conditional item in a reorderable list, folded into the additional documents step.",
+      "mapped": true
+    },
+    {
+      "section": "B.5.d",
+      "title": "Environmental Investigation Report",
+      "classification": "rules",
+      "reason": "It is one conditional item in a reorderable list, folded into the additional documents step.",
+      "mapped": true
+    },
+    {
+      "section": "B.5.e",
+      "title": "Evidence of Authority to Take Proposed Action",
+      "classification": "rules",
+      "reason": "It is one item in a reorderable list, mapped as the signing authority step.",
+      "mapped": true
+    },
+    {
+      "section": "B.6",
+      "title": "Analyze the Borrower's Financial Condition",
+      "classification": "procedure",
+      "reason": "The viability analysis explicitly routes to Step 7 or to denial, so its position in the sequence matters.",
+      "mapped": true
+    },
+    {
+      "section": "B.7",
+      "title": "Analyze the Collateral",
+      "classification": "procedure",
+      "reason": "The collateral analysis follows a positive viability finding and precedes the problem check.",
+      "mapped": true
+    },
+    {
+      "section": "B.8",
+      "title": "Check for Problems",
+      "classification": "procedure",
+      "reason": "Its findings feed the conditions for approval in Step 9, so it must come before them.",
+      "mapped": true
+    },
+    {
+      "section": "B.9",
+      "title": "List Conditions for Approval",
+      "classification": "procedure",
+      "reason": "Conditions are set after the problems check and before the SBA authority determination.",
+      "mapped": true
+    },
+    {
+      "section": "B.9.a",
+      "title": "Compliance with Terms and Conditions of Loan",
+      "classification": "rules",
+      "reason": "It is a reorderable approval condition that gates approval on curing Defaults found in Step 8.",
+      "mapped": true
+    },
+    {
+      "section": "B.9.b",
+      "title": "Adequate Consideration",
+      "classification": "rules",
+      "reason": "It is a reorderable approval condition with a timing rule (before or at the time of benefit).",
+      "mapped": true
+    },
+    {
+      "section": "B.9.c",
+      "title": "Written Consent of All Obligors",
+      "classification": "rules",
+      "reason": "It is a reorderable approval condition requiring each Obligor's written consent to material changes.",
+      "mapped": true
+    },
+    {
+      "section": "B.10",
+      "title": "Comply with SBA Decision Making, Notice and Approval Requirements",
+      "classification": "procedure",
+      "reason": "The authority determination comes after conditions are set and routes the request to SBA approval, notice, or no SBA contact.",
+      "mapped": true
+    },
+    {
+      "section": "B.11",
+      "title": "Comply with the Applicable Recordkeeping Requirements",
+      "classification": "procedure",
+      "reason": "Recording SBA's response and filing the Loan Action Record happen at the end of the review and approval flows.",
+      "mapped": true
+    },
+    {
+      "section": "C",
+      "title": "How To Obtain SBA Approval for a Proposed Loan Action",
+      "classification": "procedure",
+      "reason": "Preparing, submitting, and receiving SBA's response to a written request is an ordered sequence triggered when prior approval is required.",
+      "mapped": true
+    },
+    {
+      "section": "C.1",
+      "title": "Required Documentation",
+      "classification": "rules",
+      "reason": "It groups content requirements for the submission that could be listed in any order.",
+      "mapped": true
+    },
+    {
+      "section": "C.1.a",
+      "title": "Letter Outlining Request",
+      "classification": "rules",
+      "reason": "Its eight required contents are reorderable; they define the letter prepared in the submission step.",
+      "mapped": true
+    },
+    {
+      "section": "C.1.b",
+      "title": "Credit Memo and Supporting Documents",
+      "classification": "rules",
+      "reason": "It states independence and attachment requirements for the credit memo prepared before the letter.",
+      "mapped": true
+    },
+    {
+      "section": "C.2",
+      "title": "Where to Submit Servicing Requests",
+      "classification": "rules",
+      "reason": "Its routing rules by loan status and program are reorderable and become a decision on the submission step.",
+      "mapped": true
+    },
+    {
+      "section": "C.3",
+      "title": "SBA Response Time",
+      "classification": "rules",
+      "reason": "It states a response-time target and a no-implied-approval rule that become timing and exception entries.",
+      "mapped": true
+    },
+    {
+      "section": "D",
+      "title": "Implementing Loan Actions",
+      "classification": "procedure",
+      "reason": "Implementation of an approved Loan Action follows approval and has its own ordered steps.",
+      "mapped": true
+    },
+    {
+      "section": "D.1",
+      "title": "Modify Existing Loan Documents",
+      "classification": "procedure",
+      "reason": "Documents must be modified before they can be recorded.",
+      "mapped": true
+    },
+    {
+      "section": "D.2",
+      "title": "Prepare New Loan Documents",
+      "classification": "procedure",
+      "reason": "New documents must be prepared and executed before they can be recorded.",
+      "mapped": true
+    },
+    {
+      "section": "D.3",
+      "title": "Record New or Modified Loan Documents",
+      "classification": "procedure",
+      "reason": "Recording in the public record is the final step and depends on the documents being modified or executed first.",
+      "mapped": true
+    }
+  ],
+  "processes": [
+    {
+      "name": "Review a servicing request",
+      "trigger": "Borrower requests a Loan Action on a disbursed 7(a) Loan",
+      "outcome": "A Loan Action Record documenting the Lender's decision and conditions. The request is either denied, handled within Lender authority (with or without notice to SBA), or routed for SBA prior approval.",
+      "sections": [
+        "B",
+        "B.1",
+        "B.2",
+        "B.3",
+        "B.3.a",
+        "B.3.b",
+        "B.4",
+        "B.4.a",
+        "B.4.b",
+        "B.5",
+        "B.5.a",
+        "B.5.b",
+        "B.5.c",
+        "B.5.d",
+        "B.5.e",
+        "B.6",
+        "B.7",
+        "B.8",
+        "B.9",
+        "B.9.a",
+        "B.9.b",
+        "B.9.c",
+        "B.10",
+        "B.11"
+      ]
+    },
+    {
+      "name": "Obtain SBA approval for a Loan Action",
+      "trigger": "The Lender determines that SBA's prior written approval is required for the proposed Loan Action",
+      "outcome": "SBA's response to the Servicing Request is recorded in the Lender's Computer Tracking System and/or Loan File",
+      "sections": [
+        "C",
+        "C.1",
+        "C.1.a",
+        "C.1.b",
+        "C.2",
+        "C.3",
+        "B.11"
+      ]
+    },
+    {
+      "name": "Implement an approved Loan Action",
+      "trigger": "A Loan Action is approved",
+      "outcome": "Modified and new Loan Documents are executed and, where necessary, recorded in the public record",
+      "sections": [
+        "D",
+        "D.1",
+        "D.2",
+        "D.3"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "process": "Review a servicing request",
+      "actor": "Lender",
+      "action": "Enter the Loan Action into the Computer Tracking System and/or Loan File",
+      "input": "Borrower request for a Loan Action",
+      "output": "Logged Loan Action",
+      "system": "Computer Tracking System and/or Loan File",
+      "source_section": "B.1",
+      "source_quote": "Lenders must enter all Loan Actions into their Computer Tracking System and/or Loan File.",
+      "inferred": false
+    },
+    {
+      "id": "S2",
+      "process": "Review a servicing request",
+      "actor": "Lender",
+      "action": "Check that a request to modify the terms and/or conditions of the 7(a) Loan has been submitted in writing",
+      "input": "Logged Loan Action",
+      "output": "Format determination",
+      "system": "",
+      "source_section": "B.2",
+      "source_quote": "Ensure that the Servicing Request is in the Proper Format",
+      "inferred": false
+    },
+    {
+      "id": "S3",
+      "process": "Review a servicing request",
+      "actor": "Borrower",
+      "action": "Submit the request to modify the Loan terms and/or conditions in writing, as the Lender requires",
+      "input": "Lender requirement for a written request",
+      "output": "Written request",
+      "system": "",
+      "source_section": "B.2",
+      "source_quote": "to submit all requests to modify the terms and/or conditions of a 7(a) Loan, in writing",
+      "inferred": false
+    },
+    {
+      "id": "S4",
+      "process": "Review a servicing request",
+      "actor": "Lender",
+      "action": "Research the Loan Program Requirements that apply to the requested Loan Action",
+      "input": "Written request",
+      "output": "Identified applicable requirements",
+      "system": "",
+      "source_section": "B.3",
+      "source_quote": "Research the Applicable Loan Program Requirements",
+      "inferred": false
+    },
+    {
+      "id": "S5",
+      "process": "Review a servicing request",
+      "actor": "Lender",
+      "action": "Apply the Loan Program Requirements of SOP 50 10 in effect at the time of the action, per 13 C.F.R. \u00a7120.180 (see Chapters 8 and 11)",
+      "input": "Assumption or substitution of collateral or Obligors request",
+      "output": "Applicable SOP 50 10 requirements",
+      "system": "",
+      "source_section": "B.3.a",
+      "source_quote": "Lenders must comply with the Loan Program Requirements of SOP 50 10 in effect at the time the action takes place",
+      "inferred": false
+    },
+    {
+      "id": "S6",
+      "process": "Review a servicing request",
+      "actor": "Lender",
+      "action": "Consult Chapters 7 through 12 of this SOP for guidance on developing the Servicing Request",
+      "input": "Other Servicing Request",
+      "output": "Applicable guidance",
+      "system": "",
+      "source_section": "B.3.b",
+      "source_quote": "Lenders may refer to Chapters 7 through 12 of this SOP for guidance",
+      "inferred": false
+    },
+    {
+      "id": "S7",
+      "process": "Review a servicing request",
+      "actor": "Lender",
+      "action": "Verify the request includes the needed Supporting Documents. Credit-analysis actions need the Borrower's current financial statement and two most recent years of federal tax returns. Collateral actions additionally need a current appraisal, a lien search (title report or UCC search), and evidence of senior lien balances.",
+      "input": "Written request and attached documents",
+      "output": "Supporting document gap list",
+      "system": "",
+      "source_section": "B.4",
+      "source_quote": "Lenders should ensure that all Servicing Requests include the Supporting Documents that a prudent lender would need to make an informed decision.",
+      "inferred": false
+    },
+    {
+      "id": "S8",
+      "process": "Review a servicing request",
+      "actor": "Lender",
+      "action": "Order a new credit report to verify the submitted financial information",
+      "input": "Submitted financial information",
+      "output": "New credit report",
+      "system": "",
+      "source_section": "B.5.a",
+      "source_quote": "Generally, Lenders should order a new credit report to verify the financial information submitted",
+      "inferred": false
+    },
+    {
+      "id": "S9",
+      "process": "Review a servicing request",
+      "actor": "Lender",
+      "action": "Obtain the conditional additional Supporting Documents:\n- current financial statements and two years of tax returns from all Obligors, when a complete repayment analysis is necessary\n- executed sale or refinance documents, when the request involves sale or refinance of collateral\n- an Environmental Investigation Report, when Chapter 5 Paragraph C requires one",
+      "input": "Supporting document gap list",
+      "output": "Additional Supporting Documents",
+      "system": "",
+      "source_section": "B.5",
+      "source_quote": "Lenders should obtain any additional Supporting Documentation needed to properly analyze and approve their Servicing Request.",
+      "inferred": false
+    },
+    {
+      "id": "S10",
+      "process": "Review a servicing request",
+      "actor": "Lender",
+      "action": "Obtain evidence (e.g., board resolution) that each required signer has authority to execute the Loan Documents",
+      "input": "List of required signers",
+      "output": "Evidence of signing authority",
+      "system": "",
+      "source_section": "B.5.e",
+      "source_quote": "Lenders should obtain and provide proper evidence to establish that each Person whose signature is necessary has the required authority",
+      "inferred": false
+    },
+    {
+      "id": "S11",
+      "process": "Review a servicing request",
+      "actor": "Lender",
+      "action": "Analyze the Borrower's financial statements to determine whether the Borrower can repay the Loan if the request is approved",
+      "input": "Financial statements, tax returns, credit report",
+      "output": "Financial viability determination",
+      "system": "",
+      "source_section": "B.6",
+      "source_quote": "Lenders must analyze the Borrower's financial statements to determine whether the Borrower is financially viable",
+      "inferred": false
+    },
+    {
+      "id": "S12",
+      "process": "Review a servicing request",
+      "actor": "Lender",
+      "action": "Deny the requested Loan Action and take more appropriate actions (see Chapter 15 on liquidation status)",
+      "input": "Finding that the Borrower is not viable",
+      "output": "Denied Loan Action",
+      "system": "",
+      "source_section": "B.6",
+      "source_quote": "If not, Lenders should deny the requested Loan Action and take more appropriate actions.",
+      "inferred": false
+    },
+    {
+      "id": "S13",
+      "process": "Review a servicing request",
+      "actor": "Lender",
+      "action": "Where the request will impact collateral, analyze the Recoverable Value of the collateral before and after the requested Loan Action",
+      "input": "Appraisal, lien search, senior lien balances",
+      "output": "Before and after Recoverable Value analysis",
+      "system": "",
+      "source_section": "B.7",
+      "source_quote": "Lenders should conduct a thorough analysis of the Recoverable Value of the collateral before and after the requested Loan Action.",
+      "inferred": false
+    },
+    {
+      "id": "S14",
+      "process": "Review a servicing request",
+      "actor": "Lender",
+      "action": "Review the existing Loan Documents and the Computer Tracking System for:\n- consistency with the Borrower's previous representations\n- non-monetary Defaults\n- collateral deficiencies\n- Loan Document problems",
+      "input": "Existing Loan Documents and tracking records",
+      "output": "List of problems or Defaults found",
+      "system": "Computer Tracking System",
+      "source_section": "B.8",
+      "source_quote": "Lenders should review the existing Loan Documents and their Computer Tracking System",
+      "inferred": false
+    },
+    {
+      "id": "S15",
+      "process": "Review a servicing request",
+      "actor": "Lender",
+      "action": "Condition approval on the Borrower curing each identified Default (e.g., reinstating lapsed insurance, providing past due financial statements)",
+      "input": "List of Defaults found",
+      "output": "Cure conditions",
+      "system": "",
+      "source_section": "B.9.a",
+      "source_quote": "Lenders should condition their approval of every Loan Action upon the Borrower curing any Default identified in Step 8 above.",
+      "inferred": false
+    },
+    {
+      "id": "S16",
+      "process": "Review a servicing request",
+      "actor": "Lender",
+      "action": "Set the consideration the Borrower must provide to make the change legally binding, e.g.:\n- fixing document errors\n- waiving defenses\n- releasing lender liability claims\n- providing additional collateral\n- providing updated financial information",
+      "input": "Proposed Loan Action",
+      "output": "Consideration condition",
+      "system": "",
+      "source_section": "B.9.b",
+      "source_quote": "Lenders must ensure that Borrowers provide consideration (i.e., something of value)",
+      "inferred": false
+    },
+    {
+      "id": "S17",
+      "process": "Review a servicing request",
+      "actor": "Lender",
+      "action": "Obtain written consent from each Obligor to any material change in the Loan terms and conditions",
+      "input": "List of Obligors and proposed changes",
+      "output": "Written Obligor consents",
+      "system": "",
+      "source_section": "B.9.c",
+      "source_quote": "Lenders must obtain the written consent to any material change in the terms and conditions of the Loan from each Obligor",
+      "inferred": false
+    },
+    {
+      "id": "S18",
+      "process": "Review a servicing request",
+      "actor": "Lender",
+      "action": "Justify and document the decision in a Loan Action Record that is independent of any document prepared by a senior lienholder or other conflicted Person",
+      "input": "Analyses, conditions, and consents",
+      "output": "Loan Action Record",
+      "system": "",
+      "source_section": "B",
+      "source_quote": "Lenders must justify and document their decision in a Loan Action Record",
+      "inferred": false
+    },
+    {
+      "id": "S19",
+      "process": "Review a servicing request",
+      "actor": "Lender",
+      "action": "Give SBA notice of the Loan Action as required by SBA Loan Program Requirements (see Chapter 3)",
+      "input": "Loan Action Record",
+      "output": "Notice to SBA",
+      "system": "",
+      "source_section": "B.10",
+      "source_quote": "Lenders must comply with applicable SBA Loan Program Requirements pertaining to decision making authority and notice to SBA.",
+      "inferred": false
+    },
+    {
+      "id": "S20",
+      "process": "Review a servicing request",
+      "actor": "Lender",
+      "action": "File a copy of the Loan Action Record and Supporting Documents in the Loan File, and enter the substance of related calls and meetings",
+      "input": "Loan Action Record, Supporting Documents, call and meeting notes",
+      "output": "Complete Loan File record",
+      "system": "Loan File and/or Computer Tracking System",
+      "source_section": "B.11",
+      "source_quote": "keep a copy of the Loan Action Record and Supporting Documents in the Lender\u2019s Loan File",
+      "inferred": false
+    },
+    {
+      "id": "S21",
+      "process": "Obtain SBA approval for a Loan Action",
+      "actor": "Lender",
+      "action": "Prepare an internal credit memo that is independent of any analysis by a conflicted Person and adequately analyzes the Supporting Documents",
+      "input": "Loan Action Record and Supporting Documents",
+      "output": "Credit memo",
+      "system": "",
+      "source_section": "C.1.b",
+      "source_quote": "Lenders should include a credit memo, which must be independent of any document or analysis prepared by a Person with a conflict of interest",
+      "inferred": false
+    },
+    {
+      "id": "S22",
+      "process": "Obtain SBA approval for a Loan Action",
+      "actor": "Lender",
+      "action": "Draft the Servicing Request letter or email based on the credit memo, covering the eight required elements:\n1. description of the action\n2. justification\n3. loan funding, balance, and status\n4. Obligor financial condition\n5. mitigating factors and collateral analysis\n6. prior servicing history\n7. FTA consent status\n8. Obligor list with consent statement",
+      "input": "Credit memo",
+      "output": "Servicing Request letter or email",
+      "system": "Letter or electronic mail",
+      "source_section": "C.1.a",
+      "source_quote": "Lenders should submit all Servicing Requests that require prior written SBA approval in a clearly and concisely drafted letter or electronic mail submission",
+      "inferred": false
+    },
+    {
+      "id": "S23",
+      "process": "Obtain SBA approval for a Loan Action",
+      "actor": "Lender",
+      "action": "Submit the Servicing Request to the LGPC in Citrus Heights, CA, or to the appropriate USEAC for EWCP Loans",
+      "input": "Servicing Request letter or email and credit memo",
+      "output": "Submitted Servicing Request",
+      "system": "Letter or electronic mail",
+      "source_section": "C.2",
+      "source_quote": "Prior to final disbursement of a 7(a) Loan, Lenders should submit Servicing Requests to the LGPC in Citrus Heights, CA, or for EWCP Loans, the appropriate USEAC.",
+      "inferred": false
+    },
+    {
+      "id": "S24",
+      "process": "Obtain SBA approval for a Loan Action",
+      "actor": "Lender",
+      "action": "Submit the Servicing Request to the CLSC for:\n- Loans in regular servicing\n- SBA Express, Export Express, Community Advantage, and Pilot Program Loans in liquidation\nSubmit to the NGPC for all other Loans in liquidation.",
+      "input": "Servicing Request letter or email and credit memo",
+      "output": "Submitted Servicing Request",
+      "system": "Letter or electronic mail",
+      "source_section": "C.2",
+      "source_quote": "After final disbursement, Lenders should submit Servicing Requests for all Loans in regular servicing status to the CLSC",
+      "inferred": false
+    },
+    {
+      "id": "S25",
+      "process": "Obtain SBA approval for a Loan Action",
+      "actor": "SBA Loan Center",
+      "action": "Review the Servicing Request, consulting the appropriate USEAC as needed (CLSC), and respond to the Lender",
+      "input": "Submitted Servicing Request",
+      "output": "SBA response",
+      "system": "",
+      "source_section": "C.3",
+      "source_quote": "SBA will attempt to respond to a Lender's request for approval of a Servicing Request within 15 business days",
+      "inferred": false
+    },
+    {
+      "id": "S26",
+      "process": "Obtain SBA approval for a Loan Action",
+      "actor": "Lender",
+      "action": "Enter SBA's response to the Servicing Request in the Computer Tracking System and/or Loan File",
+      "input": "SBA response",
+      "output": "Recorded SBA response",
+      "system": "Computer Tracking System and/or Loan File",
+      "source_section": "B.11",
+      "source_quote": "Lenders must note and/or enter SBA\u2019s response to all Servicing Requests in the Lender\u2019s Computer Tracking System and/or Loan File",
+      "inferred": false
+    },
+    {
+      "id": "S27",
+      "process": "Obtain SBA approval for a Loan Action",
+      "actor": "Lender",
+      "action": "File the Loan Action Record and Supporting Documents in the Loan File, and enter the substance of calls and meetings about the request",
+      "input": "Loan Action Record, Supporting Documents, call and meeting notes",
+      "output": "Complete Loan File record",
+      "system": "Loan File and/or Computer Tracking System",
+      "source_section": "B.11",
+      "source_quote": "enter the substance of any telephone calls and/or face-to-face meetings regarding the Servicing Request in the Lender\u2019s Loan File",
+      "inferred": false
+    },
+    {
+      "id": "S28",
+      "process": "Implement an approved Loan Action",
+      "actor": "Lender",
+      "action": "Modify each Loan Document impacted when the approved Loan Action changes the terms and conditions of the Note or another Loan Document",
+      "input": "Approved Loan Action",
+      "output": "Modified Loan Documents",
+      "system": "",
+      "source_section": "D.1",
+      "source_quote": "Lenders must modify each impacted Loan Document",
+      "inferred": false
+    },
+    {
+      "id": "S29",
+      "process": "Implement an approved Loan Action",
+      "actor": "Lender",
+      "action": "Prepare any new Loan Document needed and ensure its proper execution",
+      "input": "Approved Loan Action",
+      "output": "Executed new Loan Documents",
+      "system": "",
+      "source_section": "D.2",
+      "source_quote": "Lenders must properly prepare and ensure proper execution of any new Loan Document",
+      "inferred": false
+    },
+    {
+      "id": "S30",
+      "process": "Implement an approved Loan Action",
+      "actor": "Lender",
+      "action": "Record the modified and new Loan Documents in the public record",
+      "input": "Modified and executed new Loan Documents",
+      "output": "Recorded Loan Documents",
+      "system": "Public record",
+      "source_section": "D.3",
+      "source_quote": "Lenders must properly record modified Loan Documents, as well as any new Loan Documents, in the public record.",
+      "inferred": false
+    }
+  ],
+  "decisions": [
+    {
+      "id": "D1",
+      "process": "Review a servicing request",
+      "after_step": "S2",
+      "condition": "Has the request to modify the Loan terms and/or conditions been submitted in writing?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S4"
+        },
+        {
+          "label": "No",
+          "next_step": "S3"
+        }
+      ],
+      "source_section": "B.2",
+      "inferred": true
+    },
+    {
+      "id": "D2",
+      "process": "Review a servicing request",
+      "after_step": "S4",
+      "condition": "Does the request concern an assumption or the substitution of collateral or Obligors?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S5"
+        },
+        {
+          "label": "No",
+          "next_step": "S6"
+        }
+      ],
+      "source_section": "B.3",
+      "inferred": false
+    },
+    {
+      "id": "D3",
+      "process": "Review a servicing request",
+      "after_step": "S11",
+      "condition": "Is the Borrower financially viable, i.e., able to repay the Loan if the request is approved?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S13"
+        },
+        {
+          "label": "No",
+          "next_step": "S12"
+        }
+      ],
+      "source_section": "B.6",
+      "inferred": false
+    },
+    {
+      "id": "D4",
+      "process": "Review a servicing request",
+      "after_step": "S14",
+      "condition": "Were any Defaults, collateral deficiencies, or Loan Document problems identified?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S15"
+        },
+        {
+          "label": "No",
+          "next_step": "S16"
+        }
+      ],
+      "source_section": "B.9.a",
+      "inferred": false
+    },
+    {
+      "id": "D5",
+      "process": "Review a servicing request",
+      "after_step": "S18",
+      "condition": "Is SBA's prior written approval required for the Loan Action?",
+      "branches": [
+        {
+          "label": "Yes, prior SBA approval required",
+          "next_step": "S21"
+        },
+        {
+          "label": "No, but notice to SBA is required",
+          "next_step": "S19"
+        },
+        {
+          "label": "No, Lender has unilateral authority and no notice is required",
+          "next_step": "S20"
+        }
+      ],
+      "source_section": "B.10",
+      "inferred": false
+    },
+    {
+      "id": "D6",
+      "process": "Obtain SBA approval for a Loan Action",
+      "after_step": "S22",
+      "condition": "Is the 7(a) Loan still before final disbursement?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S23"
+        },
+        {
+          "label": "No",
+          "next_step": "S24"
+        }
+      ],
+      "source_section": "C.2",
+      "inferred": false
+    },
+    {
+      "id": "D7",
+      "process": "Obtain SBA approval for a Loan Action",
+      "after_step": "S27",
+      "condition": "Did SBA approve the Servicing Request?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "END"
+        },
+        {
+          "label": "No",
+          "next_step": "UNDEFINED"
+        }
+      ],
+      "source_section": "C.3",
+      "inferred": true
+    },
+    {
+      "id": "D8",
+      "process": "Implement an approved Loan Action",
+      "after_step": "S29",
+      "condition": "Is recording the new or modified Loan Documents necessary, reasonable, or customary?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S30"
+        },
+        {
+          "label": "No",
+          "next_step": "END"
+        }
+      ],
+      "source_section": "D.3",
+      "inferred": false
+    }
+  ],
+  "handoffs": [
+    {
+      "after_step": "S2",
+      "from_actor": "Lender",
+      "to_actor": "Borrower"
+    },
+    {
+      "after_step": "S3",
+      "from_actor": "Borrower",
+      "to_actor": "Lender"
+    },
+    {
+      "after_step": "S23",
+      "from_actor": "Lender",
+      "to_actor": "SBA Loan Center"
+    },
+    {
+      "after_step": "S24",
+      "from_actor": "Lender",
+      "to_actor": "SBA Loan Center"
+    },
+    {
+      "after_step": "S25",
+      "from_actor": "SBA Loan Center",
+      "to_actor": "Lender"
+    }
+  ],
+  "exceptions": [
+    {
+      "step": "S3",
+      "trigger": "Borrower does not submit the request in writing",
+      "handling": "",
+      "source_section": "B.2"
+    },
+    {
+      "step": "S7",
+      "trigger": "Servicing Request lacks the Supporting Documents a prudent lender would need",
+      "handling": "Obtain any additional Supporting Documentation needed to properly analyze and approve the request.",
+      "source_section": "B.5"
+    },
+    {
+      "step": "S11",
+      "trigger": "No material change in the Borrower's circumstances since the Loan was made",
+      "handling": "Generally, Lenders should not modify Loan Documents.",
+      "source_section": "B"
+    },
+    {
+      "step": "S11",
+      "trigger": "Borrower is not financially viable",
+      "handling": "Deny the requested Loan Action and take more appropriate actions; see Chapter 15 for classifying Loans into liquidation status.",
+      "source_section": "B.6"
+    },
+    {
+      "step": "S14",
+      "trigger": "Non-monetary Default, collateral deficiency, or Loan Document problem identified",
+      "handling": "Condition approval on the Borrower curing the Default, and possibly require fixing document errors as consideration.",
+      "source_section": "B.9.a"
+    },
+    {
+      "step": "S17",
+      "trigger": "An Obligor does not give written consent to a material change",
+      "handling": "",
+      "source_section": "B.9.c"
+    },
+    {
+      "step": "S21",
+      "trigger": "Analysis or documents were prepared by a Person with a conflict of interest, such as a senior lienholder",
+      "handling": "The Servicing Request and credit memo must not exclusively rely on such documents and must be independent of them.",
+      "source_section": "C.1.a"
+    },
+    {
+      "step": "S25",
+      "trigger": "SBA requests additional information",
+      "handling": "",
+      "source_section": "C.1.a"
+    },
+    {
+      "step": "S25",
+      "trigger": "SBA does not respond within 15 business days",
+      "handling": "Lack of response does not imply approval; the SOP does not state a follow-up action.",
+      "source_section": "C.3"
+    },
+    {
+      "step": "S27",
+      "trigger": "SBA does not approve the Servicing Request",
+      "handling": "",
+      "source_section": "C.3"
+    }
+  ],
+  "timing": [
+    {
+      "step": "S5",
+      "requirement": "Apply the SOP 50 10 Loan Program Requirements in effect at the time the action takes place",
+      "source_section": "B.3.a"
+    },
+    {
+      "step": "S7",
+      "requirement": "The Borrower's financial statement must be current, with federal tax returns for the most recent two years; the appraisal, lien search, and senior lien evidence must be current",
+      "source_section": "B.4"
+    },
+    {
+      "step": "S9",
+      "requirement": "Obligor financial statements must be current, with federal tax returns for the most recent two years",
+      "source_section": "B.5.b"
+    },
+    {
+      "step": "S15",
+      "requirement": "Defaults (e.g., lapsed insurance, past due financial statements) must be cured prior to approving any Loan Action",
+      "source_section": "B.9.a"
+    },
+    {
+      "step": "S16",
+      "requirement": "Consideration must be provided before or at the same time the Borrower receives the benefit of the Loan Action",
+      "source_section": "B.9.b"
+    },
+    {
+      "step": "S25",
+      "requirement": "SBA will attempt to respond within 15 business days from the date SBA received the request, or sooner; no response within 15 business days does not imply approval",
+      "source_section": "C.3"
+    }
+  ],
+  "risks": [
+    {
+      "id": "R1",
+      "process": "Obtain SBA approval for a Loan Action",
+      "step": "S25",
+      "risk_type": "undefined_exception",
+      "what_could_go_wrong": "SBA does not answer within 15 business days. With no follow-up rule, the request can sit unnoticed, or staff may treat the silence as approval and implement the Loan Action without SBA's written approval.",
+      "cause": "C.3 sets a 15-business-day response target and says silence 'does not imply that SBA has approved'. No section says who follows up, when, or how.",
+      "impact": "The Borrower waits with no end date. If the Lender implements without approval, it acts outside its authority on an SBA-guaranteed loan, which is a compliance and guaranty exposure.",
+      "quantified_impact": [
+        {
+          "metric": "SBA response target",
+          "value": "15 business days from SBA receipt",
+          "basis": "C.3"
+        },
+        {
+          "metric": "Defined follow-up actions after the target passes",
+          "value": "0",
+          "basis": "Exceptions list for S25 has no handling"
+        }
+      ],
+      "severity": "high",
+      "severity_reason": "Delays at an outside agency are common, and acting on assumed approval carries serious compliance consequences.",
+      "addressed_by": [
+        "A18",
+        "A20"
+      ]
+    },
+    {
+      "id": "R2",
+      "process": "Obtain SBA approval for a Loan Action",
+      "step": "D7 (after S27)",
+      "risk_type": "undefined_exception",
+      "what_could_go_wrong": "SBA declines the Servicing Request, and nobody is assigned to tell the Borrower or decide whether to revise, resubmit, or close the request.",
+      "cause": "D7's No branch is UNDEFINED. C.3 and B.11 only require recording SBA's response.",
+      "impact": "The Borrower is left without an answer and the request stays open indefinitely. Inconsistent handling of declined requests may be raised at audit.",
+      "quantified_impact": [
+        {
+          "metric": "Undefined branches",
+          "value": "1",
+          "basis": "D7 No branch = UNDEFINED"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "Declines happen less often than approvals, but every decline currently has no stated path.",
+      "addressed_by": [
+        "A18"
+      ]
+    },
+    {
+      "id": "R3",
+      "process": "Obtain SBA approval for a Loan Action",
+      "step": "S25",
+      "risk_type": "undefined_exception",
+      "what_could_go_wrong": "SBA asks for additional information, and the request stalls because no one owns the reply and no deadline applies to it.",
+      "cause": "C.1.a and C.1.b say SBA reserves the right to request additional information. No handling, owner, or timing is stated.",
+      "impact": "Approval is delayed for the Borrower. The request may appear to be 'with SBA' when it is actually waiting on the Lender.",
+      "quantified_impact": [
+        {
+          "metric": "Defined handling steps for SBA information requests",
+          "value": "0",
+          "basis": "Exceptions list for S25, C.1.a"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "Information requests are plausible on complex actions, and an unanswered request directly delays the outcome.",
+      "addressed_by": [
+        "A18"
+      ]
+    },
+    {
+      "id": "R4",
+      "process": "Review a servicing request",
+      "step": "S1, S14, S20 (also S26, S27)",
+      "risk_type": "rekeying",
+      "what_could_go_wrong": "Request details, SBA responses, and call notes are entered in the Computer Tracking System, the Loan File, or both. Each place ends up holding a different partial history of the request.",
+      "cause": "B.1 and B.11 repeatedly allow the 'Computer Tracking System and/or Loan File' without naming a single system of record. B.8 then relies on the tracking system to check for problems.",
+      "impact": "Prior representations or Defaults can be missed in the S14 problem check. An incomplete Loan File is an audit finding.",
+      "quantified_impact": [
+        {
+          "metric": "Steps that enter request data into 'Computer Tracking System and/or Loan File'",
+          "value": "5 (S1, S14, S20, S26, S27)",
+          "basis": "Counted from map systems field; B.1, B.8, B.11"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "Two record locations make divergence likely over time, and the impact is mainly on audit and on the quality of later reviews.",
+      "addressed_by": [
+        "A1",
+        "A14",
+        "A18",
+        "A19"
+      ]
+    },
+    {
+      "id": "R5",
+      "process": "Review a servicing request",
+      "step": "S3",
+      "risk_type": "undefined_exception",
+      "what_could_go_wrong": "A Borrower makes a request by phone or in person and never puts it in writing. The request either sits open indefinitely or is worked without a written request.",
+      "cause": "B.2 says Lenders 'should require' written requests. The map exception for S3 has no handling, and D1 is inferred.",
+      "impact": "The Lender loses evidence of what was requested, which weakens the Loan Action Record. Open requests can also be forgotten.",
+      "quantified_impact": [
+        {
+          "metric": "Handoffs to obtain a written request",
+          "value": "2 (S2 to S3, S3 back to Lender)",
+          "basis": "Handoffs list"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "Informal requests are common for small actions, and the missing record affects documentation quality rather than money directly.",
+      "addressed_by": [
+        "A2"
+      ]
+    },
+    {
+      "id": "R6",
+      "process": "Review a servicing request",
+      "step": "S7, S9",
+      "risk_type": "manual_handoff",
+      "what_could_go_wrong": "The Lender asks the Borrower and Obligors for financial statements, tax returns, appraisals, lien searches, and other documents. Nothing tracks which items are still outstanding, so the request stalls.",
+      "cause": "B.4 and B.5 list many documents but set no owner, tracking method, or due date for collecting them.",
+      "impact": "Analysis is delayed for the Borrower, and the request may proceed on an incomplete file.",
+      "quantified_impact": [
+        {
+          "metric": "Document types in the support check",
+          "value": "5 (financial statement, 2 years tax returns, appraisal, lien search, senior lien evidence)",
+          "basis": "B.4.a and B.4.b"
+        },
+        {
+          "metric": "Additional document types that may be required",
+          "value": "5",
+          "basis": "B.5.a to B.5.e"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "Collecting documents from several outside parties often slips, and the effect is delay plus a weaker analysis.",
+      "addressed_by": [
+        "A3",
+        "A4"
+      ]
+    },
+    {
+      "id": "R7",
+      "process": "Review a servicing request",
+      "step": "S7, S9",
+      "risk_type": "vague_ownership_or_timing",
+      "what_could_go_wrong": "A financial statement or appraisal that was 'current' when received is stale by the time of the decision. The analysis then rests on outdated numbers.",
+      "cause": "B.4 and B.5.b require 'current' documents but never define how current.",
+      "impact": "The viability and collateral analyses (S11, S13) may be wrong, which is a credit risk and an audit exposure.",
+      "quantified_impact": [
+        {
+          "metric": "Documents with an undefined 'current' requirement",
+          "value": "Financial statements, appraisal, lien search, senior lien evidence",
+          "basis": "B.4.a, B.4.b, B.5.b"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "Long collection times make staleness plausible, and the consequence is a flawed credit decision.",
+      "addressed_by": [
+        "A3",
+        "A4"
+      ]
+    },
+    {
+      "id": "R8",
+      "process": "Review a servicing request",
+      "step": "S17",
+      "risk_type": "undefined_exception",
+      "what_could_go_wrong": "A Guarantor or other Obligor refuses or fails to sign consent to a material change. The SOP gives no next step, so the change may go ahead without that consent.",
+      "cause": "B.9.c requires written consent from each Obligor to protect recovery, but the map exception for S17 has no handling.",
+      "impact": "If the change proceeds without consent, the Lender may lose the legal ability to recover from that Obligor after a Default.",
+      "quantified_impact": [
+        {
+          "metric": "Required consents",
+          "value": "One per Obligor",
+          "basis": "B.9.c"
+        }
+      ],
+      "severity": "high",
+      "severity_reason": "A refusal is not rare, and losing recourse against a Guarantor is a direct loss exposure.",
+      "addressed_by": [
+        "A11",
+        "A20"
+      ]
+    },
+    {
+      "id": "R9",
+      "process": "Implement an approved Loan Action",
+      "step": "S28",
+      "risk_type": "missing_control",
+      "what_could_go_wrong": "Loan Documents are modified and executed before the Borrower has cured Defaults, delivered consideration, or every Obligor has consented. In some cases this happens before SBA's written approval is received.",
+      "cause": "B.9.a, B.9.b, B.9.c, and C.3 set conditions, but Section D starts implementation on 'approved' with no check that those conditions are met.",
+      "impact": "The modification may not be legally binding (no consideration), may release Obligors (no consent), or may be done without the required SBA approval.",
+      "quantified_impact": [
+        {
+          "metric": "Conditions to verify before implementation",
+          "value": "3 (cure, consideration, Obligor consent) plus SBA approval when required",
+          "basis": "B.9.a to B.9.c, D5, C.3"
+        },
+        {
+          "metric": "Verification steps in current map before S28",
+          "value": "0",
+          "basis": "Implement process starts at S28"
+        }
+      ],
+      "severity": "high",
+      "severity_reason": "Conditions are spread across separate steps with no final gate, and the consequences are legal and financial.",
+      "addressed_by": [
+        "A9",
+        "A11",
+        "A20"
+      ]
+    },
+    {
+      "id": "R10",
+      "process": "Review a servicing request",
+      "step": "D5 (after S18)",
+      "risk_type": "missing_control",
+      "what_could_go_wrong": "The Lender wrongly concludes it has unilateral authority and takes the Loan Action without SBA's prior approval or required notice. Alternatively, it sends routine actions to SBA that SBA has asked not to receive.",
+      "cause": "B.10 and C depend on a list in Chapter 3 that sits outside this chapter. B.11 only suggests, as a best practice, filing the 7(a) Lender Matrix that was relied on.",
+      "impact": "Acting without required approval risks the SBA guaranty and an audit finding. Unneeded submissions waste Lender and SBA time.",
+      "quantified_impact": [
+        {
+          "metric": "Authority routes to choose between",
+          "value": "3",
+          "basis": "D5 branches"
+        }
+      ],
+      "severity": "high",
+      "severity_reason": "This is a judgment made from an external reference on every request, and a wrong answer carries major compliance impact.",
+      "addressed_by": [
+        "A13"
+      ]
+    },
+    {
+      "id": "R11",
+      "process": "Review a servicing request",
+      "step": "S18",
+      "risk_type": "missing_control",
+      "what_could_go_wrong": "The Loan Action Record or credit memo reuses a senior lienholder's analysis, and nobody checks that it is independent.",
+      "cause": "Section B and C.1.b require independence from any Person with a conflict of interest, but no step verifies it.",
+      "impact": "SBA may reject the request, and the decision may later be found unsupported at audit.",
+      "quantified_impact": [
+        {
+          "metric": "Documents requiring independence",
+          "value": "2 (Loan Action Record, credit memo)",
+          "basis": "Section B; C.1.b"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "Senior lienholder packages are convenient to reuse, but the impact is mostly on documentation and review.",
+      "addressed_by": [
+        "A12",
+        "A15"
+      ]
+    },
+    {
+      "id": "R12",
+      "process": "Obtain SBA approval for a Loan Action",
+      "step": "S21, S22",
+      "risk_type": "conflicting_rule",
+      "what_could_go_wrong": "Staff read the letter rule as allowing partial reliance on a senior lienholder's analysis, while the credit memo rule demands full independence. Submissions end up meeting different standards.",
+      "cause": "C.1.a says requests 'must not exclusively rely' on conflicted analysis. C.1.b and Section B say the credit memo and Loan Action Record 'must be independent' of it.",
+      "impact": "Practice is inconsistent, and some submissions may be returned by SBA.",
+      "quantified_impact": [
+        {
+          "metric": "Sections with differing independence standards",
+          "value": "2 (C.1.a vs C.1.b/B)",
+          "basis": "C.1.a, C.1.b, B"
+        }
+      ],
+      "severity": "low",
+      "severity_reason": "The wording difference is subtle, and applying the stricter standard resolves it.",
+      "addressed_by": [
+        "A15"
+      ]
+    },
+    {
+      "id": "R13",
+      "process": "Obtain SBA approval for a Loan Action",
+      "step": "S23, S24",
+      "risk_type": "missing_control",
+      "what_could_go_wrong": "The request is sent to the wrong SBA Loan Center. For example, a liquidation-status Express loan goes to NGPC instead of CLSC, and the response clock effectively starts over.",
+      "cause": "C.2 routes by disbursement status, program, and liquidation status across four destinations, with no check before sending.",
+      "impact": "Approval is delayed, which also delays the Borrower's relief.",
+      "quantified_impact": [
+        {
+          "metric": "Possible destinations",
+          "value": "4 (LGPC, USEAC, CLSC, NGPC)",
+          "basis": "C.2"
+        },
+        {
+          "metric": "Response target lost per misroute",
+          "value": "Up to 15 business days",
+          "basis": "C.3"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "The routing rules are complex enough for errors, and each error costs weeks.",
+      "addressed_by": [
+        "A17"
+      ]
+    },
+    {
+      "id": "R14",
+      "process": "Implement an approved Loan Action",
+      "step": "S30",
+      "risk_type": "vague_ownership_or_timing",
+      "what_could_go_wrong": "A modified mortgage or new lien document is never recorded because no one decided it was 'necessary', or because recording has no deadline. The lien priority or perfection is then impaired.",
+      "cause": "D.3 requires recording 'whenever necessary, reasonable and/or customary', with no owner or timeframe.",
+      "impact": "Collateral protection is lost, which raises the loss on liquidation.",
+      "quantified_impact": [
+        {
+          "metric": "Stated recording deadline",
+          "value": "None",
+          "basis": "D.3"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "This is easy to miss on routine actions, and the impact is significant when it involves collateral.",
+      "addressed_by": [
+        "A22"
+      ]
+    },
+    {
+      "id": "R15",
+      "process": "Review a servicing request",
+      "step": "S12",
+      "risk_type": "vague_ownership_or_timing",
+      "what_could_go_wrong": "After a Borrower is found not viable, the request is denied, but the 'more appropriate actions' are never started and the Borrower may not be told of the denial.",
+      "cause": "B.6 says to 'take more appropriate actions' and points to Chapter 15. No notice to the Borrower or timeframe is stated.",
+      "impact": "Classification into liquidation is delayed, and the Borrower is left uncertain.",
+      "quantified_impact": [
+        {
+          "metric": "Defined follow-on steps after denial",
+          "value": "0 in this chapter",
+          "basis": "B.6"
+        }
+      ],
+      "severity": "low",
+      "severity_reason": "Chapter 15 likely covers the follow-on actions, so the gap is mainly one of ownership within this chapter.",
+      "addressed_by": [
+        "A6"
+      ]
+    }
+  ],
+  "recommendations": [
+    {
+      "id": "A1",
+      "process": "Review a servicing request",
+      "step": "S1",
+      "label": "digitize",
+      "proposed_change": "The Lender logs each Loan Action once in a Power Apps Servicing Request app that writes to a SharePoint list. A Loan File folder is created automatically and serves as the single record.",
+      "reason": "B.1 allows the tracking system and/or Loan File, which splits the record. One intake gives every later step one place to read from and write to.",
+      "implementation_steps": [
+        "Create a SharePoint list 'Servicing Requests' with columns for loan number, Borrower, request type (credit, collateral, assumption/substitution, other), received date, written request attached (yes/no), status, and assigned servicing officer.",
+        "Create a SharePoint document library 'Loan Files' with a folder per request.",
+        "Build a Power Apps canvas app over the list with an attachment control for the written request.",
+        "Add a Power Automate flow on item creation that creates the Loan File folder, moves attachments into it, and notifies the assigned officer in Teams.",
+        "If the Computer Tracking System has an API, add a custom connector later. Until then, mark the SharePoint list as the system of record in the procedure."
+      ],
+      "suggested_tool": "Power Apps, SharePoint, Power Automate",
+      "value": 5,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 1,
+        "minutes_saved_per_occurrence": 10,
+        "occurrence": "per servicing request",
+        "basis": "Replaces the dual 'and/or' entry at S1 with one entry (counted from S1). Minutes are an estimate."
+      },
+      "resolves_risks": [
+        "R4"
+      ]
+    },
+    {
+      "id": "A2",
+      "process": "Review a servicing request",
+      "step": "S2",
+      "label": "automate",
+      "proposed_change": "A flow checks whether a written request is attached to the intake record. If not, it emails the Borrower a written-request template with a link, sends reminders, and flags the record as awaiting a written request.",
+      "reason": "This gives the S3 exception a defined handling path and tracks the Lender-to-Borrower handoff.",
+      "implementation_steps": [
+        "In the intake flow, add a condition on the 'written request attached' column.",
+        "If no written request is attached, send an Outlook email from a shared mailbox with a request template and a Microsoft Forms or upload link tied to the request ID.",
+        "Set status to 'Awaiting written request' and add a Delay loop that sends reminders at an interval the process owner sets.",
+        "After a set number of reminders, create a Planner task for the officer to close or escalate the request.",
+        "When the Borrower's upload arrives, attach it to the Loan File folder and set status to 'In review'."
+      ],
+      "suggested_tool": "Power Automate, Outlook, Microsoft Forms, Planner",
+      "value": 3,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 10,
+        "occurrence": "per request received without a written request",
+        "basis": "Automates drafting the S2 to S3 request and the follow-up. Both handoffs remain but are tracked. Minutes are an estimate."
+      },
+      "resolves_risks": [
+        "R5"
+      ]
+    },
+    {
+      "id": "A3",
+      "process": "Review a servicing request",
+      "step": "S7",
+      "label": "automate",
+      "proposed_change": "Based on request type, a flow generates the required-document checklist from B.4 and B.5. It sends the Borrower the list of missing items and tracks each item's received date and as-of date.",
+      "reason": "The rules in B.4 and B.5 are deterministic by request type, and collection is currently untracked.",
+      "implementation_steps": [
+        "Create a SharePoint list 'Document Checklist Templates' mapping request type to required documents (credit: financial statement, 2 years tax returns; collateral: plus appraisal, lien search, senior lien evidence; conditional B.5 items).",
+        "Create a 'Request Documents' list with columns for request ID, document, required by, received date, document as-of date, and status.",
+        "On status 'In review', a flow copies the template rows for the request type into 'Request Documents'.",
+        "The flow emails the Borrower the outstanding items and sends reminders until each item is received.",
+        "Have the process owner set a maximum document age. The flow flags any item older than that age as stale."
+      ],
+      "suggested_tool": "Power Automate, SharePoint, Outlook",
+      "value": 4,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 20,
+        "occurrence": "per servicing request",
+        "basis": "Removes manual checklist building for up to 10 document types listed in B.4 and B.5. Minutes are an estimate."
+      },
+      "resolves_risks": [
+        "R6",
+        "R7"
+      ]
+    },
+    {
+      "id": "A4",
+      "process": "Review a servicing request",
+      "step": "S9",
+      "label": "ai_assist",
+      "proposed_change": "AI Builder classifies each uploaded document (financial statement, tax return, appraisal, title or UCC report, HUD-1, board resolution) and extracts its as-of date or tax year. It then ticks the matching checklist item for the Lender to confirm.",
+      "reason": "Reading and classifying incoming documents is text work suited to AI. The Lender still confirms each result.",
+      "implementation_steps": [
+        "Train an AI Builder document processing or classification model on sample document types from B.4 and B.5.",
+        "Trigger a flow when a file is added to the Loan File folder.",
+        "Run the model and write the document type and extracted date to the matching 'Request Documents' row with status 'Pending confirmation'.",
+        "Send the officer an adaptive card in Teams to confirm or correct the result.",
+        "Route low-confidence results straight to manual review."
+      ],
+      "suggested_tool": "AI Builder, Power Automate, SharePoint, Teams",
+      "value": 3,
+      "effort": 3,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 1,
+        "minutes_saved_per_occurrence": 15,
+        "occurrence": "per servicing request",
+        "basis": "Replaces manual checklist updates with confirmation of extracted values. Minutes are an estimate."
+      },
+      "resolves_risks": [
+        "R6",
+        "R7"
+      ]
+    },
+    {
+      "id": "A5",
+      "process": "Review a servicing request",
+      "step": "S11",
+      "label": "keep_human",
+      "proposed_change": "The Lender's credit staff continue to determine Borrower financial viability.",
+      "reason": "B.6 requires a credit judgment that decides whether the request proceeds or is denied.",
+      "implementation_steps": [
+        "Add a viability determination field and a narrative field to the Servicing Request record so the conclusion is captured for the Loan Action Record."
+      ],
+      "suggested_tool": "Power Apps",
+      "value": 2,
+      "effort": 1,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 0,
+        "occurrence": "per servicing request",
+        "basis": "No automation of the judgment itself."
+      },
+      "resolves_risks": []
+    },
+    {
+      "id": "A6",
+      "process": "Review a servicing request",
+      "step": "S12",
+      "label": "keep_human",
+      "proposed_change": "Denial and the choice of follow-on actions stay with the Lender. The app records the denial and a named owner for the Chapter 15 follow-up.",
+      "reason": "Denial and liquidation classification are sensitive decisions about the Borrower.",
+      "implementation_steps": [
+        "Add a 'Denied' status that requires a follow-on action owner and a target date before the record can be saved."
+      ],
+      "suggested_tool": "Power Apps",
+      "value": 2,
+      "effort": 1,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 0,
+        "occurrence": "per denied request",
+        "basis": "Judgment remains human."
+      },
+      "resolves_risks": [
+        "R15"
+      ]
+    },
+    {
+      "id": "A7",
+      "process": "Review a servicing request",
+      "step": "S13",
+      "label": "keep_human",
+      "proposed_change": "The Lender continues to analyze collateral Recoverable Value before and after the Loan Action.",
+      "reason": "B.7 requires valuation judgment based on appraisal and lien data.",
+      "implementation_steps": [
+        "Store the before and after Recoverable Value figures as fields so A16 can reuse them in the SBA letter."
+      ],
+      "suggested_tool": "Power Apps",
+      "value": 2,
+      "effort": 1,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 0,
+        "occurrence": "per collateral-impacting request",
+        "basis": "Judgment remains human."
+      },
+      "resolves_risks": []
+    },
+    {
+      "id": "A8",
+      "process": "Review a servicing request",
+      "step": "S14",
+      "label": "ai_assist",
+      "proposed_change": "A Copilot-assisted summary of the existing Loan Documents and prior request history in SharePoint flags possible inconsistencies with prior representations, lapsed insurance, or past-due financial statements. The Lender confirms each item.",
+      "reason": "Scanning long Loan Documents for the B.8 issues is reading work. The Lender keeps the decision on what counts as a Default.",
+      "implementation_steps": [
+        "Store existing Loan Documents in the Loan File library.",
+        "Use a Copilot Studio agent or an AI Builder prompt grounded on the Loan File folder to list candidate issues under the four B.8 categories.",
+        "Write the candidates to a 'Problems Found' list with status 'Unconfirmed'.",
+        "The officer confirms or dismisses each item. Confirmed items feed D4 and A9."
+      ],
+      "suggested_tool": "Copilot Studio or AI Builder prompt, SharePoint",
+      "value": 3,
+      "effort": 4,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 20,
+        "occurrence": "per servicing request",
+        "basis": "Reduces manual document review time. Minutes are an estimate. Effort is high because the Computer Tracking System may need a custom connector."
+      },
+      "resolves_risks": [
+        "R4"
+      ]
+    },
+    {
+      "id": "A9",
+      "process": "Review a servicing request",
+      "step": "S15",
+      "label": "digitize",
+      "proposed_change": "Each cure condition and the consideration condition are recorded as tracked items in a SharePoint 'Approval Conditions' list linked to the request, with an open or closed status and evidence attached.",
+      "reason": "Conditions currently live only in narrative. Tracked items let the A20 gate verify them before implementation.",
+      "implementation_steps": [
+        "Create a SharePoint list 'Approval Conditions' with columns for request ID, condition type (cure, consideration, Obligor consent), description, due by, evidence link, and status.",
+        "Add a conditions screen to the Servicing Request app so confirmed problems from S14 become cure conditions.",
+        "Require evidence attachment before a condition can be closed."
+      ],
+      "suggested_tool": "Power Apps, SharePoint",
+      "value": 3,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 5,
+        "occurrence": "per servicing request",
+        "basis": "Structures the B.9 conditions. Minutes are an estimate."
+      },
+      "resolves_risks": [
+        "R9"
+      ]
+    },
+    {
+      "id": "A10",
+      "process": "Review a servicing request",
+      "step": "S16",
+      "label": "keep_human",
+      "proposed_change": "The Lender continues to decide what consideration is adequate. The chosen consideration is recorded as a condition in the A9 list.",
+      "reason": "Whether consideration is adequate to make the change legally binding is a legal judgment (B.9.b).",
+      "implementation_steps": [
+        "Add a 'consideration' condition type with a required 'received before or at time of benefit' confirmation."
+      ],
+      "suggested_tool": "Power Apps",
+      "value": 2,
+      "effort": 1,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 0,
+        "occurrence": "per servicing request",
+        "basis": "Judgment remains human."
+      },
+      "resolves_risks": []
+    },
+    {
+      "id": "A11",
+      "process": "Review a servicing request",
+      "step": "S17",
+      "label": "automate",
+      "proposed_change": "A flow sends a consent document to each Obligor through an e-signature connector, tracks signatures, and sends reminders. If an Obligor declines or does not sign, it opens a task for the Lender to decide how to proceed.",
+      "reason": "Collecting consents is repetitive, and a missing or refused consent currently has no defined handling.",
+      "implementation_steps": [
+        "Add an Obligors list (name, role, email) linked to the request.",
+        "On a 'Request consents' button in the app, a flow creates an Adobe Acrobat Sign or DocuSign envelope per Obligor from a consent template.",
+        "Update each Obligor's consent status as the e-signature connector returns signed or declined.",
+        "When consent is declined or past due, create a Planner task and a Teams alert for the officer, and keep the consent condition open.",
+        "Save signed consents to the Loan File folder."
+      ],
+      "suggested_tool": "Power Automate, Adobe Acrobat Sign or DocuSign connector, SharePoint, Planner",
+      "value": 4,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 1,
+        "minutes_saved_per_occurrence": 15,
+        "occurrence": "per Obligor consent requested",
+        "basis": "Removes manual mailing and logging of each consent. Minutes are an estimate."
+      },
+      "resolves_risks": [
+        "R8",
+        "R9"
+      ]
+    },
+    {
+      "id": "A12",
+      "process": "Review a servicing request",
+      "step": "S18",
+      "label": "keep_human",
+      "proposed_change": "The Lender continues to write and justify the Loan Action Record, adding a required attestation that it is independent of any senior lienholder or conflicted Person.",
+      "reason": "Justifying the decision is a judgment. The attestation adds the missing independence check.",
+      "implementation_steps": [
+        "Add an independence attestation checkbox and a sources field to the Loan Action Record form.",
+        "Block the 'Decision recorded' status until the attestation is completed."
+      ],
+      "suggested_tool": "Power Apps",
+      "value": 2,
+      "effort": 1,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 0,
+        "occurrence": "per servicing request",
+        "basis": "Judgment remains human."
+      },
+      "resolves_risks": [
+        "R11"
+      ]
+    },
+    {
+      "id": "A13",
+      "process": "Review a servicing request",
+      "step": "D5",
+      "label": "automate",
+      "proposed_change": "The Servicing and Liquidation Actions 7(a) Lender Matrix is held as a versioned SharePoint list. A flow suggests whether the action needs SBA prior approval, notice only, or neither. The Lender confirms, and the flow files the matrix version relied on.",
+      "reason": "This turns an external reference lookup into a consistent, recorded suggestion and applies the B.11 best practice automatically.",
+      "implementation_steps": [
+        "Load the current Lender Matrix into a SharePoint list (Loan Action type, approval required, notice required, effective date, version).",
+        "Add a Loan Action type field to the Servicing Request app.",
+        "A flow looks up the matching matrix row and writes the suggested route to the request.",
+        "The officer confirms or overrides the route. Overrides require a reason.",
+        "The flow saves the matrix version and effective date to the Loan File folder."
+      ],
+      "suggested_tool": "SharePoint, Power Automate, Power Apps",
+      "value": 4,
+      "effort": 3,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 15,
+        "occurrence": "per servicing request",
+        "basis": "Replaces manual Chapter 3 lookup and manual matrix filing. Minutes are an estimate. The matrix needs periodic maintenance."
+      },
+      "resolves_risks": [
+        "R10"
+      ]
+    },
+    {
+      "id": "A14",
+      "process": "Review a servicing request",
+      "step": "S20",
+      "label": "automate",
+      "proposed_change": "When the Loan Action Record is finalized, a flow files it and all Supporting Documents in the Loan File folder and logs call and meeting notes from the app's notes list, with no separate filing step.",
+      "reason": "Filing is rule-based and currently split across two possible systems.",
+      "implementation_steps": [
+        "Add a 'Contact notes' list (date, type, attendees, substance) linked to the request.",
+        "On status 'Decision recorded', a flow converts the Loan Action Record to PDF and saves it with the notes export into the Loan File folder.",
+        "The flow sets the status to 'Filed' and records the filing timestamp."
+      ],
+      "suggested_tool": "Power Automate, SharePoint, OneDrive PDF conversion",
+      "value": 3,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 1,
+        "minutes_saved_per_occurrence": 10,
+        "occurrence": "per servicing request",
+        "basis": "Removes manual filing at S20. Minutes are an estimate."
+      },
+      "resolves_risks": [
+        "R4"
+      ]
+    },
+    {
+      "id": "A15",
+      "process": "Obtain SBA approval for a Loan Action",
+      "step": "S21",
+      "label": "keep_human",
+      "proposed_change": "The Lender continues to write the independent credit memo, applying the stricter 'independent' standard from C.1.b to both the memo and the letter.",
+      "reason": "The credit memo is a credit judgment. Using one standard removes the wording conflict between C.1.a and C.1.b.",
+      "implementation_steps": [
+        "Add the same independence attestation used in A12 to the credit memo template.",
+        "State in the procedure guide that the 'must be independent' standard governs both documents."
+      ],
+      "suggested_tool": "Word template, Power Apps",
+      "value": 2,
+      "effort": 1,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 0,
+        "occurrence": "per SBA approval request",
+        "basis": "Judgment remains human."
+      },
+      "resolves_risks": [
+        "R11",
+        "R12"
+      ]
+    },
+    {
+      "id": "A16",
+      "process": "Obtain SBA approval for a Loan Action",
+      "step": "S22",
+      "label": "ai_assist",
+      "proposed_change": "An AI prompt drafts the Servicing Request letter from the credit memo and request fields, and checks that all eight C.1.a elements are present. The Lender edits and approves the draft.",
+      "reason": "Drafting a structured letter from an existing memo is text work, and an element checklist prevents incomplete submissions.",
+      "implementation_steps": [
+        "Create an AI Builder prompt or Copilot in Word instruction listing the eight C.1.a elements.",
+        "Use a flow to pass the credit memo text and the request fields (amount funded, funding date, balance, status, Obligors, FTA consent) to the prompt.",
+        "Save the draft to the Loan File as a Word document.",
+        "Have the prompt output a checklist of the eight elements marked present or missing for the officer to review."
+      ],
+      "suggested_tool": "AI Builder prompt or Copilot in Word, Power Automate",
+      "value": 3,
+      "effort": 3,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 1,
+        "minutes_saved_per_occurrence": 30,
+        "occurrence": "per SBA approval request",
+        "basis": "Removes manual re-keying of loan data into the letter. Minutes are an estimate."
+      },
+      "resolves_risks": []
+    },
+    {
+      "id": "A17",
+      "process": "Obtain SBA approval for a Loan Action",
+      "step": "S23, S24 (D6)",
+      "label": "automate",
+      "proposed_change": "A flow determines the correct SBA Loan Center from disbursement status, program, and liquidation status using the C.2 rules. It pre-addresses the submission email for the Lender to send.",
+      "reason": "The C.2 routing is fully rule-based, and a misroute costs weeks.",
+      "implementation_steps": [
+        "Create a SharePoint routing list with columns for disbursement status, program, liquidation status, destination, and address.",
+        "Add the loan status fields to the Servicing Request record.",
+        "On 'Ready to submit', a flow looks up the destination and creates a draft Outlook email to it with the letter and credit memo attached.",
+        "The officer reviews and sends the email. The flow records the destination and sent date."
+      ],
+      "suggested_tool": "Power Automate, SharePoint, Outlook",
+      "value": 3,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 1,
+        "minutes_saved_per_occurrence": 10,
+        "occurrence": "per SBA approval request",
+        "basis": "Removes manual routing lookup across 4 destinations (C.2). Minutes are an estimate."
+      },
+      "resolves_risks": [
+        "R13"
+      ]
+    },
+    {
+      "id": "A18",
+      "process": "Obtain SBA approval for a Loan Action",
+      "step": "S26",
+      "label": "automate",
+      "proposed_change": "A flow tracks each SBA submission against the 15-business-day target, sends follow-up alerts, and captures SBA's emailed response into the request record and Loan File. It routes 'additional information requested' and 'declined' outcomes to tasks with owners.",
+      "reason": "No follow-up rule exists after the C.3 target, and the decline and information-request outcomes are undefined.",
+      "implementation_steps": [
+        "Add a submission date, SBA due date, and SBA outcome (Approved, Declined, Additional info requested) to the request record.",
+        "When the request is submitted, a flow calculates the due date as 15 business days, excluding weekends and a SharePoint holiday list.",
+        "A shared-mailbox trigger matches SBA replies by request ID, saves them to the Loan File, and sets the outcome for the officer to confirm.",
+        "Before the due date passes, alert the officer to follow up. If it passes with no reply, flag the request 'No response - not approved' and block implementation.",
+        "For 'Additional info requested', create a Planner task with a due date. For 'Declined', create a task for the officer to decide on revising, resubmitting, or closing and to notify the Borrower."
+      ],
+      "suggested_tool": "Power Automate, Outlook shared mailbox, SharePoint, Planner, Teams",
+      "value": 5,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 1,
+        "minutes_saved_per_occurrence": 15,
+        "occurrence": "per SBA approval request",
+        "basis": "Automates the S26 entry and follow-up tracking. SBA response time is outside Lender control, so wait days are unchanged. Minutes are an estimate."
+      },
+      "resolves_risks": [
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ]
+    },
+    {
+      "id": "A19",
+      "process": "Obtain SBA approval for a Loan Action",
+      "step": "S27",
+      "label": "automate",
+      "proposed_change": "The A14 filing flow also runs on the SBA path. It files the Loan Action Record, Supporting Documents, SBA correspondence, and contact notes automatically once the SBA outcome is confirmed.",
+      "reason": "This is the same rule-based filing as S20 and can reuse the same flow.",
+      "implementation_steps": [
+        "Add a 'SBA outcome confirmed' trigger condition to the A14 flow.",
+        "Include the SBA submission and response emails in the filed package."
+      ],
+      "suggested_tool": "Power Automate, SharePoint",
+      "value": 2,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 1,
+        "minutes_saved_per_occurrence": 10,
+        "occurrence": "per SBA approval request",
+        "basis": "Removes manual filing at S27. Minutes are an estimate."
+      },
+      "resolves_risks": [
+        "R4"
+      ]
+    },
+    {
+      "id": "A20",
+      "process": "Implement an approved Loan Action",
+      "step": "S28",
+      "label": "automate",
+      "proposed_change": "Before any Loan Document is modified, a new automated gate checks that all cure, consideration, and Obligor consent conditions are closed and that SBA approval is recorded where required. Only then does it route a clearance approval.",
+      "reason": "Section D starts on 'approved' with no check that the B.9 conditions or SBA approval are in place.",
+      "implementation_steps": [
+        "Add a 'Ready to implement' button to the app that triggers a flow.",
+        "Get the 'Approval Conditions' items for the request and check that none are open.",
+        "If D5 routed the request to SBA prior approval, check that the SBA outcome is 'Approved'.",
+        "If any check fails, notify the officer with the list of open items and stop.",
+        "If all checks pass, start an approval to the Lender's designated servicing approver (role to be confirmed by the process owner).",
+        "On approval, set the status to 'Cleared for implementation' and create Planner tasks for S28, S29, and the S30 decision."
+      ],
+      "suggested_tool": "Power Automate (Approvals), SharePoint, Planner",
+      "value": 5,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 10,
+        "occurrence": "per approved Loan Action",
+        "basis": "Adds one control step. Minutes are an estimate of the manual file check it replaces."
+      },
+      "resolves_risks": [
+        "R1",
+        "R8",
+        "R9"
+      ]
+    },
+    {
+      "id": "A22",
+      "process": "Implement an approved Loan Action",
+      "step": "S30",
+      "label": "digitize",
+      "proposed_change": "The Lender records the D8 recording decision, with a reason, in a recording log. When recording is required, the log tracks submission date, recording number, and the recorded copy until confirmed.",
+      "reason": "D.3 leaves the recording decision and its timing vague, and an unrecorded document can impair the lien.",
+      "implementation_steps": [
+        "Add a 'Recording log' list (document, jurisdiction, record required yes/no, reason, sent date, recording number, recorded copy).",
+        "Require the record-required decision before the request can close.",
+        "A flow sends reminders when a document is marked 'required' but has no recording number after a period the process owner sets."
+      ],
+      "suggested_tool": "SharePoint, Power Apps, Power Automate",
+      "value": 3,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 5,
+        "occurrence": "per implemented Loan Action",
+        "basis": "Adds tracking rather than removing entries. Minutes are an estimate."
+      },
+      "resolves_risks": [
+        "R14"
+      ]
+    }
+  ],
+  "starter_flows": [
+    {
+      "recommendation_id": "A1",
+      "trigger": "SharePoint - When an item is created in the 'Servicing Requests' list (submitted from the Power Apps intake app)",
+      "actions": [
+        "Compose a request ID from loan number and created date",
+        "Update the item with request ID, received date, and status 'Logged'",
+        "Create a folder named with the request ID in the 'Loan Files' document library",
+        "Get the item's attachments and copy each one into the new folder",
+        "Update the item with the Loan File folder link",
+        "If 'written request attached' is No, call the A2 child flow to request a written request from the Borrower",
+        "Post a Teams message to the assigned servicing officer with the request link"
+      ],
+      "approval_step": ""
+    },
+    {
+      "recommendation_id": "A18",
+      "trigger": "SharePoint - When an item is modified in 'Servicing Requests' and status changes to 'Submitted to SBA'",
+      "actions": [
+        "Get the submission date and SBA Loan Center destination",
+        "Get the holiday list and calculate the due date as 15 business days after the submission date",
+        "Update the item with the SBA due date",
+        "In parallel: Outlook shared mailbox - When a new email arrives with the request ID in the subject from an SBA Loan Center address",
+        "Save the email and attachments to the Loan File folder and set the SBA outcome to 'Pending confirmation'",
+        "Send the officer an adaptive card in Teams to confirm the outcome (Approved, Declined, Additional info requested)",
+        "Switch on outcome: Additional info requested - create a Planner task with a due date; Declined - create a Planner task to decide on revising, resubmitting, or closing and to notify the Borrower; Approved - set status to 'SBA approved'",
+        "Do until a response is confirmed or the due date passes: delay one business day; send a follow-up reminder to the officer before the due date",
+        "If the due date passes with no response: set the flag 'No response - not approved', block implementation status, and alert the officer in Teams to follow up with the SBA Loan Center"
+      ],
+      "approval_step": ""
+    },
+    {
+      "recommendation_id": "A20",
+      "trigger": "Power Apps - officer selects 'Ready to implement' (Power Automate instant flow from the app with the request ID)",
+      "actions": [
+        "Get items from 'Approval Conditions' filtered by request ID where status is not Closed",
+        "Get the Servicing Request item (D5 route and SBA outcome)",
+        "Condition: open conditions exist, or the route is 'SBA prior approval' and the SBA outcome is not 'Approved'",
+        "If the condition is true: send the officer a Teams message listing the open items, then terminate",
+        "If the condition is false: start and wait for an approval",
+        "On approval: update status to 'Cleared for implementation' and create Planner tasks for modifying documents (S28), executing new documents (S29), and the recording decision (S30)",
+        "On rejection: set status back to 'Conditions pending' and record the approver's comments"
+      ],
+      "approval_step": "Start and wait for an approval (Approve/Reject) assigned to the Lender's designated servicing approver (role to be confirmed by the process owner), showing the condition evidence links and the SBA outcome."
+    }
+  ],
+  "future_state": [
+    {
+      "id": "F1",
+      "process": "Review a servicing request",
+      "from_step": "S1",
+      "actor": "Lender",
+      "action": "Log the Loan Action once in the Servicing Request app. The Loan File folder and officer notification are created automatically.",
+      "change": "digitized"
+    },
+    {
+      "id": "F2",
+      "process": "Review a servicing request",
+      "from_step": "S2",
+      "actor": "Lender",
+      "action": "Flow checks for an attached written request and, if one is missing, emails the Borrower a template and sends tracked reminders",
+      "change": "automated"
+    },
+    {
+      "id": "F3",
+      "process": "Review a servicing request",
+      "from_step": "S3",
+      "actor": "Borrower",
+      "action": "Submit the written request to modify Loan terms and/or conditions",
+      "change": "unchanged"
+    },
+    {
+      "id": "F4",
+      "process": "Review a servicing request",
+      "from_step": "S4",
+      "actor": "Lender",
+      "action": "Research the applicable Loan Program Requirements",
+      "change": "unchanged"
+    },
+    {
+      "id": "F5",
+      "process": "Review a servicing request",
+      "from_step": "S5",
+      "actor": "Lender",
+      "action": "For assumptions or substitutions, apply the SOP 50 10 requirements in effect at the time of the action",
+      "change": "unchanged"
+    },
+    {
+      "id": "F6",
+      "process": "Review a servicing request",
+      "from_step": "S6",
+      "actor": "Lender",
+      "action": "For other requests, consult Chapters 7 through 12",
+      "change": "unchanged"
+    },
+    {
+      "id": "F7",
+      "process": "Review a servicing request",
+      "from_step": "S7",
+      "actor": "Lender",
+      "action": "Flow generates the required-document checklist by request type, notifies the Borrower of missing items, and flags stale documents",
+      "change": "automated"
+    },
+    {
+      "id": "F8",
+      "process": "Review a servicing request",
+      "from_step": "S8",
+      "actor": "Lender",
+      "action": "Order a new credit report",
+      "change": "unchanged"
+    },
+    {
+      "id": "F9",
+      "process": "Review a servicing request",
+      "from_step": "S9",
+      "actor": "Lender",
+      "action": "Obtain the conditional additional documents. AI classifies uploads and extracts as-of dates for the Lender to confirm against the checklist.",
+      "change": "ai_assisted"
+    },
+    {
+      "id": "F10",
+      "process": "Review a servicing request",
+      "from_step": "S10",
+      "actor": "Lender",
+      "action": "Obtain evidence of signing authority",
+      "change": "unchanged"
+    },
+    {
+      "id": "F11",
+      "process": "Review a servicing request",
+      "from_step": "S11",
+      "actor": "Lender",
+      "action": "Analyze Borrower financial viability",
+      "change": "unchanged"
+    },
+    {
+      "id": "F12",
+      "process": "Review a servicing request",
+      "from_step": "S12",
+      "actor": "Lender",
+      "action": "If the Borrower is not viable, deny the Loan Action and assign an owner and date for the follow-on actions",
+      "change": "unchanged"
+    },
+    {
+      "id": "F13",
+      "process": "Review a servicing request",
+      "from_step": "S13",
+      "actor": "Lender",
+      "action": "Analyze collateral Recoverable Value before and after the action",
+      "change": "unchanged"
+    },
+    {
+      "id": "F14",
+      "process": "Review a servicing request",
+      "from_step": "S14",
+      "actor": "Lender",
+      "action": "Review AI-flagged candidate inconsistencies, Defaults, and document problems, and confirm or dismiss each one",
+      "change": "ai_assisted"
+    },
+    {
+      "id": "F15",
+      "process": "Review a servicing request",
+      "from_step": "S15",
+      "actor": "Lender",
+      "action": "Record cure conditions as tracked items in the Approval Conditions list",
+      "change": "digitized"
+    },
+    {
+      "id": "F16",
+      "process": "Review a servicing request",
+      "from_step": "S16",
+      "actor": "Lender",
+      "action": "Set the required consideration and record it as a condition",
+      "change": "unchanged"
+    },
+    {
+      "id": "F17",
+      "process": "Review a servicing request",
+      "from_step": "S17",
+      "actor": "Lender",
+      "action": "Flow sends e-signature consent requests to each Obligor, tracks signatures, and escalates declined or past-due consents to the officer",
+      "change": "automated"
+    },
+    {
+      "id": "F18",
+      "process": "Review a servicing request",
+      "from_step": "S18",
+      "actor": "Lender",
+      "action": "Justify and document the decision in the Loan Action Record, with an independence attestation",
+      "change": "unchanged"
+    },
+    {
+      "id": "F19",
+      "process": "Review a servicing request",
+      "from_step": "NEW",
+      "actor": "Lender",
+      "action": "Flow suggests the D5 route (SBA prior approval, notice only, or unilateral) from the Lender Matrix list and files the matrix version. The Lender confirms or overrides with a reason.",
+      "change": "automated"
+    },
+    {
+      "id": "F20",
+      "process": "Review a servicing request",
+      "from_step": "S19",
+      "actor": "Lender",
+      "action": "Give SBA notice when required",
+      "change": "unchanged"
+    },
+    {
+      "id": "F21",
+      "process": "Review a servicing request",
+      "from_step": "S20",
+      "actor": "Lender",
+      "action": "Flow files the Loan Action Record, Supporting Documents, and contact notes in the Loan File automatically",
+      "change": "automated"
+    },
+    {
+      "id": "F22",
+      "process": "Obtain SBA approval for a Loan Action",
+      "from_step": "S21",
+      "actor": "Lender",
+      "action": "Prepare the independent credit memo",
+      "change": "unchanged"
+    },
+    {
+      "id": "F23",
+      "process": "Obtain SBA approval for a Loan Action",
+      "from_step": "S22",
+      "actor": "Lender",
+      "action": "Review and finalize the AI-drafted Servicing Request letter, checked against the eight C.1.a elements",
+      "change": "ai_assisted"
+    },
+    {
+      "id": "F24",
+      "process": "Obtain SBA approval for a Loan Action",
+      "from_step": "S23",
+      "actor": "Lender",
+      "action": "Send the pre-addressed submission to the LGPC or USEAC selected by the routing flow (before final disbursement)",
+      "change": "automated"
+    },
+    {
+      "id": "F25",
+      "process": "Obtain SBA approval for a Loan Action",
+      "from_step": "S24",
+      "actor": "Lender",
+      "action": "Send the pre-addressed submission to the CLSC or NGPC selected by the routing flow (after final disbursement)",
+      "change": "automated"
+    },
+    {
+      "id": "F26",
+      "process": "Obtain SBA approval for a Loan Action",
+      "from_step": "S25",
+      "actor": "SBA Loan Center",
+      "action": "Review the Servicing Request and respond to the Lender",
+      "change": "unchanged"
+    },
+    {
+      "id": "F27",
+      "process": "Obtain SBA approval for a Loan Action",
+      "from_step": "S26",
+      "actor": "Lender",
+      "action": "Flow captures SBA's response and tracks the 15-business-day target. Information requests and declines are routed to owned tasks, and a missing response blocks implementation.",
+      "change": "automated"
+    },
+    {
+      "id": "F28",
+      "process": "Obtain SBA approval for a Loan Action",
+      "from_step": "S27",
+      "actor": "Lender",
+      "action": "Flow files the Loan Action Record, Supporting Documents, SBA correspondence, and contact notes automatically",
+      "change": "automated"
+    },
+    {
+      "id": "F29",
+      "process": "Implement an approved Loan Action",
+      "from_step": "NEW",
+      "actor": "Lender's designated servicing approver",
+      "action": "Automated gate verifies that all conditions are closed and SBA approval is recorded where required. The approver then clears implementation.",
+      "change": "new"
+    },
+    {
+      "id": "F30",
+      "process": "Implement an approved Loan Action",
+      "from_step": "S28",
+      "actor": "Lender",
+      "action": "Modify each impacted Loan Document",
+      "change": "unchanged"
+    },
+    {
+      "id": "F31",
+      "process": "Implement an approved Loan Action",
+      "from_step": "S29",
+      "actor": "Lender",
+      "action": "Prepare and execute new Loan Documents",
+      "change": "unchanged"
+    },
+    {
+      "id": "F32",
+      "process": "Implement an approved Loan Action",
+      "from_step": "S30",
+      "actor": "Lender",
+      "action": "Record the recording decision in the Recording log and track recording of required documents to confirmation",
+      "change": "digitized"
+    }
+  ],
+  "eliminated_steps": []
+}

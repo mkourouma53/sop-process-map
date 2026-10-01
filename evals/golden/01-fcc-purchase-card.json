@@ -1,0 +1,391 @@
+{
+ "sop_title": "FCCINST 1097.6: Use of Federal Government Purchase Card",
+ "mapped_by": "Moustapha Kourouma",
+ "minutes_to_map": 47.9,
+ "minutes_breakdown": {
+  "6.A": 16.6,
+  "6.C": 7.85,
+  "6.E": 4.37,
+  "12": 7.37,
+  "make_a_purchase_section": 11.75
+ },
+ "granularity_rule": "A: one step per meaningful action; screen clicks collapsed",
+ "scope_note": "6.B, 6.D and 13 judged rules rather than procedures and not mapped. 7.E/7.F used for the purchase section; 14 added after v1 scoring.",
+ "steps": [
+  {
+   "id": "S1",
+   "actor": "Bureau/Office Chief, designee, or employee's manager",
+   "action": "Request a purchase card for a full-time employee",
+   "input": "",
+   "output": "Card request",
+   "system": "",
+   "source_section": "6.A.1"
+  },
+  {
+   "id": "S2",
+   "actor": "Purchase card nominee (FTE)",
+   "action": "Complete and sign Form A-498 before card issuance",
+   "input": "Required information",
+   "output": "Signed Form A-498",
+   "system": "PDF form",
+   "source_section": "6.A.3"
+  },
+  {
+   "id": "S3",
+   "actor": "Purchase card nominee (FTE)",
+   "action": "Complete GSA purchase card web-based training before card issuance",
+   "input": "",
+   "output": "Training completion",
+   "system": "GSA web training",
+   "source_section": "6.A.4"
+  },
+  {
+   "id": "S4",
+   "actor": "AO",
+   "action": "Provide written authorization to the cardholder for the purchase before it is made",
+   "input": "Purchase need",
+   "output": "Written authorization (memo, note, or email)",
+   "system": "Email or memo",
+   "source_section": "7.E.2 / 7.F.4"
+  },
+  {
+   "id": "S5",
+   "actor": "Cardholder",
+   "action": "Confirm funds are available before initiating the purchase",
+   "input": "",
+   "output": "",
+   "system": "",
+   "source_section": "7.F.5"
+  },
+  {
+   "id": "S6",
+   "actor": "Cardholder",
+   "action": "Complete and attach the Section 508 Determination and Findings form",
+   "input": "",
+   "output": "Section 508 D&F form",
+   "system": "Form",
+   "source_section": "7.F.6"
+  },
+  {
+   "id": "S7",
+   "actor": "Cardholder",
+   "action": "Complete any other purchase card forms the AO requires",
+   "input": "",
+   "output": "Supporting forms",
+   "system": "Form",
+   "source_section": "7.F.7"
+  },
+  {
+   "id": "S8",
+   "actor": "Cardholder",
+   "action": "Make the purchase with the purchase card",
+   "input": "Written authorization",
+   "output": "Order / transaction",
+   "system": "Purchase card",
+   "source_section": "7.F.4"
+  },
+  {
+   "id": "S9",
+   "actor": "AO",
+   "action": "Validate receipt of the purchased items and sign the receipt or invoice",
+   "input": "Shipment with receipt or invoice",
+   "output": "Signed receipt/invoice",
+   "system": "",
+   "source_section": "7.E.3"
+  },
+  {
+   "id": "S10",
+   "actor": "Cardholder",
+   "action": "Obtain the signature and date of the employee who accepted the goods on the invoice",
+   "input": "Invoice",
+   "output": "Signed invoice",
+   "system": "",
+   "source_section": "6.C.3"
+  },
+  {
+   "id": "S11",
+   "actor": "Cardholder",
+   "action": "Reconcile and sign the monthly SOA within 7 workdays after the billing cycle ends",
+   "input": "Monthly SOA",
+   "output": "Reconciled, signed SOA",
+   "system": "SOA",
+   "source_section": "6.C.1"
+  },
+  {
+   "id": "S12",
+   "actor": "Cardholder",
+   "action": "Forward the reconciled, signed SOA to the AO",
+   "input": "Reconciled SOA",
+   "output": "",
+   "system": "Email",
+   "source_section": "6.C.1"
+  },
+  {
+   "id": "S13",
+   "actor": "AO",
+   "action": "Review and sign the reconciled SOA within 10 workdays after the billing cycle ends",
+   "input": "Reconciled SOA",
+   "output": "AO-signed SOA",
+   "system": "SOA",
+   "source_section": "6.C.2"
+  },
+  {
+   "id": "S14",
+   "actor": "AO",
+   "action": "Forward the signed SOA to FOC RDG/TOG",
+   "input": "AO-signed SOA",
+   "output": "",
+   "system": "Email",
+   "source_section": "6.C.2"
+  },
+  {
+   "id": "S15",
+   "actor": "APC",
+   "action": "Review purchase card usage to identify inactive accounts",
+   "input": "Purchase card activity",
+   "output": "",
+   "system": "Purchase card account data",
+   "source_section": "6.A.5"
+  },
+  {
+   "id": "S16",
+   "actor": "APC",
+   "action": "Provide the list of inactive accounts to each Bureau/Office",
+   "input": "",
+   "output": "Inactive account list",
+   "system": "",
+   "source_section": "6.A.5"
+  },
+  {
+   "id": "S17",
+   "actor": "Bureau/Office",
+   "action": "Confirm the continued need for the inactive account to the APC",
+   "input": "Inactive account list",
+   "output": "Confirmation to APC",
+   "system": "",
+   "source_section": "6.A.5"
+  },
+  {
+   "id": "S18",
+   "actor": "APC",
+   "action": "Suspend the inactive account until confirmation is received",
+   "input": "",
+   "output": "Suspended account",
+   "system": "",
+   "source_section": "6.A.5"
+  },
+  {
+   "id": "S19",
+   "actor": "APC, independent auditors, OIG, or other federal entities",
+   "action": "Conduct periodic or random reviews of cardholder transactions and purchase practices",
+   "input": "Cardholder statements",
+   "output": "Review",
+   "system": "",
+   "source_section": "6.E.1"
+  },
+  {
+   "id": "S20",
+   "actor": "Cardholder",
+   "action": "Provide all supporting documentation and purchase records for the review",
+   "input": "Supporting documents and records",
+   "output": "",
+   "system": "",
+   "source_section": "6.E.1"
+  },
+  {
+   "id": "S21",
+   "actor": "Cardholder",
+   "action": "Review the receipts for the questioned transaction",
+   "input": "Receipts, SOA",
+   "output": "",
+   "system": "",
+   "source_section": "12.A.1"
+  },
+  {
+   "id": "S22",
+   "actor": "Cardholder",
+   "action": "Contact the merchant to resolve the disputed charge and document the actions taken",
+   "input": "",
+   "output": "Documented resolution attempt",
+   "system": "Phone or email",
+   "source_section": "12.A.2"
+  },
+  {
+   "id": "S23",
+   "actor": "Cardholder",
+   "action": "Submit a dispute request to the purchase card contractor bank",
+   "input": "",
+   "output": "Dispute request",
+   "system": "Phone or email",
+   "source_section": "12.A.3"
+  },
+  {
+   "id": "S24",
+   "actor": "AO or Bureau/Office Chief",
+   "action": "Give the APC prior notice of the cardholder's transfer or separation",
+   "input": "",
+   "output": "Notice to APC",
+   "system": "",
+   "source_section": "14.A"
+  },
+  {
+   "id": "S25",
+   "actor": "Cardholder",
+   "action": "Provide all purchase card records and supporting documentation to the AO before separating or transferring",
+   "input": "Purchase card records",
+   "output": "",
+   "system": "",
+   "source_section": "14.A"
+  },
+  {
+   "id": "S26",
+   "actor": "Cardholder",
+   "action": "Surrender the purchase card to the AO or APC",
+   "input": "Purchase card",
+   "output": "",
+   "system": "",
+   "source_section": "14.A"
+  },
+  {
+   "id": "S27",
+   "actor": "AO",
+   "action": "Note on the final reconciled SOA that the departed cardholder could not sign it",
+   "input": "Final SOA",
+   "output": "Annotated final SOA",
+   "system": "SOA",
+   "source_section": "14.A"
+  },
+  {
+   "id": "S28",
+   "actor": "APC",
+   "action": "Close the cardholder's account",
+   "input": "Notice of transfer or separation",
+   "output": "Closed account",
+   "system": "",
+   "source_section": "14.C"
+  },
+  {
+   "id": "S29",
+   "actor": "Bureau/Office Chief",
+   "action": "Designate a new AO when an AO separates or transfers and notify the APC in writing",
+   "input": "",
+   "output": "Written AO designation",
+   "system": "",
+   "source_section": "14.B"
+  }
+ ],
+ "decisions": [
+  {
+   "id": "D1",
+   "after_step": "S5",
+   "condition": "Is the item covered by Section 508 accessibility regulations?",
+   "branches": [
+    {
+     "label": "Yes",
+     "next_step": "S6"
+    },
+    {
+     "label": "No",
+     "next_step": "S7"
+    }
+   ],
+   "source_section": "7.F.6"
+  },
+  {
+   "id": "D2",
+   "after_step": "S9",
+   "condition": "Were the goods accepted or first used by another employee?",
+   "branches": [
+    {
+     "label": "Yes",
+     "next_step": "S10"
+    },
+    {
+     "label": "No",
+     "next_step": "S11"
+    }
+   ],
+   "source_section": "6.C.3"
+  },
+  {
+   "id": "D3",
+   "after_step": "S15",
+   "condition": "Has the account had no activity in the preceding 3 years?",
+   "branches": [
+    {
+     "label": "Yes (inactive)",
+     "next_step": "S16"
+    },
+    {
+     "label": "No",
+     "next_step": "END"
+    }
+   ],
+   "source_section": "6.A.5"
+  },
+  {
+   "id": "D4",
+   "after_step": "S16",
+   "condition": "Does the Bureau/Office confirm a continued need for the card?",
+   "branches": [
+    {
+     "label": "Yes",
+     "next_step": "S17"
+    },
+    {
+     "label": "No or no reply",
+     "next_step": "S18"
+    }
+   ],
+   "source_section": "6.A.5"
+  },
+  {
+   "id": "D5",
+   "after_step": "S21",
+   "condition": "Does the research confirm the charge is a dispute?",
+   "branches": [
+    {
+     "label": "Yes",
+     "next_step": "S22"
+    },
+    {
+     "label": "No",
+     "next_step": "END"
+    }
+   ],
+   "source_section": "12.A.2"
+  },
+  {
+   "id": "D6",
+   "after_step": "S22",
+   "condition": "Was the dispute resolved with the merchant?",
+   "branches": [
+    {
+     "label": "Yes",
+     "next_step": "END"
+    },
+    {
+     "label": "No",
+     "next_step": "S23"
+    }
+   ],
+   "source_section": "12.A.3"
+  },
+  {
+   "id": "D7",
+   "after_step": "S26",
+   "condition": "Did the cardholder leave before their final SOA was available?",
+   "branches": [
+    {
+     "label": "Yes",
+     "next_step": "S27"
+    },
+    {
+     "label": "No",
+     "next_step": "S28"
+    }
+   ],
+   "source_section": "14.A"
+  }
+ ]
+}

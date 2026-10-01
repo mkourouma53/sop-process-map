@@ -1,0 +1,1928 @@
+{
+  "sop_title": "ORA Lab Manual Vol. II - Purchasing and Receipt (ORA-LAB.4.6), MAN-000027 Rev. 03",
+  "summary": "This procedure covers how Office of Regulatory Science laboratories select and approve vendors, request and purchase quality-affecting products and services, receive and inspect deliveries, and monitor and re-evaluate vendors. Requestors, Laboratory Management, the Quality System Manager, designated receiving staff, and the Division of Contracts and Grants (DFG) and its administrative purchasing agents carry it out.",
+  "sections": [
+    {
+      "section": "1",
+      "title": "Purpose",
+      "classification": "background",
+      "reason": "States what the procedure is for and contains no actions to order.",
+      "mapped": false
+    },
+    {
+      "section": "2",
+      "title": "Scope",
+      "classification": "background",
+      "reason": "Defines who and what the procedure applies to, with no sequenced actions.",
+      "mapped": false
+    },
+    {
+      "section": "3",
+      "title": "Responsibility",
+      "classification": "rules",
+      "reason": "A list of role duties that could be reordered; duties tied to a point in the flow (request, approval, list upkeep, records) were used as steps.",
+      "mapped": true
+    },
+    {
+      "section": "3.A",
+      "title": "Requestor",
+      "classification": "rules",
+      "reason": "Duties are listed, not sequenced, but initiating the request and checking the approved vendor list have a clear place in the purchase flow, so they became steps S5 and S6.",
+      "mapped": true
+    },
+    {
+      "section": "3.B",
+      "title": "Laboratory Management",
+      "classification": "rules",
+      "reason": "A reorderable list of duties; request approval (S8), vendor evaluation (S18), and follow-up actions (S20) are tied to flow points and were mapped, while 'ensure criteria are defined' was left out.",
+      "mapped": true
+    },
+    {
+      "section": "3.C",
+      "title": "Quality System Manager (QSM)",
+      "classification": "rules",
+      "reason": "A reorderable list of duties; vendor list and evaluation record upkeep are tied to the end of vendor approval and re-evaluation (S4, S21).",
+      "mapped": true
+    },
+    {
+      "section": "3.D",
+      "title": "Division of Contracts and Grants (DFG)",
+      "classification": "rules",
+      "reason": "A reorderable list of duties; procurement per agency rules and purchasing record retention are tied to the purchase flow (S9, S10), while 'assists laboratory personnel' has no flow position.",
+      "mapped": true
+    },
+    {
+      "section": "4",
+      "title": "Background",
+      "classification": "background",
+      "reason": "Describes the agency systems (GPC, UFMS/iProcurement, PRISM), but its rule that QA-related requests are preceded by a vendor and product review gates the purchase flow and became S7 and D4.",
+      "mapped": true
+    },
+    {
+      "section": "5",
+      "title": "References",
+      "classification": "background",
+      "reason": "A list of referenced standards and SOPs.",
+      "mapped": false
+    },
+    {
+      "section": "6",
+      "title": "Procedure",
+      "classification": "rules",
+      "reason": "The introductory statement that labs adhere to agency and accreditation requirements has no sequence.",
+      "mapped": false
+    },
+    {
+      "section": "6.1",
+      "title": "Agency Policies and Requirements",
+      "classification": "rules",
+      "reason": "These are general statements (follow agency policy, consult DFG, local work instructions may be written) that could be reordered without changing meaning.",
+      "mapped": false
+    },
+    {
+      "section": "6.2",
+      "title": "Laboratory Accreditation Requirements",
+      "classification": "background",
+      "reason": "States the suitability requirement and gives examples of products and services, with no actions.",
+      "mapped": false
+    },
+    {
+      "section": "6.2.1",
+      "title": "Procurement",
+      "classification": "rules",
+      "reason": "Two reorderable statements; communicating criteria to vendors through the purchase request is tied to purchase placement (S9).",
+      "mapped": true
+    },
+    {
+      "section": "6.2.2",
+      "title": "Selection of Vendors",
+      "classification": "procedure",
+      "reason": "Vendors must be evaluated and rated before approval is summarized on the vendor list and purchases are made from it, so reordering breaks the meaning.",
+      "mapped": true
+    },
+    {
+      "section": "6.2.3",
+      "title": "Monitoring and Re-evaluation of Vendors",
+      "classification": "procedure",
+      "reason": "Performance is tracked, then evaluated against criteria, then the evaluation and outcome are documented; that order cannot be reversed.",
+      "mapped": true
+    },
+    {
+      "section": "6.2.4",
+      "title": "Receiving, Inspecting, and Disbursing of Materials",
+      "classification": "procedure",
+      "reason": "Materials are signed for, inventoried against the PO, and inspected before use, with discrepancy disposition and recording after, so order matters.",
+      "mapped": true
+    },
+    {
+      "section": "6.2.5",
+      "title": "Purchasing and Receipt Records",
+      "classification": "rules",
+      "reason": "A reorderable list of records to retain; each item was attached to the step that produces it (S4, S10, S16, S20).",
+      "mapped": true
+    },
+    {
+      "section": "7",
+      "title": "Glossary/Definitions",
+      "classification": "background",
+      "reason": "Definitions only.",
+      "mapped": false
+    },
+    {
+      "section": "8",
+      "title": "Records",
+      "classification": "rules",
+      "reason": "A reorderable list of record types; receiving records including packing slips informs S16.",
+      "mapped": true
+    },
+    {
+      "section": "9",
+      "title": "Supporting Documents",
+      "classification": "background",
+      "reason": "Reference to MAN-000041 only.",
+      "mapped": false
+    },
+    {
+      "section": "10",
+      "title": "Document History",
+      "classification": "background",
+      "reason": "Revision table only.",
+      "mapped": false
+    },
+    {
+      "section": "11",
+      "title": "Change History",
+      "classification": "background",
+      "reason": "Description of revisions only.",
+      "mapped": false
+    },
+    {
+      "section": "12",
+      "title": "Attachments",
+      "classification": "background",
+      "reason": "States 'None'.",
+      "mapped": false
+    }
+  ],
+  "processes": [
+    {
+      "name": "Approve a vendor",
+      "trigger": "A new vendor of quality-affecting products or services is needed or requested (due to method specifications, experience with vendor, or cost)",
+      "outcome": "Vendor is rated acceptable and recorded on the laboratory's approved vendor list, or is rated unacceptable and not used",
+      "sections": [
+        "6.2.2",
+        "3.C",
+        "6.2.5"
+      ]
+    },
+    {
+      "name": "Request and purchase a product or service",
+      "trigger": "A requestor needs supplies, materials, equipment, or services that affect laboratory quality",
+      "outcome": "Purchase placed with an approved vendor under agency procedures, and purchasing records retained",
+      "sections": [
+        "3.A",
+        "3.B",
+        "3.D",
+        "4",
+        "6.2.1",
+        "6.2.2",
+        "6.2.5"
+      ]
+    },
+    {
+      "name": "Receive and inspect purchased materials",
+      "trigger": "Purchased materials or supplies are delivered to the laboratory",
+      "outcome": "Material is verified and available for use with receiving records retained, or is discarded or returned with the disposition recorded",
+      "sections": [
+        "6.2.4",
+        "6.2.5",
+        "8"
+      ]
+    },
+    {
+      "name": "Monitor and re-evaluate vendors",
+      "trigger": "Periodic review per the laboratory-defined schedule, or ongoing tracking of vendor performance events",
+      "outcome": "Documented vendor evaluation and outcome, actions taken where needed, and an updated approved vendor list",
+      "sections": [
+        "6.2.3",
+        "6.2.2",
+        "3.B",
+        "3.C",
+        "6.2.5"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "process": "Approve a vendor",
+      "actor": "Laboratory (role not specified)",
+      "action": "Evaluate the vendor against contract conditions, quality system criteria, and agency requirements",
+      "input": "Vendor information; method specifications",
+      "output": "Vendor evaluation",
+      "system": "",
+      "source_section": "6.2.2.A",
+      "source_quote": "Vendors are initially evaluated and selected based on the ability to meet contract conditions and quality system criteria.",
+      "inferred": false
+    },
+    {
+      "id": "S2",
+      "process": "Approve a vendor",
+      "actor": "Laboratory (role not specified)",
+      "action": "Confirm that the calibration service or reference material vendor meets the traceability requirements of MAN-000041",
+      "input": "Vendor evaluation; MAN-000041 requirements",
+      "output": "Traceability determination",
+      "system": "",
+      "source_section": "6.2.2.E",
+      "source_quote": "Vendors of calibration services and reference materials shall meet traceability requirements in MAN-000041",
+      "inferred": false
+    },
+    {
+      "id": "S3",
+      "process": "Approve a vendor",
+      "actor": "Laboratory (role not specified)",
+      "action": "Rate the vendor acceptable or not acceptable using the local rating process, based on level of service and required accreditations or certifications",
+      "input": "Vendor evaluation",
+      "output": "Vendor rating",
+      "system": "",
+      "source_section": "6.2.2.C",
+      "source_quote": "rating suppliers and vendors as acceptable or not acceptable based on the level of service provided",
+      "inferred": false
+    },
+    {
+      "id": "S4",
+      "process": "Approve a vendor",
+      "actor": "Quality System Manager (QSM)",
+      "action": "Record the vendor approval on the laboratory's approved vendor list and retain the evaluation and selection record",
+      "input": "Acceptable vendor rating",
+      "output": "Updated approved vendor list; vendor selection record",
+      "system": "Vendor list (format not specified)",
+      "source_section": "6.2.2.D",
+      "source_quote": "Vendor approval shall be summarized for example on a vendor list and maintained by each laboratory.",
+      "inferred": false
+    },
+    {
+      "id": "S5",
+      "process": "Request and purchase a product or service",
+      "actor": "Requestor",
+      "action": "Initiate a purchase request that includes the critical specifications and requirements",
+      "input": "Need for supplies or services; method specifications",
+      "output": "Purchase request",
+      "system": "UFMS iProcurement (per Section 4)",
+      "source_section": "3.A",
+      "source_quote": "Initiates request for services and supplies. Ensures critical specifications and requirements are provided.",
+      "inferred": false
+    },
+    {
+      "id": "S6",
+      "process": "Request and purchase a product or service",
+      "actor": "Requestor",
+      "action": "Check that the vendor is on the laboratory's approved vendor list with an acceptable rating",
+      "input": "Purchase request; approved vendor list",
+      "output": "Vendor check result",
+      "system": "Vendor list",
+      "source_section": "3.A",
+      "source_quote": "Ensures vendor is on the laboratory\u2019s approved vendor list.",
+      "inferred": false
+    },
+    {
+      "id": "S7",
+      "process": "Request and purchase a product or service",
+      "actor": "Laboratory (role not specified)",
+      "action": "Review the vendor and product for compliance with the requirements in the test methods and quality standards, and keep a record of the check",
+      "input": "Purchase request; test method and quality standard requirements",
+      "output": "Compliance review record",
+      "system": "",
+      "source_section": "4",
+      "source_quote": "preceded with a vendor and product review for compliance to specified requirements",
+      "inferred": false
+    },
+    {
+      "id": "S8",
+      "process": "Request and purchase a product or service",
+      "actor": "Laboratory Management",
+      "action": "Review and approve the purchase request for technical content and bona fide need",
+      "input": "Purchase request; compliance review record",
+      "output": "Approved or rejected purchase request",
+      "system": "",
+      "source_section": "3.B.1",
+      "source_quote": "Reviews and approves purchase request for technical content and bona fide need.",
+      "inferred": false
+    },
+    {
+      "id": "S9",
+      "process": "Request and purchase a product or service",
+      "actor": "Administrative purchasing agent (DFG)",
+      "action": "Place the purchase under FDA acquisition procedures, communicating the product and service criteria to the vendor through the purchase request",
+      "input": "Approved purchase request",
+      "output": "Purchase order",
+      "system": "PRISM or Government Purchase Card (per Section 4)",
+      "source_section": "6.2.1",
+      "source_quote": "Product and service criteria are communicated to vendors through the purchasing request processes.",
+      "inferred": false
+    },
+    {
+      "id": "S10",
+      "process": "Request and purchase a product or service",
+      "actor": "Division of Contracts and Grants (DFG)",
+      "action": "Retain the purchasing records as required",
+      "input": "Purchase order and request documentation",
+      "output": "Retained purchasing records",
+      "system": "",
+      "source_section": "3.D.3",
+      "source_quote": "Ensures that records of purchasing activities are retained as required.",
+      "inferred": false
+    },
+    {
+      "id": "S11",
+      "process": "Receive and inspect purchased materials",
+      "actor": "Designated individual",
+      "action": "Sign for the delivery and annotate the date of receipt and initials on the receiving records and containers",
+      "input": "Delivered materials; packing slip",
+      "output": "Signed receiving record; labeled containers",
+      "system": "Paper receiving records and container labels",
+      "source_section": "6.2.4.C",
+      "source_quote": "signed for by the designated individual with date of receipt and initials annotated on the receiving records and containers",
+      "inferred": false
+    },
+    {
+      "id": "S12",
+      "process": "Receive and inspect purchased materials",
+      "actor": "Laboratory (role not specified)",
+      "action": "Inventory the received materials and verify them against the original purchase order for completeness",
+      "input": "Received materials; original purchase order",
+      "output": "Completeness verification",
+      "system": "",
+      "source_section": "6.2.4.D",
+      "source_quote": "Materials and supplies received are inventoried and verified against the original purchase order for completeness.",
+      "inferred": false
+    },
+    {
+      "id": "S13",
+      "process": "Receive and inspect purchased materials",
+      "actor": "Laboratory (role not specified)",
+      "action": "Inspect or otherwise verify that the materials comply with the specifications or method requirements before use",
+      "input": "Received materials; method specifications",
+      "output": "Inspection result",
+      "system": "",
+      "source_section": "6.2.4.A",
+      "source_quote": "are not used until they have been inspected or otherwise verified as complying with standard specifications",
+      "inferred": false
+    },
+    {
+      "id": "S14",
+      "process": "Receive and inspect purchased materials",
+      "actor": "Laboratory (role not specified)",
+      "action": "Discard the material or return it to the vendor",
+      "input": "Material with a quality-affecting discrepancy",
+      "output": "Discarded or returned material",
+      "system": "",
+      "source_section": "6.2.4.E",
+      "source_quote": "the material is either discarded or returned to the vendor",
+      "inferred": false
+    },
+    {
+      "id": "S15",
+      "process": "Receive and inspect purchased materials",
+      "actor": "Laboratory (role not specified)",
+      "action": "Record the unsatisfactory material and its disposition",
+      "input": "Discrepancy details; disposition",
+      "output": "Record of unsatisfactory material and disposition",
+      "system": "",
+      "source_section": "6.2.4.F",
+      "source_quote": "Records of unsatisfactory materials and supplies and their disposition are maintained by the laboratory.",
+      "inferred": false
+    },
+    {
+      "id": "S16",
+      "process": "Receive and inspect purchased materials",
+      "actor": "Laboratory (role not specified)",
+      "action": "Retain the verification and receiving records, including packing slips, showing that the received products meet requirements",
+      "input": "Inspection result; receiving record; packing slip",
+      "output": "Retained verification record; material available for use",
+      "system": "",
+      "source_section": "6.2.5.C",
+      "source_quote": "Verification that received products and services meet the laboratory\u2019s requirements",
+      "inferred": false
+    },
+    {
+      "id": "S17",
+      "process": "Monitor and re-evaluate vendors",
+      "actor": "Laboratory (role not specified)",
+      "action": "Track the performance and accreditation status of routinely used vendors, such as incorrect orders, product quality issues, and recalls",
+      "input": "Records of unsatisfactory materials; vendor accreditation status",
+      "output": "Vendor performance history",
+      "system": "",
+      "source_section": "6.2.3.A",
+      "source_quote": "The performance level and accreditation status (when required) of routinely used vendors are monitored over time",
+      "inferred": false
+    },
+    {
+      "id": "S18",
+      "process": "Monitor and re-evaluate vendors",
+      "actor": "Laboratory Management",
+      "action": "Evaluate the vendor against the minimum criteria: agency requirements, specification and delivery, consistent performance, customer service, and accreditation",
+      "input": "Vendor performance history",
+      "output": "Vendor evaluation",
+      "system": "",
+      "source_section": "6.2.3.B",
+      "source_quote": "Minimum evaluation criteria include (where applicable)",
+      "inferred": false
+    },
+    {
+      "id": "S19",
+      "process": "Monitor and re-evaluate vendors",
+      "actor": "Laboratory (role not specified)",
+      "action": "Document the evaluation and its outcome",
+      "input": "Vendor evaluation",
+      "output": "Documented evaluation and outcome",
+      "system": "",
+      "source_section": "6.2.3.C",
+      "source_quote": "Documentation of this evaluation and the outcome shall be maintained by the laboratory.",
+      "inferred": false
+    },
+    {
+      "id": "S20",
+      "process": "Monitor and re-evaluate vendors",
+      "actor": "Laboratory Management",
+      "action": "Ensure actions arising from the evaluation are taken, including designating the vendor unacceptable and not used, and record those actions",
+      "input": "Documented evaluation showing unsatisfactory outcome",
+      "output": "Actions taken; record of actions; vendor marked unacceptable",
+      "system": "",
+      "source_section": "3.B.4",
+      "source_quote": "Ensures actions are taken, when relevant, arising from evaluations",
+      "inferred": false
+    },
+    {
+      "id": "S21",
+      "process": "Monitor and re-evaluate vendors",
+      "actor": "Quality System Manager (QSM)",
+      "action": "Review and update the approved vendor list and maintain the evaluation and monitoring records",
+      "input": "Documented evaluation and any actions",
+      "output": "Updated approved vendor list; maintained evaluation records",
+      "system": "Vendor list",
+      "source_section": "6.2.2.D",
+      "source_quote": "The vendor approval shall be reviewed and updated periodically",
+      "inferred": false
+    }
+  ],
+  "decisions": [
+    {
+      "id": "D1",
+      "process": "Approve a vendor",
+      "after_step": "S1",
+      "condition": "Does the vendor provide calibration services or reference materials?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S2"
+        },
+        {
+          "label": "No",
+          "next_step": "S3"
+        }
+      ],
+      "source_section": "6.2.2.E",
+      "inferred": false
+    },
+    {
+      "id": "D2",
+      "process": "Approve a vendor",
+      "after_step": "S3",
+      "condition": "Is the vendor rated acceptable?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S4"
+        },
+        {
+          "label": "No (vendor is not used)",
+          "next_step": "END"
+        }
+      ],
+      "source_section": "6.2.2.C",
+      "inferred": false
+    },
+    {
+      "id": "D3",
+      "process": "Request and purchase a product or service",
+      "after_step": "S6",
+      "condition": "Is the vendor on the approved vendor list with an acceptable rating?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S7"
+        },
+        {
+          "label": "No",
+          "next_step": "UNDEFINED"
+        }
+      ],
+      "source_section": "6.2.2.B",
+      "inferred": false
+    },
+    {
+      "id": "D4",
+      "process": "Request and purchase a product or service",
+      "after_step": "S7",
+      "condition": "Do the vendor and product comply with the specified requirements?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S8"
+        },
+        {
+          "label": "No",
+          "next_step": "UNDEFINED"
+        }
+      ],
+      "source_section": "4",
+      "inferred": false
+    },
+    {
+      "id": "D5",
+      "process": "Request and purchase a product or service",
+      "after_step": "S8",
+      "condition": "Does Laboratory Management approve the request for technical content and bona fide need?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S9"
+        },
+        {
+          "label": "No",
+          "next_step": "UNDEFINED"
+        }
+      ],
+      "source_section": "3.B.1",
+      "inferred": false
+    },
+    {
+      "id": "D6",
+      "process": "Receive and inspect purchased materials",
+      "after_step": "S13",
+      "condition": "Was a discrepancy found that could affect product quality?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S14"
+        },
+        {
+          "label": "No",
+          "next_step": "S16"
+        }
+      ],
+      "source_section": "6.2.4.E",
+      "inferred": false
+    },
+    {
+      "id": "D7",
+      "process": "Monitor and re-evaluate vendors",
+      "after_step": "S19",
+      "condition": "Does the vendor remain suitable for continued use?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S21"
+        },
+        {
+          "label": "No",
+          "next_step": "S20"
+        }
+      ],
+      "source_section": "6.2.3.A",
+      "inferred": false
+    }
+  ],
+  "handoffs": [
+    {
+      "after_step": "S3",
+      "from_actor": "Laboratory (role not specified)",
+      "to_actor": "Quality System Manager (QSM)"
+    },
+    {
+      "after_step": "S6",
+      "from_actor": "Requestor",
+      "to_actor": "Laboratory (role not specified)"
+    },
+    {
+      "after_step": "S7",
+      "from_actor": "Laboratory (role not specified)",
+      "to_actor": "Laboratory Management"
+    },
+    {
+      "after_step": "S8",
+      "from_actor": "Laboratory Management",
+      "to_actor": "Administrative purchasing agent (DFG)"
+    },
+    {
+      "after_step": "S11",
+      "from_actor": "Designated individual",
+      "to_actor": "Laboratory (role not specified)"
+    },
+    {
+      "after_step": "S17",
+      "from_actor": "Laboratory (role not specified)",
+      "to_actor": "Laboratory Management"
+    },
+    {
+      "after_step": "S18",
+      "from_actor": "Laboratory Management",
+      "to_actor": "Laboratory (role not specified)"
+    },
+    {
+      "after_step": "S19",
+      "from_actor": "Laboratory (role not specified)",
+      "to_actor": "Laboratory Management"
+    },
+    {
+      "after_step": "S19",
+      "from_actor": "Laboratory (role not specified)",
+      "to_actor": "Quality System Manager (QSM)"
+    },
+    {
+      "after_step": "S20",
+      "from_actor": "Laboratory Management",
+      "to_actor": "Quality System Manager (QSM)"
+    }
+  ],
+  "exceptions": [
+    {
+      "step": "S2",
+      "trigger": "Calibration or reference material vendor does not meet the traceability requirements",
+      "handling": "",
+      "source_section": "6.2.2.E"
+    },
+    {
+      "step": "S6",
+      "trigger": "Requested vendor is not on the approved vendor list or has no acceptable rating",
+      "handling": "",
+      "source_section": "3.A"
+    },
+    {
+      "step": "S7",
+      "trigger": "Vendor or product does not comply with the specified requirements",
+      "handling": "",
+      "source_section": "4"
+    },
+    {
+      "step": "S8",
+      "trigger": "Laboratory Management does not approve the purchase request",
+      "handling": "",
+      "source_section": "3.B.1"
+    },
+    {
+      "step": "S12",
+      "trigger": "Delivery is incomplete or does not match the purchase order, and the discrepancy does not affect product quality",
+      "handling": "",
+      "source_section": "6.2.4.D"
+    },
+    {
+      "step": "S14",
+      "trigger": "A quality-affecting discrepancy is found and staff must choose between discarding and returning the material",
+      "handling": "Discard or return to the vendor; the SOP gives no criteria for choosing between them.",
+      "source_section": "6.2.4.E"
+    },
+    {
+      "step": "S17",
+      "trigger": "Vendor product recall or other unsatisfactory event occurs between periodic evaluations",
+      "handling": "Track the event and determine the vendor's suitability for continued use; no immediate action is stated.",
+      "source_section": "6.2.3.A"
+    }
+  ],
+  "timing": [
+    {
+      "step": "S7",
+      "requirement": "The vendor and product review must happen before the purchase request proceeds.",
+      "source_section": "4"
+    },
+    {
+      "step": "S11",
+      "requirement": "The date of receipt is annotated at delivery.",
+      "source_section": "6.2.4.C"
+    },
+    {
+      "step": "S13",
+      "requirement": "Materials must not be used until inspected or verified.",
+      "source_section": "6.2.4.A"
+    },
+    {
+      "step": "S21",
+      "requirement": "The vendor approval list is reviewed and updated periodically on a schedule set by the laboratory; no interval is stated.",
+      "source_section": "6.2.2.D"
+    },
+    {
+      "step": "S17",
+      "requirement": "Vendor performance is monitored 'over time'; no frequency is stated.",
+      "source_section": "6.2.3.A"
+    }
+  ],
+  "risks": [
+    {
+      "id": "R1",
+      "process": "Request and purchase a product or service",
+      "step": "S6",
+      "risk_type": "undefined_exception",
+      "what_could_go_wrong": "A requestor finds that the vendor they want is not on the approved vendor list. The SOP does not say whether the request stops, goes to vendor approval, or proceeds anyway, so a quality-affecting item could be bought from an unevaluated vendor.",
+      "cause": "Decision D3 has no stated next step for the 'No' branch. Section 3.A requires the requestor to ensure the vendor is approved and 6.2.2.B requires purchases from approved vendors, but 6.2.2.A also allows vendors to be requested 'due to specifications in methods being used, experience with vendor, and cost' without saying how such a request reaches vendor approval.",
+      "impact": "Products or services that affect test quality could come from a vendor that was never evaluated. That is an ISO/IEC 17025 accreditation finding, and results produced with those materials may be questioned.",
+      "quantified_impact": [
+        {
+          "metric": "Decision branches with no next step",
+          "value": "1 (D3 'No')",
+          "basis": "Decision D3 in the current state map"
+        }
+      ],
+      "severity": "high",
+      "severity_reason": "Vendor requests based on method specifications or cost are explicitly expected by 6.2.2.A, so this branch will occur, and the outcome is an accreditation nonconformity.",
+      "addressed_by": [
+        "A6"
+      ]
+    },
+    {
+      "id": "R2",
+      "process": "Request and purchase a product or service",
+      "step": "S6",
+      "risk_type": "missing_control",
+      "what_could_go_wrong": "Only the requestor checks the vendor against the approved list. If they skip or misread the check, nothing later in the flow catches it before the order is placed.",
+      "cause": "Section 3.A assigns the approved vendor check to the requestor alone. Sections 3.B.1 and 3.D give Laboratory Management and DFG no vendor list check, and S8 approval covers only 'technical content and bona fide need'.",
+      "impact": "An order goes out to an unapproved or unacceptable-rated vendor, which breaks 6.2.2.B and creates an audit finding.",
+      "quantified_impact": [
+        {
+          "metric": "Independent checks of vendor approval before the order is placed",
+          "value": "0",
+          "basis": "Only S6 (Requestor) checks the vendor list; S8 and S9 do not, per 3.B.1 and 3.D"
+        },
+        {
+          "metric": "Steps between the vendor check and order placement",
+          "value": "2 (S7, S8)",
+          "basis": "Current state map sequence S6 to S9"
+        }
+      ],
+      "severity": "high",
+      "severity_reason": "A self-check with no second look is likely to fail at some point, and the result is a direct accreditation nonconformity.",
+      "addressed_by": [
+        "A6",
+        "A5"
+      ]
+    },
+    {
+      "id": "R3",
+      "process": "Request and purchase a product or service",
+      "step": "S8",
+      "risk_type": "undefined_exception",
+      "what_could_go_wrong": "A product fails the compliance review, or Laboratory Management rejects the request. The requestor is not told what to fix or whether to resubmit, so the request is abandoned or quietly resubmitted unchanged.",
+      "cause": "Decisions D4 (Section 4) and D5 (Section 3.B.1) have no next step on the 'No' branch, and the exceptions for S7 and S8 have no handling.",
+      "impact": "Needed supplies are delayed while the requestor waits, and rejections leave no record of why the product or vendor was refused.",
+      "quantified_impact": [
+        {
+          "metric": "Decision branches with no next step",
+          "value": "2 (D4 'No', D5 'No')",
+          "basis": "Decisions D4 and D5 in the current state map"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "Rejections are a normal part of approval, so this is likely, but the impact is mainly delay and missing records rather than a nonconforming purchase.",
+      "addressed_by": [
+        "A8",
+        "A5"
+      ]
+    },
+    {
+      "id": "R4",
+      "process": "Request and purchase a product or service",
+      "step": "S7",
+      "risk_type": "vague_ownership_or_timing",
+      "what_could_go_wrong": "No one is named to do the required vendor and product compliance review. Each party assumes someone else did it, and the request reaches Laboratory Management without the review or its record.",
+      "cause": "Section 4 says QA-related requests 'are preceded with a vendor and product review' and that records 'shall be maintained', but it names no role. Section 3 does not assign the review to anyone.",
+      "impact": "Products that do not meet method or quality standard requirements are approved, and the required compliance record is missing at audit.",
+      "quantified_impact": [
+        {
+          "metric": "Steps in the map with no named actor",
+          "value": "11 (S1, S2, S3, S7, S12, S13, S14, S15, S16, S17, S19)",
+          "basis": "Count of steps with actor 'Laboratory (role not specified)' in the current state map"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "Unassigned reviews are often skipped, and the impact is a missing compliance record. S8 still provides some technical review, which limits the damage.",
+      "addressed_by": [
+        "A7",
+        "A5"
+      ]
+    },
+    {
+      "id": "R5",
+      "process": "Request and purchase a product or service",
+      "step": "S8",
+      "risk_type": "manual_handoff",
+      "what_could_go_wrong": "The request passes from requestor to reviewer to Laboratory Management to the DFG purchasing agent with no tracking. It sits in an inbox, and the requestor cannot see where it is.",
+      "cause": "The map shows 3 handoffs (after S6, S7, S8). Sections 3.A, 3.B.1, 4 and 6.2.1 state no deadline, no status tracking, and no routing mechanism.",
+      "impact": "Purchases are delayed, which can hold up testing that depends on the supplies, and stalled requests are hard to chase.",
+      "quantified_impact": [
+        {
+          "metric": "Handoffs between request and order",
+          "value": "3",
+          "basis": "Handoffs after S6, S7 and S8 in the current state map"
+        },
+        {
+          "metric": "Stated turnaround deadlines",
+          "value": "0",
+          "basis": "No timing is given for S7 or S8 in Sections 3 or 4"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "Three untracked handoffs make delays likely, but the impact is delay rather than a quality failure.",
+      "addressed_by": [
+        "A8",
+        "A5"
+      ]
+    },
+    {
+      "id": "R6",
+      "process": "Request and purchase a product or service",
+      "step": "S10",
+      "risk_type": "conflicting_rule",
+      "what_could_go_wrong": "The laboratory assumes DFG keeps the purchasing records and DFG assumes the laboratory does, so neither keeps a complete set.",
+      "cause": "Section 3.D.3 says DFG 'Ensures that records of purchasing activities are retained as required', while Section 6.2.5.A says 'Laboratories shall retain records for the following: A. Purchasing records'.",
+      "impact": "Purchasing records cannot be produced at an accreditation assessment or agency audit.",
+      "quantified_impact": [
+        {
+          "metric": "Sections assigning purchasing record retention to different owners",
+          "value": "2 (3.D.3, 6.2.5.A)",
+          "basis": "SOP Sections 3.D.3 and 6.2.5.A"
+        }
+      ],
+      "severity": "low",
+      "severity_reason": "Both parties are told to keep records, so total loss is unlikely, but gaps in the laboratory's own set are possible.",
+      "addressed_by": [
+        "A10"
+      ]
+    },
+    {
+      "id": "R7",
+      "process": "Approve a vendor",
+      "step": "S2",
+      "risk_type": "undefined_exception",
+      "what_could_go_wrong": "A calibration service or reference material vendor does not meet MAN-000041 traceability requirements. The SOP does not say the vendor must be rated unacceptable, so it could still go on the list.",
+      "cause": "Section 6.2.2.E states the requirement, but the S2 exception has no handling, and D1 leads to the rating step S3 with no link to the traceability result.",
+      "impact": "Measurements are made with non-traceable calibrations or reference materials, which undermines the validity of test results.",
+      "quantified_impact": [
+        {
+          "metric": "Exceptions with no stated handling",
+          "value": "1 (S2 traceability failure)",
+          "basis": "Exceptions list in the current state map"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "Traceability failures are uncommon, but when one occurs it directly affects measurement validity.",
+      "addressed_by": [
+        "A2",
+        "A3"
+      ]
+    },
+    {
+      "id": "R8",
+      "process": "Approve a vendor",
+      "step": "S4",
+      "risk_type": "single_point_of_failure",
+      "what_could_go_wrong": "The QSM is the only role that maintains the approved vendor list. When the QSM is away, newly approved vendors are not added and outdated entries are not corrected, and requestors check a stale list.",
+      "cause": "Section 3.C.1 gives list maintenance to the QSM, and Section 3 names no backup.",
+      "impact": "Purchases are delayed because the vendor is not on the list yet, or purchases go to vendors whose status has changed.",
+      "quantified_impact": [
+        {
+          "metric": "Steps held only by the QSM",
+          "value": "2 (S4, S21)",
+          "basis": "Current state map actors"
+        },
+        {
+          "metric": "Named backups",
+          "value": "0",
+          "basis": "Section 3.C"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "Absences are routine, and the list is the gate for every purchase, but the effect is usually delay rather than a nonconforming purchase.",
+      "addressed_by": [
+        "A4",
+        "A21"
+      ]
+    },
+    {
+      "id": "R9",
+      "process": "Monitor and re-evaluate vendors",
+      "step": "S21",
+      "risk_type": "vague_ownership_or_timing",
+      "what_could_go_wrong": "Vendor performance tracking and list reviews are never scheduled, so a vendor with repeated problems or a lapsed accreditation stays on the approved list for years.",
+      "cause": "Section 6.2.2.D says the list is reviewed 'periodically according to a schedule and responsibility determined by the laboratory', and 6.2.3.A says vendors are monitored 'over time'. Neither states an interval.",
+      "impact": "Unsuitable vendors remain approved, which gives the accreditation body grounds for a finding against the ISO/IEC 17025 6.6 monitoring requirement.",
+      "quantified_impact": [
+        {
+          "metric": "Steps with no stated frequency",
+          "value": "2 (S17, S21)",
+          "basis": "Timing entries for S17 and S21 in the current state map"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "Without a fixed interval, reviews tend to slip, but the effect builds gradually rather than all at once.",
+      "addressed_by": [
+        "A21",
+        "A17"
+      ]
+    },
+    {
+      "id": "R10",
+      "process": "Monitor and re-evaluate vendors",
+      "step": "S21",
+      "risk_type": "conflicting_rule",
+      "what_could_go_wrong": "It is unclear who owns the periodic review of the vendor list, so the QSM and a laboratory-designated person each assume the other is doing it.",
+      "cause": "Section 3.C.1 assigns list maintenance to the QSM, while Section 6.2.2.D leaves the review 'responsibility determined by the laboratory'.",
+      "impact": "The review is missed or duplicated, and the list does not reflect current vendor status.",
+      "quantified_impact": [
+        {
+          "metric": "Sections giving different owners for list review",
+          "value": "2 (3.C.1, 6.2.2.D)",
+          "basis": "SOP Sections 3.C.1 and 6.2.2.D"
+        }
+      ],
+      "severity": "low",
+      "severity_reason": "Most laboratories will default to the QSM, so confusion is limited, but the ownership is not written down.",
+      "addressed_by": [
+        "A21"
+      ]
+    },
+    {
+      "id": "R11",
+      "process": "Receive and inspect purchased materials",
+      "step": "S11",
+      "risk_type": "rekeying",
+      "what_could_go_wrong": "The receiver hand-writes the receipt date and initials on the receiving record and again on each container, and the two entries may not match or one may be skipped.",
+      "cause": "Section 6.2.4.C requires 'date of receipt and initials annotated on the receiving records and containers'. The receiving record is paper.",
+      "impact": "Receipt dates on containers cannot be relied on for expiry or traceability, which causes audit findings and possible use of expired material.",
+      "quantified_impact": [
+        {
+          "metric": "Places the same date and initials are written",
+          "value": "2 (receiving record, containers)",
+          "basis": "Section 6.2.4.C"
+        }
+      ],
+      "severity": "low",
+      "severity_reason": "Transcription mismatches are likely but usually minor.",
+      "addressed_by": [
+        "A11"
+      ]
+    },
+    {
+      "id": "R12",
+      "process": "Receive and inspect purchased materials",
+      "step": "S13",
+      "risk_type": "missing_control",
+      "what_could_go_wrong": "A reagent or consumable is put on the shelf after receipt and used in testing before anyone has inspected or verified it, because nothing marks it as on hold.",
+      "cause": "Section 6.2.4.A requires that materials 'are not used until they have been inspected or otherwise verified', but the SOP gives no hold or quarantine status and no record that release has occurred.",
+      "impact": "Nonconforming material is used in regulatory testing, results may need to be repeated or withdrawn, and the laboratory faces an accreditation finding.",
+      "quantified_impact": [
+        {
+          "metric": "Stated hold or release mechanisms before use",
+          "value": "0",
+          "basis": "Section 6.2.4 and S13 timing entry"
+        }
+      ],
+      "severity": "high",
+      "severity_reason": "Busy laboratories commonly use material on arrival, and using unverified material directly affects the validity of test results.",
+      "addressed_by": [
+        "A13"
+      ]
+    },
+    {
+      "id": "R13",
+      "process": "Receive and inspect purchased materials",
+      "step": "S12",
+      "risk_type": "undefined_exception",
+      "what_could_go_wrong": "A delivery is short or contains the wrong item, but the discrepancy does not affect quality. The SOP says nothing about who contacts the vendor or DFG, so the missing items are never chased.",
+      "cause": "Section 6.2.4.D requires verification against the original purchase order, but only 6.2.4.E (quality-affecting discrepancies) has a stated outcome. The S12 exception has no handling.",
+      "impact": "The laboratory pays for items it never received, testing waits on the missing materials, and the vendor's incorrect order is not recorded for monitoring.",
+      "quantified_impact": [
+        {
+          "metric": "Exceptions with no stated handling",
+          "value": "1 (S12 incomplete delivery)",
+          "basis": "Exceptions list in the current state map"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "Short or wrong deliveries happen regularly, and the impact is cost and delay.",
+      "addressed_by": [
+        "A12"
+      ]
+    },
+    {
+      "id": "R14",
+      "process": "Receive and inspect purchased materials",
+      "step": "S14",
+      "risk_type": "vague_ownership_or_timing",
+      "what_could_go_wrong": "Staff discard material that should have been returned for credit, or return material that should have been destroyed. Different people make inconsistent choices because no role or criteria are defined.",
+      "cause": "Section 6.2.4.E says the material is 'either discarded or returned to the vendor' and names no actor and no criteria for choosing.",
+      "impact": "The laboratory loses vendor credits, safety issues may arise with hazardous material, and dispositions are inconsistent across the trend records.",
+      "quantified_impact": [
+        {
+          "metric": "Disposition options",
+          "value": "2 (discard, return)",
+          "basis": "Section 6.2.4.E"
+        },
+        {
+          "metric": "Stated selection criteria",
+          "value": "0",
+          "basis": "Section 6.2.4.E"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "The choice is made every time a discrepancy occurs, and the wrong choice has cost or safety consequences.",
+      "addressed_by": [
+        "A14"
+      ]
+    },
+    {
+      "id": "R15",
+      "process": "Receive and inspect purchased materials",
+      "step": "S15",
+      "risk_type": "manual_handoff",
+      "what_could_go_wrong": "Records of unsatisfactory materials are kept at receiving but never reach the person monitoring vendor performance, so trends go unnoticed.",
+      "cause": "Section 6.2.4.F says these records 'establish trends in vendor performance', and 6.2.3.A relies on them, but the SOP has no mechanism or owner for passing them to monitoring (S17).",
+      "impact": "Repeat-offender vendors stay approved and quality problems keep recurring.",
+      "quantified_impact": [
+        {
+          "metric": "Defined links from S15 records to S17 monitoring",
+          "value": "0",
+          "basis": "No handoff from S15 to S17 in the current state map"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "Without a link, the records are likely to be filed and forgotten, which weakens the vendor monitoring the SOP depends on.",
+      "addressed_by": [
+        "A15",
+        "A17"
+      ]
+    },
+    {
+      "id": "R16",
+      "process": "Monitor and re-evaluate vendors",
+      "step": "S17",
+      "risk_type": "undefined_exception",
+      "what_could_go_wrong": "A vendor recalls a reagent or reference material. The laboratory notes it for the next periodic review instead of immediately pulling the affected stock and reassessing the vendor.",
+      "cause": "Section 6.2.3.A lists recalls only as events a laboratory 'may track'. The S17 exception states no immediate action.",
+      "impact": "Recalled material continues to be used in testing, results may be invalid, and the response time to a recall cannot be demonstrated to assessors.",
+      "quantified_impact": [
+        {
+          "metric": "Stated immediate actions for a recall",
+          "value": "0",
+          "basis": "Section 6.2.3.A; S17 exception in the current state map"
+        }
+      ],
+      "severity": "high",
+      "severity_reason": "Recalls are infrequent, but continued use of recalled material directly compromises test results.",
+      "addressed_by": [
+        "A17"
+      ]
+    },
+    {
+      "id": "R17",
+      "process": "Monitor and re-evaluate vendors",
+      "step": "S19",
+      "risk_type": "manual_handoff",
+      "what_could_go_wrong": "The vendor evaluation passes back and forth between Laboratory Management, unnamed lab staff, and the QSM. The documented outcome or the resulting actions never reach the vendor list.",
+      "cause": "The map shows 5 handoffs in this process (after S17, S18, S19 twice, S20). Sections 6.2.3.C, 3.B.4 and 3.C.2 give no tracking mechanism.",
+      "impact": "A vendor found unsuitable is still listed as approved, and evaluation and action records are incomplete.",
+      "quantified_impact": [
+        {
+          "metric": "Handoffs in the monitoring process",
+          "value": "5",
+          "basis": "Handoffs after S17, S18, S19 (x2) and S20 in the current state map"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "Many untracked handoffs make a gap likely, though periodic list review offers a partial catch.",
+      "addressed_by": [
+        "A18",
+        "A19",
+        "A21"
+      ]
+    }
+  ],
+  "recommendations": [
+    {
+      "id": "A1",
+      "process": "Approve a vendor",
+      "step": "S1",
+      "label": "keep_human",
+      "proposed_change": "Initial vendor evaluation against contract conditions, quality system criteria, and agency requirements stays a human judgment. The result is captured on the rating form in A3.",
+      "reason": "Judging whether a vendor can meet contract and quality criteria needs technical and procurement judgment that should not be delegated to a flow.",
+      "implementation_steps": [
+        "Name the evaluating role (for example Laboratory Management designee) in the local work instruction allowed by Section 6.1.",
+        "Have the evaluator record the result on the vendor rating form described in A3."
+      ],
+      "suggested_tool": "None (human judgment); results recorded via A3 form",
+      "value": 1,
+      "effort": 1,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 0,
+        "occurrence": "per vendor evaluated",
+        "basis": "Step remains manual by design."
+      },
+      "resolves_risks": []
+    },
+    {
+      "id": "A2",
+      "process": "Approve a vendor",
+      "step": "S2",
+      "label": "ai_assist",
+      "proposed_change": "The evaluator uploads the vendor's accreditation certificate (for example ISO/IEC 17025 or ISO 17034 scope). An AI step extracts the accreditation body, scope, and expiry date and pre-fills the traceability section for the evaluator to confirm. A failed traceability check forces a 'Not acceptable' rating.",
+      "reason": "Reading certificates is text extraction that AI can speed up. Making a failed traceability check block an acceptable rating closes the undefined exception in 6.2.2.E.",
+      "implementation_steps": [
+        "Add a 'Traceability evidence' document library in the Vendor Management SharePoint site.",
+        "Build an AI Builder document processing (or prompt) model trained on sample accreditation certificates to extract body, certificate number, scope, and expiry.",
+        "Create a Power Automate flow triggered on file upload that runs the model and writes the extracted fields to the vendor's evaluation item.",
+        "In the A3 Power Apps form, show the extracted fields for evaluator confirmation and add a required 'Meets MAN-000041 traceability' Yes/No field.",
+        "Add form validation so a 'No' traceability answer prevents an 'Acceptable' rating."
+      ],
+      "suggested_tool": "AI Builder, Power Automate, SharePoint",
+      "value": 2,
+      "effort": 3,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 3,
+        "minutes_saved_per_occurrence": 15,
+        "occurrence": "per calibration service or reference material vendor evaluated",
+        "basis": "Estimate: 3 certificate fields no longer typed by hand; 15 minutes of certificate reading is an estimate."
+      },
+      "resolves_risks": [
+        "R7"
+      ]
+    },
+    {
+      "id": "A3",
+      "process": "Approve a vendor",
+      "step": "S3",
+      "label": "digitize",
+      "proposed_change": "Vendor rating is recorded on a Power Apps vendor evaluation form that writes to a SharePoint Vendor Evaluations list. The form has required fields for level of service, required accreditations or certifications, traceability, and the Acceptable or Not acceptable outcome.",
+      "reason": "Section 6.2.2.C requires a local rating process and 6.2.5.B requires records. A structured form makes the rating consistent and retained.",
+      "implementation_steps": [
+        "Create SharePoint lists 'Vendors' and 'Vendor Evaluations' with a lookup from the evaluation to the vendor.",
+        "Build a Power Apps canvas form with required fields matching 6.2.2.A and 6.2.2.C criteria, the evaluator name, and the rating.",
+        "Apply a retention label to the Vendor Evaluations list per the agency records schedule.",
+        "Restrict edit rights on submitted evaluations to the QSM."
+      ],
+      "suggested_tool": "Power Apps, SharePoint",
+      "value": 3,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 15,
+        "occurrence": "per vendor evaluated",
+        "basis": "Estimate of time saved locating and filing evaluation records; no entries removed because rating is still entered once."
+      },
+      "resolves_risks": [
+        "R7"
+      ]
+    },
+    {
+      "id": "A4",
+      "process": "Approve a vendor",
+      "step": "S4",
+      "label": "automate",
+      "proposed_change": "When an evaluation is rated Acceptable, a flow asks the QSM (or a named backup) to approve, then adds or updates the vendor on the Approved Vendor List automatically with the rating, scope, and review due date.",
+      "reason": "Re-entering the approved vendor onto the list duplicates the rating data. A backup approver removes the QSM single point of failure from Section 3.C.1.",
+      "implementation_steps": [
+        "Add Status, Rating, Approved scope, Approval date, and Next review date columns to the Vendors list, which becomes the Approved Vendor List.",
+        "Create a Power Automate flow on a new Vendor Evaluations item with Rating = Acceptable.",
+        "Use Approvals 'Start and wait for an approval' assigned to a QSM SharePoint group that includes a backup.",
+        "On approval, update the Vendors item to Approved and set Next review date from the laboratory-defined interval.",
+        "On rejection, set the vendor to Not acceptable and notify the evaluator."
+      ],
+      "suggested_tool": "Power Automate, Approvals, SharePoint",
+      "value": 3,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 1,
+        "minutes_saved_per_occurrence": 10,
+        "occurrence": "per vendor approved",
+        "basis": "From the map: the rating from S3 is no longer re-entered on the list at S4 (1 entry). Minutes are an estimate."
+      },
+      "resolves_risks": [
+        "R8"
+      ]
+    },
+    {
+      "id": "A5",
+      "process": "Request and purchase a product or service",
+      "step": "S5",
+      "label": "digitize",
+      "proposed_change": "The requestor completes a Power Apps quality purchase request that captures critical specifications, the vendor (picked from the Approved Vendor List), the assigned compliance reviewer, and the iProcurement requisition number. It writes to a SharePoint Purchase Requests list with a visible status.",
+      "reason": "Sections 3.A and 4 require specifications and a compliance review record, but the SOP gives no place to track them. The form gives one tracked record per request alongside the agency system.",
+      "implementation_steps": [
+        "Create a SharePoint 'Purchase Requests' list with columns for specifications, quality-affecting (Yes/No), vendor lookup to Vendors, compliance reviewer, status, iProcurement requisition number, and PO number.",
+        "Build a Power Apps canvas app with a vendor dropdown filtered to Status = Approved and Rating = Acceptable.",
+        "Make specifications and compliance reviewer required when quality-affecting = Yes.",
+        "Add a status gallery so requestors can see where each request is.",
+        "Note that UFMS iProcurement has no standard connector, so the requisition number is entered once by hand to link the records."
+      ],
+      "suggested_tool": "Power Apps, SharePoint",
+      "value": 3,
+      "effort": 3,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 5,
+        "occurrence": "per purchase request",
+        "basis": "Estimate. This adds one manual entry (requisition number) because iProcurement has no standard connector; the value comes from tracking and control, not fewer entries."
+      },
+      "resolves_risks": [
+        "R2",
+        "R3",
+        "R4",
+        "R5"
+      ]
+    },
+    {
+      "id": "A6",
+      "process": "Request and purchase a product or service",
+      "step": "S6",
+      "label": "automate",
+      "proposed_change": "On submission, a flow checks the chosen vendor against the Approved Vendor List. If the vendor is not approved or acceptable, the flow blocks the request, notifies the requestor and QSM, and opens a new-vendor evaluation request instead of leaving the outcome undefined.",
+      "reason": "This replaces the requestor's self-check with a system check, defines the D3 'No' path, and supports the 6.2.2.A case where vendors are requested for method, experience, or cost reasons.",
+      "implementation_steps": [
+        "Create a 'New Vendor Requests' SharePoint list with a lookup to the originating purchase request.",
+        "Create a Power Automate flow on a new Purchase Requests item.",
+        "Use 'Get items' on Vendors filtered by vendor ID, Status = Approved and Rating = Acceptable.",
+        "If found, set Vendor check = Passed and notify the assigned compliance reviewer.",
+        "If not found, set status to 'Blocked - vendor not approved', create a New Vendor Requests item, and email the requestor and QSM group.",
+        "Have the laboratory confirm in its local work instruction that blocked requests wait for vendor approval."
+      ],
+      "suggested_tool": "Power Automate, SharePoint",
+      "value": 5,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 1,
+        "minutes_saved_per_occurrence": 5,
+        "occurrence": "per purchase request",
+        "basis": "From the map: the manual vendor list lookup at S6 is removed (1 entry). Minutes are an estimate."
+      },
+      "resolves_risks": [
+        "R1",
+        "R2"
+      ]
+    },
+    {
+      "id": "A7",
+      "process": "Request and purchase a product or service",
+      "step": "S7",
+      "label": "keep_human",
+      "proposed_change": "The vendor and product compliance review against test method and quality standard requirements stays with a person, but a named reviewer role is assigned and the outcome is recorded on the request.",
+      "reason": "Judging compliance with method specifications is technical judgment. The fix is clear ownership, not automation.",
+      "implementation_steps": [
+        "Assign the compliance reviewer role (for example lead analyst or QSM) in the local work instruction.",
+        "Add required Compliance outcome and Comments fields to the A5 request form for the reviewer to complete.",
+        "Route non-compliant outcomes back to the requestor with comments."
+      ],
+      "suggested_tool": "Power Apps form field (human review)",
+      "value": 2,
+      "effort": 1,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 0,
+        "occurrence": "per quality-affecting purchase request",
+        "basis": "Step remains manual by design."
+      },
+      "resolves_risks": [
+        "R4"
+      ]
+    },
+    {
+      "id": "A8",
+      "process": "Request and purchase a product or service",
+      "step": "S8",
+      "label": "automate",
+      "proposed_change": "When the compliance review passes, a flow routes the request to Laboratory Management through Approvals. A rejection reason is required and returned to the requestor, and approved requests notify the DFG purchasing agent with a link to the record.",
+      "reason": "This tracks the three untracked handoffs and defines what happens on D4 and D5 rejections.",
+      "implementation_steps": [
+        "Create a Power Automate flow triggered when Compliance outcome = Compliant on a Purchase Requests item.",
+        "Add 'Start and wait for an approval' assigned to the Laboratory Management group, with request details and specifications in the body.",
+        "On rejection, write the approver comments to the item, set status to Rejected, and email the requestor.",
+        "On approval, set status to Approved and email or Teams-message the DFG purchasing agent mailbox.",
+        "Add a reminder branch that escalates if no response arrives within the laboratory-defined interval."
+      ],
+      "suggested_tool": "Power Automate, Approvals, SharePoint, Outlook/Teams",
+      "value": 4,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 10,
+        "occurrence": "per purchase request",
+        "basis": "Handoffs remain (after S6, S7, S8) but become tracked. Minutes for chasing and emailing are an estimate; the SOP states no wait times."
+      },
+      "resolves_risks": [
+        "R3",
+        "R5"
+      ]
+    },
+    {
+      "id": "A9",
+      "process": "Request and purchase a product or service",
+      "step": "S9",
+      "label": "keep_human",
+      "proposed_change": "The DFG administrative purchasing agent continues to place the order under FDA acquisition procedures in PRISM or with a Government Purchase Card, then enters the PO number on the request record.",
+      "reason": "Federal acquisition decisions require a warranted or authorized purchasing official, and PRISM is an agency system outside Power Platform.",
+      "implementation_steps": [
+        "Give the DFG purchasing agent edit access to the PO number field in the Purchase Requests list.",
+        "Ask DFG to enter the PO number when the order is placed."
+      ],
+      "suggested_tool": "PRISM / GPC (agency systems)",
+      "value": 1,
+      "effort": 1,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 0,
+        "occurrence": "per purchase",
+        "basis": "Step remains manual by design."
+      },
+      "resolves_risks": []
+    },
+    {
+      "id": "A10",
+      "process": "Request and purchase a product or service",
+      "step": "S10",
+      "label": "automate",
+      "proposed_change": "When a PO number is entered, a flow files the laboratory's copy of the purchasing record (request, compliance review, approval history, PO number) in a SharePoint records library with a retention label. The lab copy and the DFG copy are both explicitly defined.",
+      "reason": "This resolves the 3.D.3 versus 6.2.5.A ownership conflict by making the laboratory's copy automatic.",
+      "implementation_steps": [
+        "Create a 'Purchasing Records' document library with a retention label set by the records officer.",
+        "Create a Power Automate flow triggered when the PO number field on a Purchase Requests item changes from empty.",
+        "Generate a PDF summary of the request and approval history (Word template or HTML-to-PDF) and save it to the library with the request ID and PO number as metadata.",
+        "Document in the local work instruction that DFG retains the agency record and the laboratory retains this copy."
+      ],
+      "suggested_tool": "Power Automate, SharePoint, Microsoft Purview retention labels",
+      "value": 3,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 10,
+        "occurrence": "per purchase",
+        "basis": "Estimate of time saved assembling and filing records manually."
+      },
+      "resolves_risks": [
+        "R6"
+      ]
+    },
+    {
+      "id": "A11",
+      "process": "Receive and inspect purchased materials",
+      "step": "S11",
+      "label": "digitize",
+      "proposed_change": "The designated individual logs each delivery in a mobile Power Apps receiving app. The app stamps the receipt date and receiver identity automatically, takes a photo of the packing slip, links to the PO, and prints a container label with the same date and initials.",
+      "reason": "This removes hand-writing the same date and initials in two places (6.2.4.C) and captures the packing slip required by Section 8.B.",
+      "implementation_steps": [
+        "Create a SharePoint 'Receiving Log' list with columns for PO number (lookup to Purchase Requests), receiver, receipt date, packing slip image, and use status.",
+        "Build a mobile Power Apps canvas app that defaults the receipt date to Today() and the receiver to User().",
+        "Add a camera control to attach the packing slip photo.",
+        "Generate a printable container label (receipt date, initials, receiving log ID) from the app using a label printer or a PDF template.",
+        "Train designated receivers and retire the paper receiving form."
+      ],
+      "suggested_tool": "Power Apps (mobile), SharePoint",
+      "value": 4,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 2,
+        "minutes_saved_per_occurrence": 5,
+        "occurrence": "per delivery received",
+        "basis": "From Section 6.2.4.C: the handwritten date and initials on the receiving record are replaced by an automatic stamp (2 entries). Minutes are an estimate."
+      },
+      "resolves_risks": [
+        "R11"
+      ]
+    },
+    {
+      "id": "A12",
+      "process": "Receive and inspect purchased materials",
+      "step": "S12",
+      "label": "ai_assist",
+      "proposed_change": "An AI step reads the packing slip photo, extracts the line items and quantities, and compares them with the PO lines on the request record. Mismatches are flagged for the receiver, and a defined notice goes to the requestor and DFG for short or wrong deliveries.",
+      "reason": "The comparison against the original PO (6.2.4.D) is text matching that AI can pre-check, and it closes the undefined exception for non-quality discrepancies.",
+      "implementation_steps": [
+        "Store the ordered line items on the Purchase Requests item (entered from the PO at A9 or attached as a PDF).",
+        "Train an AI Builder document processing model on sample packing slips from frequent vendors.",
+        "Create a Power Automate flow on a new Receiving Log item that runs the model on the packing slip image and compares it with the PO lines.",
+        "Write a match or mismatch summary to the Receiving Log item for the receiver to confirm.",
+        "On a confirmed mismatch, email the requestor and the DFG purchasing agent and log the incorrect order against the vendor for monitoring."
+      ],
+      "suggested_tool": "AI Builder, Power Automate, SharePoint",
+      "value": 3,
+      "effort": 4,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 10,
+        "occurrence": "per delivery received",
+        "basis": "Estimate of manual line-by-line comparison time. Effort is high because packing slip formats vary by vendor and PO lines must be captured."
+      },
+      "resolves_risks": [
+        "R13"
+      ]
+    },
+    {
+      "id": "A13",
+      "process": "Receive and inspect purchased materials",
+      "step": "S13",
+      "label": "digitize",
+      "proposed_change": "Every received item starts with a 'Quarantined - not for use' status in the Receiving Log, and the container label shows that status. A designated inspector records Pass or Fail in the app, and only a Pass sets the item to 'Released for use'.",
+      "reason": "This creates the hold-and-release control that Section 6.2.4.A requires but does not provide, and it records the verification needed by 6.2.5.C.",
+      "implementation_steps": [
+        "Add Use status (Quarantined, Released, Discrepancy), Inspector, Inspection date, Specification checked, and Result columns to the Receiving Log.",
+        "Set Use status to default to Quarantined on creation.",
+        "Add an inspection screen to the receiving app, restricted to an Inspectors SharePoint group designated by Laboratory Management.",
+        "Create a flow that sends the inspection task to the inspector and, on Pass, sets the item to Released and notifies the requestor.",
+        "Add a Released or Quarantined indicator to the printed container label, or reprint the label on release."
+      ],
+      "suggested_tool": "Power Apps, Power Automate, Approvals, SharePoint",
+      "value": 5,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 5,
+        "occurrence": "per delivery received",
+        "basis": "Estimate. The main value is the new control against use before inspection, not time saved."
+      },
+      "resolves_risks": [
+        "R12"
+      ]
+    },
+    {
+      "id": "A14",
+      "process": "Receive and inspect purchased materials",
+      "step": "S14",
+      "label": "keep_human",
+      "proposed_change": "Deciding whether to discard or return quality-affecting material stays with a person, but Laboratory Management names who decides and defines the criteria (for example safety, hazardous waste rules, vendor credit) in the local work instruction.",
+      "reason": "Disposition can involve safety and hazardous material handling, which needs human judgment.",
+      "implementation_steps": [
+        "Have Laboratory Management define disposition criteria and the deciding role in a local work instruction.",
+        "Add a required Disposition (Discard or Return) field and a Decided by field to the Receiving Log inspection screen."
+      ],
+      "suggested_tool": "None (human judgment); recorded in Receiving Log",
+      "value": 2,
+      "effort": 1,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 0,
+        "occurrence": "per quality-affecting discrepancy",
+        "basis": "Step remains manual by design."
+      },
+      "resolves_risks": [
+        "R14"
+      ]
+    },
+    {
+      "id": "A15",
+      "process": "Receive and inspect purchased materials",
+      "step": "S15",
+      "label": "automate",
+      "proposed_change": "When an inspection is marked Fail, a flow creates the unsatisfactory material record automatically, linked to the vendor, with the discrepancy and disposition from the inspection. It notifies the QSM and Laboratory Management so the record feeds vendor monitoring.",
+      "reason": "This removes re-entry of discrepancy details already captured at inspection and creates the missing link from 6.2.4.F records to 6.2.3.A monitoring.",
+      "implementation_steps": [
+        "Create a SharePoint 'Unsatisfactory Materials' list with lookups to Vendors and Receiving Log and columns for discrepancy, disposition, and date.",
+        "Create a Power Automate flow on Receiving Log modified where Result = Fail.",
+        "Create an Unsatisfactory Materials item copying the vendor, PO, discrepancy, and disposition.",
+        "Set the Receiving Log Use status to Discrepancy.",
+        "Post a Teams message or email to the QSM and Laboratory Management groups with a link to the record."
+      ],
+      "suggested_tool": "Power Automate, SharePoint, Teams",
+      "value": 3,
+      "effort": 1,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 1,
+        "minutes_saved_per_occurrence": 10,
+        "occurrence": "per quality-affecting discrepancy",
+        "basis": "From the map: discrepancy details captured at S13 no longer need to be re-entered at S15 (1 entry). Minutes are an estimate. Uses only the standard SharePoint and Teams connectors."
+      },
+      "resolves_risks": [
+        "R15"
+      ]
+    },
+    {
+      "id": "A16",
+      "process": "Receive and inspect purchased materials",
+      "step": "S16",
+      "label": "automate",
+      "proposed_change": "When an item is Released, a flow files the receiving record, packing slip image, and inspection result as the verification record in a SharePoint records library with a retention label.",
+      "reason": "Sections 6.2.5.C and 8.B require these records, and filing them manually is repetitive.",
+      "implementation_steps": [
+        "Create a 'Receiving Records' document library with a retention label.",
+        "Create a flow on Receiving Log modified where Use status = Released.",
+        "Generate a PDF of the receiving and inspection details and copy the packing slip image into the library with PO and vendor metadata."
+      ],
+      "suggested_tool": "Power Automate, SharePoint",
+      "value": 2,
+      "effort": 1,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 5,
+        "occurrence": "per delivery received",
+        "basis": "Estimate of manual filing time."
+      },
+      "resolves_risks": []
+    },
+    {
+      "id": "A17",
+      "process": "Monitor and re-evaluate vendors",
+      "step": "S17",
+      "label": "automate",
+      "proposed_change": "Vendor performance is tracked automatically from the Unsatisfactory Materials and Receiving Log lists in a Power BI dashboard, plus a recall intake form. A recall or a count of events above a laboratory-set threshold immediately alerts Laboratory Management and the QSM, and the vendor's affected stock is set to Quarantined.",
+      "reason": "This replaces untimed 'over time' monitoring (6.2.3.A) with continuous tracking and gives recalls a defined immediate response.",
+      "implementation_steps": [
+        "Add a 'Vendor Events' Power Apps intake form for recalls, accreditation lapses, and other unsatisfactory events, writing to SharePoint.",
+        "Build a Power BI report over the Vendors, Receiving Log, Unsatisfactory Materials, and Vendor Events lists showing events per vendor.",
+        "Create a flow on a new Vendor Events item of type Recall that finds matching Receiving Log items by vendor or lot, sets them to Quarantined, and alerts Laboratory Management and the QSM.",
+        "Create a scheduled flow that counts events per vendor over a rolling period and alerts the QSM when the laboratory-set threshold is exceeded.",
+        "Have the laboratory define the threshold and rolling period in the local work instruction."
+      ],
+      "suggested_tool": "Power Apps, Power Automate, Power BI, SharePoint",
+      "value": 4,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 20,
+        "occurrence": "per vendor review cycle",
+        "basis": "Estimate of time saved compiling vendor performance history by hand."
+      },
+      "resolves_risks": [
+        "R9",
+        "R15",
+        "R16"
+      ]
+    },
+    {
+      "id": "A18",
+      "process": "Monitor and re-evaluate vendors",
+      "step": "S18",
+      "label": "digitize",
+      "proposed_change": "Laboratory Management evaluates the vendor on a Power Apps re-evaluation form that shows the performance history and requires an answer to each 6.2.3.B minimum criterion and an outcome. Submitting the form is the documentation of the evaluation and its outcome.",
+      "reason": "Capturing the evaluation as it is made removes the separate documentation step and its handoffs. The judgment itself stays human.",
+      "implementation_steps": [
+        "Extend the Vendor Evaluations list with Evaluation type (Initial or Re-evaluation), the five 6.2.3.B criteria as required choice fields, Outcome (Suitable or Not suitable), and Evaluator.",
+        "Build a re-evaluation screen in the vendor app that embeds the vendor's Power BI tile or event list.",
+        "Restrict submission to the Laboratory Management group and apply a retention label to the list."
+      ],
+      "suggested_tool": "Power Apps, SharePoint, Power BI",
+      "value": 3,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 1,
+        "minutes_saved_per_occurrence": 15,
+        "occurrence": "per vendor re-evaluation",
+        "basis": "From the map: the evaluation is no longer re-documented separately at S19 (1 entry). Minutes are an estimate."
+      },
+      "resolves_risks": [
+        "R17"
+      ]
+    },
+    {
+      "id": "A19",
+      "process": "Monitor and re-evaluate vendors",
+      "step": "S19",
+      "label": "eliminate",
+      "proposed_change": "The separate 'document the evaluation and outcome' step is removed, because the A18 form produces that record when Laboratory Management submits the evaluation.",
+      "reason": "S19 re-records what S18 already decided, and it adds two handoffs (Laboratory Management to unnamed staff and back).",
+      "implementation_steps": [
+        "Confirm with the QSM that the A18 form record meets the 6.2.3.C and 6.2.5.B documentation requirement.",
+        "Update the local work instruction to remove the separate documentation step."
+      ],
+      "suggested_tool": "Process change (enabled by A18)",
+      "value": 3,
+      "effort": 1,
+      "impact": {
+        "handoffs_removed": 2,
+        "steps_removed": 1,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 15,
+        "occurrence": "per vendor re-evaluation",
+        "basis": "From the map: removes S19 and the handoffs after S18 (Laboratory Management to Laboratory) and after S19 (Laboratory to Laboratory Management). Minutes are an estimate."
+      },
+      "resolves_risks": [
+        "R17"
+      ]
+    },
+    {
+      "id": "A20",
+      "process": "Monitor and re-evaluate vendors",
+      "step": "S20",
+      "label": "keep_human",
+      "proposed_change": "Laboratory Management continues to decide and ensure the actions taken after an unsatisfactory evaluation, such as designating the vendor unacceptable or requiring corrective action, and records them on the evaluation item.",
+      "reason": "Decisions to drop a vendor or require corrective action are judgment calls with contractual consequences.",
+      "implementation_steps": [
+        "Add Actions taken and Action date fields to the Vendor Evaluations item.",
+        "Make these fields required when Outcome = Not suitable."
+      ],
+      "suggested_tool": "None (human judgment); recorded in Vendor Evaluations list",
+      "value": 2,
+      "effort": 1,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 0,
+        "occurrence": "per unsatisfactory vendor evaluation",
+        "basis": "Step remains manual by design."
+      },
+      "resolves_risks": []
+    },
+    {
+      "id": "A21",
+      "process": "Monitor and re-evaluate vendors",
+      "step": "S21",
+      "label": "automate",
+      "proposed_change": "A scheduled flow assigns each vendor's periodic review to the named owner (the QSM, with a backup group) when it is due, using the laboratory-defined interval. Each submitted re-evaluation automatically updates the vendor's status and next review date on the Approved Vendor List.",
+      "reason": "This fixes the missing interval (6.2.2.D), settles the 3.C.1 versus 6.2.2.D ownership by writing it into the flow, and removes manual list updates.",
+      "implementation_steps": [
+        "Have the laboratory set the review interval and owner in the local work instruction and store the interval as a column or setting.",
+        "Create a scheduled daily flow that finds Vendors where Next review date is on or before today and creates a Planner task or Teams notification for the QSM group.",
+        "Create a flow on Vendor Evaluations (Re-evaluation) submission that updates the Vendors item: Status = Approved or Not acceptable, and Next review date = today plus the interval.",
+        "Add an escalation to Laboratory Management if a review is more than the laboratory-set grace period overdue."
+      ],
+      "suggested_tool": "Power Automate, SharePoint, Planner/Teams",
+      "value": 4,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 1,
+        "minutes_saved_per_occurrence": 15,
+        "occurrence": "per vendor periodic review",
+        "basis": "From the map: the outcome from S18/S20 is no longer re-entered on the list at S21 (1 entry). Minutes are an estimate."
+      },
+      "resolves_risks": [
+        "R8",
+        "R9",
+        "R10",
+        "R17"
+      ]
+    }
+  ],
+  "starter_flows": [
+    {
+      "recommendation_id": "A15",
+      "trigger": "SharePoint - When an item is created or modified in the 'Receiving Log' list, with trigger condition Result equals 'Fail'",
+      "actions": [
+        "Get item: read the PO number, vendor lookup, discrepancy description, and disposition from the Receiving Log item",
+        "Get items: confirm no Unsatisfactory Materials record already exists for this Receiving Log ID, to avoid duplicates",
+        "Create item in 'Unsatisfactory Materials': vendor, PO number, Receiving Log ID, discrepancy, disposition, date",
+        "Update item in 'Receiving Log': set Use status to 'Discrepancy'",
+        "Post message in a chat or channel (Teams) to the QSM and Laboratory Management groups with a link to the new record",
+        "Send an email (Outlook) to the requestor saying the delivery failed inspection"
+      ],
+      "approval_step": ""
+    },
+    {
+      "recommendation_id": "A6",
+      "trigger": "SharePoint - When an item is created in the 'Purchase Requests' list",
+      "actions": [
+        "Get items from 'Vendors' filtered by vendor ID equals the request's vendor, Status equals 'Approved', and Rating equals 'Acceptable'",
+        "Condition: the number of returned items is greater than 0",
+        "If yes: update the Purchase Requests item with Vendor check = 'Passed' and Status = 'Awaiting compliance review'",
+        "If yes: send an email or Teams message to the assigned compliance reviewer with a link to the request",
+        "If no: update the Purchase Requests item with Status = 'Blocked - vendor not approved'",
+        "If no: create an item in 'New Vendor Requests' linked to the purchase request, with the requestor's stated reason (method specification, experience, cost)",
+        "If no: send an email to the requestor and the QSM group explaining that vendor evaluation is required before the request can proceed"
+      ],
+      "approval_step": ""
+    },
+    {
+      "recommendation_id": "A13",
+      "trigger": "SharePoint - When an item is created in the 'Receiving Log' list",
+      "actions": [
+        "Update item: set Use status to 'Quarantined - not for use'",
+        "Get item from 'Purchase Requests' by PO number to read the specifications and the requestor",
+        "Start and wait for an approval assigned to the Inspectors group, showing the specifications and receiving details",
+        "Condition: approval outcome equals 'Approve' (Pass)",
+        "If Pass: update the Receiving Log item with Result = 'Pass', Inspector, Inspection date, and Use status = 'Released for use'",
+        "If Pass: send an email to the requestor that the material is released",
+        "If Fail: update the Receiving Log item with Result = 'Fail', Use status = 'Discrepancy', and the inspector's comments (this triggers the A15 flow)"
+      ],
+      "approval_step": "A designated inspector in the Inspectors group records Pass or Fail through 'Start and wait for an approval', confirming the material complies with the specifications or method requirements (Section 6.2.4.A). Only a Pass releases the material for use."
+    }
+  ],
+  "future_state": [
+    {
+      "id": "F1",
+      "process": "Approve a vendor",
+      "from_step": "S1",
+      "actor": "Laboratory (role not specified)",
+      "action": "Evaluate the vendor against contract conditions, quality system criteria, and agency requirements",
+      "change": "unchanged"
+    },
+    {
+      "id": "F2",
+      "process": "Approve a vendor",
+      "from_step": "S2",
+      "actor": "Laboratory (role not specified)",
+      "action": "For calibration or reference material vendors, upload the accreditation certificate, review the AI-extracted body, scope, and expiry, and confirm whether MAN-000041 traceability is met; a 'No' answer blocks an Acceptable rating",
+      "change": "ai_assisted"
+    },
+    {
+      "id": "F3",
+      "process": "Approve a vendor",
+      "from_step": "S3",
+      "actor": "Laboratory (role not specified)",
+      "action": "Record the vendor rating (Acceptable or Not acceptable) and the supporting criteria on the Power Apps vendor evaluation form",
+      "change": "digitized"
+    },
+    {
+      "id": "F4",
+      "process": "Approve a vendor",
+      "from_step": "S4",
+      "actor": "Quality System Manager (QSM) or backup (via automated flow)",
+      "action": "Approve the Acceptable rating in Approvals; the flow then adds the vendor to the Approved Vendor List with rating, scope, and next review date",
+      "change": "automated"
+    },
+    {
+      "id": "F5",
+      "process": "Request and purchase a product or service",
+      "from_step": "S5",
+      "actor": "Requestor",
+      "action": "Submit a Power Apps quality purchase request with critical specifications, a vendor picked from the Approved Vendor List, the assigned compliance reviewer, and the iProcurement requisition number",
+      "change": "digitized"
+    },
+    {
+      "id": "F6",
+      "process": "Request and purchase a product or service",
+      "from_step": "S6",
+      "actor": "Automated flow (owner: QSM)",
+      "action": "Check the vendor against the Approved Vendor List; if not approved, block the request, notify the requestor and QSM, and open a new-vendor evaluation request",
+      "change": "automated"
+    },
+    {
+      "id": "F7",
+      "process": "Request and purchase a product or service",
+      "from_step": "S7",
+      "actor": "Compliance reviewer (role named in local work instruction)",
+      "action": "Review the vendor and product against test method and quality standard requirements and record the outcome on the request",
+      "change": "unchanged"
+    },
+    {
+      "id": "F8",
+      "process": "Request and purchase a product or service",
+      "from_step": "S8",
+      "actor": "Laboratory Management (via automated approval routing)",
+      "action": "Approve or reject the request in Approvals; rejections return to the requestor with the reason, and approvals notify the DFG purchasing agent",
+      "change": "automated"
+    },
+    {
+      "id": "F9",
+      "process": "Request and purchase a product or service",
+      "from_step": "S9",
+      "actor": "Administrative purchasing agent (DFG)",
+      "action": "Place the purchase under FDA acquisition procedures in PRISM or with a GPC, communicating the product criteria to the vendor, and enter the PO number on the request record",
+      "change": "unchanged"
+    },
+    {
+      "id": "F10",
+      "process": "Request and purchase a product or service",
+      "from_step": "S10",
+      "actor": "Automated flow (owner: Laboratory; DFG retains the agency record)",
+      "action": "File the laboratory copy of the purchasing record (request, compliance review, approval history, PO) in the retention-labeled Purchasing Records library",
+      "change": "automated"
+    },
+    {
+      "id": "F11",
+      "process": "Receive and inspect purchased materials",
+      "from_step": "S11",
+      "actor": "Designated individual",
+      "action": "Log the delivery in the mobile receiving app, which auto-stamps the receipt date and receiver, captures the packing slip photo, and prints the container label",
+      "change": "digitized"
+    },
+    {
+      "id": "F12",
+      "process": "Receive and inspect purchased materials",
+      "from_step": "S12",
+      "actor": "Designated individual (AI-assisted)",
+      "action": "Confirm the AI comparison of packing slip lines with the PO; confirmed short or wrong deliveries notify the requestor and DFG and are logged against the vendor",
+      "change": "ai_assisted"
+    },
+    {
+      "id": "F13",
+      "process": "Receive and inspect purchased materials",
+      "from_step": "S13",
+      "actor": "Designated inspector",
+      "action": "Inspect the quarantined material against specifications and record Pass or Fail in the app; only a Pass sets the item to Released for use",
+      "change": "digitized"
+    },
+    {
+      "id": "F14",
+      "process": "Receive and inspect purchased materials",
+      "from_step": "S14",
+      "actor": "Laboratory (role not specified)",
+      "action": "Discard the material or return it to the vendor",
+      "change": "unchanged"
+    },
+    {
+      "id": "F15",
+      "process": "Receive and inspect purchased materials",
+      "from_step": "S15",
+      "actor": "Automated flow (owner: QSM)",
+      "action": "Create the unsatisfactory material record linked to the vendor from the failed inspection and notify the QSM and Laboratory Management",
+      "change": "automated"
+    },
+    {
+      "id": "F16",
+      "process": "Receive and inspect purchased materials",
+      "from_step": "S16",
+      "actor": "Automated flow (owner: Laboratory)",
+      "action": "File the receiving record, packing slip, and inspection result as the verification record in the retention-labeled Receiving Records library",
+      "change": "automated"
+    },
+    {
+      "id": "F17",
+      "process": "Monitor and re-evaluate vendors",
+      "from_step": "S17",
+      "actor": "Automated flow and dashboard (owner: QSM)",
+      "action": "Track vendor events continuously; a recall immediately quarantines affected stock and alerts Laboratory Management and the QSM, and event counts above the laboratory threshold trigger review",
+      "change": "automated"
+    },
+    {
+      "id": "F18",
+      "process": "Monitor and re-evaluate vendors",
+      "from_step": "S18",
+      "actor": "Laboratory Management",
+      "action": "Evaluate the vendor against the 6.2.3.B minimum criteria on the Power Apps re-evaluation form; submitting it documents the evaluation and outcome",
+      "change": "digitized"
+    },
+    {
+      "id": "F19",
+      "process": "Monitor and re-evaluate vendors",
+      "from_step": "S20",
+      "actor": "Laboratory Management",
+      "action": "Ensure actions arising from an unsatisfactory evaluation are taken, including designating the vendor unacceptable, and record them on the evaluation item",
+      "change": "unchanged"
+    },
+    {
+      "id": "F20",
+      "process": "Monitor and re-evaluate vendors",
+      "from_step": "S21",
+      "actor": "Quality System Manager (QSM) or backup (via automated flow)",
+      "action": "Receive the scheduled review task when a vendor's review is due; each submitted re-evaluation automatically updates the vendor status and next review date on the Approved Vendor List",
+      "change": "automated"
+    }
+  ],
+  "eliminated_steps": [
+    "S19"
+  ]
+}

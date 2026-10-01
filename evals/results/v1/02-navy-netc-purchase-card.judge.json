@@ -1,0 +1,232 @@
+{
+  "step_matches": [
+    {
+      "golden_id": "S1",
+      "ai_id": "S1",
+      "reason": "In both maps the requesting department nominates the cardholder."
+    },
+    {
+      "golden_id": "S2",
+      "ai_id": "S2",
+      "reason": "In both maps the nominee/CH completes initial training."
+    },
+    {
+      "golden_id": "S3",
+      "ai_id": "S3",
+      "reason": "In both maps the appointing authority (HA) appoints the CH, using SF 1402."
+    },
+    {
+      "golden_id": "S4",
+      "ai_id": "NONE",
+      "reason": "The AI map has no step for suspending the account pending refresher training."
+    },
+    {
+      "golden_id": "S5",
+      "ai_id": "S7",
+      "reason": "In both maps N8 assigns the appropriate LOA to the request."
+    },
+    {
+      "golden_id": "S6",
+      "ai_id": "S9",
+      "reason": "In both maps the requestor completes the additional documentation, obtains signatures and provides copies to N8 and the CH."
+    },
+    {
+      "golden_id": "S7",
+      "ai_id": "NONE",
+      "reason": "The AI map has no step for N8 funds status updates from the CMEF."
+    },
+    {
+      "golden_id": "S8",
+      "ai_id": "NONE",
+      "reason": "AI S8 has the Comptroller reviewing, not N8 forwarding, so the actor differs."
+    },
+    {
+      "golden_id": "S9",
+      "ai_id": "NONE",
+      "reason": "The AI map has no step for the fiscal year-end unfunded requirements query."
+    },
+    {
+      "golden_id": "S10",
+      "ai_id": "NONE",
+      "reason": "The AI map has no step for the CH confirming R/FM fund commitment."
+    },
+    {
+      "golden_id": "S11",
+      "ai_id": "S11",
+      "reason": "In both maps the CH screens the purchase against mandatory sources."
+    },
+    {
+      "golden_id": "S12",
+      "ai_id": "S12",
+      "reason": "AI S12 describes AO approval before purchase, the same control seen from the approver's side."
+    },
+    {
+      "golden_id": "S13",
+      "ai_id": "S14",
+      "reason": "In both maps the CH confirms the merchant agrees to the order terms."
+    },
+    {
+      "golden_id": "S14",
+      "ai_id": "S15",
+      "reason": "AI S15 includes the CH reminding the merchant not to charge sales tax."
+    },
+    {
+      "golden_id": "S15",
+      "ai_id": "NONE",
+      "reason": "The AI map has no CH certification of quality and quantity; inspection there is done by separate actors."
+    },
+    {
+      "golden_id": "S16",
+      "ai_id": "NONE",
+      "reason": "FOB destination is merged into AI S15, which is already matched to S14."
+    },
+    {
+      "golden_id": "S17",
+      "ai_id": "S16",
+      "reason": "In both maps the CH records the transaction in the purchase card log."
+    },
+    {
+      "golden_id": "S18",
+      "ai_id": "S23",
+      "reason": "In both maps the CH applies pay-and-confirm."
+    },
+    {
+      "golden_id": "S19",
+      "ai_id": "S24",
+      "reason": "In both maps the CH certifies the bank statement and forwards it to the AO/CO."
+    },
+    {
+      "golden_id": "S20",
+      "ai_id": "S25",
+      "reason": "In both maps the AO reviews the CH's statement and documentation."
+    },
+    {
+      "golden_id": "S21",
+      "ai_id": "S22",
+      "reason": "AI S22 includes the CH's written explanation for undocumented transactions."
+    },
+    {
+      "golden_id": "S22",
+      "ai_id": "S27",
+      "reason": "In both maps the AO/CO certifies the monthly statement/invoice."
+    },
+    {
+      "golden_id": "S23",
+      "ai_id": "S26",
+      "reason": "In both maps the AO/CO notifies the A/OPC or NETC N4 of a suspected unauthorized purchase."
+    },
+    {
+      "golden_id": "S24",
+      "ai_id": "S28",
+      "reason": "In both maps the monthly PAT review is completed and documentation is returned to the CH."
+    },
+    {
+      "golden_id": "S25",
+      "ai_id": "S32",
+      "reason": "In both maps the CH or AO contacts the A/OPC about the unrecognized transaction."
+    },
+    {
+      "golden_id": "S26",
+      "ai_id": "S33",
+      "reason": "In both maps the CH disputes the charge via CitiDirect."
+    },
+    {
+      "golden_id": "S27",
+      "ai_id": "S34",
+      "reason": "In both maps the dispute form is sent to CITIBANK."
+    },
+    {
+      "golden_id": "S28",
+      "ai_id": "S35",
+      "reason": "In both maps the dispute is tracked to resolution."
+    },
+    {
+      "golden_id": "S29",
+      "ai_id": "NONE",
+      "reason": "The AI map has no step for the CITIBANK credit offset; it appears only as a branch label."
+    },
+    {
+      "golden_id": "S30",
+      "ai_id": "NONE",
+      "reason": "The AI map has no step for the CITIBANK decision letter."
+    },
+    {
+      "golden_id": "S31",
+      "ai_id": "S36",
+      "reason": "In both maps the CH notifies the A/OPC of suspected fraud."
+    },
+    {
+      "golden_id": "S32",
+      "ai_id": "S37",
+      "reason": "In both maps the A/OPC contacts CITIBANK."
+    },
+    {
+      "golden_id": "S33",
+      "ai_id": "S38",
+      "reason": "In both maps CITIBANK confirms valid vs. fraudulent transactions and moves the valid ones."
+    },
+    {
+      "golden_id": "S34",
+      "ai_id": "NONE",
+      "reason": "AI S40 assigns the short-pay to the AO/CO rather than the cardholder, so the actor differs."
+    },
+    {
+      "golden_id": "S35",
+      "ai_id": "S39",
+      "reason": "In both maps the CH completes the Declaration of Unauthorized Use form."
+    },
+    {
+      "golden_id": "S36",
+      "ai_id": "NONE",
+      "reason": "The AI map has no lost/stolen card steps."
+    },
+    {
+      "golden_id": "S37",
+      "ai_id": "NONE",
+      "reason": "The AI map has no lost/stolen card notification step."
+    },
+    {
+      "golden_id": "S38",
+      "ai_id": "NONE",
+      "reason": "The AI map has no AO written report step."
+    },
+    {
+      "golden_id": "S39",
+      "ai_id": "NONE",
+      "reason": "The AI map has no replacement card mailing step for a lost card."
+    },
+    {
+      "golden_id": "S40",
+      "ai_id": "NONE",
+      "reason": "The AI map has no found-card step."
+    },
+    {
+      "golden_id": "S41",
+      "ai_id": "NONE",
+      "reason": "The AI map has no departure inactivation step."
+    },
+    {
+      "golden_id": "S42",
+      "ai_id": "NONE",
+      "reason": "The AI map has no step for reducing the limit to $1."
+    },
+    {
+      "golden_id": "S43",
+      "ai_id": "NONE",
+      "reason": "The AI map has no account closure step for a departing CH."
+    },
+    {
+      "golden_id": "S44",
+      "ai_id": "NONE",
+      "reason": "The AI map has no step for turning in files on departure."
+    }
+  ],
+  "decision_matches": [
+    {
+      "golden_id": "D1",
+      "ai_id": "NONE",
+      "correct": false,
+      "reason": "The micro-purchase threshold is mentioned only inside AI S3, not as a decision."
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+ "sop_title": "NTRR SOP-01: Account Request / Data Access Permission Request",
+ "mapped_by": "Moustapha Kourouma",
+ "minutes_to_map": 23.2,
+ "granularity_rule": "A: one step per meaningful action; screen clicks collapsed",
+ "steps": [
+  {
+   "id": "S1",
+   "actor": "Data access requestor",
+   "action": "Log in to the NTRR website and open the Request a New Account page",
+   "input": "Login credentials",
+   "output": "Account request page",
+   "system": "Browser",
+   "source_section": "Initiation, steps 1-2"
+  },
+  {
+   "id": "S2",
+   "actor": "Data access requestor",
+   "action": "Download the Data Access Request template",
+   "input": "",
+   "output": "DAR template",
+   "system": "Browser",
+   "source_section": "Initiation, step 3"
+  },
+  {
+   "id": "S3",
+   "actor": "Data access requestor",
+   "action": "Complete and sign the Data Access Request",
+   "input": "Required information",
+   "output": "Signed DAR",
+   "system": "PDF form",
+   "source_section": "Initiation, step 4"
+  },
+  {
+   "id": "S4",
+   "actor": "Data access requestor",
+   "action": "Upload the signed Data Access Request",
+   "input": "Signed DAR",
+   "output": "",
+   "system": "Browser",
+   "source_section": "Initiation, step 4"
+  },
+  {
+   "id": "S5",
+   "actor": "Data access requestor",
+   "action": "Fill in the required fields on the Account Management page",
+   "input": "Required information",
+   "output": "",
+   "system": "Browser",
+   "source_section": "Initiation, step 6"
+  },
+  {
+   "id": "S6",
+   "actor": "Data access requestor",
+   "action": "Check the privilege boxes on the Account Privileges page",
+   "input": "Required information",
+   "output": "",
+   "system": "Browser",
+   "source_section": "Initiation, step 8"
+  },
+  {
+   "id": "S7",
+   "actor": "Data access requestor",
+   "action": "Submit the account request",
+   "input": "",
+   "output": "Confirmation page",
+   "system": "Browser",
+   "source_section": "Initiation, step 9"
+  },
+  {
+   "id": "S8",
+   "actor": "NTRR Operations staff",
+   "action": "Review the DAR for accuracy and completeness",
+   "input": "Signed DAR",
+   "output": "",
+   "system": "PDF",
+   "source_section": "Review and Authorization, step 1"
+  },
+  {
+   "id": "S9",
+   "actor": "NTRR Operations staff",
+   "action": "Contact the applicant for more information",
+   "input": "",
+   "output": "Required information from applicant",
+   "system": "",
+   "source_section": "Review and Authorization, step 2"
+  },
+  {
+   "id": "S10",
+   "actor": "NTRR Operations staff",
+   "action": "Provide the DAR to the NTRR DAC",
+   "input": "DAR",
+   "output": "",
+   "system": "PDF",
+   "source_section": "Review and Authorization, step 3"
+  },
+  {
+   "id": "S11",
+   "actor": "NTRR DAC",
+   "action": "Review the information and authorize data access",
+   "input": "DAR",
+   "output": "Account authorization",
+   "system": "PDF",
+   "source_section": "Review and Authorization, step 4"
+  },
+  {
+   "id": "S12",
+   "actor": "NTRR Admin",
+   "action": "Establish the user account with privileges matching the authorized data access",
+   "input": "Account authorization",
+   "output": "Account access",
+   "system": "NTRR internal access",
+   "source_section": "Review and Authorization, step 5"
+  },
+  {
+   "id": "S13",
+   "actor": "NTRR Admin",
+   "action": "Send the automated email notifying the applicant of account activation",
+   "input": "",
+   "output": "Activation email",
+   "system": "Email",
+   "source_section": "Review and Authorization, step 6"
+  },
+  {
+   "id": "S14",
+   "actor": "Data access requestor",
+   "action": "Check email inbox for the approval message",
+   "input": "",
+   "output": "",
+   "system": "Email",
+   "source_section": "Account Validation, step 1"
+  },
+  {
+   "id": "S15",
+   "actor": "Data access requestor",
+   "action": "Check spam and/or contact the NTRR team",
+   "input": "",
+   "output": "Email to NTRR team",
+   "system": "Email",
+   "source_section": "Account Validation, step 1"
+  },
+  {
+   "id": "S16",
+   "actor": "Data access requestor",
+   "action": "Return to the NTRR website and log in",
+   "input": "Login credentials",
+   "output": "Login access",
+   "system": "Browser",
+   "source_section": "Account Validation, step 2"
+  },
+  {
+   "id": "S17",
+   "actor": "Data access requestor",
+   "action": "Access NTRR data",
+   "input": "",
+   "output": "Data access",
+   "system": "NTRR data system",
+   "source_section": "Account Validation, step 3"
+  }
+ ],
+ "decisions": [
+  {
+   "id": "D1",
+   "after_step": "S8",
+   "condition": "Are there errors in the DAR?",
+   "branches": [
+    {
+     "label": "Yes",
+     "next_step": "S9"
+    },
+    {
+     "label": "No",
+     "next_step": "S10"
+    }
+   ],
+   "source_section": "Review and Authorization, step 2"
+  },
+  {
+   "id": "D2",
+   "after_step": "S14",
+   "condition": "Was the approval email received in a timely manner?",
+   "branches": [
+    {
+     "label": "Yes",
+     "next_step": "S16"
+    },
+    {
+     "label": "No",
+     "next_step": "S15"
+    }
+   ],
+   "source_section": "Account Validation, step 1"
+  }
+ ]
+}

@@ -1,0 +1,523 @@
+{
+  "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "$connections": {
+      "defaultValue": {},
+      "type": "Object"
+    },
+    "$authentication": {
+      "defaultValue": {},
+      "type": "SecureObject"
+    }
+  },
+  "triggers": {
+    "manual": {
+      "type": "Request",
+      "kind": "PowerAppV2",
+      "inputs": {
+        "schema": {
+          "type": "object",
+          "properties": {
+            "text": {
+              "title": "sopId",
+              "type": "string",
+              "x-ms-dynamically-added": true,
+              "description": "SOPs library item ID",
+              "x-ms-content-hint": "TEXT"
+            },
+            "text_1": {
+              "title": "batch",
+              "type": "string",
+              "x-ms-dynamically-added": true,
+              "description": "Batch number",
+              "x-ms-content-hint": "TEXT"
+            }
+          },
+          "required": [
+            "text",
+            "text_1"
+          ]
+        }
+      }
+    }
+  },
+  "actions": {
+    "Get_SOP": {
+      "type": "OpenApiConnection",
+      "inputs": {
+        "host": {
+          "connectionName": "shared_sharepointonline",
+          "operationId": "HttpRequest",
+          "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+        },
+        "parameters": {
+          "dataset": "https://consultonyx.sharepoint.com/sites/sop-process-map",
+          "parameters/method": "GET",
+          "parameters/uri": "@concat('_api/web/lists/getbytitle(''SOPs'')/items(', triggerBody()?['text'], ')?$select=ProcessOwner,FileLeafRef')",
+          "parameters/headers": {
+            "Accept": "application/json;odata=nometadata",
+            "Content-Type": "application/json;odata=nometadata"
+          }
+        },
+        "authentication": "@parameters('$authentication')"
+      },
+      "runAfter": {}
+    },
+    "Get_batch": {
+      "type": "OpenApiConnection",
+      "inputs": {
+        "host": {
+          "connectionName": "shared_sharepointonline",
+          "operationId": "HttpRequest",
+          "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+        },
+        "parameters": {
+          "dataset": "https://consultonyx.sharepoint.com/sites/sop-process-map",
+          "parameters/method": "GET",
+          "parameters/uri": "@concat('_api/web/lists/getbytitle(''Recommendations'')/items?$top=500&$orderby=Priority desc&$select=ID,Title,StepRef,Label,ProposedChange,Reason,SuggestedTool,ValueScore,EffortScore,Priority,AnalystRec,AnalystNote&$filter=SOPId eq ', string(triggerBody()?['text']), ' and BatchNo eq ', string(int(triggerBody()?['text_1'])))",
+          "parameters/headers": {
+            "Accept": "application/json;odata=nometadata",
+            "Content-Type": "application/json;odata=nometadata"
+          }
+        },
+        "authentication": "@parameters('$authentication')"
+      },
+      "runAfter": {
+        "Get_SOP": [
+          "Succeeded"
+        ]
+      }
+    },
+    "Get_steps": {
+      "type": "OpenApiConnection",
+      "inputs": {
+        "host": {
+          "connectionName": "shared_sharepointonline",
+          "operationId": "HttpRequest",
+          "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+        },
+        "parameters": {
+          "dataset": "https://consultonyx.sharepoint.com/sites/sop-process-map",
+          "parameters/method": "GET",
+          "parameters/uri": "@concat('_api/web/lists/getbytitle(''Process Steps'')/items?$top=2000&$select=Title,Actor,Action&$filter=SOPId eq ', string(triggerBody()?['text']))",
+          "parameters/headers": {
+            "Accept": "application/json;odata=nometadata",
+            "Content-Type": "application/json;odata=nometadata"
+          }
+        },
+        "authentication": "@parameters('$authentication')"
+      },
+      "runAfter": {
+        "Get_SOP": [
+          "Succeeded"
+        ]
+      }
+    },
+    "Get_decisions": {
+      "type": "OpenApiConnection",
+      "inputs": {
+        "host": {
+          "connectionName": "shared_sharepointonline",
+          "operationId": "HttpRequest",
+          "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+        },
+        "parameters": {
+          "dataset": "https://consultonyx.sharepoint.com/sites/sop-process-map",
+          "parameters/method": "GET",
+          "parameters/uri": "@concat('_api/web/lists/getbytitle(''Decision Points'')/items?$top=2000&$select=Title,AfterStep,Condition&$filter=SOPId eq ', string(triggerBody()?['text']))",
+          "parameters/headers": {
+            "Accept": "application/json;odata=nometadata",
+            "Content-Type": "application/json;odata=nometadata"
+          }
+        },
+        "authentication": "@parameters('$authentication')"
+      },
+      "runAfter": {
+        "Get_SOP": [
+          "Succeeded"
+        ]
+      }
+    },
+    "Get_analysis": {
+      "type": "OpenApiConnection",
+      "inputs": {
+        "host": {
+          "connectionName": "shared_sharepointonline",
+          "operationId": "HttpRequest",
+          "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+        },
+        "parameters": {
+          "dataset": "https://consultonyx.sharepoint.com/sites/sop-process-map",
+          "parameters/method": "GET",
+          "parameters/uri": "@concat('_api/web/lists/getbytitle(''AI Runs'')/items?$select=RawOutput&$orderby=ID desc&$top=1&$filter=SOPId eq ', string(triggerBody()?['text']))",
+          "parameters/headers": {
+            "Accept": "application/json;odata=nometadata",
+            "Content-Type": "application/json;odata=nometadata"
+          }
+        },
+        "authentication": "@parameters('$authentication')"
+      },
+      "runAfter": {
+        "Get_SOP": [
+          "Succeeded"
+        ]
+      }
+    },
+    "Analysis": {
+      "type": "Compose",
+      "runAfter": {
+        "Get_analysis": [
+          "Succeeded"
+        ]
+      },
+      "inputs": "@json(coalesce(first(body('Get_analysis')?['value'])?['RawOutput'], '{}'))"
+    },
+    "Recommended": {
+      "type": "Query",
+      "runAfter": {
+        "Get_batch": [
+          "Succeeded"
+        ]
+      },
+      "inputs": {
+        "from": "@body('Get_batch')?['value']",
+        "where": "@equals(item()?['AnalystRec'], 'Recommend')"
+      }
+    },
+    "Dropped": {
+      "type": "Query",
+      "runAfter": {
+        "Get_batch": [
+          "Succeeded"
+        ]
+      },
+      "inputs": {
+        "from": "@body('Get_batch')?['value']",
+        "where": "@equals(item()?['AnalystRec'], 'Drop')"
+      }
+    },
+    "Cards": {
+      "type": "InitializeVariable",
+      "runAfter": {},
+      "inputs": {
+        "variables": [
+          {
+            "name": "cards",
+            "type": "string",
+            "value": ""
+          }
+        ]
+      }
+    },
+    "Each_change": {
+      "type": "Foreach",
+      "foreach": "@body('Recommended')",
+      "runtimeConfiguration": {
+        "concurrency": {
+          "repetitions": 1
+        }
+      },
+      "runAfter": {
+        "Recommended": [
+          "Succeeded"
+        ],
+        "Get_steps": [
+          "Succeeded"
+        ],
+        "Get_decisions": [
+          "Succeeded"
+        ],
+        "Analysis": [
+          "Succeeded"
+        ],
+        "Cards": [
+          "Succeeded"
+        ]
+      },
+      "actions": {
+        "Step": {
+          "type": "Query",
+          "inputs": {
+            "from": "@body('Get_steps')?['value']",
+            "where": "@equals(item()?['Title'], items('Each_change')?['StepRef'])"
+          }
+        },
+        "Step_decisions": {
+          "type": "Query",
+          "inputs": {
+            "from": "@body('Get_decisions')?['value']",
+            "where": "@equals(item()?['AfterStep'], items('Each_change')?['StepRef'])"
+          }
+        },
+        "Rich_change": {
+          "type": "Query",
+          "inputs": {
+            "from": "@coalesce(outputs('Analysis')?['recommendations'], json('[]'))",
+            "where": "@equals(item()?['id'], items('Each_change')?['Title'])"
+          }
+        },
+        "Resolved_risks": {
+          "type": "Query",
+          "runAfter": {
+            "Rich_change": [
+              "Succeeded"
+            ]
+          },
+          "inputs": {
+            "from": "@coalesce(outputs('Analysis')?['risks'], json('[]'))",
+            "where": "@contains(coalesce(first(body('Rich_change'))?['resolves_risks'], json('[]')), item()?['id'])"
+          }
+        },
+        "Decision_lines": {
+          "type": "Select",
+          "runAfter": {
+            "Step_decisions": [
+              "Succeeded"
+            ]
+          },
+          "inputs": {
+            "from": "@body('Step_decisions')",
+            "select": "@concat('<div style=\"color:#52514e\"><b>', item()?['Title'], '</b> decision: ', item()?['Condition'], '</div>')"
+          }
+        },
+        "Impl_lines": {
+          "type": "Select",
+          "runAfter": {
+            "Rich_change": [
+              "Succeeded"
+            ]
+          },
+          "inputs": {
+            "from": "@coalesce(first(body('Rich_change'))?['implementation_steps'], json('[]'))",
+            "select": "@concat('<li>', item(), '</li>')"
+          }
+        },
+        "Risk_lines": {
+          "type": "Select",
+          "runAfter": {
+            "Resolved_risks": [
+              "Succeeded"
+            ]
+          },
+          "inputs": {
+            "from": "@body('Resolved_risks')",
+            "select": "@concat('<li><b>', item()?['id'], '</b> (', item()?['severity'], '): ', coalesce(item()?['what_could_go_wrong'], item()?['description'], ''), '</li>')"
+          }
+        },
+        "Card": {
+          "type": "Compose",
+          "runAfter": {
+            "Step": [
+              "Succeeded"
+            ],
+            "Decision_lines": [
+              "Succeeded"
+            ],
+            "Impl_lines": [
+              "Succeeded"
+            ],
+            "Risk_lines": [
+              "Succeeded"
+            ]
+          },
+          "inputs": "@concat('<div style=\"border:1px solid #c3c2b7;border-radius:8px;padding:14px;margin:0 0 14px\">','<div style=\"font-size:13px;color:#52514e\"><b>', items('Each_change')?['Title'], '</b> \u00b7 ', items('Each_change')?['Label'], ' \u00b7 Priority ', string(items('Each_change')?['Priority']), ' \u00b7 Value ', string(items('Each_change')?['ValueScore']), ' \u00b7 Effort ', string(items('Each_change')?['EffortScore']), '</div>','<p style=\"margin:10px 0 4px;font-size:11px;font-weight:bold;color:#898781\">CURRENT</p>','<div><b>', items('Each_change')?['StepRef'], '</b> \u00b7 ', coalesce(first(body('Step'))?['Actor'], ''), ': ', coalesce(first(body('Step'))?['Action'], ''), '</div>',join(body('Decision_lines'), ''),'<p style=\"margin:10px 0 4px;font-size:11px;font-weight:bold;color:#2a78d6\">PROPOSED CHANGE</p>','<div>', coalesce(items('Each_change')?['ProposedChange'], items('Each_change')?['Reason'], ''), '</div>','<div style=\"color:#52514e;font-size:13px;margin-top:4px\">Why: ', coalesce(items('Each_change')?['Reason'], ''), '<br>Tool: ', coalesce(items('Each_change')?['SuggestedTool'], ''), '</div>',if(empty(body('Impl_lines')), '', concat('<p style=\"margin:10px 0 4px;font-size:11px;font-weight:bold;color:#898781\">HOW TO IMPLEMENT</p><ol style=\"margin:0;padding-left:20px\">', join(body('Impl_lines'), ''), '</ol>')),if(empty(body('Risk_lines')), '', concat('<p style=\"margin:10px 0 4px;font-size:11px;font-weight:bold;color:#898781\">RESOLVES</p><ul style=\"margin:0;padding-left:20px\">', join(body('Risk_lines'), ''), '</ul>')),if(equals(first(body('Rich_change'))?['impact'], null), '', concat('<p style=\"margin:10px 0 4px;font-size:11px;font-weight:bold;color:#898781\">IMPACT</p><div>', string(coalesce(first(body('Rich_change'))?['impact']?['handoffs_removed'], 0)), ' handoffs removed \u00b7 ', string(coalesce(first(body('Rich_change'))?['impact']?['steps_removed'], 0)), ' steps removed \u00b7 ', string(coalesce(first(body('Rich_change'))?['impact']?['wait_days_removed'], 0)), ' wait days removed \u00b7 \u2248 ', string(coalesce(first(body('Rich_change'))?['impact']?['minutes_saved_per_occurrence'], 0)), ' min saved ', coalesce(first(body('Rich_change'))?['impact']?['occurrence'], ''), ' (estimate)</div>')),if(empty(items('Each_change')?['AnalystNote']), '', concat('<p style=\"margin:10px 0 0;color:#52514e\"><i>Analyst note: ', items('Each_change')?['AnalystNote'], '</i></p>')),'</div>')"
+        },
+        "Add_card": {
+          "type": "AppendToStringVariable",
+          "runAfter": {
+            "Card": [
+              "Succeeded"
+            ]
+          },
+          "inputs": {
+            "name": "cards",
+            "value": "@{outputs('Card')}"
+          }
+        }
+      }
+    },
+    "Dropped_lines": {
+      "type": "Select",
+      "runAfter": {
+        "Dropped": [
+          "Succeeded"
+        ]
+      },
+      "inputs": {
+        "from": "@body('Dropped')",
+        "select": "@concat('<li><b>', item()?['Title'], '</b> (step ', item()?['StepRef'], '): ', coalesce(item()?['ProposedChange'], item()?['Reason'], ''), ' <i>\u2014 dropped: ', coalesce(item()?['AnalystNote'], ''), '</i></li>')"
+      }
+    },
+    "Email_owner": {
+      "type": "OpenApiConnection",
+      "runAfter": {
+        "Each_change": [
+          "Succeeded"
+        ],
+        "Dropped_lines": [
+          "Succeeded"
+        ]
+      },
+      "inputs": {
+        "host": {
+          "connectionName": "shared_office365",
+          "operationId": "SendEmailV2",
+          "apiId": "/providers/Microsoft.PowerApps/apis/shared_office365"
+        },
+        "parameters": {
+          "emailMessage/To": "@body('Get_SOP')?['ProcessOwner']",
+          "emailMessage/Subject": "@concat('Decide ', string(length(body('Recommended'))), ' process changes: ', body('Get_SOP')?['FileLeafRef'], ' (batch ', string(int(triggerBody()?['text_1'])), ')')",
+          "emailMessage/Body": "@concat('<div style=\"font-family:Segoe UI,Arial,sans-serif;font-size:14px;max-width:760px\">','<p>The process analyst recommends <b>', string(length(body('Recommended'))), '</b> changes to <b>', body('Get_SOP')?['FileLeafRef'], '</b> (batch ', string(int(triggerBody()?['text_1'])), '). ','Approve or reject each one in the app. You can also approve changes the analyst dropped.</p>',concat('<p><a href=\"', concat('https://apps.powerapps.com/play/e/29763402-3928-e92c-9a69-ef9227209e1d/app/a4333e05-0428-4211-92bc-0ee35352bb48?tenantId=3c3756a1-7e41-4457-8a14-f8d519ad7494', '&sopId=', string(triggerBody()?['text']), '&tab=changes&batch=', string(int(triggerBody()?['text_1']))), '\" style=\"background:#2a78d6;color:#fff;padding:10px 18px;border-radius:6px;text-decoration:none;display:inline-block\">Review and decide in the app</a></p>'), variables('cards'),if(empty(body('Dropped_lines')), '', concat('<p style=\"font-size:11px;font-weight:bold;color:#898781\">DROPPED BY THE ANALYST</p><ul>', join(body('Dropped_lines'), ''), '</ul>')),concat('<p><a href=\"', concat('https://apps.powerapps.com/play/e/29763402-3928-e92c-9a69-ef9227209e1d/app/a4333e05-0428-4211-92bc-0ee35352bb48?tenantId=3c3756a1-7e41-4457-8a14-f8d519ad7494', '&sopId=', string(triggerBody()?['text']), '&tab=changes&batch=', string(int(triggerBody()?['text_1']))), '\" style=\"background:#2a78d6;color:#fff;padding:10px 18px;border-radius:6px;text-decoration:none;display:inline-block\">Review and decide in the app</a></p>'), '</div>')",
+          "emailMessage/Importance": "Normal"
+        },
+        "authentication": "@parameters('$authentication')"
+      }
+    },
+    "Log_row": {
+      "type": "Compose",
+      "runAfter": {
+        "Email_owner": [
+          "Succeeded"
+        ]
+      },
+      "inputs": {
+        "Title": "@concat('Batch ', string(int(triggerBody()?['text_1'])), ' sent to process owner: ', string(length(body('Recommended'))), ' recommended, ', string(length(body('Dropped'))), ' dropped')",
+        "SOPId": "@triggerBody()?['text']",
+        "BatchNo": "@int(triggerBody()?['text_1'])",
+        "Person": "@body('Get_SOP')?['ProcessOwner']",
+        "Comments": ""
+      }
+    },
+    "Log_sent": {
+      "type": "OpenApiConnection",
+      "inputs": {
+        "host": {
+          "connectionName": "shared_sharepointonline",
+          "operationId": "HttpRequest",
+          "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+        },
+        "parameters": {
+          "dataset": "https://consultonyx.sharepoint.com/sites/sop-process-map",
+          "parameters/method": "POST",
+          "parameters/uri": "_api/web/lists/getbytitle('Review History')/items",
+          "parameters/headers": {
+            "Accept": "application/json;odata=nometadata",
+            "Content-Type": "application/json;odata=nometadata"
+          },
+          "parameters/body": "@string(outputs('Log_row'))"
+        },
+        "authentication": "@parameters('$authentication')"
+      },
+      "runAfter": {
+        "Log_row": [
+          "Succeeded"
+        ]
+      }
+    },
+    "Fail_row": {
+      "type": "Compose",
+      "runAfter": {
+        "Email_owner": [
+          "Failed",
+          "TimedOut"
+        ]
+      },
+      "inputs": {
+        "Title": "@concat('Batch ', string(int(triggerBody()?['text_1'])), ' could not be emailed to the owner')",
+        "SOPId": "@triggerBody()?['text']",
+        "BatchNo": "@int(triggerBody()?['text_1'])",
+        "Person": "@body('Get_SOP')?['ProcessOwner']",
+        "Comments": "@{coalesce(body('Email_owner')?['error']?['message'], 'Email failed')}"
+      }
+    },
+    "Log_failure": {
+      "type": "OpenApiConnection",
+      "inputs": {
+        "host": {
+          "connectionName": "shared_sharepointonline",
+          "operationId": "HttpRequest",
+          "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+        },
+        "parameters": {
+          "dataset": "https://consultonyx.sharepoint.com/sites/sop-process-map",
+          "parameters/method": "POST",
+          "parameters/uri": "_api/web/lists/getbytitle('Review History')/items",
+          "parameters/headers": {
+            "Accept": "application/json;odata=nometadata",
+            "Content-Type": "application/json;odata=nometadata"
+          },
+          "parameters/body": "@string(outputs('Fail_row'))"
+        },
+        "authentication": "@parameters('$authentication')"
+      },
+      "runAfter": {
+        "Fail_row": [
+          "Succeeded"
+        ]
+      }
+    },
+    "Respond_sent": {
+      "type": "Response",
+      "kind": "PowerApp",
+      "runAfter": {
+        "Log_sent": [
+          "Succeeded"
+        ]
+      },
+      "inputs": {
+        "statusCode": 200,
+        "body": {
+          "sent": "yes",
+          "error": ""
+        },
+        "schema": {
+          "type": "object",
+          "properties": {
+            "sent": {
+              "title": "sent",
+              "type": "string",
+              "x-ms-dynamically-added": true
+            },
+            "error": {
+              "title": "error",
+              "type": "string",
+              "x-ms-dynamically-added": true
+            }
+          }
+        }
+      }
+    },
+    "Respond_failed": {
+      "type": "Response",
+      "kind": "PowerApp",
+      "runAfter": {
+        "Log_failure": [
+          "Succeeded"
+        ]
+      },
+      "inputs": {
+        "statusCode": 200,
+        "body": {
+          "sent": "no",
+          "error": "@{outputs('Fail_row')?['Comments']}"
+        },
+        "schema": {
+          "type": "object",
+          "properties": {
+            "sent": {
+              "title": "sent",
+              "type": "string",
+              "x-ms-dynamically-added": true
+            },
+            "error": {
+              "title": "error",
+              "type": "string",
+              "x-ms-dynamically-added": true
+            }
+          }
+        }
+      }
+    }
+  }
+}

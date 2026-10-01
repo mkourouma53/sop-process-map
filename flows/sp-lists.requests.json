@@ -1,0 +1,781 @@
+[
+ {
+  "method": "POST",
+  "uri": "_api/web/lists",
+  "body": {
+   "__metadata": {
+    "type": "SP.List"
+   },
+   "BaseTemplate": 101,
+   "Title": "SOPs"
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('SOPs')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Text\" Name=\"Department\" DisplayName=\"Department\" />",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('SOPs')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Text\" Name=\"ProcessOwner\" DisplayName=\"Process Owner (email)\" />",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('SOPs')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Choice\" Name=\"SOPStatus\" DisplayName=\"Status\" ><CHOICES><CHOICE>Uploaded</CHOICE><CHOICE>Analyzing</CHOICE><CHOICE>Analyzed</CHOICE><CHOICE>In review</CHOICE><CHOICE>Ready for owner</CHOICE><CHOICE>Approved</CHOICE><CHOICE>Failed</CHOICE></CHOICES></Field>",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('SOPs')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Text\" Name=\"SOPVersion\" DisplayName=\"Version\" />",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('SOPs')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Text\" Name=\"PromptVersion\" DisplayName=\"Prompt Version\" />",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists",
+  "body": {
+   "__metadata": {
+    "type": "SP.List"
+   },
+   "BaseTemplate": 100,
+   "Title": "Process Steps"
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('Process Steps')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Number\" Name=\"SOPId\" DisplayName=\"SOP ID\" />",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('Process Steps')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Number\" Name=\"StepOrder\" DisplayName=\"Order\" />",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('Process Steps')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Text\" Name=\"Actor\" DisplayName=\"Actor\" />",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('Process Steps')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Note\" Name=\"Action\" DisplayName=\"Action\" NumLines=\"6\" RichText=\"FALSE\"/>",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('Process Steps')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Note\" Name=\"StepInput\" DisplayName=\"Input\" NumLines=\"6\" RichText=\"FALSE\"/>",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('Process Steps')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Note\" Name=\"StepOutput\" DisplayName=\"Output\" NumLines=\"6\" RichText=\"FALSE\"/>",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('Process Steps')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Text\" Name=\"SystemUsed\" DisplayName=\"System\" />",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('Process Steps')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Text\" Name=\"SourceSection\" DisplayName=\"Source Section\" />",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('Process Steps')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Note\" Name=\"SourceQuote\" DisplayName=\"Source Quote\" NumLines=\"6\" RichText=\"FALSE\"/>",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('Process Steps')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Boolean\" Name=\"Inferred\" DisplayName=\"Inferred\" />",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('Process Steps')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Boolean\" Name=\"Corrected\" DisplayName=\"Corrected\" />",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists",
+  "body": {
+   "__metadata": {
+    "type": "SP.List"
+   },
+   "BaseTemplate": 100,
+   "Title": "Decision Points"
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('Decision Points')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Number\" Name=\"SOPId\" DisplayName=\"SOP ID\" />",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('Decision Points')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Text\" Name=\"AfterStep\" DisplayName=\"After Step\" />",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('Decision Points')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Note\" Name=\"Condition\" DisplayName=\"Condition\" NumLines=\"6\" RichText=\"FALSE\"/>",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('Decision Points')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Note\" Name=\"Branches\" DisplayName=\"Branches (JSON)\" NumLines=\"6\" RichText=\"FALSE\"/>",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('Decision Points')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Text\" Name=\"SourceSection\" DisplayName=\"Source Section\" />",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('Decision Points')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Boolean\" Name=\"Inferred\" DisplayName=\"Inferred\" />",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists",
+  "body": {
+   "__metadata": {
+    "type": "SP.List"
+   },
+   "BaseTemplate": 100,
+   "Title": "Risks"
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('Risks')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Number\" Name=\"SOPId\" DisplayName=\"SOP ID\" />",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('Risks')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Text\" Name=\"StepRef\" DisplayName=\"Step\" />",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('Risks')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Choice\" Name=\"RiskType\" DisplayName=\"Risk Type\" ><CHOICES><CHOICE>manual_handoff</CHOICE><CHOICE>rekeying</CHOICE><CHOICE>missing_control</CHOICE><CHOICE>undefined_exception</CHOICE><CHOICE>single_point_of_failure</CHOICE><CHOICE>vague_ownership_or_timing</CHOICE></CHOICES></Field>",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('Risks')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Note\" Name=\"Description\" DisplayName=\"Description\" NumLines=\"6\" RichText=\"FALSE\"/>",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('Risks')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Choice\" Name=\"Severity\" DisplayName=\"Severity\" ><CHOICES><CHOICE>low</CHOICE><CHOICE>medium</CHOICE><CHOICE>high</CHOICE></CHOICES></Field>",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists",
+  "body": {
+   "__metadata": {
+    "type": "SP.List"
+   },
+   "BaseTemplate": 100,
+   "Title": "Recommendations"
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('Recommendations')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Number\" Name=\"SOPId\" DisplayName=\"SOP ID\" />",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('Recommendations')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Text\" Name=\"StepRef\" DisplayName=\"Step\" />",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('Recommendations')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Choice\" Name=\"Label\" DisplayName=\"Label\" ><CHOICES><CHOICE>digitize</CHOICE><CHOICE>automate</CHOICE><CHOICE>ai_assist</CHOICE><CHOICE>eliminate</CHOICE><CHOICE>keep_human</CHOICE></CHOICES></Field>",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('Recommendations')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Note\" Name=\"Reason\" DisplayName=\"Reason\" NumLines=\"6\" RichText=\"FALSE\"/>",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('Recommendations')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Text\" Name=\"SuggestedTool\" DisplayName=\"Suggested Tool\" />",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('Recommendations')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Number\" Name=\"ValueScore\" DisplayName=\"Value\" />",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('Recommendations')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Number\" Name=\"EffortScore\" DisplayName=\"Effort\" />",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('Recommendations')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Number\" Name=\"Priority\" DisplayName=\"Priority\" />",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('Recommendations')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Choice\" Name=\"RecStatus\" DisplayName=\"Status\" ><CHOICES><CHOICE>Proposed</CHOICE><CHOICE>Approved</CHOICE><CHOICE>Rejected</CHOICE></CHOICES></Field>",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('Recommendations')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Note\" Name=\"RejectionReason\" DisplayName=\"Rejection Reason\" NumLines=\"6\" RichText=\"FALSE\"/>",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('Recommendations')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Note\" Name=\"StarterFlow\" DisplayName=\"Starter Flow (JSON)\" NumLines=\"6\" RichText=\"FALSE\"/>",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists",
+  "body": {
+   "__metadata": {
+    "type": "SP.List"
+   },
+   "BaseTemplate": 100,
+   "Title": "Future Steps"
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('Future Steps')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Number\" Name=\"SOPId\" DisplayName=\"SOP ID\" />",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('Future Steps')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Number\" Name=\"StepOrder\" DisplayName=\"Order\" />",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('Future Steps')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Text\" Name=\"FromStep\" DisplayName=\"From Step\" />",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('Future Steps')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Text\" Name=\"Actor\" DisplayName=\"Actor\" />",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('Future Steps')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Note\" Name=\"Action\" DisplayName=\"Action\" NumLines=\"6\" RichText=\"FALSE\"/>",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('Future Steps')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Choice\" Name=\"ChangeType\" DisplayName=\"Change\" ><CHOICES><CHOICE>unchanged</CHOICE><CHOICE>digitized</CHOICE><CHOICE>automated</CHOICE><CHOICE>ai_assisted</CHOICE><CHOICE>new</CHOICE></CHOICES></Field>",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists",
+  "body": {
+   "__metadata": {
+    "type": "SP.List"
+   },
+   "BaseTemplate": 100,
+   "Title": "AI Runs"
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('AI Runs')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Number\" Name=\"SOPId\" DisplayName=\"SOP ID\" />",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('AI Runs')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Text\" Name=\"PromptVersion\" DisplayName=\"Prompt Version\" />",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('AI Runs')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Text\" Name=\"Model\" DisplayName=\"Model\" />",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('AI Runs')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Number\" Name=\"InputTokens\" DisplayName=\"Input Tokens\" />",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('AI Runs')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Number\" Name=\"OutputTokens\" DisplayName=\"Output Tokens\" />",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('AI Runs')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Number\" Name=\"DurationSec\" DisplayName=\"Duration (s)\" />",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('AI Runs')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Number\" Name=\"CostUSD\" DisplayName=\"Cost (USD)\" />",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('AI Runs')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Choice\" Name=\"RunStatus\" DisplayName=\"Status\" ><CHOICES><CHOICE>Succeeded</CHOICE><CHOICE>Failed</CHOICE></CHOICES></Field>",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('AI Runs')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Note\" Name=\"ErrorMessage\" DisplayName=\"Error\" NumLines=\"6\" RichText=\"FALSE\"/>",
+    "Options": 24
+   }
+  }
+ },
+ {
+  "method": "POST",
+  "uri": "_api/web/lists/getbytitle('AI Runs')/fields/createfieldasxml",
+  "body": {
+   "parameters": {
+    "__metadata": {
+     "type": "SP.XmlSchemaFieldCreationInformation"
+    },
+    "SchemaXml": "<Field Type=\"Note\" Name=\"RawOutput\" DisplayName=\"Raw Output (JSON)\" NumLines=\"6\" RichText=\"FALSE\" UnlimitedLengthInDocumentLibrary=\"TRUE\"/>",
+    "Options": 24
+   }
+  }
+ }
+]

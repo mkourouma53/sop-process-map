@@ -1,0 +1,1292 @@
+{
+  "sop_title": "SOP-01 NTRR Account Request / Data Access Permission Request",
+  "summary": "This SOP describes how an investigator or data manager requests a National Trauma Research Repository (NTRR) account and data access privileges, from submitting a signed Data Access Request (DAR) through review, authorization, account creation, and first login. The applicant runs initiation and validation, NTRR Operations staff check the DAR, the NTRR Data Access & Quality Committee (DAC) authorizes access, and the NTRR Admin creates the account.",
+  "sections": [
+    {
+      "section": "Preamble (untitled introduction)",
+      "title": "NTRR overview and credential verification",
+      "classification": "background",
+      "reason": "Describes the purpose of the portal and who may apply; it states no ordered actions, so it is background.",
+      "mapped": false
+    },
+    {
+      "section": "Prerequisites",
+      "title": "Prerequisites",
+      "classification": "rules",
+      "reason": "A requirement list (a signed DAR PDF) that has no internal order; it gates DAR completion and upload in S3 to S5.",
+      "mapped": true
+    },
+    {
+      "section": "Procedure",
+      "title": "Procedure (introductory paragraph)",
+      "classification": "background",
+      "reason": "Scope statement and typical duration with no actions of its own; the 1-3 business day duration is captured as timing.",
+      "mapped": false
+    },
+    {
+      "section": "Data Access Permission Request Initiation",
+      "title": "Data Access Permission Request Initiation",
+      "classification": "procedure",
+      "reason": "Order matters: the DAR must be downloaded, signed, and uploaded before the fields are completed and the request is submitted.",
+      "mapped": true
+    },
+    {
+      "section": "Data Access Permission Request Review and Authorization",
+      "title": "Data Access Permission Request Review and Authorization",
+      "classification": "procedure",
+      "reason": "Order matters: Operations review precedes DAC authorization, which must precede account creation and notification.",
+      "mapped": true
+    },
+    {
+      "section": "Account Validation",
+      "title": "Account Validation",
+      "classification": "procedure",
+      "reason": "Order matters: the applicant waits for the approval email before logging in and accessing data.",
+      "mapped": true
+    },
+    {
+      "section": "DAR FAQs",
+      "title": "DAR FAQs (Q1-Q4)",
+      "classification": "rules",
+      "reason": "The Q&A items on required fields, PI and non-PI completion, and Business Official sign-off could be read in any order; they gate DAR completion and add the Business Official signature step.",
+      "mapped": true
+    },
+    {
+      "section": "DAR FAQs Q5 - Data Submission",
+      "title": "Data Submission privileges",
+      "classification": "background",
+      "reason": "Definitions of the GUID, Data Dictionary, and Data Repository modules with no actions.",
+      "mapped": false
+    },
+    {
+      "section": "DAR FAQs Q5 - Data Access",
+      "title": "Data Access privileges",
+      "classification": "background",
+      "reason": "Definitions of the Query, Data Repository, and Datastore modules with no actions.",
+      "mapped": false
+    }
+  ],
+  "processes": [
+    {
+      "name": "Request NTRR account and data access",
+      "trigger": "An investigator or data manager at a research site needs to submit or access trauma-related data in the NTRR",
+      "outcome": "An activated NTRR user account with the authorized privileges, and the applicant logged in and able to access data",
+      "sections": [
+        "Prerequisites",
+        "Data Access Permission Request Initiation",
+        "DAR FAQs",
+        "Data Access Permission Request Review and Authorization",
+        "Account Validation"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "process": "Request NTRR account and data access",
+      "actor": "Applicant",
+      "action": "Go to the NTRR website, log in, and select Request a New Account",
+      "input": "Username and password",
+      "output": "Account Management page open",
+      "system": "NTRR website",
+      "source_section": "Data Access Permission Request Initiation",
+      "source_quote": "login using your username and password. Then click the \"Request a New Account\" link.",
+      "inferred": false
+    },
+    {
+      "id": "S2",
+      "process": "Request NTRR account and data access",
+      "actor": "Applicant",
+      "action": "Download the Data Access Request template",
+      "input": "Account Management page, Administrative File Templates",
+      "output": "Blank DAR template",
+      "system": "NTRR website",
+      "source_section": "Data Access Permission Request Initiation",
+      "source_quote": "click and download the Data Access Request template.",
+      "inferred": false
+    },
+    {
+      "id": "S3",
+      "process": "Request NTRR account and data access",
+      "actor": "Applicant",
+      "action": "Complete and sign the DAR, including the Recipient Information and Certifications sections and, for non-PI applicants, the PI contact information",
+      "input": "Blank DAR template",
+      "output": "Completed DAR signed by the applicant",
+      "system": "PDF DAR form",
+      "source_section": "Data Access Permission Request Initiation; DAR FAQs",
+      "source_quote": "Once completed and signed",
+      "inferred": false
+    },
+    {
+      "id": "S4",
+      "process": "Request NTRR account and data access",
+      "actor": "Recipient's Authorized Institutional Business Official",
+      "action": "Sign off on the Authorized Institutional Business Official section of the DAR",
+      "input": "Completed DAR",
+      "output": "Fully signed DAR PDF",
+      "system": "PDF DAR form",
+      "source_section": "DAR FAQs",
+      "source_quote": "The person who signs off on this section of the form needs to be responsible for assuring compliance",
+      "inferred": false
+    },
+    {
+      "id": "S5",
+      "process": "Request NTRR account and data access",
+      "actor": "Applicant",
+      "action": "Upload the signed DAR as a Data Access Request file type and continue",
+      "input": "Fully signed DAR PDF",
+      "output": "DAR attached to the account request",
+      "system": "NTRR website",
+      "source_section": "Data Access Permission Request Initiation",
+      "source_quote": "upload the DAR under \"Upload Supporting Documentation.\"",
+      "inferred": false
+    },
+    {
+      "id": "S6",
+      "process": "Request NTRR account and data access",
+      "actor": "Applicant",
+      "action": "Complete the required account fields, including a description of interest in the NTRR, and continue",
+      "input": "Account Management form",
+      "output": "Completed account request details",
+      "system": "NTRR website",
+      "source_section": "Data Access Permission Request Initiation",
+      "source_quote": "fill in the required fields denoted with an *.",
+      "inferred": false
+    },
+    {
+      "id": "S7",
+      "process": "Request NTRR account and data access",
+      "actor": "Applicant",
+      "action": "Select the Data Repository, Query, and Datastore privileges",
+      "input": "Account Privileges page",
+      "output": "Requested privileges selected",
+      "system": "NTRR website",
+      "source_section": "Data Access Permission Request Initiation",
+      "source_quote": "check the boxes corresponding to the Data Repository, Query, and Datastore privileges.",
+      "inferred": false
+    },
+    {
+      "id": "S8",
+      "process": "Request NTRR account and data access",
+      "actor": "Applicant",
+      "action": "Submit the account request",
+      "input": "Completed request with DAR and privileges",
+      "output": "Submitted request; confirmation page displayed if all required fields were entered",
+      "system": "NTRR website",
+      "source_section": "Data Access Permission Request Initiation",
+      "source_quote": "Click [Submit Request].",
+      "inferred": false
+    },
+    {
+      "id": "S9",
+      "process": "Request NTRR account and data access",
+      "actor": "NTRR Operations staff",
+      "action": "Review the DAR for accuracy and completeness",
+      "input": "Submitted DAR",
+      "output": "Reviewed DAR",
+      "system": "",
+      "source_section": "Data Access Permission Request Review and Authorization",
+      "source_quote": "reviews the Data Access Request form for accuracy and completeness.",
+      "inferred": false
+    },
+    {
+      "id": "S10",
+      "process": "Request NTRR account and data access",
+      "actor": "NTRR Operations staff",
+      "action": "Contact the applicant for more information about errors in the form",
+      "input": "DAR with errors",
+      "output": "Information request to the applicant",
+      "system": "",
+      "source_section": "Data Access Permission Request Review and Authorization",
+      "source_quote": "may contact the applicant for more information if there are any errors in the form.",
+      "inferred": false
+    },
+    {
+      "id": "S11",
+      "process": "Request NTRR account and data access",
+      "actor": "NTRR Operations staff",
+      "action": "Provide the DAR to the NTRR DAC",
+      "input": "Reviewed DAR",
+      "output": "DAR with the DAC for review",
+      "system": "",
+      "source_section": "Data Access Permission Request Review and Authorization",
+      "source_quote": "provides this form to the NTRR DAC.",
+      "inferred": false
+    },
+    {
+      "id": "S12",
+      "process": "Request NTRR account and data access",
+      "actor": "NTRR Data Access & Quality Committee (DAC)",
+      "action": "Review the information, verify professional credentials, and authorize data access",
+      "input": "DAR and request information",
+      "output": "Data access authorization",
+      "system": "",
+      "source_section": "Data Access Permission Request Review and Authorization",
+      "source_quote": "The NTRR DAC reviews the information and authorizes data access.",
+      "inferred": false
+    },
+    {
+      "id": "S13",
+      "process": "Request NTRR account and data access",
+      "actor": "NTRR Admin",
+      "action": "Establish the user account with privileges matching the authorized data access",
+      "input": "DAC authorization",
+      "output": "Active user account with privileges",
+      "system": "NTRR website",
+      "source_section": "Data Access Permission Request Review and Authorization",
+      "source_quote": "the NTRR Admin establishes a user account, with the privileges corresponding to data access.",
+      "inferred": false
+    },
+    {
+      "id": "S14",
+      "process": "Request NTRR account and data access",
+      "actor": "NTRR Admin",
+      "action": "Send the applicant the automated account activation or privilege change email",
+      "input": "Active user account",
+      "output": "Approval email from noreply@ntrr.nih.gov",
+      "system": "Email",
+      "source_section": "Data Access Permission Request Review and Authorization",
+      "source_quote": "sends you an automated email message notifying you of your account activation",
+      "inferred": false
+    },
+    {
+      "id": "S15",
+      "process": "Request NTRR account and data access",
+      "actor": "Applicant",
+      "action": "Watch the email inbox for the account approval message",
+      "input": "Pending account request",
+      "output": "Approval email received, or not received",
+      "system": "Email",
+      "source_section": "Account Validation",
+      "source_quote": "Watch your email inbox for a message from \"noreply@ntrr.nih.gov\"",
+      "inferred": false
+    },
+    {
+      "id": "S16",
+      "process": "Request NTRR account and data access",
+      "actor": "Applicant",
+      "action": "Check the spam filter and/or contact the NTRR team",
+      "input": "Approval email not received in time",
+      "output": "Email located or inquiry sent to the NTRR team",
+      "system": "Email",
+      "source_section": "Account Validation",
+      "source_quote": "please check your spam filter and/ or reach out to the NTRR team.",
+      "inferred": false
+    },
+    {
+      "id": "S17",
+      "process": "Request NTRR account and data access",
+      "actor": "Applicant",
+      "action": "Return to the NTRR website and log in",
+      "input": "Approval email",
+      "output": "Logged-in session",
+      "system": "NTRR website",
+      "source_section": "Account Validation",
+      "source_quote": "Return to the NTRR website to login.",
+      "inferred": false
+    },
+    {
+      "id": "S18",
+      "process": "Request NTRR account and data access",
+      "actor": "Applicant",
+      "action": "Access data in the NTRR",
+      "input": "Logged-in session with granted privileges",
+      "output": "Data access in use",
+      "system": "NTRR website",
+      "source_section": "Account Validation",
+      "source_quote": "You may now access the data in the NTRR.",
+      "inferred": false
+    }
+  ],
+  "decisions": [
+    {
+      "id": "D1",
+      "process": "Request NTRR account and data access",
+      "after_step": "S2",
+      "condition": "Is the applicant the PI of the study?",
+      "branches": [
+        {
+          "label": "Yes - complete the DAR without the PI Contact Information section, including Business Official information",
+          "next_step": "S3"
+        },
+        {
+          "label": "No - complete the DAR including the PI Contact Information and Business Official information",
+          "next_step": "S3"
+        }
+      ],
+      "source_section": "DAR FAQs",
+      "inferred": false
+    },
+    {
+      "id": "D2",
+      "process": "Request NTRR account and data access",
+      "after_step": "S8",
+      "condition": "Were all required fields successfully entered, so that the confirmation page is displayed?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S9"
+        },
+        {
+          "label": "No",
+          "next_step": "UNDEFINED"
+        }
+      ],
+      "source_section": "Data Access Permission Request Initiation",
+      "inferred": false
+    },
+    {
+      "id": "D3",
+      "process": "Request NTRR account and data access",
+      "after_step": "S9",
+      "condition": "Does the DAR contain errors?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S10"
+        },
+        {
+          "label": "No",
+          "next_step": "S11"
+        }
+      ],
+      "source_section": "Data Access Permission Request Review and Authorization",
+      "inferred": false
+    },
+    {
+      "id": "D4",
+      "process": "Request NTRR account and data access",
+      "after_step": "S12",
+      "condition": "Does the NTRR DAC authorize data access?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S13"
+        },
+        {
+          "label": "No",
+          "next_step": "UNDEFINED"
+        }
+      ],
+      "source_section": "Data Access Permission Request Review and Authorization",
+      "inferred": true
+    },
+    {
+      "id": "D5",
+      "process": "Request NTRR account and data access",
+      "after_step": "S15",
+      "condition": "Has the approval email arrived in a timely manner?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S17"
+        },
+        {
+          "label": "No",
+          "next_step": "S16"
+        }
+      ],
+      "source_section": "Account Validation",
+      "inferred": false
+    }
+  ],
+  "handoffs": [
+    {
+      "after_step": "S3",
+      "from_actor": "Applicant",
+      "to_actor": "Recipient's Authorized Institutional Business Official"
+    },
+    {
+      "after_step": "S4",
+      "from_actor": "Recipient's Authorized Institutional Business Official",
+      "to_actor": "Applicant"
+    },
+    {
+      "after_step": "S8",
+      "from_actor": "Applicant",
+      "to_actor": "NTRR Operations staff"
+    },
+    {
+      "after_step": "S10",
+      "from_actor": "NTRR Operations staff",
+      "to_actor": "Applicant"
+    },
+    {
+      "after_step": "S11",
+      "from_actor": "NTRR Operations staff",
+      "to_actor": "NTRR Data Access & Quality Committee (DAC)"
+    },
+    {
+      "after_step": "S12",
+      "from_actor": "NTRR Data Access & Quality Committee (DAC)",
+      "to_actor": "NTRR Admin"
+    },
+    {
+      "after_step": "S14",
+      "from_actor": "NTRR Admin",
+      "to_actor": "Applicant"
+    },
+    {
+      "after_step": "S16",
+      "from_actor": "Applicant",
+      "to_actor": "NTRR team"
+    }
+  ],
+  "exceptions": [
+    {
+      "step": "S1",
+      "trigger": "Applicant does not yet have the username and password needed to log in before requesting a new account",
+      "handling": "",
+      "source_section": "Data Access Permission Request Initiation"
+    },
+    {
+      "step": "S5",
+      "trigger": "Signed DAR prerequisite is not available, for example because the Business Official signature is missing",
+      "handling": "",
+      "source_section": "Prerequisites"
+    },
+    {
+      "step": "S8",
+      "trigger": "Required fields are not all entered, so no confirmation page appears",
+      "handling": "",
+      "source_section": "Data Access Permission Request Initiation"
+    },
+    {
+      "step": "S10",
+      "trigger": "DAR contains errors",
+      "handling": "NTRR Operations team may contact the applicant for more information; the SOP does not say how corrections are resubmitted or when review resumes.",
+      "source_section": "Data Access Permission Request Review and Authorization"
+    },
+    {
+      "step": "S12",
+      "trigger": "DAC does not authorize data access",
+      "handling": "",
+      "source_section": "Data Access Permission Request Review and Authorization"
+    },
+    {
+      "step": "S15",
+      "trigger": "Approval email is not received in a timely manner",
+      "handling": "Check the spam filter and/or reach out to the NTRR team.",
+      "source_section": "Account Validation"
+    }
+  ],
+  "timing": [
+    {
+      "step": "S1-S18",
+      "requirement": "Entire procedure typically requires 1-3 business days, assuming the signed DAR prerequisite is already met",
+      "source_section": "Procedure"
+    },
+    {
+      "step": "S15",
+      "requirement": "Approval email expected 'in a timely manner' (no specific period stated) before the applicant takes follow-up action",
+      "source_section": "Account Validation"
+    }
+  ],
+  "risks": [
+    {
+      "id": "R1",
+      "process": "Request NTRR account and data access",
+      "step": "S10",
+      "risk_type": "undefined_exception",
+      "what_could_go_wrong": "Operations finds an error in the DAR and emails the applicant, but nobody knows how the corrected form comes back or when review restarts. The request sits in limbo, and because contact is optional ('may'), a flawed DAR could also be forwarded to the DAC as is.",
+      "cause": "Data Access Permission Request Review and Authorization item 2 says Operations 'may contact the applicant' about errors. It gives no resubmission path, no deadline, and no return to the review in item 1 (map exception on S10, decision D3).",
+      "impact": "The applicant waits past the stated 1-3 business days with no status. If the error is not corrected, an inaccurate or incomplete DAR reaches the DAC for a restricted-data decision.",
+      "quantified_impact": [
+        {
+          "metric": "Correction loop return steps defined in SOP",
+          "value": "0",
+          "basis": "Map: S10 has no outgoing step back to S9; exception handling says resubmission is not described"
+        },
+        {
+          "metric": "Stated end-to-end duration exceeded by loop",
+          "value": "1-3 business days",
+          "basis": "Procedure introductory paragraph"
+        }
+      ],
+      "severity": "high",
+      "severity_reason": "Errors in a multi-section signed form are likely, and the loop has no defined end, so both delay and an unchecked DAR reaching the DAC are plausible.",
+      "addressed_by": [
+        "A8",
+        "A9"
+      ]
+    },
+    {
+      "id": "R2",
+      "process": "Request NTRR account and data access",
+      "step": "S8",
+      "risk_type": "undefined_exception",
+      "what_could_go_wrong": "The applicant clicks Submit, no confirmation page appears, and the SOP does not say what to do next. The applicant may think the request went through when it did not.",
+      "cause": "Data Access Permission Request Initiation item 10 only covers the success case ('If all required fields were successfully entered...'). Decision D2 'No' branch is UNDEFINED.",
+      "impact": "The request is never received by Operations, and the applicant waits for an approval email that will not come.",
+      "quantified_impact": [
+        {
+          "metric": "Undefined decision branches",
+          "value": "1 (D2 No)",
+          "basis": "Map decision D2"
+        }
+      ],
+      "severity": "low",
+      "severity_reason": "The portal likely flags missing fields on screen, so this is low likelihood, but a silent failure delays access.",
+      "addressed_by": [
+        "A7"
+      ]
+    },
+    {
+      "id": "R3",
+      "process": "Request NTRR account and data access",
+      "step": "S12",
+      "risk_type": "undefined_exception",
+      "what_could_go_wrong": "The DAC declines or narrows the requested access, and nobody is told to inform the applicant or record the reason. The applicant keeps waiting and chasing the NTRR team.",
+      "cause": "Data Access Permission Request Review and Authorization item 4 only describes the DAC authorizing access. The denial branch (D4, inferred) has no next step, and no partial authorization is described.",
+      "impact": "The applicant experiences an indefinite wait. There is no record of why access to restricted participant data was refused, and the applicant may submit duplicate requests.",
+      "quantified_impact": [
+        {
+          "metric": "Undefined decision branches",
+          "value": "1 (D4 No)",
+          "basis": "Map decision D4"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "Denials are probably uncommon, but when one happens the applicant gets no outcome and no audit trail exists.",
+      "addressed_by": [
+        "A10",
+        "A11"
+      ]
+    },
+    {
+      "id": "R4",
+      "process": "Request NTRR account and data access",
+      "step": "S11",
+      "risk_type": "manual_handoff",
+      "what_could_go_wrong": "The reviewed DAR passes from Operations to the DAC, and then the DAC authorization passes to the Admin, with no tracking. A request can stall in someone's inbox with no one noticing.",
+      "cause": "Data Access Permission Request Review and Authorization items 3-5 describe Operations 'provides this form to the NTRR DAC', and the Admin acts 'with authorization from the NTRR DAC'. No method, tracking, or per-stage deadline is given; only the overall 'typically requires 1-3 business days' in Procedure.",
+      "impact": "Access is delayed for the researcher. No one can say where a request is or who owns it.",
+      "quantified_impact": [
+        {
+          "metric": "Internal handoffs between NTRR roles",
+          "value": "2 (S11 to DAC, S12 to Admin)",
+          "basis": "Map handoffs after S11 and S12"
+        },
+        {
+          "metric": "Total handoffs in process",
+          "value": "8",
+          "basis": "Map handoffs list"
+        },
+        {
+          "metric": "Stated end-to-end duration",
+          "value": "1-3 business days",
+          "basis": "Procedure introductory paragraph"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "Untracked handoffs happen on every request, though the impact is delay rather than a compliance breach.",
+      "addressed_by": [
+        "A10",
+        "A12"
+      ]
+    },
+    {
+      "id": "R5",
+      "process": "Request NTRR account and data access",
+      "step": "S13",
+      "risk_type": "missing_control",
+      "what_could_go_wrong": "The Admin sets up the account with more privileges than the DAC approved, for example Query download access that was not authorized. Nothing in the process checks the result.",
+      "cause": "Data Access Permission Request Review and Authorization item 5 says the Admin establishes the account 'with the privileges corresponding to data access'. The SOP records no authorized-privilege list and no verification after setup.",
+      "impact": "Unauthorized access to restricted trauma research participant data creates confidentiality and audit exposure.",
+      "quantified_impact": [
+        {
+          "metric": "Checks between DAC authorization and privilege grant",
+          "value": "0",
+          "basis": "Map S12 to S13; no decision or review step"
+        }
+      ],
+      "severity": "high",
+      "severity_reason": "The likelihood of a mismatch is moderate given manual setup, and the impact is high because the data is restricted participant data.",
+      "addressed_by": [
+        "A12"
+      ]
+    },
+    {
+      "id": "R6",
+      "process": "Request NTRR account and data access",
+      "step": "S4",
+      "risk_type": "missing_control",
+      "what_could_go_wrong": "Someone without authority signs as the institution's Business Official, and the DAR is accepted because review only checks that the form is accurate and complete.",
+      "cause": "DAR FAQs Q4 says the authorized signer 'can vary from site to site' and is only 'recommended' to be confirmed with leadership. Review and Authorization item 1 checks 'accuracy and completeness' only.",
+      "impact": "The institutional compliance commitment for data use may be invalid, which creates a compliance and audit exposure.",
+      "quantified_impact": [
+        {
+          "metric": "Signer authority verification steps",
+          "value": "0",
+          "basis": "Map S4 and S9; no verification step"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "Most applicants follow the guidance, but a wrong signer undermines the compliance basis for access.",
+      "addressed_by": [
+        "A3",
+        "A8"
+      ]
+    },
+    {
+      "id": "R7",
+      "process": "Request NTRR account and data access",
+      "step": "S15",
+      "risk_type": "vague_ownership_or_timing",
+      "what_could_go_wrong": "The applicant does not know how long to wait for the approval email or who 'the NTRR team' is. They either chase too early or wait days without acting.",
+      "cause": "Account Validation item 1 says 'If you do not receive an email in a timely manner... reach out to the NTRR team'. It gives no period and no contact. The team is also called 'Operations staff', 'Operations team', and 'NTRR team' in different sections.",
+      "impact": "Applicants experience delays and repeated inquiries, and NTRR staff spend time on status questions.",
+      "quantified_impact": [
+        {
+          "metric": "Defined wait period before follow-up",
+          "value": "none stated",
+          "basis": "Account Validation item 1; map timing for S15"
+        }
+      ],
+      "severity": "low",
+      "severity_reason": "This is likely on many requests, but the impact is limited to delay and inquiry effort.",
+      "addressed_by": [
+        "A13"
+      ]
+    },
+    {
+      "id": "R8",
+      "process": "Request NTRR account and data access",
+      "step": "S1",
+      "risk_type": "undefined_exception",
+      "what_could_go_wrong": "A new investigator without an existing username and password cannot get past the login step required to request an account. The SOP does not say how to get credentials.",
+      "cause": "Data Access Permission Request Initiation item 2 requires login 'using your username and password' before clicking 'Request a New Account'. The map exception on S1 has no handling.",
+      "impact": "First-time applicants are blocked at the start and must contact NTRR outside the process.",
+      "quantified_impact": [
+        {
+          "metric": "Defined handling for applicants without credentials",
+          "value": "0",
+          "basis": "Map exception on S1"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "This affects any first-time applicant. The SOP owner must clarify it, because no workflow tool can resolve the ambiguity on its own.",
+      "addressed_by": []
+    },
+    {
+      "id": "R9",
+      "process": "Request NTRR account and data access",
+      "step": "S7",
+      "risk_type": "conflicting_rule",
+      "what_could_go_wrong": "Applicants tick the three privileges the procedure tells them to, even when they actually need Data Submission modules (GUID, Data Dictionary), or they request download access they do not need.",
+      "cause": "Data Access Permission Request Initiation item 8 tells applicants to check Data Repository, Query, and Datastore. DAR FAQs Q5 says to 'request modules based on your need' and lists Data Submission modules as well.",
+      "impact": "Applicants are either over-provisioned with restricted-data access or have to re-request privileges, which restarts review.",
+      "quantified_impact": [
+        {
+          "metric": "Sections giving different privilege instructions",
+          "value": "2",
+          "basis": "Initiation item 8 vs DAR FAQs Q5"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "The conflict appears on every request, and over-requesting Query access raises data exposure.",
+      "addressed_by": [
+        "A6"
+      ]
+    },
+    {
+      "id": "R10",
+      "process": "Request NTRR account and data access",
+      "step": "S6",
+      "risk_type": "rekeying",
+      "what_could_go_wrong": "The applicant types their details into the PDF DAR and then types them again in the account fields. The two versions can differ, which leads to review errors.",
+      "cause": "Data Access Permission Request Initiation items 4 and 6 require the DAR (Recipient Information per DAR FAQs Q1) and then separate required fields on the Account Management page. The SOP does not list the S6 fields, so the extent of overlap is inferred.",
+      "impact": "Mismatched details trigger the error loop in S10 and add applicant effort.",
+      "quantified_impact": [
+        {
+          "metric": "Places applicant information is entered",
+          "value": "2 (S3 PDF DAR, S6 web form)",
+          "basis": "Map steps S3 and S6"
+        }
+      ],
+      "severity": "low",
+      "severity_reason": "Overlap is likely but unconfirmed, and the impact is rework rather than harm.",
+      "addressed_by": [
+        "A1",
+        "A5"
+      ]
+    },
+    {
+      "id": "R11",
+      "process": "Request NTRR account and data access",
+      "step": "S4",
+      "risk_type": "manual_handoff",
+      "what_could_go_wrong": "The DAR goes from the applicant to the Business Official for signature and back by email or paper with no tracking. The signature stalls and the request never starts.",
+      "cause": "Prerequisites requires a 'Signed PDF of the Data Access Request (DAR) form', and DAR FAQs Q4 requires Business Official sign-off. The SOP gives no routing method, and this time is excluded from the 1-3 business day estimate ('assuming Prerequisites are already met').",
+      "impact": "Researchers face an untracked delay before submission, and NTRR has no visibility of it.",
+      "quantified_impact": [
+        {
+          "metric": "Untracked handoffs for signature",
+          "value": "2 (S3 to Business Official, S4 back to applicant)",
+          "basis": "Map handoffs after S3 and S4"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "This happens on every request, and the delay falls outside any stated timeframe.",
+      "addressed_by": [
+        "A3"
+      ]
+    }
+  ],
+  "recommendations": [
+    {
+      "id": "A1",
+      "process": "Request NTRR account and data access",
+      "step": "S3",
+      "label": "digitize",
+      "proposed_change": "Replace the downloadable PDF DAR with an online request form. The form captures Recipient Information, Certifications, PI contact (shown only for non-PI applicants per D1), and Business Official details, and writes to a request record.",
+      "reason": "Structured fields remove PDF completion errors, apply the FAQ rules automatically, and create one record that every later step can track. Because the source portal is retiring on 2026-09-30, build this for the successor intake.",
+      "implementation_steps": [
+        "Create a Dataverse table (or SharePoint list) 'NTRR Access Requests' with DAR fields, status, applicant role, and a request ID.",
+        "Build a Power Pages form for external applicants with required-field rules from DAR FAQs Q1.",
+        "Add conditional logic so the PI Contact Information section appears only when 'Are you the PI?' = No (DAR FAQs Q2/Q3).",
+        "Make the Business Official name, title, and email required fields.",
+        "Generate a DAR PDF from the record using a Word template action, so the Prerequisites signed-PDF requirement is still met."
+      ],
+      "suggested_tool": "Power Pages + Dataverse (or SharePoint list)",
+      "value": 4,
+      "effort": 3,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 10,
+        "occurrence": "per access request",
+        "basis": "Estimate of applicant time saved filling a guided form versus a PDF. The re-entry savings are counted in A5."
+      },
+      "resolves_risks": [
+        "R10"
+      ]
+    },
+    {
+      "id": "A2",
+      "process": "Request NTRR account and data access",
+      "step": "S2",
+      "label": "eliminate",
+      "proposed_change": "Remove the template download, because the applicant opens the online DAR form directly.",
+      "reason": "The download step exists only to obtain the blank PDF that A1 replaces.",
+      "implementation_steps": [
+        "Link 'Request a New Account' directly to the Power Pages DAR form.",
+        "Remove the DAR template from Administrative File Templates once the form is live."
+      ],
+      "suggested_tool": "Power Pages",
+      "value": 1,
+      "effort": 1,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 1,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 2,
+        "occurrence": "per access request",
+        "basis": "S2 removed from map. Minutes are an estimate."
+      },
+      "resolves_risks": []
+    },
+    {
+      "id": "A3",
+      "process": "Request NTRR account and data access",
+      "step": "S4",
+      "label": "automate",
+      "proposed_change": "On applicant completion, a flow sends the generated DAR to the named Business Official for e-signature and attaches the signed PDF to the request record automatically.",
+      "reason": "This replaces an untracked email or paper round trip. It also captures the signer's identity and email for Operations to check.",
+      "implementation_steps": [
+        "Trigger a flow when a request record reaches status 'Awaiting Business Official'.",
+        "Use the Adobe Acrobat Sign or DocuSign connector to send the DAR PDF to the Business Official email.",
+        "On completion, save the signed PDF to the record and set status 'Signed'.",
+        "Add a reminder after 2 business days and notify the applicant if the signature is declined."
+      ],
+      "suggested_tool": "Power Automate with Adobe Acrobat Sign or DocuSign connector",
+      "value": 3,
+      "effort": 3,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 15,
+        "occurrence": "per access request",
+        "basis": "The two handoffs (after S3 and S4) remain but are now tracked. Minutes are an estimate of print, sign, scan, and email time avoided."
+      },
+      "resolves_risks": [
+        "R11",
+        "R6"
+      ]
+    },
+    {
+      "id": "A4",
+      "process": "Request NTRR account and data access",
+      "step": "S5",
+      "label": "eliminate",
+      "proposed_change": "Remove the manual upload of the signed DAR, because the signed PDF is attached to the request record by the A3 flow.",
+      "reason": "Uploading is a redundant transfer once the signature is captured in the workflow.",
+      "implementation_steps": [
+        "Confirm the A3 flow stores the signed PDF on the request record.",
+        "Remove the 'Upload Supporting Documentation' step from the applicant instructions."
+      ],
+      "suggested_tool": "Power Automate",
+      "value": 2,
+      "effort": 1,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 1,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 1,
+        "minutes_saved_per_occurrence": 3,
+        "occurrence": "per access request",
+        "basis": "S5 removed. One manual file upload removed. Minutes are an estimate."
+      },
+      "resolves_risks": []
+    },
+    {
+      "id": "A5",
+      "process": "Request NTRR account and data access",
+      "step": "S6",
+      "label": "eliminate",
+      "proposed_change": "Capture the account fields, including the description of interest, once in the A1 form instead of on a separate Account Management page.",
+      "reason": "This removes the second entry of applicant details (S3 and S6) and the mismatches it can cause.",
+      "implementation_steps": [
+        "Map the existing Account Management required fields to the A1 form.",
+        "Add the 'description of interest' field with the guidance note from Initiation item 6.",
+        "Retire the separate account details page."
+      ],
+      "suggested_tool": "Power Pages",
+      "value": 2,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 1,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 1,
+        "minutes_saved_per_occurrence": 5,
+        "occurrence": "per access request",
+        "basis": "S6 removed. One duplicate data entry removed, with overlap inferred. Minutes are an estimate."
+      },
+      "resolves_risks": [
+        "R10"
+      ]
+    },
+    {
+      "id": "A6",
+      "process": "Request NTRR account and data access",
+      "step": "S7",
+      "label": "digitize",
+      "proposed_change": "Privilege selection becomes a form section listing all Data Submission and Data Access modules with the FAQ Q5 descriptions. Each selection requires a short justification.",
+      "reason": "This resolves the conflict between Initiation item 8 and FAQ Q5 and gives the DAC the reason for each privilege. The process owner must first decide which rule governs.",
+      "implementation_steps": [
+        "Have the SOP owner confirm whether privileges are need-based (FAQ Q5) or a fixed set (Initiation item 8).",
+        "Add a multi-select of GUID, Data Dictionary, Data Repository, Query, and Datastore, with descriptions from FAQ Q5.",
+        "Require a justification text field for each selected module.",
+        "Store the requested privileges on the request record for comparison in A12."
+      ],
+      "suggested_tool": "Power Pages + Dataverse",
+      "value": 2,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 2,
+        "occurrence": "per access request",
+        "basis": "Estimate. The main value is avoiding wrong-privilege requests rather than time saved."
+      },
+      "resolves_risks": [
+        "R9"
+      ]
+    },
+    {
+      "id": "A7",
+      "process": "Request NTRR account and data access",
+      "step": "S8",
+      "label": "automate",
+      "proposed_change": "Form validation blocks submission until all required fields are complete. When the signed DAR is attached, a flow sets status 'Submitted' and emails the applicant a confirmation with the request ID.",
+      "reason": "This defines the D2 'No' branch and gives the applicant proof that the request was received.",
+      "implementation_steps": [
+        "Set required-field validation on the Power Pages form with on-screen error messages.",
+        "Create a flow triggered when status changes to 'Signed'.",
+        "Set status 'Submitted' and record the submission timestamp.",
+        "Send a confirmation email from a shared mailbox using the Office 365 Outlook connector, including the request ID.",
+        "Post a new-request notice to the Operations Teams channel."
+      ],
+      "suggested_tool": "Power Pages + Power Automate (Dataverse, Office 365 Outlook, Teams connectors)",
+      "value": 3,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 2,
+        "occurrence": "per access request",
+        "basis": "Estimate. This defines one previously undefined branch (D2)."
+      },
+      "resolves_risks": [
+        "R2"
+      ]
+    },
+    {
+      "id": "A8",
+      "process": "Request NTRR account and data access",
+      "step": "S9",
+      "label": "ai_assist",
+      "proposed_change": "An AI step pre-checks each submitted DAR for missing sections, the PI contact required for non-PIs, and Business Official details that look inconsistent, such as a personal email or a title mismatch. It gives Operations staff a checklist; staff make the accuracy decision.",
+      "reason": "This speeds the accuracy and completeness review and highlights signer-authority concerns for a human to check.",
+      "implementation_steps": [
+        "In the A7 flow, after submission, send the signed DAR PDF to an AI Builder prompt or document processing model.",
+        "Prompt it to list missing Recipient Information and Certifications items, missing PI contact for non-PIs, and Business Official red flags.",
+        "Write the findings to a 'Pre-check notes' field on the record.",
+        "Operations staff review the notes and the DAR, then set status 'Ops Review Complete' or 'Needs Information'."
+      ],
+      "suggested_tool": "Power Automate + AI Builder (prompt / document processing)",
+      "value": 3,
+      "effort": 3,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 10,
+        "occurrence": "per DAR review",
+        "basis": "Estimate of Operations reviewer time saved. A human still decides."
+      },
+      "resolves_risks": [
+        "R1",
+        "R6"
+      ]
+    },
+    {
+      "id": "A9",
+      "process": "Request NTRR account and data access",
+      "step": "S10",
+      "label": "automate",
+      "proposed_change": "When Operations sets status 'Needs Information' with comments, a flow emails the applicant an edit link and sends reminders. When the applicant resubmits, the request returns to Operations review automatically.",
+      "reason": "This defines the correction loop that the SOP leaves open and makes every error contact tracked rather than optional.",
+      "implementation_steps": [
+        "Add a 'Reviewer comments' field and 'Needs Information' and 'Resubmitted' status values.",
+        "Create a flow triggered when status = 'Needs Information'.",
+        "Email the applicant the comments and a link to edit the record in Power Pages.",
+        "Send a reminder after 3 business days if the record is not resubmitted, then notify Operations.",
+        "On 'Resubmitted', notify the Operations Teams channel and set status 'In Review'.",
+        "Increment a correction-round counter for reporting."
+      ],
+      "suggested_tool": "Power Automate (Dataverse, Office 365 Outlook, Teams connectors)",
+      "value": 4,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 10,
+        "occurrence": "per DAR returned for correction",
+        "basis": "Estimate of Operations time spent drafting and chasing emails. The handoff to the applicant remains but is tracked."
+      },
+      "resolves_risks": [
+        "R1"
+      ]
+    },
+    {
+      "id": "A10",
+      "process": "Request NTRR account and data access",
+      "step": "S11",
+      "label": "automate",
+      "proposed_change": "When Operations marks review complete, a flow routes the request and signed DAR to the DAC as an approval with Approve, Approve with changes, or Deny outcomes. It records the decision and reason and notifies the applicant of any denial.",
+      "reason": "This replaces an untracked handoff, creates an audit trail of DAC decisions, and defines the denial branch.",
+      "implementation_steps": [
+        "Create a Microsoft 365 group or distribution list for the DAC.",
+        "Create a flow triggered when status = 'Ops Review Complete'.",
+        "Start and wait for an approval with custom responses, linking the record and signed DAR.",
+        "Write the outcome, approver, date, authorized privileges, and comments to the record.",
+        "If denied, email the applicant the decision and reason and set status 'Denied'.",
+        "Run a parallel reminder branch that posts to Teams if the DAC has not responded within 1 business day."
+      ],
+      "suggested_tool": "Power Automate (Approvals, Dataverse, Office 365 Outlook, Teams connectors)",
+      "value": 4,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 1,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 5,
+        "occurrence": "per access request",
+        "basis": "The handoff after S11 becomes automated. The SOP states no per-stage wait, so no wait days are claimed. Minutes are an estimate."
+      },
+      "resolves_risks": [
+        "R4",
+        "R3"
+      ]
+    },
+    {
+      "id": "A11",
+      "process": "Request NTRR account and data access",
+      "step": "S12",
+      "label": "keep_human",
+      "proposed_change": "The DAC continues to verify professional credentials and decide on access. It now records the decision, the authorized privileges, and the reason for any denial in the approval.",
+      "reason": "Credential verification and access to restricted participant data are judgment and compliance decisions that must stay with the committee.",
+      "implementation_steps": [
+        "Agree DAC decision criteria and the required fields for a decision (outcome, privileges, reason).",
+        "Use the A10 approval form to capture these fields."
+      ],
+      "suggested_tool": "Power Automate Approvals (capture only)",
+      "value": 2,
+      "effort": 1,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 0,
+        "occurrence": "per DAC decision",
+        "basis": "No time saving. This adds decision recording."
+      },
+      "resolves_risks": [
+        "R3"
+      ]
+    },
+    {
+      "id": "A12",
+      "process": "Request NTRR account and data access",
+      "step": "S13",
+      "label": "automate",
+      "proposed_change": "On DAC authorization, a flow assigns the NTRR Admin a task listing the exact authorized privileges. The Admin confirms the privileges granted, and the flow compares them to the authorization and escalates any mismatch.",
+      "reason": "This adds a control between DAC authorization and privilege setup, which the SOP lacks, and tracks the handoff to the Admin.",
+      "implementation_steps": [
+        "Create a flow triggered when status = 'Authorized'.",
+        "Create a Planner task, or post a Teams adaptive card, to the NTRR Admin with the authorized privileges.",
+        "The Admin creates the account in NTRR and selects the privileges granted on the adaptive card.",
+        "Compare the granted privileges to the authorized privileges; if they differ, notify the Operations lead and the DAC chair.",
+        "If they match, set status 'Account Active' with a timestamp."
+      ],
+      "suggested_tool": "Power Automate (Dataverse, Planner, Teams connectors)",
+      "value": 4,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 1,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 5,
+        "occurrence": "per authorized request",
+        "basis": "The handoff after S12 becomes tracked and automated. Account creation in NTRR stays manual because no connector is assumed. Minutes are an estimate."
+      },
+      "resolves_risks": [
+        "R5",
+        "R4"
+      ]
+    },
+    {
+      "id": "A13",
+      "process": "Request NTRR account and data access",
+      "step": "S15",
+      "label": "automate",
+      "proposed_change": "The applicant gets status emails at each stage (submitted, in review, with DAC, authorized, denied). If an account is not active within 3 business days of submission, a flow alerts Operations.",
+      "reason": "This replaces 'timely manner' with a defined service level based on the stated 1-3 business days and reduces status inquiries.",
+      "implementation_steps": [
+        "Create a flow triggered on any status change of the request record.",
+        "Send the applicant a templated email for each status from the shared mailbox, naming a single NTRR contact.",
+        "Run a scheduled daily flow to find records still not 'Account Active' 3 business days after submission.",
+        "Post overdue records to the Operations Teams channel."
+      ],
+      "suggested_tool": "Power Automate (Dataverse, Office 365 Outlook, Teams connectors)",
+      "value": 3,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 5,
+        "occurrence": "per access request",
+        "basis": "Estimate of applicant and staff time saved on status follow-up. The 3-day service level comes from Procedure '1-3 business days'."
+      },
+      "resolves_risks": [
+        "R7"
+      ]
+    }
+  ],
+  "starter_flows": [
+    {
+      "recommendation_id": "A9",
+      "trigger": "Dataverse: When a row is modified in 'NTRR Access Requests' where Status = 'Needs Information'",
+      "actions": [
+        "Get the row (applicant email, reviewer comments, request ID).",
+        "Send an email (V2) from the NTRR shared mailbox to the applicant with the comments and a Power Pages edit link.",
+        "Set NeedsInfoDate to utcNow and increment CorrectionRound.",
+        "Do until Status = 'Resubmitted' or 2 reminders have been sent: delay 3 business days, then send a reminder email.",
+        "If still not resubmitted after the reminders, post a Teams message to the Operations channel to follow up.",
+        "When Status = 'Resubmitted' (separate trigger branch), post a Teams notice to the Operations channel and set Status = 'In Review'."
+      ],
+      "approval_step": ""
+    },
+    {
+      "recommendation_id": "A10",
+      "trigger": "Dataverse: When a row is modified in 'NTRR Access Requests' where Status = 'Ops Review Complete'",
+      "actions": [
+        "Get the row and the signed DAR file.",
+        "Set Status = 'With DAC'.",
+        "Start and wait for an approval (custom responses) assigned to the DAC group, with the request link and DAR attached.",
+        "Parallel branch: delay 1 business day; if there is still no response, post a reminder to the DAC Teams channel.",
+        "Update the row with outcome, approver, decision date, authorized privileges, and comments.",
+        "Condition: if the outcome is Deny, email the applicant the decision and reason and set Status = 'Denied'.",
+        "Otherwise set Status = 'Authorized'."
+      ],
+      "approval_step": "DAC custom-response approval (Approve / Approve with changes / Deny). Authorized privileges and the reason are required in the response."
+    },
+    {
+      "recommendation_id": "A12",
+      "trigger": "Dataverse: When a row is modified in 'NTRR Access Requests' where Status = 'Authorized'",
+      "actions": [
+        "Get the row (applicant, authorized privileges).",
+        "Create a Planner task for the NTRR Admin: 'Create NTRR account for <request ID>', listing the authorized privileges.",
+        "Post an adaptive card to the NTRR Admin in Teams and wait for a response with the privileges granted.",
+        "Compare the granted privileges to the authorized privileges.",
+        "If they differ, notify the Operations lead and the DAC chair by Teams and email, and set Status = 'Privilege Mismatch'.",
+        "If they match, set Status = 'Account Active', record the timestamp, and complete the Planner task."
+      ],
+      "approval_step": ""
+    }
+  ],
+  "future_state": [
+    {
+      "id": "F1",
+      "process": "Request NTRR account and data access",
+      "from_step": "S1",
+      "actor": "Applicant",
+      "action": "Go to the NTRR request portal and log in, then select Request a New Account",
+      "change": "unchanged"
+    },
+    {
+      "id": "F2",
+      "process": "Request NTRR account and data access",
+      "from_step": "S3",
+      "actor": "Applicant",
+      "action": "Complete the online DAR form, including account fields, with PI contact shown only for non-PI applicants and required Business Official details",
+      "change": "digitized"
+    },
+    {
+      "id": "F3",
+      "process": "Request NTRR account and data access",
+      "from_step": "S7",
+      "actor": "Applicant",
+      "action": "Select the needed modules from the full list with FAQ descriptions and justify each selection",
+      "change": "digitized"
+    },
+    {
+      "id": "F4",
+      "process": "Request NTRR account and data access",
+      "from_step": "S4",
+      "actor": "Recipient's Authorized Institutional Business Official",
+      "action": "E-sign the DAR sent by the flow; the signed PDF is saved to the request record automatically",
+      "change": "automated"
+    },
+    {
+      "id": "F5",
+      "process": "Request NTRR account and data access",
+      "from_step": "S8",
+      "actor": "Applicant",
+      "action": "Submit the validated request; the flow sets status Submitted and emails a confirmation with the request ID",
+      "change": "automated"
+    },
+    {
+      "id": "F6",
+      "process": "Request NTRR account and data access",
+      "from_step": "S9",
+      "actor": "NTRR Operations staff",
+      "action": "Review the DAR using the AI pre-check checklist and mark it Ops Review Complete or Needs Information",
+      "change": "ai_assisted"
+    },
+    {
+      "id": "F7",
+      "process": "Request NTRR account and data access",
+      "from_step": "S10",
+      "actor": "NTRR Operations staff",
+      "action": "Enter correction comments; the flow emails the applicant an edit link, sends reminders, and returns the resubmitted request to review",
+      "change": "automated"
+    },
+    {
+      "id": "F8",
+      "process": "Request NTRR account and data access",
+      "from_step": "S11",
+      "actor": "NTRR Operations staff",
+      "action": "Mark review complete; the flow routes the request and signed DAR to the DAC as a tracked approval",
+      "change": "automated"
+    },
+    {
+      "id": "F9",
+      "process": "Request NTRR account and data access",
+      "from_step": "S12",
+      "actor": "NTRR Data Access & Quality Committee (DAC)",
+      "action": "Verify credentials and record approve, approve with changes, or deny, with the authorized privileges and reason",
+      "change": "unchanged"
+    },
+    {
+      "id": "F10",
+      "process": "Request NTRR account and data access",
+      "from_step": "NEW",
+      "actor": "NTRR Operations staff",
+      "action": "On denial, the flow emails the applicant the DAC decision and reason and closes the request as Denied",
+      "change": "new"
+    },
+    {
+      "id": "F11",
+      "process": "Request NTRR account and data access",
+      "from_step": "S13",
+      "actor": "NTRR Admin",
+      "action": "Receive a task with the authorized privileges, create the account, and confirm the privileges granted; the flow escalates any mismatch",
+      "change": "automated"
+    },
+    {
+      "id": "F12",
+      "process": "Request NTRR account and data access",
+      "from_step": "S14",
+      "actor": "NTRR Admin",
+      "action": "Send the automated account activation email from noreply@ntrr.nih.gov",
+      "change": "unchanged"
+    },
+    {
+      "id": "F13",
+      "process": "Request NTRR account and data access",
+      "from_step": "S15",
+      "actor": "Applicant",
+      "action": "Receive status emails at each stage; the flow alerts Operations if the account is not active within 3 business days",
+      "change": "automated"
+    },
+    {
+      "id": "F14",
+      "process": "Request NTRR account and data access",
+      "from_step": "S16",
+      "actor": "Applicant",
+      "action": "If the activation email is missing, check the spam filter or contact the named NTRR contact",
+      "change": "unchanged"
+    },
+    {
+      "id": "F15",
+      "process": "Request NTRR account and data access",
+      "from_step": "S17",
+      "actor": "Applicant",
+      "action": "Return to the NTRR website and log in",
+      "change": "unchanged"
+    },
+    {
+      "id": "F16",
+      "process": "Request NTRR account and data access",
+      "from_step": "S18",
+      "actor": "Applicant",
+      "action": "Access data in the NTRR",
+      "change": "unchanged"
+    }
+  ],
+  "eliminated_steps": [
+    "S2",
+    "S5",
+    "S6"
+  ]
+}

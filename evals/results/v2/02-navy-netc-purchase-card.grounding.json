@@ -1,0 +1,294 @@
+{
+  "verdicts": [
+    {
+      "ai_id": "S3",
+      "verdict": "partially_supported",
+      "reason": "5.c(2) says \"A copy of all training certificates will be provided to the A/OPC\" but does not name the CH as the one who provides it."
+    },
+    {
+      "ai_id": "S4",
+      "verdict": "supported",
+      "reason": "4.a states \"The CH will acknowledge the responsibility and understanding of reference (a), and the policy specified within this instruction.\""
+    },
+    {
+      "ai_id": "S5",
+      "verdict": "supported",
+      "reason": "2.k says the CH is designated by the HA or designee, and 8 says the limits \"are established in each cardholder delegation of authority letter.\""
+    },
+    {
+      "ai_id": "S7",
+      "verdict": "partially_supported",
+      "reason": "3.b says the A/OPC \"coordinates card applications, issuance\" and \"submits changes to dollar limitations or authorized merchant codes,\" but this covers changes, not the initial codes, which section 19 says CCPMD incorporates."
+    },
+    {
+      "ai_id": "S8",
+      "verdict": "supported",
+      "reason": "Section 19 states \"authorization codes are incorporated in the card by CCPMD.\""
+    },
+    {
+      "ai_id": "S9",
+      "verdict": "partially_supported",
+      "reason": "6.a says LOAs \"are issued...and provided to N4\" without stating that N8 issues them; it says only that funding is managed by N8."
+    },
+    {
+      "ai_id": "S10",
+      "verdict": "partially_supported",
+      "reason": "6.b says \"LOAs are issued to departments prior to the start of the fiscal year\" in the passive voice and does not name N8 as the issuer."
+    },
+    {
+      "ai_id": "S11",
+      "verdict": "partially_supported",
+      "reason": "6.c says \"Requirements are discussed with department heads or program managers\" in the passive voice and does not name N8 as the actor."
+    },
+    {
+      "ai_id": "S12",
+      "verdict": "supported",
+      "reason": "6.c states \"Requests are emailed to N8.\""
+    },
+    {
+      "ai_id": "S13",
+      "verdict": "partially_supported",
+      "reason": "6.c says unusual or questionable requests \"are forwarded\" without stating that N8 forwards them."
+    },
+    {
+      "ai_id": "S14",
+      "verdict": "supported",
+      "reason": "6.c says such requests are forwarded to these offices \"for review prior to taking action.\""
+    },
+    {
+      "ai_id": "S19",
+      "verdict": "supported",
+      "reason": "16.c states \"Each division prepares the SF 182...assignment of a LOA. Section C will state...annotate CH's name and telephone number. Contact N4 for CH information.\""
+    },
+    {
+      "ai_id": "S20",
+      "verdict": "supported",
+      "reason": "6.b states \"Departments desiring training must complete SF 182 and obtain appropriate signatures for approval.\""
+    },
+    {
+      "ai_id": "S21",
+      "verdict": "supported",
+      "reason": "16.d states \"Provide a copy of SF 182 to N4 prior to forwarding to Human Resources Office.\""
+    },
+    {
+      "ai_id": "S22",
+      "verdict": "supported",
+      "reason": "16.d refers to \"forwarding to Human Resources Office.\""
+    },
+    {
+      "ai_id": "S23",
+      "verdict": "supported",
+      "reason": "6.b states \"Signed copies are provided to N8 and the purchase card holder so the purchase can be made.\""
+    },
+    {
+      "ai_id": "S24",
+      "verdict": "supported",
+      "reason": "15.a states \"Departments desiring to sponsor a conference will provide a copy of the approval request to N4 ensuring that a line of accounting is specified.\""
+    },
+    {
+      "ai_id": "S25",
+      "verdict": "unsupported",
+      "reason": "6.f only says \"If funding is available at the end of the fiscal year, N8 notifies...\"; no review action by N8 is stated."
+    },
+    {
+      "ai_id": "S26",
+      "verdict": "unsupported",
+      "reason": "This is not a step in the input list; the placeholder is ignored."
+    },
+    {
+      "ai_id": "S27",
+      "verdict": "partially_supported",
+      "reason": "6.f says N8 notifies Division Directors/Special Assistants \"asking for remaining unfunded requirements,\" but it never states that they submit them."
+    },
+    {
+      "ai_id": "S28",
+      "verdict": "supported",
+      "reason": "6.f states \"Once funding is identified, departments are notified\" and says cardholders make only end-of-year purchases \"approved by N8.\""
+    },
+    {
+      "ai_id": "S31",
+      "verdict": "supported",
+      "reason": "7.a(3) says to \"procure office supplies from DoD EMALL or SERVMART using NETC 4400/1. Procure printing requirements from DLA Document Services\", and section 1 references DD Form 282."
+    },
+    {
+      "ai_id": "S32",
+      "verdict": "supported",
+      "reason": "7.b says \"If the merchant's price is fair and reasonable, CH may proceed\", and 7.a(4) says to rotate orders among qualified contractors."
+    },
+    {
+      "ai_id": "S34",
+      "verdict": "supported",
+      "reason": "7.a(3) states \"Obtain AO approval prior to purchasing\", and 3.c describes the AO approving purchases."
+    },
+    {
+      "ai_id": "S35",
+      "verdict": "supported",
+      "reason": "7.a(1) says to \"Comply with their delegated contract authority\", section 8 sets the limits, and section 12 lists the restrictions."
+    },
+    {
+      "ai_id": "S36",
+      "verdict": "supported",
+      "reason": "Section 8 states \"The single purchase limit cannot be exceeded unless approved by N4.\""
+    },
+    {
+      "ai_id": "S39",
+      "verdict": "supported",
+      "reason": "Section 19 says the CITIBANK authorization system checks the limits, transaction method and merchant type \"before authorization...is granted.\""
+    },
+    {
+      "ai_id": "S40",
+      "verdict": "supported",
+      "reason": "Section 19 states \"CHs must contact the A/OPC for denied transactions.\""
+    },
+    {
+      "ai_id": "S42",
+      "verdict": "supported",
+      "reason": "9.a says \"one will perform receipt/inspection\" and that actions are done \"by legible signature and date.\""
+    },
+    {
+      "ai_id": "S43",
+      "verdict": "supported",
+      "reason": "9.a says \"one will accept\" with \"legible signature and date.\""
+    },
+    {
+      "ai_id": "S44",
+      "verdict": "supported",
+      "reason": "9.b states that in emergent situations the person who placed the order \"will not perform the receipt, inspection, and acceptance function.\""
+    },
+    {
+      "ai_id": "S45",
+      "verdict": "supported",
+      "reason": "14.a states \"AOs and CHs identify whether materials need to be recorded in a formal property management or accounting system.\""
+    },
+    {
+      "ai_id": "S46",
+      "verdict": "partially_supported",
+      "reason": "14.b says accountable property \"will be recorded in...DPAS. DPAS is maintained by N4\" but does not say N4 does the recording."
+    },
+    {
+      "ai_id": "S47",
+      "verdict": "supported",
+      "reason": "15.b states \"Provide a copy of the final bill to N4 upon completion of the conference.\""
+    },
+    {
+      "ai_id": "S48",
+      "verdict": "partially_supported",
+      "reason": "2.a and 10 cover the cycle ending on the 19th and the status change from INTERIM to NEW, but the SOP does not say CITIBANK closes the cycle or issues the statement."
+    },
+    {
+      "ai_id": "S49",
+      "verdict": "supported",
+      "reason": "10.a(3) states \"Notify the AO if CH is not available to review the statement for certification.\""
+    },
+    {
+      "ai_id": "S51",
+      "verdict": "supported",
+      "reason": "10.a(3) states \"The AO will meet with the CH upon their return to review the CH's statement.\""
+    },
+    {
+      "ai_id": "S52",
+      "verdict": "supported",
+      "reason": "10.a says the CH verifies each transaction and ensures purchases are \"documented on the purchase log and charged or reallocated to the proper LOA.\""
+    },
+    {
+      "ai_id": "S54",
+      "verdict": "supported",
+      "reason": "10.a(2) describes pay-and-confirm for damaged warranty items, with the CH retaining documentation \"in a suspense file.\""
+    },
+    {
+      "ai_id": "S57",
+      "verdict": "supported",
+      "reason": "10.b(1)-(3) and (5) list reconciling in CITIBANK, ensuring purchases are appropriate, verifying documentation, and ensuring receipt/acceptance by placing initials."
+    },
+    {
+      "ai_id": "S61",
+      "verdict": "supported",
+      "reason": "10.a(2) states \"the CH or AO will notify the A/OPC to resolve and reconcile the statement.\""
+    },
+    {
+      "ai_id": "S63",
+      "verdict": "supported",
+      "reason": "Section 11 says \"The CH or AO must contact the A/OPC to determine which procedure is appropriate and initiate only one procedure.\""
+    },
+    {
+      "ai_id": "S67",
+      "verdict": "partially_supported",
+      "reason": "11.a(4) says the charge \"will either be resolved in favor of the CH or the merchant\" in the passive voice and does not name CITIBANK as the resolver."
+    },
+    {
+      "ai_id": "S70",
+      "verdict": "supported",
+      "reason": "11.a(4) says the charge \"must be certified for payment\", and 3.d assigns certification of the monthly billing statement to the CO."
+    },
+    {
+      "ai_id": "S74",
+      "verdict": "supported",
+      "reason": "11.b(3) says the invoice must be \"short paid\" and \"certified using the manual certification process, not the dispute process\", and certification is the CO's role."
+    },
+    {
+      "ai_id": "S85",
+      "verdict": "supported",
+      "reason": "Section 21 says \"AOs/COs shall retain financial documents per reference (f)\" and that reference (g) requires 10-year retention."
+    },
+    {
+      "ai_id": "S86",
+      "verdict": "supported",
+      "reason": "22.a describes the A/OPC monthly PAT review targeting internal controls, training, span of control and delinquencies, \"automatically submitted to the next higher level A/OPC.\""
+    },
+    {
+      "ai_id": "S87",
+      "verdict": "supported",
+      "reason": "22.b says the A/OPC conducts the semi-annual review, which \"is an aggregate of the previous six month reviews.\""
+    },
+    {
+      "ai_id": "S88",
+      "verdict": "supported",
+      "reason": "22.b states \"The report shall be provided to the HA (N4) for review and approval.\""
+    },
+    {
+      "ai_id": "S89",
+      "verdict": "partially_supported",
+      "reason": "22.b says the report \"will be forwarded to the Hierarchy Level 3 A/OPC\" but does not name the A/OPC as the one who forwards it."
+    },
+    {
+      "ai_id": "S90",
+      "verdict": "supported",
+      "reason": "22.b says the report goes to the Hierarchy Level 3 A/OPC \"for compilation and submission to CCPMD.\""
+    },
+    {
+      "ai_id": "S91",
+      "verdict": "supported",
+      "reason": "23.a states \"The analyst will inform N4 of the review by formal letter.\""
+    },
+    {
+      "ai_id": "S92",
+      "verdict": "supported",
+      "reason": "23.a states \"The A/OPC will compile the required documents for review and approval by the HA.\""
+    },
+    {
+      "ai_id": "S93",
+      "verdict": "supported",
+      "reason": "23.a refers to documents compiled \"for review and approval by the HA\" and to \"Upon HA approval.\""
+    },
+    {
+      "ai_id": "S94",
+      "verdict": "partially_supported",
+      "reason": "23.a says \"the review will be forwarded by traceable means to the PMR Team\" without naming the A/OPC as the sender."
+    },
+    {
+      "ai_id": "S95",
+      "verdict": "supported",
+      "reason": "23.a says the PMR procurement analyst \"will perform this 18 month desk audit\" consisting of transactional, internal management, and other elements."
+    },
+    {
+      "ai_id": "S96",
+      "verdict": "partially_supported",
+      "reason": "23.b states a three-day suspension of all accounts except one CH and one AO, but it does not say the A/OPC performs the suspension."
+    },
+    {
+      "ai_id": "S97",
+      "verdict": "supported",
+      "reason": "23.b says stand-down training will be provided \"to all GCPC participants to review and develop corrective actions...and to prepare a Plan of Action and Milestones.\""
+    }
+  ]
+}

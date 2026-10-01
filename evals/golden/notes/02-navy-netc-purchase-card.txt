@@ -1,0 +1,81 @@
+Hand-mapping notes, Moustapha Kourouma, 2026-09-30 (written before any pipeline output was reviewed).
+Granularity rule A. Source file: 02-navy-netc-purchase-card.pdf (NETCINST 4200.4A Enclosure 1, pp. 7-21).
+
+4 nomination appointment and replacement 10 min 5 sec
+1. S1 actor: requesting department action: nominate CH input: nomination output: system: email or memo source: a
+2. S2 actor: CH action: complete initial training and be appointed delegation of authority input: training  output: completion and appointment system: GCPC training program source: a
+3. D1 actor: delegation condition: does procurement authority exceed the micro purchase threshold specified by the delegation? if yes action: the CH will be appointed using SF 1402 if no action: not specified input: delegation specify spending limits and authorized transaction types  output: if yes ch appointment system: delegation limits source: b
+4. D2 actor: delegation condition: has the appointment been revoked in writing or has the employee transferred, separated for any reason, or retired from service? if yes, action: appointment no longer remains in effect if no, action: appointment remains in effect input: receiving notice of writing, transfer, separation, or retirement output: if yes, appointment no longer in effect and if no appointment still in effect system: type of communication phone or email source: c
+
+5 training it seems intial and refresher are a step bys tep sop but then ethics and certying officer legislation trainign is added after i would asume those dont have to be taken in order which makes less of an sop and more of a requirement list 14 min 28 sec
+1. S1 actor: GCPC participants action: complete inital training before assuming program responsibility  input: training output: completion system: GCPC training program source: a
+2. S2 actor: GCPC action: complete activity IOP and DON purchase card refresher training within two years of completing initial training and within two years of last refresher training  input: training output: completion system: GCPC training program source: b
+3. D1 actor: GCPC condition: DID GCPC participant complete activity IOP and DON purchase card refresher training within two years of completing initial training and within two years of last refresher training? if yes action: do not suspend account if no action: suspend account until training is completed CH input: output: identification of complete  and incomplete training system: training record list source: b
+4. S3 actor: GCPC participants action: completeDod annual ethics training  input: training output: completion system: GCPC training program source: c
+5. S4 actor: GCPC participants action: review and retain the DON purchase card program desk guide applicable to the function they have been designated to perform  input: output: completion system: guide source: c1
+6. S5 actor: A/OPC action: a copy of each participants training certs will be provided  input:  output:  training cert list system: type of communication email  source: c2
+7. S6 actor: GCPC participants action: complete certifying officer legislation training  input: training output: completion system: GCPC training program source: d
+
+6 purchase authorization 7 min 48 sec my best interpretation not straight forward
+1. S1 actor: CH action: request purchase by assigning the appropriate LOA  input: requesting information output: request system: form source: ac
+2. D1 actor: CH condition: is additional documentation required if yes, action: complete the required documention, obtain the appropriate signatures for approval, and provide signed copies to N* and the purchase card holder if no, action: continue with request input: required info output: request system: form source: d
+3. S2 actor: N8 action: provides updates from the Corporate Master Execution file funds status system occasionally or upon request  input: file updates output: file system: type of communication source: e
+4. D2 actor: N8 condition: is the funding echausted? if yes action: requirements are forwarded to the comptroller for review if no action: notify the division directors/special assistants asking for remaining unfunded requirements input: review of funds output: funded or unfunded requirements system: corporate master execution file funds status system source: e f
+
+7 Micro purchase procedures  7 min 13sec
+1. D1 actor: CH condition: is the merchant's price fair and reasonable if yes, action: proceed with purchase if no: do not proceed with purchase input: reason output: if yes then purchase system: merchants oferrings source: b
+2. S1 actor: CH  action: confirm merchant agrees to c1-c4 input:  output: agreement system: type of communication source: c
+3. S2 actor: ch action: remind merchant not to charge sales tax unless location is in a state that does not afford federal gov a tax exempt status  input: reminder output: agreement system: type of communication source: d1
+4. S3 actor: ch action: certify that the quality and quantity of items furnished are per vendor agreement input: certify output: verification per agreement system: agreement source: d2
+5. S4 actor: ch action: attempt to obtain FOB destination shipment terms input: required info output: FOB destination shipment terms system: type of communication source: d3
+
+9 receive inspect accept not an SOP more of a term no clear step by step process
+10 invoice reconcillation verification and certification 12 min 10 sec
+1. S1 actor: ch action: certify the bank statement and forward all documentation to the AO/CO  input: review of bank statement output: certification and email system: type of communication email source: a
+2. D1 actor: ch condition: has the CH been billed but have not received the items ordered or has an damaged items been received but are still under warranty and the contractor confirms they will replace modify repair within the next billing cycle? if yes action: use the pay-and-confirm procedures if no, action: carry on with certifying the bank statement  input: review output: certified bank statement system: bank statement source: a1-a2
+3. D2 actor: AO condition: is the CH available to review the statement for certification? if yes action: CH reviews statement if no action: AO reviews the CH statement to certify the account for payment input: if no, review output: certified bank statement system: bank statement source: a3
+4. S2 actor: AO/CO action:review and certify the CH monthly statement within 10 business days of when the statement status changes from interim to new input: review output: cerified CH monthly statement system: CH monthly statement source: b
+5. S3 actor: AO/CO action: notfiy the A/OPC or NETC N4 in the event of any suspected unauthorized purchase input: review output: notify system: type of communication source: b4
+6. S4 actor: AO/CO action: complete monthly PAT review within 15 calendar days of the end of billing cycle and return all supporting documentation to the CH input: required info output: completion of PAT system: type of communication source: b7
+7. D3 actor: ch condition: do you have the documentation of a transaction to send with the statement? if yes, action: send with statement if no action: attach an explanation that includes a description of the item cost date merchants name price quantity and why there is no supportng documentation input: required info output: explanation with statement system: bank statement source: c
+
+11.dispute and fraudulent transacation reporting 14 min 30 sec both dispute and fraud
+dispute
+1. S1 actor: ch/AO action: notify the A/OPC about unrecognized transactions  input: review output: notify  system: type of communication source: a
+2. S2 actor: A/OPC action: use invoice certification process within CitiDirect input: required info output: process complete system: CitiDirect source: a1
+3. S3 actor: ch/AO action: submit/fac the CItiBank Government cardholder dispute form to Citibank input: required info output: form completion system: form source: a2
+4. S4 actor: ch/AO action: track the dispute to resolution either by calling Citibank or reviewing the disput elog within CitiDirect input: track output: contact with citibank system: type of communication source: a3
+5. D1 actor: Citibank condition: is the dispute in favor of the CH? if yes, action: the charge is offset either by a vendor credit or bank initiated credit if no action: a letter will be sent to the CH explaning the decision and the charge will appear in the balance due on the next invoice and must be certified for payment  input: review of dispute output: decision system: type of communication source: a4
+Fraud
+1. S1 actor: ch/AO action: notify the A/OPC about fraudulent transactions  input: review output: notify  system: type of communication source: b1
+2. S2 actor: A/OPC action: contact Citibank input: required info output: contact system: type of communication source: b1
+3. D1 actor: Citibank condition: does the account have fraudulent activity? if yes, action: close the account immediately, offer replacement account and card, confirm with CH which transactions are valid and whioch are fraudulent and move the valid transaction to the new card account if no action: leave account open input: review of fraudulent transactions output: decision system: type of communication source: b2
+4. S3 actor: ch action: use the manual certification process to short by the account by the amount of the transactions in question  input: required info output: short paid account  system: manual certification process source: b3
+5. S4 actor: ch action: notify citibank of short pay and complete a declaration of unauthorized use form to be submitted to the bank  input: required info output: email sent form completed system: email and form source: b3
+
+17 lost or stolen cards 5 min 37 sec
+1. S1 actor: ch action: notify citibank for technical support to report lost or stolen card input: required info output: notify  system: phone source: a
+2. S2 actor: ch action: notify the AO and the A/OPC about the lost or stolen card  within on3 business day after discovering the card missing  input: required info output: notify  system: type of communication source: b
+3. S3 actor: AO action: submit a written report to the A/OPC within one business day input: required info output: submitted report  system: report source: b
+4. S4 actor: Citibank action: maila replacement card within one business day of the reported loss or theft input:  output: new card  system: mail source: c
+5. D1 actor: ch conditiomn: did the CH find a card after being reported lost or stolen? if yes action: cut the card in half and give to AO or A/OPC if no, action: no action input: output: if yes, cut card system: type of communication source: c
+
+20 transfer retirmeent or termination of employment 4 min 5 sec
+1. D1 actor: A/OPC condition: did the CH leave their command? if yes, action: ensure the account has been inactive at least 30 days prior to departure if no, action: account stays active input:  output: if yes inactive account  system: account activity source: 1st paragraph
+2. S1 actor: A/OPC action: close account once all transactions have cleared. no account shall remain past the CH offical departure input: output: closed account  system: account source: 1st paragraph
+3. D2 actor: A/OPC condition: do outstanding transaction remain? if yes, action: reduce the CH credit limits to $1 and cut up the GCPC to avoid any more charges if no, action: no action input:  output: reduced credit limti and cut up the GCPC system: account source: 1st paragraph
+
+21record keeping
+1 step just that all files documenting GCPC transactions shall be turned in to the AO/CO once CH leaves command
+
+--- Transcription fixes applied when building the JSON ---
+- 6 S1: SOP 6.c says N8 assigns the LOA (requests are emailed to N8); actor changed from CH to N8.
+- 6 D1: SOP 6.d says the requestor completes the documentation; actor changed from CH to requestor.
+- 11 dispute S2: SOP 11.a.1 has the cardholder dispute in CitiDirect; actor changed from A/OPC to cardholder.
+- 20: reordered so "outstanding transactions?" comes before closing the account (SOP closes once cleared).
+- Actions stated inside decision branches were made into their own steps so branches point to steps.
+
+--- Follow-up 2026-09-30 ---
+Added 7.a (pre-purchase checks) and 7.e (purchase card log) as steps. Section 21 time: 1 min 30 sec.
+
+--- 2026-09-30: chose rule A for requirement lists (conditions that gate a step, not steps). §5 training steps collapsed into one gating decision.

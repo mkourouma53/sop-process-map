@@ -1,0 +1,84 @@
+{
+  "version": "1.0",
+  "appId": "a4333e05-0428-4211-92bc-0ee35352bb48",
+  "appDisplayName": "SOP to Process Map",
+  "region": "prod",
+  "appType": "CodeApp",
+  "environmentId": "29763402-3928-e92c-9a69-ef9227209e1d",
+  "description": "Turns SOPs into reviewed process maps, risks, and a ranked automation backlog",
+  "buildPath": "./dist",
+  "buildEntryPoint": "index.html",
+  "localAppUrl": "http://localhost:3000",
+  "logoPath": "Default",
+  "connectionReferences": {
+    "94923a49-b114-4985-bf5b-de9a870977c5": {
+      "id": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline",
+      "displayName": "SharePoint",
+      "dataSources": [
+        "sops",
+        "processsteps",
+        "decisionpoints",
+        "risks",
+        "recommendations",
+        "futuresteps",
+        "airuns",
+        "reviewhistory"
+      ],
+      "dataSets": {
+        "https://consultonyx.sharepoint.com/sites/sop-process-map": {
+          "dataSources": {
+            "sops": {
+              "tableName": "SOPs"
+            },
+            "processsteps": {
+              "tableName": "Process Steps"
+            },
+            "decisionpoints": {
+              "tableName": "Decision Points"
+            },
+            "risks": {
+              "tableName": "Risks"
+            },
+            "recommendations": {
+              "tableName": "Recommendations"
+            },
+            "futuresteps": {
+              "tableName": "Future Steps"
+            },
+            "airuns": {
+              "tableName": "AI Runs"
+            },
+            "reviewhistory": {
+              "tableName": "Review History"
+            }
+          }
+        }
+      }
+    },
+    "b985019f-a214-4be1-bf49-1c996ad6ad9d": {
+      "id": "/providers/Microsoft.PowerApps/apis/shared_logicflows",
+      "displayName": "Logic flows",
+      "dataSources": [
+        "asksop"
+      ],
+      "workflowDetails": {
+        "workflowEntityId": "51144882-57bd-f111-aaad-000d3a367453",
+        "workflowDisplayName": "Ask SOP",
+        "workflowName": "f6e44795-397f-971a-3cca-3ea9da1ae500"
+      }
+    },
+    "6f616a91-6e47-41a1-a771-bf33b22d85e3": {
+      "id": "/providers/Microsoft.PowerApps/apis/shared_logicflows",
+      "displayName": "Logic flows",
+      "dataSources": [
+        "sendbatchtoowner"
+      ],
+      "workflowDetails": {
+        "workflowEntityId": "0549d0ce-6abd-f111-aaad-000d3a367453",
+        "workflowDisplayName": "Send Batch to Owner",
+        "workflowName": "244d2175-0db0-6604-579d-bee16fc8e448"
+      }
+    }
+  },
+  "databaseReferences": {}
+}

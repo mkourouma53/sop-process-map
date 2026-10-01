@@ -1,0 +1,103 @@
+{
+  "step_matches": [
+    {
+      "golden_id": "S1",
+      "ai_id": "S1",
+      "reason": "Both have the requestor log in to the NTRR website and open Request a New Account."
+    },
+    {
+      "golden_id": "S2",
+      "ai_id": "S2",
+      "reason": "Both have the requestor download the DAR template."
+    },
+    {
+      "golden_id": "S3",
+      "ai_id": "S3",
+      "reason": "The AI step has the applicant complete the DAR sections, which is the main part of completing the DAR; signing is split off to the Business Official in AI S5."
+    },
+    {
+      "golden_id": "S4",
+      "ai_id": "S6",
+      "reason": "Both have the requestor upload the signed DAR."
+    },
+    {
+      "golden_id": "S5",
+      "ai_id": "S7",
+      "reason": "Both have the requestor fill in the required account fields."
+    },
+    {
+      "golden_id": "S6",
+      "ai_id": "S8",
+      "reason": "AI S8 merges selecting privileges with submitting, and is matched here as selecting privileges."
+    },
+    {
+      "golden_id": "S7",
+      "ai_id": "NONE",
+      "reason": "Submission is merged into AI S8, which is already matched to S6."
+    },
+    {
+      "golden_id": "S8",
+      "ai_id": "S9",
+      "reason": "Both have Operations staff review the DAR for accuracy and completeness."
+    },
+    {
+      "golden_id": "S9",
+      "ai_id": "S10",
+      "reason": "Both have Operations staff contact the applicant for more information."
+    },
+    {
+      "golden_id": "S10",
+      "ai_id": "S11",
+      "reason": "Both have Operations staff provide the DAR to the DAC."
+    },
+    {
+      "golden_id": "S11",
+      "ai_id": "S12",
+      "reason": "Both have the DAC review the information and authorize access."
+    },
+    {
+      "golden_id": "S12",
+      "ai_id": "S13",
+      "reason": "Both have the Admin establish the account with matching privileges."
+    },
+    {
+      "golden_id": "S13",
+      "ai_id": "S14",
+      "reason": "Both have the Admin send the automated activation email."
+    },
+    {
+      "golden_id": "S14",
+      "ai_id": "S15",
+      "reason": "Both have the requestor check the inbox for the approval email."
+    },
+    {
+      "golden_id": "S15",
+      "ai_id": "S16",
+      "reason": "Golden S15 combines checking spam with contacting the team, and AI S16 matches the spam-check part."
+    },
+    {
+      "golden_id": "S16",
+      "ai_id": "S18",
+      "reason": "AI S18 merges returning and logging in with accessing data, and is matched here as returning and logging in."
+    },
+    {
+      "golden_id": "S17",
+      "ai_id": "NONE",
+      "reason": "Accessing data is merged into AI S18, which is already matched to S16."
+    }
+  ],
+  "decision_matches": [
+    {
+      "golden_id": "D1",
+      "ai_id": "D3",
+      "correct": true,
+      "reason": "Both ask whether there are errors in the DAR, and both route Yes to contacting the applicant and No to sending it to the DAC."
+    },
+    {
+      "golden_id": "D2",
+      "ai_id": "D5",
+      "correct": true,
+      "reason": "Both ask whether the email arrived in a timely manner, and both route Yes to logging in and No to checking spam."
+    }
+  ]
+}

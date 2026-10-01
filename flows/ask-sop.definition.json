@@ -1,0 +1,287 @@
+{
+  "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "$connections": {
+      "defaultValue": {},
+      "type": "Object"
+    },
+    "$authentication": {
+      "defaultValue": {},
+      "type": "SecureObject"
+    },
+    "Claude API key (onyx_ClaudeApiKey)": {
+      "defaultValue": "",
+      "type": "String",
+      "metadata": {
+        "schemaName": "onyx_ClaudeApiKey"
+      }
+    }
+  },
+  "triggers": {
+    "manual": {
+      "type": "Request",
+      "kind": "PowerAppV2",
+      "inputs": {
+        "schema": {
+          "type": "object",
+          "properties": {
+            "text": {
+              "title": "sopId",
+              "type": "string",
+              "x-ms-dynamically-added": true,
+              "description": "SOPs library item ID",
+              "x-ms-content-hint": "TEXT"
+            },
+            "text_1": {
+              "title": "messages",
+              "type": "string",
+              "x-ms-dynamically-added": true,
+              "description": "JSON array of {role, content} turns ending with the new question",
+              "x-ms-content-hint": "TEXT"
+            },
+            "text_2": {
+              "title": "context",
+              "type": "string",
+              "x-ms-dynamically-added": true,
+              "description": "Where the reader is: process and screen",
+              "x-ms-content-hint": "TEXT"
+            }
+          },
+          "required": [
+            "text",
+            "text_1"
+          ]
+        }
+      }
+    }
+  },
+  "actions": {
+    "Get_SOP_file": {
+      "type": "OpenApiConnection",
+      "inputs": {
+        "host": {
+          "connectionName": "shared_sharepointonline",
+          "operationId": "HttpRequest",
+          "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+        },
+        "parameters": {
+          "dataset": "https://consultonyx.sharepoint.com/sites/sop-process-map",
+          "parameters/method": "GET",
+          "parameters/uri": "@concat('_api/web/lists/getbytitle(''SOPs'')/items(', triggerBody()?['text'], ')/File/$value')",
+          "parameters/headers": {
+            "Accept": "application/octet-stream"
+          }
+        },
+        "authentication": "@parameters('$authentication')"
+      },
+      "runAfter": {}
+    },
+    "Get_SOP_name": {
+      "type": "OpenApiConnection",
+      "inputs": {
+        "host": {
+          "connectionName": "shared_sharepointonline",
+          "operationId": "HttpRequest",
+          "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+        },
+        "parameters": {
+          "dataset": "https://consultonyx.sharepoint.com/sites/sop-process-map",
+          "parameters/method": "GET",
+          "parameters/uri": "@concat('_api/web/lists/getbytitle(''SOPs'')/items(', triggerBody()?['text'], ')?$select=FileLeafRef')",
+          "parameters/headers": {
+            "Accept": "application/json;odata=nometadata",
+            "Content-Type": "application/json;odata=nometadata"
+          }
+        },
+        "authentication": "@parameters('$authentication')"
+      },
+      "runAfter": {}
+    },
+    "Get_analysis": {
+      "type": "OpenApiConnection",
+      "inputs": {
+        "host": {
+          "connectionName": "shared_sharepointonline",
+          "operationId": "HttpRequest",
+          "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+        },
+        "parameters": {
+          "dataset": "https://consultonyx.sharepoint.com/sites/sop-process-map",
+          "parameters/method": "GET",
+          "parameters/uri": "@concat('_api/web/lists/getbytitle(''AI Runs'')/items?$select=RawOutput&$orderby=ID desc&$top=1&$filter=SOPId eq ', triggerBody()?['text'])",
+          "parameters/headers": {
+            "Accept": "application/json;odata=nometadata",
+            "Content-Type": "application/json;odata=nometadata"
+          }
+        },
+        "authentication": "@parameters('$authentication')"
+      },
+      "runAfter": {}
+    },
+    "Build_request": {
+      "type": "Compose",
+      "runAfter": {
+        "First_turn": [
+          "Succeeded"
+        ]
+      },
+      "inputs": {
+        "model": "claude-opus-5-5",
+        "max_tokens": 4000,
+        "output_config": {
+          "effort": "medium"
+        },
+        "system": "You answer questions about one standard operating procedure (SOP) for the people reviewing it: process analysts, process owners, and transformation leads.\n\nYou have two sources:\n1. The SOP document itself. This is the source of truth for what the procedure says.\n2. The AI analysis of that SOP (JSON): its processes, steps (S1, S2, ...), decisions (D1, ...), risks (R1, ...), recommended changes (A1, ...), and future state. The analysis was produced by another model and reviewed by people; it can be wrong.\n\nHow to answer:\n- Answer only from these two sources. If the SOP does not cover the question, say so plainly (\"The SOP doesn't say\") and, if useful, say what it does say nearby. Never fill gaps with general knowledge about how such processes usually work.\n- Keep SOP facts and analysis opinions apart. Cite the SOP for facts. When you use the analysis, say so (\"The analysis rates this high severity because...\") and refer to items by id (S12, R3, A5) so the reader can find them in the app.\n- When the SOP and the analysis disagree, point it out and side with the SOP.\n- The reader may tell you which process and screen they are on. Use that to resolve \"this step\", \"this risk\", or \"here\".\n- Be brief: a direct answer first, then the supporting detail. Use short paragraphs or a short list, not headings.\n- Do not invent numbers. Use only figures the SOP states or the analysis counted.\n",
+        "fallbacks": "default",
+        "messages": "@json(concat('[', string(outputs('First_turn')), ',', substring(triggerBody()?['text_1'], 1, sub(length(triggerBody()?['text_1']), 2)), ']'))"
+      }
+    },
+    "First_turn": {
+      "type": "Compose",
+      "runAfter": {
+        "Get_SOP_file": [
+          "Succeeded"
+        ],
+        "Get_SOP_name": [
+          "Succeeded"
+        ],
+        "Get_analysis": [
+          "Succeeded"
+        ]
+      },
+      "inputs": {
+        "role": "user",
+        "content": [
+          {
+            "type": "document",
+            "title": "@{body('Get_SOP_name')?['FileLeafRef']}",
+            "citations": {
+              "enabled": true
+            },
+            "source": {
+              "type": "base64",
+              "media_type": "application/pdf",
+              "data": "@{body('Get_SOP_file')?['$content']}"
+            }
+          },
+          {
+            "type": "text",
+            "cache_control": {
+              "type": "ephemeral"
+            },
+            "text": "@{concat('AI analysis of this SOP (JSON):', decodeUriComponent('%0A'), coalesce(first(body('Get_analysis')?['value'])?['RawOutput'], '{}'))}"
+          },
+          {
+            "type": "text",
+            "text": "@{concat('Reader is on: ', coalesce(triggerBody()?['text_2'], 'the SOP overview'), '. Their questions follow.')}"
+          }
+        ]
+      }
+    },
+    "Ask_Claude": {
+      "type": "Http",
+      "runAfter": {
+        "Build_request": [
+          "Succeeded"
+        ]
+      },
+      "inputs": {
+        "method": "POST",
+        "uri": "https://api.anthropic.com/v1/messages",
+        "headers": {
+          "x-api-key": "@parameters('Claude API key (onyx_ClaudeApiKey)')",
+          "anthropic-version": "2023-06-01",
+          "anthropic-beta": "server-side-fallback-2026-07-01",
+          "content-type": "application/json"
+        },
+        "body": "@outputs('Build_request')"
+      },
+      "runtimeConfiguration": {
+        "secureData": {
+          "properties": [
+            "inputs"
+          ]
+        }
+      },
+      "limit": {
+        "timeout": "PT110S"
+      }
+    },
+    "Respond": {
+      "type": "Response",
+      "kind": "PowerApp",
+      "runAfter": {
+        "Ask_Claude": [
+          "Succeeded"
+        ]
+      },
+      "inputs": {
+        "statusCode": 200,
+        "body": {
+          "answer": "@{string(body('Ask_Claude')?['content'])}",
+          "usage": "@{string(body('Ask_Claude')?['usage'])}",
+          "error": ""
+        },
+        "schema": {
+          "type": "object",
+          "properties": {
+            "answer": {
+              "title": "answer",
+              "type": "string",
+              "x-ms-dynamically-added": true
+            },
+            "usage": {
+              "title": "usage",
+              "type": "string",
+              "x-ms-dynamically-added": true
+            },
+            "error": {
+              "title": "error",
+              "type": "string",
+              "x-ms-dynamically-added": true
+            }
+          }
+        }
+      }
+    },
+    "Respond_error": {
+      "type": "Response",
+      "kind": "PowerApp",
+      "runAfter": {
+        "Ask_Claude": [
+          "Failed",
+          "TimedOut"
+        ]
+      },
+      "inputs": {
+        "statusCode": 200,
+        "body": {
+          "answer": "",
+          "usage": "",
+          "error": "@{coalesce(body('Ask_Claude')?['error']?['message'], 'The AI service did not answer. Check the Claude API key in the solution.')}"
+        },
+        "schema": {
+          "type": "object",
+          "properties": {
+            "answer": {
+              "title": "answer",
+              "type": "string",
+              "x-ms-dynamically-added": true
+            },
+            "usage": {
+              "title": "usage",
+              "type": "string",
+              "x-ms-dynamically-added": true
+            },
+            "error": {
+              "title": "error",
+              "type": "string",
+              "x-ms-dynamically-added": true
+            }
+          }
+        }
+      }
+    }
+  }
+}

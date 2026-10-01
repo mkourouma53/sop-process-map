@@ -1,0 +1,9 @@
+{
+  "verdicts": [
+    {
+      "ai_id": "S4",
+      "verdict": "supported",
+      "reason": "DAR FAQ 4 says \"The person who signs off on this section of the form needs to be responsible for assuring compliance.\" It describes this person as the one \"authorized to sign off as the business officer for this data access request,\" which matches the actor and action."
+    }
+  ]
+}

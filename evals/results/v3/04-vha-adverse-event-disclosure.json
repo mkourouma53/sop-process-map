@@ -1,0 +1,3650 @@
+{
+  "sop_title": "VHA Directive 1004.08 \u2013 Disclosure of Adverse Events to Patients (excerpt, paragraphs 5\u201310)",
+  "summary": "This directive sets out how VHA discloses harmful or potentially harmful adverse events to patients: clinical disclosure by the care team, institutional disclosure by facility leaders, and large-scale disclosure decided through a VA Central Office triage, SME Review Panel, and Clinical Review Board process. It is run by clinicians, facility leadership and Risk Managers, VISN Directors, the Deputy Under Secretary for Health for Operations and Management, the CRB, and the Principal Deputy Under Secretary for Health, who makes large-scale disclosure decisions.",
+  "sections": [
+    {
+      "section": "5",
+      "title": "Responsibilities",
+      "classification": "rules",
+      "reason": "Role-by-role lists of duties that could be reordered without losing meaning; flow-tied duties are drawn from the subsections.",
+      "mapped": true
+    },
+    {
+      "section": "5.a",
+      "title": "Under Secretary for Health",
+      "classification": "rules",
+      "reason": "A single compliance duty with no position in the flow.",
+      "mapped": false
+    },
+    {
+      "section": "5.b",
+      "title": "Principal Deputy Under Secretary for Health",
+      "classification": "rules",
+      "reason": "A list of duties that could be reordered, but items (1)-(7) and (9) are tied to points in the decision and implementation flows ('If a decision is made to convene the CRB', 'prior to making a final decision').",
+      "mapped": true
+    },
+    {
+      "section": "5.c",
+      "title": "Deputy Under Secretary for Health for Community Care",
+      "classification": "rules",
+      "reason": "An ethical-obligation statement and a general coordination duty with no position in the flow.",
+      "mapped": false
+    },
+    {
+      "section": "5.d",
+      "title": "Deputy Under Secretary for Health for Operations and Management",
+      "classification": "rules",
+      "reason": "Duties could be listed in any order, but triage, referral, implementation, and After Action Review are tied to positions in the large-scale flows.",
+      "mapped": true
+    },
+    {
+      "section": "5.e",
+      "title": "Chairperson of the Clinical Review Board",
+      "classification": "rules",
+      "reason": "Duties could be reordered, but convening the board and providing the recommendation and vote statement are tied to points in the CRB flow.",
+      "mapped": true
+    },
+    {
+      "section": "5.f",
+      "title": "CRB Membership",
+      "classification": "rules",
+      "reason": "Membership and voting rules that could be reordered.",
+      "mapped": false
+    },
+    {
+      "section": "5.g",
+      "title": "Clinical Review Board",
+      "classification": "rules",
+      "reason": "Mostly a scope and responsibility list, but the review and deliberation duties sit at defined points after the CRB is convened.",
+      "mapped": true
+    },
+    {
+      "section": "5.h",
+      "title": "Subject Matter Expert Review Panel",
+      "classification": "procedure",
+      "reason": "Fact-finding must come before the written report with one of three findings, so the order of (3)(a) and (b) matters.",
+      "mapped": true
+    },
+    {
+      "section": "5.i",
+      "title": "Assistant Deputy Under Secretary for Health for Patient Care Services",
+      "classification": "rules",
+      "reason": "An advisory expertise duty with no position in the flow.",
+      "mapped": false
+    },
+    {
+      "section": "5.j",
+      "title": "Assistant Deputy Under Secretary for Health for Quality, Safety, and Value",
+      "classification": "rules",
+      "reason": "A participation list that could be reordered; only the quarterly review in (4) is tied to the flow by its timing.",
+      "mapped": true
+    },
+    {
+      "section": "5.k",
+      "title": "Chief Officer for Specialty Care Services",
+      "classification": "rules",
+      "reason": "An advisory expertise duty with no position in the flow.",
+      "mapped": false
+    },
+    {
+      "section": "5.l",
+      "title": "Executive Director, National Center for Ethics in Health Care",
+      "classification": "rules",
+      "reason": "Participation and interpretation duties with no fixed position in the flow.",
+      "mapped": false
+    },
+    {
+      "section": "5.m",
+      "title": "Veterans Integrated Service Network Director",
+      "classification": "rules",
+      "reason": "Duties could be reordered, but the Issue Brief ('immediately upon receiving communication') and the quarterly report are tied to the flow.",
+      "mapped": true
+    },
+    {
+      "section": "5.n",
+      "title": "VA Medical Facility Director",
+      "classification": "rules",
+      "reason": "A responsibility list in which items (5), (6), (7), (8), and (12) are tied to points in the flow by 'immediately', 'if a tort claim has been filed', or 'quarterly'.",
+      "mapped": true
+    },
+    {
+      "section": "5.o",
+      "title": "VA Medical Center Chief of Staff and Associate Director of Patient Care Services",
+      "classification": "rules",
+      "reason": "Duties could be reordered; the immediate notification of the Director is tied to discovery of the event.",
+      "mapped": true
+    },
+    {
+      "section": "5.p",
+      "title": "VA Medical Facility Risk Manager",
+      "classification": "rules",
+      "reason": "Duties could be reordered; the immediate notification on discovery and the quarterly data collection are tied to the flow.",
+      "mapped": true
+    },
+    {
+      "section": "5.q",
+      "title": "Health Care Providers Responsible for the Patient's Care",
+      "classification": "rules",
+      "reason": "General duties that are detailed in the procedure in paragraph 8.",
+      "mapped": false
+    },
+    {
+      "section": "6",
+      "title": "Adverse Events That Warrant Disclosure",
+      "classification": "rules",
+      "reason": "Criteria for disclosure that could be reordered; they gate the disclosure decisions and supply exceptions (6.d, 6.e(1), 6.e(4)).",
+      "mapped": true
+    },
+    {
+      "section": "7",
+      "title": "Communicating Adverse Events",
+      "classification": "rules",
+      "reason": "General principles (personal representative, unclear cause, follow-up) that could be reordered; used as exceptions on the disclosure steps.",
+      "mapped": true
+    },
+    {
+      "section": "8",
+      "title": "Clinical Disclosure of Adverse Events",
+      "classification": "procedure",
+      "reason": "Describes how clinical disclosure 'proceeds as follows': decide who discloses, hold the conversation, then document.",
+      "mapped": true
+    },
+    {
+      "section": "8.a",
+      "title": "Who performs clinical disclosure",
+      "classification": "rules",
+      "reason": "The harm-level rule that decides who must disclose; it gates a decision.",
+      "mapped": true
+    },
+    {
+      "section": "8.b",
+      "title": "During the clinical disclosure process",
+      "classification": "procedure",
+      "reason": "The conversation moves from facts to concern to reassurance, so the order matters.",
+      "mapped": true
+    },
+    {
+      "section": "8.c",
+      "title": "Additional support staff",
+      "classification": "rules",
+      "reason": "Optional attendance with no position in the flow.",
+      "mapped": false
+    },
+    {
+      "section": "8.d",
+      "title": "Contact information",
+      "classification": "rules",
+      "reason": "A required element of the disclosure, mapped as a step in the conversation.",
+      "mapped": true
+    },
+    {
+      "section": "8.e",
+      "title": "Face-to-face, private setting",
+      "classification": "rules",
+      "reason": "Setting requirements that apply to the disclosure step.",
+      "mapped": true
+    },
+    {
+      "section": "8.f",
+      "title": "No discussion of compensation",
+      "classification": "rules",
+      "reason": "A content restriction with no position in the flow.",
+      "mapped": false
+    },
+    {
+      "section": "8.g",
+      "title": "Timing of clinical disclosure",
+      "classification": "rules",
+      "reason": "A 24-hour timing rule and an exemption that gate the clinical disclosure.",
+      "mapped": true
+    },
+    {
+      "section": "8.h",
+      "title": "Documentation of Clinical Disclosures",
+      "classification": "rules",
+      "reason": "Documentation conditions that gate the documentation step.",
+      "mapped": true
+    },
+    {
+      "section": "9",
+      "title": "Institutional Disclosure of Adverse Events",
+      "classification": "procedure",
+      "reason": "Planning, inviting the patient, conducting the disclosure, and documenting follow a required order.",
+      "mapped": true
+    },
+    {
+      "section": "9.a",
+      "title": "Definition, requirement, and timing",
+      "classification": "rules",
+      "reason": "The trigger criteria and the 72-hour timing rule that gate the process.",
+      "mapped": true
+    },
+    {
+      "section": "9.b",
+      "title": "Conferring with District Chief Counsel",
+      "classification": "procedure",
+      "reason": "Explicitly happens 'Prior to conducting an institutional disclosure'.",
+      "mapped": true
+    },
+    {
+      "section": "9.c",
+      "title": "Inviting the patient to meet",
+      "classification": "procedure",
+      "reason": "Happens 'When initiating' the disclosure, before the meeting.",
+      "mapped": true
+    },
+    {
+      "section": "9.d",
+      "title": "Face-to-face requirement",
+      "classification": "rules",
+      "reason": "A setting rule plus a documentation exception for remote disclosure.",
+      "mapped": true
+    },
+    {
+      "section": "9.e",
+      "title": "Patient lacking capacity and representative",
+      "classification": "rules",
+      "reason": "A recipient rule used as an exception.",
+      "mapped": true
+    },
+    {
+      "section": "9.f",
+      "title": "Attorney request",
+      "classification": "rules",
+      "reason": "A conditional rule that gates participant selection before the meeting.",
+      "mapped": true
+    },
+    {
+      "section": "9.g",
+      "title": "Required content of institutional disclosure",
+      "classification": "rules",
+      "reason": "A content checklist that could be reordered; each element is mapped as part of the meeting.",
+      "mapped": true
+    },
+    {
+      "section": "9.h",
+      "title": "Adverse Event and Close Call Report file",
+      "classification": "rules",
+      "reason": "A record-keeping rule with no position in the flow.",
+      "mapped": false
+    },
+    {
+      "section": "9.i",
+      "title": "Patient questions about investigation; tort claims",
+      "classification": "rules",
+      "reason": "Response rules; the tort-claim referral is gated by 'if a tort claim has been filed'.",
+      "mapped": true
+    },
+    {
+      "section": "9.j",
+      "title": "Protected QA documents",
+      "classification": "rules",
+      "reason": "Release restrictions with no position in the flow.",
+      "mapped": false
+    },
+    {
+      "section": "9.k",
+      "title": "Documentation of Institutional Disclosures",
+      "classification": "rules",
+      "reason": "Documentation rules tied to after the disclosure and to later communications.",
+      "mapped": true
+    },
+    {
+      "section": "10",
+      "title": "Large-Scale Disclosure of Adverse Events",
+      "classification": "rules",
+      "reason": "Definitions, timing, and gating rules for the large-scale process; the flow itself comes from paragraph 5 duties.",
+      "mapped": true
+    },
+    {
+      "section": "10.a",
+      "title": "Definition of large-scale disclosure",
+      "classification": "background",
+      "reason": "A definition, though it names the patient notification that is mapped in implementation.",
+      "mapped": true
+    },
+    {
+      "section": "10.b",
+      "title": "Issue Brief within 24 hours",
+      "classification": "rules",
+      "reason": "A deadline and alternate submitters for the Issue Brief step.",
+      "mapped": true
+    },
+    {
+      "section": "10.c",
+      "title": "Disclosure proceeds as usual when harm is clear",
+      "classification": "rules",
+      "reason": "A gating rule used as an exception.",
+      "mapped": true
+    },
+    {
+      "section": "10.d",
+      "title": "Waiting for VA Central Office coordination",
+      "classification": "rules",
+      "reason": "A conditional wait rule on institutional disclosure.",
+      "mapped": true
+    },
+    {
+      "section": "10.e",
+      "title": "Decision authority",
+      "classification": "rules",
+      "reason": "States who decides and the order of the review bodies; supports the decision flow.",
+      "mapped": true
+    },
+    {
+      "section": "10.f",
+      "title": "What a large-scale disclosure may entail",
+      "classification": "rules",
+      "reason": "An optional list ('any or all'); items (2) and (3) are mapped as implementation steps.",
+      "mapped": true
+    }
+  ],
+  "processes": [
+    {
+      "name": "Make a clinical disclosure",
+      "trigger": "A harmful or potentially harmful adverse event occurs during the patient's care",
+      "outcome": "The patient or personal representative has been informed and given contact information, and the disclosure is documented in CPRS when harm is more than minor",
+      "sections": [
+        "8",
+        "8.a",
+        "8.b",
+        "8.d",
+        "8.e",
+        "8.g",
+        "8.h",
+        "7"
+      ]
+    },
+    {
+      "name": "Escalate a significant adverse event",
+      "trigger": "A significant adverse event is brought to the attention of the Risk Manager",
+      "outcome": "The facility Director and District Chief Counsel are informed; for a systems issue, an Issue Brief has reached the Deputy Under Secretary for Health for Operations and Management",
+      "sections": [
+        "5.p",
+        "5.o",
+        "5.n",
+        "5.m",
+        "10.b"
+      ]
+    },
+    {
+      "name": "Make an institutional disclosure",
+      "trigger": "An adverse event has resulted in, or is reasonably expected to result in, death or serious injury",
+      "outcome": "The institutional disclosure is made and documented in the CPRS Institutional Disclosure note, with addenda for later communications",
+      "sections": [
+        "9",
+        "9.a",
+        "9.b",
+        "9.c",
+        "9.d",
+        "9.e",
+        "9.f",
+        "9.g",
+        "9.i",
+        "9.k",
+        "5.n",
+        "10.d"
+      ]
+    },
+    {
+      "name": "Decide on large-scale disclosure",
+      "trigger": "The Deputy Under Secretary for Health for Operations and Management receives an Issue Brief on an event that may require large-scale disclosure",
+      "outcome": "The Principal Deputy Under Secretary for Health has issued a written decision to close, disclose, or not disclose",
+      "sections": [
+        "5.b",
+        "5.d",
+        "5.e",
+        "5.g",
+        "5.h",
+        "10.e"
+      ]
+    },
+    {
+      "name": "Implement a large-scale disclosure",
+      "trigger": "The Principal Deputy Under Secretary for Health decides to conduct a large-scale disclosure",
+      "outcome": "Field sites and patients are notified, follow-up and any look-back are under way, and the After Action Review report has been submitted to the Under Secretary for Health",
+      "sections": [
+        "5.b",
+        "5.d",
+        "10.a",
+        "10.f"
+      ]
+    },
+    {
+      "name": "Report institutional disclosures quarterly",
+      "trigger": "The end of each quarter, or a request for the report",
+      "outcome": "The Assistant Deputy Under Secretary for Health for Quality, Safety, and Value has reviewed the VISN reports and sent recommendations to program offices",
+      "sections": [
+        "5.p",
+        "5.n",
+        "5.m",
+        "5.j"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "process": "Make a clinical disclosure",
+      "actor": "Clinical team",
+      "action": "Assess the adverse event's harm and when it was discovered relative to the episode of care",
+      "input": "Adverse event during the patient's care",
+      "output": "Initial harm and timing assessment",
+      "system": "",
+      "source_section": "8",
+      "source_quote": "",
+      "inferred": true
+    },
+    {
+      "id": "S2",
+      "process": "Make a clinical disclosure",
+      "actor": "Clinical team",
+      "action": "Determine whether the harm is more than minor, using the test of whether it requires an incident report",
+      "input": "Initial harm assessment",
+      "output": "Harm classified as minor or more than minor",
+      "system": "",
+      "source_section": "8.a",
+      "source_quote": "If a harm is significant enough to require an incident report or local equivalent, it should be considered more than minor.",
+      "inferred": false
+    },
+    {
+      "id": "S3",
+      "process": "Make a clinical disclosure",
+      "actor": "Responsible practitioner (or designee)",
+      "action": "Take responsibility for performing the clinical disclosure",
+      "input": "Harm classified as more than minor",
+      "output": "Disclosing clinician assigned",
+      "system": "",
+      "source_section": "8.a",
+      "source_quote": "must be performed by the responsible practitioner",
+      "inferred": false
+    },
+    {
+      "id": "S4",
+      "process": "Make a clinical disclosure",
+      "actor": "Clinical team member (the responsible practitioner when harm is more than minor)",
+      "action": "Provide preliminary factual information to the patient or personal representative, face-to-face in a private setting when practical",
+      "input": "Known facts of the event",
+      "output": "Facts disclosed",
+      "system": "",
+      "source_section": "8.b",
+      "source_quote": "Provides preliminary factual information, to the extent it is known",
+      "inferred": false
+    },
+    {
+      "id": "S5",
+      "process": "Make a clinical disclosure",
+      "actor": "Clinical team member (the responsible practitioner when harm is more than minor)",
+      "action": "Express concern for the patient's welfare",
+      "input": "Disclosure conversation",
+      "output": "Concern expressed",
+      "system": "",
+      "source_section": "8.b",
+      "source_quote": "Expresses concern for the patient's welfare.",
+      "inferred": false
+    },
+    {
+      "id": "S6",
+      "process": "Make a clinical disclosure",
+      "actor": "Clinical team member (the responsible practitioner when harm is more than minor)",
+      "action": "Reassure the patient or representative, in general terms, that steps are being taken to investigate, remedy injury, and prevent further harm",
+      "input": "Disclosure conversation",
+      "output": "General reassurance given",
+      "system": "",
+      "source_section": "8.b",
+      "source_quote": "Reassures the patient or personal representative that steps are being taken to investigate the situation",
+      "inferred": false
+    },
+    {
+      "id": "S7",
+      "process": "Make a clinical disclosure",
+      "actor": "Clinical team member (the responsible practitioner when harm is more than minor)",
+      "action": "Provide contact information for the designated VA staff who will answer questions",
+      "input": "Designated staff contact details",
+      "output": "Patient holds contact information",
+      "system": "",
+      "source_section": "8.d",
+      "source_quote": "must be provided with contact information of the designated VA health care staff",
+      "inferred": false
+    },
+    {
+      "id": "S8",
+      "process": "Make a clinical disclosure",
+      "actor": "Clinical team",
+      "action": "Document the clinical disclosure in a CPRS progress note for the encounter, not the institutional disclosure template",
+      "input": "Completed clinical disclosure",
+      "output": "Progress note documenting the disclosure",
+      "system": "CPRS",
+      "source_section": "8.h",
+      "source_quote": "documentation of a clinical disclosure is required when harm is more than minor",
+      "inferred": false
+    },
+    {
+      "id": "S9",
+      "process": "Escalate a significant adverse event",
+      "actor": "VA medical facility Risk Manager",
+      "action": "Immediately notify the Associate Director for Patient Care Services, the Chief of Staff, or the facility Director of the significant adverse event",
+      "input": "Significant adverse event brought to the Risk Manager's attention",
+      "output": "Leadership notified",
+      "system": "",
+      "source_section": "5.p",
+      "source_quote": "Immediately notifying the Associate Director for Patient Care Services, Chief of Staff, or VA medical facility Director",
+      "inferred": false
+    },
+    {
+      "id": "S10",
+      "process": "Escalate a significant adverse event",
+      "actor": "Chief of Staff / Associate Director of Patient Care Services",
+      "action": "Immediately notify the VA medical facility Director of the significant adverse event",
+      "input": "Notification of a significant adverse event",
+      "output": "Facility Director informed",
+      "system": "",
+      "source_section": "5.o",
+      "source_quote": "Immediately notifying the VA medical facility Director regarding the discovery of any significant adverse event",
+      "inferred": false
+    },
+    {
+      "id": "S11",
+      "process": "Escalate a significant adverse event",
+      "actor": "VA medical facility Director (or designee)",
+      "action": "Communicate the adverse event that may require institutional disclosure immediately to District Chief Counsel; escalation ends here and institutional disclosure proceeds separately",
+      "input": "Single-patient event that may require institutional disclosure",
+      "output": "District Chief Counsel informed",
+      "system": "",
+      "source_section": "5.n",
+      "source_quote": "adverse events that may require institutional disclosure are communicated immediately to District Chief Counsel",
+      "inferred": false
+    },
+    {
+      "id": "S12",
+      "process": "Escalate a significant adverse event",
+      "actor": "VA medical facility Director (or designee)",
+      "action": "Submit an Issue Brief to the VISN Director and District Chief Counsel",
+      "input": "Systems-issue event affecting multiple patients",
+      "output": "Issue Brief sent to the VISN Director and District Chief Counsel",
+      "system": "Issue Brief",
+      "source_section": "5.n",
+      "source_quote": "Submitting an Issue Brief to the VISN Director and District Chief Counsel immediately following the discovery",
+      "inferred": false
+    },
+    {
+      "id": "S13",
+      "process": "Escalate a significant adverse event",
+      "actor": "VISN Director (or designee)",
+      "action": "Submit an Issue Brief to the Deputy Under Secretary for Health for Operations and Management",
+      "input": "Facility Issue Brief or other reports",
+      "output": "Issue Brief received at VA Central Office",
+      "system": "Issue Brief",
+      "source_section": "5.m",
+      "source_quote": "Submitting an Issue Brief to the Deputy Under Secretary for Health for Operations and Management immediately",
+      "inferred": false
+    },
+    {
+      "id": "S14",
+      "process": "Make an institutional disclosure",
+      "actor": "Facility leadership (facility Director, Chief of Staff, Associate Director for Patient Care Services)",
+      "action": "Plan what will be communicated, by whom, and how, including the treating clinician's role if a clinical disclosure has already occurred; confer with District Chief Counsel as needed",
+      "input": "Adverse event resulting in or expected to result in death or serious injury",
+      "output": "Disclosure plan",
+      "system": "",
+      "source_section": "9.b",
+      "source_quote": "may confer with District Chief Counsel for assistance in deciding what is to be communicated, by whom, and how",
+      "inferred": false
+    },
+    {
+      "id": "S15",
+      "process": "Make an institutional disclosure",
+      "actor": "Institutional leaders",
+      "action": "Invite the patient or personal representative to meet",
+      "input": "Disclosure plan",
+      "output": "Disclosure meeting invitation",
+      "system": "",
+      "source_section": "9.c",
+      "source_quote": "institutional leaders invite the patient or personal representative to meet",
+      "inferred": false
+    },
+    {
+      "id": "S16",
+      "process": "Make an institutional disclosure",
+      "actor": "Institutional leaders",
+      "action": "Honor the request to bring an attorney and reconsider who attends on behalf of the institution",
+      "input": "Advance request to bring an attorney",
+      "output": "Adjusted participant list",
+      "system": "",
+      "source_section": "9.f",
+      "source_quote": "must be honored, but may influence the choice of participants on behalf of the institution",
+      "inferred": false
+    },
+    {
+      "id": "S17",
+      "process": "Make an institutional disclosure",
+      "actor": "Institutional leaders",
+      "action": "Hold the disclosure meeting, face-to-face in a private setting where possible, and express concern, apologize, and explain the known facts",
+      "input": "Scheduled meeting",
+      "output": "Apology and facts given",
+      "system": "",
+      "source_section": "9.g",
+      "source_quote": "An expression of concern and an apology, including an explanation of the facts",
+      "inferred": false
+    },
+    {
+      "id": "S18",
+      "process": "Make an institutional disclosure",
+      "actor": "Institutional leaders",
+      "action": "Outline treatment options, if appropriate",
+      "input": "Disclosure meeting",
+      "output": "Treatment options explained",
+      "system": "",
+      "source_section": "9.g",
+      "source_quote": "An outline of treatment options, if appropriate.",
+      "inferred": false
+    },
+    {
+      "id": "S19",
+      "process": "Make an institutional disclosure",
+      "actor": "Institutional leaders",
+      "action": "Arrange a second opinion, additional monitoring, expedited consultations, bereavement support, or other appropriate support",
+      "input": "Patient needs",
+      "output": "Support arrangements",
+      "system": "",
+      "source_section": "9.g",
+      "source_quote": "Arrangements for a second opinion, additional monitoring, expediting clinical consultations, bereavement support",
+      "inferred": false
+    },
+    {
+      "id": "S20",
+      "process": "Make an institutional disclosure",
+      "actor": "Institutional leaders",
+      "action": "Provide contact information for the designated staff who will answer questions",
+      "input": "Designated staff contact details",
+      "output": "Patient holds contact information",
+      "system": "",
+      "source_section": "9.g",
+      "source_quote": "Contact information regarding designated staff who are to respond to questions",
+      "inferred": false
+    },
+    {
+      "id": "S21",
+      "process": "Make an institutional disclosure",
+      "actor": "Institutional leaders",
+      "action": "Tell the patient or representative they may obtain outside medical or legal advice",
+      "input": "Disclosure meeting",
+      "output": "Patient informed of the option",
+      "system": "",
+      "source_section": "9.g",
+      "source_quote": "the option of obtaining outside medical or legal advice",
+      "inferred": false
+    },
+    {
+      "id": "S22",
+      "process": "Make an institutional disclosure",
+      "actor": "Institutional leaders",
+      "action": "Offer information on potential compensation and how to apply (VBA and Federal Tort Claims Act for Veterans; Federal Tort Claims Act only for non-Veterans), without assuring compensation",
+      "input": "Patient's Veteran status",
+      "output": "Compensation information provided",
+      "system": "",
+      "source_section": "9.g",
+      "source_quote": "Offering information about potential compensation from the Veterans Benefits Administration and under the Federal Tort Claims Act",
+      "inferred": false
+    },
+    {
+      "id": "S23",
+      "process": "Make an institutional disclosure",
+      "actor": "Risk Manager or other assigned staff member",
+      "action": "Refer the patient or representative to the VACO National Torts Group for coordination of document requests",
+      "input": "Known tort claim",
+      "output": "Referral to the National Torts Group",
+      "system": "",
+      "source_section": "9.i",
+      "source_quote": "must be referred to VACO National Torts Group for coordination of document requests, if a tort claim has been filed",
+      "inferred": false
+    },
+    {
+      "id": "S24",
+      "process": "Make an institutional disclosure",
+      "actor": "Authorized CPRS note author (e.g., Risk Manager, Patient Safety Manager, Quality Manager, Chief of Staff)",
+      "action": "Document the institutional disclosure using the CPRS Institutional Disclosure of Adverse Event note template",
+      "input": "Completed disclosure meeting",
+      "output": "Institutional Disclosure progress note",
+      "system": "CPRS",
+      "source_section": "9.k",
+      "source_quote": "must be done using the CPRS Institutional Disclosure of Adverse Event Note Template",
+      "inferred": false
+    },
+    {
+      "id": "S25",
+      "process": "Make an institutional disclosure",
+      "actor": "Risk Manager or organizational leaders",
+      "action": "Keep the patient or representative apprised of information that emerges from the investigation",
+      "input": "Investigation findings",
+      "output": "Ongoing communications with the patient",
+      "system": "",
+      "source_section": "9.g",
+      "source_quote": "the Risk Manager or organizational leaders engage the patient or personal representative to keep them apprised",
+      "inferred": false
+    },
+    {
+      "id": "S26",
+      "process": "Make an institutional disclosure",
+      "actor": "Authorized CPRS note author (e.g., Risk Manager, Patient Safety Manager, Quality Manager, Chief of Staff)",
+      "action": "Document each later communication about the event as an addendum to the original note",
+      "input": "Later communication",
+      "output": "Addendum to the Institutional Disclosure note",
+      "system": "CPRS",
+      "source_section": "9.k",
+      "source_quote": "must be documented in an addendum to the original note",
+      "inferred": false
+    },
+    {
+      "id": "S27",
+      "process": "Decide on large-scale disclosure",
+      "actor": "Deputy Under Secretary for Health for Operations and Management (coordinated triage process)",
+      "action": "Run the coordinated triage review with designated offices and SMEs and recommend, based on preliminary information, closing the issue, large-scale disclosure, or referral to the SME Review Panel or CRB",
+      "input": "Issue Brief",
+      "output": "Triage recommendation",
+      "system": "",
+      "source_section": "5.d",
+      "source_quote": "Ensuring a coordinated triage process for a review of each potential adverse event that may require large-scale disclosure",
+      "inferred": false
+    },
+    {
+      "id": "S28",
+      "process": "Decide on large-scale disclosure",
+      "actor": "Principal Deputy Under Secretary for Health (or designee)",
+      "action": "Concur or non-concur with the triage recommendation and provide a written record of the decision to the Deputy Under Secretary for Health for Operations and Management",
+      "input": "Triage recommendation",
+      "output": "Written decision record",
+      "system": "",
+      "source_section": "5.b",
+      "source_quote": "Concurring or non-concurring with the recommendation of the Deputy Under Secretary for Health for Operations and Management's coordinated triage process",
+      "inferred": false
+    },
+    {
+      "id": "S29",
+      "process": "Decide on large-scale disclosure",
+      "actor": "Deputy Under Secretary for Health for Operations and Management",
+      "action": "Refer the case to the SME Review Panel for more detailed review",
+      "input": "Decision to refer",
+      "output": "Case referred to the SME Review Panel",
+      "system": "",
+      "source_section": "5.d",
+      "source_quote": "Ensuring that potential cases are referred to the SME Review Panel or CRB for more detailed review",
+      "inferred": false
+    },
+    {
+      "id": "S30",
+      "process": "Decide on large-scale disclosure",
+      "actor": "SME Review Panel",
+      "action": "Conduct fact-finding (site visits if needed, literature reviews, risk assessments) and summarize findings on risk to patients and families",
+      "input": "Referred case",
+      "output": "Risk findings",
+      "system": "",
+      "source_section": "5.h",
+      "source_quote": "Conducting fact-finding, including site visits if needed, literature reviews, risk assessments",
+      "inferred": false
+    },
+    {
+      "id": "S31",
+      "process": "Decide on large-scale disclosure",
+      "actor": "SME Review Panel (led by the Deputy Under Secretary for Health for Operations and Management)",
+      "action": "Submit a written report to the Principal Deputy Under Secretary for Health finding negligible, clinically significant, or indeterminate risk, with the matching recommendation (5.d(3) also assigns this report to the Deputy Under Secretary for Health for Operations and Management)",
+      "input": "Risk findings",
+      "output": "Written report and recommendation",
+      "system": "",
+      "source_section": "5.h",
+      "source_quote": "Submitting a written report to the Principal Deputy Under Secretary for Health with one of the following three findings",
+      "inferred": false
+    },
+    {
+      "id": "S32",
+      "process": "Decide on large-scale disclosure",
+      "actor": "Principal Deputy Under Secretary for Health (or designee)",
+      "action": "Concur or non-concur with the SME Review Panel recommendation and provide a written record of the decision to the Deputy Under Secretary for Health for Operations and Management",
+      "input": "SME Review Panel report",
+      "output": "Written decision record",
+      "system": "",
+      "source_section": "5.b",
+      "source_quote": "providing a written record of this decision to the Deputy Under Secretary for Health for Operations and Management",
+      "inferred": false
+    },
+    {
+      "id": "S33",
+      "process": "Decide on large-scale disclosure",
+      "actor": "Principal Deputy Under Secretary for Health (or designee)",
+      "action": "Appoint the CRB Chairperson from the Deputy Under Secretary level",
+      "input": "Decision to convene the CRB",
+      "output": "CRB Chairperson appointed",
+      "system": "",
+      "source_section": "5.b",
+      "source_quote": "Appointing the Chairperson of the CRB from the Deputy Under Secretary-level",
+      "inferred": false
+    },
+    {
+      "id": "S34",
+      "process": "Decide on large-scale disclosure",
+      "actor": "Principal Deputy Under Secretary for Health (or designee)",
+      "action": "Communicate the charge to the CRB Chairperson and at the same time notify the Deputy Under Secretary for Health for Operations and Management, OGC, OPIA, and OCLA to begin preparing for a possible disclosure",
+      "input": "Decision to convene the CRB",
+      "output": "CRB charge and preparation notices",
+      "system": "",
+      "source_section": "5.b",
+      "source_quote": "communicating the charge to the CRB Chairperson and simultaneously notifying",
+      "inferred": false
+    },
+    {
+      "id": "S35",
+      "process": "Decide on large-scale disclosure",
+      "actor": "CRB Chairperson",
+      "action": "Convene and chair the CRB",
+      "input": "CRB charge",
+      "output": "CRB convened",
+      "system": "",
+      "source_section": "5.e",
+      "source_quote": "Convening and chairing the CRB",
+      "inferred": false
+    },
+    {
+      "id": "S36",
+      "process": "Decide on large-scale disclosure",
+      "actor": "Clinical Review Board",
+      "action": "Review the SME Review Panel's information and risk assessment, seeking clarifications as needed",
+      "input": "SME Review Panel report",
+      "output": "Reviewed risk assessment",
+      "system": "",
+      "source_section": "5.g",
+      "source_quote": "Reviewing the information and risk assessment provided by the SME Review Panel, seeking clarifications as necessary.",
+      "inferred": false
+    },
+    {
+      "id": "S37",
+      "process": "Decide on large-scale disclosure",
+      "actor": "Clinical Review Board",
+      "action": "Weigh the clinical, scientific, epidemiologic, and non-clinical factors and vote on whether to recommend disclosure and whether an epidemiologic investigation is recommended",
+      "input": "Reviewed risk assessment",
+      "output": "CRB determination and vote",
+      "system": "",
+      "source_section": "5.g",
+      "source_quote": "to determine whether a recommendation for disclosure of the adverse event to patients and families is appropriate",
+      "inferred": false
+    },
+    {
+      "id": "S38",
+      "process": "Decide on large-scale disclosure",
+      "actor": "CRB Chairperson",
+      "action": "Provide the Principal Deputy Under Secretary for Health with a plan and timeline for a definitive CRB recommendation",
+      "input": "CRB conclusion that information is insufficient",
+      "output": "Plan and timeline",
+      "system": "",
+      "source_section": "5.e",
+      "source_quote": "providing the Principal Deputy Under Secretary for Health with a plan and timeline for a definitive CRB recommendation",
+      "inferred": false
+    },
+    {
+      "id": "S39",
+      "process": "Decide on large-scale disclosure",
+      "actor": "CRB Chairperson",
+      "action": "Provide written recommendations and justifications on behalf of the CRB, addressing patient notification, facility follow-up, and inquiry at other facilities when disclosure is recommended",
+      "input": "CRB determination",
+      "output": "Written CRB recommendation",
+      "system": "",
+      "source_section": "5.e",
+      "source_quote": "written recommendations and justifications to the Principal Deputy Under Secretary for Health",
+      "inferred": false
+    },
+    {
+      "id": "S40",
+      "process": "Decide on large-scale disclosure",
+      "actor": "CRB Chairperson",
+      "action": "Provide a written statement on whether the recommendation was unanimous and, if not, the assenting and dissenting votes and their rationales",
+      "input": "CRB vote",
+      "output": "Vote statement",
+      "system": "",
+      "source_section": "5.e",
+      "source_quote": "whether the CRB recommendation regarding disclosure was unanimous",
+      "inferred": false
+    },
+    {
+      "id": "S41",
+      "process": "Decide on large-scale disclosure",
+      "actor": "Principal Deputy Under Secretary for Health (or designee)",
+      "action": "Request further information or guidance from the CRB",
+      "input": "CRB recommendation",
+      "output": "Information request to the CRB",
+      "system": "",
+      "source_section": "5.b",
+      "source_quote": "Requesting further information or guidance from the CRB, as needed, prior to making a final decision.",
+      "inferred": false
+    },
+    {
+      "id": "S42",
+      "process": "Decide on large-scale disclosure",
+      "actor": "Principal Deputy Under Secretary for Health (or designee)",
+      "action": "Concur or non-concur with the CRB recommendations and communicate the decision to the Deputy Under Secretary for Health for Operations and Management and the CRB Chairperson",
+      "input": "CRB recommendation and vote statement",
+      "output": "Final large-scale disclosure decision",
+      "system": "",
+      "source_section": "5.b",
+      "source_quote": "Concurring or non-concurring with the CRB recommendations, and communicating that decision",
+      "inferred": false
+    },
+    {
+      "id": "S43",
+      "process": "Implement a large-scale disclosure",
+      "actor": "Deputy Under Secretary for Health for Operations and Management",
+      "action": "Notify field sites of the large-scale disclosure, coordinating with OGC, OPIA, OCLA, and other offices",
+      "input": "Principal Deputy Under Secretary for Health decision to disclose",
+      "output": "Field sites notified",
+      "system": "",
+      "source_section": "5.d",
+      "source_quote": "Implementation includes notification of field sites",
+      "inferred": false
+    },
+    {
+      "id": "S44",
+      "process": "Implement a large-scale disclosure",
+      "actor": "Deputy Under Secretary for Health for Operations and Management",
+      "action": "Activate a site visit team",
+      "input": "Implementation decision",
+      "output": "Site visit team activated",
+      "system": "",
+      "source_section": "5.d",
+      "source_quote": "activation of a site visit team",
+      "inferred": false
+    },
+    {
+      "id": "S45",
+      "process": "Implement a large-scale disclosure",
+      "actor": "Office of the General Counsel and other appropriate offices",
+      "action": "Review the written materials and statements for the disclosure",
+      "input": "Draft disclosure materials",
+      "output": "Reviewed materials",
+      "system": "",
+      "source_section": "5.d",
+      "source_quote": "a review of written materials and statements by OGC, and other appropriate offices",
+      "inferred": false
+    },
+    {
+      "id": "S46",
+      "process": "Implement a large-scale disclosure",
+      "actor": "Principal Deputy Under Secretary for Health (or designee)",
+      "action": "Assign responsibility for leading, organizing, and conducting the look-back program and epidemiologic investigation",
+      "input": "Need for a look-back or investigation",
+      "output": "Look-back lead assigned",
+      "system": "",
+      "source_section": "5.b",
+      "source_quote": "Assigning responsibility for leading, organizing, and conducting any required VHA look-back program and epidemiologic investigation",
+      "inferred": false
+    },
+    {
+      "id": "S47",
+      "process": "Implement a large-scale disclosure",
+      "actor": "Principal Deputy Under Secretary for Health (or designee)",
+      "action": "Ensure facility and VISN leadership are notified that an epidemiologic investigation will take place, and set a clear line of authority, access, and accountability",
+      "input": "Look-back assignment",
+      "output": "Facility and VISN leadership notified",
+      "system": "",
+      "source_section": "5.b",
+      "source_quote": "Ensuring that VA medical facility and VISN leadership is notified that an epidemiologic investigation is going to take place",
+      "inferred": false
+    },
+    {
+      "id": "S48",
+      "process": "Implement a large-scale disclosure",
+      "actor": "Deputy Under Secretary for Health for Operations and Management",
+      "action": "Designate and facilitate the look-back activities and epidemiologic investigation",
+      "input": "Look-back assignment",
+      "output": "Look-back under way",
+      "system": "",
+      "source_section": "5.d",
+      "source_quote": "Designating and facilitating any required look-back activities and epidemiologic investigations",
+      "inferred": false
+    },
+    {
+      "id": "S49",
+      "process": "Implement a large-scale disclosure",
+      "actor": "VA medical facility Director (or designee), coordinated by VHA officials",
+      "action": "Notify the potentially affected patients or their personal representatives",
+      "input": "Reviewed disclosure materials",
+      "output": "Patients notified",
+      "system": "",
+      "source_section": "10.a",
+      "source_quote": "coordinating the notification to multiple patients (or their personal representatives)",
+      "inferred": false
+    },
+    {
+      "id": "S50",
+      "process": "Implement a large-scale disclosure",
+      "actor": "Deputy Under Secretary for Health for Operations and Management",
+      "action": "Coordinate with VA medical facilities to ensure required clinical follow-up is provided to potentially affected patients",
+      "input": "List of notified patients",
+      "output": "Clinical follow-up arranged",
+      "system": "",
+      "source_section": "10.f",
+      "source_quote": "Coordination with VA medical facilities to ensure that required clinical follow-up is provided for potentially-affected patients.",
+      "inferred": false
+    },
+    {
+      "id": "S51",
+      "process": "Implement a large-scale disclosure",
+      "actor": "Principal Deputy Under Secretary for Health (VA Central Office)",
+      "action": "Notify VBA Central Office that Veterans' benefits may be affected",
+      "input": "Possible benefits impact",
+      "output": "VBA Central Office notified",
+      "system": "",
+      "source_section": "10.f",
+      "source_quote": "Notification by VA Central Office to the Veterans Benefits Administration (VBA) Central Office component",
+      "inferred": false
+    },
+    {
+      "id": "S52",
+      "process": "Implement a large-scale disclosure",
+      "actor": "Deputy Under Secretary for Health for Operations and Management",
+      "action": "Conduct an After Action Review with SME participation and submit a report to the Under Secretary for Health",
+      "input": "Completed disclosure activities",
+      "output": "After Action Review report",
+      "system": "",
+      "source_section": "5.d",
+      "source_quote": "Conducting an After Action Review of the event with appropriate SME participation and submitting a report to the Under Secretary for Health",
+      "inferred": false
+    },
+    {
+      "id": "S53",
+      "process": "Report institutional disclosures quarterly",
+      "actor": "VA medical facility Risk Manager",
+      "action": "Collect, track, and analyze information on the facility's institutional disclosures for the quarterly report",
+      "input": "Institutional disclosures conducted at the facility",
+      "output": "Quarterly disclosure data",
+      "system": "",
+      "source_section": "5.p",
+      "source_quote": "Establishing a process for collection, tracking, and analysis of relevant information related to institutional disclosures",
+      "inferred": false
+    },
+    {
+      "id": "S54",
+      "process": "Report institutional disclosures quarterly",
+      "actor": "VA medical facility Director (or designee)",
+      "action": "Report the number and types of the facility's institutional disclosures to the VISN Director",
+      "input": "Quarterly disclosure data",
+      "output": "Facility quarterly report",
+      "system": "",
+      "source_section": "5.n",
+      "source_quote": "Providing a report quarterly, and as requested, to the VISN Director",
+      "inferred": false
+    },
+    {
+      "id": "S55",
+      "process": "Report institutional disclosures quarterly",
+      "actor": "VISN Director (or designee)",
+      "action": "Report the VISN's institutional disclosures (event date, disclosure date, number of unique patients, any death, departments involved, triggering event) to the Assistant Deputy Under Secretary for Health for Quality, Safety, and Value",
+      "input": "Facility quarterly reports",
+      "output": "VISN quarterly report",
+      "system": "",
+      "source_section": "5.m",
+      "source_quote": "Providing a report quarterly, and as requested, to the Assistant Deputy Under Secretary for Health for Quality, Safety, and Value",
+      "inferred": false
+    },
+    {
+      "id": "S56",
+      "process": "Report institutional disclosures quarterly",
+      "actor": "Assistant Deputy Under Secretary for Health for Quality, Safety, and Value (or designee)",
+      "action": "Complete a quarterly review and analysis of the institutional disclosures reported by each VISN",
+      "input": "VISN quarterly reports",
+      "output": "Quarterly analysis",
+      "system": "",
+      "source_section": "5.j",
+      "source_quote": "Completing a quarterly review and analysis of institutional disclosures reported by each VISN office",
+      "inferred": false
+    },
+    {
+      "id": "S57",
+      "process": "Report institutional disclosures quarterly",
+      "actor": "Assistant Deputy Under Secretary for Health for Quality, Safety, and Value (or designee)",
+      "action": "Send recommendations to the appropriate program offices based on the quarterly analysis",
+      "input": "Quarterly analysis",
+      "output": "Recommendations to program offices",
+      "system": "",
+      "source_section": "5.j",
+      "source_quote": "providing recommendations to appropriate program offices based on analysis of the quarterly review",
+      "inferred": false
+    }
+  ],
+  "decisions": [
+    {
+      "id": "D1",
+      "process": "Make a clinical disclosure",
+      "after_step": "S1",
+      "condition": "Is the harm minor, discovered after the episode of care, and without implications for the patient's future health?",
+      "branches": [
+        {
+          "label": "Yes - clinical disclosure not required",
+          "next_step": "END"
+        },
+        {
+          "label": "No",
+          "next_step": "S2"
+        }
+      ],
+      "source_section": "8.g",
+      "inferred": false
+    },
+    {
+      "id": "D2",
+      "process": "Make a clinical disclosure",
+      "after_step": "S2",
+      "condition": "Is the harm more than minor?",
+      "branches": [
+        {
+          "label": "Yes - responsible practitioner must disclose",
+          "next_step": "S3"
+        },
+        {
+          "label": "No - any clinical team member may disclose",
+          "next_step": "S4"
+        }
+      ],
+      "source_section": "8.a",
+      "inferred": false
+    },
+    {
+      "id": "D3",
+      "process": "Make a clinical disclosure",
+      "after_step": "S7",
+      "condition": "Is the harm more than minor, so documentation is required?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S8"
+        },
+        {
+          "label": "No - no specific CPRS documentation required",
+          "next_step": "END"
+        }
+      ],
+      "source_section": "8.h",
+      "inferred": false
+    },
+    {
+      "id": "D4",
+      "process": "Escalate a significant adverse event",
+      "after_step": "S10",
+      "condition": "Is the event a systems issue affecting multiple patients that might require large-scale disclosure?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S12"
+        },
+        {
+          "label": "No - single-patient event that may require institutional disclosure",
+          "next_step": "S11"
+        }
+      ],
+      "source_section": "5.n",
+      "inferred": false
+    },
+    {
+      "id": "D5",
+      "process": "Make an institutional disclosure",
+      "after_step": "S15",
+      "condition": "Did the patient or representative ask in advance to bring an attorney?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S16"
+        },
+        {
+          "label": "No",
+          "next_step": "S17"
+        }
+      ],
+      "source_section": "9.f",
+      "inferred": false
+    },
+    {
+      "id": "D6",
+      "process": "Make an institutional disclosure",
+      "after_step": "S22",
+      "condition": "Is it known that a tort claim has been filed?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S23"
+        },
+        {
+          "label": "No",
+          "next_step": "S24"
+        }
+      ],
+      "source_section": "9.i",
+      "inferred": false
+    },
+    {
+      "id": "D7",
+      "process": "Decide on large-scale disclosure",
+      "after_step": "S28",
+      "condition": "Does the Principal Deputy Under Secretary for Health concur with closing the issue as negligible risk?",
+      "branches": [
+        {
+          "label": "Yes - close the issue, no disclosure",
+          "next_step": "END"
+        },
+        {
+          "label": "No - large-scale disclosure required (proceed to implementation per 5.d(5))",
+          "next_step": "S43"
+        },
+        {
+          "label": "No - refer to SME Review Panel for detailed review",
+          "next_step": "S29"
+        },
+        {
+          "label": "No - convene the CRB",
+          "next_step": "S33"
+        },
+        {
+          "label": "Principal Deputy Under Secretary for Health non-concurs with the triage recommendation",
+          "next_step": "UNDEFINED"
+        }
+      ],
+      "source_section": "5.b",
+      "inferred": false
+    },
+    {
+      "id": "D8",
+      "process": "Decide on large-scale disclosure",
+      "after_step": "S32",
+      "condition": "Did the Principal Deputy Under Secretary for Health accept a finding of negligible risk?",
+      "branches": [
+        {
+          "label": "Yes - negligible risk, close the issue",
+          "next_step": "END"
+        },
+        {
+          "label": "No - clinically significant risk, disclosure required with no CRB",
+          "next_step": "S43"
+        },
+        {
+          "label": "No - indeterminate risk, convene the CRB",
+          "next_step": "S33"
+        },
+        {
+          "label": "Principal Deputy Under Secretary for Health non-concurs with the panel recommendation",
+          "next_step": "UNDEFINED"
+        }
+      ],
+      "source_section": "5.h",
+      "inferred": false
+    },
+    {
+      "id": "D9",
+      "process": "Decide on large-scale disclosure",
+      "after_step": "S37",
+      "condition": "Does the CRB have enough information to make a recommendation?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S39"
+        },
+        {
+          "label": "No",
+          "next_step": "S38"
+        }
+      ],
+      "source_section": "5.e",
+      "inferred": false
+    },
+    {
+      "id": "D10",
+      "process": "Decide on large-scale disclosure",
+      "after_step": "S40",
+      "condition": "Does the Principal Deputy Under Secretary for Health need further information or guidance from the CRB before deciding?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S41"
+        },
+        {
+          "label": "No",
+          "next_step": "S42"
+        }
+      ],
+      "source_section": "5.b",
+      "inferred": false
+    },
+    {
+      "id": "D11",
+      "process": "Decide on large-scale disclosure",
+      "after_step": "S42",
+      "condition": "Is the final decision to conduct a large-scale disclosure?",
+      "branches": [
+        {
+          "label": "Yes - implement (per 5.d(5))",
+          "next_step": "S43"
+        },
+        {
+          "label": "No - no disclosure",
+          "next_step": "END"
+        }
+      ],
+      "source_section": "5.b",
+      "inferred": false
+    },
+    {
+      "id": "D12",
+      "process": "Implement a large-scale disclosure",
+      "after_step": "S45",
+      "condition": "Is a look-back or epidemiologic investigation required?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S46"
+        },
+        {
+          "label": "No",
+          "next_step": "S49"
+        }
+      ],
+      "source_section": "5.b",
+      "inferred": false
+    },
+    {
+      "id": "D13",
+      "process": "Implement a large-scale disclosure",
+      "after_step": "S50",
+      "condition": "May Veterans' benefits be affected by the disclosure?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S51"
+        },
+        {
+          "label": "No",
+          "next_step": "S52"
+        }
+      ],
+      "source_section": "5.b",
+      "inferred": false
+    }
+  ],
+  "handoffs": [
+    {
+      "after_step": "S9",
+      "from_actor": "VA medical facility Risk Manager",
+      "to_actor": "Chief of Staff / Associate Director of Patient Care Services"
+    },
+    {
+      "after_step": "S10",
+      "from_actor": "Chief of Staff / Associate Director of Patient Care Services",
+      "to_actor": "VA medical facility Director (or designee)"
+    },
+    {
+      "after_step": "S11",
+      "from_actor": "VA medical facility Director (or designee)",
+      "to_actor": "District Chief Counsel"
+    },
+    {
+      "after_step": "S12",
+      "from_actor": "VA medical facility Director (or designee)",
+      "to_actor": "VISN Director (or designee)"
+    },
+    {
+      "after_step": "S13",
+      "from_actor": "VISN Director (or designee)",
+      "to_actor": "Deputy Under Secretary for Health for Operations and Management"
+    },
+    {
+      "after_step": "S22",
+      "from_actor": "Institutional leaders",
+      "to_actor": "Risk Manager or other assigned staff member"
+    },
+    {
+      "after_step": "S22",
+      "from_actor": "Institutional leaders",
+      "to_actor": "Authorized CPRS note author (e.g., Risk Manager, Patient Safety Manager, Quality Manager, Chief of Staff)"
+    },
+    {
+      "after_step": "S27",
+      "from_actor": "Deputy Under Secretary for Health for Operations and Management (coordinated triage process)",
+      "to_actor": "Principal Deputy Under Secretary for Health (or designee)"
+    },
+    {
+      "after_step": "S28",
+      "from_actor": "Principal Deputy Under Secretary for Health (or designee)",
+      "to_actor": "Deputy Under Secretary for Health for Operations and Management"
+    },
+    {
+      "after_step": "S29",
+      "from_actor": "Deputy Under Secretary for Health for Operations and Management",
+      "to_actor": "SME Review Panel"
+    },
+    {
+      "after_step": "S31",
+      "from_actor": "SME Review Panel (led by the Deputy Under Secretary for Health for Operations and Management)",
+      "to_actor": "Principal Deputy Under Secretary for Health (or designee)"
+    },
+    {
+      "after_step": "S34",
+      "from_actor": "Principal Deputy Under Secretary for Health (or designee)",
+      "to_actor": "CRB Chairperson"
+    },
+    {
+      "after_step": "S35",
+      "from_actor": "CRB Chairperson",
+      "to_actor": "Clinical Review Board"
+    },
+    {
+      "after_step": "S37",
+      "from_actor": "Clinical Review Board",
+      "to_actor": "CRB Chairperson"
+    },
+    {
+      "after_step": "S40",
+      "from_actor": "CRB Chairperson",
+      "to_actor": "Principal Deputy Under Secretary for Health (or designee)"
+    },
+    {
+      "after_step": "S41",
+      "from_actor": "Principal Deputy Under Secretary for Health (or designee)",
+      "to_actor": "Clinical Review Board"
+    },
+    {
+      "after_step": "S42",
+      "from_actor": "Principal Deputy Under Secretary for Health (or designee)",
+      "to_actor": "Deputy Under Secretary for Health for Operations and Management"
+    },
+    {
+      "after_step": "S44",
+      "from_actor": "Deputy Under Secretary for Health for Operations and Management",
+      "to_actor": "Office of the General Counsel and other appropriate offices"
+    },
+    {
+      "after_step": "S45",
+      "from_actor": "Office of the General Counsel and other appropriate offices",
+      "to_actor": "Principal Deputy Under Secretary for Health (or designee)"
+    },
+    {
+      "after_step": "S45",
+      "from_actor": "Office of the General Counsel and other appropriate offices",
+      "to_actor": "VA medical facility Director (or designee), coordinated by VHA officials"
+    },
+    {
+      "after_step": "S47",
+      "from_actor": "Principal Deputy Under Secretary for Health (or designee)",
+      "to_actor": "Deputy Under Secretary for Health for Operations and Management"
+    },
+    {
+      "after_step": "S48",
+      "from_actor": "Deputy Under Secretary for Health for Operations and Management",
+      "to_actor": "VA medical facility Director (or designee), coordinated by VHA officials"
+    },
+    {
+      "after_step": "S49",
+      "from_actor": "VA medical facility Director (or designee), coordinated by VHA officials",
+      "to_actor": "Deputy Under Secretary for Health for Operations and Management"
+    },
+    {
+      "after_step": "S50",
+      "from_actor": "Deputy Under Secretary for Health for Operations and Management",
+      "to_actor": "Principal Deputy Under Secretary for Health (VA Central Office)"
+    },
+    {
+      "after_step": "S51",
+      "from_actor": "Principal Deputy Under Secretary for Health (VA Central Office)",
+      "to_actor": "Deputy Under Secretary for Health for Operations and Management"
+    },
+    {
+      "after_step": "S53",
+      "from_actor": "VA medical facility Risk Manager",
+      "to_actor": "VA medical facility Director (or designee)"
+    },
+    {
+      "after_step": "S54",
+      "from_actor": "VA medical facility Director (or designee)",
+      "to_actor": "VISN Director (or designee)"
+    },
+    {
+      "after_step": "S55",
+      "from_actor": "VISN Director (or designee)",
+      "to_actor": "Assistant Deputy Under Secretary for Health for Quality, Safety, and Value (or designee)"
+    }
+  ],
+  "exceptions": [
+    {
+      "step": "S4",
+      "trigger": "The patient is deceased, incapacitated, or otherwise unable to take part in the disclosure",
+      "handling": "Communicate the disclosure to the patient's personal representative; others may be involved as the representative designates under VHA Directive 1605.01.",
+      "source_section": "7"
+    },
+    {
+      "step": "S4",
+      "trigger": "An adverse event has clearly occurred but its cause is not clear",
+      "handling": "Tell the Veteran or representative what occurred and what is known, whether the problem is being investigated, and whether more information will follow after the review.",
+      "source_section": "7"
+    },
+    {
+      "step": "S4",
+      "trigger": "An event with large-scale potential is discovered at or near the time it occurs and the potential harm to the individual patient is clear",
+      "handling": "Clinical or institutional disclosure proceeds as usual.",
+      "source_section": "10.c"
+    },
+    {
+      "step": "S1",
+      "trigger": "A complication anticipated and discussed during informed consent occurs",
+      "handling": "Discuss it with the patient as part of ongoing clinical care; if the complication is deemed untoward or preventable, disclosure is required.",
+      "source_section": "6"
+    },
+    {
+      "step": "S9",
+      "trigger": "The Risk Manager notifies the facility Director directly rather than the Chief of Staff or Associate Director for Patient Care Services",
+      "handling": "S10 is not needed; the Director already holds the notification.",
+      "source_section": "5.p"
+    },
+    {
+      "step": "S12",
+      "trigger": "The event is identified by a VISN Director or Program Officer rather than a facility",
+      "handling": "The VA medical facility Director, VISN Director, or Program Officer, as appropriate, submits the Issue Brief within 24 hours of discovery.",
+      "source_section": "10.b"
+    },
+    {
+      "step": "S15",
+      "trigger": "The event was recognized only after the episode of care and has potential for large-scale disclosure",
+      "handling": "Wait for the VA Central Office coordination process to finish before disclosing to the individual patient, but only if the delay will not harm the patient's health or wellbeing.",
+      "source_section": "10.d"
+    },
+    {
+      "step": "S15",
+      "trigger": "The patient cannot understand the situation and has no personal representative",
+      "handling": "Make the institutional disclosure to a family member involved in the patient's care, if available, after consulting the Privacy Office or District Chief Counsel on authorizations and limits.",
+      "source_section": "9.e"
+    },
+    {
+      "step": "S17",
+      "trigger": "A face-to-face disclosure is neither possible nor practical",
+      "handling": "Disclose by telephone or letter; the documentation must include the reason it was not done in person.",
+      "source_section": "9.d"
+    },
+    {
+      "step": "S22",
+      "trigger": "The patient or representative asks for compensation information that staff do not consider relevant",
+      "handling": "Provide the information anyway, with no assurance that compensation will be granted.",
+      "source_section": "9.g"
+    },
+    {
+      "step": "S25",
+      "trigger": "The patient or representative asks whether an investigation will be done and whether they will be told the results",
+      "handling": "Say the matter is being reviewed or investigated; staff may mention FOIA availability and that QA information under 38 U.S.C. 5705 is not releasable.",
+      "source_section": "9.i"
+    },
+    {
+      "step": "S28",
+      "trigger": "The Principal Deputy Under Secretary for Health non-concurs with the triage recommendation",
+      "handling": "",
+      "source_section": "5.b"
+    },
+    {
+      "step": "S32",
+      "trigger": "The Principal Deputy Under Secretary for Health non-concurs with the SME Review Panel recommendation",
+      "handling": "",
+      "source_section": "5.b"
+    },
+    {
+      "step": "S38",
+      "trigger": "The CRB concludes it has insufficient information to make a recommendation",
+      "handling": "The CRB Chairperson gives the Principal Deputy Under Secretary for Health a plan and timeline for a definitive recommendation; the SOP does not state how the CRB returns to deliberation.",
+      "source_section": "5.e"
+    },
+    {
+      "step": "S48",
+      "trigger": "After disclosure, the look-back or investigation finds that harm did not occur or the risk is negligible",
+      "handling": "The new risk information must be disclosed to the patient.",
+      "source_section": "6"
+    },
+    {
+      "step": "S50",
+      "trigger": "Family members or personal contacts of patients who are not Veterans ask about testing",
+      "handling": "Testing of non-Veterans is limited to those otherwise eligible for VA care; the facility advises them of local testing and treatment resources.",
+      "source_section": "10.f"
+    }
+  ],
+  "timing": [
+    {
+      "step": "S4",
+      "requirement": "Initiate clinical disclosure as soon as reasonably possible, generally within 24 hours of occurrence.",
+      "source_section": "8.g"
+    },
+    {
+      "step": "S9",
+      "requirement": "Notify leadership immediately on learning of a significant adverse event.",
+      "source_section": "5.p"
+    },
+    {
+      "step": "S10",
+      "requirement": "Notify the facility Director immediately.",
+      "source_section": "5.o"
+    },
+    {
+      "step": "S11",
+      "requirement": "Communicate to District Chief Counsel immediately.",
+      "source_section": "5.n"
+    },
+    {
+      "step": "S12",
+      "requirement": "Submit the Issue Brief immediately following discovery (5.n(7)) and within 24 hours of discovery (10.b).",
+      "source_section": "5.n"
+    },
+    {
+      "step": "S13",
+      "requirement": "Submit the Issue Brief immediately on receiving the facility's communication.",
+      "source_section": "5.m"
+    },
+    {
+      "step": "S15",
+      "requirement": "Initiate institutional disclosure as soon as reasonably possible, generally within 72 hours; this does not apply to events recognized after the episode of care, where disclosure may be delayed for a thorough investigation.",
+      "source_section": "9.a"
+    },
+    {
+      "step": "S15",
+      "requirement": "For events recognized after the episode of care with large-scale potential, wait until VA Central Office coordination is complete, provided the delay does not harm the patient.",
+      "source_section": "10.d"
+    },
+    {
+      "step": "S38",
+      "requirement": "The CRB Chairperson must provide a timeline for a definitive recommendation; no fixed duration is stated.",
+      "source_section": "5.e"
+    },
+    {
+      "step": "S53",
+      "requirement": "Collect institutional disclosure data for the quarterly report.",
+      "source_section": "5.p"
+    },
+    {
+      "step": "S54",
+      "requirement": "Report quarterly and as requested to the VISN Director.",
+      "source_section": "5.n"
+    },
+    {
+      "step": "S55",
+      "requirement": "Report quarterly and as requested to the Assistant Deputy Under Secretary for Health for Quality, Safety, and Value.",
+      "source_section": "5.m"
+    },
+    {
+      "step": "S56",
+      "requirement": "Complete the review and analysis quarterly.",
+      "source_section": "5.j"
+    }
+  ],
+  "risks": [
+    {
+      "id": "R1",
+      "process": "Escalate a significant adverse event",
+      "step": "S9",
+      "risk_type": "vague_ownership_or_timing",
+      "what_could_go_wrong": "A clinician or unit learns of a significant adverse event, but no one is named to tell the Risk Manager or told how fast. The Risk Manager hears about it late, so every 'immediately' step and the 24-hour Issue Brief clock start late.",
+      "cause": "5.p(1) and 5.o(1) begin only when an event is 'brought to the attention of' the Risk Manager or the Chief of Staff and Associate Director. No section in 5\u201310 names who reports to them or sets a time for that first report.",
+      "impact": "Escalation is delayed. The 24-hour Issue Brief deadline (10.b) and the 72-hour institutional disclosure target (9.a(2)) can be missed.",
+      "quantified_impact": [
+        {
+          "metric": "Issue Brief deadline after discovery",
+          "value": "24 hours",
+          "basis": "10.b"
+        },
+        {
+          "metric": "Named reporter or time limit for the first report to the Risk Manager",
+          "value": "0",
+          "basis": "5.p(1), 5.o(1)"
+        }
+      ],
+      "severity": "high",
+      "severity_reason": "No reporting path is defined, so delay is likely, and a late start pushes back every downstream deadline for multi-patient events.",
+      "addressed_by": [
+        "A3"
+      ]
+    },
+    {
+      "id": "R2",
+      "process": "Escalate a significant adverse event",
+      "step": "S9-S13",
+      "risk_type": "manual_handoff",
+      "what_could_go_wrong": "On a multi-patient event, the notice is relayed person to person by calls or emails with no shared record: Risk Manager, then Chief of Staff or Associate Director, then facility Director, then VISN Director, then the Deputy Under Secretary for Health for Operations and Management. If it stalls at any desk, Central Office receives the Issue Brief after 24 hours.",
+      "cause": "5.p(1), 5.o(1), 5.n(7) and 5.m(1) each require an 'immediate' relay by a different person. None of them requires a log, an acknowledgment, or a backup.",
+      "impact": "Central Office triage starts late. Disclosure to potentially affected patients is delayed, and the facility misses the 10.b deadline, which is a compliance finding.",
+      "quantified_impact": [
+        {
+          "metric": "Handoffs on the systems-issue path",
+          "value": "4",
+          "basis": "Map handoffs after S9, S10, S12, S13"
+        },
+        {
+          "metric": "Steps required 'immediately'",
+          "value": "5",
+          "basis": "Timing entries for S9-S13"
+        },
+        {
+          "metric": "Issue Brief deadline",
+          "value": "24 hours",
+          "basis": "10.b"
+        }
+      ],
+      "severity": "high",
+      "severity_reason": "Four untracked handoffs under one 24-hour deadline make a stall likely, and a stall delays notification of multiple patients.",
+      "addressed_by": [
+        "A3",
+        "A4",
+        "A5",
+        "A6",
+        "A7"
+      ]
+    },
+    {
+      "id": "R3",
+      "process": "Escalate a significant adverse event",
+      "step": "S12, S13",
+      "risk_type": "conflicting_rule",
+      "what_could_go_wrong": "Staff disagree about whether the 24-hour limit covers both the facility-to-VISN leg and the VISN-to-Central Office leg, and about who submits. The brief is sent twice, or it is not sent because each party assumes the other did it.",
+      "cause": "5.n(7) has the facility Director send the Issue Brief to the VISN Director and District Chief Counsel 'immediately'. 5.m(1) has the VISN Director send it to the Deputy Under Secretary for Health for Operations and Management 'immediately'. 10.b says the facility Director, VISN Director, or Program Officer, 'as appropriate', must submit an Issue Brief within 24 hours.",
+      "impact": "The Central Office receives the brief late or receives duplicate briefs, and accountability for the 24-hour requirement is unclear.",
+      "quantified_impact": [
+        {
+          "metric": "Possible submitters named in 10.b",
+          "value": "3",
+          "basis": "10.b"
+        },
+        {
+          "metric": "Different timing rules for the same Issue Brief",
+          "value": "2 ('immediately' in 5.n(7)/5.m(1) vs 'within 24 hours' in 10.b)",
+          "basis": "5.n(7), 5.m(1), 10.b"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "Confusion is plausible on each multi-patient event, but the 'immediately' wording usually keeps the brief moving.",
+      "addressed_by": [
+        "A6",
+        "A7"
+      ]
+    },
+    {
+      "id": "R4",
+      "process": "Make a clinical disclosure",
+      "step": "S4",
+      "risk_type": "vague_ownership_or_timing",
+      "what_could_go_wrong": "A minor-harm disclosure is forgotten or happens days later, and nothing shows it, because no record of the event or the disclosure is required.",
+      "cause": "8.g requires disclosure 'as soon as reasonably possible and generally within 24 hours'. 8.a lets any clinical team member disclose minor harm. 8.h(1) does not require documentation unless harm is more than minor.",
+      "impact": "Patients are informed late or never. The facility cannot show compliance for minor-harm events.",
+      "quantified_impact": [
+        {
+          "metric": "Target time to initiate clinical disclosure",
+          "value": "24 hours ('generally')",
+          "basis": "8.g"
+        },
+        {
+          "metric": "Documentation required for minor-harm disclosures",
+          "value": "0",
+          "basis": "8.h(1)"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "Missed minor-harm disclosures are likely to go unnoticed, but each one carries limited clinical impact.",
+      "addressed_by": []
+    },
+    {
+      "id": "R5",
+      "process": "Make an institutional disclosure",
+      "step": "S15",
+      "risk_type": "vague_ownership_or_timing",
+      "what_could_go_wrong": "A patient's institutional disclosure is held while the Central Office large-scale process runs. Nobody is on record as having judged that the delay is safe, and the patient's care is affected while they wait.",
+      "cause": "9.a(2) sets a target of 'generally within 72 hours' but exempts events recognized after the episode of care. 10.d allows waiting for Central Office coordination 'only if it is determined that the delay will not negatively affect' the patient. Neither section says who makes or records that determination, and the wait has no limit.",
+      "impact": "The patient is harmed by delayed information or care, and the facility faces compliance exposure under 9.a(1).",
+      "quantified_impact": [
+        {
+          "metric": "Institutional disclosure target",
+          "value": "72 hours ('generally')",
+          "basis": "9.a(2)"
+        },
+        {
+          "metric": "Maximum wait under 10.d",
+          "value": "Not stated",
+          "basis": "10.d"
+        },
+        {
+          "metric": "Named owner of the no-harm-from-delay determination",
+          "value": "0",
+          "basis": "10.d"
+        }
+      ],
+      "severity": "high",
+      "severity_reason": "Holds are expected for look-back events, and an undocumented hold can directly affect a seriously harmed patient.",
+      "addressed_by": [
+        "A9"
+      ]
+    },
+    {
+      "id": "R6",
+      "process": "Make an institutional disclosure",
+      "step": "S17-S22",
+      "risk_type": "missing_control",
+      "what_could_go_wrong": "During an emotional meeting, leaders skip a required element, for example compensation information or notice of the right to outside legal advice, and nobody notices.",
+      "cause": "9.g lists seven mandatory elements delivered verbally by 'institutional leaders'. No section requires a checklist or a confirmation that each element was given. 9.d also requires a recorded reason when the disclosure is not made in person.",
+      "impact": "The patient does not learn about compensation rights (9.g(6), 5.n(10)), creating legal and compliance exposure and a complaint risk.",
+      "quantified_impact": [
+        {
+          "metric": "Mandatory content elements",
+          "value": "7",
+          "basis": "9.g(1)-(7)"
+        },
+        {
+          "metric": "Confirmation checks in the SOP",
+          "value": "0",
+          "basis": "9.g"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "An omission is moderately likely in a complex conversation, and the impact is legal and patient-rights exposure.",
+      "addressed_by": [
+        "A12"
+      ]
+    },
+    {
+      "id": "R7",
+      "process": "Make an institutional disclosure",
+      "step": "S24",
+      "risk_type": "missing_control",
+      "what_could_go_wrong": "After the meeting, the leaders who held it assume an authorized note author will write the CPRS Institutional Disclosure note. The note is never entered, or it leaves out why the disclosure was not done in person.",
+      "cause": "9.k requires the template. 5.n(9)(c) restricts note entry to specific users, so the people who held the meeting may not be able to write the note. No section requires a check that the note exists.",
+      "impact": "There is no legal record of the disclosure, later addenda (S26) have nothing to attach to, and the gap becomes an audit finding.",
+      "quantified_impact": [
+        {
+          "metric": "Handoff between meeting and documentation",
+          "value": "1",
+          "basis": "Map handoff after S22 to the authorized CPRS note author"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "The handoff to a restricted author is easy to drop, and the missing record matters for audit and tort coordination.",
+      "addressed_by": [
+        "A14"
+      ]
+    },
+    {
+      "id": "R8",
+      "process": "Make an institutional disclosure",
+      "step": "S25",
+      "risk_type": "vague_ownership_or_timing",
+      "what_could_go_wrong": "The investigation produces new findings, but neither the Risk Manager nor the leaders take ownership of telling the patient, so the patient is not kept informed.",
+      "cause": "9.g(7) assigns ongoing communication to 'the Risk Manager or organizational leaders' 'as appropriate', with no single owner and no cadence. 7.c and 7.f require follow-up on investigation results.",
+      "impact": "The patient is uninformed about results that affect their health, trust is damaged, and S26 addenda are missing.",
+      "quantified_impact": [
+        {
+          "metric": "Possible owners named",
+          "value": "2 (Risk Manager or organizational leaders)",
+          "basis": "9.g(7)"
+        },
+        {
+          "metric": "Stated follow-up cadence",
+          "value": "0",
+          "basis": "9.g(7)"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "Shared ownership with no cadence makes lapses likely, and the impact falls on individual patients.",
+      "addressed_by": [
+        "A15"
+      ]
+    },
+    {
+      "id": "R9",
+      "process": "Decide on large-scale disclosure",
+      "step": "S28, S32",
+      "risk_type": "undefined_exception",
+      "what_could_go_wrong": "The Principal Deputy Under Secretary for Health disagrees with the triage or SME Review Panel recommendation, and the case stops because nobody knows whether to re-review, refer elsewhere, or decide directly.",
+      "cause": "5.b(2) says only 'concurring or non-concurring' and requires a written record. Decisions D7 and D8 have non-concur branches marked UNDEFINED.",
+      "impact": "The case stalls while patients wait, and individual disclosures held under 10.d are also delayed.",
+      "quantified_impact": [
+        {
+          "metric": "Decision branches with no next step",
+          "value": "2",
+          "basis": "Map decisions D7 and D8"
+        }
+      ],
+      "severity": "high",
+      "severity_reason": "Non-concurrence is a designed outcome, and when it happens the stall affects multiple patients.",
+      "addressed_by": [
+        "A17",
+        "A20"
+      ]
+    },
+    {
+      "id": "R10",
+      "process": "Decide on large-scale disclosure",
+      "step": "S38",
+      "risk_type": "undefined_exception",
+      "what_could_go_wrong": "The CRB reports it lacks enough information and sends a plan and timeline, but the timeline passes with no one reconvening the board.",
+      "cause": "5.e(3) requires a plan and timeline but sets no maximum duration. It does not say who tracks the timeline or how the CRB returns to deliberation.",
+      "impact": "The decision on disclosure is delayed indefinitely for potentially affected patients.",
+      "quantified_impact": [
+        {
+          "metric": "Fixed duration for a definitive recommendation",
+          "value": "0 (none stated)",
+          "basis": "5.e(3)"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "This path is used less often, but when it occurs nothing forces it back on schedule.",
+      "addressed_by": [
+        "A23"
+      ]
+    },
+    {
+      "id": "R11",
+      "process": "Decide on large-scale disclosure",
+      "step": "S29, S31",
+      "risk_type": "conflicting_rule",
+      "what_could_go_wrong": "The Deputy Under Secretary for Operations and Management and the SME Review Panel each think the other refers the case and submits the risk report. The Principal Deputy receives two reports, or none.",
+      "cause": "Referral: 5.d(2) gives it to the Deputy Under Secretary for Operations and Management, while 5.h(1) describes cases 'referred by the Principal Deputy Under Secretary for Health'. Report: 5.h(3)(b) has the SME Review Panel submit the written report, while 5.d(3) has the Deputy Under Secretary for Operations and Management summarize the findings and submit it.",
+      "impact": "Decision delay, or conflicting reports reaching the decision maker.",
+      "quantified_impact": [
+        {
+          "metric": "Owners named for referral",
+          "value": "2",
+          "basis": "5.d(2), 5.h(1)"
+        },
+        {
+          "metric": "Owners named for the written report",
+          "value": "2",
+          "basis": "5.h(3)(b), 5.d(3)"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "The Deputy Under Secretary leads the panel (5.h(2)), which limits confusion, but duplicate or missing reports remain plausible.",
+      "addressed_by": [
+        "A16",
+        "A19"
+      ]
+    },
+    {
+      "id": "R12",
+      "process": "Decide on large-scale disclosure",
+      "step": "S27-S42",
+      "risk_type": "manual_handoff",
+      "what_could_go_wrong": "A case moves among triage, the Principal Deputy, the SME Review Panel, the CRB Chair, and the CRB with no tracker and no deadlines. It sits for weeks at one stage while facilities hold disclosures for affected patients.",
+      "cause": "5.b, 5.d, 5.e, 5.g and 5.h set no timeframe for any Central Office stage. 10.d lets facilities wait for this process to finish.",
+      "impact": "Large-scale disclosure is delayed, individual institutional disclosures are held, and patients face health and trust impact.",
+      "quantified_impact": [
+        {
+          "metric": "Handoffs from triage to final decision",
+          "value": "10",
+          "basis": "Map handoffs after S27, S28, S29, S31, S34, S35, S37, S40, S41, S42"
+        },
+        {
+          "metric": "Possible decision points by the Principal Deputy Under Secretary",
+          "value": "3",
+          "basis": "S28, S32, S42"
+        },
+        {
+          "metric": "Stated stage deadlines",
+          "value": "0",
+          "basis": "5.b, 5.d, 5.e, 5.g, 5.h"
+        }
+      ],
+      "severity": "high",
+      "severity_reason": "Many untracked handoffs with no deadlines make delay likely, and the delay affects many patients.",
+      "addressed_by": [
+        "A16",
+        "A17",
+        "A20",
+        "A26"
+      ]
+    },
+    {
+      "id": "R13",
+      "process": "Implement a large-scale disclosure",
+      "step": "S43-S51",
+      "risk_type": "vague_ownership_or_timing",
+      "what_could_go_wrong": "After a decision to disclose, field notice, site visit, OGC review, patient letters, clinical follow-up, and the VBA notice are each assumed to be someone else's job. Some patients are not contacted, or are contacted before materials are reviewed.",
+      "cause": "10.a says only that 'VHA officials assist with coordinating the notification'. Duties are split across 5.b(6)-(7), 5.b(9), 5.d(5)-(6) and 10.f, with 10.f saying the disclosure 'may entail any or all'. No owner of patient notification and no timeline are named.",
+      "impact": "Patients miss notification or follow-up, unreviewed statements are released, and benefits are affected without VBA being told.",
+      "quantified_impact": [
+        {
+          "metric": "Handoffs in implementation",
+          "value": "8",
+          "basis": "Map handoffs after S44, S45 (2), S47, S48, S49, S50, S51"
+        },
+        {
+          "metric": "Stated implementation deadlines",
+          "value": "0",
+          "basis": "5.d(5), 10.f"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "The process is coordinated at senior level, but the many parallel owners make gaps plausible, and the consequences for patients are significant.",
+      "addressed_by": [
+        "A27"
+      ]
+    },
+    {
+      "id": "R14",
+      "process": "Implement a large-scale disclosure",
+      "step": "S48",
+      "risk_type": "undefined_exception",
+      "what_could_go_wrong": "The look-back finds that harm did not occur or the risk is negligible, but nobody is assigned to tell the already-notified patients, who keep worrying about an exposure that did not happen.",
+      "cause": "6.d says the new risk information 'must be made to the patient', and 7.c requires follow-up on investigation results. Neither names who does it or when, and no mapped step performs it.",
+      "impact": "Patients carry unneeded anxiety or undergo unnecessary testing, and the facility is out of compliance with 6.d.",
+      "quantified_impact": [
+        {
+          "metric": "Mapped steps performing the 6.d re-disclosure",
+          "value": "0",
+          "basis": "Exception on S48; no step in the map"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "This occurs only after look-backs, but when it does it affects every notified patient.",
+      "addressed_by": [
+        "A30"
+      ]
+    },
+    {
+      "id": "R15",
+      "process": "Report institutional disclosures quarterly",
+      "step": "S53-S55",
+      "risk_type": "rekeying",
+      "what_could_go_wrong": "The same disclosure facts already in CPRS notes are hand-compiled by the Risk Manager, retyped into the facility report, and retyped again into the VISN report. Counts drift and reports arrive late.",
+      "cause": "5.p(5), 5.n(12) and 5.m(4) each require a separate quarterly compilation at a different level, with no shared data source.",
+      "impact": "The Quality, Safety, and Value analysis (5.j(4)) is built on inaccurate or late data.",
+      "quantified_impact": [
+        {
+          "metric": "Manual compilations per quarter",
+          "value": "3 (facility data, facility report, VISN report)",
+          "basis": "S53, S54, S55"
+        },
+        {
+          "metric": "Handoffs in the reporting chain",
+          "value": "3",
+          "basis": "Map handoffs after S53, S54, S55"
+        },
+        {
+          "metric": "Reporting cycles per year",
+          "value": "4 (quarterly)",
+          "basis": "5.m(4), 5.n(12), 5.j(4)"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "This recurs every quarter, so errors are likely, but the impact is on oversight rather than direct patient care.",
+      "addressed_by": [
+        "A34",
+        "A35",
+        "A36"
+      ]
+    },
+    {
+      "id": "R16",
+      "process": "Report institutional disclosures quarterly",
+      "step": "S54, S55",
+      "risk_type": "conflicting_rule",
+      "what_could_go_wrong": "The facility reports only counts and types, so the VISN cannot fill in the event dates, patient counts, deaths, departments, and triggering events it must report, and has to chase each facility.",
+      "cause": "5.n(12) requires the facility report to cover 'the number and types' of disclosures. 5.m(4) requires the VISN report to include date of event, date of disclosure, number of unique patients, any death, department(s), and the triggering event.",
+      "impact": "VISN reports are incomplete or late, and national analysis is weakened.",
+      "quantified_impact": [
+        {
+          "metric": "Fields required at VISN level",
+          "value": "6",
+          "basis": "5.m(4)"
+        },
+        {
+          "metric": "Fields required at facility level",
+          "value": "2 (number and types)",
+          "basis": "5.n(12)"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "The mismatch exists every quarter, but the VISN can recover the data with extra effort.",
+      "addressed_by": [
+        "A12",
+        "A34"
+      ]
+    },
+    {
+      "id": "R17",
+      "process": "Decide on large-scale disclosure",
+      "step": "S28-S42",
+      "risk_type": "conflicting_rule",
+      "what_could_go_wrong": "Decision records, the CRB vote statement, and the panel report are filed in different places by different offices, and the complete case record cannot be assembled for the After Action Review or legal review.",
+      "cause": "5.b(8), 5.d(8), 5.e(6), 5.m(3) and 5.n(11) each make a different role responsible for 'a mechanism for maintaining' documents on the same large-scale disclosure.",
+      "impact": "The record is incomplete for the After Action Review (S52), audit, or litigation.",
+      "quantified_impact": [
+        {
+          "metric": "Roles separately responsible for document maintenance",
+          "value": "5",
+          "basis": "5.b(8), 5.d(8), 5.e(6), 5.m(3), 5.n(11)"
+        }
+      ],
+      "severity": "low",
+      "severity_reason": "Fragmentation is likely, but documents usually exist somewhere, so the impact is retrieval effort rather than loss.",
+      "addressed_by": [
+        "A16"
+      ]
+    }
+  ],
+  "recommendations": [
+    {
+      "id": "A1",
+      "process": "Make a clinical disclosure",
+      "step": "S2",
+      "label": "keep_human",
+      "proposed_change": "The clinical team keeps classifying harm as minor or more than minor, using the incident-report test.",
+      "reason": "This is a clinical judgment that decides who discloses and whether documentation is needed (8.a, 8.h).",
+      "implementation_steps": [
+        "No system change; reinforce the 8.a incident-report test in staff training."
+      ],
+      "suggested_tool": "None",
+      "value": 1,
+      "effort": 1,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 0,
+        "occurrence": "per adverse event",
+        "basis": "No change to the step."
+      },
+      "resolves_risks": []
+    },
+    {
+      "id": "A2",
+      "process": "Make a clinical disclosure",
+      "step": "S4",
+      "label": "keep_human",
+      "proposed_change": "The face-to-face clinical disclosure conversation (S4-S7) stays with the clinician.",
+      "reason": "This is a sensitive patient conversation requiring empathy and clinical judgment (8.b, 8.e). Adding mandatory logging for minor events would contradict 8.h(1).",
+      "implementation_steps": [
+        "No system change."
+      ],
+      "suggested_tool": "None",
+      "value": 1,
+      "effort": 1,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 0,
+        "occurrence": "per clinical disclosure",
+        "basis": "No change to the step."
+      },
+      "resolves_risks": []
+    },
+    {
+      "id": "A3",
+      "process": "Escalate a significant adverse event",
+      "step": "S9",
+      "label": "digitize",
+      "proposed_change": "The Risk Manager logs the significant adverse event in a Power Apps intake form keyed by case number. A flow notifies the Associate Director for Patient Care Services, the Chief of Staff, and the facility Director at the same time, with discovery and notification timestamps.",
+      "reason": "This replaces untracked phone and email relays with one timestamped record, and it starts the 24-hour Issue Brief clock at discovery.",
+      "implementation_steps": [
+        "Create a SharePoint list 'Adverse Event Escalations' identified by case number, not patient identifier, consistent with 9.h. Columns: discovery date/time, reporter, harm summary, single vs multiple patients, disclosure path, notification timestamps.",
+        "Restrict list permissions to the Risk Manager, facility leadership, and their designees.",
+        "Build a Power Apps canvas form for the Risk Manager to create the record.",
+        "Build a Power Automate flow on item creation that sends a Teams and Outlook notice to all three leaders and writes the sent time back to the item.",
+        "Add an adaptive card asking the Director to classify the event as a systems issue or a single-patient event (decision D4)."
+      ],
+      "suggested_tool": "Power Apps + SharePoint + Power Automate (Teams, Outlook connectors)",
+      "value": 5,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 10,
+        "occurrence": "per significant adverse event",
+        "basis": "Estimate: removes separate calls and emails to up to three leaders. Handoffs remain but become tracked."
+      },
+      "resolves_risks": [
+        "R1",
+        "R2"
+      ]
+    },
+    {
+      "id": "A4",
+      "process": "Escalate a significant adverse event",
+      "step": "S10",
+      "label": "eliminate",
+      "proposed_change": "Remove the Chief of Staff or Associate Director's relay to the facility Director, because A3 notifies the Director at the same moment.",
+      "reason": "Once all three leaders are notified at once, the relay duplicates the notice. 5.p(1) already allows notifying the Director directly, as shown in the map exception on S9.",
+      "implementation_steps": [
+        "Update the local SOP to state that the A3 notification satisfies 5.o(1).",
+        "Confirm that the Director is a recipient in the A3 flow."
+      ],
+      "suggested_tool": "Power Automate (via A3)",
+      "value": 3,
+      "effort": 1,
+      "impact": {
+        "handoffs_removed": 1,
+        "steps_removed": 1,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 5,
+        "occurrence": "per significant adverse event",
+        "basis": "Removes the S10 step and its handoff to the Director. Minutes are an estimate."
+      },
+      "resolves_risks": [
+        "R2"
+      ]
+    },
+    {
+      "id": "A5",
+      "process": "Escalate a significant adverse event",
+      "step": "S11",
+      "label": "automate",
+      "proposed_change": "When the Director classifies the event as one that may require institutional disclosure, a flow immediately sends the case summary to District Chief Counsel and records the time sent and acknowledged.",
+      "reason": "5.n(6) requires 'immediately'. The trigger is rule-based once the classification is made.",
+      "implementation_steps": [
+        "Add a 'District Chief Counsel notified' timestamp column to the A3 list.",
+        "Create a flow triggered when the disclosure path is set to institutional.",
+        "Send an Outlook email and Teams message to the District Chief Counsel mailbox containing the case number and summary only.",
+        "Request an acknowledgment with an adaptive card and log the response time on the item."
+      ],
+      "suggested_tool": "Power Automate (SharePoint, Outlook, Teams connectors)",
+      "value": 4,
+      "effort": 1,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 1,
+        "minutes_saved_per_occurrence": 10,
+        "occurrence": "per event that may require institutional disclosure",
+        "basis": "Removes retyping the event details into a separate email to counsel. Minutes are an estimate."
+      },
+      "resolves_risks": [
+        "R2"
+      ]
+    },
+    {
+      "id": "A6",
+      "process": "Escalate a significant adverse event",
+      "step": "S12",
+      "label": "ai_assist",
+      "proposed_change": "For a systems-issue event, an AI step drafts the Issue Brief from the intake record. The Director edits and approves it, and the flow sends it to the VISN Director and District Chief Counsel, with reminders before the 24-hour mark.",
+      "reason": "Drafting from facts already captured removes retyping, and the clock enforces 10.b.",
+      "implementation_steps": [
+        "Create a Word Issue Brief template in a restricted SharePoint library.",
+        "In the flow, use an AI Builder prompt (or Copilot) to draft brief sections from the A3 item fields.",
+        "Populate the template with 'Populate a Microsoft Word template' and save it to the case folder.",
+        "Route the draft to the Director with Approvals; on approval, email it to the VISN Director and District Chief Counsel.",
+        "Add a delay-until check that alerts the Director and VISN at 18 hours if the brief has not been sent. The 18-hour threshold is configurable, not from the SOP."
+      ],
+      "suggested_tool": "Power Automate + AI Builder + Word Online (Business) + Approvals",
+      "value": 4,
+      "effort": 3,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 1,
+        "minutes_saved_per_occurrence": 30,
+        "occurrence": "per systems-issue event",
+        "basis": "Removes re-entry of intake facts into the brief. Minutes are an estimate."
+      },
+      "resolves_risks": [
+        "R2",
+        "R3"
+      ]
+    },
+    {
+      "id": "A7",
+      "process": "Escalate a significant adverse event",
+      "step": "S13",
+      "label": "automate",
+      "proposed_change": "The VISN Director reviews the facility Issue Brief in an approval. On approval, the flow forwards it to the Deputy Under Secretary for Health for Operations and Management and creates the Central Office case record.",
+      "reason": "This removes a second manual send, gives the Central Office a tracked intake, and shows clearly who submitted and when (10.b).",
+      "implementation_steps": [
+        "Add an approval step for the VISN Director to the A6 flow.",
+        "On approval, email the brief to the Deputy Under Secretary for Health for Operations and Management mailbox.",
+        "Create an item in a Central Office 'Large-Scale Disclosure Cases' list, linked by case number.",
+        "Log submitter and timestamps so the policy owner can confirm the 24-hour reading of 10.b against 5.n(7) and 5.m(1)."
+      ],
+      "suggested_tool": "Power Automate (Approvals, Outlook, SharePoint)",
+      "value": 4,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 1,
+        "minutes_saved_per_occurrence": 15,
+        "occurrence": "per systems-issue event",
+        "basis": "Removes re-sending or retyping the brief. Minutes are an estimate."
+      },
+      "resolves_risks": [
+        "R2",
+        "R3"
+      ]
+    },
+    {
+      "id": "A8",
+      "process": "Make an institutional disclosure",
+      "step": "S14",
+      "label": "keep_human",
+      "proposed_change": "Facility leadership keeps planning what is said, by whom, and how, conferring with District Chief Counsel.",
+      "reason": "This involves legal and ethical judgment (9.b).",
+      "implementation_steps": [
+        "No system change."
+      ],
+      "suggested_tool": "None",
+      "value": 1,
+      "effort": 1,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 0,
+        "occurrence": "per institutional disclosure",
+        "basis": "No change to the step."
+      },
+      "resolves_risks": []
+    },
+    {
+      "id": "A9",
+      "process": "Make an institutional disclosure",
+      "step": "S15",
+      "label": "automate",
+      "proposed_change": "When an event is flagged for institutional disclosure, a flow sets the 72-hour target, or records a 10.d hold with the name of the person who determined the delay is safe, and reminds leaders until the invitation date is logged.",
+      "reason": "This makes the 72-hour target and the 10.d hold decision visible and owned.",
+      "implementation_steps": [
+        "Add columns to the A3 list: recognized after the episode of care (Y/N), 10.d hold (Y/N), hold determined by, hold rationale, invitation date.",
+        "Create a flow that calculates the target as discovery plus 72 hours when not exempt.",
+        "Send reminders at intervals to the leaders until the invitation date is filled. Intervals are configurable.",
+        "When the 10.d hold is set, require 'hold determined by' and rationale before saving, and send a weekly status reminder while the Central Office case is open."
+      ],
+      "suggested_tool": "Power Automate + SharePoint",
+      "value": 4,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 5,
+        "occurrence": "per institutional disclosure",
+        "basis": "Estimate: removes manual deadline tracking."
+      },
+      "resolves_risks": [
+        "R5"
+      ]
+    },
+    {
+      "id": "A10",
+      "process": "Make an institutional disclosure",
+      "step": "S16",
+      "label": "keep_human",
+      "proposed_change": "Leaders keep deciding who attends when the patient brings an attorney.",
+      "reason": "This is a legal and participant-selection judgment (9.f).",
+      "implementation_steps": [
+        "No system change."
+      ],
+      "suggested_tool": "None",
+      "value": 1,
+      "effort": 1,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 0,
+        "occurrence": "per attorney request",
+        "basis": "No change to the step."
+      },
+      "resolves_risks": []
+    },
+    {
+      "id": "A11",
+      "process": "Make an institutional disclosure",
+      "step": "S17",
+      "label": "keep_human",
+      "proposed_change": "The disclosure meeting, apology, and explanation of facts stay with institutional leaders, in person where possible.",
+      "reason": "This is a sensitive conversation with legal weight (9.d, 9.g(1)).",
+      "implementation_steps": [
+        "No system change."
+      ],
+      "suggested_tool": "None",
+      "value": 1,
+      "effort": 1,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 0,
+        "occurrence": "per institutional disclosure",
+        "basis": "No change to the step."
+      },
+      "resolves_risks": []
+    },
+    {
+      "id": "A12",
+      "process": "Make an institutional disclosure",
+      "step": "S22",
+      "label": "digitize",
+      "proposed_change": "Leaders complete a Power Apps disclosure checklist confirming each 9.g element. The app shows the right compensation information for the patient's Veteran status. The checklist also records modality, the reason if not in person, and the 5.m(4) reporting fields.",
+      "reason": "This gives a confirmation control over the required content and captures the quarterly reporting data once, at the source.",
+      "implementation_steps": [
+        "Create a SharePoint list 'Institutional Disclosure Checklist' linked by case number.",
+        "Add fields: each 9.g element (Y/N), Veteran status, modality, reason not in person, tort claim known (Y/N), date of event, date of disclosure, number of unique patients, death (Y/N), departments, triggering event.",
+        "Build a Power Apps form that shows VBA plus Federal Tort Claims Act guidance for Veterans and Federal Tort Claims Act guidance only for non-Veterans.",
+        "Make the 9.g fields required before submission."
+      ],
+      "suggested_tool": "Power Apps + SharePoint",
+      "value": 4,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 10,
+        "occurrence": "per institutional disclosure",
+        "basis": "Estimate: replaces ad-hoc notes. Feeds A14 and A34."
+      },
+      "resolves_risks": [
+        "R6",
+        "R16"
+      ]
+    },
+    {
+      "id": "A13",
+      "process": "Make an institutional disclosure",
+      "step": "S23",
+      "label": "automate",
+      "proposed_change": "If the checklist shows a known tort claim, a flow assigns the Risk Manager a task to refer the patient to the VACO National Torts Group and tracks completion.",
+      "reason": "This is a rule-based trigger (9.i, 5.n(5)).",
+      "implementation_steps": [
+        "Trigger on a checklist item where 'tort claim known' is Yes.",
+        "Create a Planner task for the Risk Manager containing the National Torts Group referral contact template.",
+        "Write the completion date back to the checklist."
+      ],
+      "suggested_tool": "Power Automate (SharePoint, Planner)",
+      "value": 2,
+      "effort": 1,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 5,
+        "occurrence": "per institutional disclosure with a known tort claim",
+        "basis": "Estimate."
+      },
+      "resolves_risks": []
+    },
+    {
+      "id": "A14",
+      "process": "Make an institutional disclosure",
+      "step": "S24",
+      "label": "automate",
+      "proposed_change": "When the checklist is submitted, a flow assigns the authorized CPRS note author a task to enter the Institutional Disclosure note, including the remote-modality reason if applicable, and reminds them until it is confirmed.",
+      "reason": "This closes the untracked handoff to a restricted note author (5.n(9)(c), 9.k).",
+      "implementation_steps": [
+        "Trigger on creation of a checklist item.",
+        "Create a Planner task, or send a Teams adaptive card, to the designated note author with the case number and modality and reason.",
+        "Send recurring reminders until the author marks 'CPRS note entered'.",
+        "Record the confirmation time on the checklist item."
+      ],
+      "suggested_tool": "Power Automate (SharePoint, Planner, Teams)",
+      "value": 3,
+      "effort": 1,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 5,
+        "occurrence": "per institutional disclosure",
+        "basis": "Estimate. CPRS entry itself remains manual; there is no M365 connector to CPRS."
+      },
+      "resolves_risks": [
+        "R7"
+      ]
+    },
+    {
+      "id": "A15",
+      "process": "Make an institutional disclosure",
+      "step": "S25",
+      "label": "automate",
+      "proposed_change": "The checklist names a single owner for ongoing communication. A flow reminds that owner on a set cadence while the investigation is open, and prompts a CPRS addendum (S26) after each contact.",
+      "reason": "This turns 'Risk Manager or organizational leaders as appropriate' into a named, scheduled duty (9.g(7)).",
+      "implementation_steps": [
+        "Add 'communication owner' (person) and 'investigation open' fields to the checklist.",
+        "Create a scheduled flow that reminds the owner at a configurable cadence.",
+        "When the owner logs a contact, create a reminder to the note author to add the S26 addendum."
+      ],
+      "suggested_tool": "Power Automate (Recurrence, SharePoint, Teams)",
+      "value": 3,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 5,
+        "occurrence": "per follow-up communication",
+        "basis": "Estimate."
+      },
+      "resolves_risks": [
+        "R8"
+      ]
+    },
+    {
+      "id": "A16",
+      "process": "Decide on large-scale disclosure",
+      "step": "S27",
+      "label": "digitize",
+      "proposed_change": "The coordinated triage records its recommendation (close, disclose, refer to the SME Review Panel, or convene the CRB) in the Central Office case tracker. The tracker shows the stage, owner, and age of every case and holds all case documents in one library.",
+      "reason": "This gives one case record and status view across all stages, and one document location for 5.b(8), 5.d(8), and 5.e(6).",
+      "implementation_steps": [
+        "Extend the A7 'Large-Scale Disclosure Cases' list with stage, current owner, stage start date, recommendation, and named referrer and report submitter.",
+        "Create a document library with a folder per case, restricted to Central Office participants.",
+        "Build a Power Apps screen for triage staff to record the recommendation.",
+        "Add a list view or Power BI page showing days in stage for each case.",
+        "Ask the policy owner to set one owner for referral and for the report (5.d(2) vs 5.h(1); 5.d(3) vs 5.h(3)(b)) and record that owner in the tracker."
+      ],
+      "suggested_tool": "Power Apps + SharePoint",
+      "value": 4,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 15,
+        "occurrence": "per large-scale disclosure case",
+        "basis": "Estimate: removes status-chasing emails."
+      },
+      "resolves_risks": [
+        "R11",
+        "R12",
+        "R17"
+      ]
+    },
+    {
+      "id": "A17",
+      "process": "Decide on large-scale disclosure",
+      "step": "S28",
+      "label": "automate",
+      "proposed_change": "The triage recommendation goes to the Principal Deputy Under Secretary for Health as an approval. Concur or non-concur is stored as the written record and sent to the Deputy Under Secretary for Operations and Management. A non-concur requires the decision maker to choose the next path.",
+      "reason": "This produces the written record automatically (5.b(2)) and closes the UNDEFINED non-concur branch of D7. The decision itself stays human.",
+      "implementation_steps": [
+        "Trigger when the triage recommendation is saved in the case tracker.",
+        "Start an Approvals action ('Approve with options': concur, non-concur) assigned to the Principal Deputy or designee.",
+        "On non-concur, require a selected next path: refer to SME Review Panel, convene CRB, disclose, or close. Ask the policy owner to confirm these options.",
+        "Save the response and comments as a PDF decision record in the case library and email it to the Deputy Under Secretary for Operations and Management.",
+        "Update the case stage and owner."
+      ],
+      "suggested_tool": "Power Automate (Approvals, SharePoint, Outlook)",
+      "value": 4,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 1,
+        "minutes_saved_per_occurrence": 15,
+        "occurrence": "per triage decision",
+        "basis": "Removes writing a separate decision memo. Minutes are an estimate."
+      },
+      "resolves_risks": [
+        "R9",
+        "R12"
+      ]
+    },
+    {
+      "id": "A18",
+      "process": "Decide on large-scale disclosure",
+      "step": "S30",
+      "label": "ai_assist",
+      "proposed_change": "An AI step summarizes uploaded site-visit notes and literature into a draft findings summary on probability and severity of harm. The SME Review Panel verifies it and makes all risk judgments.",
+      "reason": "This reduces reading and summarizing time. The risk assessment remains panel judgment (5.h(3)(a)).",
+      "implementation_steps": [
+        "Have the panel upload fact-finding documents to the case library.",
+        "Run an AI Builder or Copilot prompt that drafts a summary structured by probability of harm and severity of harm.",
+        "Save the draft to the case folder marked 'AI draft \u2013 requires panel review'."
+      ],
+      "suggested_tool": "Power Automate + AI Builder (or Microsoft 365 Copilot)",
+      "value": 3,
+      "effort": 3,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 60,
+        "occurrence": "per SME Review Panel case",
+        "basis": "Estimate."
+      },
+      "resolves_risks": []
+    },
+    {
+      "id": "A19",
+      "process": "Decide on large-scale disclosure",
+      "step": "S31",
+      "label": "digitize",
+      "proposed_change": "The SME Review Panel's written report becomes a structured form. It requires exactly one of the three findings with its matching recommendation, and a named submitter, and it routes to the Principal Deputy Under Secretary for Health.",
+      "reason": "This enforces the three-finding format (5.h(3)(b)) and records a single submitter, which addresses the 5.d(3) vs 5.h(3)(b) overlap once the policy owner sets the owner.",
+      "implementation_steps": [
+        "Add report fields to the case tracker: finding (negligible, clinically significant, or indeterminate), rationale, submitter.",
+        "Build a Power Apps form with finding as a required single choice.",
+        "Generate a PDF report into the case library on submission."
+      ],
+      "suggested_tool": "Power Apps + SharePoint",
+      "value": 3,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 20,
+        "occurrence": "per SME Review Panel report",
+        "basis": "Estimate."
+      },
+      "resolves_risks": [
+        "R11"
+      ]
+    },
+    {
+      "id": "A20",
+      "process": "Decide on large-scale disclosure",
+      "step": "S32",
+      "label": "automate",
+      "proposed_change": "The A17 approval pattern is reused for the SME Review Panel report: concur or non-concur, a required next path on non-concur, and an automatic written record.",
+      "reason": "This closes the UNDEFINED non-concur branch of D8 and produces the 5.b(2) record.",
+      "implementation_steps": [
+        "Trigger the A17 approval child flow when the A19 report is submitted.",
+        "Map options to D8 outcomes: close, disclose (go to implementation), or convene the CRB.",
+        "Store the decision record and update the stage."
+      ],
+      "suggested_tool": "Power Automate (Approvals, SharePoint)",
+      "value": 3,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 1,
+        "minutes_saved_per_occurrence": 15,
+        "occurrence": "per SME Review Panel decision",
+        "basis": "Removes a separate decision memo. Minutes are an estimate."
+      },
+      "resolves_risks": [
+        "R9",
+        "R12"
+      ]
+    },
+    {
+      "id": "A21",
+      "process": "Decide on large-scale disclosure",
+      "step": "S34",
+      "label": "automate",
+      "proposed_change": "When the decision is to convene the CRB, one flow sends the charge to the CRB Chairperson and the preparation notices to the Deputy Under Secretary for Operations and Management, OGC, OPIA, and OCLA at the same time.",
+      "reason": "5.b(3) requires these notices 'simultaneously'. The recipients are fixed.",
+      "implementation_steps": [
+        "Trigger when the case stage changes to 'Convene CRB'.",
+        "Send the charge, with links to the case documents, to the Chair.",
+        "Send the parallel notices to the office mailboxes.",
+        "Log the send times on the case."
+      ],
+      "suggested_tool": "Power Automate (SharePoint, Outlook)",
+      "value": 2,
+      "effort": 1,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 4,
+        "minutes_saved_per_occurrence": 15,
+        "occurrence": "per CRB convened",
+        "basis": "Five recipients receive one generated message instead of separately written ones (4 fewer). Minutes are an estimate."
+      },
+      "resolves_risks": []
+    },
+    {
+      "id": "A22",
+      "process": "Decide on large-scale disclosure",
+      "step": "S37",
+      "label": "keep_human",
+      "proposed_change": "CRB deliberation and voting on disclosure and on any epidemiologic investigation stay with the board.",
+      "reason": "This is an ethical and clinical judgment about patients (5.g(3)).",
+      "implementation_steps": [
+        "No system change."
+      ],
+      "suggested_tool": "None",
+      "value": 1,
+      "effort": 1,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 0,
+        "occurrence": "per CRB deliberation",
+        "basis": "No change to the step."
+      },
+      "resolves_risks": []
+    },
+    {
+      "id": "A23",
+      "process": "Decide on large-scale disclosure",
+      "step": "S38",
+      "label": "automate",
+      "proposed_change": "The CRB Chair records the plan and the target date for a definitive recommendation in the tracker. The flow reminds the Chair before that date and alerts the Principal Deputy if it passes without a recommendation.",
+      "reason": "This gives the 5.e(3) timeline a tracked return path.",
+      "implementation_steps": [
+        "Add 'plan' and 'definitive recommendation due' fields to the case.",
+        "Create a scheduled flow that checks the due date daily.",
+        "Send reminders to the Chair before the date and an overdue alert to the Principal Deputy after it."
+      ],
+      "suggested_tool": "Power Automate (Recurrence, SharePoint, Outlook)",
+      "value": 3,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 5,
+        "occurrence": "per CRB insufficient-information outcome",
+        "basis": "Estimate."
+      },
+      "resolves_risks": [
+        "R10"
+      ]
+    },
+    {
+      "id": "A24",
+      "process": "Decide on large-scale disclosure",
+      "step": "S39",
+      "label": "digitize",
+      "proposed_change": "The CRB Chair submits one structured recommendation form. It includes the recommendation, the justification, the required 5.e(5) elements when disclosure is recommended, and the vote tally with assenting and dissenting rationales.",
+      "reason": "This makes sure the 5.e(4) and 5.e(5) content is complete and puts it in one submission.",
+      "implementation_steps": [
+        "Add fields: recommendation, justification, patient notification plan, facility follow-up, inquiry at other facilities, unanimous (Y/N), assent count, dissent count, rationales.",
+        "Build a Power Apps form; make the 5.e(5) fields required when the recommendation is to disclose.",
+        "Generate a PDF into the case library and notify the Principal Deputy."
+      ],
+      "suggested_tool": "Power Apps + SharePoint",
+      "value": 3,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 20,
+        "occurrence": "per CRB recommendation",
+        "basis": "Estimate."
+      },
+      "resolves_risks": []
+    },
+    {
+      "id": "A25",
+      "process": "Decide on large-scale disclosure",
+      "step": "S40",
+      "label": "eliminate",
+      "proposed_change": "The separate vote statement is folded into the A24 recommendation form as a required section.",
+      "reason": "The vote statement goes from the same author to the same recipient at the same time. 5.e(4) is still met as a section of the submission.",
+      "implementation_steps": [
+        "Include the vote fields in the A24 form.",
+        "Note in the local SOP that the A24 submission satisfies 5.e(4)."
+      ],
+      "suggested_tool": "Power Apps (via A24)",
+      "value": 2,
+      "effort": 1,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 1,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 1,
+        "minutes_saved_per_occurrence": 10,
+        "occurrence": "per CRB recommendation",
+        "basis": "Removes step S40 and its separate document. The handoff to the Principal Deputy remains via the A24 submission. Minutes are an estimate."
+      },
+      "resolves_risks": []
+    },
+    {
+      "id": "A26",
+      "process": "Decide on large-scale disclosure",
+      "step": "S42",
+      "label": "automate",
+      "proposed_change": "The Principal Deputy concurs or non-concurs with the CRB recommendation in an approval, with an option to request more information (S41). The decision is stored and sent automatically to the Deputy Under Secretary for Operations and Management and the CRB Chair.",
+      "reason": "This removes manual decision memos and gives the case its final tracked status (5.b(4)).",
+      "implementation_steps": [
+        "Trigger when the A24 form is submitted.",
+        "Start an Approvals action with options: concur, non-concur, request more information.",
+        "On 'request more information', notify the Chair and reset the stage.",
+        "Otherwise, store the PDF decision record and email it to both recipients.",
+        "On a decision to disclose, set the stage to Implementation, which triggers A27."
+      ],
+      "suggested_tool": "Power Automate (Approvals, SharePoint, Outlook)",
+      "value": 4,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 1,
+        "minutes_saved_per_occurrence": 15,
+        "occurrence": "per CRB decision",
+        "basis": "Removes a separately written decision communication. Minutes are an estimate."
+      },
+      "resolves_risks": [
+        "R12"
+      ]
+    },
+    {
+      "id": "A27",
+      "process": "Implement a large-scale disclosure",
+      "step": "S43",
+      "label": "automate",
+      "proposed_change": "A decision to disclose triggers a flow that notifies field sites and OGC, OPIA, and OCLA. It also creates an implementation tracker with a named owner and task for each activity: site visit, OGC review, look-back, patient notification, clinical follow-up, and VBA notice.",
+      "reason": "This gives clear ownership of the parallel implementation activities in 5.d(5) and 10.f.",
+      "implementation_steps": [
+        "Create a Planner plan per case from a template, with tasks for S44, S45, S46-S48, S49, S50, and S51.",
+        "Have the flow send notices to field-site leadership and the program office mailboxes.",
+        "Require an owner for each task, including a named owner for patient notification (10.a).",
+        "Add a gate so the patient-notification task cannot be marked ready until the OGC review task is complete."
+      ],
+      "suggested_tool": "Power Automate (SharePoint, Planner, Outlook)",
+      "value": 4,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 30,
+        "occurrence": "per large-scale disclosure",
+        "basis": "Estimate."
+      },
+      "resolves_risks": [
+        "R13"
+      ]
+    },
+    {
+      "id": "A28",
+      "process": "Implement a large-scale disclosure",
+      "step": "S45",
+      "label": "keep_human",
+      "proposed_change": "OGC and other offices keep reviewing all written materials and statements.",
+      "reason": "This is a legal sign-off (5.d(5)).",
+      "implementation_steps": [
+        "No system change; tracked as a task in A27."
+      ],
+      "suggested_tool": "None",
+      "value": 1,
+      "effort": 1,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 0,
+        "occurrence": "per large-scale disclosure",
+        "basis": "No change to the step."
+      },
+      "resolves_risks": []
+    },
+    {
+      "id": "A29",
+      "process": "Implement a large-scale disclosure",
+      "step": "S46",
+      "label": "keep_human",
+      "proposed_change": "The Principal Deputy keeps assigning the look-back and epidemiologic investigation lead.",
+      "reason": "This is a leadership decision about people and accountability (5.b(9)).",
+      "implementation_steps": [
+        "No system change; record the assignee in the A27 tracker."
+      ],
+      "suggested_tool": "None",
+      "value": 1,
+      "effort": 1,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 0,
+        "occurrence": "per look-back",
+        "basis": "No change to the step."
+      },
+      "resolves_risks": []
+    },
+    {
+      "id": "A30",
+      "process": "Implement a large-scale disclosure",
+      "step": "S48",
+      "label": "automate",
+      "proposed_change": "Look-back results are recorded in the case tracker. When the result is 'harm did not occur' or 'negligible risk', a flow creates a re-disclosure task for the patient-notification owner, so notified patients get the new information required by 6.d.",
+      "reason": "This gives the 6.d and 7.c follow-up an owner and a trigger.",
+      "implementation_steps": [
+        "Add 'look-back result' and 'result date' fields to the case.",
+        "Trigger on a result of 'no harm' or 'negligible'.",
+        "Create a Planner task for the named patient-notification owner and set the case to 'Re-disclosure pending'."
+      ],
+      "suggested_tool": "Power Automate (SharePoint, Planner)",
+      "value": 3,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 5,
+        "occurrence": "per look-back result",
+        "basis": "Estimate."
+      },
+      "resolves_risks": [
+        "R14"
+      ]
+    },
+    {
+      "id": "A31",
+      "process": "Implement a large-scale disclosure",
+      "step": "S49",
+      "label": "keep_human",
+      "proposed_change": "Notifying potentially affected patients and representatives stays with designated facility staff.",
+      "reason": "This is sensitive communication subject to privacy limits (10.e, 7.d, 7.e).",
+      "implementation_steps": [
+        "No system change; track completion in the A27 plan."
+      ],
+      "suggested_tool": "None",
+      "value": 1,
+      "effort": 1,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 0,
+        "occurrence": "per large-scale disclosure",
+        "basis": "No change to the step."
+      },
+      "resolves_risks": []
+    },
+    {
+      "id": "A32",
+      "process": "Implement a large-scale disclosure",
+      "step": "S51",
+      "label": "automate",
+      "proposed_change": "When the case is flagged 'Veterans' benefits may be affected', a flow sends the prepared notice to VBA Central Office and logs it.",
+      "reason": "This is a rule-based notification (5.b(6), 10.f(3)).",
+      "implementation_steps": [
+        "Add a 'benefits may be affected' flag to the case.",
+        "Trigger the flow on the flag.",
+        "Send an Outlook email to the VBA Central Office contact with Principal Deputy office approval, and log the send time."
+      ],
+      "suggested_tool": "Power Automate (SharePoint, Outlook, Approvals)",
+      "value": 2,
+      "effort": 1,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 10,
+        "occurrence": "per large-scale disclosure affecting benefits",
+        "basis": "Estimate."
+      },
+      "resolves_risks": []
+    },
+    {
+      "id": "A33",
+      "process": "Implement a large-scale disclosure",
+      "step": "S52",
+      "label": "ai_assist",
+      "proposed_change": "An AI step drafts the After Action Review timeline and summary from the case tracker history and documents. The Deputy Under Secretary for Operations and Management and the SMEs revise it and submit it to the Under Secretary for Health.",
+      "reason": "The tracker holds the full timeline, so drafting from it saves compilation time. Findings remain human.",
+      "implementation_steps": [
+        "Export case stage history and timestamps from the tracker.",
+        "Run an AI Builder or Copilot prompt to draft the chronology and stage durations.",
+        "Save the draft to the case library for SME review and submission."
+      ],
+      "suggested_tool": "Power Automate + AI Builder (or Microsoft 365 Copilot in Word)",
+      "value": 3,
+      "effort": 3,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 120,
+        "occurrence": "per After Action Review",
+        "basis": "Estimate."
+      },
+      "resolves_risks": []
+    },
+    {
+      "id": "A34",
+      "process": "Report institutional disclosures quarterly",
+      "step": "S53",
+      "label": "automate",
+      "proposed_change": "A scheduled flow compiles the facility's quarterly institutional disclosure data, including all 5.m(4) fields, from the A12 checklist list instead of the Risk Manager compiling it by hand.",
+      "reason": "This removes re-collection of data already captured at disclosure and fixes the facility/VISN field mismatch.",
+      "implementation_steps": [
+        "Create a scheduled flow that runs at quarter end, or on request.",
+        "Filter checklist items by disclosure date in the quarter.",
+        "Generate an Excel or Word quarterly report with counts by type and the 5.m(4) fields.",
+        "Send it to the Risk Manager for verification."
+      ],
+      "suggested_tool": "Power Automate (Recurrence, SharePoint, Excel Online)",
+      "value": 4,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 1,
+        "minutes_saved_per_occurrence": 120,
+        "occurrence": "per quarterly report per facility",
+        "basis": "Removes one manual compilation. Minutes are an estimate."
+      },
+      "resolves_risks": [
+        "R15",
+        "R16"
+      ]
+    },
+    {
+      "id": "A35",
+      "process": "Report institutional disclosures quarterly",
+      "step": "S54",
+      "label": "automate",
+      "proposed_change": "The facility Director approves the generated quarterly report in Approvals, and the flow submits it to the VISN Director.",
+      "reason": "This removes retyping and keeps the 5.n(12) Director accountability.",
+      "implementation_steps": [
+        "Chain an Approvals action to A34, assigned to the Director.",
+        "On approval, email the report to the VISN Director and save it to the VISN library."
+      ],
+      "suggested_tool": "Power Automate (Approvals, Outlook, SharePoint)",
+      "value": 3,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 1,
+        "minutes_saved_per_occurrence": 30,
+        "occurrence": "per quarterly report per facility",
+        "basis": "Removes one re-entry. Minutes are an estimate."
+      },
+      "resolves_risks": [
+        "R15"
+      ]
+    },
+    {
+      "id": "A36",
+      "process": "Report institutional disclosures quarterly",
+      "step": "S55",
+      "label": "automate",
+      "proposed_change": "A flow rolls up the approved facility reports into the VISN report with the 5.m(4) fields. The VISN Director approves it and it is submitted to Quality, Safety, and Value.",
+      "reason": "This removes the third manual compilation.",
+      "implementation_steps": [
+        "Trigger when all facility reports for the quarter are in the VISN library, or at a set date.",
+        "Merge the facility data into the VISN report template.",
+        "Route to the VISN Director for approval, then send to the Assistant Deputy Under Secretary for Quality, Safety, and Value."
+      ],
+      "suggested_tool": "Power Automate (SharePoint, Excel Online, Approvals)",
+      "value": 3,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 1,
+        "minutes_saved_per_occurrence": 60,
+        "occurrence": "per quarterly report per VISN",
+        "basis": "Removes one re-entry. Minutes are an estimate."
+      },
+      "resolves_risks": [
+        "R15"
+      ]
+    },
+    {
+      "id": "A37",
+      "process": "Report institutional disclosures quarterly",
+      "step": "S56",
+      "label": "digitize",
+      "proposed_change": "The Assistant Deputy Under Secretary for Quality, Safety, and Value reviews a Power BI dashboard built on the VISN report data instead of compiling the reports by hand.",
+      "reason": "This speeds the quarterly analysis (5.j(4)).",
+      "implementation_steps": [
+        "Connect Power BI to the VISN report library.",
+        "Build visuals by VISN, department, triggering event, deaths, and event-to-disclosure interval.",
+        "Refresh on report submission."
+      ],
+      "suggested_tool": "Power BI",
+      "value": 3,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 120,
+        "occurrence": "per quarterly national review",
+        "basis": "Estimate."
+      },
+      "resolves_risks": []
+    },
+    {
+      "id": "A38",
+      "process": "Report institutional disclosures quarterly",
+      "step": "S57",
+      "label": "keep_human",
+      "proposed_change": "Recommendations to program offices stay with the Quality, Safety, and Value office.",
+      "reason": "This is an analytical and policy judgment.",
+      "implementation_steps": [
+        "No system change."
+      ],
+      "suggested_tool": "None",
+      "value": 1,
+      "effort": 1,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 0,
+        "occurrence": "per quarter",
+        "basis": "No change to the step."
+      },
+      "resolves_risks": []
+    }
+  ],
+  "starter_flows": [
+    {
+      "recommendation_id": "A5",
+      "trigger": "SharePoint \u2013 When an item is created or modified in 'Adverse Event Escalations', with trigger condition: Disclosure path = 'Institutional disclosure may be required' AND 'District Chief Counsel notified' is empty",
+      "actions": [
+        "Get item (case number, discovery date/time, harm summary; no patient identifiers)",
+        "Compose message body from the case fields",
+        "Send an email (V2) to the District Chief Counsel shared mailbox",
+        "Post an adaptive card in Teams to District Chief Counsel requesting acknowledgment",
+        "Update item: 'District Chief Counsel notified' = utcNow()",
+        "On card response, update item: 'District Chief Counsel acknowledged' = response time"
+      ],
+      "approval_step": ""
+    },
+    {
+      "recommendation_id": "A14",
+      "trigger": "SharePoint \u2013 When an item is created in 'Institutional Disclosure Checklist'",
+      "actions": [
+        "Get item (case number, modality, reason not in person, designated note author)",
+        "Create a Planner task for the note author: 'Enter CPRS Institutional Disclosure of Adverse Event note', including the remote-disclosure reason if the modality is not in person",
+        "Do until 'CPRS note entered' = Yes: delay (configurable interval), then send a Teams reminder to the note author",
+        "Update item: 'CPRS note confirmed' = utcNow()"
+      ],
+      "approval_step": ""
+    },
+    {
+      "recommendation_id": "A3",
+      "trigger": "Power Apps (V2) \u2013 Risk Manager submits the Adverse Event Intake form",
+      "actions": [
+        "Create item in 'Adverse Event Escalations' with case number, discovery date/time, reporter, harm summary, and single vs multiple patients",
+        "Send email (V2) and Teams message at the same time to the Associate Director for Patient Care Services, the Chief of Staff, and the facility Director",
+        "Update item: 'Leadership notified' = utcNow()",
+        "Post an adaptive card to the facility Director to classify the event",
+        "Update item: Disclosure path from the Director's response (systems issue \u2192 starts the A6 Issue Brief flow; single-patient \u2192 starts A5)"
+      ],
+      "approval_step": "Facility Director responds to the adaptive card choosing 'Systems issue affecting multiple patients' or 'Single-patient event that may require institutional disclosure' (decision D4)"
+    }
+  ],
+  "future_state": [
+    {
+      "id": "F1",
+      "process": "Make a clinical disclosure",
+      "from_step": "S1",
+      "actor": "Clinical team",
+      "action": "Assess the event's harm and when it was discovered relative to the episode of care",
+      "change": "unchanged"
+    },
+    {
+      "id": "F2",
+      "process": "Make a clinical disclosure",
+      "from_step": "S2",
+      "actor": "Clinical team",
+      "action": "Determine whether the harm is more than minor using the incident-report test",
+      "change": "unchanged"
+    },
+    {
+      "id": "F3",
+      "process": "Make a clinical disclosure",
+      "from_step": "S3",
+      "actor": "Responsible practitioner (or designee)",
+      "action": "Take responsibility for the disclosure when harm is more than minor",
+      "change": "unchanged"
+    },
+    {
+      "id": "F4",
+      "process": "Make a clinical disclosure",
+      "from_step": "S4",
+      "actor": "Clinical team member (responsible practitioner when harm is more than minor)",
+      "action": "Provide preliminary facts face-to-face in a private setting",
+      "change": "unchanged"
+    },
+    {
+      "id": "F5",
+      "process": "Make a clinical disclosure",
+      "from_step": "S5",
+      "actor": "Clinical team member",
+      "action": "Express concern for the patient's welfare",
+      "change": "unchanged"
+    },
+    {
+      "id": "F6",
+      "process": "Make a clinical disclosure",
+      "from_step": "S6",
+      "actor": "Clinical team member",
+      "action": "Give general reassurance that the event is being investigated and remedied",
+      "change": "unchanged"
+    },
+    {
+      "id": "F7",
+      "process": "Make a clinical disclosure",
+      "from_step": "S7",
+      "actor": "Clinical team member",
+      "action": "Provide contact information for designated VA staff",
+      "change": "unchanged"
+    },
+    {
+      "id": "F8",
+      "process": "Make a clinical disclosure",
+      "from_step": "S8",
+      "actor": "Clinical team",
+      "action": "Document the disclosure in a CPRS progress note when harm is more than minor",
+      "change": "unchanged"
+    },
+    {
+      "id": "F9",
+      "process": "Escalate a significant adverse event",
+      "from_step": "S9",
+      "actor": "VA medical facility Risk Manager",
+      "action": "Log the event in the Power Apps intake form; the flow notifies the Associate Director for Patient Care Services, the Chief of Staff, and the facility Director at the same time and timestamps it",
+      "change": "digitized"
+    },
+    {
+      "id": "F10",
+      "process": "Escalate a significant adverse event",
+      "from_step": "NEW",
+      "actor": "VA medical facility Director (or designee)",
+      "action": "Classify the event in the tracker as a systems issue or a single-patient event (decision D4)",
+      "change": "new"
+    },
+    {
+      "id": "F11",
+      "process": "Escalate a significant adverse event",
+      "from_step": "S11",
+      "actor": "VA medical facility Director (or designee)",
+      "action": "Classification triggers an automatic, acknowledged notice to District Chief Counsel",
+      "change": "automated"
+    },
+    {
+      "id": "F12",
+      "process": "Escalate a significant adverse event",
+      "from_step": "S12",
+      "actor": "VA medical facility Director (or designee)",
+      "action": "Review and approve the AI-drafted Issue Brief; the flow sends it to the VISN Director and District Chief Counsel under a 24-hour clock",
+      "change": "ai_assisted"
+    },
+    {
+      "id": "F13",
+      "process": "Escalate a significant adverse event",
+      "from_step": "S13",
+      "actor": "VISN Director (or designee)",
+      "action": "Approve the Issue Brief; the flow forwards it to the Deputy Under Secretary for Health for Operations and Management and opens the Central Office case",
+      "change": "automated"
+    },
+    {
+      "id": "F14",
+      "process": "Make an institutional disclosure",
+      "from_step": "S14",
+      "actor": "Facility leadership",
+      "action": "Plan what is communicated, by whom, and how, conferring with District Chief Counsel",
+      "change": "unchanged"
+    },
+    {
+      "id": "F15",
+      "process": "Make an institutional disclosure",
+      "from_step": "S15",
+      "actor": "Institutional leaders",
+      "action": "Invite the patient or representative; the flow tracks the 72-hour target or a documented 10.d hold with the person who determined it is safe",
+      "change": "automated"
+    },
+    {
+      "id": "F16",
+      "process": "Make an institutional disclosure",
+      "from_step": "S16",
+      "actor": "Institutional leaders",
+      "action": "Honor the attorney request and adjust participants",
+      "change": "unchanged"
+    },
+    {
+      "id": "F17",
+      "process": "Make an institutional disclosure",
+      "from_step": "S17",
+      "actor": "Institutional leaders",
+      "action": "Hold the meeting: express concern, apologize, and explain the known facts",
+      "change": "unchanged"
+    },
+    {
+      "id": "F18",
+      "process": "Make an institutional disclosure",
+      "from_step": "S18",
+      "actor": "Institutional leaders",
+      "action": "Outline treatment options, if appropriate",
+      "change": "unchanged"
+    },
+    {
+      "id": "F19",
+      "process": "Make an institutional disclosure",
+      "from_step": "S19",
+      "actor": "Institutional leaders",
+      "action": "Arrange a second opinion, monitoring, consultations, or bereavement support",
+      "change": "unchanged"
+    },
+    {
+      "id": "F20",
+      "process": "Make an institutional disclosure",
+      "from_step": "S20",
+      "actor": "Institutional leaders",
+      "action": "Provide contact information for designated staff",
+      "change": "unchanged"
+    },
+    {
+      "id": "F21",
+      "process": "Make an institutional disclosure",
+      "from_step": "S21",
+      "actor": "Institutional leaders",
+      "action": "Inform the patient of the option to obtain outside medical or legal advice",
+      "change": "unchanged"
+    },
+    {
+      "id": "F22",
+      "process": "Make an institutional disclosure",
+      "from_step": "S22",
+      "actor": "Institutional leaders",
+      "action": "Give the compensation information that matches the patient's Veteran status, and complete the Power Apps checklist confirming all 9.g elements, the modality, and the reporting fields",
+      "change": "digitized"
+    },
+    {
+      "id": "F23",
+      "process": "Make an institutional disclosure",
+      "from_step": "S23",
+      "actor": "Risk Manager or other assigned staff member",
+      "action": "Complete the auto-assigned National Torts Group referral task when a tort claim is known",
+      "change": "automated"
+    },
+    {
+      "id": "F24",
+      "process": "Make an institutional disclosure",
+      "from_step": "S24",
+      "actor": "Authorized CPRS note author",
+      "action": "Enter the CPRS Institutional Disclosure note from an auto-assigned, tracked task with reminders",
+      "change": "automated"
+    },
+    {
+      "id": "F25",
+      "process": "Make an institutional disclosure",
+      "from_step": "S25",
+      "actor": "Named communication owner (Risk Manager or organizational leader)",
+      "action": "Update the patient on investigation findings on a reminder cadence",
+      "change": "automated"
+    },
+    {
+      "id": "F26",
+      "process": "Make an institutional disclosure",
+      "from_step": "S26",
+      "actor": "Authorized CPRS note author",
+      "action": "Add a CPRS addendum for each later communication",
+      "change": "unchanged"
+    },
+    {
+      "id": "F27",
+      "process": "Decide on large-scale disclosure",
+      "from_step": "S27",
+      "actor": "Deputy Under Secretary for Health for Operations and Management (coordinated triage process)",
+      "action": "Record the triage recommendation in the Central Office case tracker",
+      "change": "digitized"
+    },
+    {
+      "id": "F28",
+      "process": "Decide on large-scale disclosure",
+      "from_step": "S28",
+      "actor": "Principal Deputy Under Secretary for Health (or designee)",
+      "action": "Concur or non-concur in an approval; a non-concur requires choosing the next path; the written record is stored and sent automatically",
+      "change": "automated"
+    },
+    {
+      "id": "F29",
+      "process": "Decide on large-scale disclosure",
+      "from_step": "S29",
+      "actor": "Deputy Under Secretary for Health for Operations and Management",
+      "action": "Refer the case to the SME Review Panel",
+      "change": "unchanged"
+    },
+    {
+      "id": "F30",
+      "process": "Decide on large-scale disclosure",
+      "from_step": "S30",
+      "actor": "SME Review Panel",
+      "action": "Conduct fact-finding and verify the AI-drafted summary of documents on risk",
+      "change": "ai_assisted"
+    },
+    {
+      "id": "F31",
+      "process": "Decide on large-scale disclosure",
+      "from_step": "S31",
+      "actor": "SME Review Panel (named submitter)",
+      "action": "Submit a structured report with one of the three findings to the Principal Deputy",
+      "change": "digitized"
+    },
+    {
+      "id": "F32",
+      "process": "Decide on large-scale disclosure",
+      "from_step": "S32",
+      "actor": "Principal Deputy Under Secretary for Health (or designee)",
+      "action": "Concur or non-concur with the panel in an approval, with a required next path and an automatic written record",
+      "change": "automated"
+    },
+    {
+      "id": "F33",
+      "process": "Decide on large-scale disclosure",
+      "from_step": "S33",
+      "actor": "Principal Deputy Under Secretary for Health (or designee)",
+      "action": "Appoint the CRB Chairperson",
+      "change": "unchanged"
+    },
+    {
+      "id": "F34",
+      "process": "Decide on large-scale disclosure",
+      "from_step": "S34",
+      "actor": "Principal Deputy Under Secretary for Health (or designee)",
+      "action": "Issue the CRB charge; the flow sends the simultaneous notices to the Deputy Under Secretary for Operations and Management, OGC, OPIA, and OCLA",
+      "change": "automated"
+    },
+    {
+      "id": "F35",
+      "process": "Decide on large-scale disclosure",
+      "from_step": "S35",
+      "actor": "CRB Chairperson",
+      "action": "Convene and chair the CRB",
+      "change": "unchanged"
+    },
+    {
+      "id": "F36",
+      "process": "Decide on large-scale disclosure",
+      "from_step": "S36",
+      "actor": "Clinical Review Board",
+      "action": "Review the SME Review Panel's risk assessment",
+      "change": "unchanged"
+    },
+    {
+      "id": "F37",
+      "process": "Decide on large-scale disclosure",
+      "from_step": "S37",
+      "actor": "Clinical Review Board",
+      "action": "Deliberate and vote on disclosure and on any epidemiologic investigation",
+      "change": "unchanged"
+    },
+    {
+      "id": "F38",
+      "process": "Decide on large-scale disclosure",
+      "from_step": "S38",
+      "actor": "CRB Chairperson",
+      "action": "Record the plan and due date for a definitive recommendation; the flow reminds the Chair and escalates if the date passes",
+      "change": "automated"
+    },
+    {
+      "id": "F39",
+      "process": "Decide on large-scale disclosure",
+      "from_step": "S39",
+      "actor": "CRB Chairperson",
+      "action": "Submit one structured recommendation including the 5.e(5) elements and the vote tally with rationales",
+      "change": "digitized"
+    },
+    {
+      "id": "F40",
+      "process": "Decide on large-scale disclosure",
+      "from_step": "S41",
+      "actor": "Principal Deputy Under Secretary for Health (or designee)",
+      "action": "Request further information from the CRB when needed",
+      "change": "unchanged"
+    },
+    {
+      "id": "F41",
+      "process": "Decide on large-scale disclosure",
+      "from_step": "S42",
+      "actor": "Principal Deputy Under Secretary for Health (or designee)",
+      "action": "Make the final decision in an approval; it is communicated automatically to the Deputy Under Secretary for Operations and Management and the CRB Chair",
+      "change": "automated"
+    },
+    {
+      "id": "F42",
+      "process": "Implement a large-scale disclosure",
+      "from_step": "S43",
+      "actor": "Deputy Under Secretary for Health for Operations and Management",
+      "action": "The decision triggers field-site and program-office notices and an implementation plan with a named owner for each task",
+      "change": "automated"
+    },
+    {
+      "id": "F43",
+      "process": "Implement a large-scale disclosure",
+      "from_step": "S44",
+      "actor": "Deputy Under Secretary for Health for Operations and Management",
+      "action": "Activate the site visit team",
+      "change": "unchanged"
+    },
+    {
+      "id": "F44",
+      "process": "Implement a large-scale disclosure",
+      "from_step": "S45",
+      "actor": "Office of the General Counsel and other appropriate offices",
+      "action": "Review the written materials and statements before release",
+      "change": "unchanged"
+    },
+    {
+      "id": "F45",
+      "process": "Implement a large-scale disclosure",
+      "from_step": "S46",
+      "actor": "Principal Deputy Under Secretary for Health (or designee)",
+      "action": "Assign the look-back and investigation lead",
+      "change": "unchanged"
+    },
+    {
+      "id": "F46",
+      "process": "Implement a large-scale disclosure",
+      "from_step": "S47",
+      "actor": "Principal Deputy Under Secretary for Health (or designee)",
+      "action": "Ensure facility and VISN leadership are notified of the investigation and the line of authority",
+      "change": "unchanged"
+    },
+    {
+      "id": "F47",
+      "process": "Implement a large-scale disclosure",
+      "from_step": "S48",
+      "actor": "Deputy Under Secretary for Health for Operations and Management",
+      "action": "Facilitate the look-back and record results; a no-harm or negligible-risk result auto-creates a re-disclosure task",
+      "change": "automated"
+    },
+    {
+      "id": "F48",
+      "process": "Implement a large-scale disclosure",
+      "from_step": "S49",
+      "actor": "VA medical facility Director (or designee), with the named notification owner",
+      "action": "Notify potentially affected patients or representatives",
+      "change": "unchanged"
+    },
+    {
+      "id": "F49",
+      "process": "Implement a large-scale disclosure",
+      "from_step": "S50",
+      "actor": "Deputy Under Secretary for Health for Operations and Management",
+      "action": "Coordinate required clinical follow-up with facilities",
+      "change": "unchanged"
+    },
+    {
+      "id": "F50",
+      "process": "Implement a large-scale disclosure",
+      "from_step": "S51",
+      "actor": "Principal Deputy Under Secretary for Health (VA Central Office)",
+      "action": "The benefits flag triggers the logged notice to VBA Central Office",
+      "change": "automated"
+    },
+    {
+      "id": "F51",
+      "process": "Implement a large-scale disclosure",
+      "from_step": "S52",
+      "actor": "Deputy Under Secretary for Health for Operations and Management",
+      "action": "Revise the AI-drafted After Action Review with SMEs and submit it to the Under Secretary for Health",
+      "change": "ai_assisted"
+    },
+    {
+      "id": "F52",
+      "process": "Report institutional disclosures quarterly",
+      "from_step": "S53",
+      "actor": "VA medical facility Risk Manager",
+      "action": "Verify the quarterly data compiled automatically from the disclosure checklist",
+      "change": "automated"
+    },
+    {
+      "id": "F53",
+      "process": "Report institutional disclosures quarterly",
+      "from_step": "S54",
+      "actor": "VA medical facility Director (or designee)",
+      "action": "Approve the generated report, which is submitted automatically to the VISN Director",
+      "change": "automated"
+    },
+    {
+      "id": "F54",
+      "process": "Report institutional disclosures quarterly",
+      "from_step": "S55",
+      "actor": "VISN Director (or designee)",
+      "action": "Approve the auto-rolled-up VISN report with the 5.m(4) fields, which is sent to Quality, Safety, and Value",
+      "change": "automated"
+    },
+    {
+      "id": "F55",
+      "process": "Report institutional disclosures quarterly",
+      "from_step": "S56",
+      "actor": "Assistant Deputy Under Secretary for Health for Quality, Safety, and Value (or designee)",
+      "action": "Review and analyze the VISN data in a Power BI dashboard",
+      "change": "digitized"
+    },
+    {
+      "id": "F56",
+      "process": "Report institutional disclosures quarterly",
+      "from_step": "S57",
+      "actor": "Assistant Deputy Under Secretary for Health for Quality, Safety, and Value (or designee)",
+      "action": "Send recommendations to program offices",
+      "change": "unchanged"
+    }
+  ],
+  "eliminated_steps": [
+    "S10",
+    "S40"
+  ]
+}

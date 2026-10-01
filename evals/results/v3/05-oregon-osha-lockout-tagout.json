@@ -1,0 +1,2485 @@
+{
+  "sop_title": "A sample lockout/tagout policy for your workplace",
+  "summary": "This policy protects employees who service or maintain machines and equipment by shutting down, isolating, and locking or tagging out hazardous energy before work begins. It also covers removing locks and re-energizing equipment, energized testing, contractor work, shift changes, alternative methods, training, and annual inspections; authorized employees run it, with supervisors enforcing it and the company handling training, surveys, and inspections.",
+  "sections": [
+    {
+      "section": "Title / Contents",
+      "title": "A sample lockout/tagout policy for your workplace",
+      "classification": "background",
+      "reason": "Title and table of contents only; it contains no actions.",
+      "mapped": false
+    },
+    {
+      "section": "Purpose",
+      "title": "Purpose",
+      "classification": "background",
+      "reason": "States the policy's intent and defines service or maintenance; there is no sequence of actions.",
+      "mapped": false
+    },
+    {
+      "section": "Scope",
+      "title": "Scope",
+      "classification": "background",
+      "reason": "Defines who is covered and which energy types apply; there are no actions.",
+      "mapped": false
+    },
+    {
+      "section": "Employer and employee responsibilities",
+      "title": "Employer and employee responsibilities",
+      "classification": "rules",
+      "reason": "The responsibility statements could be listed in any order; only the restart prohibition is used, as an exception on the lockout step.",
+      "mapped": true
+    },
+    {
+      "section": "Lockout and tagout devices",
+      "title": "Lockout and tagout devices",
+      "classification": "rules",
+      "reason": "The device criteria could be rearranged freely; the 'recognize who attached it' rule supports an exception on device removal.",
+      "mapped": true
+    },
+    {
+      "section": "Lockout and tagout devices (Electrical energy sources)",
+      "title": "Electrical energy sources",
+      "classification": "rules",
+      "reason": "A single requirement with no order; it gates where the lockout step occurs for electrical sources.",
+      "mapped": true
+    },
+    {
+      "section": "Exposure survey",
+      "title": "Exposure survey",
+      "classification": "procedure",
+      "reason": "The survey must come before each task is evaluated for lockout/tagout, so reversing them breaks the meaning.",
+      "mapped": true
+    },
+    {
+      "section": "Energy control procedures",
+      "title": "Energy control procedures",
+      "classification": "procedure",
+      "reason": "Contains two numbered sequences (lock out before work, release before re-energizing) where reordering, for example verifying before isolating, would be unsafe.",
+      "mapped": true
+    },
+    {
+      "section": "Specific energy-control procedures",
+      "title": "Specific energy-control procedures",
+      "classification": "background",
+      "reason": "States that equipment-specific procedures exist and points employers to templates; it describes no actions.",
+      "mapped": false
+    },
+    {
+      "section": "Special lockout/tagout situations",
+      "title": "Special lockout/tagout situations",
+      "classification": "background",
+      "reason": "A container heading with no text of its own; its subsections are classified separately.",
+      "mapped": false
+    },
+    {
+      "section": "Special lockout/tagout situations > Energized testing",
+      "title": "Energized testing",
+      "classification": "procedure",
+      "reason": "A numbered sequence: clearing the area must come before removing locks, and re-locking must come before verifying, so order matters.",
+      "mapped": true
+    },
+    {
+      "section": "Special lockout/tagout situations > Contract service and maintenance",
+      "title": "Contract service and maintenance",
+      "classification": "rules",
+      "reason": "Its two sentences could be swapped, but 'before the contractor does onsite work' ties the procedure exchange to a point in the flow.",
+      "mapped": true
+    },
+    {
+      "section": "Special lockout/tagout situations > Group lockout",
+      "title": "Group lockout",
+      "classification": "rules",
+      "reason": "A single applicability rule with no internal order; it becomes a decision gating the lockout step.",
+      "mapped": true
+    },
+    {
+      "section": "Special lockout/tagout situations > Shift changes and long-term shutdowns",
+      "title": "Shift changes and long-term shutdowns",
+      "classification": "rules",
+      "reason": "Its two requirements could be reordered, but they are tied to the shift-change and long-term-shutdown points in the flow.",
+      "mapped": true
+    },
+    {
+      "section": "Alternative methods",
+      "title": "Alternative methods",
+      "classification": "rules",
+      "reason": "Mostly design requirements in no fixed order, but the risk assessment explicitly gates method selection, so those actions are mapped.",
+      "mapped": true
+    },
+    {
+      "section": "Training",
+      "title": "Training",
+      "classification": "rules",
+      "reason": "The training bullets could be reordered, but 'before assignment', 'annually', the retraining triggers, and record keeping tie actions to points in the flow.",
+      "mapped": true
+    },
+    {
+      "section": "Inspections of written energy-control procedures",
+      "title": "Inspections of written energy-control procedures",
+      "classification": "procedure",
+      "reason": "The inspector must review and verify the procedure before deficiencies can be found and corrected, so order matters.",
+      "mapped": true
+    },
+    {
+      "section": "Definitions",
+      "title": "Definitions",
+      "classification": "background",
+      "reason": "Glossary of terms only.",
+      "mapped": false
+    }
+  ],
+  "processes": [
+    {
+      "name": "Conduct hazardous-energy exposure survey",
+      "trigger": "Company implements the lockout/tagout policy and needs to identify affected equipment and tasks",
+      "outcome": "A survey of affected machines, energy types and magnitudes, and service tasks, with each task evaluated for lockout/tagout",
+      "sections": [
+        "Exposure survey"
+      ]
+    },
+    {
+      "name": "Lock out equipment for service or maintenance",
+      "trigger": "An authorized employee must service or maintain equipment that could expose them to hazardous energy",
+      "outcome": "Equipment is shut down, isolated, locked or tagged out, and verified de-energized so service work can begin",
+      "sections": [
+        "Energy control procedures",
+        "Special lockout/tagout situations > Group lockout",
+        "Lockout and tagout devices (Electrical energy sources)",
+        "Employer and employee responsibilities"
+      ]
+    },
+    {
+      "name": "Remove lockout and re-energize equipment",
+      "trigger": "Service or maintenance work on locked-out equipment is complete",
+      "outcome": "Lockout/tagout devices are removed and the equipment is re-energized with all workers clear",
+      "sections": [
+        "Energy control procedures",
+        "Lockout and tagout devices"
+      ]
+    },
+    {
+      "name": "Perform energized testing or positioning",
+      "trigger": "An energy-isolating device is locked or tagged and it is necessary to test or position the equipment",
+      "outcome": "The test or positioning is done, and the equipment is again locked or tagged out and verified de-energized",
+      "sections": [
+        "Special lockout/tagout situations > Energized testing",
+        "Energy control procedures"
+      ]
+    },
+    {
+      "name": "Coordinate contractor onsite work",
+      "trigger": "A contractor is to perform onsite service or maintenance work",
+      "outcome": "Company and contractor each know the other's lockout/tagout procedures, and company employees comply with the contractor's procedures",
+      "sections": [
+        "Special lockout/tagout situations > Contract service and maintenance"
+      ]
+    },
+    {
+      "name": "Continue lockout through shift change or long-term shutdown",
+      "trigger": "Lockout/tagout must continue when work shifts change or during a long-term shutdown",
+      "outcome": "Lockout/tagout stays in place across the shift change or shutdown, with devices monitored during long-term shutdowns",
+      "sections": [
+        "Special lockout/tagout situations > Shift changes and long-term shutdowns"
+      ]
+    },
+    {
+      "name": "Select an alternative energy-control method",
+      "trigger": "Lockout or tagout is not used for, or prevents completion of, tasks that are routine, repetitive, and integral to production",
+      "outcome": "An alternative energy-control method is selected from a risk assessment and implemented, with the individual keeping exclusive control of the protective mode",
+      "sections": [
+        "Alternative methods"
+      ]
+    },
+    {
+      "name": "Train employee before assignment",
+      "trigger": "An employee who may be exposed to hazardous energy is to be assigned",
+      "outcome": "The employee is trained for their role (authorized or affected/area) and a training record with name and date exists",
+      "sections": [
+        "Training"
+      ]
+    },
+    {
+      "name": "Retrain employee",
+      "trigger": "The annual retraining date arrives, or job assignment, procedures, equipment or process hazards change, or the employee does not follow energy-control procedures",
+      "outcome": "The employee is retrained and the training record is current",
+      "sections": [
+        "Training"
+      ]
+    },
+    {
+      "name": "Inspect energy-control procedures annually",
+      "trigger": "The annual inspection of energy-control procedures is due",
+      "outcome": "A documented inspection (equipment, date, employees, inspector), with any deficiencies corrected and employees retrained",
+      "sections": [
+        "Inspections of written energy-control procedures"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "process": "Conduct hazardous-energy exposure survey",
+      "actor": "[Employee's name or job title] (designated surveyor; placeholder not filled in)",
+      "action": "Conducts the hazardous-energy survey to identify affected machines and equipment, the types and magnitude of energy, and the necessary service and maintenance tasks",
+      "input": "Workplace machines and equipment",
+      "output": "Hazardous-energy survey of affected equipment, energy types and magnitudes, and tasks",
+      "system": "",
+      "source_section": "Exposure survey",
+      "source_quote": "will conduct a hazardous-energy survey to determine affected machines and equipment, types and magnitude of energy, and necessary service and maintenance tasks",
+      "inferred": false
+    },
+    {
+      "id": "S2",
+      "process": "Conduct hazardous-energy exposure survey",
+      "actor": "[Employee's name or job title] (designated surveyor; placeholder not filled in)",
+      "action": "Evaluates each service and maintenance task to decide whether it must be done under lockout or tagout procedures",
+      "input": "Hazardous-energy survey",
+      "output": "Evaluation of lockout/tagout need for each task",
+      "system": "",
+      "source_section": "Exposure survey",
+      "source_quote": "Each task will be evaluated to determine if it must be accomplished with lockout or tagout procedures.",
+      "inferred": false
+    },
+    {
+      "id": "S3",
+      "process": "Lock out equipment for service or maintenance",
+      "actor": "Authorized employee",
+      "action": "Informs all affected employees that the equipment is being shut down",
+      "input": "Planned service or maintenance task; specific written energy-control procedure for the equipment",
+      "output": "Affected employees notified of shutdown",
+      "system": "",
+      "source_section": "Energy control procedures",
+      "source_quote": "1. Inform all affected employees of equipment shutdown.",
+      "inferred": false
+    },
+    {
+      "id": "S4",
+      "process": "Lock out equipment for service or maintenance",
+      "actor": "Authorized employee",
+      "action": "Shuts down the equipment",
+      "input": "Running equipment",
+      "output": "Equipment shut down",
+      "system": "",
+      "source_section": "Energy control procedures",
+      "source_quote": "2. Shut down equipment.",
+      "inferred": false
+    },
+    {
+      "id": "S5",
+      "process": "Lock out equipment for service or maintenance",
+      "actor": "Authorized employee",
+      "action": "Isolates or blocks the hazardous energy",
+      "input": "Shut-down equipment",
+      "output": "Hazardous energy isolated or blocked",
+      "system": "Energy-isolating devices",
+      "source_section": "Energy control procedures",
+      "source_quote": "3. Isolate or block hazardous energy.",
+      "inferred": false
+    },
+    {
+      "id": "S6",
+      "process": "Lock out equipment for service or maintenance",
+      "actor": "Authorized employee",
+      "action": "Removes any potential (stored) energy",
+      "input": "Isolated equipment",
+      "output": "Stored energy released",
+      "system": "",
+      "source_section": "Energy control procedures",
+      "source_quote": "4. Remove any potential (stored) energy.",
+      "inferred": false
+    },
+    {
+      "id": "S7",
+      "process": "Lock out equipment for service or maintenance",
+      "actor": "Authorized employee",
+      "action": "Places lockout or tagout devices on the energy sources (at the circuit disconnect switch for electrical sources)",
+      "input": "Isolated, de-stored equipment; lockout/tagout devices",
+      "output": "Energy sources locked or tagged out",
+      "system": "Lockout or tagout devices",
+      "source_section": "Energy control procedures",
+      "source_quote": "5. Lockout or tagout the energy sources.",
+      "inferred": false
+    },
+    {
+      "id": "S8",
+      "process": "Lock out equipment for service or maintenance",
+      "actor": "Authorized employee",
+      "action": "Verifies the equipment is isolated from hazardous energy and de-energized",
+      "input": "Locked or tagged-out equipment",
+      "output": "Equipment verified de-energized; service or maintenance may begin",
+      "system": "",
+      "source_section": "Energy control procedures",
+      "source_quote": "6. Verify the equipment is isolated from hazardous energy and de-energized.",
+      "inferred": false
+    },
+    {
+      "id": "S9",
+      "process": "Remove lockout and re-energize equipment",
+      "actor": "Authorized employee",
+      "action": "Removes tools and replaces machine or equipment components",
+      "input": "Serviced equipment",
+      "output": "Equipment reassembled and tools removed",
+      "system": "",
+      "source_section": "Energy control procedures",
+      "source_quote": "1. Remove tools and replace machine or equipment components.",
+      "inferred": false
+    },
+    {
+      "id": "S10",
+      "process": "Remove lockout and re-energize equipment",
+      "actor": "Authorized employee",
+      "action": "Informs coworkers that the energy-control devices will be removed",
+      "input": "Reassembled equipment",
+      "output": "Coworkers notified of device removal",
+      "system": "",
+      "source_section": "Energy control procedures",
+      "source_quote": "2. Inform coworkers about energy-control device removal.",
+      "inferred": false
+    },
+    {
+      "id": "S11",
+      "process": "Remove lockout and re-energize equipment",
+      "actor": "Authorized employee",
+      "action": "Ensures all workers are clear of the work area",
+      "input": "Notified coworkers",
+      "output": "Work area clear",
+      "system": "",
+      "source_section": "Energy control procedures",
+      "source_quote": "3. Ensure all workers are clear of the work area.",
+      "inferred": false
+    },
+    {
+      "id": "S12",
+      "process": "Remove lockout and re-energize equipment",
+      "actor": "Authorized employee",
+      "action": "Verifies the machine or equipment power controls are off or in a neutral position",
+      "input": "Clear work area",
+      "output": "Power controls confirmed off or neutral",
+      "system": "",
+      "source_section": "Energy control procedures",
+      "source_quote": "4. Verify machine or equipment power controls are off or in a neutral position.",
+      "inferred": false
+    },
+    {
+      "id": "S13",
+      "process": "Remove lockout and re-energize equipment",
+      "actor": "Authorized employee",
+      "action": "Removes the lockout or tagout device",
+      "input": "Power controls off or neutral",
+      "output": "Lockout/tagout device removed",
+      "system": "Lockout or tagout devices",
+      "source_section": "Energy control procedures",
+      "source_quote": "5. Remove the lockout or tagout device.",
+      "inferred": false
+    },
+    {
+      "id": "S14",
+      "process": "Remove lockout and re-energize equipment",
+      "actor": "Authorized employee",
+      "action": "Re-energizes the equipment",
+      "input": "Equipment with devices removed",
+      "output": "Equipment returned to service",
+      "system": "",
+      "source_section": "Energy control procedures",
+      "source_quote": "6. Re-energize equipment.",
+      "inferred": false
+    },
+    {
+      "id": "S15",
+      "process": "Perform energized testing or positioning",
+      "actor": "Authorized employee",
+      "action": "Removes unnecessary tools and materials",
+      "input": "Locked or tagged equipment needing a test or positioning",
+      "output": "Area free of unnecessary tools and materials",
+      "system": "",
+      "source_section": "Special lockout/tagout situations > Energized testing",
+      "source_quote": "1. Remove unnecessary tools and materials.",
+      "inferred": false
+    },
+    {
+      "id": "S16",
+      "process": "Perform energized testing or positioning",
+      "actor": "Authorized employee",
+      "action": "Ensures all other employees are out of the area",
+      "input": "Cleared work area",
+      "output": "Area clear of other employees",
+      "system": "",
+      "source_section": "Special lockout/tagout situations > Energized testing",
+      "source_quote": "2. Ensure that all other employees are out of the area.",
+      "inferred": false
+    },
+    {
+      "id": "S17",
+      "process": "Perform energized testing or positioning",
+      "actor": "Authorized employee",
+      "action": "Temporarily removes locks or tags from the energy-isolating devices",
+      "input": "Area clear of employees",
+      "output": "Energy-isolating devices unlocked or untagged",
+      "system": "Lockout or tagout devices",
+      "source_section": "Special lockout/tagout situations > Energized testing",
+      "source_quote": "3. Remove locks or tags from energy isolating devices.",
+      "inferred": false
+    },
+    {
+      "id": "S18",
+      "process": "Perform energized testing or positioning",
+      "actor": "Authorized employee",
+      "action": "Performs the test or positions the equipment",
+      "input": "Energized equipment",
+      "output": "Test or positioning completed",
+      "system": "",
+      "source_section": "Special lockout/tagout situations > Energized testing",
+      "source_quote": "4. Proceed with test.",
+      "inferred": false
+    },
+    {
+      "id": "S19",
+      "process": "Perform energized testing or positioning",
+      "actor": "Authorized employee",
+      "action": "De-energizes the equipment and locks or tags out the energy-isolating devices again",
+      "input": "Tested equipment",
+      "output": "Equipment de-energized and locked or tagged out again",
+      "system": "Lockout or tagout devices",
+      "source_section": "Special lockout/tagout situations > Energized testing",
+      "source_quote": "5. Deenergize equipment and lockout or tagout energy-isolating devices.",
+      "inferred": false
+    },
+    {
+      "id": "S20",
+      "process": "Perform energized testing or positioning",
+      "actor": "Authorized employee",
+      "action": "Operates the equipment controls to verify the equipment is de-energized",
+      "input": "Re-locked equipment",
+      "output": "Equipment verified de-energized",
+      "system": "",
+      "source_section": "Special lockout/tagout situations > Energized testing",
+      "source_quote": "6. Operate equipment controls to verify that the equipment is de-energized.",
+      "inferred": false
+    },
+    {
+      "id": "S21",
+      "process": "Coordinate contractor onsite work",
+      "actor": "Company",
+      "action": "Makes the contractor aware of the company's lockout/tagout procedures",
+      "input": "Scheduled contractor onsite work; company lockout/tagout procedures",
+      "output": "Contractor aware of company procedures",
+      "system": "",
+      "source_section": "Special lockout/tagout situations > Contract service and maintenance",
+      "source_quote": "and contractors must be aware of their respective lockout/tagout procedures before the contractor does onsite work",
+      "inferred": false
+    },
+    {
+      "id": "S22",
+      "process": "Coordinate contractor onsite work",
+      "actor": "Contractor",
+      "action": "Makes the company aware of the contractor's energy-control procedures",
+      "input": "Contractor energy-control procedures",
+      "output": "Company aware of contractor procedures",
+      "system": "",
+      "source_section": "Special lockout/tagout situations > Contract service and maintenance",
+      "source_quote": "must be aware of their respective lockout/tagout procedures before the contractor does onsite work",
+      "inferred": false
+    },
+    {
+      "id": "S23",
+      "process": "Coordinate contractor onsite work",
+      "actor": "Company employees",
+      "action": "Understand and comply with the contractor's energy-control procedures during the onsite work",
+      "input": "Contractor energy-control procedures",
+      "output": "Onsite work performed under the contractor's energy controls",
+      "system": "",
+      "source_section": "Special lockout/tagout situations > Contract service and maintenance",
+      "source_quote": "employees must understand and comply with the contractor's energy-control procedures",
+      "inferred": false
+    },
+    {
+      "id": "S24",
+      "process": "Continue lockout through shift change or long-term shutdown",
+      "actor": "Employees (authorized employees)",
+      "action": "Follow the company's specific written procedures to keep lockout/tagout in place across the shift change or shutdown",
+      "input": "Active lockout/tagout; company's specific written continuity procedures",
+      "output": "Lockout/tagout continued",
+      "system": "",
+      "source_section": "Special lockout/tagout situations > Shift changes and long-term shutdowns",
+      "source_quote": "Employees must follow [name of your company] specific written procedures when it is necessary to continue lockout/tagout when work shifts change and during long-term shutdowns",
+      "inferred": false
+    },
+    {
+      "id": "S25",
+      "process": "Continue lockout through shift change or long-term shutdown",
+      "actor": "[Employee's name or job title] (designated monitor; placeholder not filled in)",
+      "action": "Monitors the lockout and tagout devices controlling energy to the equipment during the long-term shutdown",
+      "input": "Equipment under long-term lockout/tagout",
+      "output": "Devices monitored throughout the shutdown",
+      "system": "Lockout or tagout devices",
+      "source_section": "Special lockout/tagout situations > Shift changes and long-term shutdowns",
+      "source_quote": "is responsible for monitoring lockout and tagout devices that control the energy to equipment during long-term shutdowns",
+      "inferred": false
+    },
+    {
+      "id": "S26",
+      "process": "Select an alternative energy-control method",
+      "actor": "Company (assessor not named in SOP)",
+      "action": "Conducts a risk assessment of the machine, equipment, or process, including existing safeguards that may need to be removed or modified for the task",
+      "input": "Routine, repetitive, production-integral task where lockout/tagout is not used",
+      "output": "Risk assessment",
+      "system": "",
+      "source_section": "Alternative methods",
+      "source_quote": "The risk assessment must consider existing safeguards provided with the machine, equipment or process that may need to be removed or modified to perform a given task.",
+      "inferred": false
+    },
+    {
+      "id": "S27",
+      "process": "Select an alternative energy-control method",
+      "actor": "Company (selector not named in SOP)",
+      "action": "Selects an alternative method to control hazardous energy based on the risk assessment",
+      "input": "Risk assessment",
+      "output": "Selected alternative control method",
+      "system": "",
+      "source_section": "Alternative methods",
+      "source_quote": "Selection of an alternative control method must be based on a risk assessment of the machine, equipment, or process.",
+      "inferred": false
+    },
+    {
+      "id": "S28",
+      "process": "Select an alternative energy-control method",
+      "actor": "Company (implementer not named in SOP)",
+      "action": "Implements a control-reliable dual-channel hardwired circuit of industrially rated components meeting ANSI B11.19, with a safety relay or safety PLC",
+      "input": "Selected method that uses control circuits for safeguarding",
+      "output": "Safeguarding circuit as effective as a mechanical disconnect or master shut-off valve",
+      "system": "Safety relay or safety PLC",
+      "source_section": "Alternative methods",
+      "source_quote": "A control-reliable dual channel hardwired circuit of industrially-rated components that satisfies the design features as specified in ANSI B11.19, with a safety relay or safety PLC",
+      "inferred": false
+    },
+    {
+      "id": "S29",
+      "process": "Select an alternative energy-control method",
+      "actor": "Individual performing the task",
+      "action": "Keeps exclusive personal control over the means of holding the control circuit in protective mode while performing the task",
+      "input": "Implemented alternative control method",
+      "output": "Task performed with the protective mode under the individual's sole control",
+      "system": "",
+      "source_section": "Alternative methods",
+      "source_quote": "Under all circumstances, the individual must have exclusive personal control over the means to maintain the state of the control circuit in a protective mode.",
+      "inferred": false
+    },
+    {
+      "id": "S30",
+      "process": "Train employee before assignment",
+      "actor": "Company (trainer not named in SOP)",
+      "action": "Trains the employee before assignment in the company's energy-control policy, the requirements of 1910.147, and the skills to apply, use, and remove energy controls",
+      "input": "Employee who may be exposed to hazardous energy",
+      "output": "Core energy-control training delivered",
+      "system": "",
+      "source_section": "Training",
+      "source_quote": "Employees who may be exposed to hazardous energy will receive training before assignment",
+      "inferred": false
+    },
+    {
+      "id": "S31",
+      "process": "Train employee before assignment",
+      "actor": "Company (trainer not named in SOP)",
+      "action": "Trains the authorized employee to recognize hazardous energy sources, the type and magnitude of energy, the methods for isolating and controlling energy, and how to verify control",
+      "input": "Employee whose duties include service or maintenance",
+      "output": "Authorized-employee training delivered",
+      "system": "",
+      "source_section": "Training",
+      "source_quote": "Authorized employees will be trained to recognize hazardous energy sources",
+      "inferred": false
+    },
+    {
+      "id": "S32",
+      "process": "Train employee before assignment",
+      "actor": "Company (trainer not named in SOP)",
+      "action": "Trains the affected or area employee in the purpose and use of energy-control procedures and the prohibition against starting locked or tagged-out machines",
+      "input": "Affected employee or employee working where energy-control procedures are used",
+      "output": "Affected/area-employee training delivered",
+      "system": "",
+      "source_section": "Training",
+      "source_quote": "Affected employees will be trained in the purpose and use of energy-control procedures.",
+      "inferred": false
+    },
+    {
+      "id": "S33",
+      "process": "Train employee before assignment",
+      "actor": "Company (record keeper not named in SOP)",
+      "action": "Records the training with the employee's name and the training date",
+      "input": "Completed training",
+      "output": "Current training record",
+      "system": "",
+      "source_section": "Training",
+      "source_quote": "Current training records will be maintained for each authorized and affected employee including the employee's name and the training date",
+      "inferred": false
+    },
+    {
+      "id": "S34",
+      "process": "Retrain employee",
+      "actor": "Company (trainer not named in SOP)",
+      "action": "Retrains the employee on energy-control policy and procedures",
+      "input": "Annual due date or a retraining trigger (assignment change, procedure change, new hazard, procedures not followed)",
+      "output": "Employee retrained",
+      "system": "",
+      "source_section": "Training",
+      "source_quote": "Authorized and affected employees will be retrained whenever their job assignments change, energy-control procedures change, equipment or work processes present new hazards, or when they don't follow energy-control procedures.",
+      "inferred": false
+    },
+    {
+      "id": "S35",
+      "process": "Retrain employee",
+      "actor": "Company (record keeper not named in SOP)",
+      "action": "Updates the employee's training record with the retraining date",
+      "input": "Completed retraining",
+      "output": "Current training record",
+      "system": "",
+      "source_section": "Training",
+      "source_quote": "Current training records will be maintained for each authorized and affected employee",
+      "inferred": false
+    },
+    {
+      "id": "S36",
+      "process": "Inspect energy-control procedures annually",
+      "actor": "Company",
+      "action": "Assigns an inspector who understands the procedure and is not one of the employees following it at the time of the inspection",
+      "input": "Energy-control procedure due for annual inspection",
+      "output": "Qualified, independent inspector assigned",
+      "system": "",
+      "source_section": "Inspections of written energy-control procedures",
+      "source_quote": "The inspector must understand the procedure and must be someone other than those following the procedure at the time of the inspection.",
+      "inferred": false
+    },
+    {
+      "id": "S37",
+      "process": "Inspect energy-control procedures annually",
+      "actor": "Inspector",
+      "action": "Reviews the procedure, individually or in a group, with the employees who use it to service the equipment",
+      "input": "Procedure for equipment whose isolating device can be locked out",
+      "output": "Procedure reviewed with servicing employees",
+      "system": "",
+      "source_section": "Inspections of written energy-control procedures",
+      "source_quote": "the inspector must review the procedure with the employees who use it to service the equipment",
+      "inferred": false
+    },
+    {
+      "id": "S38",
+      "process": "Inspect energy-control procedures annually",
+      "actor": "Inspector",
+      "action": "Reviews the procedure, individually or in a group, with the authorized employees who service the equipment and the affected employees who may work in the area",
+      "input": "Procedure for equipment whose isolating device can only be tagged out",
+      "output": "Procedure reviewed with authorized and affected employees",
+      "system": "",
+      "source_section": "Inspections of written energy-control procedures",
+      "source_quote": "the inspector must review the procedure with the authorized employees who service the equipment and with affected employees who may work in the area",
+      "inferred": false
+    },
+    {
+      "id": "S39",
+      "process": "Inspect energy-control procedures annually",
+      "actor": "Inspector",
+      "action": "Verifies the procedure's accuracy, completeness, and effectiveness, and whether employees follow it",
+      "input": "Procedure review results",
+      "output": "Inspection findings",
+      "system": "",
+      "source_section": "Inspections of written energy-control procedures",
+      "source_quote": "Each procedure's accuracy, completeness, and effectiveness must be verified.",
+      "inferred": false
+    },
+    {
+      "id": "S40",
+      "process": "Inspect energy-control procedures annually",
+      "actor": "Company",
+      "action": "Documents the inspection with the equipment, inspection date, employees included, and inspector",
+      "input": "Inspection findings",
+      "output": "Inspection record",
+      "system": "",
+      "source_section": "Inspections of written energy-control procedures",
+      "source_quote": "will perform and document annual inspections of energy-control procedures",
+      "inferred": false
+    },
+    {
+      "id": "S41",
+      "process": "Inspect energy-control procedures annually",
+      "actor": "Company",
+      "action": "Retrains the employees who were not following the procedure or whom the procedure was not protecting",
+      "input": "Inspection finding of non-compliance or ineffective protection",
+      "output": "Employees retrained",
+      "system": "",
+      "source_section": "Inspections of written energy-control procedures",
+      "source_quote": "employees must be retrained",
+      "inferred": false
+    },
+    {
+      "id": "S42",
+      "process": "Inspect energy-control procedures annually",
+      "actor": "Company",
+      "action": "Corrects the deficiencies in the energy-control procedure",
+      "input": "Inspection finding of procedure deficiencies",
+      "output": "Corrected energy-control procedure",
+      "system": "",
+      "source_section": "Inspections of written energy-control procedures",
+      "source_quote": "the procedure's deficiencies corrected",
+      "inferred": false
+    }
+  ],
+  "decisions": [
+    {
+      "id": "D1",
+      "process": "Conduct hazardous-energy exposure survey",
+      "after_step": "S2",
+      "condition": "Must this task be accomplished with lockout or tagout procedures?",
+      "branches": [
+        {
+          "label": "Yes: task is performed under energy control procedures",
+          "next_step": "END"
+        },
+        {
+          "label": "No: SOP does not say what happens to the task",
+          "next_step": "UNDEFINED"
+        }
+      ],
+      "source_section": "Exposure survey",
+      "inferred": false
+    },
+    {
+      "id": "D2",
+      "process": "Lock out equipment for service or maintenance",
+      "after_step": "S6",
+      "condition": "Does the equipment have several energy sources and several energy-isolating devices?",
+      "branches": [
+        {
+          "label": "Yes: follow group lockout procedures (not described; equipment list is an unfilled placeholder)",
+          "next_step": "UNDEFINED"
+        },
+        {
+          "label": "No: individual lockout",
+          "next_step": "S7"
+        }
+      ],
+      "source_section": "Special lockout/tagout situations > Group lockout",
+      "inferred": false
+    },
+    {
+      "id": "D3",
+      "process": "Continue lockout through shift change or long-term shutdown",
+      "after_step": "S24",
+      "condition": "Is the equipment in a long-term shutdown?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S25"
+        },
+        {
+          "label": "No (shift change only)",
+          "next_step": "END"
+        }
+      ],
+      "source_section": "Special lockout/tagout situations > Shift changes and long-term shutdowns",
+      "inferred": false
+    },
+    {
+      "id": "D4",
+      "process": "Select an alternative energy-control method",
+      "after_step": "S27",
+      "condition": "Are control circuits used as part of the safeguarding system?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S28"
+        },
+        {
+          "label": "No",
+          "next_step": "S29"
+        }
+      ],
+      "source_section": "Alternative methods",
+      "inferred": false
+    },
+    {
+      "id": "D5",
+      "process": "Train employee before assignment",
+      "after_step": "S30",
+      "condition": "Is the employee an authorized employee (duties include service or maintenance)?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S31"
+        },
+        {
+          "label": "No (affected or area employee)",
+          "next_step": "S32"
+        }
+      ],
+      "source_section": "Training",
+      "inferred": false
+    },
+    {
+      "id": "D6",
+      "process": "Inspect energy-control procedures annually",
+      "after_step": "S36",
+      "condition": "Can the equipment's energy-isolating device be locked out?",
+      "branches": [
+        {
+          "label": "Yes (can be locked out)",
+          "next_step": "S37"
+        },
+        {
+          "label": "No (can only be tagged out)",
+          "next_step": "S38"
+        }
+      ],
+      "source_section": "Inspections of written energy-control procedures",
+      "inferred": false
+    },
+    {
+      "id": "D7",
+      "process": "Inspect energy-control procedures annually",
+      "after_step": "S40",
+      "condition": "Did the inspector find employees not following the procedure, or the procedure not protecting them?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S41"
+        },
+        {
+          "label": "No",
+          "next_step": "END"
+        }
+      ],
+      "source_section": "Inspections of written energy-control procedures",
+      "inferred": false
+    }
+  ],
+  "handoffs": [
+    {
+      "after_step": "S3",
+      "from_actor": "Authorized employee",
+      "to_actor": "Affected employees"
+    },
+    {
+      "after_step": "S10",
+      "from_actor": "Authorized employee",
+      "to_actor": "Coworkers"
+    },
+    {
+      "after_step": "S21",
+      "from_actor": "Company",
+      "to_actor": "Contractor"
+    },
+    {
+      "after_step": "S22",
+      "from_actor": "Contractor",
+      "to_actor": "Company employees"
+    },
+    {
+      "after_step": "S24",
+      "from_actor": "Employees (authorized employees)",
+      "to_actor": "[Employee's name or job title] (designated monitor; placeholder not filled in)"
+    },
+    {
+      "after_step": "S27",
+      "from_actor": "Company (selector not named in SOP)",
+      "to_actor": "Individual performing the task"
+    },
+    {
+      "after_step": "S28",
+      "from_actor": "Company (implementer not named in SOP)",
+      "to_actor": "Individual performing the task"
+    },
+    {
+      "after_step": "S36",
+      "from_actor": "Company",
+      "to_actor": "Inspector"
+    },
+    {
+      "after_step": "S39",
+      "from_actor": "Inspector",
+      "to_actor": "Company"
+    }
+  ],
+  "exceptions": [
+    {
+      "step": "S2",
+      "trigger": "The survey role is a placeholder ('[Employee's name or job title]') that is not filled in",
+      "handling": "",
+      "source_section": "Exposure survey"
+    },
+    {
+      "step": "S7",
+      "trigger": "The energy source is electrical",
+      "handling": "Lockout or tagout must occur at the circuit disconnect switch; electrical control circuitry does not effectively isolate hazardous energy (see Alternative methods).",
+      "source_section": "Lockout and tagout devices (Electrical energy sources)"
+    },
+    {
+      "step": "S7",
+      "trigger": "The equipment has several energy sources and energy-isolating devices",
+      "handling": "Follow group lockout procedures; the SOP does not describe them and leaves the equipment list as an unfilled placeholder.",
+      "source_section": "Special lockout/tagout situations > Group lockout"
+    },
+    {
+      "step": "S7",
+      "trigger": "The energy-isolating device cannot accept a lockout device",
+      "handling": "",
+      "source_section": "Lockout and tagout devices"
+    },
+    {
+      "step": "S8",
+      "trigger": "Verification shows the equipment is not isolated or not de-energized",
+      "handling": "",
+      "source_section": "Energy control procedures"
+    },
+    {
+      "step": "S8",
+      "trigger": "An employee attempts to restart equipment that is locked or tagged out",
+      "handling": "Prohibited; employees who do not follow energy-control procedures must be retrained (Training).",
+      "source_section": "Employer and employee responsibilities"
+    },
+    {
+      "step": "S11",
+      "trigger": "Workers cannot be cleared from the work area",
+      "handling": "",
+      "source_section": "Energy control procedures"
+    },
+    {
+      "step": "S13",
+      "trigger": "The employee who attached the lockout/tagout device is not available to remove it",
+      "handling": "",
+      "source_section": "Lockout and tagout devices"
+    },
+    {
+      "step": "S17",
+      "trigger": "Power is needed to test or position equipment while it is locked or tagged out",
+      "handling": "Temporary removal of lockout or tagout devices is allowed only for the time required to perform the task, and the procedure must be documented.",
+      "source_section": "Energy control procedures"
+    },
+    {
+      "step": "S20",
+      "trigger": "Operating the controls shows the equipment is still energized after re-locking",
+      "handling": "",
+      "source_section": "Special lockout/tagout situations > Energized testing"
+    },
+    {
+      "step": "S23",
+      "trigger": "The contractor's energy-control procedures conflict with the company's",
+      "handling": "",
+      "source_section": "Special lockout/tagout situations > Contract service and maintenance"
+    },
+    {
+      "step": "S24",
+      "trigger": "The specific written shift-change or long-term-shutdown procedures are referenced but not included in the SOP",
+      "handling": "",
+      "source_section": "Special lockout/tagout situations > Shift changes and long-term shutdowns"
+    },
+    {
+      "step": "S39",
+      "trigger": "Employees are not following the procedure, or the procedure is not protecting them",
+      "handling": "Employees must be retrained and the procedure's deficiencies corrected.",
+      "source_section": "Inspections of written energy-control procedures"
+    }
+  ],
+  "timing": [
+    {
+      "step": "S8",
+      "requirement": "Steps S3 to S8 must be completed before service or maintenance work begins.",
+      "source_section": "Energy control procedures"
+    },
+    {
+      "step": "S13",
+      "requirement": "Steps S9 to S12 are done before the lockout/tagout devices are removed and the equipment re-energized (the heading omits the word 'before': 'Employees must do the following they remove lockout or tagout devices').",
+      "source_section": "Energy control procedures"
+    },
+    {
+      "step": "S17",
+      "requirement": "Locks or tags may be removed only for the time required to perform the test or positioning task.",
+      "source_section": "Energy control procedures"
+    },
+    {
+      "step": "S21",
+      "requirement": "The company must make the contractor aware of its procedures before the contractor does onsite work.",
+      "source_section": "Special lockout/tagout situations > Contract service and maintenance"
+    },
+    {
+      "step": "S22",
+      "requirement": "The contractor must make the company aware of its procedures before doing onsite work.",
+      "source_section": "Special lockout/tagout situations > Contract service and maintenance"
+    },
+    {
+      "step": "S25",
+      "requirement": "Devices are monitored for the duration of the long-term shutdown.",
+      "source_section": "Special lockout/tagout situations > Shift changes and long-term shutdowns"
+    },
+    {
+      "step": "S30",
+      "requirement": "Training must be completed before the employee is assigned.",
+      "source_section": "Training"
+    },
+    {
+      "step": "S34",
+      "requirement": "Retraining happens annually, and also whenever job assignments change, procedures change, new hazards arise, or procedures are not followed.",
+      "source_section": "Training"
+    },
+    {
+      "step": "S36",
+      "requirement": "Inspections of energy-control procedures are performed annually.",
+      "source_section": "Inspections of written energy-control procedures"
+    },
+    {
+      "step": "S40",
+      "requirement": "Each annual inspection must be documented.",
+      "source_section": "Inspections of written energy-control procedures"
+    }
+  ],
+  "risks": [
+    {
+      "id": "R1",
+      "process": "Lock out equipment for service or maintenance",
+      "step": "S7 (decision D2)",
+      "risk_type": "undefined_exception",
+      "what_could_go_wrong": "An employee services equipment with several energy sources. Because the group lockout procedure is not written, one source is left unlocked or one worker's lock is not part of the group, and the equipment starts up while someone is inside.",
+      "cause": "Special lockout/tagout situations > Group lockout requires 'group lockout procedures' but never describes them, and the list of equipment that requires them is an unfilled placeholder ('[Identify the machines and equipment]'). D2 'Yes' has no next step.",
+      "impact": "Risk of serious injury from unexpected start-up on the most complex equipment. This is also a compliance gap under 1910.147.",
+      "quantified_impact": [
+        {
+          "metric": "Undefined decision branches",
+          "value": "1 (D2 Yes)",
+          "basis": "Decision D2 in the map"
+        },
+        {
+          "metric": "Unfilled placeholders in the section",
+          "value": "1 (equipment list)",
+          "basis": "Special lockout/tagout situations > Group lockout"
+        }
+      ],
+      "severity": "high",
+      "severity_reason": "Multi-source equipment is exactly where isolation errors are most likely, and the consequence is physical harm.",
+      "addressed_by": [
+        "A4",
+        "A3"
+      ]
+    },
+    {
+      "id": "R2",
+      "process": "Lock out equipment for service or maintenance",
+      "step": "S8",
+      "risk_type": "undefined_exception",
+      "what_could_go_wrong": "The verification check shows the equipment still has energy. The SOP gives no instruction, so the employee may troubleshoot under partial isolation or start work anyway.",
+      "cause": "Energy control procedures step 6 requires verification but gives no handling for a failed check (see the S8 exception in the map).",
+      "impact": "Service work may begin on equipment that is not de-energized, with exposure to electrical, mechanical, or stored energy.",
+      "quantified_impact": [
+        {
+          "metric": "Steps that must be complete before work begins",
+          "value": "6 (S3\u2013S8)",
+          "basis": "Energy control procedures, 'before they begin service or maintenance work'"
+        }
+      ],
+      "severity": "high",
+      "severity_reason": "A failed verification is the last barrier before exposure, and leaving it unhandled turns a near-miss into an injury.",
+      "addressed_by": [
+        "A5"
+      ]
+    },
+    {
+      "id": "R3",
+      "process": "Remove lockout and re-energize equipment",
+      "step": "S13",
+      "risk_type": "undefined_exception",
+      "what_could_go_wrong": "The employee who attached a lock has left the site or ended their shift. A coworker or supervisor cuts or removes the lock without confirming that person is clear, and the equipment is re-energized while they are still exposed.",
+      "cause": "Lockout and tagout devices requires that anyone can recognize who attached a device. The SOP gives no procedure for removal when that employee is unavailable (see the S13 exception).",
+      "impact": "Unauthorized lock removal is a leading cause of LOTO injuries and an OSHA citation item.",
+      "quantified_impact": [],
+      "severity": "high",
+      "severity_reason": "This happens routinely at shift ends, and the consequence is physical harm.",
+      "addressed_by": [
+        "A3",
+        "A7"
+      ]
+    },
+    {
+      "id": "R4",
+      "process": "Lock out equipment for service or maintenance",
+      "step": "S3 and S10",
+      "risk_type": "manual_handoff",
+      "what_could_go_wrong": "An affected employee who was away from the area never hears that the machine was shut down or is about to be re-energized, so they try to run it or walk into it during start-up.",
+      "cause": "Energy control procedures steps 1 ('Inform all affected employees') and re-energize step 2 ('Inform coworkers') give no method and no confirmation that everyone was told.",
+      "impact": "Affected employees may try to restart locked equipment or be in the area at re-energization.",
+      "quantified_impact": [
+        {
+          "metric": "Untracked notification handoffs",
+          "value": "2 (after S3 and after S10)",
+          "basis": "Handoffs list in the map"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "Verbal notices are easily missed. Other controls (locks, S11 area clearing) reduce but do not remove the exposure.",
+      "addressed_by": [
+        "A3",
+        "A6"
+      ]
+    },
+    {
+      "id": "R5",
+      "process": "Perform energized testing or positioning",
+      "step": "S17",
+      "risk_type": "missing_control",
+      "what_could_go_wrong": "Locks are removed for a test and nobody records who removed them, when, or whether they were put back. Equipment is left energized after the test while others believe it is still locked out.",
+      "cause": "Energy control procedures says temporary removal is allowed only 'for the time required' and 'the procedure must be documented', but it names no form, owner, or time limit. Energized testing steps 3\u20135 do not mention documentation.",
+      "impact": "Equipment may be left energized with no lock while work resumes. The required documentation is also missing at inspection.",
+      "quantified_impact": [
+        {
+          "metric": "Documentation requirements with no stated form or owner",
+          "value": "1",
+          "basis": "Energy control procedures, temporary removal paragraph"
+        }
+      ],
+      "severity": "high",
+      "severity_reason": "This is the one point where locks are deliberately removed, and without a record the restore step relies on memory.",
+      "addressed_by": [
+        "A8"
+      ]
+    },
+    {
+      "id": "R6",
+      "process": "Perform energized testing or positioning",
+      "step": "S20",
+      "risk_type": "undefined_exception",
+      "what_could_go_wrong": "After re-locking, the control check shows the equipment still energizes. The SOP does not say whether to stop, re-isolate, or escalate, so work may resume anyway.",
+      "cause": "Special lockout/tagout situations > Energized testing step 6 requires verification but gives no failure handling (see the S20 exception).",
+      "impact": "Workers may return to service work on energized equipment.",
+      "quantified_impact": [],
+      "severity": "high",
+      "severity_reason": "This is less frequent than routine lockout, but the consequence is the same exposure to hazardous energy.",
+      "addressed_by": [
+        "A9"
+      ]
+    },
+    {
+      "id": "R7",
+      "process": "Coordinate contractor onsite work",
+      "step": "S21\u2013S22",
+      "risk_type": "manual_handoff",
+      "what_could_go_wrong": "A contractor arrives and starts work before either side has shared its lockout/tagout procedures. Company employees then do not know which locks or rules apply.",
+      "cause": "Special lockout/tagout situations > Contract service and maintenance requires mutual awareness 'before the contractor does onsite work' but names no owner, method, or record.",
+      "impact": "Mixed crews may follow incompatible practices. There is no evidence that the exchange happened.",
+      "quantified_impact": [
+        {
+          "metric": "Handoffs between company and contractor",
+          "value": "2 (after S21, after S22)",
+          "basis": "Handoffs list in the map"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "This is likely whenever contractor work is scheduled at short notice, and the impact is confusion over energy controls.",
+      "addressed_by": [
+        "A10"
+      ]
+    },
+    {
+      "id": "R8",
+      "process": "Coordinate contractor onsite work",
+      "step": "S23",
+      "risk_type": "undefined_exception",
+      "what_could_go_wrong": "The contractor's procedure is weaker than the company's, or it conflicts with it (for example on lock types or group lockout). Company employees are told to comply with it and nobody decides which rule wins.",
+      "cause": "Contract service and maintenance says company employees 'must understand and comply with the contractor's energy-control procedures' with no review or conflict handling (see the S23 exception).",
+      "impact": "Company employees may work under inadequate energy control.",
+      "quantified_impact": [],
+      "severity": "high",
+      "severity_reason": "Conflicts between practices are common, and the default of deferring to the contractor can lower protection.",
+      "addressed_by": [
+        "A11",
+        "A12"
+      ]
+    },
+    {
+      "id": "R9",
+      "process": "Continue lockout through shift change or long-term shutdown",
+      "step": "S24",
+      "risk_type": "undefined_exception",
+      "what_could_go_wrong": "At shift change the outgoing employee removes their lock before the incoming employee applies theirs. The equipment is briefly unprotected, or the next shift does not know it is locked out.",
+      "cause": "Shift changes and long-term shutdowns refers to 'specific written procedures' for continuing lockout, but they are not included in the SOP (see the S24 exception).",
+      "impact": "Lockout can lapse between shifts, which risks injury and a compliance gap.",
+      "quantified_impact": [
+        {
+          "metric": "Referenced procedures not included",
+          "value": "1",
+          "basis": "Shift changes and long-term shutdowns"
+        }
+      ],
+      "severity": "high",
+      "severity_reason": "Shift changes happen every day, and a lapse in lockout exposes workers directly.",
+      "addressed_by": [
+        "A13"
+      ]
+    },
+    {
+      "id": "R10",
+      "process": "Continue lockout through shift change or long-term shutdown",
+      "step": "S25",
+      "risk_type": "single_point_of_failure",
+      "what_could_go_wrong": "The one person assigned to monitor locks during a long-term shutdown is absent or leaves, and a tampered or removed lock goes unnoticed for the rest of the shutdown.",
+      "cause": "Shift changes and long-term shutdowns assigns monitoring to a single '[Employee's name or job title]' (placeholder not filled), with no backup and no monitoring frequency.",
+      "impact": "Equipment may be unprotected for an extended period without anyone knowing.",
+      "quantified_impact": [
+        {
+          "metric": "Named monitors / backups",
+          "value": "1 / 0",
+          "basis": "Shift changes and long-term shutdowns"
+        },
+        {
+          "metric": "Stated monitoring frequency",
+          "value": "none",
+          "basis": "Shift changes and long-term shutdowns"
+        }
+      ],
+      "severity": "high",
+      "severity_reason": "Long shutdowns make absence of the single monitor likely, and an undetected lock removal is a direct hazard.",
+      "addressed_by": [
+        "A14"
+      ]
+    },
+    {
+      "id": "R11",
+      "process": "Conduct hazardous-energy exposure survey",
+      "step": "S1\u2013S2 (decision D1)",
+      "risk_type": "vague_ownership_or_timing",
+      "what_could_go_wrong": "No one is actually named to do the survey and it is never redone. Tasks judged not to need lockout have no stated alternative control, so they are performed unprotected.",
+      "cause": "Exposure survey leaves the surveyor as a placeholder, gives no timing or review cycle, and D1 'No' has no next step.",
+      "impact": "Equipment or tasks needing lockout may be missed, which undermines every downstream process.",
+      "quantified_impact": [
+        {
+          "metric": "Undefined decision branches",
+          "value": "1 (D1 No)",
+          "basis": "Decision D1 in the map"
+        },
+        {
+          "metric": "Unfilled role placeholders",
+          "value": "1",
+          "basis": "Exposure survey"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "This is a one-time foundation activity, so it is less frequent, but gaps propagate to all lockouts.",
+      "addressed_by": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "id": "R12",
+      "process": "Select an alternative energy-control method",
+      "step": "S26\u2013S28",
+      "risk_type": "missing_control",
+      "what_could_go_wrong": "A production supervisor decides a routine task can skip lockout and uses an unverified control circuit. No qualified person signs off the risk assessment or the circuit design before workers rely on it.",
+      "cause": "Alternative methods requires a risk assessment and an ANSI B11.19 circuit but names no assessor, approver, or record.",
+      "impact": "Workers may rely on control circuitry that does not provide protection equal to a disconnect.",
+      "quantified_impact": [
+        {
+          "metric": "Unnamed actors in the process",
+          "value": "3 (assessor, selector, implementer)",
+          "basis": "Actors on S26\u2013S28 in the map"
+        },
+        {
+          "metric": "Required sign-offs stated",
+          "value": "0",
+          "basis": "Alternative methods"
+        }
+      ],
+      "severity": "high",
+      "severity_reason": "Alternative methods apply to routine, repetitive tasks, so exposure is frequent and an inadequate design is a direct hazard.",
+      "addressed_by": [
+        "A15"
+      ]
+    },
+    {
+      "id": "R13",
+      "process": "Select an alternative energy-control method",
+      "step": "S28",
+      "risk_type": "conflicting_rule",
+      "what_could_go_wrong": "Staff read one section saying control circuits never isolate energy and another allowing control circuits as safeguarding, and they apply the wrong rule to an electrical source.",
+      "cause": "Lockout and tagout devices (Electrical energy sources) says 'Electrical control circuitry does not effectively isolate hazardous energy'. Alternative methods permits control circuits that are 'as effective as a mechanical disconnect'. The two are linked only by a 'See also' cross-reference.",
+      "impact": "Employees may lock out at a control circuit instead of the disconnect, or may reject a valid alternative method.",
+      "quantified_impact": [
+        {
+          "metric": "Sections giving different rules for control circuits",
+          "value": "2",
+          "basis": "Lockout and tagout devices (Electrical energy sources); Alternative methods"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "The cross-reference partly reconciles the two rules, but misreading it on electrical equipment is plausible and hazardous.",
+      "addressed_by": [
+        "A15"
+      ]
+    },
+    {
+      "id": "R14",
+      "process": "Train employee before assignment",
+      "step": "S30",
+      "risk_type": "missing_control",
+      "what_could_go_wrong": "A new or transferred employee is assigned to service equipment before training is finished, because nothing checks the training record at assignment.",
+      "cause": "Training requires training 'before assignment' but names no trainer, record keeper, or check at assignment. The S30 and S33 actors are unnamed.",
+      "impact": "Untrained employees may perform lockout, which is an injury risk and an audit finding.",
+      "quantified_impact": [
+        {
+          "metric": "Unnamed actors in the process",
+          "value": "2 (trainer, record keeper)",
+          "basis": "Actors on S30\u2013S33 in the map"
+        },
+        {
+          "metric": "Required record fields",
+          "value": "2 (name, training date)",
+          "basis": "Training, record-keeping paragraph"
+        }
+      ],
+      "severity": "high",
+      "severity_reason": "Assignments change frequently, and an untrained authorized employee is a direct hazard.",
+      "addressed_by": [
+        "A16",
+        "A17"
+      ]
+    },
+    {
+      "id": "R15",
+      "process": "Retrain employee",
+      "step": "S34",
+      "risk_type": "vague_ownership_or_timing",
+      "what_could_go_wrong": "Annual retraining dates lapse unnoticed, and the change-based triggers (new assignment, procedure change, new hazard, non-compliance) are never reported to whoever trains.",
+      "cause": "Training lists an annual cycle plus 4 change triggers but no owner who tracks due dates or receives trigger notices.",
+      "impact": "Employees work with expired or outdated training.",
+      "quantified_impact": [
+        {
+          "metric": "Retraining triggers to track",
+          "value": "5 (annual + 4 change triggers)",
+          "basis": "Training bullets"
+        },
+        {
+          "metric": "Retraining interval",
+          "value": "12 months",
+          "basis": "Training, 'retrained annually'"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "Without tracking, lapses are likely. The impact is a compliance gap with indirect safety exposure.",
+      "addressed_by": [
+        "A18",
+        "A19"
+      ]
+    },
+    {
+      "id": "R16",
+      "process": "Inspect energy-control procedures annually",
+      "step": "S36",
+      "risk_type": "vague_ownership_or_timing",
+      "what_could_go_wrong": "The annual inspection of some procedures is skipped, or it is done by someone who uses the procedure, because no owner schedules inspections or checks inspector independence.",
+      "cause": "Inspections of written energy-control procedures assigns the inspection to the company and requires an independent inspector, but it names no scheduler and no independence check.",
+      "impact": "Procedures go unverified, which is an OSHA periodic-inspection finding.",
+      "quantified_impact": [
+        {
+          "metric": "Inspection interval",
+          "value": "12 months per procedure",
+          "basis": "Inspections section, 'annual inspections'"
+        },
+        {
+          "metric": "Required documentation fields",
+          "value": "4",
+          "basis": "Inspections section bullet list"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "Missing inspections is likely when there are many procedures, and the impact is mainly compliance with indirect safety effect.",
+      "addressed_by": [
+        "A20",
+        "A22"
+      ]
+    },
+    {
+      "id": "R17",
+      "process": "Inspect energy-control procedures annually",
+      "step": "S41\u2013S42",
+      "risk_type": "vague_ownership_or_timing",
+      "what_could_go_wrong": "An inspection finds a procedure is not protecting employees, but retraining and the procedure fix have no owner or deadline. Work continues under the deficient procedure.",
+      "cause": "Inspections of written energy-control procedures says employees 'must be retrained and the procedure's deficiencies corrected' with no owner or due date.",
+      "impact": "A known hazard stays uncorrected.",
+      "quantified_impact": [
+        {
+          "metric": "Corrective actions with no owner or deadline",
+          "value": "2 (retraining, procedure correction)",
+          "basis": "Inspections section"
+        }
+      ],
+      "severity": "medium",
+      "severity_reason": "Findings are infrequent, but leaving a confirmed deficiency open is a serious exposure.",
+      "addressed_by": [
+        "A23",
+        "A24"
+      ]
+    }
+  ],
+  "recommendations": [
+    {
+      "id": "A1",
+      "process": "Conduct hazardous-energy exposure survey",
+      "step": "S1",
+      "label": "digitize",
+      "proposed_change": "The surveyor records each machine, its energy sources and magnitudes, and its service tasks in an Exposure Survey register (SharePoint list) through a Power Apps form. Each entry links to the equipment's specific energy-control procedure.",
+      "reason": "The survey becomes a single maintained equipment list that the lockout log, inspections, and group-lockout list can reference. The process owner must also name the surveyor role.",
+      "implementation_steps": [
+        "Process owner names the surveyor role and fills the placeholder in the Exposure survey section.",
+        "Create SharePoint lists 'Equipment' and 'Survey Tasks' with columns for equipment ID, energy types, magnitude, task, LOTO required (Y/N), group lockout (Y/N), and procedure link.",
+        "Build a Power Apps canvas form for surveyors, usable on a tablet.",
+        "Add a review date column, plus a view that shows entries older than the owner-set review interval."
+      ],
+      "suggested_tool": "Power Apps + SharePoint lists",
+      "value": 3,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 10,
+        "occurrence": "per equipment item surveyed",
+        "basis": "Estimate: time saved compiling and retrieving survey results. No steps or handoffs are removed from the map."
+      },
+      "resolves_risks": [
+        "R11"
+      ]
+    },
+    {
+      "id": "A2",
+      "process": "Conduct hazardous-energy exposure survey",
+      "step": "S2",
+      "label": "keep_human",
+      "proposed_change": "A qualified person continues to evaluate whether each task needs lockout/tagout and records the decision in the survey register. The process owner defines what happens on D1 'No' (for example, route the task to Alternative methods).",
+      "reason": "Hazard evaluation is a safety judgment.",
+      "implementation_steps": [
+        "Process owner writes the D1 'No' handling into the Exposure survey section.",
+        "Add a 'Control method' choice column (LOTO / Alternative method / Not applicable with justification) to the Survey Tasks list."
+      ],
+      "suggested_tool": "Human decision recorded in SharePoint list",
+      "value": 3,
+      "effort": 1,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 0,
+        "occurrence": "per task evaluated",
+        "basis": "No automation; this keeps a human safety judgment."
+      },
+      "resolves_risks": [
+        "R11"
+      ]
+    },
+    {
+      "id": "A3",
+      "process": "Lock out equipment for service or maintenance",
+      "step": "S3",
+      "label": "digitize",
+      "proposed_change": "The authorized employee opens a lockout record in a mobile LOTO Log app (equipment, energy sources, lock IDs, owner, group lockout flag). A flow then posts the shutdown notice to the area's affected employees in Teams. This supplements, not replaces, the in-person notice and the physical tag.",
+      "reason": "It creates a live record of who attached which lock. That record supports removal, shift change, and monitoring, and gives the shutdown notice a trail.",
+      "implementation_steps": [
+        "Create a SharePoint list 'Lockout Log' (equipment lookup to Equipment list, lock IDs, authorized employee, start time, status, group lockout Y/N, area).",
+        "Build a Power Apps mobile app with a 'Start lockout' screen that pre-fills energy sources from the Equipment list.",
+        "Add a Power Automate flow triggered when an item is created: post an adaptive card to the area Teams channel and @mention the affected employees for that area.",
+        "If group lockout is Y, show the group lockout procedure link and require all participating employees to be added to the record.",
+        "Keep the in-person notice and physical tags mandatory; state this in the app."
+      ],
+      "suggested_tool": "Power Apps + SharePoint + Power Automate (Teams connector)",
+      "value": 5,
+      "effort": 3,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 3,
+        "occurrence": "per lockout",
+        "basis": "Estimate: time spent locating affected employees. The handoff after S3 remains but becomes tracked."
+      },
+      "resolves_risks": [
+        "R1",
+        "R3",
+        "R4"
+      ]
+    },
+    {
+      "id": "A4",
+      "process": "Lock out equipment for service or maintenance",
+      "step": "S4\u2013S7",
+      "label": "keep_human",
+      "proposed_change": "Shutdown, isolation, stored-energy release, and lock/tag application stay physical tasks done by the authorized employee. The process owner writes the missing group lockout procedure and the group lockout equipment list.",
+      "reason": "These are physical safety actions that cannot be automated, and the group lockout gap must be closed in the SOP.",
+      "implementation_steps": [
+        "Process owner writes the group lockout procedure and fills in the equipment list in Special lockout/tagout situations > Group lockout.",
+        "Flag group lockout equipment in the Equipment list so the LOTO Log app (A3) displays the procedure.",
+        "Process owner defines handling for energy-isolating devices that cannot accept a lock."
+      ],
+      "suggested_tool": "Human physical task; SOP revision",
+      "value": 4,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 0,
+        "occurrence": "per lockout",
+        "basis": "No automation; this keeps human physical safety steps."
+      },
+      "resolves_risks": [
+        "R1"
+      ]
+    },
+    {
+      "id": "A5",
+      "process": "Lock out equipment for service or maintenance",
+      "step": "S8",
+      "label": "digitize",
+      "proposed_change": "The authorized employee still physically verifies zero energy, then records Pass/Fail in the lockout record. 'Fail' keeps the record out of 'Ready for work' status and alerts the supervisor, following a stop-work rule the process owner defines.",
+      "reason": "This gives the failed-verification branch a defined, recorded next step.",
+      "implementation_steps": [
+        "Process owner writes failed-verification handling (stop, re-isolate, escalate to supervisor) into Energy control procedures.",
+        "Add a 'Verification result' field and a 'Ready for work' status to the Lockout Log.",
+        "Add a flow condition: if the result is Fail, send a Teams alert to the area supervisor and keep the status at 'Not verified'."
+      ],
+      "suggested_tool": "Power Apps + Power Automate (Teams connector)",
+      "value": 4,
+      "effort": 3,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 0,
+        "occurrence": "per lockout",
+        "basis": "Adds a control rather than saving time; it depends on A3."
+      },
+      "resolves_risks": [
+        "R2"
+      ]
+    },
+    {
+      "id": "A6",
+      "process": "Remove lockout and re-energize equipment",
+      "step": "S10",
+      "label": "automate",
+      "proposed_change": "The authorized employee taps 'Start release' on the lockout record. A flow posts the removal notice to the affected employees and closes the record when re-energization is confirmed. The in-person notice continues.",
+      "reason": "It tracks the removal notice and closes the log, so the log always shows current lockouts.",
+      "implementation_steps": [
+        "Add a 'Start release' button and a 'Re-energized' confirmation to the LOTO Log app.",
+        "Flow on status change to 'Releasing': post an adaptive card to the area Teams channel.",
+        "Flow on 'Re-energized': set the record to Closed with a timestamp."
+      ],
+      "suggested_tool": "Power Automate (SharePoint, Teams connectors)",
+      "value": 3,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 3,
+        "occurrence": "per lockout release",
+        "basis": "Estimate: time spent finding coworkers. The handoff after S10 remains but becomes tracked."
+      },
+      "resolves_risks": [
+        "R4"
+      ]
+    },
+    {
+      "id": "A7",
+      "process": "Remove lockout and re-energize equipment",
+      "step": "S11\u2013S14",
+      "label": "keep_human",
+      "proposed_change": "Clearing the area, checking controls, removing locks, and re-energizing stay with the authorized employee. The process owner adds a procedure for removing a lock when the employee who attached it is unavailable.",
+      "reason": "These are physical safety actions, and removal by someone other than the lock owner needs a defined human authorization.",
+      "implementation_steps": [
+        "Process owner writes the absent-employee lock removal procedure (contact attempt, supervisor verification, notification before return) into Energy control procedures.",
+        "Use the Lockout Log owner field (A3) to identify and contact the employee who attached the lock."
+      ],
+      "suggested_tool": "Human physical task; SOP revision",
+      "value": 4,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 0,
+        "occurrence": "per lockout release",
+        "basis": "No automation; this keeps human physical safety steps."
+      },
+      "resolves_risks": [
+        "R3"
+      ]
+    },
+    {
+      "id": "A8",
+      "process": "Perform energized testing or positioning",
+      "step": "S17",
+      "label": "digitize",
+      "proposed_change": "Before removing locks for a test, the authorized employee logs a temporary removal against the lockout record, with the reason and planned duration. A flow notifies the area and escalates if the locks are not reapplied by the planned time.",
+      "reason": "This meets the SOP's 'procedure must be documented' requirement and enforces 'only for the time required'.",
+      "implementation_steps": [
+        "Create a SharePoint list 'Temporary Removals' linked to the Lockout Log (removed by, reason, planned minutes, removed at, reapplied at, verified).",
+        "Add a 'Temporary removal' screen to the LOTO Log app.",
+        "Build a flow on item creation that notifies the area and waits until the planned time.",
+        "If 'reapplied at' is empty after the planned time, alert the employee and then the supervisor."
+      ],
+      "suggested_tool": "Power Apps + SharePoint + Power Automate",
+      "value": 4,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 5,
+        "occurrence": "per energized test",
+        "basis": "Estimate: time saved on paper documentation. It adds a timed control."
+      },
+      "resolves_risks": [
+        "R5"
+      ]
+    },
+    {
+      "id": "A9",
+      "process": "Perform energized testing or positioning",
+      "step": "S18\u2013S20",
+      "label": "keep_human",
+      "proposed_change": "The test, re-lockout, and verification stay with the authorized employee. The process owner defines what to do when verification after re-lock fails.",
+      "reason": "These are physical safety actions, and the failure branch needs a human stop-work rule.",
+      "implementation_steps": [
+        "Process owner writes failed re-verification handling into Special lockout/tagout situations > Energized testing.",
+        "Record reapplication and the verification result in the Temporary Removals list (A8)."
+      ],
+      "suggested_tool": "Human physical task; SOP revision",
+      "value": 4,
+      "effort": 1,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 0,
+        "occurrence": "per energized test",
+        "basis": "No automation."
+      },
+      "resolves_risks": [
+        "R6"
+      ]
+    },
+    {
+      "id": "A10",
+      "process": "Coordinate contractor onsite work",
+      "step": "S21",
+      "label": "automate",
+      "proposed_change": "When a contractor job is registered, a flow sends the company's LOTO procedures and an acknowledgment request to the contractor and asks them to upload their own procedures. The job shows 'Not cleared for onsite work' until both sides have acknowledged.",
+      "reason": "It makes the 'before onsite work' exchange trackable and evidenced.",
+      "implementation_steps": [
+        "Create a SharePoint list 'Contractor Jobs' (contractor, contact email, start date, company procedures sent, contractor acknowledged, contractor procedures uploaded, cleared status).",
+        "Build a flow on item creation that emails the company procedure documents with a Microsoft Forms acknowledgment and upload link.",
+        "Update the status when the acknowledgment and upload are received.",
+        "Send a reminder to the job owner if the start date is near and the status is not cleared."
+      ],
+      "suggested_tool": "Power Automate (SharePoint, Outlook, Microsoft Forms)",
+      "value": 3,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 15,
+        "occurrence": "per contractor job",
+        "basis": "Estimate: time spent chasing procedure exchange. The 2 handoffs remain but become tracked."
+      },
+      "resolves_risks": [
+        "R7"
+      ]
+    },
+    {
+      "id": "A11",
+      "process": "Coordinate contractor onsite work",
+      "step": "S22",
+      "label": "ai_assist",
+      "proposed_change": "When the contractor uploads its energy-control procedure, an AI step summarizes it and lists differences from the company procedure (lock types, group lockout, verification). The list goes to a safety reviewer, who decides.",
+      "reason": "Comparing two procedure documents is reading work. AI flags likely conflicts, but the decision stays human.",
+      "implementation_steps": [
+        "Trigger a flow on file upload to the Contractor Procedures library.",
+        "Use the AI Builder 'Create text with GPT' prompt with both documents to produce a structured difference list.",
+        "Save the output to the Contractor Jobs item and assign a review task to the safety reviewer.",
+        "Label the output 'AI draft \u2013 verify against source'."
+      ],
+      "suggested_tool": "Power Automate + AI Builder prompt",
+      "value": 3,
+      "effort": 3,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 20,
+        "occurrence": "per contractor procedure reviewed",
+        "basis": "Estimate of reviewer reading time saved."
+      },
+      "resolves_risks": [
+        "R8"
+      ]
+    },
+    {
+      "id": "A12",
+      "process": "Coordinate contractor onsite work",
+      "step": "S23",
+      "label": "keep_human",
+      "proposed_change": "A named safety reviewer resolves any conflict between contractor and company procedures before company employees work under the contractor's controls.",
+      "reason": "Deciding which energy controls protect employees is a safety judgment.",
+      "implementation_steps": [
+        "Process owner adds conflict-resolution handling to Contract service and maintenance (for example, the more protective rule applies).",
+        "Record the reviewer's decision on the Contractor Jobs item."
+      ],
+      "suggested_tool": "Human decision recorded in SharePoint",
+      "value": 3,
+      "effort": 1,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 0,
+        "occurrence": "per contractor job",
+        "basis": "No automation."
+      },
+      "resolves_risks": [
+        "R8"
+      ]
+    },
+    {
+      "id": "A13",
+      "process": "Continue lockout through shift change or long-term shutdown",
+      "step": "S24",
+      "label": "digitize",
+      "proposed_change": "The outgoing employee transfers the lockout record in the LOTO Log app to the incoming employee, who acknowledges after applying their own lock. The physical transfer follows the written procedure, which the process owner must add.",
+      "reason": "It gives the shift-change transfer a record, so lockout ownership never lapses unseen.",
+      "implementation_steps": [
+        "Process owner writes the shift-change and long-term-shutdown procedures into the SOP.",
+        "Add a 'Transfer' action to the LOTO Log app that requires the incoming employee's acknowledgment.",
+        "Build a flow that alerts the supervisor if a transfer is unacknowledged after the owner-set window."
+      ],
+      "suggested_tool": "Power Apps + Power Automate",
+      "value": 4,
+      "effort": 3,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 0,
+        "occurrence": "per shift change with active lockout",
+        "basis": "Adds a control; no time saving claimed."
+      },
+      "resolves_risks": [
+        "R9"
+      ]
+    },
+    {
+      "id": "A14",
+      "process": "Continue lockout through shift change or long-term shutdown",
+      "step": "S25",
+      "label": "automate",
+      "proposed_change": "A scheduled flow sends lock-check tasks for each open long-term shutdown to the designated monitor, and to a named backup if the check is missed. It alerts the supervisor if any device is reported disturbed.",
+      "reason": "It removes the single point of failure and sets a monitoring rhythm.",
+      "implementation_steps": [
+        "Process owner names the monitor role and a backup, and sets the check frequency.",
+        "Add a 'Long-term shutdown' type and monitor/backup fields to the Lockout Log.",
+        "Build a Recurrence flow that sends an adaptive card check to the monitor, escalates to the backup if there is no response, and logs results to a 'Shutdown Checks' list."
+      ],
+      "suggested_tool": "Power Automate (Recurrence, Teams, SharePoint)",
+      "value": 4,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 5,
+        "occurrence": "per scheduled shutdown check",
+        "basis": "Estimate: time saved on manual check logging and follow-up."
+      },
+      "resolves_risks": [
+        "R10"
+      ]
+    },
+    {
+      "id": "A15",
+      "process": "Select an alternative energy-control method",
+      "step": "S26\u2013S29",
+      "label": "keep_human",
+      "proposed_change": "The risk assessment, method selection, ANSI B11.19 circuit design, and personal control stay with qualified people. The process owner names the assessor and approver and reconciles the electrical-control-circuit wording.",
+      "reason": "These are engineering and safety judgments that must not be automated.",
+      "implementation_steps": [
+        "Process owner names the assessor and approver roles in Alternative methods.",
+        "Process owner clarifies how the electrical-sources rule and the Alternative methods rule relate.",
+        "Store signed assessments in a SharePoint library linked to the Equipment list."
+      ],
+      "suggested_tool": "Human decision; SharePoint document library",
+      "value": 4,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 0,
+        "occurrence": "per alternative method assessment",
+        "basis": "No automation."
+      },
+      "resolves_risks": [
+        "R12",
+        "R13"
+      ]
+    },
+    {
+      "id": "A16",
+      "process": "Train employee before assignment",
+      "step": "S30",
+      "label": "automate",
+      "proposed_change": "When an employee is added to a role that may be exposed to hazardous energy, a flow checks the training register. If no current record exists, it alerts the supervisor and trainer that the employee may not be assigned yet. Training delivery stays human.",
+      "reason": "It enforces 'before assignment' with a check.",
+      "implementation_steps": [
+        "Create or identify a SharePoint 'Role Assignments' list (or use an HR feed if one exists).",
+        "Build a flow on new assignment that looks up the Training Records list (A17) by employee and role type.",
+        "If no record exists, notify the supervisor and trainer in Teams and create a training task."
+      ],
+      "suggested_tool": "Power Automate (SharePoint, Teams, Planner)",
+      "value": 4,
+      "effort": 3,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 5,
+        "occurrence": "per new or changed assignment",
+        "basis": "Estimate of manual record lookup time."
+      },
+      "resolves_risks": [
+        "R14"
+      ]
+    },
+    {
+      "id": "A17",
+      "process": "Train employee before assignment",
+      "step": "S33",
+      "label": "digitize",
+      "proposed_change": "The trainer records each completed training in a Training Records SharePoint list (name, date, type authorized/affected/area, trainer) through a form.",
+      "reason": "It provides one searchable record that the assignment check and retraining reminders can use.",
+      "implementation_steps": [
+        "Create a SharePoint list 'Training Records'.",
+        "Build a Power Apps or Microsoft Forms intake for trainers that writes to the list.",
+        "Name the record-keeper role in the Training section."
+      ],
+      "suggested_tool": "Microsoft Forms or Power Apps + SharePoint",
+      "value": 3,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 5,
+        "occurrence": "per training session recorded",
+        "basis": "Estimate of filing and retrieval time."
+      },
+      "resolves_risks": [
+        "R14"
+      ]
+    },
+    {
+      "id": "A18",
+      "process": "Retrain employee",
+      "step": "S34",
+      "label": "automate",
+      "proposed_change": "A scheduled flow flags employees whose last training is approaching 12 months and assigns retraining to the trainer. A Forms-based 'retraining trigger' report covers assignment, procedure, hazard, and non-compliance changes.",
+      "reason": "It gives the annual cycle and the 4 change triggers a tracked owner.",
+      "implementation_steps": [
+        "Build a Recurrence flow that queries Training Records for last date older than 12 months minus the owner-set lead time.",
+        "Create a Planner task for the trainer and notify the employee and supervisor.",
+        "Create a Microsoft Forms 'Retraining trigger' form that creates a retraining task.",
+        "Escalate overdue items to the supervisor."
+      ],
+      "suggested_tool": "Power Automate (Recurrence, SharePoint, Planner, Forms)",
+      "value": 4,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 10,
+        "occurrence": "per retraining due",
+        "basis": "Estimate of manual tracking time."
+      },
+      "resolves_risks": [
+        "R15"
+      ]
+    },
+    {
+      "id": "A19",
+      "process": "Retrain employee",
+      "step": "S35",
+      "label": "automate",
+      "proposed_change": "Completing the retraining task writes the new training date to the employee's Training Records row automatically.",
+      "reason": "It removes a separate manual record update.",
+      "implementation_steps": [
+        "Build a flow on Planner task completion (or the trainer form submission) that updates the Training Records item."
+      ],
+      "suggested_tool": "Power Automate (Planner, SharePoint)",
+      "value": 2,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 1,
+        "minutes_saved_per_occurrence": 3,
+        "occurrence": "per retraining completed",
+        "basis": "S35 manual record update replaced by flow; minutes are an estimate."
+      },
+      "resolves_risks": [
+        "R15"
+      ]
+    },
+    {
+      "id": "A20",
+      "process": "Inspect energy-control procedures annually",
+      "step": "S36",
+      "label": "automate",
+      "proposed_change": "An annual flow per procedure creates an inspection task, asks the coordinator to assign an inspector, and warns if the chosen inspector is listed as a user of that procedure.",
+      "reason": "It makes sure every procedure is inspected each year by an independent inspector.",
+      "implementation_steps": [
+        "Add a 'last inspected' date and a 'users' field to procedure records in the Equipment list.",
+        "Build a Recurrence flow that creates Planner tasks for procedures due within the owner-set lead time.",
+        "Add a condition that flags the assignment if the inspector is in the procedure's users field."
+      ],
+      "suggested_tool": "Power Automate (Recurrence, SharePoint, Planner)",
+      "value": 3,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 10,
+        "occurrence": "per procedure inspection",
+        "basis": "Estimate of scheduling time."
+      },
+      "resolves_risks": [
+        "R16"
+      ]
+    },
+    {
+      "id": "A21",
+      "process": "Inspect energy-control procedures annually",
+      "step": "S37\u2013S39",
+      "label": "keep_human",
+      "proposed_change": "The inspector continues to review the procedure with employees and to judge its accuracy, completeness, and effectiveness.",
+      "reason": "Observation and judgment of safety practice must stay human.",
+      "implementation_steps": [
+        "Inspector records the findings in the inspection form (A22)."
+      ],
+      "suggested_tool": "Human inspection",
+      "value": 3,
+      "effort": 1,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 0,
+        "occurrence": "per procedure inspection",
+        "basis": "No automation."
+      },
+      "resolves_risks": []
+    },
+    {
+      "id": "A22",
+      "process": "Inspect energy-control procedures annually",
+      "step": "S40",
+      "label": "digitize",
+      "proposed_change": "The inspector documents each inspection in a Power Apps form with the 4 required fields (equipment, date, employees, inspector) plus findings, saved to an Inspections list.",
+      "reason": "It provides complete, consistent inspection records for audit.",
+      "implementation_steps": [
+        "Create a SharePoint list 'Inspections' with the 4 required fields, findings, and a 'deficiency found' Y/N field.",
+        "Build a Power Apps form with required-field validation.",
+        "Update the procedure's 'last inspected' date on save."
+      ],
+      "suggested_tool": "Power Apps + SharePoint",
+      "value": 3,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 10,
+        "occurrence": "per procedure inspection",
+        "basis": "Estimate of documentation time."
+      },
+      "resolves_risks": [
+        "R16"
+      ]
+    },
+    {
+      "id": "A23",
+      "process": "Inspect energy-control procedures annually",
+      "step": "S41",
+      "label": "automate",
+      "proposed_change": "When an inspection records non-compliance, a flow creates retraining tasks for the named employees with an owner and a due date.",
+      "reason": "It gives the 'must be retrained' requirement an owner and a deadline.",
+      "implementation_steps": [
+        "Build a flow on Inspections item creation where 'deficiency found' = Yes.",
+        "For each employee in the inspection, create a Planner retraining task for the trainer with a due date set by the process owner.",
+        "Write completions to Training Records."
+      ],
+      "suggested_tool": "Power Automate (SharePoint, Planner)",
+      "value": 3,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 5,
+        "occurrence": "per inspection with findings",
+        "basis": "Estimate of follow-up time."
+      },
+      "resolves_risks": [
+        "R17"
+      ]
+    },
+    {
+      "id": "A24",
+      "process": "Inspect energy-control procedures annually",
+      "step": "S42",
+      "label": "automate",
+      "proposed_change": "A flow creates a corrective-action task for the procedure owner, tracks it to closure, and escalates overdue items.",
+      "reason": "It gives the 'deficiencies corrected' requirement an owner and a deadline.",
+      "implementation_steps": [
+        "Build a flow on Inspections item creation where 'deficiency found' = Yes that creates a Planner task for the procedure owner.",
+        "Send weekly reminders until the task is closed, and escalate to the safety lead after the owner-set due date."
+      ],
+      "suggested_tool": "Power Automate (SharePoint, Planner, Teams)",
+      "value": 3,
+      "effort": 2,
+      "impact": {
+        "handoffs_removed": 0,
+        "steps_removed": 0,
+        "wait_days_removed": 0,
+        "manual_entries_removed": 0,
+        "minutes_saved_per_occurrence": 5,
+        "occurrence": "per inspection with findings",
+        "basis": "Estimate of follow-up time."
+      },
+      "resolves_risks": [
+        "R17"
+      ]
+    }
+  ],
+  "starter_flows": [
+    {
+      "recommendation_id": "A8",
+      "trigger": "SharePoint \u2013 When an item is created in the 'Temporary Removals' list (submitted from the LOTO Log app before locks are removed)",
+      "actions": [
+        "Get the linked Lockout Log item (equipment, area, authorized employee).",
+        "Post an adaptive card to the area Teams channel: 'Locks temporarily removed for energized testing on [equipment] by [employee]'.",
+        "Delay until removed-at plus planned minutes.",
+        "Get the Temporary Removals item again; check whether 'reapplied at' is filled.",
+        "If it is empty, send a Teams alert to the authorized employee, wait the owner-set grace period, and if it is still empty alert the area supervisor.",
+        "When 'reapplied at' and 'verified' are filled, update the Lockout Log status back to 'Locked \u2013 verified' and post a restore notice to the channel."
+      ],
+      "approval_step": ""
+    },
+    {
+      "recommendation_id": "A14",
+      "trigger": "Recurrence \u2013 at the check frequency set by the process owner",
+      "actions": [
+        "SharePoint \u2013 Get items from Lockout Log where Type = 'Long-term shutdown' and Status = 'Open'.",
+        "For each item, post an adaptive card to the designated monitor asking: 'Are all lockout/tagout devices on [equipment] intact? Yes/No, with notes and photo'.",
+        "If there is no response within the owner-set window, send the same card to the named backup monitor.",
+        "If there is still no response, alert the supervisor.",
+        "If the response is 'No', immediately alert the supervisor and the safety lead in Teams.",
+        "Create an item in the 'Shutdown Checks' list with the equipment, responder, time, result, and notes."
+      ],
+      "approval_step": ""
+    },
+    {
+      "recommendation_id": "A18",
+      "trigger": "Recurrence \u2013 weekly",
+      "actions": [
+        "SharePoint \u2013 Get items from Training Records where last training date is earlier than today minus (365 days minus the owner-set lead time).",
+        "For each employee, create a Planner retraining task assigned to the trainer with the due date = last training date + 12 months.",
+        "Send a Teams notice to the employee and their supervisor with the due date.",
+        "For items past the due date with no completed task, escalate to the supervisor and flag the record as 'Overdue'.",
+        "(Companion flow) When a 'Retraining trigger' Microsoft Forms response is submitted for an assignment change, procedure change, new hazard, or non-compliance, create the same Planner task for the trainer."
+      ],
+      "approval_step": ""
+    }
+  ],
+  "future_state": [
+    {
+      "id": "F1",
+      "process": "Conduct hazardous-energy exposure survey",
+      "from_step": "S1",
+      "actor": "Designated surveyor (role to be named)",
+      "action": "Conducts the hazardous-energy survey and records equipment, energy types and magnitudes, and tasks in the Exposure Survey register via Power Apps",
+      "change": "digitized"
+    },
+    {
+      "id": "F2",
+      "process": "Conduct hazardous-energy exposure survey",
+      "from_step": "S2",
+      "actor": "Designated surveyor (role to be named)",
+      "action": "Evaluates each task for lockout/tagout need and records the control method",
+      "change": "unchanged"
+    },
+    {
+      "id": "F3",
+      "process": "Lock out equipment for service or maintenance",
+      "from_step": "S3",
+      "actor": "Authorized employee",
+      "action": "Opens a lockout record in the LOTO Log app (equipment, lock IDs, group lockout flag) and informs affected employees in person; a flow posts the shutdown notice to the area Teams channel",
+      "change": "digitized"
+    },
+    {
+      "id": "F4",
+      "process": "Lock out equipment for service or maintenance",
+      "from_step": "S4",
+      "actor": "Authorized employee",
+      "action": "Shuts down the equipment",
+      "change": "unchanged"
+    },
+    {
+      "id": "F5",
+      "process": "Lock out equipment for service or maintenance",
+      "from_step": "S5",
+      "actor": "Authorized employee",
+      "action": "Isolates or blocks the hazardous energy",
+      "change": "unchanged"
+    },
+    {
+      "id": "F6",
+      "process": "Lock out equipment for service or maintenance",
+      "from_step": "S6",
+      "actor": "Authorized employee",
+      "action": "Removes any potential (stored) energy",
+      "change": "unchanged"
+    },
+    {
+      "id": "F7",
+      "process": "Lock out equipment for service or maintenance",
+      "from_step": "S7",
+      "actor": "Authorized employee",
+      "action": "Places lockout or tagout devices on the energy sources (at the circuit disconnect for electrical sources)",
+      "change": "unchanged"
+    },
+    {
+      "id": "F8",
+      "process": "Lock out equipment for service or maintenance",
+      "from_step": "S8",
+      "actor": "Authorized employee",
+      "action": "Verifies zero energy and records Pass/Fail in the lockout record; on Fail the supervisor is alerted and the record stays out of 'Ready for work'",
+      "change": "digitized"
+    },
+    {
+      "id": "F9",
+      "process": "Remove lockout and re-energize equipment",
+      "from_step": "S9",
+      "actor": "Authorized employee",
+      "action": "Removes tools and replaces machine or equipment components",
+      "change": "unchanged"
+    },
+    {
+      "id": "F10",
+      "process": "Remove lockout and re-energize equipment",
+      "from_step": "S10",
+      "actor": "Authorized employee",
+      "action": "Taps 'Start release' and informs coworkers in person; a flow posts the removal notice to affected employees",
+      "change": "automated"
+    },
+    {
+      "id": "F11",
+      "process": "Remove lockout and re-energize equipment",
+      "from_step": "S11",
+      "actor": "Authorized employee",
+      "action": "Ensures all workers are clear of the work area",
+      "change": "unchanged"
+    },
+    {
+      "id": "F12",
+      "process": "Remove lockout and re-energize equipment",
+      "from_step": "S12",
+      "actor": "Authorized employee",
+      "action": "Verifies the power controls are off or in a neutral position",
+      "change": "unchanged"
+    },
+    {
+      "id": "F13",
+      "process": "Remove lockout and re-energize equipment",
+      "from_step": "S13",
+      "actor": "Authorized employee",
+      "action": "Removes the lockout or tagout device",
+      "change": "unchanged"
+    },
+    {
+      "id": "F14",
+      "process": "Remove lockout and re-energize equipment",
+      "from_step": "S14",
+      "actor": "Authorized employee",
+      "action": "Re-energizes the equipment",
+      "change": "unchanged"
+    },
+    {
+      "id": "F15",
+      "process": "Remove lockout and re-energize equipment",
+      "from_step": "NEW",
+      "actor": "Authorized employee",
+      "action": "Confirms re-energization in the LOTO Log app; a flow closes the lockout record",
+      "change": "new"
+    },
+    {
+      "id": "F16",
+      "process": "Perform energized testing or positioning",
+      "from_step": "S15",
+      "actor": "Authorized employee",
+      "action": "Removes unnecessary tools and materials",
+      "change": "unchanged"
+    },
+    {
+      "id": "F17",
+      "process": "Perform energized testing or positioning",
+      "from_step": "S16",
+      "actor": "Authorized employee",
+      "action": "Ensures all other employees are out of the area",
+      "change": "unchanged"
+    },
+    {
+      "id": "F18",
+      "process": "Perform energized testing or positioning",
+      "from_step": "S17",
+      "actor": "Authorized employee",
+      "action": "Logs the temporary removal (reason, planned duration) in the app, then removes the locks or tags; a flow notifies the area and starts the reapplication timer",
+      "change": "digitized"
+    },
+    {
+      "id": "F19",
+      "process": "Perform energized testing or positioning",
+      "from_step": "S18",
+      "actor": "Authorized employee",
+      "action": "Performs the test or positions the equipment",
+      "change": "unchanged"
+    },
+    {
+      "id": "F20",
+      "process": "Perform energized testing or positioning",
+      "from_step": "S19",
+      "actor": "Authorized employee",
+      "action": "De-energizes the equipment and reapplies the locks or tags",
+      "change": "unchanged"
+    },
+    {
+      "id": "F21",
+      "process": "Perform energized testing or positioning",
+      "from_step": "S20",
+      "actor": "Authorized employee",
+      "action": "Operates the controls to verify the equipment is de-energized",
+      "change": "unchanged"
+    },
+    {
+      "id": "F22",
+      "process": "Perform energized testing or positioning",
+      "from_step": "NEW",
+      "actor": "Authorized employee",
+      "action": "Records reapplication and the verification result in the Temporary Removals log; a flow closes the entry and stops the escalation",
+      "change": "new"
+    },
+    {
+      "id": "F23",
+      "process": "Coordinate contractor onsite work",
+      "from_step": "S21",
+      "actor": "Company (job owner)",
+      "action": "Registers the contractor job; a flow sends the company LOTO procedures and an acknowledgment request and tracks cleared status",
+      "change": "automated"
+    },
+    {
+      "id": "F24",
+      "process": "Coordinate contractor onsite work",
+      "from_step": "S22",
+      "actor": "Contractor",
+      "action": "Uploads its energy-control procedures; an AI step drafts a difference list against the company procedure for the safety reviewer",
+      "change": "ai_assisted"
+    },
+    {
+      "id": "F25",
+      "process": "Coordinate contractor onsite work",
+      "from_step": "S23",
+      "actor": "Company employees",
+      "action": "Understand and comply with the contractor's energy-control procedures as cleared by the safety reviewer",
+      "change": "unchanged"
+    },
+    {
+      "id": "F26",
+      "process": "Continue lockout through shift change or long-term shutdown",
+      "from_step": "S24",
+      "actor": "Employees (authorized employees)",
+      "action": "Follow the written continuity procedure and transfer the lockout record in the app to the incoming employee, who acknowledges after applying their lock",
+      "change": "digitized"
+    },
+    {
+      "id": "F27",
+      "process": "Continue lockout through shift change or long-term shutdown",
+      "from_step": "S25",
+      "actor": "Designated monitor (with named backup)",
+      "action": "Completes scheduled lock-check tasks sent by a flow; missed checks go to the backup and disturbed devices alert the supervisor",
+      "change": "automated"
+    },
+    {
+      "id": "F28",
+      "process": "Select an alternative energy-control method",
+      "from_step": "S26",
+      "actor": "Company (assessor to be named)",
+      "action": "Conducts the risk assessment including existing safeguards",
+      "change": "unchanged"
+    },
+    {
+      "id": "F29",
+      "process": "Select an alternative energy-control method",
+      "from_step": "S27",
+      "actor": "Company (selector to be named)",
+      "action": "Selects the alternative control method based on the risk assessment",
+      "change": "unchanged"
+    },
+    {
+      "id": "F30",
+      "process": "Select an alternative energy-control method",
+      "from_step": "S28",
+      "actor": "Company (implementer to be named)",
+      "action": "Implements a control-reliable ANSI B11.19 circuit with a safety relay or safety PLC",
+      "change": "unchanged"
+    },
+    {
+      "id": "F31",
+      "process": "Select an alternative energy-control method",
+      "from_step": "S29",
+      "actor": "Individual performing the task",
+      "action": "Keeps exclusive personal control over the protective mode",
+      "change": "unchanged"
+    },
+    {
+      "id": "F32",
+      "process": "Train employee before assignment",
+      "from_step": "S30",
+      "actor": "Company (trainer to be named)",
+      "action": "Delivers core training before assignment; a flow checks the training register at assignment and alerts the supervisor if no record exists",
+      "change": "automated"
+    },
+    {
+      "id": "F33",
+      "process": "Train employee before assignment",
+      "from_step": "S31",
+      "actor": "Company (trainer to be named)",
+      "action": "Trains the authorized employee on energy recognition, isolation, and verification",
+      "change": "unchanged"
+    },
+    {
+      "id": "F34",
+      "process": "Train employee before assignment",
+      "from_step": "S32",
+      "actor": "Company (trainer to be named)",
+      "action": "Trains the affected or area employee on the purpose of the procedures and the restart prohibition",
+      "change": "unchanged"
+    },
+    {
+      "id": "F35",
+      "process": "Train employee before assignment",
+      "from_step": "S33",
+      "actor": "Company (trainer to be named)",
+      "action": "Records the training (name, date, type) in the Training Records list via a form",
+      "change": "digitized"
+    },
+    {
+      "id": "F36",
+      "process": "Retrain employee",
+      "from_step": "S34",
+      "actor": "Company (trainer to be named)",
+      "action": "Retrains employees from tasks created by a scheduled flow (annual) or by trigger reports (assignment, procedure, hazard, non-compliance)",
+      "change": "automated"
+    },
+    {
+      "id": "F37",
+      "process": "Retrain employee",
+      "from_step": "S35",
+      "actor": "Company (trainer to be named)",
+      "action": "Completes the retraining task; a flow updates the training record date",
+      "change": "automated"
+    },
+    {
+      "id": "F38",
+      "process": "Inspect energy-control procedures annually",
+      "from_step": "S36",
+      "actor": "Company (inspection coordinator)",
+      "action": "Assigns an inspector from the annual inspection task created by a flow; the flow flags inspectors who use the procedure",
+      "change": "automated"
+    },
+    {
+      "id": "F39",
+      "process": "Inspect energy-control procedures annually",
+      "from_step": "S37",
+      "actor": "Inspector",
+      "action": "Reviews a lockable-equipment procedure with the employees who use it",
+      "change": "unchanged"
+    },
+    {
+      "id": "F40",
+      "process": "Inspect energy-control procedures annually",
+      "from_step": "S38",
+      "actor": "Inspector",
+      "action": "Reviews a tagout-only procedure with authorized and affected employees",
+      "change": "unchanged"
+    },
+    {
+      "id": "F41",
+      "process": "Inspect energy-control procedures annually",
+      "from_step": "S39",
+      "actor": "Inspector",
+      "action": "Verifies the procedure's accuracy, completeness, and effectiveness and whether employees follow it",
+      "change": "unchanged"
+    },
+    {
+      "id": "F42",
+      "process": "Inspect energy-control procedures annually",
+      "from_step": "S40",
+      "actor": "Inspector",
+      "action": "Documents the inspection (equipment, date, employees, inspector, findings) in the Power Apps inspection form",
+      "change": "digitized"
+    },
+    {
+      "id": "F43",
+      "process": "Inspect energy-control procedures annually",
+      "from_step": "S41",
+      "actor": "Company (trainer)",
+      "action": "Retrains the employees from retraining tasks created automatically by the inspection findings",
+      "change": "automated"
+    },
+    {
+      "id": "F44",
+      "process": "Inspect energy-control procedures annually",
+      "from_step": "S42",
+      "actor": "Company (procedure owner)",
+      "action": "Corrects the procedure deficiencies from a tracked corrective-action task with escalation",
+      "change": "automated"
+    }
+  ],
+  "eliminated_steps": []
+}

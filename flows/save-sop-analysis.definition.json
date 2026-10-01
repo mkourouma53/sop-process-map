@@ -1,0 +1,757 @@
+{
+  "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "$connections": {
+      "defaultValue": {},
+      "type": "Object"
+    },
+    "$authentication": {
+      "defaultValue": {},
+      "type": "SecureObject"
+    }
+  },
+  "triggers": {
+    "manual": {
+      "type": "Request",
+      "kind": "Http",
+      "inputs": {
+        "schema": {
+          "type": "object",
+          "properties": {
+            "sopId": {
+              "type": "integer"
+            },
+            "promptVersion": {
+              "type": "string"
+            },
+            "model": {
+              "type": "string"
+            },
+            "inputTokens": {
+              "type": "integer"
+            },
+            "outputTokens": {
+              "type": "integer"
+            },
+            "durationSec": {
+              "type": "number"
+            },
+            "costUSD": {
+              "type": "number"
+            },
+            "analysis": {
+              "type": "object"
+            }
+          },
+          "required": [
+            "sopId",
+            "analysis"
+          ]
+        }
+      }
+    }
+  },
+  "actions": {
+    "Save_steps": {
+      "type": "Foreach",
+      "foreach": "@coalesce(triggerBody()?['analysis']?['steps'], json('[]'))",
+      "runtimeConfiguration": {
+        "concurrency": {
+          "repetitions": 10
+        }
+      },
+      "actions": {
+        "Step_item": {
+          "type": "Compose",
+          "inputs": {
+            "Title": "@items('Save_steps')?['id']",
+            "SOPId": "@triggerBody()?['sopId']",
+            "StepOrder": "@int(replace(items('Save_steps')?['id'], 'S', ''))",
+            "Actor": "@if(greater(length(coalesce(items('Save_steps')?['actor'], '')), 250), substring(items('Save_steps')?['actor'], 0, 250), coalesce(items('Save_steps')?['actor'], ''))",
+            "Action": "@coalesce(items('Save_steps')?['action'], '')",
+            "StepInput": "@coalesce(items('Save_steps')?['input'], '')",
+            "StepOutput": "@coalesce(items('Save_steps')?['output'], '')",
+            "SystemUsed": "@if(greater(length(coalesce(items('Save_steps')?['system'], '')), 250), substring(items('Save_steps')?['system'], 0, 250), coalesce(items('Save_steps')?['system'], ''))",
+            "SourceSection": "@if(greater(length(coalesce(items('Save_steps')?['source_section'], '')), 250), substring(items('Save_steps')?['source_section'], 0, 250), coalesce(items('Save_steps')?['source_section'], ''))",
+            "SourceQuote": "@coalesce(items('Save_steps')?['source_quote'], '')",
+            "Inferred": "@equals(items('Save_steps')?['inferred'], true)",
+            "Corrected": false
+          },
+          "runAfter": {}
+        },
+        "Step_post": {
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_sharepointonline",
+              "operationId": "HttpRequest",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+            },
+            "parameters": {
+              "dataset": "https://consultonyx.sharepoint.com/sites/sop-process-map",
+              "parameters/method": "POST",
+              "parameters/uri": "_api/web/lists/getbytitle('Process Steps')/items",
+              "parameters/headers": {
+                "Accept": "application/json;odata=nometadata",
+                "Content-Type": "application/json;odata=nometadata"
+              },
+              "parameters/body": "@string(outputs('Step_item'))"
+            },
+            "authentication": "@parameters('$authentication')"
+          },
+          "runAfter": {
+            "Step_item": [
+              "Succeeded"
+            ]
+          }
+        }
+      },
+      "runAfter": {
+        "Clear_previous": [
+          "Succeeded"
+        ]
+      }
+    },
+    "Save_decisions": {
+      "type": "Foreach",
+      "foreach": "@coalesce(triggerBody()?['analysis']?['decisions'], json('[]'))",
+      "runtimeConfiguration": {
+        "concurrency": {
+          "repetitions": 10
+        }
+      },
+      "actions": {
+        "Decision_item": {
+          "type": "Compose",
+          "inputs": {
+            "Title": "@items('Save_decisions')?['id']",
+            "SOPId": "@triggerBody()?['sopId']",
+            "AfterStep": "@if(greater(length(coalesce(items('Save_decisions')?['after_step'], '')), 250), substring(items('Save_decisions')?['after_step'], 0, 250), coalesce(items('Save_decisions')?['after_step'], ''))",
+            "Condition": "@coalesce(items('Save_decisions')?['condition'], '')",
+            "Branches": "@string(coalesce(items('Save_decisions')?['branches'], json('[]')))",
+            "SourceSection": "@if(greater(length(coalesce(items('Save_decisions')?['source_section'], '')), 250), substring(items('Save_decisions')?['source_section'], 0, 250), coalesce(items('Save_decisions')?['source_section'], ''))",
+            "Inferred": "@equals(items('Save_decisions')?['inferred'], true)"
+          },
+          "runAfter": {}
+        },
+        "Decision_post": {
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_sharepointonline",
+              "operationId": "HttpRequest",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+            },
+            "parameters": {
+              "dataset": "https://consultonyx.sharepoint.com/sites/sop-process-map",
+              "parameters/method": "POST",
+              "parameters/uri": "_api/web/lists/getbytitle('Decision Points')/items",
+              "parameters/headers": {
+                "Accept": "application/json;odata=nometadata",
+                "Content-Type": "application/json;odata=nometadata"
+              },
+              "parameters/body": "@string(outputs('Decision_item'))"
+            },
+            "authentication": "@parameters('$authentication')"
+          },
+          "runAfter": {
+            "Decision_item": [
+              "Succeeded"
+            ]
+          }
+        }
+      },
+      "runAfter": {
+        "Clear_previous": [
+          "Succeeded"
+        ]
+      }
+    },
+    "Save_risks": {
+      "type": "Foreach",
+      "foreach": "@coalesce(triggerBody()?['analysis']?['risks'], json('[]'))",
+      "runtimeConfiguration": {
+        "concurrency": {
+          "repetitions": 10
+        }
+      },
+      "actions": {
+        "Risk_item": {
+          "type": "Compose",
+          "inputs": {
+            "Title": "@items('Save_risks')?['id']",
+            "SOPId": "@triggerBody()?['sopId']",
+            "StepRef": "@if(greater(length(coalesce(items('Save_risks')?['step'], '')), 250), substring(items('Save_risks')?['step'], 0, 250), coalesce(items('Save_risks')?['step'], ''))",
+            "RiskType": "@items('Save_risks')?['risk_type']",
+            "Description": "@coalesce(items('Save_risks')?['what_could_go_wrong'], items('Save_risks')?['description'], '')",
+            "Severity": "@items('Save_risks')?['severity']"
+          },
+          "runAfter": {}
+        },
+        "Risk_post": {
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_sharepointonline",
+              "operationId": "HttpRequest",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+            },
+            "parameters": {
+              "dataset": "https://consultonyx.sharepoint.com/sites/sop-process-map",
+              "parameters/method": "POST",
+              "parameters/uri": "_api/web/lists/getbytitle('Risks')/items",
+              "parameters/headers": {
+                "Accept": "application/json;odata=nometadata",
+                "Content-Type": "application/json;odata=nometadata"
+              },
+              "parameters/body": "@string(outputs('Risk_item'))"
+            },
+            "authentication": "@parameters('$authentication')"
+          },
+          "runAfter": {
+            "Risk_item": [
+              "Succeeded"
+            ]
+          }
+        }
+      },
+      "runAfter": {
+        "Clear_previous": [
+          "Succeeded"
+        ]
+      }
+    },
+    "Save_recommendations": {
+      "type": "Foreach",
+      "foreach": "@coalesce(triggerBody()?['analysis']?['recommendations'], json('[]'))",
+      "runtimeConfiguration": {
+        "concurrency": {
+          "repetitions": 10
+        }
+      },
+      "actions": {
+        "Rec_flow": {
+          "type": "Query",
+          "inputs": {
+            "from": "@coalesce(triggerBody()?['analysis']?['starter_flows'], json('[]'))",
+            "where": "@equals(item()?['recommendation_id'], items('Save_recommendations')?['id'])"
+          }
+        },
+        "Rec_item": {
+          "type": "Compose",
+          "inputs": {
+            "Title": "@items('Save_recommendations')?['id']",
+            "SOPId": "@triggerBody()?['sopId']",
+            "StepRef": "@if(greater(length(coalesce(items('Save_recommendations')?['step'], '')), 250), substring(items('Save_recommendations')?['step'], 0, 250), coalesce(items('Save_recommendations')?['step'], ''))",
+            "Label": "@items('Save_recommendations')?['label']",
+            "Reason": "@coalesce(items('Save_recommendations')?['reason'], '')",
+            "SuggestedTool": "@if(greater(length(coalesce(items('Save_recommendations')?['suggested_tool'], '')), 250), substring(items('Save_recommendations')?['suggested_tool'], 0, 250), coalesce(items('Save_recommendations')?['suggested_tool'], ''))",
+            "ValueScore": "@items('Save_recommendations')?['value']",
+            "EffortScore": "@items('Save_recommendations')?['effort']",
+            "Priority": "@div(float(items('Save_recommendations')?['value']), float(items('Save_recommendations')?['effort']))",
+            "RecStatus": "Proposed",
+            "AnalystRec": "Pending",
+            "ProposedChange": "@coalesce(items('Save_recommendations')?['proposed_change'], '')",
+            "StarterFlow": "@if(empty(body('Rec_flow')), '', string(first(body('Rec_flow'))))"
+          },
+          "runAfter": {
+            "Rec_flow": [
+              "Succeeded"
+            ]
+          }
+        },
+        "Rec_post": {
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_sharepointonline",
+              "operationId": "HttpRequest",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+            },
+            "parameters": {
+              "dataset": "https://consultonyx.sharepoint.com/sites/sop-process-map",
+              "parameters/method": "POST",
+              "parameters/uri": "_api/web/lists/getbytitle('Recommendations')/items",
+              "parameters/headers": {
+                "Accept": "application/json;odata=nometadata",
+                "Content-Type": "application/json;odata=nometadata"
+              },
+              "parameters/body": "@string(outputs('Rec_item'))"
+            },
+            "authentication": "@parameters('$authentication')"
+          },
+          "runAfter": {
+            "Rec_item": [
+              "Succeeded"
+            ]
+          }
+        }
+      },
+      "runAfter": {
+        "Clear_previous": [
+          "Succeeded"
+        ]
+      }
+    },
+    "Save_future": {
+      "type": "Foreach",
+      "foreach": "@coalesce(triggerBody()?['analysis']?['future_state'], json('[]'))",
+      "runtimeConfiguration": {
+        "concurrency": {
+          "repetitions": 10
+        }
+      },
+      "actions": {
+        "Future_item": {
+          "type": "Compose",
+          "inputs": {
+            "Title": "@items('Save_future')?['id']",
+            "SOPId": "@triggerBody()?['sopId']",
+            "StepOrder": "@int(replace(items('Save_future')?['id'], 'F', ''))",
+            "FromStep": "@if(greater(length(coalesce(items('Save_future')?['from_step'], '')), 250), substring(items('Save_future')?['from_step'], 0, 250), coalesce(items('Save_future')?['from_step'], ''))",
+            "Actor": "@if(greater(length(coalesce(items('Save_future')?['actor'], '')), 250), substring(items('Save_future')?['actor'], 0, 250), coalesce(items('Save_future')?['actor'], ''))",
+            "Action": "@coalesce(items('Save_future')?['action'], '')",
+            "ChangeType": "@items('Save_future')?['change']"
+          },
+          "runAfter": {}
+        },
+        "Future_post": {
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_sharepointonline",
+              "operationId": "HttpRequest",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+            },
+            "parameters": {
+              "dataset": "https://consultonyx.sharepoint.com/sites/sop-process-map",
+              "parameters/method": "POST",
+              "parameters/uri": "_api/web/lists/getbytitle('Future Steps')/items",
+              "parameters/headers": {
+                "Accept": "application/json;odata=nometadata",
+                "Content-Type": "application/json;odata=nometadata"
+              },
+              "parameters/body": "@string(outputs('Future_item'))"
+            },
+            "authentication": "@parameters('$authentication')"
+          },
+          "runAfter": {
+            "Future_item": [
+              "Succeeded"
+            ]
+          }
+        }
+      },
+      "runAfter": {
+        "Clear_previous": [
+          "Succeeded"
+        ]
+      }
+    },
+    "Clear_previous": {
+      "type": "Scope",
+      "actions": {
+        "Find_old_Process_Steps": {
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_sharepointonline",
+              "operationId": "HttpRequest",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+            },
+            "parameters": {
+              "dataset": "https://consultonyx.sharepoint.com/sites/sop-process-map",
+              "parameters/method": "GET",
+              "parameters/uri": "@concat('_api/web/lists/getbytitle(''Process Steps'')/items?$select=ID&$top=5000&$filter=SOPId eq ', string(triggerBody()?['sopId']))",
+              "parameters/headers": {
+                "Accept": "application/json;odata=nometadata",
+                "Content-Type": "application/json;odata=nometadata"
+              }
+            },
+            "authentication": "@parameters('$authentication')"
+          },
+          "runAfter": {}
+        },
+        "Delete_old_Process_Steps": {
+          "type": "Foreach",
+          "foreach": "@body('Find_old_Process_Steps')?['value']",
+          "runtimeConfiguration": {
+            "concurrency": {
+              "repetitions": 10
+            }
+          },
+          "runAfter": {
+            "Find_old_Process_Steps": [
+              "Succeeded"
+            ]
+          },
+          "actions": {
+            "Delete_Process_Steps_row": {
+              "type": "OpenApiConnection",
+              "inputs": {
+                "host": {
+                  "connectionName": "shared_sharepointonline",
+                  "operationId": "HttpRequest",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+                },
+                "parameters": {
+                  "dataset": "https://consultonyx.sharepoint.com/sites/sop-process-map",
+                  "parameters/method": "POST",
+                  "parameters/uri": "@concat('_api/web/lists/getbytitle(''Process Steps'')/items(', string(items('Delete_old_Process_Steps')?['ID']), ')')",
+                  "parameters/headers": {
+                    "Accept": "application/json;odata=nometadata",
+                    "Content-Type": "application/json;odata=nometadata",
+                    "X-HTTP-Method": "DELETE",
+                    "IF-MATCH": "*"
+                  }
+                },
+                "authentication": "@parameters('$authentication')"
+              },
+              "runAfter": {}
+            }
+          }
+        },
+        "Find_old_Decision_Points": {
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_sharepointonline",
+              "operationId": "HttpRequest",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+            },
+            "parameters": {
+              "dataset": "https://consultonyx.sharepoint.com/sites/sop-process-map",
+              "parameters/method": "GET",
+              "parameters/uri": "@concat('_api/web/lists/getbytitle(''Decision Points'')/items?$select=ID&$top=5000&$filter=SOPId eq ', string(triggerBody()?['sopId']))",
+              "parameters/headers": {
+                "Accept": "application/json;odata=nometadata",
+                "Content-Type": "application/json;odata=nometadata"
+              }
+            },
+            "authentication": "@parameters('$authentication')"
+          },
+          "runAfter": {}
+        },
+        "Delete_old_Decision_Points": {
+          "type": "Foreach",
+          "foreach": "@body('Find_old_Decision_Points')?['value']",
+          "runtimeConfiguration": {
+            "concurrency": {
+              "repetitions": 10
+            }
+          },
+          "runAfter": {
+            "Find_old_Decision_Points": [
+              "Succeeded"
+            ]
+          },
+          "actions": {
+            "Delete_Decision_Points_row": {
+              "type": "OpenApiConnection",
+              "inputs": {
+                "host": {
+                  "connectionName": "shared_sharepointonline",
+                  "operationId": "HttpRequest",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+                },
+                "parameters": {
+                  "dataset": "https://consultonyx.sharepoint.com/sites/sop-process-map",
+                  "parameters/method": "POST",
+                  "parameters/uri": "@concat('_api/web/lists/getbytitle(''Decision Points'')/items(', string(items('Delete_old_Decision_Points')?['ID']), ')')",
+                  "parameters/headers": {
+                    "Accept": "application/json;odata=nometadata",
+                    "Content-Type": "application/json;odata=nometadata",
+                    "X-HTTP-Method": "DELETE",
+                    "IF-MATCH": "*"
+                  }
+                },
+                "authentication": "@parameters('$authentication')"
+              },
+              "runAfter": {}
+            }
+          }
+        },
+        "Find_old_Risks": {
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_sharepointonline",
+              "operationId": "HttpRequest",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+            },
+            "parameters": {
+              "dataset": "https://consultonyx.sharepoint.com/sites/sop-process-map",
+              "parameters/method": "GET",
+              "parameters/uri": "@concat('_api/web/lists/getbytitle(''Risks'')/items?$select=ID&$top=5000&$filter=SOPId eq ', string(triggerBody()?['sopId']))",
+              "parameters/headers": {
+                "Accept": "application/json;odata=nometadata",
+                "Content-Type": "application/json;odata=nometadata"
+              }
+            },
+            "authentication": "@parameters('$authentication')"
+          },
+          "runAfter": {}
+        },
+        "Delete_old_Risks": {
+          "type": "Foreach",
+          "foreach": "@body('Find_old_Risks')?['value']",
+          "runtimeConfiguration": {
+            "concurrency": {
+              "repetitions": 10
+            }
+          },
+          "runAfter": {
+            "Find_old_Risks": [
+              "Succeeded"
+            ]
+          },
+          "actions": {
+            "Delete_Risks_row": {
+              "type": "OpenApiConnection",
+              "inputs": {
+                "host": {
+                  "connectionName": "shared_sharepointonline",
+                  "operationId": "HttpRequest",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+                },
+                "parameters": {
+                  "dataset": "https://consultonyx.sharepoint.com/sites/sop-process-map",
+                  "parameters/method": "POST",
+                  "parameters/uri": "@concat('_api/web/lists/getbytitle(''Risks'')/items(', string(items('Delete_old_Risks')?['ID']), ')')",
+                  "parameters/headers": {
+                    "Accept": "application/json;odata=nometadata",
+                    "Content-Type": "application/json;odata=nometadata",
+                    "X-HTTP-Method": "DELETE",
+                    "IF-MATCH": "*"
+                  }
+                },
+                "authentication": "@parameters('$authentication')"
+              },
+              "runAfter": {}
+            }
+          }
+        },
+        "Find_old_Recommendations": {
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_sharepointonline",
+              "operationId": "HttpRequest",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+            },
+            "parameters": {
+              "dataset": "https://consultonyx.sharepoint.com/sites/sop-process-map",
+              "parameters/method": "GET",
+              "parameters/uri": "@concat('_api/web/lists/getbytitle(''Recommendations'')/items?$select=ID&$top=5000&$filter=SOPId eq ', string(triggerBody()?['sopId']))",
+              "parameters/headers": {
+                "Accept": "application/json;odata=nometadata",
+                "Content-Type": "application/json;odata=nometadata"
+              }
+            },
+            "authentication": "@parameters('$authentication')"
+          },
+          "runAfter": {}
+        },
+        "Delete_old_Recommendations": {
+          "type": "Foreach",
+          "foreach": "@body('Find_old_Recommendations')?['value']",
+          "runtimeConfiguration": {
+            "concurrency": {
+              "repetitions": 10
+            }
+          },
+          "runAfter": {
+            "Find_old_Recommendations": [
+              "Succeeded"
+            ]
+          },
+          "actions": {
+            "Delete_Recommendations_row": {
+              "type": "OpenApiConnection",
+              "inputs": {
+                "host": {
+                  "connectionName": "shared_sharepointonline",
+                  "operationId": "HttpRequest",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+                },
+                "parameters": {
+                  "dataset": "https://consultonyx.sharepoint.com/sites/sop-process-map",
+                  "parameters/method": "POST",
+                  "parameters/uri": "@concat('_api/web/lists/getbytitle(''Recommendations'')/items(', string(items('Delete_old_Recommendations')?['ID']), ')')",
+                  "parameters/headers": {
+                    "Accept": "application/json;odata=nometadata",
+                    "Content-Type": "application/json;odata=nometadata",
+                    "X-HTTP-Method": "DELETE",
+                    "IF-MATCH": "*"
+                  }
+                },
+                "authentication": "@parameters('$authentication')"
+              },
+              "runAfter": {}
+            }
+          }
+        },
+        "Find_old_Future_Steps": {
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_sharepointonline",
+              "operationId": "HttpRequest",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+            },
+            "parameters": {
+              "dataset": "https://consultonyx.sharepoint.com/sites/sop-process-map",
+              "parameters/method": "GET",
+              "parameters/uri": "@concat('_api/web/lists/getbytitle(''Future Steps'')/items?$select=ID&$top=5000&$filter=SOPId eq ', string(triggerBody()?['sopId']))",
+              "parameters/headers": {
+                "Accept": "application/json;odata=nometadata",
+                "Content-Type": "application/json;odata=nometadata"
+              }
+            },
+            "authentication": "@parameters('$authentication')"
+          },
+          "runAfter": {}
+        },
+        "Delete_old_Future_Steps": {
+          "type": "Foreach",
+          "foreach": "@body('Find_old_Future_Steps')?['value']",
+          "runtimeConfiguration": {
+            "concurrency": {
+              "repetitions": 10
+            }
+          },
+          "runAfter": {
+            "Find_old_Future_Steps": [
+              "Succeeded"
+            ]
+          },
+          "actions": {
+            "Delete_Future_Steps_row": {
+              "type": "OpenApiConnection",
+              "inputs": {
+                "host": {
+                  "connectionName": "shared_sharepointonline",
+                  "operationId": "HttpRequest",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+                },
+                "parameters": {
+                  "dataset": "https://consultonyx.sharepoint.com/sites/sop-process-map",
+                  "parameters/method": "POST",
+                  "parameters/uri": "@concat('_api/web/lists/getbytitle(''Future Steps'')/items(', string(items('Delete_old_Future_Steps')?['ID']), ')')",
+                  "parameters/headers": {
+                    "Accept": "application/json;odata=nometadata",
+                    "Content-Type": "application/json;odata=nometadata",
+                    "X-HTTP-Method": "DELETE",
+                    "IF-MATCH": "*"
+                  }
+                },
+                "authentication": "@parameters('$authentication')"
+              },
+              "runAfter": {}
+            }
+          }
+        }
+      },
+      "runAfter": {}
+    },
+    "Run_item": {
+      "type": "Compose",
+      "runAfter": {
+        "Save_steps": [
+          "Succeeded"
+        ],
+        "Save_decisions": [
+          "Succeeded"
+        ],
+        "Save_risks": [
+          "Succeeded"
+        ],
+        "Save_recommendations": [
+          "Succeeded"
+        ],
+        "Save_future": [
+          "Succeeded"
+        ]
+      },
+      "inputs": {
+        "Title": "@concat('SOP ', string(triggerBody()?['sopId']), ' / ', coalesce(triggerBody()?['promptVersion'], ''))",
+        "SOPId": "@triggerBody()?['sopId']",
+        "PromptVersion": "@coalesce(triggerBody()?['promptVersion'], '')",
+        "Model": "@coalesce(triggerBody()?['model'], '')",
+        "InputTokens": "@coalesce(triggerBody()?['inputTokens'], 0)",
+        "OutputTokens": "@coalesce(triggerBody()?['outputTokens'], 0)",
+        "DurationSec": "@coalesce(triggerBody()?['durationSec'], 0)",
+        "CostUSD": "@coalesce(triggerBody()?['costUSD'], 0)",
+        "RunStatus": "Succeeded",
+        "RawOutput": "@string(triggerBody()?['analysis'])"
+      }
+    },
+    "Log_run": {
+      "type": "OpenApiConnection",
+      "inputs": {
+        "host": {
+          "connectionName": "shared_sharepointonline",
+          "operationId": "HttpRequest",
+          "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+        },
+        "parameters": {
+          "dataset": "https://consultonyx.sharepoint.com/sites/sop-process-map",
+          "parameters/method": "POST",
+          "parameters/uri": "_api/web/lists/getbytitle('AI Runs')/items",
+          "parameters/headers": {
+            "Accept": "application/json;odata=nometadata",
+            "Content-Type": "application/json;odata=nometadata"
+          },
+          "parameters/body": "@string(outputs('Run_item'))"
+        },
+        "authentication": "@parameters('$authentication')"
+      },
+      "runAfter": {
+        "Run_item": [
+          "Succeeded"
+        ]
+      }
+    },
+    "Mark_analyzed": {
+      "type": "OpenApiConnection",
+      "inputs": {
+        "host": {
+          "connectionName": "shared_sharepointonline",
+          "operationId": "HttpRequest",
+          "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+        },
+        "parameters": {
+          "dataset": "https://consultonyx.sharepoint.com/sites/sop-process-map",
+          "parameters/method": "POST",
+          "parameters/uri": "@concat('_api/web/lists/getbytitle(''SOPs'')/items(', string(triggerBody()?['sopId']), ')')",
+          "parameters/headers": {
+            "Accept": "application/json;odata=nometadata",
+            "Content-Type": "application/json;odata=nometadata",
+            "X-HTTP-Method": "MERGE",
+            "IF-MATCH": "*"
+          },
+          "parameters/body": "@string(json(concat('{\"SOPStatus\":\"Analyzed\",\"PromptVersion\":\"', coalesce(triggerBody()?['promptVersion'], ''), '\"}')))"
+        },
+        "authentication": "@parameters('$authentication')"
+      },
+      "runAfter": {
+        "Log_run": [
+          "Succeeded"
+        ]
+      }
+    },
+    "Respond": {
+      "type": "Response",
+      "kind": "Http",
+      "runAfter": {},
+      "inputs": {
+        "statusCode": 202,
+        "body": {
+          "status": "accepted",
+          "sopId": "@triggerBody()?['sopId']"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,2828 @@
+{
+  "sop_title": "FCC Government Purchase Card Program Directive (excerpt: Sections 6.A\u20138 and 11.B\u201314)",
+  "summary": "This directive excerpt sets out the FCC purchase card lifecycle: nominating, training, and issuing cards; pre-authorized purchasing; monthly Statement of Account (SOA) reconciliation and certification; disputes, audits, non-compliance actions, lost cards, limit changes, and account closure on transfer or separation. Cardholders and their Approving Officials (AOs) run it, with the Agency Program Coordinator (APC), FOC RDG/TOG, the CFO, Bureau/Office Chiefs, EAC, Human Resources, and the contractor bank handling issuance, oversight, payment, and review.",
+  "sections": [
+    {
+      "section": "6.A",
+      "title": "General",
+      "classification": "rules",
+      "reason": "Items 1\u201312 (eligibility, nomination form, training, inactive accounts, tax exemption, terms and conditions, price, shipping, mandatory sources) can be reordered without losing meaning; the gating rules in items 1\u20135, 7\u20139, and 12 were mapped as steps, decisions, and exceptions.",
+      "mapped": true
+    },
+    {
+      "section": "6.B",
+      "title": "Single Transaction Limits and Monthly Credit Limits",
+      "classification": "rules",
+      "reason": "These limit statements are reorderable; the STL gate became decision D5, EAC limit-setting became D3/S9, and the limit-increase request became S57\u2013S59.",
+      "mapped": true
+    },
+    {
+      "section": "6.C",
+      "title": "Reconciliation of Statements of Accounts",
+      "classification": "procedure",
+      "reason": "Order matters: the receiving employee signs before the cardholder reconciles, and the cardholder signs and forwards before the AO reviews, signs, and forwards to FOC.",
+      "mapped": true
+    },
+    {
+      "section": "6.D",
+      "title": "Records Retention",
+      "classification": "rules",
+      "reason": "The list of required documents can be reordered; the retention action (S37), the IT-hardware approval implication (S21), and the missing-documentation consequence (D16/S44) were mapped.",
+      "mapped": true
+    },
+    {
+      "section": "6.E",
+      "title": "Cardholder Review",
+      "classification": "procedure",
+      "reason": "Order matters: a reviewer or auditor requests documentation before the cardholder furnishes it directly.",
+      "mapped": true
+    },
+    {
+      "section": "7.A",
+      "title": "Responsibilities \u2013 Managing Director",
+      "classification": "background",
+      "reason": "States agency-level authority only and gives no action with a position in the flow.",
+      "mapped": false
+    },
+    {
+      "section": "7.B",
+      "title": "Responsibilities \u2013 Chief Financial Officer (CFO)",
+      "classification": "rules",
+      "reason": "These responsibilities are reorderable, but data entry and bank payment are tied to receipt of reconciled SOAs, so they were mapped as S35\u2013S36.",
+      "mapped": true
+    },
+    {
+      "section": "7.C",
+      "title": "Responsibilities \u2013 Bureau and Office Chiefs",
+      "classification": "rules",
+      "reason": "Items 1\u20139 are reorderable; items 1 (nominating), 6 (timely SOA flow), 8 (disciplinary action), and 9 (status changes) are tied to points in the flow and were mapped.",
+      "mapped": true
+    },
+    {
+      "section": "7.D",
+      "title": "Responsibilities \u2013 Agency Program Coordinator (APC)",
+      "classification": "rules",
+      "reason": "These duties are reorderable; issuing cards and opening and closing accounts tie to issuance (S10) and separation (S62), while liaison and monitoring duties have no flow position.",
+      "mapped": true
+    },
+    {
+      "section": "7.E",
+      "title": "Responsibilities \u2013 Approving Official (AO)",
+      "classification": "rules",
+      "reason": "Items 1\u20139 are reorderable; items 1, 2, 3, 4, 6, 7, and 8 are tied to flow points (before purchase, receipt, within 10 workdays, a cardholder leaving) and were mapped, while items 5 and 9 were left out.",
+      "mapped": true
+    },
+    {
+      "section": "7.F",
+      "title": "Responsibilities \u2013 Cardholder",
+      "classification": "rules",
+      "reason": "Items 1\u201312 are reorderable; items tied to flow points (once nominated, before purchase, within 7 workdays, lost card, before reassignment, upon leaving) were mapped.",
+      "mapped": true
+    },
+    {
+      "section": "8",
+      "title": "Span of Control for Agency Program Coordinators and Approving Officials",
+      "classification": "rules",
+      "reason": "This is a single internal-control requirement with no position in the flow.",
+      "mapped": false
+    },
+    {
+      "section": "11.B",
+      "title": "(Heading not visible; text begins mid-paragraph because pages covering Sections 9\u201311.A were not provided)",
+      "classification": "rules",
+      "reason": "This is a reorderable statement of consequences for non-compliance; the APC suspension, reporting, restoration, and permanent closure actions were mapped as S45\u2013S48.",
+      "mapped": true
+    },
+    {
+      "section": "11.C",
+      "title": "Criminal, Disciplinary, and Adverse Actions",
+      "classification": "rules",
+      "reason": "This is a reorderable list of penalties; only the permanent-closure consequence for misuse or fraud was used, in D17/S48.",
+      "mapped": true
+    },
+    {
+      "section": "11.D",
+      "title": "(No heading) Personal liability for intentional misuse",
+      "classification": "rules",
+      "reason": "This is a reorderable statement of liability and penalties with no actionable step.",
+      "mapped": false
+    },
+    {
+      "section": "11.E",
+      "title": "(No heading) APC reporting of misuse or fraud",
+      "classification": "procedure",
+      "reason": "Order matters: the APC reports misuse or fraud first, and any proposed disciplinary or adverse action then proceeds through Human Resources.",
+      "mapped": true
+    },
+    {
+      "section": "12.A",
+      "title": "Disputing a Charge \u2013 transaction disputes and steps before disputing",
+      "classification": "procedure",
+      "reason": "Order matters: review receipts, then contact the merchant, then dispute with the bank within 90 days, then track to completion.",
+      "mapped": true
+    },
+    {
+      "section": "12.B",
+      "title": "Disputing a Charge \u2013 shipping charges and taxes",
+      "classification": "rules",
+      "reason": "This rule gates the bank dispute step, so it was mapped as decision D15.",
+      "mapped": true
+    },
+    {
+      "section": "13",
+      "title": "Card Security",
+      "classification": "rules",
+      "reason": "These safeguarding statements are reorderable; the immediate lost/stolen report was mapped as S51.",
+      "mapped": true
+    },
+    {
+      "section": "14.A",
+      "title": "Separation or Transfer \u2013 Cardholder",
+      "classification": "procedure",
+      "reason": "Order matters: prior notice to the APC, then records and card handed over before departure, then the AO annotates the final SOA if the cardholder cannot sign.",
+      "mapped": true
+    },
+    {
+      "section": "14.B",
+      "title": "Separation or Transfer \u2013 AO",
+      "classification": "procedure",
+      "reason": "Order matters: the AO departs, then the Chief designates a new AO, then the designation is sent in writing to the APC.",
+      "mapped": true
+    },
+    {
+      "section": "14.C",
+      "title": "Separation or Transfer \u2013 APC",
+      "classification": "procedure",
+      "reason": "Order matters: the APC closes the account upon being notified of the transfer or separation.",
+      "mapped": true
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "actor": "Bureau/Office Chief (or Designee or Employee's Manager)",
+      "action": "Requests a purchase card for an employee and nominates cardholders and AOs for the organization",
+      "input": "Employee need for a purchase card",
+      "output": "Cardholder/AO nomination",
+      "system": "",
+      "source_section": "6.A.1; 7.C.1",
+      "source_quote": "upon request by their Bureau/Office Chief, Designee, or the Employee\u2019s Manager",
+      "inferred": false
+    },
+    {
+      "id": "S2",
+      "actor": "Nominee (cardholder or AO nominee)",
+      "action": "Completes and signs Form A-498, certifying they have read and understand the directive and the consequences of unauthorized actions",
+      "input": "Nomination",
+      "output": "Nominee-signed Form A-498",
+      "system": "Form A-498",
+      "source_section": "6.A.3",
+      "source_quote": "Purchase card nominees and Approving Official nominees must complete and sign",
+      "inferred": false
+    },
+    {
+      "id": "S3",
+      "actor": "Bureau/Office Chief (or ABC for Management)",
+      "action": "Signs the cardholder nominee's Form A-498",
+      "input": "Nominee-signed Form A-498",
+      "output": "Chief-signed Form A-498",
+      "system": "Form A-498",
+      "source_section": "7.F.1",
+      "source_quote": "signed by their Bureau/Office Chief (or Assistant Bureau Chief (ABC) for Management if applicable)",
+      "inferred": false
+    },
+    {
+      "id": "S4",
+      "actor": "AO",
+      "action": "Signs the cardholder nominee's Form A-498",
+      "input": "Chief-signed Form A-498",
+      "output": "Fully signed Form A-498",
+      "system": "Form A-498",
+      "source_section": "7.F.1",
+      "source_quote": "and their AO",
+      "inferred": false
+    },
+    {
+      "id": "S5",
+      "actor": "Nominee (cardholder or AO nominee)",
+      "action": "Completes the GSA purchase card web-based training",
+      "input": "Nomination",
+      "output": "Certificate of Completion",
+      "system": "GSA web-based training",
+      "source_section": "6.A.4",
+      "source_quote": "must complete the General Services Administration (GSA) purchase card web-based training",
+      "inferred": false
+    },
+    {
+      "id": "S6",
+      "actor": "Nominee (cardholder or AO nominee)",
+      "action": "Submits the training Certificate of Completion to the APC",
+      "input": "Certificate of Completion",
+      "output": "Certificate on file with the APC",
+      "system": "",
+      "source_section": "6.A.4; 7.E.1",
+      "source_quote": "Certificates of Completion of the training must be submitted to the APC",
+      "inferred": false
+    },
+    {
+      "id": "S7",
+      "actor": "Cardholder nominee",
+      "action": "Submits the completed bank card application form, training certificate, and signed Form A-498 to FOC RDG/TOG",
+      "input": "Bank card application form, certificate, signed Form A-498",
+      "output": "Application package at FOC RDG/TOG",
+      "system": "Bank card application form; Form A-498",
+      "source_section": "7.F.1",
+      "source_quote": "submit a completed bank card application form to FOC, RDG/TOG",
+      "inferred": false
+    },
+    {
+      "id": "S8",
+      "actor": "FOC RDG/TOG",
+      "action": "Submits the bank card application to the contractor bank",
+      "input": "Application package",
+      "output": "Application at contractor bank",
+      "system": "Bank card application form",
+      "source_section": "7.F.1",
+      "source_quote": "for submission to the contractor bank",
+      "inferred": false
+    },
+    {
+      "id": "S9",
+      "actor": "AO",
+      "action": "Sets the monthly credit limit for an EAC contracting officer cardholder to accommodate their higher single transaction limit, which is set no higher than their warrant authority",
+      "input": "EAC contracting officer application, warrant authority",
+      "output": "Determined STL and monthly credit limit",
+      "system": "",
+      "source_section": "6.B.1; 6.B.3",
+      "source_quote": "granted a monthly credit limit at an amount determined by their AO",
+      "inferred": false
+    },
+    {
+      "id": "S10",
+      "actor": "APC",
+      "action": "Opens the account and issues the purchase card with its single transaction limit and monthly credit limit (default $15,000 each)",
+      "input": "Approved application, limits",
+      "output": "Active purchase card",
+      "system": "",
+      "source_section": "7.D; 6.B.1; 6.B.3",
+      "source_quote": "issues and destroys cards; opens and closes accounts",
+      "inferred": false
+    },
+    {
+      "id": "S11",
+      "actor": "Cardholder",
+      "action": "Requests written authorization from the AO for the purchase",
+      "input": "Purchase need",
+      "output": "Authorization request",
+      "system": "Memo, note, or email",
+      "source_section": "7.F.4",
+      "source_quote": "Obtain written authorization from the AO for each purchase before making the purchase",
+      "inferred": false
+    },
+    {
+      "id": "S12",
+      "actor": "AO",
+      "action": "Provides written authorization for the purchase card transaction",
+      "input": "Authorization request",
+      "output": "Written procurement authorization",
+      "system": "Memo, note, or email",
+      "source_section": "7.E.2",
+      "source_quote": "Provide written authorization (such as through a memo, note, or e-mail) to the cardholder for each purchase card transaction before the purchase is made",
+      "inferred": false
+    },
+    {
+      "id": "S13",
+      "actor": "Cardholder",
+      "action": "Confirms funds are available to pay for the purchase",
+      "input": "Written authorization, funding document",
+      "output": "Funds availability confirmed",
+      "system": "",
+      "source_section": "7.F.5",
+      "source_quote": "Ensure availability of funds prior to initiating a purchase with the card",
+      "inferred": false
+    },
+    {
+      "id": "S14",
+      "actor": "Cardholder",
+      "action": "Considers mandatory Government priority sources (FAR Part 8) before considering other sources",
+      "input": "Purchase requirement",
+      "output": "Source selected",
+      "system": "",
+      "source_section": "6.A.12",
+      "source_quote": "Other sources may be considered for use only after the priority sources have been considered",
+      "inferred": false
+    },
+    {
+      "id": "S15",
+      "actor": "Cardholder",
+      "action": "Reviews the purchase's terms and conditions for prohibited provisions (recurring payments, automatic renewal, unlimited duration, indemnification, unlimited liability)",
+      "input": "Vendor terms and conditions",
+      "output": "Terms reviewed",
+      "system": "",
+      "source_section": "6.A.8",
+      "source_quote": "Cardholders are responsible for reviewing terms and conditions applicable to any purchase before making the purchase",
+      "inferred": false
+    },
+    {
+      "id": "S16",
+      "actor": "Cardholder",
+      "action": "Refers the agreement containing prohibited provisions to EAC before making any commitment",
+      "input": "Agreement with prohibited provisions",
+      "output": "Referral to EAC",
+      "system": "",
+      "source_section": "6.A.8",
+      "source_quote": "Cardholders shall refer all agreements that include such provisions to the Enterprise Acquisition Center (EAC)",
+      "inferred": false
+    },
+    {
+      "id": "S17",
+      "actor": "EAC",
+      "action": "Reviews the agreement, consulting OGC as necessary; for indemnification clauses, determines whether the FAR regulation applies or the vendor should be forgone",
+      "input": "Referred agreement",
+      "output": "EAC determination",
+      "system": "",
+      "source_section": "6.A.8 (incl. Note on indemnification clauses)",
+      "source_quote": "EAC shall consult with the Office of General Council (OGC) regarding such agreements as necessary",
+      "inferred": false
+    },
+    {
+      "id": "S18",
+      "actor": "EAC",
+      "action": "Establishes a contract that addresses the objectionable terms",
+      "input": "Agreement with objectionable terms",
+      "output": "EAC contract",
+      "system": "",
+      "source_section": "6.A.8",
+      "source_quote": "so that EAC can establish a contract that addresses the objectionable terms",
+      "inferred": false
+    },
+    {
+      "id": "S19",
+      "actor": "Cardholder",
+      "action": "Considers the price and confirms it is reasonable",
+      "input": "Quoted price",
+      "output": "Price reasonableness determination",
+      "system": "",
+      "source_section": "6.A.9",
+      "source_quote": "only make a purchase if the price is reasonable",
+      "inferred": false
+    },
+    {
+      "id": "S20",
+      "actor": "Cardholder",
+      "action": "Completes and attaches the Section 508 Determination and Findings form for IT items covered by accessibility regulations",
+      "input": "IT product or service details",
+      "output": "Completed Section 508 D&F form",
+      "system": "Section 508 Determination and Findings for Purchase Requests Form",
+      "source_section": "7.F.6",
+      "source_quote": "Complete and attach Section 508 Determination and Findings for Purchase Requests Form if the item is covered",
+      "inferred": false
+    },
+    {
+      "id": "S21",
+      "actor": "Cardholder",
+      "action": "Obtains approval from the IT Intrapreneur or other ITC staff and completes any ITC-required forms for the IT hardware purchase",
+      "input": "IT hardware requirement",
+      "output": "ITC approval correspondence and forms",
+      "system": "",
+      "source_section": "6.D (4)",
+      "source_quote": "",
+      "inferred": true
+    },
+    {
+      "id": "S22",
+      "actor": "Cardholder",
+      "action": "Makes the purchase with the merchant (in-store, online, or by phone) using the tax-exempt purchase card",
+      "input": "Authorized, funded, reviewed purchase",
+      "output": "Purchase transaction",
+      "system": "Purchase card",
+      "source_section": "7.F; 6.A.7",
+      "source_quote": "making purchases in accordance with procedures contained in this directive",
+      "inferred": false
+    },
+    {
+      "id": "S23",
+      "actor": "Cardholder",
+      "action": "Does not make the purchase and seeks a merchant who will honor the tax exemption, then returns to S22",
+      "input": "Merchant refusal of tax exemption",
+      "output": "Alternate merchant",
+      "system": "",
+      "source_section": "6.A.7",
+      "source_quote": "the cardholder shall not make the purchase and should instead seek a merchant who will honor the exemption",
+      "inferred": false
+    },
+    {
+      "id": "S24",
+      "actor": "Cardholder",
+      "action": "Verifies the purchase was exempted from state sales tax",
+      "input": "Purchase receipt",
+      "output": "Tax exemption verified",
+      "system": "",
+      "source_section": "6.A.7",
+      "source_quote": "Cardholders should ensure that their purchases have been exempted from state sales tax at the point of sale",
+      "inferred": false
+    },
+    {
+      "id": "S25",
+      "actor": "Cardholder",
+      "action": "Contacts the merchant to seek a credit for the charged sales tax and documents the efforts",
+      "input": "Receipt showing sales tax",
+      "output": "Credit request and documentation of efforts",
+      "system": "",
+      "source_section": "6.A.7; 12.B",
+      "source_quote": "cardholders are responsible for contacting the merchant to seek a credit for the charged sales tax",
+      "inferred": false
+    },
+    {
+      "id": "S26",
+      "actor": "AO",
+      "action": "Validates receipt of the items purchased, as applicable, and signs the receipt or invoice received with the shipment",
+      "input": "Shipment with receipt or invoice",
+      "output": "AO-signed receipt or invoice",
+      "system": "",
+      "source_section": "7.E.3",
+      "source_quote": "Validate the receipt of items purchased, as applicable, prior to the cardholder\u2019s receipt",
+      "inferred": false
+    },
+    {
+      "id": "S27",
+      "actor": "Receiving employee (employee who accepts or first uses the goods or services)",
+      "action": "Signs and dates the invoice",
+      "input": "Invoice",
+      "output": "Invoice signed and dated by the receiving employee",
+      "system": "",
+      "source_section": "6.C.3",
+      "source_quote": "obtained the signature and date of that other employee on the invoice",
+      "inferred": false
+    },
+    {
+      "id": "S28",
+      "actor": "Contractor bank",
+      "action": "Issues the monthly Statement of Account (SOA) to the cardholder",
+      "input": "Billing cycle transactions",
+      "output": "Monthly SOA",
+      "system": "SOA",
+      "source_section": "6.C.1",
+      "source_quote": "monthly SOA received from the contractor bank",
+      "inferred": false
+    },
+    {
+      "id": "S29",
+      "actor": "Cardholder",
+      "action": "Reconciles the monthly SOA against receipts and supporting documentation",
+      "input": "Monthly SOA, receipts, signed invoices",
+      "output": "Reconciled SOA",
+      "system": "SOA",
+      "source_section": "6.C.1; 7.F.8",
+      "source_quote": "Cardholders shall reconcile their monthly SOA received from the contractor bank within seven (7) workdays",
+      "inferred": false
+    },
+    {
+      "id": "S30",
+      "actor": "Cardholder",
+      "action": "Affixes a dated signature and printed name to the reconciled SOA (certifying per the Certification Clause), noting, initialing, and dating any exceptions",
+      "input": "Reconciled SOA",
+      "output": "Cardholder-certified SOA",
+      "system": "SOA",
+      "source_section": "6.C.1; 6.C.4",
+      "source_quote": "the cardholder must affix a dated signature and printed name on the reconciled SOA",
+      "inferred": false
+    },
+    {
+      "id": "S31",
+      "actor": "Cardholder",
+      "action": "Forwards the reconciled SOA to the AO for review",
+      "input": "Cardholder-certified SOA",
+      "output": "SOA with AO",
+      "system": "",
+      "source_section": "6.C.1; 7.F.8",
+      "source_quote": "forward it to his/her AO for review",
+      "inferred": false
+    },
+    {
+      "id": "S32",
+      "actor": "AO",
+      "action": "Reviews the reconciled SOA to verify all transactions were legal, proper, correct, and necessary",
+      "input": "Cardholder-certified SOA",
+      "output": "Reviewed SOA",
+      "system": "SOA",
+      "source_section": "6.C.2; 7.E.4",
+      "source_quote": "AOs shall review each reconciled SOA received from their purchase cardholders within ten (10) workdays",
+      "inferred": false
+    },
+    {
+      "id": "S33",
+      "actor": "AO",
+      "action": "Affixes a dated signature and printed name to the reconciled SOA, noting, initialing, and dating any exceptions to the Certification Clause",
+      "input": "Reviewed SOA",
+      "output": "AO-certified SOA",
+      "system": "SOA",
+      "source_section": "6.C.2; 6.C.4; 7.E.4",
+      "source_quote": "the AO must affix a dated signature and printed name on the reconciled SOA",
+      "inferred": false
+    },
+    {
+      "id": "S34",
+      "actor": "AO",
+      "action": "Forwards the reconciled SOA to FOC RDG/TOG",
+      "input": "AO-certified SOA",
+      "output": "SOA at FOC RDG/TOG",
+      "system": "",
+      "source_section": "6.C.2; 7.E.4",
+      "source_quote": "The AO then must forward the reconciled SOA to Financial Operations Center (FOC)",
+      "inferred": false
+    },
+    {
+      "id": "S35",
+      "actor": "CFO (Financial Operations)",
+      "action": "Enters reconciled transaction data into the core financial accounting system and distributes charges to the correct financial and budgetary accounts",
+      "input": "AO-certified SOA",
+      "output": "Transactions recorded and charges distributed",
+      "system": "Core financial accounting system",
+      "source_section": "7.B",
+      "source_quote": "ensuring all reconciled purchase card transaction data is entered into the Commission\u2019s core financial accounting system",
+      "inferred": false
+    },
+    {
+      "id": "S36",
+      "actor": "CFO (Financial Operations)",
+      "action": "Pays the purchase card contractor bank",
+      "input": "Recorded transactions",
+      "output": "Payment to contractor bank",
+      "system": "",
+      "source_section": "7.B",
+      "source_quote": "for paying the purchase card contractor bank",
+      "inferred": false
+    },
+    {
+      "id": "S37",
+      "actor": "Cardholder",
+      "action": "Retains the reconciled SOA and all supporting documentation (authorization, funding reference, agreements, receipt acknowledgment, signed invoices, SF-182, third-party processor details, ITC approvals)",
+      "input": "Reconciled SOA and supporting documents",
+      "output": "Retained purchase file",
+      "system": "",
+      "source_section": "6.D; 7.F.9",
+      "source_quote": "Cardholders shall retain supporting documentation for purchases for a period of six (6) years",
+      "inferred": false
+    },
+    {
+      "id": "S38",
+      "actor": "Cardholder",
+      "action": "Reviews receipts for a questioned charge (for example, a charge posted under a different merchant name)",
+      "input": "Questioned SOA charge, receipts",
+      "output": "Research result",
+      "system": "",
+      "source_section": "12.A.1",
+      "source_quote": "Review the receipts.",
+      "inferred": false
+    },
+    {
+      "id": "S39",
+      "actor": "Cardholder",
+      "action": "Contacts the merchant to resolve the disputed charge and documents the actions taken (AO assists)",
+      "input": "Confirmed disputed charge",
+      "output": "Merchant resolution attempt documentation",
+      "system": "",
+      "source_section": "12.A.2; 7.E.6",
+      "source_quote": "the cardholder shall contact the merchant in an attempt to resolve the disputed charge",
+      "inferred": false
+    },
+    {
+      "id": "S40",
+      "actor": "Cardholder",
+      "action": "Initiates a dispute request with the purchase card contractor bank",
+      "input": "Unresolved dispute",
+      "output": "Bank dispute filed",
+      "system": "",
+      "source_section": "12.A.3; 12.A",
+      "source_quote": "the cardholder shall immediately proceed with a dispute request with the purchase card contractor bank",
+      "inferred": false
+    },
+    {
+      "id": "S41",
+      "actor": "Cardholder",
+      "action": "Tracks the dispute to completion",
+      "input": "Bank dispute filed",
+      "output": "Resolved dispute",
+      "system": "",
+      "source_section": "12.A",
+      "source_quote": "Cardholders shall track disputes to completion.",
+      "inferred": false
+    },
+    {
+      "id": "S42",
+      "actor": "Reviewer/auditor (APC, independent auditors, OIG, other federal entities)",
+      "action": "Conducts a periodic or random review of purchase card transactions and requests supporting documentation",
+      "input": "Selected transactions",
+      "output": "Documentation request",
+      "system": "",
+      "source_section": "6.E.1",
+      "source_quote": "Cardholders shall be subject to periodic and/or random reviews of their purchase card transactions",
+      "inferred": false
+    },
+    {
+      "id": "S43",
+      "actor": "Cardholder",
+      "action": "Furnishes copies of reconciled SOAs and all supporting documentation directly to the reviewer",
+      "input": "Documentation request, retained purchase file",
+      "output": "Documentation provided to the reviewer",
+      "system": "",
+      "source_section": "6.E.1; 6.E.2",
+      "source_quote": "cardholders are directly responsible for furnishing copies of their reconciled SOAs and all other supporting documentation",
+      "inferred": false
+    },
+    {
+      "id": "S44",
+      "actor": "APC",
+      "action": "Reviews the cardholder's standing in the program, which may result in temporary suspension or expulsion",
+      "input": "Missing SOA or inadequate documentation",
+      "output": "Standing determination",
+      "system": "",
+      "source_section": "6.D",
+      "source_quote": "the cardholder\u2019s standing in the purchase card program will be subject to review by the APC",
+      "inferred": false
+    },
+    {
+      "id": "S45",
+      "actor": "APC",
+      "action": "Temporarily suspends card privileges or revokes AO authority for abuse, misuse, or non-compliance until compliance is observed",
+      "input": "Identified abuse, misuse, or non-compliance",
+      "output": "Suspended card or revoked AO authority",
+      "system": "",
+      "source_section": "11.B",
+      "source_quote": "may result in temporary suspension of card privileges or revocation of AO authority by the APC until compliance is observed",
+      "inferred": false
+    },
+    {
+      "id": "S46",
+      "actor": "APC",
+      "action": "Reports the abuse, misuse, or non-compliance to the cardholder's AO or the AO's immediate supervisor",
+      "input": "Non-compliance finding",
+      "output": "Report to AO or supervisor",
+      "system": "",
+      "source_section": "11.B",
+      "source_quote": "The APC will report purchase card abuse, misuse, and non-compliance to the cardholder\u2019s AO or to the AO\u2019s immediate supervisor.",
+      "inferred": false
+    },
+    {
+      "id": "S47",
+      "actor": "APC",
+      "action": "Restores card privileges or AO authority once compliance is observed, after any required refresher training",
+      "input": "Observed compliance, refresher training if required",
+      "output": "Restored privileges or authority",
+      "system": "",
+      "source_section": "11.B",
+      "source_quote": "The APC may also require the cardholder or AO to complete refresher training before restoring card privileges or AO authority.",
+      "inferred": false
+    },
+    {
+      "id": "S48",
+      "actor": "APC",
+      "action": "Permanently closes purchase card privileges or revokes AO authority",
+      "input": "Repeated non-compliance, or misuse or fraud",
+      "output": "Closed card privileges or revoked AO authority",
+      "system": "",
+      "source_section": "11.B; 11.C",
+      "source_quote": "Repeated instances of abuse, misuse, or non-compliance will result in permanent closure of purchase card privileges or revocation of AO authority",
+      "inferred": false
+    },
+    {
+      "id": "S49",
+      "actor": "APC",
+      "action": "Reports the misuse or fraud to the immediate supervisor (or ABC), the Chief of HRM Labor Relations and Performance Management, and the OIG for investigation and appropriate actions",
+      "input": "Misuse or fraud finding",
+      "output": "Referral for investigation",
+      "system": "",
+      "source_section": "11.E",
+      "source_quote": "The APC will report purchase card misuse or fraud to the cardholder\u2019s or AO\u2019s immediate supervisor",
+      "inferred": false
+    },
+    {
+      "id": "S50",
+      "actor": "Human Resources (with Bureau/Office Chief)",
+      "action": "Processes the proposed disciplinary or adverse action under the Basic Negotiated Agreement Articles 35/36 or FCC Personnel Manual Chapters 751/752",
+      "input": "Proposed disciplinary or adverse action",
+      "output": "Disciplinary or adverse action outcome",
+      "system": "",
+      "source_section": "11.E; 7.C.8",
+      "source_quote": "these actions will follow the normal progression through Human Resources",
+      "inferred": false
+    },
+    {
+      "id": "S51",
+      "actor": "Cardholder",
+      "action": "Immediately reports the lost or stolen card to the contractor bank and notifies the AO and the APC",
+      "input": "Lost or stolen card",
+      "output": "Bank, AO, and APC notified",
+      "system": "",
+      "source_section": "13; 7.F.3",
+      "source_quote": "The cardholder shall immediately report lost or stolen purchase cards to the purchase card contractor bank and notify both the AO and the APC.",
+      "inferred": false
+    },
+    {
+      "id": "S52",
+      "actor": "Cardholder / AO",
+      "action": "Completes GSA refresher training and provides the training certification to the APC",
+      "input": "Refresher training cycle or APC direction",
+      "output": "Refresher training certificate with APC",
+      "system": "GSA web-based training",
+      "source_section": "6.A.4; 7.F.2",
+      "source_quote": "All cardholders and AOs are required to take GSA\u2019s web-based training as refresher training every three (3) years",
+      "inferred": false
+    },
+    {
+      "id": "S53",
+      "actor": "APC",
+      "action": "Reviews purchase card usage to identify accounts with no activity in the preceding three years",
+      "input": "Agency-wide refresher training initiative",
+      "output": "List of inactive accounts",
+      "system": "",
+      "source_section": "6.A.5",
+      "source_quote": "the APC will review purchase card usage to identify inactive accounts",
+      "inferred": false
+    },
+    {
+      "id": "S54",
+      "actor": "APC",
+      "action": "Provides the list of inactive accounts to each Bureau/Office",
+      "input": "List of inactive accounts",
+      "output": "Confirmation request to Bureau/Office",
+      "system": "",
+      "source_section": "6.A.5",
+      "source_quote": "The APC will provide a list of inactive accounts to each Bureau/Office",
+      "inferred": false
+    },
+    {
+      "id": "S55",
+      "actor": "Bureau/Office",
+      "action": "Confirms the continued need for each inactive account",
+      "input": "Inactive account list",
+      "output": "Confirmation of continued need",
+      "system": "",
+      "source_section": "6.A.5",
+      "source_quote": "the Bureau/Office must confirm the continued need for each inactive account",
+      "inferred": false
+    },
+    {
+      "id": "S56",
+      "actor": "APC",
+      "action": "Suspends the inactive account until confirmation is received",
+      "input": "No confirmation received",
+      "output": "Suspended account",
+      "system": "",
+      "source_section": "6.A.5",
+      "source_quote": "Failure to provide the requested confirmation will result in the inactive account\u2019s suspension until confirmation is received.",
+      "inferred": false
+    },
+    {
+      "id": "S57",
+      "actor": "AO",
+      "action": "Submits a written request to the APC to raise a cardholder's limit: a written justification of demonstrated need for a permanent single transaction limit increase up to the MPT, or FCC Form A-1204 for a monthly credit limit increase",
+      "input": "Cardholder need for a higher limit",
+      "output": "Limit increase request",
+      "system": "FCC Form A-1204 (monthly limit); written request (STL)",
+      "source_section": "6.B.1; 6.B.4; 7.E.7",
+      "source_quote": "upon written request from the cardholder\u2019s AO via FCC Form A-1204 Request for Monthly Credit Limit Increase",
+      "inferred": false
+    },
+    {
+      "id": "S58",
+      "actor": "APC",
+      "action": "Grants the increase and retains the circumstances and the temporary or permanent duration of the increase",
+      "input": "Limit increase request",
+      "output": "Updated limit and retained record",
+      "system": "",
+      "source_section": "6.B.1; 6.B.4",
+      "source_quote": "The circumstances for the credit limit increase and the length of time for which the limit is to be increased (i.e., on a temporary or permanent basis) shall be retained by the APC.",
+      "inferred": false
+    },
+    {
+      "id": "S59",
+      "actor": "APC",
+      "action": "Periodically reviews permanent monthly credit limit increases to determine whether the higher limits are still required",
+      "input": "Permanent increase records",
+      "output": "Limit review result",
+      "system": "",
+      "source_section": "6.B.5",
+      "source_quote": "Permanent monthly credit limit increases shall be reviewed by the APC on a periodic basis",
+      "inferred": false
+    },
+    {
+      "id": "S60",
+      "actor": "Cardholder",
+      "action": "Notifies the APC of an upcoming reassignment or departure from the agency",
+      "input": "Planned transfer or separation",
+      "output": "APC notified by cardholder",
+      "system": "",
+      "source_section": "7.F.10",
+      "source_quote": "Prior to reassignment to another FCC organization or upon leaving the agency, notify the APC",
+      "inferred": false
+    },
+    {
+      "id": "S61",
+      "actor": "AO or Bureau/Office Chief (or ABC)",
+      "action": "Gives prior written notice to the APC of the cardholder's transfer or separation and directs cancellation of the card",
+      "input": "Planned transfer or separation",
+      "output": "Written notice and cancellation direction to APC",
+      "system": "Written notice (may be via email)",
+      "source_section": "14.A; 7.E.8; 7.C.9",
+      "source_quote": "prior notice shall be given to the APC by the cardholder\u2019s AO or Bureau/Office Chief (or ABC if applicable)",
+      "inferred": false
+    },
+    {
+      "id": "S62",
+      "actor": "APC",
+      "action": "Closes the cardholder's account, which cancels the cardholder's delegation of procurement authority",
+      "input": "Transfer or separation notice",
+      "output": "Closed account",
+      "system": "",
+      "source_section": "14.C; 14.A",
+      "source_quote": "Upon being notified about a cardholder\u2019s transfer or separation from the agency, the APC shall close the cardholder\u2019s account.",
+      "inferred": false
+    },
+    {
+      "id": "S63",
+      "actor": "Cardholder",
+      "action": "Provides all purchase card records and supporting documentation to the AO",
+      "input": "Retained purchase files",
+      "output": "Records in AO custody",
+      "system": "",
+      "source_section": "14.A; 7.F.11",
+      "source_quote": "provide all of their purchase card records and supporting documentation to their AO",
+      "inferred": false
+    },
+    {
+      "id": "S64",
+      "actor": "Cardholder",
+      "action": "Surrenders the purchase card to the AO or the APC",
+      "input": "Purchase card",
+      "output": "Card surrendered",
+      "system": "",
+      "source_section": "14.A",
+      "source_quote": "surrender their purchase card to their AO or the APC",
+      "inferred": false
+    },
+    {
+      "id": "S65",
+      "actor": "AO",
+      "action": "Notes on the cardholder's final reconciled SOA that the cardholder departed before the final SOA was available and could not sign it",
+      "input": "Final SOA",
+      "output": "Annotated final reconciled SOA",
+      "system": "SOA",
+      "source_section": "14.A",
+      "source_quote": "the AO shall note this on the cardholder\u2019s final reconciled SOA",
+      "inferred": false
+    },
+    {
+      "id": "S66",
+      "actor": "Bureau/Office Chief (or ABC)",
+      "action": "Designates a new AO to assume the departing AO's duties and sends the change in designation in writing to the APC",
+      "input": "AO separation or transfer",
+      "output": "Written new AO designation to APC",
+      "system": "Written designation",
+      "source_section": "14.B",
+      "source_quote": "a new AO will be designated by the appropriate Bureau/Office Chief (or ABC if applicable)",
+      "inferred": false
+    }
+  ],
+  "decisions": [
+    {
+      "id": "D1",
+      "after_step": "S1",
+      "condition": "Is the nominee an FCC full-time employee outside OMD FOC and the Offices of the Chairman and Commissioners?",
+      "branches": [
+        {
+          "label": "Yes \u2013 eligible",
+          "next_step": "S2"
+        },
+        {
+          "label": "No \u2013 card not issued",
+          "next_step": "END"
+        }
+      ],
+      "source_section": "6.A.1; 6.A.2",
+      "inferred": false
+    },
+    {
+      "id": "D2",
+      "after_step": "S7",
+      "condition": "Have the signed Form A-498 and the GSA training certificate been completed and submitted?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S8"
+        },
+        {
+          "label": "No \u2013 card may not be issued",
+          "next_step": "UNDEFINED"
+        }
+      ],
+      "source_section": "6.A.3; 6.A.4; 7.F.1",
+      "inferred": false
+    },
+    {
+      "id": "D3",
+      "after_step": "S8",
+      "condition": "Is the cardholder an EAC contracting officer eligible for a single transaction limit above the MPT?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S9"
+        },
+        {
+          "label": "No \u2013 default $15,000 limits",
+          "next_step": "S10"
+        }
+      ],
+      "source_section": "6.B.1; 6.B.3",
+      "inferred": false
+    },
+    {
+      "id": "D4",
+      "after_step": "S12",
+      "condition": "Did the AO provide written authorization for the purchase?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S13"
+        },
+        {
+          "label": "No",
+          "next_step": "UNDEFINED"
+        }
+      ],
+      "source_section": "7.E.2; 7.F.4",
+      "inferred": true
+    },
+    {
+      "id": "D5",
+      "after_step": "S14",
+      "condition": "Does the purchase exceed the cardholder's single transaction limit?",
+      "branches": [
+        {
+          "label": "Yes \u2013 card is not to be used",
+          "next_step": "UNDEFINED"
+        },
+        {
+          "label": "No",
+          "next_step": "S15"
+        }
+      ],
+      "source_section": "6.B.2",
+      "inferred": false
+    },
+    {
+      "id": "D6",
+      "after_step": "S15",
+      "condition": "Do the terms and conditions contain any prohibited provisions?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S16"
+        },
+        {
+          "label": "No",
+          "next_step": "S19"
+        }
+      ],
+      "source_section": "6.A.8",
+      "inferred": false
+    },
+    {
+      "id": "D7",
+      "after_step": "S17",
+      "condition": "Is the only objectionable term an indemnification provision that the FAR renders unenforceable in this micro-purchase?",
+      "branches": [
+        {
+          "label": "Yes \u2013 proceed with card purchase",
+          "next_step": "S19"
+        },
+        {
+          "label": "No \u2013 other prohibited terms",
+          "next_step": "S18"
+        }
+      ],
+      "source_section": "6.A.8 (Note on indemnification clauses)",
+      "inferred": false
+    },
+    {
+      "id": "D8",
+      "after_step": "S19",
+      "condition": "Is the item covered by the accessibility regulations affecting IT products and services, or is it IT hardware?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S20"
+        },
+        {
+          "label": "No",
+          "next_step": "S22"
+        }
+      ],
+      "source_section": "7.F.6; 6.D (4)",
+      "inferred": false
+    },
+    {
+      "id": "D9",
+      "after_step": "S20",
+      "condition": "Is the purchase IT hardware?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S21"
+        },
+        {
+          "label": "No",
+          "next_step": "S22"
+        }
+      ],
+      "source_section": "6.D (4)",
+      "inferred": true
+    },
+    {
+      "id": "D10",
+      "after_step": "S22",
+      "condition": "Does the merchant refuse to honor the state sales tax exemption at the point of sale?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S23"
+        },
+        {
+          "label": "No",
+          "next_step": "S24"
+        }
+      ],
+      "source_section": "6.A.7",
+      "inferred": false
+    },
+    {
+      "id": "D11",
+      "after_step": "S24",
+      "condition": "Was state sales tax charged on the purchase?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S25"
+        },
+        {
+          "label": "No",
+          "next_step": "S26"
+        }
+      ],
+      "source_section": "6.A.7",
+      "inferred": false
+    },
+    {
+      "id": "D12",
+      "after_step": "S26",
+      "condition": "Will the goods or services be accepted or first used by an employee other than the cardholder?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S27"
+        },
+        {
+          "label": "No",
+          "next_step": "S28"
+        }
+      ],
+      "source_section": "6.C.3",
+      "inferred": false
+    },
+    {
+      "id": "D13",
+      "after_step": "S38",
+      "condition": "Does the cardholder's research confirm the charge is a dispute?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S39"
+        },
+        {
+          "label": "No",
+          "next_step": "END"
+        }
+      ],
+      "source_section": "12.A.1; 12.A.2",
+      "inferred": false
+    },
+    {
+      "id": "D14",
+      "after_step": "S39",
+      "condition": "Was the dispute resolved with the merchant?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "END"
+        },
+        {
+          "label": "No",
+          "next_step": "S40"
+        }
+      ],
+      "source_section": "12.A.3",
+      "inferred": false
+    },
+    {
+      "id": "D15",
+      "after_step": "S39",
+      "condition": "Is the disputed charge a shipping charge or tax?",
+      "branches": [
+        {
+          "label": "Yes \u2013 credit can only be obtained from the merchant",
+          "next_step": "S39"
+        },
+        {
+          "label": "No \u2013 disputable with the bank",
+          "next_step": "S40"
+        }
+      ],
+      "source_section": "12.B",
+      "inferred": false
+    },
+    {
+      "id": "D16",
+      "after_step": "S43",
+      "condition": "Is the cardholder's SOA missing, or is supporting documentation lacking or not provided?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S44"
+        },
+        {
+          "label": "No",
+          "next_step": "END"
+        }
+      ],
+      "source_section": "6.D",
+      "inferred": false
+    },
+    {
+      "id": "D17",
+      "after_step": "S46",
+      "condition": "Is this a repeated instance of abuse, misuse, or non-compliance, or does it involve misuse or fraud?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S48"
+        },
+        {
+          "label": "No",
+          "next_step": "S47"
+        }
+      ],
+      "source_section": "11.B; 11.C",
+      "inferred": false
+    },
+    {
+      "id": "D18",
+      "after_step": "S48",
+      "condition": "Does the case involve purchase card misuse or fraud?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S49"
+        },
+        {
+          "label": "No",
+          "next_step": "END"
+        }
+      ],
+      "source_section": "11.E",
+      "inferred": false
+    },
+    {
+      "id": "D19",
+      "after_step": "S49",
+      "condition": "Are disciplinary or adverse actions proposed?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S50"
+        },
+        {
+          "label": "No",
+          "next_step": "END"
+        }
+      ],
+      "source_section": "11.E",
+      "inferred": false
+    },
+    {
+      "id": "D20",
+      "after_step": "S54",
+      "condition": "Does the Bureau/Office provide the requested confirmation of continued need?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S55"
+        },
+        {
+          "label": "No",
+          "next_step": "S56"
+        }
+      ],
+      "source_section": "6.A.5",
+      "inferred": false
+    },
+    {
+      "id": "D21",
+      "after_step": "S57",
+      "condition": "Is a permanent monthly credit limit increase requested for a cardholder outside OMD?",
+      "branches": [
+        {
+          "label": "Yes \u2013 APC grants permanent increases only to OMD",
+          "next_step": "UNDEFINED"
+        },
+        {
+          "label": "No",
+          "next_step": "S58"
+        }
+      ],
+      "source_section": "6.B.4",
+      "inferred": false
+    },
+    {
+      "id": "D22",
+      "after_step": "S64",
+      "condition": "Does the cardholder transfer or separate before the final SOA is available?",
+      "branches": [
+        {
+          "label": "Yes",
+          "next_step": "S65"
+        },
+        {
+          "label": "No \u2013 cardholder reconciles the final SOA",
+          "next_step": "S29"
+        }
+      ],
+      "source_section": "14.A",
+      "inferred": false
+    }
+  ],
+  "handoffs": [
+    {
+      "after_step": "S1",
+      "from_actor": "Bureau/Office Chief",
+      "to_actor": "Nominee"
+    },
+    {
+      "after_step": "S2",
+      "from_actor": "Nominee",
+      "to_actor": "Bureau/Office Chief (or ABC)"
+    },
+    {
+      "after_step": "S3",
+      "from_actor": "Bureau/Office Chief (or ABC)",
+      "to_actor": "AO"
+    },
+    {
+      "after_step": "S4",
+      "from_actor": "AO",
+      "to_actor": "Nominee"
+    },
+    {
+      "after_step": "S6",
+      "from_actor": "Nominee",
+      "to_actor": "APC"
+    },
+    {
+      "after_step": "S7",
+      "from_actor": "Cardholder nominee",
+      "to_actor": "FOC RDG/TOG"
+    },
+    {
+      "after_step": "S8",
+      "from_actor": "FOC RDG/TOG",
+      "to_actor": "Contractor bank"
+    },
+    {
+      "after_step": "S9",
+      "from_actor": "AO",
+      "to_actor": "APC"
+    },
+    {
+      "after_step": "S10",
+      "from_actor": "APC",
+      "to_actor": "Cardholder"
+    },
+    {
+      "after_step": "S11",
+      "from_actor": "Cardholder",
+      "to_actor": "AO"
+    },
+    {
+      "after_step": "S12",
+      "from_actor": "AO",
+      "to_actor": "Cardholder"
+    },
+    {
+      "after_step": "S16",
+      "from_actor": "Cardholder",
+      "to_actor": "EAC"
+    },
+    {
+      "after_step": "S17",
+      "from_actor": "EAC",
+      "to_actor": "OGC"
+    },
+    {
+      "after_step": "S17",
+      "from_actor": "EAC",
+      "to_actor": "Cardholder"
+    },
+    {
+      "after_step": "S24",
+      "from_actor": "Cardholder",
+      "to_actor": "AO"
+    },
+    {
+      "after_step": "S25",
+      "from_actor": "Cardholder",
+      "to_actor": "AO"
+    },
+    {
+      "after_step": "S26",
+      "from_actor": "AO",
+      "to_actor": "Receiving employee"
+    },
+    {
+      "after_step": "S27",
+      "from_actor": "Receiving employee",
+      "to_actor": "Cardholder"
+    },
+    {
+      "after_step": "S28",
+      "from_actor": "Contractor bank",
+      "to_actor": "Cardholder"
+    },
+    {
+      "after_step": "S31",
+      "from_actor": "Cardholder",
+      "to_actor": "AO"
+    },
+    {
+      "after_step": "S34",
+      "from_actor": "AO",
+      "to_actor": "FOC RDG/TOG (CFO)"
+    },
+    {
+      "after_step": "S36",
+      "from_actor": "CFO (Financial Operations)",
+      "to_actor": "Contractor bank"
+    },
+    {
+      "after_step": "S40",
+      "from_actor": "Cardholder",
+      "to_actor": "Contractor bank"
+    },
+    {
+      "after_step": "S42",
+      "from_actor": "Reviewer/auditor",
+      "to_actor": "Cardholder"
+    },
+    {
+      "after_step": "S43",
+      "from_actor": "Cardholder",
+      "to_actor": "Reviewer/auditor"
+    },
+    {
+      "after_step": "S43",
+      "from_actor": "Reviewer/auditor",
+      "to_actor": "APC"
+    },
+    {
+      "after_step": "S46",
+      "from_actor": "APC",
+      "to_actor": "AO or AO's immediate supervisor"
+    },
+    {
+      "after_step": "S49",
+      "from_actor": "APC",
+      "to_actor": "Immediate supervisor (or ABC), HRM Labor Relations and Performance Management, OIG"
+    },
+    {
+      "after_step": "S49",
+      "from_actor": "APC",
+      "to_actor": "Human Resources"
+    },
+    {
+      "after_step": "S51",
+      "from_actor": "Cardholder",
+      "to_actor": "Contractor bank, AO, and APC"
+    },
+    {
+      "after_step": "S52",
+      "from_actor": "Cardholder / AO",
+      "to_actor": "APC"
+    },
+    {
+      "after_step": "S54",
+      "from_actor": "APC",
+      "to_actor": "Bureau/Office"
+    },
+    {
+      "after_step": "S55",
+      "from_actor": "Bureau/Office",
+      "to_actor": "APC"
+    },
+    {
+      "after_step": "S57",
+      "from_actor": "AO",
+      "to_actor": "APC"
+    },
+    {
+      "after_step": "S60",
+      "from_actor": "Cardholder",
+      "to_actor": "APC"
+    },
+    {
+      "after_step": "S61",
+      "from_actor": "AO or Bureau/Office Chief (or ABC)",
+      "to_actor": "APC"
+    },
+    {
+      "after_step": "S63",
+      "from_actor": "Cardholder",
+      "to_actor": "AO"
+    },
+    {
+      "after_step": "S64",
+      "from_actor": "Cardholder",
+      "to_actor": "AO or APC"
+    },
+    {
+      "after_step": "S66",
+      "from_actor": "Bureau/Office Chief (or ABC)",
+      "to_actor": "APC"
+    }
+  ],
+  "exceptions": [
+    {
+      "step": "S13",
+      "trigger": "Funds are not available for the purchase",
+      "handling": "Do not use the card without first ensuring funds are available; doing so may result in an Anti-Deficiency Act violation. No next step is stated.",
+      "source_section": "7.F.5"
+    },
+    {
+      "step": "S14",
+      "trigger": "Cardholder has questions about using mandatory Government sources",
+      "handling": "Direct the questions to EAC.",
+      "source_section": "6.A.12"
+    },
+    {
+      "step": "S17",
+      "trigger": "Indemnification provision appears in an agreement not covered by the FAR (for example, online terms of use for a free service)",
+      "handling": "Employee consults EAC to determine whether the FAR regulation applies or whether to forgo use of the vendor.",
+      "source_section": "6.A.8 (Note on indemnification clauses)"
+    },
+    {
+      "step": "S19",
+      "trigger": "Price is not reasonable",
+      "handling": "Only make a purchase if the price is reasonable; no further handling is stated.",
+      "source_section": "6.A.9"
+    },
+    {
+      "step": "S22",
+      "trigger": "Cardholder pays premium shipping or rush delivery",
+      "handling": "Strongly discouraged; repeated use may be deemed charge card abuse by the APC and could lead to administrative action.",
+      "source_section": "6.A.10"
+    },
+    {
+      "step": "S28",
+      "trigger": "Cardholder's SOA is missing",
+      "handling": "Cardholder's standing in the program is subject to APC review, which may result in temporary suspension or expulsion.",
+      "source_section": "6.D"
+    },
+    {
+      "step": "S29",
+      "trigger": "Goods or services were accepted by another employee whose signature is not yet on the invoice",
+      "handling": "Cardholder may not reconcile the SOA until the other employee's signature and date are obtained on the invoice.",
+      "source_section": "6.C.3"
+    },
+    {
+      "step": "S29",
+      "trigger": "Transaction appears on the SOA under a third-party payment processor name (e.g., PayPal, iBill)",
+      "handling": "Maintain documentation of the merchant, merchant point of contact or phone number, processor name, amount, and why that merchant was necessary.",
+      "source_section": "6.D (3)"
+    },
+    {
+      "step": "S29",
+      "trigger": "Statement reconciliation is untimely",
+      "handling": "Treated as non-compliance; may result in temporary suspension of card privileges or revocation of AO authority by the APC until compliance is observed.",
+      "source_section": "11.B"
+    },
+    {
+      "step": "S30",
+      "trigger": "Cardholder or AO cannot certify an item under the Certification Clause",
+      "handling": "Note the exception on the SOA, with the remarks initialed and dated.",
+      "source_section": "6.C.4"
+    },
+    {
+      "step": "S40",
+      "trigger": "Dispute is not initiated with the bank within 90 calendar days of the charge first appearing on the SOA",
+      "handling": "Failure to timely initiate disputes can result in administrative and/or disciplinary or adverse action.",
+      "source_section": "12.A"
+    },
+    {
+      "step": "S43",
+      "trigger": "Cardholder forwards the documentation request to a third party or a centralized source",
+      "handling": "Not permitted; the cardholder remains ultimately responsible for complying with the reviewer's request.",
+      "source_section": "6.E.2"
+    },
+    {
+      "step": "S43",
+      "trigger": "Cardholder is non-responsive to a transaction review",
+      "handling": "Treated as non-compliance; may result in temporary suspension or revocation by the APC until compliance is observed.",
+      "source_section": "11.B"
+    },
+    {
+      "step": "S51",
+      "trigger": "Purchase card is lost or stolen",
+      "handling": "Cardholder immediately reports to the contractor bank and notifies the AO and APC; the SOP is silent on what happens next (e.g., replacement card or account action).",
+      "source_section": "13; 7.F.3"
+    },
+    {
+      "step": "S22",
+      "trigger": "Card is used by someone other than the cardholder",
+      "handling": "The Commission is not liable for transactions by anyone other than the designated user; only the named individual is authorized to use the card.",
+      "source_section": "13; 14.A"
+    }
+  ],
+  "timing": [
+    {
+      "step": "S2",
+      "requirement": "Form A-498 must be completed and signed prior to card issuance or AO certification",
+      "source_section": "6.A.3"
+    },
+    {
+      "step": "S5",
+      "requirement": "GSA training must be completed prior to card issuance or AO certification; cardholders may not make purchases until training is completed",
+      "source_section": "6.A.4; 7.F.1"
+    },
+    {
+      "step": "S6",
+      "requirement": "Certificates of Completion must be submitted to the APC prior to card issuance",
+      "source_section": "6.A.4"
+    },
+    {
+      "step": "S12",
+      "requirement": "Written authorization is required for each transaction before the purchase is made",
+      "source_section": "7.E.2; 7.F.4"
+    },
+    {
+      "step": "S13",
+      "requirement": "Funds availability must be ensured prior to initiating the purchase",
+      "source_section": "7.F.5"
+    },
+    {
+      "step": "S15",
+      "requirement": "Terms and conditions must be reviewed before making the purchase",
+      "source_section": "6.A.8"
+    },
+    {
+      "step": "S16",
+      "requirement": "Referral to EAC must happen prior to making any commitment on behalf of the Government",
+      "source_section": "6.A.8"
+    },
+    {
+      "step": "S26",
+      "requirement": "AO validates receipt of items prior to the cardholder's receipt",
+      "source_section": "7.E.3"
+    },
+    {
+      "step": "S29",
+      "requirement": "Within seven (7) workdays after the end of the billing cycle",
+      "source_section": "6.C.1; 7.F.8"
+    },
+    {
+      "step": "S32",
+      "requirement": "Within ten (10) workdays after the end of the billing cycle",
+      "source_section": "6.C.2; 7.E.4"
+    },
+    {
+      "step": "S34",
+      "requirement": "AOs submit reconciled SOAs to Financial Operations, TOG, in a timely manner as prescribed by agency policy",
+      "source_section": "7.C.6"
+    },
+    {
+      "step": "S37",
+      "requirement": "Retain for six (6) years (7.F.9 specifies six years after final payment)",
+      "source_section": "6.D; 7.F.9"
+    },
+    {
+      "step": "S40",
+      "requirement": "Initiate immediately after the merchant fails to resolve the dispute, and in any event within 90 calendar days from the date the charge first appeared on the SOA",
+      "source_section": "12.A; 12.A.3"
+    },
+    {
+      "step": "S43",
+      "requirement": "Provide all supporting documentation in a timely manner",
+      "source_section": "6.E.1"
+    },
+    {
+      "step": "S45",
+      "requirement": "Suspension lasts until compliance is observed",
+      "source_section": "11.B"
+    },
+    {
+      "step": "S51",
+      "requirement": "Immediately upon loss or theft",
+      "source_section": "13; 7.F.3"
+    },
+    {
+      "step": "S52",
+      "requirement": "Every three (3) years or as directed by the APC",
+      "source_section": "6.A.4"
+    },
+    {
+      "step": "S53",
+      "requirement": "Coincides with each agency-wide refresher training initiative; accounts with no activity in the preceding three (3) years are inactive",
+      "source_section": "6.A.5"
+    },
+    {
+      "step": "S59",
+      "requirement": "On a periodic basis (interval not stated)",
+      "source_section": "6.B.5"
+    },
+    {
+      "step": "S60",
+      "requirement": "Prior to reassignment or upon leaving the agency",
+      "source_section": "7.F.10"
+    },
+    {
+      "step": "S61",
+      "requirement": "Prior notice before the transfer or separation",
+      "source_section": "14.A"
+    },
+    {
+      "step": "S62",
+      "requirement": "Upon being notified of the transfer or separation",
+      "source_section": "14.C"
+    },
+    {
+      "step": "S63",
+      "requirement": "Promptly and before separation or transfer (7.F.11: upon cancellation of the account or separation)",
+      "source_section": "14.A; 7.F.11"
+    },
+    {
+      "step": "S64",
+      "requirement": "Promptly and before separation or transfer",
+      "source_section": "14.A"
+    },
+    {
+      "step": "S66",
+      "requirement": "Upon the separation or transfer of an AO",
+      "source_section": "14.B"
+    }
+  ],
+  "risks": [
+    {
+      "id": "R1",
+      "step": "S2",
+      "risk_type": "manual_handoff",
+      "description": "Form A-498 passes from nominee to Bureau/Office Chief (S3) to AO (S4) and back to the nominee for signatures with no tracking. Card issuance cannot proceed until it is complete (6.A.3, 7.F.1).",
+      "severity": "medium"
+    },
+    {
+      "id": "R2",
+      "step": "S7",
+      "risk_type": "rekeying",
+      "description": "Nominee details appear on Form A-498 and again on the bank card application. FOC RDG/TOG then resubmits the application to the contractor bank (S8) (7.F.1).",
+      "severity": "medium"
+    },
+    {
+      "id": "R3",
+      "step": "S7",
+      "risk_type": "undefined_exception",
+      "description": "D2: if the signed A-498 or GSA training certificate is missing, the card may not be issued, but no next step is stated (6.A.3, 6.A.4).",
+      "severity": "low"
+    },
+    {
+      "id": "R4",
+      "step": "S12",
+      "risk_type": "manual_handoff",
+      "description": "Pre-purchase authorization may be a memo, note, or email (7.E.2, 7.F.4) and is not logged centrally. 6.D still requires a copy of the advance authorization in the purchase file.",
+      "severity": "high"
+    },
+    {
+      "id": "R5",
+      "step": "S12",
+      "risk_type": "undefined_exception",
+      "description": "D4: no next step is stated when the AO declines or does not provide written authorization.",
+      "severity": "medium"
+    },
+    {
+      "id": "R6",
+      "step": "S14",
+      "risk_type": "undefined_exception",
+      "description": "D5: when a purchase exceeds the single transaction limit, the card is not to be used (6.B.2), but no alternative route is stated (EAC, limit increase, other procurement).",
+      "severity": "medium"
+    },
+    {
+      "id": "R7",
+      "step": "S13",
+      "risk_type": "missing_control",
+      "description": "Funds availability is ensured by the cardholder alone before purchase (7.F.5), with no independent check. The AO certifies funds availability only after the fact on the SOA (6.C.4(2)). Anti-Deficiency Act exposure.",
+      "severity": "high"
+    },
+    {
+      "id": "R8",
+      "step": "S26",
+      "risk_type": "vague_ownership_or_timing",
+      "description": "The AO validates receipt 'as applicable' and 'prior to the cardholder's receipt' (7.E.3). It is unclear when this applies and how it relates to the receiving employee's invoice signature in 6.C.3 (S27).",
+      "severity": "medium"
+    },
+    {
+      "id": "R9",
+      "step": "S29",
+      "risk_type": "undefined_exception",
+      "description": "The cardholder may not reconcile until the receiving employee signs the invoice (6.C.3), but reconciliation is due within 7 workdays (6.C.1). Nothing says what happens if that signature is delayed or unobtainable.",
+      "severity": "medium"
+    },
+    {
+      "id": "R10",
+      "step": "S31",
+      "risk_type": "manual_handoff",
+      "description": "The wet-signed SOA moves from cardholder to AO (S31) and from AO to FOC RDG/TOG (S34) with no tracking. Only 3 workdays separate the 7-workday cardholder deadline and the 10-workday AO deadline (6.C.1, 6.C.2).",
+      "severity": "high"
+    },
+    {
+      "id": "R11",
+      "step": "S35",
+      "risk_type": "rekeying",
+      "description": "Reconciled transaction data from the signed SOA is re-entered into the core financial accounting system (7.B).",
+      "severity": "high"
+    },
+    {
+      "id": "R12",
+      "step": "S34",
+      "risk_type": "vague_ownership_or_timing",
+      "description": "6.C.2 sets 10 workdays for AO review but no deadline for forwarding to FOC. 7.C.6 says only 'in a timely manner as prescribed by agency purchase card policy'.",
+      "severity": "low"
+    },
+    {
+      "id": "R13",
+      "step": "S37",
+      "risk_type": "conflicting_rule",
+      "description": "6.D requires retention for six years. 7.F.9 requires six years after final payment. The two give different start points for the retention clock.",
+      "severity": "low"
+    },
+    {
+      "id": "R14",
+      "step": "S41",
+      "risk_type": "undefined_exception",
+      "description": "The cardholder tracks disputes to completion (12.A), but the SOP states no next step if the bank denies the dispute. The 90-calendar-day deadline is tracked only by the cardholder.",
+      "severity": "medium"
+    },
+    {
+      "id": "R15",
+      "step": "S51",
+      "risk_type": "undefined_exception",
+      "description": "After a lost or stolen card is reported to the bank, AO, and APC (13, 7.F.3), no next step is stated: replacement, account closure, or review of fraudulent charges.",
+      "severity": "medium"
+    },
+    {
+      "id": "R16",
+      "step": "S45",
+      "risk_type": "conflicting_rule",
+      "description": "11.B says abuse, misuse, and non-compliance may result in temporary suspension until compliance, with permanent closure only for repeated instances. 11.C says misuse or fraud will result in permanent closure. The two sections differ on the consequence of a first misuse (S45 vs S48).",
+      "severity": "medium"
+    },
+    {
+      "id": "R17",
+      "step": "S55",
+      "risk_type": "vague_ownership_or_timing",
+      "description": "'The Bureau/Office must confirm' names no role and sets no response deadline before suspension (6.A.5).",
+      "severity": "low"
+    },
+    {
+      "id": "R18",
+      "step": "S59",
+      "risk_type": "vague_ownership_or_timing",
+      "description": "Permanent monthly limit increases are reviewed 'on a periodic basis' with no interval stated (6.B.5).",
+      "severity": "low"
+    },
+    {
+      "id": "R19",
+      "step": "S57",
+      "risk_type": "undefined_exception",
+      "description": "D21: a permanent monthly increase requested for a non-OMD cardholder will not be granted (6.B.4), but no response or alternative is stated.",
+      "severity": "low"
+    },
+    {
+      "id": "R20",
+      "step": "S61",
+      "risk_type": "conflicting_rule",
+      "description": "Different sections assign departure notice to different owners. 7.F.10: the cardholder notifies the APC. 14.A: the AO or Bureau/Office Chief gives prior notice. 7.E.8: the AO directs cancellation in writing. 7.C.9: the Chief provides status changes.",
+      "severity": "medium"
+    },
+    {
+      "id": "R21",
+      "step": "S63",
+      "risk_type": "conflicting_rule",
+      "description": "14.A requires records to go to the AO promptly and before separation or transfer. 7.F.11 says upon cancellation of the account or separation.",
+      "severity": "medium"
+    },
+    {
+      "id": "R22",
+      "step": "S62",
+      "risk_type": "missing_control",
+      "description": "Account closure depends entirely on notice reaching the APC (14.C), and there is no check that it happened. A card surrendered to the AO (S64) has no stated handoff to the APC, who destroys cards (7.D).",
+      "severity": "high"
+    },
+    {
+      "id": "R23",
+      "step": "S10",
+      "risk_type": "single_point_of_failure",
+      "description": "The APC alone issues and destroys cards, opens and closes accounts, grants limit increases, and suspends privileges (7.D, 6.B, 11.B, 14.C). No backup or alternate is designated.",
+      "severity": "medium"
+    },
+    {
+      "id": "R24",
+      "step": "S66",
+      "risk_type": "manual_handoff",
+      "description": "The new AO designation is sent to the APC in writing (14.B) with no tracking. Pending authorizations and SOA reviews have no AO until it is recorded.",
+      "severity": "low"
+    }
+  ],
+  "recommendations": [
+    {
+      "id": "A1",
+      "step": "S2",
+      "label": "digitize",
+      "reason": "A paper Form A-498 with certification becomes a structured nomination form, removing lost or incomplete forms.",
+      "suggested_tool": "Power Apps form writing to SharePoint list (Nominations)",
+      "value": 3,
+      "effort": 2
+    },
+    {
+      "id": "A2",
+      "step": "S3",
+      "label": "automate",
+      "reason": "Routing to the Bureau/Office Chief for signature is rule-based; the Chief still signs.",
+      "suggested_tool": "Power Automate approvals + SharePoint",
+      "value": 3,
+      "effort": 2
+    },
+    {
+      "id": "A3",
+      "step": "S4",
+      "label": "automate",
+      "reason": "The AO signature on A-498 follows the Chief signature; sequential approval removes manual passing.",
+      "suggested_tool": "Power Automate approvals + SharePoint",
+      "value": 3,
+      "effort": 2
+    },
+    {
+      "id": "A4",
+      "step": "S6",
+      "label": "digitize",
+      "reason": "Training certificates uploaded to a training register give the APC one source for the issuance and refresher checks.",
+      "suggested_tool": "Power Apps upload to SharePoint list (Training Register)",
+      "value": 2,
+      "effort": 2
+    },
+    {
+      "id": "A5",
+      "step": "S7",
+      "label": "digitize",
+      "reason": "The bank card application is prefilled from the A-498 nomination data, eliminating rekeying.",
+      "suggested_tool": "Power Apps form + SharePoint",
+      "value": 3,
+      "effort": 2
+    },
+    {
+      "id": "A6",
+      "step": "S9",
+      "label": "keep_human",
+      "reason": "Setting limits relative to warrant authority is a judgment about delegated authority.",
+      "suggested_tool": "None (AO judgment)",
+      "value": 2,
+      "effort": 1
+    },
+    {
+      "id": "A7",
+      "step": "S10",
+      "label": "keep_human",
+      "reason": "Opening an account grants procurement authority in the bank system; it stays with the APC.",
+      "suggested_tool": "None (APC in bank system)",
+      "value": 2,
+      "effort": 1
+    },
+    {
+      "id": "A8",
+      "step": "S11",
+      "label": "digitize",
+      "reason": "Memo, note, or email requests become a structured purchase authorization request, creating the advance authorization record 6.D requires.",
+      "suggested_tool": "Power Apps form writing to SharePoint list (Purchase Authorizations)",
+      "value": 4,
+      "effort": 2
+    },
+    {
+      "id": "A9",
+      "step": "S12",
+      "label": "automate",
+      "reason": "Every purchase needs written AO authorization before buying. An approval flow records approver, time, and outcome and removes the untracked email handoff.",
+      "suggested_tool": "Power Automate approvals + SharePoint + Outlook",
+      "value": 5,
+      "effort": 2
+    },
+    {
+      "id": "A10",
+      "step": "S13",
+      "label": "digitize",
+      "reason": "A required funding document reference (MOC, TG) and funds-availability attestation in the request form make the check visible to the AO before approval.",
+      "suggested_tool": "Power Apps required fields + SharePoint",
+      "value": 4,
+      "effort": 2
+    },
+    {
+      "id": "A11",
+      "step": "S14",
+      "label": "keep_human",
+      "reason": "Applying FAR Part 8 source priorities is a procurement judgment.",
+      "suggested_tool": "None (cardholder judgment; EAC for questions)",
+      "value": 2,
+      "effort": 1
+    },
+    {
+      "id": "A12",
+      "step": "S15",
+      "label": "ai_assist",
+      "reason": "AI can scan vendor terms for the listed prohibited provisions (recurring payments, auto-renewal, unlimited duration, indemnification, unlimited liability) and flag them for the cardholder.",
+      "suggested_tool": "Power Automate with AI Builder / Azure OpenAI prompt",
+      "value": 4,
+      "effort": 3
+    },
+    {
+      "id": "A13",
+      "step": "S16",
+      "label": "automate",
+      "reason": "A flagged or cardholder-marked agreement is routed to an EAC queue with the documents attached before commitment.",
+      "suggested_tool": "Power Automate + SharePoint + Outlook",
+      "value": 3,
+      "effort": 2
+    },
+    {
+      "id": "A14",
+      "step": "S17",
+      "label": "keep_human",
+      "reason": "Legal review of terms with OGC and the FAR applicability determination is a legal judgment.",
+      "suggested_tool": "None (EAC/OGC)",
+      "value": 2,
+      "effort": 1
+    },
+    {
+      "id": "A15",
+      "step": "S18",
+      "label": "keep_human",
+      "reason": "Establishing a contract is a contracting officer action.",
+      "suggested_tool": "None (EAC)",
+      "value": 2,
+      "effort": 1
+    },
+    {
+      "id": "A16",
+      "step": "S19",
+      "label": "keep_human",
+      "reason": "Price reasonableness is a judgment.",
+      "suggested_tool": "None (cardholder judgment)",
+      "value": 2,
+      "effort": 1
+    },
+    {
+      "id": "A17",
+      "step": "S20",
+      "label": "digitize",
+      "reason": "The Section 508 D&F becomes a conditional section of the purchase request form, attached automatically to the purchase record.",
+      "suggested_tool": "Power Apps conditional form section + SharePoint",
+      "value": 3,
+      "effort": 2
+    },
+    {
+      "id": "A18",
+      "step": "S21",
+      "label": "automate",
+      "reason": "IT hardware requests route to ITC for approval, and the correspondence is stored with the purchase record that 6.D(4) requires.",
+      "suggested_tool": "Power Automate approvals + SharePoint",
+      "value": 3,
+      "effort": 2
+    },
+    {
+      "id": "A19",
+      "step": "S22",
+      "label": "keep_human",
+      "reason": "Placing the order with the merchant is a human transaction.",
+      "suggested_tool": "None",
+      "value": 1,
+      "effort": 1
+    },
+    {
+      "id": "A20",
+      "step": "S24",
+      "label": "ai_assist",
+      "reason": "Receipt extraction can read the tax line from uploaded receipts and flag purchases where state sales tax was charged.",
+      "suggested_tool": "AI Builder receipt processing in Power Automate",
+      "value": 3,
+      "effort": 3
+    },
+    {
+      "id": "A21",
+      "step": "S26",
+      "label": "digitize",
+      "reason": "The AO's receipt validation and signature are captured digitally on the purchase record.",
+      "suggested_tool": "Power Apps + SharePoint",
+      "value": 3,
+      "effort": 2
+    },
+    {
+      "id": "A22",
+      "step": "S27",
+      "label": "digitize",
+      "reason": "The receiving employee signs and dates acceptance digitally, so the cardholder can see the signature that gates reconciliation.",
+      "suggested_tool": "Power Apps + SharePoint",
+      "value": 3,
+      "effort": 2
+    },
+    {
+      "id": "A23",
+      "step": "S28",
+      "label": "automate",
+      "reason": "Importing SOA transactions into a list starts the 7-workday reconciliation clock and feeds later steps. There is no standard bank connector, so effort is high.",
+      "suggested_tool": "Power Automate with file parsing (bank export to SharePoint)",
+      "value": 5,
+      "effort": 4
+    },
+    {
+      "id": "A24",
+      "step": "S29",
+      "label": "ai_assist",
+      "reason": "AI can match SOA lines to authorizations and receipts, including third-party processor names such as PayPal, and flag unmatched items for the cardholder.",
+      "suggested_tool": "Power Automate with AI Builder / Azure OpenAI prompt + SharePoint",
+      "value": 4,
+      "effort": 4
+    },
+    {
+      "id": "A25",
+      "step": "S30",
+      "label": "digitize",
+      "reason": "Cardholder certification (name, date, exception remarks) is captured on the digital SOA record.",
+      "suggested_tool": "Power Apps + SharePoint",
+      "value": 4,
+      "effort": 2
+    },
+    {
+      "id": "A26",
+      "step": "S31",
+      "label": "automate",
+      "reason": "Routing the certified SOA to the AO with deadline reminders removes an untracked monthly handoff under tight deadlines.",
+      "suggested_tool": "Power Automate approvals + SharePoint + Outlook",
+      "value": 5,
+      "effort": 2
+    },
+    {
+      "id": "A27",
+      "step": "S32",
+      "label": "keep_human",
+      "reason": "Verifying that transactions are legal, proper, correct, and necessary is AO judgment and certification.",
+      "suggested_tool": "None (AO judgment)",
+      "value": 3,
+      "effort": 1
+    },
+    {
+      "id": "A28",
+      "step": "S33",
+      "label": "digitize",
+      "reason": "AO certification (name, date, initialed exceptions) is captured digitally on the SOA record.",
+      "suggested_tool": "Power Apps / approval response + SharePoint",
+      "value": 4,
+      "effort": 2
+    },
+    {
+      "id": "A29",
+      "step": "S34",
+      "label": "automate",
+      "reason": "Sending the AO-certified SOA package to FOC RDG/TOG is purely rule-based, uses standard connectors, and runs monthly per cardholder.",
+      "suggested_tool": "Power Automate + SharePoint + Outlook (standard connectors)",
+      "value": 4,
+      "effort": 1
+    },
+    {
+      "id": "A30",
+      "step": "S35",
+      "label": "automate",
+      "reason": "Exporting reconciled transaction data removes rekeying into the core financial system. No standard connector exists, so effort is very high.",
+      "suggested_tool": "Power Automate with custom connector or desktop flow (RPA)",
+      "value": 5,
+      "effort": 5
+    },
+    {
+      "id": "A31",
+      "step": "S36",
+      "label": "keep_human",
+      "reason": "Payment to the bank is a financial disbursement with legal certification.",
+      "suggested_tool": "None (Financial Operations)",
+      "value": 2,
+      "effort": 1
+    },
+    {
+      "id": "A32",
+      "step": "S37",
+      "label": "automate",
+      "reason": "Retention labels applied automatically to purchase files enforce the six-year retention (start point to be resolved per R13).",
+      "suggested_tool": "SharePoint / Microsoft Purview retention labels via Power Automate",
+      "value": 3,
+      "effort": 2
+    },
+    {
+      "id": "A33",
+      "step": "S39",
+      "label": "digitize",
+      "reason": "A dispute log records the charge, first SOA date, and merchant contact attempts that 12.A.2 requires the cardholder to document.",
+      "suggested_tool": "Power Apps form writing to SharePoint list (Disputes)",
+      "value": 3,
+      "effort": 2
+    },
+    {
+      "id": "A34",
+      "step": "S41",
+      "label": "automate",
+      "reason": "Reminders against the 90-calendar-day deadline and open-dispute status replace manual tracking.",
+      "suggested_tool": "Power Automate scheduled flow + SharePoint + Outlook",
+      "value": 3,
+      "effort": 2
+    },
+    {
+      "id": "A35",
+      "step": "S43",
+      "label": "automate",
+      "reason": "A cardholder-triggered flow compiles the SOAs and supporting documents and sends them to the reviewer. The cardholder stays directly responsible, as 6.E.2 requires.",
+      "suggested_tool": "Power Automate (instant flow) + SharePoint + Outlook",
+      "value": 3,
+      "effort": 2
+    },
+    {
+      "id": "A36",
+      "step": "S44",
+      "label": "keep_human",
+      "reason": "Reviewing a cardholder's standing is a sensitive decision about a person.",
+      "suggested_tool": "None (APC)",
+      "value": 2,
+      "effort": 1
+    },
+    {
+      "id": "A37",
+      "step": "S45",
+      "label": "keep_human",
+      "reason": "Suspension or revocation of authority is a sensitive decision about a person.",
+      "suggested_tool": "None (APC)",
+      "value": 2,
+      "effort": 1
+    },
+    {
+      "id": "A38",
+      "step": "S48",
+      "label": "keep_human",
+      "reason": "Permanent closure or revocation is a sensitive decision about a person.",
+      "suggested_tool": "None (APC)",
+      "value": 2,
+      "effort": 1
+    },
+    {
+      "id": "A39",
+      "step": "S49",
+      "label": "keep_human",
+      "reason": "Referral of misuse or fraud to the supervisor, HRM, and OIG is a sensitive investigative action.",
+      "suggested_tool": "None (APC)",
+      "value": 2,
+      "effort": 1
+    },
+    {
+      "id": "A40",
+      "step": "S50",
+      "label": "keep_human",
+      "reason": "Disciplinary and adverse actions follow negotiated agreement and Personnel Manual procedures.",
+      "suggested_tool": "None (Human Resources)",
+      "value": 2,
+      "effort": 1
+    },
+    {
+      "id": "A41",
+      "step": "S51",
+      "label": "digitize",
+      "reason": "After calling the bank, the cardholder submits one lost/stolen form that notifies the AO and APC at once and creates a record.",
+      "suggested_tool": "Power Apps form + SharePoint + Outlook notification",
+      "value": 2,
+      "effort": 2
+    },
+    {
+      "id": "A42",
+      "step": "S52",
+      "label": "automate",
+      "reason": "Three-year refresher due dates in the training register drive reminders to cardholders and AOs.",
+      "suggested_tool": "Power Automate scheduled flow + SharePoint + Outlook",
+      "value": 3,
+      "effort": 2
+    },
+    {
+      "id": "A43",
+      "step": "S53",
+      "label": "automate",
+      "reason": "Accounts with no transactions in three years can be found from the imported SOA data (depends on A23).",
+      "suggested_tool": "Power Automate scheduled flow + SharePoint",
+      "value": 2,
+      "effort": 3
+    },
+    {
+      "id": "A44",
+      "step": "S54",
+      "label": "automate",
+      "reason": "Sending inactive-account lists and collecting confirmations becomes a tracked request with a response date.",
+      "suggested_tool": "Power Automate approvals + SharePoint + Outlook",
+      "value": 2,
+      "effort": 2
+    },
+    {
+      "id": "A45",
+      "step": "S57",
+      "label": "digitize",
+      "reason": "Form A-1204 and the STL justification become a structured request, so the APC retains circumstances and duration automatically.",
+      "suggested_tool": "Power Apps form writing to SharePoint list (Limit Requests)",
+      "value": 2,
+      "effort": 2
+    },
+    {
+      "id": "A46",
+      "step": "S58",
+      "label": "keep_human",
+      "reason": "Granting a limit increase is an APC authority decision.",
+      "suggested_tool": "None (APC)",
+      "value": 2,
+      "effort": 1
+    },
+    {
+      "id": "A47",
+      "step": "S59",
+      "label": "automate",
+      "reason": "A recurring reminder lists permanent increases due for review (interval to be set by the process owner).",
+      "suggested_tool": "Power Automate recurrence + SharePoint + Outlook",
+      "value": 2,
+      "effort": 1
+    },
+    {
+      "id": "A48",
+      "step": "S60",
+      "label": "eliminate",
+      "reason": "The cardholder notice duplicates the AO/Chief prior notice to the APC (7.F.10 vs 14.A). A single separation/transfer form (A49) that the cardholder or AO can start replaces both. The process owner must confirm the owner per R20.",
+      "suggested_tool": "None",
+      "value": 2,
+      "effort": 1
+    },
+    {
+      "id": "A49",
+      "step": "S61",
+      "label": "digitize",
+      "reason": "Departure notice and cancellation direction become a tracked separation/transfer form that notifies the APC and drives closure, records transfer, and card surrender.",
+      "suggested_tool": "Power Apps form + SharePoint + Outlook",
+      "value": 4,
+      "effort": 2
+    },
+    {
+      "id": "A50",
+      "step": "S62",
+      "label": "keep_human",
+      "reason": "Closing the account in the bank system is an access action that stays with the APC.",
+      "suggested_tool": "None (APC in bank system)",
+      "value": 2,
+      "effort": 1
+    },
+    {
+      "id": "A51",
+      "step": "S63",
+      "label": "automate",
+      "reason": "When the separation form is submitted, ownership and permissions on the cardholder's SharePoint purchase files move to the AO.",
+      "suggested_tool": "Power Automate + SharePoint (permissions actions)",
+      "value": 3,
+      "effort": 2
+    },
+    {
+      "id": "A52",
+      "step": "S66",
+      "label": "digitize",
+      "reason": "A written AO designation form notifies the APC and updates the AO lookup that drives approval routing.",
+      "suggested_tool": "Power Apps form + SharePoint",
+      "value": 3,
+      "effort": 2
+    }
+  ],
+  "starter_flows": [
+    {
+      "recommendation_id": "A29",
+      "trigger": "SharePoint - When an item is modified in the SOA Reconciliations list (filter: Status = 'AO Certified')",
+      "actions": [
+        "Get item and attachments for the SOA record",
+        "Condition: verify AO printed name, signature date, and any initialed exception remarks are present; if missing, set Status = 'Incomplete' and email the AO",
+        "Convert the certified SOA record to PDF and copy the package to the FOC RDG/TOG library",
+        "Send email (Outlook) to the FOC RDG/TOG shared mailbox with the package link",
+        "Update item: Status = 'Submitted to FOC', SubmittedOn = utcNow()",
+        "Condition: if SubmittedOn is later than 10 workdays after billing cycle end, set LateFlag = Yes for APC reporting"
+      ],
+      "approval_step": ""
+    },
+    {
+      "recommendation_id": "A9",
+      "trigger": "SharePoint - When an item is created in the Purchase Authorizations list (submitted from the Power Apps request form)",
+      "actions": [
+        "Get the cardholder's AO, single transaction limit, and monthly limit from the Cardholder Register list",
+        "Condition: if amount exceeds the single transaction limit, set Status = 'Exceeds STL', notify the cardholder, and stop (route undefined in SOP; process owner to define)",
+        "Condition: verify the funding document reference and the funds-availability attestation are completed",
+        "Start and wait for an approval assigned to the AO",
+        "Update item with outcome, approver name, comments, and timestamp as the written authorization record",
+        "Send email to the cardholder with the outcome; if rejected, set Status = 'Not Authorized' (next step undefined in SOP)"
+      ],
+      "approval_step": "AO approves or rejects the purchase before it is made (7.E.2, 7.F.4); the approval response is the written authorization retained per 6.D."
+    },
+    {
+      "recommendation_id": "A26",
+      "trigger": "SharePoint - When an item is modified in the SOA Reconciliations list (filter: Status = 'Cardholder Certified')",
+      "actions": [
+        "Get item; verify cardholder printed name, signature date, and exception remarks",
+        "Condition: for transactions flagged as accepted by another employee, verify the receiving employee's signature and date are recorded (6.C.3); if missing, return to the cardholder",
+        "Calculate the AO due date as 10 workdays after billing cycle end",
+        "Start and wait for an approval assigned to the AO, with the SOA and supporting documents linked",
+        "Send reminder emails at intervals until the AO responds; if past due, escalate to the Bureau/Office Chief (7.C.6)",
+        "On approval: record AO name, date, and exception remarks and set Status = 'AO Certified' (triggers the A29 flow); on rejection: return to the cardholder with comments"
+      ],
+      "approval_step": "AO reviews and certifies the reconciled SOA within 10 workdays after billing cycle end (6.C.2, 7.E.4); exceptions to the Certification Clause are entered as remarks with name and date (6.C.4)."
+    }
+  ],
+  "future_state": [
+    {
+      "id": "F1",
+      "from_step": "S1",
+      "actor": "Bureau/Office Chief (or Designee or Employee's Manager)",
+      "action": "Requests a purchase card for an employee and nominates cardholders and AOs",
+      "change": "unchanged"
+    },
+    {
+      "id": "F2",
+      "from_step": "S2",
+      "actor": "Nominee (cardholder or AO nominee)",
+      "action": "Completes and e-certifies Form A-498 in the Power Apps nomination form (SharePoint)",
+      "change": "digitized"
+    },
+    {
+      "id": "F3",
+      "from_step": "S3",
+      "actor": "Bureau/Office Chief (or ABC for Management)",
+      "action": "Signs Form A-498 through an automatically routed approval",
+      "change": "automated"
+    },
+    {
+      "id": "F4",
+      "from_step": "S4",
+      "actor": "AO",
+      "action": "Signs Form A-498 through the next automatically routed approval",
+      "change": "automated"
+    },
+    {
+      "id": "F5",
+      "from_step": "S5",
+      "actor": "Nominee (cardholder or AO nominee)",
+      "action": "Completes the GSA purchase card web-based training",
+      "change": "unchanged"
+    },
+    {
+      "id": "F6",
+      "from_step": "S6",
+      "actor": "Nominee (cardholder or AO nominee)",
+      "action": "Uploads the training certificate to the SharePoint training register visible to the APC",
+      "change": "digitized"
+    },
+    {
+      "id": "F7",
+      "from_step": "S7",
+      "actor": "Cardholder nominee",
+      "action": "Submits the bank card application prefilled from nomination data to FOC RDG/TOG",
+      "change": "digitized"
+    },
+    {
+      "id": "F8",
+      "from_step": "S8",
+      "actor": "FOC RDG/TOG",
+      "action": "Submits the bank card application to the contractor bank",
+      "change": "unchanged"
+    },
+    {
+      "id": "F9",
+      "from_step": "S9",
+      "actor": "AO",
+      "action": "Sets the limits for an EAC contracting officer cardholder",
+      "change": "unchanged"
+    },
+    {
+      "id": "F10",
+      "from_step": "S10",
+      "actor": "APC",
+      "action": "Opens the account and issues the card with its limits",
+      "change": "unchanged"
+    },
+    {
+      "id": "F11",
+      "from_step": "S11",
+      "actor": "Cardholder",
+      "action": "Submits a purchase authorization request in the Power Apps form",
+      "change": "digitized"
+    },
+    {
+      "id": "F12",
+      "from_step": "S12",
+      "actor": "AO",
+      "action": "Approves or rejects the request in a Power Automate approval that checks the STL and logs the written authorization",
+      "change": "automated"
+    },
+    {
+      "id": "F13",
+      "from_step": "S13",
+      "actor": "Cardholder",
+      "action": "Enters the funding document reference and attests funds availability in the request form",
+      "change": "digitized"
+    },
+    {
+      "id": "F14",
+      "from_step": "S14",
+      "actor": "Cardholder",
+      "action": "Considers mandatory Government priority sources before other sources",
+      "change": "unchanged"
+    },
+    {
+      "id": "F15",
+      "from_step": "S15",
+      "actor": "Cardholder",
+      "action": "Reviews vendor terms with AI flags for prohibited provisions",
+      "change": "ai_assisted"
+    },
+    {
+      "id": "F16",
+      "from_step": "S16",
+      "actor": "Cardholder",
+      "action": "Flagged agreements are routed automatically to the EAC queue before commitment",
+      "change": "automated"
+    },
+    {
+      "id": "F17",
+      "from_step": "S17",
+      "actor": "EAC",
+      "action": "Reviews the agreement, consulting OGC as necessary",
+      "change": "unchanged"
+    },
+    {
+      "id": "F18",
+      "from_step": "S18",
+      "actor": "EAC",
+      "action": "Establishes a contract addressing the objectionable terms",
+      "change": "unchanged"
+    },
+    {
+      "id": "F19",
+      "from_step": "S19",
+      "actor": "Cardholder",
+      "action": "Confirms the price is reasonable",
+      "change": "unchanged"
+    },
+    {
+      "id": "F20",
+      "from_step": "S20",
+      "actor": "Cardholder",
+      "action": "Completes the Section 508 D&F as a conditional section of the request form",
+      "change": "digitized"
+    },
+    {
+      "id": "F21",
+      "from_step": "S21",
+      "actor": "Cardholder",
+      "action": "IT hardware requests route automatically to ITC for approval, with the correspondence stored on the purchase record",
+      "change": "automated"
+    },
+    {
+      "id": "F22",
+      "from_step": "S22",
+      "actor": "Cardholder",
+      "action": "Makes the tax-exempt purchase with the merchant",
+      "change": "unchanged"
+    },
+    {
+      "id": "F23",
+      "from_step": "S23",
+      "actor": "Cardholder",
+      "action": "Does not buy and seeks a merchant that honors the tax exemption",
+      "change": "unchanged"
+    },
+    {
+      "id": "F24",
+      "from_step": "S24",
+      "actor": "Cardholder",
+      "action": "Uploads the receipt; AI receipt processing flags any state sales tax charged",
+      "change": "ai_assisted"
+    },
+    {
+      "id": "F25",
+      "from_step": "S25",
+      "actor": "Cardholder",
+      "action": "Contacts the merchant for a sales tax credit and documents the efforts",
+      "change": "unchanged"
+    },
+    {
+      "id": "F26",
+      "from_step": "S26",
+      "actor": "AO",
+      "action": "Validates receipt and signs digitally on the purchase record",
+      "change": "digitized"
+    },
+    {
+      "id": "F27",
+      "from_step": "S27",
+      "actor": "Receiving employee",
+      "action": "Signs and dates acceptance digitally on the purchase record",
+      "change": "digitized"
+    },
+    {
+      "id": "F28",
+      "from_step": "S28",
+      "actor": "Contractor bank",
+      "action": "Issues the monthly SOA; transactions are imported to SharePoint and the cardholder is notified of the 7-workday due date",
+      "change": "automated"
+    },
+    {
+      "id": "F29",
+      "from_step": "S29",
+      "actor": "Cardholder",
+      "action": "Reconciles the SOA using AI matching of transactions to authorizations and receipts",
+      "change": "ai_assisted"
+    },
+    {
+      "id": "F30",
+      "from_step": "S30",
+      "actor": "Cardholder",
+      "action": "Certifies the reconciled SOA digitally with name, date, and exception remarks",
+      "change": "digitized"
+    },
+    {
+      "id": "F31",
+      "from_step": "S31",
+      "actor": "Cardholder",
+      "action": "The certified SOA is routed automatically to the AO with deadline reminders",
+      "change": "automated"
+    },
+    {
+      "id": "F32",
+      "from_step": "NEW",
+      "actor": "Bureau/Office Chief",
+      "action": "Receives an automatic escalation for SOAs not certified by the AO within 10 workdays",
+      "change": "new"
+    },
+    {
+      "id": "F33",
+      "from_step": "S32",
+      "actor": "AO",
+      "action": "Reviews the reconciled SOA for legal, proper, correct, and necessary purchases",
+      "change": "unchanged"
+    },
+    {
+      "id": "F34",
+      "from_step": "S33",
+      "actor": "AO",
+      "action": "Certifies the SOA digitally with name, date, and initialed exceptions",
+      "change": "digitized"
+    },
+    {
+      "id": "F35",
+      "from_step": "S34",
+      "actor": "AO",
+      "action": "The AO-certified SOA package is sent automatically to FOC RDG/TOG and the submission is logged",
+      "change": "automated"
+    },
+    {
+      "id": "F36",
+      "from_step": "S35",
+      "actor": "CFO (Financial Operations)",
+      "action": "Reconciled transaction data is exported to the core financial system and charges distributed",
+      "change": "automated"
+    },
+    {
+      "id": "F37",
+      "from_step": "S36",
+      "actor": "CFO (Financial Operations)",
+      "action": "Pays the purchase card contractor bank",
+      "change": "unchanged"
+    },
+    {
+      "id": "F38",
+      "from_step": "S37",
+      "actor": "Cardholder",
+      "action": "Purchase files carry an automatic six-year retention label in SharePoint",
+      "change": "automated"
+    },
+    {
+      "id": "F39",
+      "from_step": "S38",
+      "actor": "Cardholder",
+      "action": "Reviews receipts for a questioned charge",
+      "change": "unchanged"
+    },
+    {
+      "id": "F40",
+      "from_step": "S39",
+      "actor": "Cardholder",
+      "action": "Contacts the merchant and records the attempts in the dispute log (AO assists)",
+      "change": "digitized"
+    },
+    {
+      "id": "F41",
+      "from_step": "S40",
+      "actor": "Cardholder",
+      "action": "Initiates a dispute with the contractor bank",
+      "change": "unchanged"
+    },
+    {
+      "id": "F42",
+      "from_step": "S41",
+      "actor": "Cardholder",
+      "action": "Tracks the dispute with automated 90-day deadline and status reminders",
+      "change": "automated"
+    },
+    {
+      "id": "F43",
+      "from_step": "S42",
+      "actor": "Reviewer/auditor",
+      "action": "Conducts a review and requests documentation",
+      "change": "unchanged"
+    },
+    {
+      "id": "F44",
+      "from_step": "S43",
+      "actor": "Cardholder",
+      "action": "Triggers a flow that compiles and sends SOAs and supporting documents directly to the reviewer",
+      "change": "automated"
+    },
+    {
+      "id": "F45",
+      "from_step": "S44",
+      "actor": "APC",
+      "action": "Reviews the cardholder's standing",
+      "change": "unchanged"
+    },
+    {
+      "id": "F46",
+      "from_step": "S45",
+      "actor": "APC",
+      "action": "Temporarily suspends privileges or revokes AO authority until compliance",
+      "change": "unchanged"
+    },
+    {
+      "id": "F47",
+      "from_step": "S46",
+      "actor": "APC",
+      "action": "Reports non-compliance to the AO or the AO's immediate supervisor",
+      "change": "unchanged"
+    },
+    {
+      "id": "F48",
+      "from_step": "S47",
+      "actor": "APC",
+      "action": "Restores privileges after compliance and any refresher training",
+      "change": "unchanged"
+    },
+    {
+      "id": "F49",
+      "from_step": "S48",
+      "actor": "APC",
+      "action": "Permanently closes privileges or revokes AO authority",
+      "change": "unchanged"
+    },
+    {
+      "id": "F50",
+      "from_step": "S49",
+      "actor": "APC",
+      "action": "Reports misuse or fraud to the supervisor, HRM, and OIG",
+      "change": "unchanged"
+    },
+    {
+      "id": "F51",
+      "from_step": "S50",
+      "actor": "Human Resources (with Bureau/Office Chief)",
+      "action": "Processes proposed disciplinary or adverse action",
+      "change": "unchanged"
+    },
+    {
+      "id": "F52",
+      "from_step": "S51",
+      "actor": "Cardholder",
+      "action": "Reports the loss to the bank, then submits a lost/stolen form that notifies the AO and APC",
+      "change": "digitized"
+    },
+    {
+      "id": "F53",
+      "from_step": "S52",
+      "actor": "Cardholder / AO",
+      "action": "Completes refresher training on automated due-date reminders and uploads the certificate",
+      "change": "automated"
+    },
+    {
+      "id": "F54",
+      "from_step": "S53",
+      "actor": "APC",
+      "action": "Receives an automatically generated list of accounts with no activity in three years",
+      "change": "automated"
+    },
+    {
+      "id": "F55",
+      "from_step": "S54",
+      "actor": "APC",
+      "action": "Inactive-account confirmation requests are sent automatically to each Bureau/Office with a response date",
+      "change": "automated"
+    },
+    {
+      "id": "F56",
+      "from_step": "S55",
+      "actor": "Bureau/Office",
+      "action": "Confirms continued need for each inactive account",
+      "change": "unchanged"
+    },
+    {
+      "id": "F57",
+      "from_step": "S56",
+      "actor": "APC",
+      "action": "Suspends unconfirmed inactive accounts",
+      "change": "unchanged"
+    },
+    {
+      "id": "F58",
+      "from_step": "S57",
+      "actor": "AO",
+      "action": "Submits the limit increase request (A-1204 or STL justification) in the Power Apps form",
+      "change": "digitized"
+    },
+    {
+      "id": "F59",
+      "from_step": "S58",
+      "actor": "APC",
+      "action": "Grants the increase; circumstances and duration are retained on the request record",
+      "change": "unchanged"
+    },
+    {
+      "id": "F60",
+      "from_step": "S59",
+      "actor": "APC",
+      "action": "Reviews permanent increases on an automated recurring reminder",
+      "change": "automated"
+    },
+    {
+      "id": "F61",
+      "from_step": "S61",
+      "actor": "AO or Bureau/Office Chief (or ABC)",
+      "action": "Submits the separation/transfer form, which notifies the APC and directs card cancellation",
+      "change": "digitized"
+    },
+    {
+      "id": "F62",
+      "from_step": "S62",
+      "actor": "APC",
+      "action": "Closes the cardholder's account",
+      "change": "unchanged"
+    },
+    {
+      "id": "F63",
+      "from_step": "S63",
+      "actor": "Cardholder",
+      "action": "Purchase file ownership and permissions transfer automatically to the AO",
+      "change": "automated"
+    },
+    {
+      "id": "F64",
+      "from_step": "S64",
+      "actor": "Cardholder",
+      "action": "Surrenders the card to the AO or APC",
+      "change": "unchanged"
+    },
+    {
+      "id": "F65",
+      "from_step": "S65",
+      "actor": "AO",
+      "action": "Notes on the final reconciled SOA that the cardholder could not sign",
+      "change": "unchanged"
+    },
+    {
+      "id": "F66",
+      "from_step": "S66",
+      "actor": "Bureau/Office Chief (or ABC)",
+      "action": "Designates the new AO in a form that notifies the APC and updates approval routing",
+      "change": "digitized"
+    }
+  ],
+  "eliminated_steps": [
+    "S60"
+  ]
+}

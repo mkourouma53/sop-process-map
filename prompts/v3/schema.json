@@ -1,0 +1,600 @@
+{
+  "type": "object",
+  "properties": {
+    "sop_title": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string",
+      "description": "Two sentences: what the process does and who runs it."
+    },
+    "sections": {
+      "type": "array",
+      "description": "Every top-level section or subsection of the document, in document order.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "section": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "classification": {
+            "type": "string",
+            "enum": [
+              "procedure",
+              "rules",
+              "background"
+            ]
+          },
+          "reason": {
+            "type": "string",
+            "description": "One sentence: why, using the reorder test for procedure vs rules."
+          },
+          "mapped": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "section",
+          "title",
+          "classification",
+          "reason",
+          "mapped"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "processes": {
+      "type": "array",
+      "description": "The separate processes in this SOP, in the order a reader would follow them.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Short verb-noun name, e.g. 'Issue a purchase card', 'Dispute a charge'"
+          },
+          "trigger": {
+            "type": "string",
+            "description": "The event that starts this process"
+          },
+          "outcome": {
+            "type": "string",
+            "description": "What exists when it ends"
+          },
+          "sections": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "name",
+          "trigger",
+          "outcome",
+          "sections"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "steps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "S1, S2, ... in execution order"
+          },
+          "process": {
+            "type": "string",
+            "description": "Name of the process this belongs to, exactly as in `processes`"
+          },
+          "actor": {
+            "type": "string"
+          },
+          "action": {
+            "type": "string"
+          },
+          "input": {
+            "type": "string"
+          },
+          "output": {
+            "type": "string"
+          },
+          "system": {
+            "type": "string",
+            "description": "Tool or medium used (paper form, email, named system). Empty string if not stated."
+          },
+          "source_section": {
+            "type": "string"
+          },
+          "source_quote": {
+            "type": "string",
+            "description": "Short verbatim quote from the SOP supporting this step. Empty string if inferred."
+          },
+          "inferred": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "id",
+          "process",
+          "actor",
+          "action",
+          "input",
+          "output",
+          "system",
+          "source_section",
+          "source_quote",
+          "inferred"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "decisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "D1, D2, ..."
+          },
+          "process": {
+            "type": "string",
+            "description": "Name of the process this belongs to, exactly as in `processes`"
+          },
+          "after_step": {
+            "type": "string"
+          },
+          "condition": {
+            "type": "string",
+            "description": "Phrased as a yes/no question"
+          },
+          "branches": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "type": "string"
+                },
+                "next_step": {
+                  "type": "string",
+                  "description": "Step id, or END, or UNDEFINED when the SOP gives no next step"
+                }
+              },
+              "required": [
+                "label",
+                "next_step"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "source_section": {
+            "type": "string"
+          },
+          "inferred": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "id",
+          "process",
+          "after_step",
+          "condition",
+          "branches",
+          "source_section",
+          "inferred"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "handoffs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "after_step": {
+            "type": "string"
+          },
+          "from_actor": {
+            "type": "string"
+          },
+          "to_actor": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "after_step",
+          "from_actor",
+          "to_actor"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "exceptions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "step": {
+            "type": "string"
+          },
+          "trigger": {
+            "type": "string"
+          },
+          "handling": {
+            "type": "string",
+            "description": "What the SOP says to do. Empty string if the SOP is silent."
+          },
+          "source_section": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "step",
+          "trigger",
+          "handling",
+          "source_section"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "timing": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "step": {
+            "type": "string"
+          },
+          "requirement": {
+            "type": "string"
+          },
+          "source_section": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "step",
+          "requirement",
+          "source_section"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "risks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "R1, R2, ..."
+          },
+          "process": {
+            "type": "string",
+            "description": "Process name from `processes`"
+          },
+          "step": {
+            "type": "string"
+          },
+          "risk_type": {
+            "type": "string",
+            "enum": [
+              "manual_handoff",
+              "rekeying",
+              "missing_control",
+              "undefined_exception",
+              "single_point_of_failure",
+              "vague_ownership_or_timing",
+              "conflicting_rule"
+            ]
+          },
+          "what_could_go_wrong": {
+            "type": "string",
+            "description": "Plain-language failure scenario a process owner understands, one or two sentences"
+          },
+          "cause": {
+            "type": "string",
+            "description": "What in the SOP creates the risk, citing sections"
+          },
+          "impact": {
+            "type": "string",
+            "description": "Consequence for the process if it happens: delay, cost, compliance, safety, or customer impact"
+          },
+          "quantified_impact": {
+            "type": "array",
+            "description": "Only numbers the SOP supports (handoffs, wait days, deadlines, manual entries, approvals). Never invent volumes or dollar amounts.",
+            "items": {
+              "type": "object",
+              "properties": {
+                "metric": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                },
+                "basis": {
+                  "type": "string",
+                  "description": "SOP section or how it was counted from the map"
+                }
+              },
+              "required": [
+                "metric",
+                "value",
+                "basis"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "severity": {
+            "type": "string",
+            "enum": [
+              "low",
+              "medium",
+              "high"
+            ]
+          },
+          "severity_reason": {
+            "type": "string",
+            "description": "Why this severity: likelihood and impact"
+          },
+          "addressed_by": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Recommendation ids that reduce this risk"
+          }
+        },
+        "required": [
+          "id",
+          "process",
+          "step",
+          "risk_type",
+          "what_could_go_wrong",
+          "cause",
+          "impact",
+          "quantified_impact",
+          "severity",
+          "severity_reason",
+          "addressed_by"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "recommendations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "A1, A2, ..."
+          },
+          "process": {
+            "type": "string",
+            "description": "Process name from `processes`"
+          },
+          "step": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string",
+            "enum": [
+              "digitize",
+              "automate",
+              "ai_assist",
+              "eliminate",
+              "keep_human"
+            ]
+          },
+          "proposed_change": {
+            "type": "string",
+            "description": "What the step becomes, in one or two sentences"
+          },
+          "reason": {
+            "type": "string"
+          },
+          "implementation_steps": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Ordered, concrete steps to implement the change in Microsoft 365 / Power Platform"
+          },
+          "suggested_tool": {
+            "type": "string"
+          },
+          "value": {
+            "type": "integer",
+            "enum": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          "effort": {
+            "type": "integer",
+            "enum": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          "impact": {
+            "type": "object",
+            "properties": {
+              "handoffs_removed": {
+                "type": "integer"
+              },
+              "steps_removed": {
+                "type": "integer"
+              },
+              "wait_days_removed": {
+                "type": "number"
+              },
+              "manual_entries_removed": {
+                "type": "integer"
+              },
+              "minutes_saved_per_occurrence": {
+                "type": "integer",
+                "description": "Estimate of reviewer or staff minutes saved each time the step runs; 0 if not meaningful"
+              },
+              "occurrence": {
+                "type": "string",
+                "description": "What one occurrence is, e.g. 'per purchase', 'per monthly statement per cardholder'"
+              },
+              "basis": {
+                "type": "string",
+                "description": "How the numbers were derived from the map; label estimates as estimates"
+              }
+            },
+            "required": [
+              "handoffs_removed",
+              "steps_removed",
+              "wait_days_removed",
+              "manual_entries_removed",
+              "minutes_saved_per_occurrence",
+              "occurrence",
+              "basis"
+            ],
+            "additionalProperties": false
+          },
+          "resolves_risks": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "process",
+          "step",
+          "label",
+          "proposed_change",
+          "reason",
+          "implementation_steps",
+          "suggested_tool",
+          "value",
+          "effort",
+          "impact",
+          "resolves_risks"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "starter_flows": {
+      "type": "array",
+      "description": "Power Automate outlines for the three highest value/effort recommendations that are not keep_human or eliminate.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "recommendation_id": {
+            "type": "string"
+          },
+          "trigger": {
+            "type": "string"
+          },
+          "actions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "approval_step": {
+            "type": "string",
+            "description": "Empty string if no approval is needed"
+          }
+        },
+        "required": [
+          "recommendation_id",
+          "trigger",
+          "actions",
+          "approval_step"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "future_state": {
+      "type": "array",
+      "description": "The process redrawn with every recommendation applied except keep_human.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "F1, F2, ..."
+          },
+          "process": {
+            "type": "string",
+            "description": "Name of the process this belongs to, exactly as in `processes`"
+          },
+          "from_step": {
+            "type": "string",
+            "description": "Current state step id, or NEW"
+          },
+          "actor": {
+            "type": "string"
+          },
+          "action": {
+            "type": "string"
+          },
+          "change": {
+            "type": "string",
+            "enum": [
+              "unchanged",
+              "digitized",
+              "automated",
+              "ai_assisted",
+              "new"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "process",
+          "from_step",
+          "actor",
+          "action",
+          "change"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "eliminated_steps": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "sop_title",
+    "summary",
+    "sections",
+    "processes",
+    "steps",
+    "decisions",
+    "handoffs",
+    "exceptions",
+    "timing",
+    "risks",
+    "recommendations",
+    "starter_flows",
+    "future_state",
+    "eliminated_steps"
+  ],
+  "additionalProperties": false
+}

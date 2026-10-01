@@ -1,0 +1,19 @@
+{
+  "verdicts": [
+    {
+      "ai_id": "S4",
+      "verdict": "supported",
+      "reason": "FAQ 3 tells a non-PI research team member: \"Please be sure to include your Project Director/Principal Investigator Contact Information.\""
+    },
+    {
+      "ai_id": "S5",
+      "verdict": "supported",
+      "reason": "FAQ 4 states \"The person who signs off on this section of the form needs to be responsible for assuring compliance,\" which identifies the business official as the one who completes and signs that section."
+    },
+    {
+      "ai_id": "S17",
+      "verdict": "partially_supported",
+      "reason": "The SOP says \"If you do not receive an email in a timely manner, please check your spam filter and/ or reach out to the NTRR team,\" so contacting the team is conditional and an alternative to checking spam, not a required step."
+    }
+  ]
+}

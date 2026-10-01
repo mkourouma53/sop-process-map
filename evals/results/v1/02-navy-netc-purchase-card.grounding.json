@@ -1,0 +1,79 @@
+{
+  "verdicts": [
+    {
+      "ai_id": "S4",
+      "verdict": "supported",
+      "reason": "Section 4.a states \"The CH will acknowledge the responsibility and understanding of reference (a), and the policy specified within this instruction.\""
+    },
+    {
+      "ai_id": "S5",
+      "verdict": "partially_supported",
+      "reason": "Section 6.c says only \"Requests are emailed to N8\" without naming who sends them; department heads and program managers are mentioned only in pre-fiscal-year discussions, so the actor is an inference."
+    },
+    {
+      "ai_id": "S6",
+      "verdict": "supported",
+      "reason": "Section 6.c states unusual or questionable requests \"are forwarded to the Deputy Comptroller, Comptroller, and possibly Legal (N00D) for review prior to taking action.\""
+    },
+    {
+      "ai_id": "S8",
+      "verdict": "supported",
+      "reason": "Section 6.e states \"If funding is exhausted, requirements are forwarded to the Comptroller for review.\""
+    },
+    {
+      "ai_id": "S10",
+      "verdict": "supported",
+      "reason": "Sections 16.c and 16.d state each division prepares the SF 182 with a LOA, the GCPC payment statement, and the CH's name and phone (obtained from N4), and provides a copy to N4 prior to forwarding to HRO."
+    },
+    {
+      "ai_id": "S13",
+      "verdict": "supported",
+      "reason": "Section 8 states \"The single purchase limit cannot be exceeded unless approved by N4.\""
+    },
+    {
+      "ai_id": "S17",
+      "verdict": "supported",
+      "reason": "Section 9.a states \"one will perform receipt/inspection\" and \"These actions must be accomplished by legible signature and date.\""
+    },
+    {
+      "ai_id": "S18",
+      "verdict": "supported",
+      "reason": "Section 9.a states \"one will accept. These actions must be accomplished by legible signature and date.\""
+    },
+    {
+      "ai_id": "S19",
+      "verdict": "supported",
+      "reason": "Section 14.a states \"AOs and CHs identify whether materials need to be recorded in a formal property management or accounting system.\""
+    },
+    {
+      "ai_id": "S20",
+      "verdict": "partially_supported",
+      "reason": "Section 14.b says accountable property \"will be recorded in\" DPAS and that \"DPAS is maintained by N4,\" but it does not state that N4 performs the recording."
+    },
+    {
+      "ai_id": "S21",
+      "verdict": "supported",
+      "reason": "Section 10.a states the CH will verify each transaction at the end of the billing cycle and ensure all purchases are documented on the log and charged or reallocated to the proper LOA."
+    },
+    {
+      "ai_id": "S29",
+      "verdict": "supported",
+      "reason": "Section 22.a states the A/OPC shall conduct a monthly review targeting internal controls, training, span of control, and delinquencies, and that it \"is automatically submitted to the next higher level A/OPC.\""
+    },
+    {
+      "ai_id": "S30",
+      "verdict": "supported",
+      "reason": "Section 22.b states the A/OPC shall conduct the semi-annual review, which \"is an aggregate of the previous six month reviews.\""
+    },
+    {
+      "ai_id": "S31",
+      "verdict": "supported",
+      "reason": "Section 22.b states the report \"shall be provided to the HA (N4) for review and approval. Upon approval, the report will be forwarded to the Hierarchy Level 3 A/OPC for compilation and submission to CCPMD.\""
+    },
+    {
+      "ai_id": "S40",
+      "verdict": "partially_supported",
+      "reason": "Section 11.b(3) says passively that the invoice \"must be 'short paid'... and certified using the manual certification process\" without naming the AO/CO as the actor."
+    }
+  ]
+}

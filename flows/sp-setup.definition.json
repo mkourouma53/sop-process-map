@@ -1,0 +1,69 @@
+{
+  "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "$connections": {
+      "defaultValue": {},
+      "type": "Object"
+    },
+    "$authentication": {
+      "defaultValue": {},
+      "type": "SecureObject"
+    }
+  },
+  "triggers": {
+    "manual": {
+      "type": "Request",
+      "kind": "Button",
+      "inputs": {
+        "schema": {
+          "type": "object",
+          "properties": {
+            "site": {
+              "type": "string"
+            },
+            "requests": {
+              "type": "string",
+              "description": "JSON array of {method, uri, body}"
+            }
+          },
+          "required": [
+            "site",
+            "requests"
+          ]
+        }
+      }
+    }
+  },
+  "actions": {
+    "For_each_request": {
+      "type": "Foreach",
+      "foreach": "@json(triggerBody()?['requests'])",
+      "runtimeConfiguration": {
+        "concurrency": {
+          "repetitions": 1
+        }
+      },
+      "actions": {
+        "Send_HTTP_request": {
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_sharepointonline",
+              "operationId": "HttpRequest",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+            },
+            "parameters": {
+              "dataset": "@triggerBody()?['site']",
+              "parameters/method": "@items('For_each_request')?['method']",
+              "parameters/uri": "@items('For_each_request')?['uri']",
+              "parameters/headers": "@if(equals(items('For_each_request')?['headers'], null), json('{\"Accept\":\"application/json;odata=verbose\",\"Content-Type\":\"application/json;odata=verbose\"}'), items('For_each_request')?['headers'])",
+              "parameters/body": "@if(equals(items('For_each_request')?['body'], null), '', string(items('For_each_request')?['body']))"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        }
+      }
+    }
+  }
+}

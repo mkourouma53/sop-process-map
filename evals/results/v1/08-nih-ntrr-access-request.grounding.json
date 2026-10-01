@@ -1,0 +1,14 @@
+{
+  "verdicts": [
+    {
+      "ai_id": "S4",
+      "verdict": "supported",
+      "reason": "DAR FAQ Q4 states \"The person who signs off on this section of the form needs to be responsible for assuring compliance with all the conditions associated with accessing NTRR data,\" which matches this actor and action."
+    },
+    {
+      "ai_id": "S9",
+      "verdict": "partially_supported",
+      "reason": "Step 10 says \"If all required fields were successfully entered, a confirmation page will be displayed\"; the step drops the condition that all required fields must be entered successfully."
+    }
+  ]
+}

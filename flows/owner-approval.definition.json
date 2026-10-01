@@ -1,0 +1,357 @@
+{
+  "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "$connections": {
+      "defaultValue": {},
+      "type": "Object"
+    },
+    "$authentication": {
+      "defaultValue": {},
+      "type": "SecureObject"
+    }
+  },
+  "triggers": {
+    "When_SOP_is_sent_to_owner": {
+      "type": "OpenApiConnection",
+      "recurrence": {
+        "interval": 1,
+        "frequency": "Minute"
+      },
+      "splitOn": "@triggerOutputs()?['body/value']",
+      "conditions": [
+        {
+          "expression": "@and(equals(triggerBody()?['SOPStatus']?['Value'], 'Ready for owner'), not(empty(triggerBody()?['ProcessOwner'])))"
+        }
+      ],
+      "inputs": {
+        "host": {
+          "connectionName": "shared_sharepointonline",
+          "operationId": "GetOnUpdatedFileItems",
+          "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+        },
+        "parameters": {
+          "dataset": "https://consultonyx.sharepoint.com/sites/sop-process-map",
+          "table": "f7d891df-436e-4a6e-b876-36554b5fb08d"
+        },
+        "authentication": "@parameters('$authentication')"
+      }
+    }
+  },
+  "actions": {
+    "Mark_with_owner": {
+      "type": "OpenApiConnection",
+      "inputs": {
+        "host": {
+          "connectionName": "shared_sharepointonline",
+          "operationId": "HttpRequest",
+          "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+        },
+        "parameters": {
+          "dataset": "https://consultonyx.sharepoint.com/sites/sop-process-map",
+          "parameters/method": "POST",
+          "parameters/uri": "@concat('_api/web/lists/getbytitle(''SOPs'')/items(', string(triggerBody()?['ID']), ')')",
+          "parameters/headers": {
+            "Accept": "application/json;odata=nometadata",
+            "Content-Type": "application/json;odata=nometadata",
+            "X-HTTP-Method": "MERGE",
+            "IF-MATCH": "*"
+          },
+          "parameters/body": "{\"SOPStatus\":\"With owner\",\"OwnerComments\":\"\"}"
+        },
+        "authentication": "@parameters('$authentication')"
+      },
+      "runAfter": {}
+    },
+    "Log_sent_row": {
+      "type": "Compose",
+      "runAfter": {
+        "Mark_with_owner": [
+          "Succeeded"
+        ]
+      },
+      "inputs": {
+        "Title": "@'Sent to process owner'",
+        "SOPId": "@triggerBody()?['ID']",
+        "Person": "@triggerBody()?['ProcessOwner']",
+        "Comments": "@''"
+      }
+    },
+    "Log_sent": {
+      "type": "OpenApiConnection",
+      "inputs": {
+        "host": {
+          "connectionName": "shared_sharepointonline",
+          "operationId": "HttpRequest",
+          "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+        },
+        "parameters": {
+          "dataset": "https://consultonyx.sharepoint.com/sites/sop-process-map",
+          "parameters/method": "POST",
+          "parameters/uri": "_api/web/lists/getbytitle('Review History')/items",
+          "parameters/headers": {
+            "Accept": "application/json;odata=nometadata",
+            "Content-Type": "application/json;odata=nometadata"
+          },
+          "parameters/body": "@string(outputs('Log_sent_row'))"
+        },
+        "authentication": "@parameters('$authentication')"
+      },
+      "runAfter": {
+        "Log_sent_row": [
+          "Succeeded"
+        ]
+      }
+    },
+    "Get_changes": {
+      "type": "OpenApiConnection",
+      "inputs": {
+        "host": {
+          "connectionName": "shared_sharepointonline",
+          "operationId": "HttpRequest",
+          "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+        },
+        "parameters": {
+          "dataset": "https://consultonyx.sharepoint.com/sites/sop-process-map",
+          "parameters/method": "GET",
+          "parameters/uri": "@concat('_api/web/lists/getbytitle(''Recommendations'')/items?$top=5000&$select=ID,Title,StepRef,ProposedChange,Reason,AnalystRec,AnalystNote,RecStatus&$filter=SOPId eq ', string(triggerBody()?['ID']))",
+          "parameters/headers": {
+            "Accept": "application/json;odata=nometadata",
+            "Content-Type": "application/json;odata=nometadata"
+          }
+        },
+        "authentication": "@parameters('$authentication')"
+      },
+      "runAfter": {
+        "Mark_with_owner": [
+          "Succeeded"
+        ]
+      }
+    },
+    "Recommended": {
+      "type": "Query",
+      "runAfter": {
+        "Get_changes": [
+          "Succeeded"
+        ]
+      },
+      "inputs": {
+        "from": "@body('Get_changes')?['value']",
+        "where": "@equals(item()?['AnalystRec'], 'Recommend')"
+      }
+    },
+    "Dropped": {
+      "type": "Query",
+      "runAfter": {
+        "Get_changes": [
+          "Succeeded"
+        ]
+      },
+      "inputs": {
+        "from": "@body('Get_changes')?['value']",
+        "where": "@equals(item()?['AnalystRec'], 'Drop')"
+      }
+    },
+    "Change_lines": {
+      "type": "Select",
+      "runAfter": {
+        "Recommended": [
+          "Succeeded"
+        ]
+      },
+      "inputs": {
+        "from": "@body('Recommended')",
+        "select": "@concat('- **', item()?['Title'], '** (step ', item()?['StepRef'], '): ', coalesce(item()?['ProposedChange'], item()?['Reason'], ''))"
+      }
+    },
+    "Ask_owner": {
+      "type": "OpenApiConnectionWebhook",
+      "runAfter": {
+        "Change_lines": [
+          "Succeeded"
+        ],
+        "Dropped": [
+          "Succeeded"
+        ],
+        "Log_sent": [
+          "Succeeded"
+        ]
+      },
+      "inputs": {
+        "host": {
+          "connectionName": "shared_approvals",
+          "operationId": "StartAndWaitForAnApproval",
+          "apiId": "/providers/Microsoft.PowerApps/apis/shared_approvals"
+        },
+        "parameters": {
+          "approvalType": "Basic",
+          "WebhookApprovalCreationInput/title": "@concat('Approve process changes: ', triggerBody()?['{FilenameWithExtension}'])",
+          "WebhookApprovalCreationInput/assignedTo": "@triggerBody()?['ProcessOwner']",
+          "WebhookApprovalCreationInput/details": "@concat('The analyst reviewed ', string(length(body('Get_changes')?['value'])), ' AI-recommended changes for **', triggerBody()?['{FilenameWithExtension}'], '** and recommends these ', string(length(body('Recommended'))), ':', decodeUriComponent('%0A'), decodeUriComponent('%0A'), join(body('Change_lines'), decodeUriComponent('%0A')), decodeUriComponent('%0A'), decodeUriComponent('%0A'), string(length(body('Dropped'))), ' were dropped and ', string(sub(sub(length(body('Get_changes')?['value']), length(body('Recommended'))), length(body('Dropped')))), ' are undecided. Open the app to see the current and future process, the risks each change fixes, and to override any item.', decodeUriComponent('%0A'), decodeUriComponent('%0A'), '**Approve** accepts the analyst''s recommendations, keeping any decisions you made in the app. **Reject** sends the review back to the analyst with your comments.')",
+          "WebhookApprovalCreationInput/itemLink": "@concat('https://apps.powerapps.com/play/e/29763402-3928-e92c-9a69-ef9227209e1d/app/a4333e05-0428-4211-92bc-0ee35352bb48?tenantId=3c3756a1-7e41-4457-8a14-f8d519ad7494', '&sopId=', string(triggerBody()?['ID']), '&tab=changes')",
+          "WebhookApprovalCreationInput/itemLinkDescription": "Review the changes in SOP to Process Map",
+          "WebhookApprovalCreationInput/enableNotifications": true,
+          "WebhookApprovalCreationInput/enableReassignment": true
+        },
+        "authentication": "@parameters('$authentication')"
+      }
+    },
+    "Owner_decision": {
+      "type": "If",
+      "runAfter": {
+        "Ask_owner": [
+          "Succeeded"
+        ]
+      },
+      "expression": {
+        "equals": [
+          "@equals(body('Ask_owner')?['outcome'], 'Approve')",
+          true
+        ]
+      },
+      "actions": {
+        "Undecided": {
+          "type": "Query",
+          "inputs": {
+            "from": "@body('Get_changes')?['value']",
+            "where": "@and(equals(item()?['RecStatus'], 'Proposed'), not(equals(item()?['AnalystRec'], 'Pending')))"
+          }
+        },
+        "Apply_advice": {
+          "type": "Foreach",
+          "foreach": "@body('Undecided')",
+          "runAfter": {
+            "Undecided": [
+              "Succeeded"
+            ]
+          },
+          "runtimeConfiguration": {
+            "concurrency": {
+              "repetitions": 10
+            }
+          },
+          "actions": {
+            "Decision_fields": {
+              "type": "Compose",
+              "inputs": {
+                "RecStatus": "@if(equals(items('Apply_advice')?['AnalystRec'], 'Recommend'), 'Approved', 'Rejected')",
+                "RejectionReason": "@if(equals(items('Apply_advice')?['AnalystRec'], 'Recommend'), '', concat('Dropped on analyst advice. ', coalesce(items('Apply_advice')?['AnalystNote'], '')))"
+              }
+            },
+            "Set_owner_decision": {
+              "type": "OpenApiConnection",
+              "inputs": {
+                "host": {
+                  "connectionName": "shared_sharepointonline",
+                  "operationId": "HttpRequest",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+                },
+                "parameters": {
+                  "dataset": "https://consultonyx.sharepoint.com/sites/sop-process-map",
+                  "parameters/method": "POST",
+                  "parameters/uri": "@concat('_api/web/lists/getbytitle(''Recommendations'')/items(', string(items('Apply_advice')?['ID']), ')')",
+                  "parameters/headers": {
+                    "Accept": "application/json;odata=nometadata",
+                    "Content-Type": "application/json;odata=nometadata",
+                    "X-HTTP-Method": "MERGE",
+                    "IF-MATCH": "*"
+                  },
+                  "parameters/body": "@string(outputs('Decision_fields'))"
+                },
+                "authentication": "@parameters('$authentication')"
+              },
+              "runAfter": {
+                "Decision_fields": [
+                  "Succeeded"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "else": {
+        "actions": {}
+      }
+    },
+    "Outcome": {
+      "type": "Compose",
+      "runAfter": {
+        "Owner_decision": [
+          "Succeeded"
+        ]
+      },
+      "inputs": {
+        "SOPStatus": "@if(equals(body('Ask_owner')?['outcome'], 'Approve'), 'Approved', 'Changes requested')",
+        "OwnerComments": "@coalesce(first(body('Ask_owner')?['responses'])?['comments'], '')"
+      }
+    },
+    "Record_outcome": {
+      "type": "OpenApiConnection",
+      "inputs": {
+        "host": {
+          "connectionName": "shared_sharepointonline",
+          "operationId": "HttpRequest",
+          "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+        },
+        "parameters": {
+          "dataset": "https://consultonyx.sharepoint.com/sites/sop-process-map",
+          "parameters/method": "POST",
+          "parameters/uri": "@concat('_api/web/lists/getbytitle(''SOPs'')/items(', string(triggerBody()?['ID']), ')')",
+          "parameters/headers": {
+            "Accept": "application/json;odata=nometadata",
+            "Content-Type": "application/json;odata=nometadata",
+            "X-HTTP-Method": "MERGE",
+            "IF-MATCH": "*"
+          },
+          "parameters/body": "@string(outputs('Outcome'))"
+        },
+        "authentication": "@parameters('$authentication')"
+      },
+      "runAfter": {
+        "Outcome": [
+          "Succeeded"
+        ]
+      }
+    },
+    "Log_outcome_row": {
+      "type": "Compose",
+      "runAfter": {
+        "Record_outcome": [
+          "Succeeded"
+        ]
+      },
+      "inputs": {
+        "Title": "@if(equals(body('Ask_owner')?['outcome'], 'Approve'), 'Approved by process owner', 'Changes requested by process owner')",
+        "SOPId": "@triggerBody()?['ID']",
+        "Person": "@coalesce(first(body('Ask_owner')?['responses'])?['responder']?['displayName'], triggerBody()?['ProcessOwner'])",
+        "Comments": "@coalesce(first(body('Ask_owner')?['responses'])?['comments'], '')"
+      }
+    },
+    "Log_outcome": {
+      "type": "OpenApiConnection",
+      "inputs": {
+        "host": {
+          "connectionName": "shared_sharepointonline",
+          "operationId": "HttpRequest",
+          "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+        },
+        "parameters": {
+          "dataset": "https://consultonyx.sharepoint.com/sites/sop-process-map",
+          "parameters/method": "POST",
+          "parameters/uri": "_api/web/lists/getbytitle('Review History')/items",
+          "parameters/headers": {
+            "Accept": "application/json;odata=nometadata",
+            "Content-Type": "application/json;odata=nometadata"
+          },
+          "parameters/body": "@string(outputs('Log_outcome_row'))"
+        },
+        "authentication": "@parameters('$authentication')"
+      },
+      "runAfter": {
+        "Log_outcome_row": [
+          "Succeeded"
+        ]
+      }
+    }
+  }
+}
