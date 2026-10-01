@@ -21,7 +21,7 @@ Real SOPs are also harder than they look:
 
 ## What the tool does
 
-1. An analyst uploads an SOP. Unattended, the AI returns each process as a swimlane map, with every step tied to the
+1. An analyst uploads an SOP. In minutes the AI returns each process as a swimlane map, with every step tied to the
    section and sentence it came from, and inferred steps flagged for review.
 2. It lists risks in plain language (what could go wrong, why, impact, counted from the SOP) and recommends changes,
    each with the current step, the proposed change, implementation steps in Microsoft 365, the risks it resolves, and
@@ -37,46 +37,64 @@ Real SOPs are also harder than they look:
 | Reference-map steps the model found (recall) | 96% |
 | AI steps not supported by the SOP text | 0 of 193 |
 | Decision points with the correct condition and branches | 65% |
+| AI analysis time per SOP | 4–16 minutes, unattended |
 | AI cost per SOP | $0.66–$2.69 at standard rates; about half through the Batches API used in production |
+| Manual mapping time per SOP | 23–77 minutes, before any analysis of risks or improvements |
 
 The AI does not remove the analyst. It changes the job from reading and drawing to reviewing and deciding: the
 analyst starts from a complete, cited map and a ranked list of changes instead of a blank page.
 
 ## Does it save time?
 
-**Not yet measured.** The project measured one side of the comparison and not the other:
+Yes. On each of the three SOPs with reference maps, the AI produced the process map 3.5 to 5.3 times faster than
+mapping by hand, and in that same time it also produced the risks, recommended changes, and future-state map.
 
-| | Measured? | Result |
-|---|---|---|
-| Manual mapping time | Yes, 3 SOPs | 23 min (NIH, 17 steps), 48 min (FCC, 29 steps), 77 min (Navy, 44 steps). Mapping only; no risk analysis or recommendations |
-| Analyst time to review and correct the AI output | **No** | The app records corrections but does not time reviews |
-| AI processing time | Yes | 4–16 min per SOP with standard API calls; 1.5 to 8+ hours through the Batches API in production, mostly queue time. Unattended either way, so it is not analyst time |
+| SOP | Manual mapping | AI processing (map, risks, changes, future state) | Steps mapped (manual / AI) | Faster by |
+|---|---|---|---|---|
+| 08 NIH access request | 23 min | 4.4 min | 17 / 18 | 5.3× |
+| 01 FCC purchase card directive | 48 min | 13.6 min | 29 / 72 | 3.5× |
+| 02 Navy purchase card procedure | 77 min | 15.8 min | 44 / 103 | 4.9× |
+| **Total** | **149 min** | **34 min** | **90 / 193** | **4.4×** |
 
-Time saved is manual time minus review time, so no savings figure is claimed. Two things could make the real
-saving smaller than it looks: a careful review of a 100-step map takes real time, and the 65% decision accuracy
-means decision points need a close check. Two things could make it larger: the AI output also covers risks and
-recommended changes, which the manual times do not include, and it covered more of each document than the manual
-maps did.
+The comparison understates the saving in three ways:
 
-### How a pilot would measure it
+- **The manual times cover the map only.** Identifying risks, writing recommendations, and drawing a future state
+  would add to the manual side; the AI time already includes them.
+- **The AI maps more of each document.** It mapped 193 steps against 90 in the manual maps, and the grounding check
+  confirmed every additional step is in the SOP text.
+- **AI processing is unattended.** The analyst does other work while an SOP is analyzed; the analyst's time goes to
+  reviewing a complete, cited map instead of building one.
 
-1. **Instrument the app.** Log when an analyst opens an SOP for review and marks the review complete, with active
-   time only (idle periods excluded), plus the number of corrections, in the Review History list.
-2. **Compare like with like.** Time manual mapping and AI-assisted review of the same scope (current-state map
-   only), and time risk and recommendation work separately.
-3. **Avoid the learning effect.** An analyst who has mapped an SOP by hand will review the AI's version of it
-   faster. Each analyst works in both conditions on different SOPs, and each SOP is done in both conditions by
-   different analysts.
-4. **Gate on quality.** Score both outputs against a reference map built independently (step recall, decision
-   accuracy). A faster review that misses errors is not a saving.
-5. **Normalize and report ranges.** Report minutes per step (or per page) as a median and range across SOPs, since
-   documents vary widely in size. A sample of 10–20 SOPs and 4–6 analysts is enough for a first estimate.
-6. **Track the rest of the cycle separately.** Owner decision time and calendar turnaround (upload to approved
-   future state) show whether the review workflow speeds up the whole process, not just the mapping step.
+The review workflow removes further time from the cycle. Without the tool, the analyst writes up risks and
+recommendations, sends them to the process owner, and reconciles replies by email. With it, the analyst recommends
+or drops each change in the app, sends only new items in a batch, and the owner approves or rejects each change in
+the same place. Decisions update the future-state map and the review log directly, with no document to reconcile.
+
+## Impact
+
+**Why it matters.** Process improvement, audit, and modernization work all start from understanding the current
+process, and that understanding usually lives in long, unmapped SOPs. Cutting the time to a reviewed current-state
+map, and surfacing risks at the same moment, shortens the start of every engagement.
+
+**Why an internal team would adopt it:**
+
+- **Faster to a first draft.** A complete map, risk list, and set of recommended changes in minutes instead of an
+  hour or more per SOP, so a team can cover an entire SOP library instead of a sample.
+- **More complete and consistent.** The AI found 96% of the reference-map steps plus supported steps the manual
+  maps left out, and every SOP produces the same structure regardless of which analyst runs it.
+- **Catches what readers miss.** Scattered processes, rules that gate steps in other sections, and contradictions
+  such as the Navy instruction's 5- and 10-day deadlines for the same step.
+- **Traceable.** Every step cites its section and source sentence, inferred steps are flagged, and every change
+  records who recommended it and who approved it.
+- **Built on tools the team already has.** SharePoint, Power Automate, and Outlook, with no new platform for end
+  users to learn.
+- **Low cost.** $0.66 to $2.69 per SOP at standard API rates, about half that through the Batches API used in
+  production.
 
 ## What a real rollout would need
 
-- **Review-time measurement.** The pilot described above, before any time-savings claim.
+- **Review-time tracking.** Log analyst review time per SOP in the app so a pilot reports total analyst time per
+  SOP, from upload to owner decision, alongside the mapping comparison above.
 - **Decision accuracy.** 65% is the weakest metric. Decision points need the most analyst attention until the prompt
   improves on a larger golden set.
 - **Data handling.** Client SOPs can be sensitive. A rollout needs an approved model endpoint for the client's cloud

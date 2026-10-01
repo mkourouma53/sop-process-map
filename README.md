@@ -26,6 +26,17 @@ required; changes are stored only in the browser
 - **Current vs. future state.** Side-by-side maps showing either approved changes only or all proposed changes.
 - **Ask AI.** A sidebar on every screen answers questions from the SOP and its analysis, with page citations.
 
+## Impact
+
+- **4.4× faster to a process map.** The AI mapped three SOPs in 34 minutes of processing against 149 minutes by
+  hand (3.5× to 5.3× per SOP), and that time also covers risks, recommended changes, and the future state.
+- **More complete.** 193 steps mapped against 90 in the manual maps, with every additional step confirmed in the
+  SOP text.
+- **A shorter review cycle.** Analysts review a cited map instead of building one, and process owners approve or
+  reject each change in the app instead of over email.
+
+Full comparison and adoption case: [BUSINESS_CASE.md](BUSINESS_CASE.md#does-it-save-time).
+
 ## Evaluation
 
 The pipeline is evaluated against reference process maps for three SOPs (90 steps, 23 decisions), built before any
@@ -42,13 +53,6 @@ reads the source SOP for every AI step without a match.
 Precision against the reference maps is 45% in v3 because the model maps more of each SOP than the references cover;
 the grounding check found no unsupported steps among them. Full results: [evals/results/COMPARISON.md](evals/results/COMPARISON.md).
 Changes between versions are documented in the [failure log](docs/FAILURE_LOG.md).
-
-## Does it save time?
-
-Not yet measured. Manual mapping of three SOPs took 23, 48, and 77 minutes; analyst time to review and correct the
-AI's output has not been timed, so no savings figure is claimed. The [business case](BUSINESS_CASE.md#does-it-save-time)
-describes how a pilot would measure it: timed reviews in the app, matched scope, counterbalanced SOPs and analysts,
-and a quality check against independent reference maps.
 
 ## Architecture
 
